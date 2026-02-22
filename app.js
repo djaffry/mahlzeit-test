@@ -573,7 +573,10 @@ function setupSwipeNavigation(contentEl, tabsEl) {
 
 function setupResizeHandler() {
   let resizeTimer;
+  let lastWidth = window.innerWidth;
   window.addEventListener('resize', () => {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => balanceGrid(), 200);
   });
