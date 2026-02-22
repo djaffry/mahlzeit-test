@@ -661,7 +661,7 @@ body {
   .toolbar-inner { padding: 0.6rem 0.75rem; gap: 0.4rem; }
   .toolbar-top { gap: 0.5rem; flex-wrap: wrap; }
   .toolbar-title { font-size: 0.88rem; }
-  .toolbar-subtitle { display: none; }
+  .toolbar-subtitle { order: 2; width: 100%; text-align: center; }
   .day-tabs { order: 1; width: 100%; }
   .freshness-badge { margin-left: auto; }
   .tab { flex: 1; text-align: center; padding: 0.35rem 0.75rem; font-size: 0.75rem; min-height: 36px; }
