@@ -1,0 +1,280 @@
+{
+  "id": "bahnbistro",
+  "title": "🚂 OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "fetchedAt": "2026-02-22T09:02:46.593Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Emmentaler gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Butterkartoffeln, Preiselbeeren"
+            },
+            {
+              "title": "Lachs-Teriyaki",
+              "price": null,
+              "tags": [],
+              "allergens": "A,D,F,N",
+              "description": "Lauch-Pilzgemüse & Reis, Black Sesame"
+            },
+            {
+              "title": "ChikiChen Burger",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Rotkraut, Salat & Jungzwiebel, Sriracha-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Heidelbeer-Vanillecreme",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Steinpilznudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Rucola & getrockenete Tomaten, Flora & Kresse"
+            },
+            {
+              "title": "Selchschopfbraten",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Linsen & Semmelknödel, Petersilie"
+            },
+            {
+              "title": "Cashew-Nuts Chicken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H,R",
+              "description": "Bunte Paprika & Zwiebel, Jasminreis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Peanutbutter-Brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Frühlingsrolle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,L,N",
+              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+            },
+            {
+              "title": "Ausgelöstes Backhenderl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Erdäpfelsalat, Zitrone"
+            },
+            {
+              "title": "Würstel-Gulyas",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Erdäpfel, Zwiebel & Würstel, Wachauer Laibchen"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Cheesecake im Glas",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüse Süß-Sauer",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,N",
+              "description": "Duftreis, Ananas & Limette, Jungzwiebel"
+            },
+            {
+              "title": "Esterhazy-Rindschnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L,M",
+              "description": "Wurzelgemüse & Rahm, Eierspätzle"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "M",
+              "description": "Skin on Wedges, Zwiebelsenf & Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Ananas-Streuselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Grießschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Zwetschkenröster, Staubzucker"
+            },
+            {
+              "title": "Alaska-Seelachs gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Petersilerdäpfel, Sauce Remoulade"
+            },
+            {
+              "title": "Spinatknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Ratatouille, Plantcream"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt & Früchte",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
