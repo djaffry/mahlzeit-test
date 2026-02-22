@@ -127,11 +127,11 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
   return {
     category,
     item: {
-      title: setMenu['@attributes']?.DisplayName ?? '',
+      title: setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '',
       price: price && price !== '0.00' ? `${price} €` : null,
       tags: extractDietaryTags(setMenu),
       allergens: extractAllergens(setMenu),
-      description: setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? null,
+      description: setMenu['@attributes']?.DisplayName ?? null,
     },
   };
 }
