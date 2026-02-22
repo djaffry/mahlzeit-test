@@ -1,0 +1,185 @@
+import type { FullAdapter, WeekMenu, MenuItem } from '../types.js';
+import { isWeekday } from '../types.js';
+
+const API_URL = 'https://www.quartiersechs.at/wp-json/wp/v2/pages/4';
+
+// Eurest catering API types, deeply nested XML-to-JSON structure
+interface XmlAttributes {
+  '@attributes': Record<string, string>;
+}
+
+interface AdditiveGroup extends XmlAttributes {
+  Additive?: XmlAttributes | XmlAttributes[];
+}
+
+interface AdditiveInfo {
+  AdditiveGroup?: AdditiveGroup | AdditiveGroup[];
+}
+
+interface CategoryGroup extends XmlAttributes {
+  Category?: XmlAttributes | XmlAttributes[];
+}
+
+interface CategoryInfo {
+  CategoryGroup?: CategoryGroup | CategoryGroup[];
+}
+
+interface ComponentDetails {
+  GastDesc?: XmlAttributes;
+  CategoryInfo?: CategoryInfo;
+}
+
+interface Component {
+  ComponentDetails?: ComponentDetails;
+}
+
+interface SetMenuDetails {
+  GastDesc?: XmlAttributes;
+  GastDescTranslation?: XmlAttributes;
+  AdditiveInfo?: AdditiveInfo;
+}
+
+interface SetMenu extends XmlAttributes {
+  SetMenuDetails?: SetMenuDetails;
+  Component?: Component | Component[];
+}
+
+interface EurestMenuLine extends XmlAttributes {
+  SetMenu?: SetMenu;
+}
+
+interface EurestWeekDay extends XmlAttributes {
+  MenuLine?: EurestMenuLine | EurestMenuLine[];
+}
+
+interface EurestWeeklyMenu {
+  WeekDays?: { WeekDay?: EurestWeekDay | EurestWeekDay[] };
+}
+
+interface WpMensaBlock {
+  wu_mensa_daily_menu?: WpMensaDailyMenu[];
+}
+
+interface WpMensaDailyMenu {
+  apiWeeklyMenu?: EurestWeeklyMenu;
+}
+
+interface WpPage {
+  acf?: {
+    webblocks?: WpMensaBlock[];
+  };
+}
+
+function toArray<T>(value: T | T[] | undefined): T[] {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
+function extractAllergens(setMenu: SetMenu): string | null {
+  const info = setMenu.SetMenuDetails?.AdditiveInfo;
+  if (!info) return null;
+
+  const groups = toArray(info.AdditiveGroup);
+  const allergenGroup = groups.find(
+    g => g['@attributes']?.name === 'Allergene' || g['@attributes']?.code === 'Allergen'
+  );
+  if (!allergenGroup) return null;
+
+  const additives = toArray(allergenGroup.Additive);
+  const codes = additives.map(a => a['@attributes']?.shortName).filter(Boolean);
+  return codes.length ? codes.join(',') : null;
+}
+
+function extractDietaryTags(setMenu: SetMenu): string[] {
+  const tags: string[] = [];
+
+  const components = toArray(setMenu.Component);
+  for (const component of components) {
+    const groups = toArray(component.ComponentDetails?.CategoryInfo?.CategoryGroup);
+    for (const group of groups) {
+      if (group['@attributes']?.name !== 'Kennzeichnung') continue;
+
+      const categories = toArray(group.Category);
+      for (const category of categories) {
+        const tagValue = category['@attributes']?.value ?? category['@attributes']?.name;
+        if (tagValue && !tags.includes(tagValue)) tags.push(tagValue);
+      }
+    }
+  }
+
+  return tags;
+}
+
+function normalizeCategoryName(lineName: string): string {
+  return lineName.replace(/\s*\d+$/, '').trim();
+}
+
+function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem } | null {
+  const lineName = menuLine['@attributes']?.Name ?? '';
+  const category = normalizeCategoryName(lineName);
+  if (!category) return null;
+
+  const setMenu = menuLine.SetMenu;
+  if (!setMenu) return null;
+
+  const price = setMenu['@attributes']?.SalesPrice;
+
+  return {
+    category,
+    item: {
+      title: setMenu['@attributes']?.DisplayName ?? '',
+      price: price && price !== '0.00' ? `${price} €` : null,
+      tags: extractDietaryTags(setMenu),
+      allergens: extractAllergens(setMenu),
+      description: setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? null,
+    },
+  };
+}
+
+async function fetchMenu(): Promise<WeekMenu> {
+  const res = await fetch(API_URL);
+  if (!res.ok) throw new Error(`Quartier Sechs API returned HTTP ${res.status}`);
+  const page: WpPage = await res.json();
+
+  const webblocks = page.acf?.webblocks ?? [];
+  const menuBlock = webblocks.find(b => b.wu_mensa_daily_menu);
+  if (!menuBlock) throw new Error('Menu block not found in webblocks');
+
+  const weeklyMenu = menuBlock.wu_mensa_daily_menu?.[0]?.apiWeeklyMenu;
+  if (!weeklyMenu) throw new Error('apiWeeklyMenu not found');
+
+  const result: WeekMenu = {};
+
+  for (const weekDay of toArray(weeklyMenu.WeekDays?.WeekDay)) {
+    const dayAttr = weekDay['@attributes']?.Day;
+    if (!dayAttr || !isWeekday(dayAttr)) continue;
+
+    const catMap = new Map<string, MenuItem[]>();
+
+    for (const menuLine of toArray(weekDay.MenuLine)) {
+      const parsed = parseMenuLine(menuLine);
+      if (!parsed) continue;
+
+      if (!catMap.has(parsed.category)) catMap.set(parsed.category, []);
+      catMap.get(parsed.category)!.push(parsed.item);
+    }
+
+    if (catMap.size > 0) {
+      result[dayAttr] = {
+        categories: Array.from(catMap, ([name, items]) => ({ name, items })),
+      };
+    }
+  }
+
+  return result;
+}
+
+const adapter: FullAdapter = {
+  id: 'quartiersechs',
+  title: '🏠 Quartier Sechs',
+  url: 'https://www.quartiersechs.at/',
+  type: 'full',
+  fetchMenu,
+};
+
+export default adapter;
