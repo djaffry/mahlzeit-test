@@ -102,6 +102,13 @@ body {
   color: var(--text-muted);
   font-weight: 400;
 }
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
 
 .day-tabs {
   display: flex;
@@ -451,6 +458,22 @@ body {
 [data-theme="latte"] .theme-icon-sun { display: none; }
 [data-theme="latte"] .theme-icon-moon { display: block; }
 
+/* Feedback link */
+.feedback-link {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+.feedback-link:hover { border-color: var(--accent); background: var(--surface-dim); }
+.feedback-link svg { width: 16px; height: 16px; color: var(--text-secondary); }
+
 /* Search trigger */
 .search-trigger {
   background: var(--surface);
@@ -663,7 +686,6 @@ body {
   .toolbar-title { font-size: 0.88rem; }
   .toolbar-subtitle { order: 2; width: 100%; text-align: center; }
   .day-tabs { order: 1; width: 100%; }
-  .freshness-badge { margin-left: auto; }
   .tab { flex: 1; text-align: center; padding: 0.35rem 0.75rem; font-size: 0.75rem; min-height: 36px; }
   .tab .tab-short { display: inline; }
   .tab .tab-full { display: none; }
@@ -675,13 +697,13 @@ body {
   .filters-label { display: none; }
   .link-card { font-size: 0.76rem; padding: 0.5rem 0.7rem; }
   .collapsed-chip { min-height: 36px; }
-  .theme-toggle, .search-trigger { width: 36px; height: 36px; }
+  .theme-toggle, .search-trigger, .feedback-link { width: 36px; height: 36px; }
 }
 
 /* Touch feedback */
 @media (hover: none) and (pointer: coarse) {
   .tab:active, .filter-btn:active, .collapsed-chip:active,
   .link-card:active, .weekend-browse-btn:active { transform: scale(0.96); }
-  .theme-toggle:active, .search-trigger:active, .freshness-badge:active { transform: scale(0.92); }
+  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active { transform: scale(0.92); }
   .restaurant-header:active { background: var(--surface-dim); }
 }

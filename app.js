@@ -428,14 +428,6 @@ function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
   }).join('');
 }
 
-function updateSubtitle(weekDates) {
-  const subtitleEl = document.querySelector('.toolbar-subtitle');
-  if (!subtitleEl) return;
-  const monStr = weekDates[0].toLocaleDateString('de-AT', { day: 'numeric', month: 'short' });
-  const friStr = weekDates[4].toLocaleDateString('de-AT', { day: 'numeric', month: 'short' });
-  subtitleEl.textContent = `Austria Campus · ${monStr} – ${friStr}`;
-}
-
 function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay) {
   const collapsedSet = loadCollapsed();
   contentEl.innerHTML = DAYS.map(d =>
@@ -598,7 +590,6 @@ function renderFreshness(fullRestaurants, footerEl) {
 
   const badge = document.getElementById('freshness-badge');
   badge.innerHTML = `${escapeHtml(diffHrs < 1 ? 'Aktuell' : relTime)}${SVG.reload}`;
-  badge.title = `Daten: ${relTime}, Klicken zum Neuladen`;
   badge.addEventListener('click', () => window.location.reload());
   if (level) badge.classList.add(level);
 
@@ -635,7 +626,6 @@ async function init() {
   const weekDates = getWeekDates();
 
   renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay);
-  updateSubtitle(weekDates);
 
   try {
     const { fullRestaurants, linkRestaurants } = await fetchMenuData();
