@@ -90,6 +90,16 @@ function extractAllergens(setMenu: SetMenu): string | null {
   return codes.length ? codes.join(',') : null;
 }
 
+const MEAT_FISH_TAGS = ['Schweinefleisch', 'Rindfleisch', 'Geflügel', 'Fisch', 'Lamm', 'Wild'];
+const PLANTBASED_DIET_TAGS = ['Vegan', 'Vegetarisch'];
+
+function removeContradictoryDietTags(tags: string[]): string[] {
+  if (tags.some(t => MEAT_FISH_TAGS.includes(t))) {
+    return tags.filter(t => !PLANTBASED_DIET_TAGS.includes(t));
+  }
+  return tags;
+}
+
 function extractDietaryTags(setMenu: SetMenu): string[] {
   const tags: string[] = [];
 
@@ -107,7 +117,7 @@ function extractDietaryTags(setMenu: SetMenu): string[] {
     }
   }
 
-  return tags;
+  return removeContradictoryDietTags(tags);
 }
 
 function normalizeCategoryName(lineName: string): string {

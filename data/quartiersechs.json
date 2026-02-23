@@ -3,7 +3,7 @@
   "title": "🏠 Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
-  "fetchedAt": "2026-02-23T21:20:30.739Z",
+  "fetchedAt": "2026-02-23T21:47:06.911Z",
   "error": null,
   "days": {
     "Montag": {
@@ -46,8 +46,7 @@
               "title": "Honigkrustenbraten •\nVeltlinerkraut •\nErdäpfelknödel",
               "price": null,
               "tags": [
-                "Schweinefleisch",
-                "Vegan"
+                "Schweinefleisch"
               ],
               "allergens": "A,C,G,O",
               "description": "Hauptspeise Traditionell"
@@ -321,7 +320,6 @@
               "title": "Bunter Blattsalat •\nGebackene Tintenfischringe im Backteig •\nHonig- Senfdressing",
               "price": null,
               "tags": [
-                "Vegan",
                 "Fisch"
               ],
               "allergens": "A,D,M,O,R",
