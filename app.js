@@ -204,7 +204,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
     body += `<div class="restaurant-body">${renderCategories(dayData.categories)}</div>`;
     body += '<div class="filter-empty">Keine passenden Gerichte</div>';
   } else if (!hasError) {
-    body += '<div class="no-data">Kein Menü für diesen Tag</div>';
+    body += '<div class="no-data">(Noch) kein Menü für diesen Tag</div>';
   }
 
   return `
