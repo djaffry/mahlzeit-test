@@ -3,7 +3,7 @@
   "title": "☕ Mano Café & Bistro",
   "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
   "type": "full",
-  "fetchedAt": "2026-02-22T09:02:47.007Z",
+  "fetchedAt": "2026-02-23T08:06:39.648Z",
   "error": null,
   "days": {
     "Montag": {
@@ -21,7 +21,7 @@
               "description": null
             },
             {
-              "title": "Getrüffelte-Erdäpfelcremesuppe",
+              "title": "Erbsen-Karottensuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -35,7 +35,7 @@
           "name": "Suppe-Mano",
           "items": [
             {
-              "title": "Getrüffelte-Erdäpfelcremesuppe",
+              "title": "Erbsen-Karottensuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -49,30 +49,30 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Hühnergyrosteller , Pommes ,Salat, Pitabrot",
+              "title": "Indische Hühnerkorma mit Pikantem Reis",
               "price": "11,90 €",
               "tags": [
                 "Fleisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": null,
               "description": null
             },
             {
-              "title": "Spanische Paella (Fisch,Garnelen,Tintenfisch,Muscheln)",
+              "title": "Fisch & Chips mit Sauce Tartare ,Zitronen",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "B,R,D",
+              "allergens": "A,C,G,D",
               "description": null
             },
             {
-              "title": "Ravioli Agnolotti Steinpilze in Käsesauce , Salat Vom Buffet",
+              "title": "Erdäpfelgulasch mit Rote Rüben Falafel  , Salat Vom Buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": null,
               "description": null
             }
           ]
@@ -81,7 +81,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Himbeermousse mit Schokobrownie",
+              "title": "Maracujaschnitte",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -97,7 +97,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Curry-Zucchinicremesuppe",
+              "title": "Kokos-Karfiolcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -120,7 +120,7 @@
           "name": "Suppe-Mano",
           "items": [
             {
-              "title": "Curry-Zucchinicremesuppe",
+              "title": "Kokos-Karfiolcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -134,7 +134,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Cremiges Kalbsrahmgulasch mit Eierspätzle ,Sauerrahm",
+              "title": "Pljeskavica mit Fetakäse auf Rosmarinerdäpfel ,Griechischer Salat",
               "price": "11,90 €",
               "tags": [
                 "Fleisch"
@@ -143,21 +143,21 @@
               "description": null
             },
             {
-              "title": "Kurzgebratenes Thunfischfiletsteak Teriyaki auf Gegrilltem Karfiol",
+              "title": "Garnelen-Kabeljaucurry mit Basil-Fried-Rice",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F",
+              "allergens": "D,F,B",
               "description": null
             },
             {
-              "title": "Indische Linsen Gemüse Dal ,Salat vom Buffet",
+              "title": "Käsespätzle mit Bergkäse ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -166,7 +166,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Faschingskrapfen",
+              "title": "Karotten-Limettenschnitte",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -182,7 +182,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Basilikumcremesuppe",
+              "title": "Tomaten-Mangocremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -219,7 +219,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Hühner Cordon Bleu auf Karotten-Rucola-Reis , Preiselbeeren",
+              "title": "Kürbis-Hühnerschnitzel auf Champignonreis , Preiselbeeren",
               "price": "11,90",
               "tags": [
                 "Fleisch"
@@ -228,21 +228,21 @@
               "description": null
             },
             {
-              "title": "Forellenfilet auf Süßkartoffelstampf , Mandel-Brokkoli",
+              "title": "Gegrilltes Zanderfilet auf Melansani-Joghurt-Minzesalat,Gemüsestrudel",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,G,H",
+              "allergens": "A,C,G,D",
               "description": null
             },
             {
-              "title": "Kürbis-Erdäpfel Laibchen mit Spiegelei   , Salat vom Buffet",
+              "title": "Spinat-Ricotta-Lasagne  , Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "C",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -251,7 +251,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Topfenstrudel",
+              "title": "Schokokrapfen mit Vanillecream",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -267,7 +267,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Champignoncremesuppe",
+              "title": "Orangen-Kürbiscremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -276,7 +276,7 @@
               "description": null
             },
             {
-              "title": "Rindsuppe mit Kaspressknödel",
+              "title": "Rindsuppe mit Karotten",
               "price": "3,90 €",
               "tags": [
                 "Fleisch"
@@ -290,7 +290,7 @@
           "name": "Suppe-Mano",
           "items": [
             {
-              "title": "Champignoncremesuppe",
+              "title": "Orangen-Kürbiscremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -304,16 +304,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Rosa Kalbssteak ,Erdäpfelgratin ,Speck-Fisolen",
+              "title": "Wienerische Faschierte Laibchen ,Buttererbsen ,Erdäpfelpüree",
               "price": "12,90 €",
               "tags": [
                 "Fleisch"
               ],
-              "allergens": "O,L,G",
+              "allergens": "A,C,G,O,L",
               "description": null
             },
             {
-              "title": "Lachsfiletsteak mit Spinat-Haube auf Grillgemüse",
+              "title": "Lachsfiletsteak mit Süßkartoffelkruste auf Limetten-Dillrisotto",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -322,7 +322,7 @@
               "description": null
             },
             {
-              "title": "Avocado-Edamamer Burger in Butterbrios     ,Salat vom Buffet",
+              "title": "Gefüllte Paprika in Tomatensauce ,Babyerdäpfel,     ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -336,7 +336,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Hausgemachte Krokantschnecke",
+              "title": "Hausgemachte Topfengolatsche",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -352,21 +352,21 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Seelachsfilet in Bierteig auf Pfannengemüse",
-              "price": "12,90 €",
+              "title": "Kalbsrahmgulasch mit Sauerrahm ,Hörnchennudeln",
+              "price": "11,90 €",
               "tags": [
-                "Fisch"
+                "Fleisch"
               ],
-              "allergens": "D,G,A,C",
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Gefüllte Paprika mit Tomatensauce  ,Salat Becher",
+              "title": "Gefüllte Tortilla mit Käse überbacken   ,Salat Becher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,G",
               "description": null
             }
           ]
