@@ -3,10 +3,10 @@
   "title": "🥄 SpoonFood",
   "url": "https://www.spoonfood.at/",
   "type": "full",
-  "fetchedAt": "2026-02-23T08:06:40.251Z",
+  "fetchedAt": "2026-02-23T10:09:32.739Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -36,52 +36,18 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Winterliche ❄️ Gemüse-Cremesuppe mit Thymian & Majoran 🌿",
+              "title": "Tahini-Fenchel 🌿-Suppe mit Kreuzkümmel 🤎",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Specials",
-          "items": [
-            {
-              "title": "Vollkorn-Hascheehörnchen (mit gemischtem Faschierten) mit Gemüse 🥕🥦 & frischer Petersilie 🌿 – optional mit Sauerrahm",
-              "price": "7,90 / 10,90",
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Baked Apple 🍎 & Almond Dream - Veganer Apfel 🍎-Mandel-Auflauf mit veganer Vanillesauce 💛",
-              "price": "7,90 / 10,90",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Eintöpfe",
-          "items": [
-            {
-              "title": "Dille 🌿-Rahmfisolen 🫛-Eintopf mit Debrezinern",
-              "price": "6,90 / 9,90",
-              "tags": [
+                "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Erdäpfel 🥔-Erdnuss 🥜-Kochbananen 🍌-Curry mit Süßkartoffeln 🍠 & Reis",
-              "price": "6,90 / 9,90",
+              "title": "Geröstete, rote ❤️ Paprika 🫑-Cremesuppe mit Thymian 🌿",
+              "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
@@ -92,13 +58,59 @@
           ]
         },
         {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Lasagne Bianca vom Kalb mit Sellerie, Karotten 🥕 & Rosmarin 🌿",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Geröstete Knödel mit Ei 🍳, frischem Schnittlauch 🌿 & kleinem Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Chicken Tikka Masala mit Brokkoli 🥦, Karotten 🥕, Pak Choi 🥬 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Fruchtiges Tomaten 🍅-Paprika 🫑-Ragout mit Kichererbsen & Reis – optional mit Schafskäse",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei",
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
           "name": "Salate",
           "items": [
             {
-              "title": "Griechische Salad Bowl mit Gurken 🥒, Tomaten 🍅, Oliven 🫒, Paprika 🫑 & Feta",
+              "title": "Glasnudel-Salad Bowl mit Wakame 🌿, gebratenem Pak Choi 🥬, Sesam, Erdnuss 🥜, Wokgemüse 🥦🥕 & Ponzu-Wasabi-Dressing",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
               "description": null
@@ -116,10 +128,11 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Eierlikör-Streuselkuchen 💛🧡💚",
+              "title": "Dunkles Mousse au Chocolat 🍫 mit Fleur de Sel 🧂 & Chili 🌶️",
               "price": "3,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
