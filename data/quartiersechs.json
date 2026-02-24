@@ -3,7 +3,7 @@
   "title": "🏠 Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
-  "fetchedAt": "2026-02-23T21:53:00.795Z",
+  "fetchedAt": "2026-02-24T08:51:51.743Z",
   "error": null,
   "days": {
     "Montag": {
@@ -157,7 +157,7 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare •\nPreiselbeeren",
+              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
               "price": null,
               "tags": [
                 "Geflügel"
@@ -222,16 +222,18 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Grießpudding •\nCranberries",
+              "title": "Grießpudding •\nCranberries\nButtermilch Panna Cotta • marinierte Orangen",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H,O",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Milch Schoko Schnitte",
+              "title": "Milch Schoko Schnitte\nPunschschnitte",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G,O",
               "description": "Kuchen und Torten"
             },
@@ -276,7 +278,7 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare •\nPreiselbeeren",
+              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
               "price": null,
               "tags": [
                 "Geflügel"
@@ -397,7 +399,7 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare •\nPreiselbeeren",
+              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
               "price": null,
               "tags": [
                 "Geflügel"
@@ -514,7 +516,7 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare •\nPreiselbeeren",
+              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
               "price": null,
               "tags": [
                 "Geflügel"
