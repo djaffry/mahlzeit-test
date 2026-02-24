@@ -2,8 +2,8 @@ name: Fetch Menus
 
 on:
   schedule:
-    - cron: '5 8 * * 1-5' # Mo-Fr 10:05 VIE summer / 09:05 VIE winter
-    - cron: '5 9 * * 1'   # Mo    11:05 VIE summer / 10:05 VIE winter (SpoonFood)
+    - cron: '30 8 * * 1-5' # Mo-Fr 10:05 VIE summer / 09:05 VIE winter
+    - cron: '30 9 * * 1-5'   # Mo    11:05 VIE summer / 10:05 VIE winter (SpoonFood)
   workflow_dispatch:
 
 permissions:
