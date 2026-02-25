@@ -2,8 +2,8 @@ name: Fetch Menus
 
 on:
   schedule:
-    - cron: '30 8 * * 1-5' # UTC
-    - cron: '30 9 * * 1-5' # UTC
+    - cron: '30 8 * * 1' # UTC
+    - cron: '40 9 * * 1-5' # UTC
   workflow_dispatch:
 
 permissions:
