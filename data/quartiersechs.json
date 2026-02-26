@@ -3,7 +3,7 @@
   "title": "🏠 Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
-  "fetchedAt": "2026-02-25T10:27:39.421Z",
+  "fetchedAt": "2026-02-26T10:28:14.402Z",
   "error": null,
   "days": {
     "Montag": {
@@ -78,7 +78,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "Salatecke"
             },
             {
@@ -162,7 +162,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,G,M",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "ALL TIME FAVOURITE"
             },
             {
@@ -283,7 +283,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,G,M",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "ALL TIME FAVOURITE"
             },
             {
@@ -324,7 +324,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,M,O,R",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "Salatecke"
             },
             {
@@ -404,7 +404,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,G,M",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "ALL TIME FAVOURITE"
             },
             {
@@ -464,17 +464,17 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Vegane Erdnusscreme",
+              "title": "Vegane Erdnusscreme \nRicotta - Limetten Mousse",
               "price": null,
               "tags": [],
-              "allergens": "E",
+              "allergens": "E,G,O",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Orangenmousse Schnitte",
+              "title": "Orangenmousse Schnitte\nVeganer Brombeerstreuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": "Kuchen und Torten"
             },
             {
@@ -521,7 +521,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,G,M",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "ALL TIME FAVOURITE"
             },
             {
