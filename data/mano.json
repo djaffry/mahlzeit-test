@@ -3,7 +3,7 @@
   "title": "☕ Mano Café & Bistro",
   "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
   "type": "full",
-  "fetchedAt": "2026-02-26T10:28:14.001Z",
+  "fetchedAt": "2026-02-27T10:09:15.360Z",
   "error": null,
   "days": {
     "Montag": {
@@ -305,7 +305,7 @@
           "items": [
             {
               "title": "Wienerische Faschierte Laibchen ,Buttererbsen ,Erdäpfelpüree",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Fleisch"
               ],
@@ -352,7 +352,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Kalbsrahmgulasch mit Sauerrahm ,Hörnchennudeln",
+              "title": "Kalbsrahmgulasch mit Sauerrahm ,Spätzle",
               "price": "11,90 €",
               "tags": [
                 "Fleisch"

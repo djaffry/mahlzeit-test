@@ -3,7 +3,7 @@
   "title": "🥄 SpoonFood",
   "url": "https://www.spoonfood.at/",
   "type": "full",
-  "fetchedAt": "2026-02-26T10:28:14.225Z",
+  "fetchedAt": "2026-02-27T10:09:16.988Z",
   "error": null,
   "days": {
     "Montag": {
@@ -506,6 +506,142 @@
             },
             {
               "title": "Beluga-Linsen-Gulasch mit Sellerie 🌿, Karotten 🥕, Pastinaken & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Zitrus 🍋-Orecchiette-Pasta-Salad Bowl mit Radicchio 💜, Orangen 🍊 & Fenchel 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Frische Schoko 🍫-Joghurt-Creme mit Kirsche 🍒",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Veganer Hafer-Milchreis mit Marillen 🍊-Fruchtspiegel",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Karotten 🥕-Linsen-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Gröstl mit Erdäpfeln 🥔, Speck 🥓, Bratwurst, Lauch 🌿 & Karotten 🥕",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warmer Toskanischer Reis 🍚-Auflauf mit Birnen 🍐 & Zwetschkenröster 💜",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Sweet Potatoe 🍠-Chili con Carne vom Rind mit Kidneybohnen 🫘, Mais 🌽 & Reis – optional mit Sauerrahm",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "High Protein 💪 Dreierlei Bohnen-Eintopf mit grünen 💚 & weißen 🤍 Brechbohnen, schwarzen 🖤 Bohnen, weißen 🤍 Bohnen, Erdäpfeln 🥔, Tofu & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",

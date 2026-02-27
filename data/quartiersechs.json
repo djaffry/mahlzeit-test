@@ -3,7 +3,7 @@
   "title": "🏠 Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
-  "fetchedAt": "2026-02-26T10:28:14.402Z",
+  "fetchedAt": "2026-02-27T10:09:15.966Z",
   "error": null,
   "days": {
     "Montag": {
@@ -581,19 +581,19 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Grüntee Mousse",
+              "title": "Grüntee Mousse\nVegane Erdnusscreme",
               "price": null,
               "tags": [],
-              "allergens": "A,G,O",
+              "allergens": "A,E,G,O",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Gedeckter Birnenkuchen",
+              "title": "Gedeckter Birnenkuchen\nOrangenmousse Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A",
+              "allergens": "A,C,F,G,O",
               "description": "Kuchen und Torten"
             },
             {
