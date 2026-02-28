@@ -6,6 +6,7 @@ const adapter: LinkAdapter = {
   url: 'https://www.baobar.at/',
   type: 'link',
   cuisine: ['Bao'],
+  edenred: true,
 };
 
 export default adapter;

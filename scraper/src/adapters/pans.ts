@@ -6,6 +6,7 @@ const adapter: LinkAdapter = {
   url: 'https://www.pans.at/tagesmenue/',
   type: 'link',
   cuisine: ['Bistro'],
+  edenred: true,
 };
 
 export default adapter;

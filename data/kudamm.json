@@ -4,9 +4,10 @@
   "url": "https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7",
   "type": "link",
   "cuisine": [
-    "Kebapstand mit Pizza"
+    "Kebap",
+    "Pizza"
   ],
-  "fetchedAt": "2026-02-28T21:39:21.131Z",
+  "fetchedAt": "2026-02-28T21:56:59.710Z",
   "error": null,
   "days": {}
 }

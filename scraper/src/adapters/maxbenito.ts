@@ -6,6 +6,8 @@ const adapter: LinkAdapter = {
   url: 'https://maxbenito.at/#food',
   type: 'link',
   cuisine: ['Burritos'],
+  stampCard: true,
+  edenred: true,
 };
 
 export default adapter;

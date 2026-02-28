@@ -190,6 +190,7 @@ const adapter: FullAdapter = {
   url: 'https://www.quartiersechs.at/',
   type: 'full',
   cuisine: ['Kantine'],
+  edenred: true,
   fetchMenu,
 };
 

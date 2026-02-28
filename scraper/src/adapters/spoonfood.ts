@@ -134,6 +134,7 @@ const adapter: FullAdapter = {
   url: 'https://www.spoonfood.at/',
   type: 'full',
   cuisine: ['Bowls', 'Eintöpfe'],
+  edenred: true,
   fetchMenu,
 };
 

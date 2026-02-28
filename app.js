@@ -214,7 +214,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${(restaurant.cuisine || []).map(c => `<span class="cuisine-tag">${escapeHtml(c)}</span>`).join('')}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
           ${restaurant.url ? `<a class="restaurant-link" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${SVG.link}</a>` : ''}
           ${SVG.collapse}
@@ -232,8 +232,10 @@ function renderLinkCard(restaurant, day) {
   const schedule = !available && restaurant.availableDays
     ? `<span class="link-card-schedule">nur ${restaurant.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
     : '';
-  const cuisine = (restaurant.cuisine || []).map(c => `<span class="cuisine-tag">${escapeHtml(c)}</span>`).join('');
-  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${cuisine}${schedule}${SVG.link}</a>`;
+  const cuisine = restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : '';
+  const stamp = restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : '';
+  const edenred = restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : '';
+  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${cuisine}${stamp}${edenred}${schedule}${SVG.link}</a>`;
 }
 
 function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {

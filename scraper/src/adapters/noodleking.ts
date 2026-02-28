@@ -6,6 +6,8 @@ const adapter: LinkAdapter = {
   url: 'https://www.noodleking.at/',
   type: 'link',
   cuisine: ['Asiatisch', 'Nudeln'],
+  stampCard: true,
+  edenred: true,
 };
 
 export default adapter;

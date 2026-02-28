@@ -6,6 +6,8 @@ const adapter: LinkAdapter = {
   url: 'https://umi-12.jimdosite.com/umi-nordbahn-1020/',
   type: 'link',
   cuisine: ['Asia Bowls'],
+  stampCard: true,
+  edenred: true,
 };
 
 export default adapter;

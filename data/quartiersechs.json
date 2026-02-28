@@ -6,7 +6,8 @@
   "cuisine": [
     "Kantine"
   ],
-  "fetchedAt": "2026-02-28T21:39:21.129Z",
+  "edenred": true,
+  "fetchedAt": "2026-02-28T21:56:59.708Z",
   "error": null,
   "days": {
     "Montag": {

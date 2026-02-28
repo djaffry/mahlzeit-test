@@ -6,7 +6,9 @@
   "cuisine": [
     "Burritos"
   ],
-  "fetchedAt": "2026-02-28T21:39:21.131Z",
+  "stampCard": true,
+  "edenred": true,
+  "fetchedAt": "2026-02-28T21:56:59.711Z",
   "error": null,
   "days": {}
 }

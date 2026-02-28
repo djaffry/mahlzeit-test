@@ -255,8 +255,28 @@ body {
   font-weight: 600;
   padding: 0.08rem 0.4rem;
   border-radius: var(--radius-pill);
-  background: var(--surface-dim);
-  color: var(--text-muted);
+  background: var(--border-light);
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.stamp-card-badge {
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 0.08rem 0.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--teal-dim);
+  color: var(--teal);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.edenred-badge {
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 0.08rem 0.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--red-dim);
+  color: var(--red);
   letter-spacing: 0.03em;
   white-space: nowrap;
 }

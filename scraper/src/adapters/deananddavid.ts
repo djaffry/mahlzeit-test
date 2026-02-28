@@ -6,6 +6,7 @@ const adapter: LinkAdapter = {
   url: 'https://deananddavid.com/austria-campus-wien/',
   type: 'link',
   cuisine: ['Salate', 'Bowls'],
+  edenred: true,
 };
 
 export default adapter;

@@ -5,7 +5,7 @@ const adapter: LinkAdapter = {
   title: '🥙 Ku\'damm',
   url: 'https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7',
   type: 'link',
-  cuisine: ['Kebapstand mit Pizza'],
+  cuisine: ['Kebap', 'Pizza'],
 };
 
 export default adapter;

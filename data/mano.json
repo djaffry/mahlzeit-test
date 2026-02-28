@@ -7,7 +7,8 @@
     "Café",
     "Bistro"
   ],
-  "fetchedAt": "2026-02-28T21:39:20.857Z",
+  "edenred": true,
+  "fetchedAt": "2026-02-28T21:56:59.506Z",
   "error": null,
   "days": {
     "Montag": {
