@@ -29,6 +29,7 @@ interface BaseAdapter {
   id: string;
   title: string;
   url: string;
+  availableDays?: Weekday[];
 }
 
 export interface FullAdapter extends BaseAdapter {
@@ -47,6 +48,7 @@ export interface RestaurantData {
   title: string;
   url: string;
   type: Adapter['type'];
+  availableDays?: Weekday[];
   fetchedAt: string;
   error: string | null;
   days: WeekMenu;

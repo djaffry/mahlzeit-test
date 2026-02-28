@@ -437,6 +437,28 @@ body {
   transition: color 0.15s;
 }
 .link-card:hover svg { color: var(--accent); }
+.link-card.link-card-muted {
+  background: transparent;
+  border: 1.5px dashed var(--border);
+  box-shadow: none;
+  color: var(--text-muted);
+}
+.link-card.link-card-muted:hover {
+  border-color: var(--text-muted);
+  color: var(--text-secondary);
+  box-shadow: none;
+}
+.link-card.link-card-muted svg { color: var(--border); }
+.link-card-schedule {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--mauve-dim);
+  color: var(--mauve);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
 
 /* Theme toggle */
 .theme-toggle {

@@ -27,6 +27,10 @@ const _tagColorCache = {};
 
 const FRESHNESS_THRESHOLDS = { stale: 24, veryStale: 48 };
 
+function isAvailableOnDay(restaurant, day) {
+  return !restaurant.availableDays || restaurant.availableDays.includes(day);
+}
+
 let activeFilters = new Set();
 let _menuData = null;
 
@@ -222,8 +226,13 @@ function renderRestaurant(restaurant, day, collapsedSet) {
     </div>`;
 }
 
-function renderLinkCard(restaurant) {
-  return `<a class="link-card" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${SVG.link}</a>`;
+function renderLinkCard(restaurant, day) {
+  const available = isAvailableOnDay(restaurant, day);
+  const cls = available ? 'link-card' : 'link-card link-card-muted';
+  const schedule = !available && restaurant.availableDays
+    ? `<span class="link-card-schedule">nur ${restaurant.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
+    : '';
+  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${schedule}${SVG.link}</a>`;
 }
 
 function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {
@@ -232,7 +241,7 @@ function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {
   if (linkRestaurants.length > 0) {
     html += `<div class="link-section">
       <div class="link-section-title">Weitere Restaurants</div>
-      <div class="link-grid">${linkRestaurants.map(renderLinkCard).join('')}</div>
+      <div class="link-grid">${linkRestaurants.map(r => renderLinkCard(r, day)).join('')}</div>
     </div>`;
   }
   return html;
@@ -262,6 +271,7 @@ function performSearch(query) {
   const groups = [];
 
   for (const r of restaurants) {
+    if (!isAvailableOnDay(r, day)) continue;
     const dayData = r.days[day];
     if (!dayData?.categories) continue;
     const matches = [];
