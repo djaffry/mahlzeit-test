@@ -3,7 +3,11 @@
   "title": "🥄 SpoonFood",
   "url": "https://www.spoonfood.at/",
   "type": "full",
-  "fetchedAt": "2026-02-28T20:33:31.232Z",
+  "cuisine": [
+    "Bowls",
+    "Eintöpfe"
+  ],
+  "fetchedAt": "2026-02-28T21:39:20.703Z",
   "error": null,
   "days": {
     "Montag": {

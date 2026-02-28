@@ -5,6 +5,7 @@ const adapter: LinkAdapter = {
   title: '🍜 Noodle King',
   url: 'https://www.noodleking.at/',
   type: 'link',
+  cuisine: ['Asiatisch', 'Nudeln'],
 };
 
 export default adapter;

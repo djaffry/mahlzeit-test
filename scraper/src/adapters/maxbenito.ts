@@ -5,6 +5,7 @@ const adapter: LinkAdapter = {
   title: '🌮 Max & Benito',
   url: 'https://maxbenito.at/#food',
   type: 'link',
+  cuisine: ['Burritos'],
 };
 
 export default adapter;

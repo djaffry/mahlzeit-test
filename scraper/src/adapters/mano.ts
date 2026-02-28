@@ -129,6 +129,7 @@ const adapter: FullAdapter = {
   title: '☕ Mano Café & Bistro',
   url: 'https://www.kissthecook.at/mano-cafe-und-bistro',
   type: 'full',
+  cuisine: ['Café', 'Bistro'],
   fetchMenu,
 };
 

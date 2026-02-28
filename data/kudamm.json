@@ -1,9 +1,12 @@
 {
   "id": "kudamm",
-  "title": "🥙 Ku'damm Kebap und Pizza",
+  "title": "🥙 Ku'damm",
   "url": "https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7",
   "type": "link",
-  "fetchedAt": "2026-02-28T20:33:31.713Z",
+  "cuisine": [
+    "Kebapstand mit Pizza"
+  ],
+  "fetchedAt": "2026-02-28T21:39:21.131Z",
   "error": null,
   "days": {}
 }

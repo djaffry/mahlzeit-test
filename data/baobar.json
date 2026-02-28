@@ -3,7 +3,10 @@
   "title": "🥟 Bao Bar",
   "url": "https://www.baobar.at/",
   "type": "link",
-  "fetchedAt": "2026-02-28T20:33:31.712Z",
+  "cuisine": [
+    "Bao"
+  ],
+  "fetchedAt": "2026-02-28T21:39:21.131Z",
   "error": null,
   "days": {}
 }

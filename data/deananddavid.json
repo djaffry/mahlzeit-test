@@ -3,7 +3,11 @@
   "title": "🥗 Dean & David",
   "url": "https://deananddavid.com/austria-campus-wien/",
   "type": "link",
-  "fetchedAt": "2026-02-28T20:33:31.712Z",
+  "cuisine": [
+    "Salate",
+    "Bowls"
+  ],
+  "fetchedAt": "2026-02-28T21:39:21.131Z",
   "error": null,
   "days": {}
 }

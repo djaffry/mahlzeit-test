@@ -77,6 +77,7 @@ const adapter: FullAdapter = {
   title: '🚂 OEBB Bahnbistro',
   url: 'https://bahnbistro.digiattack.net',
   type: 'full',
+  cuisine: ['Kantine'],
   fetchMenu,
 };
 

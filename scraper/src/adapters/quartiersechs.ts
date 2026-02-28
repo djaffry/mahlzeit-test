@@ -189,6 +189,7 @@ const adapter: FullAdapter = {
   title: '🏠 Quartier Sechs',
   url: 'https://www.quartiersechs.at/',
   type: 'full',
+  cuisine: ['Kantine'],
   fetchMenu,
 };
 

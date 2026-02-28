@@ -3,7 +3,11 @@
   "title": "☕ Mano Café & Bistro",
   "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
   "type": "full",
-  "fetchedAt": "2026-02-28T20:33:31.453Z",
+  "cuisine": [
+    "Café",
+    "Bistro"
+  ],
+  "fetchedAt": "2026-02-28T21:39:20.857Z",
   "error": null,
   "days": {
     "Montag": {

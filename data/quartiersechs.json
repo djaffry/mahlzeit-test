@@ -3,7 +3,10 @@
   "title": "🏠 Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
-  "fetchedAt": "2026-02-28T20:33:31.710Z",
+  "cuisine": [
+    "Kantine"
+  ],
+  "fetchedAt": "2026-02-28T21:39:21.129Z",
   "error": null,
   "days": {
     "Montag": {

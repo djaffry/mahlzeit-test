@@ -5,6 +5,7 @@ const adapter: LinkAdapter = {
   title: '🍕 Remo',
   url: 'https://remopizza.at/#Speisekarte',
   type: 'link',
+  cuisine: ['Neapolitanische Pizza'],
 };
 
 export default adapter;

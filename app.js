@@ -214,7 +214,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${(restaurant.cuisine || []).map(c => `<span class="cuisine-tag">${escapeHtml(c)}</span>`).join('')}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
           ${restaurant.url ? `<a class="restaurant-link" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${SVG.link}</a>` : ''}
           ${SVG.collapse}
@@ -232,7 +232,8 @@ function renderLinkCard(restaurant, day) {
   const schedule = !available && restaurant.availableDays
     ? `<span class="link-card-schedule">nur ${restaurant.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
     : '';
-  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${schedule}${SVG.link}</a>`;
+  const cuisine = (restaurant.cuisine || []).map(c => `<span class="cuisine-tag">${escapeHtml(c)}</span>`).join('');
+  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${cuisine}${schedule}${SVG.link}</a>`;
 }
 
 function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {

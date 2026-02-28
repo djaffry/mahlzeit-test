@@ -3,7 +3,10 @@
   "title": "🍣 Umi",
   "url": "https://umi-12.jimdosite.com/umi-nordbahn-1020/",
   "type": "link",
-  "fetchedAt": "2026-02-28T20:33:31.713Z",
+  "cuisine": [
+    "Asia Bowls"
+  ],
+  "fetchedAt": "2026-02-28T21:39:21.131Z",
   "error": null,
   "days": {}
 }

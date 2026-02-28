@@ -5,6 +5,7 @@ const adapter: LinkAdapter = {
   title: '🥟 Bao Bar',
   url: 'https://www.baobar.at/',
   type: 'link',
+  cuisine: ['Bao'],
 };
 
 export default adapter;

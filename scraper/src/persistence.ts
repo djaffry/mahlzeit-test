@@ -44,6 +44,7 @@ export function buildRestaurantData(adapter: Adapter, days: WeekMenu, error: str
     url: adapter.url,
     type: adapter.type,
     ...(adapter.availableDays && { availableDays: adapter.availableDays }),
+    ...(adapter.cuisine && { cuisine: adapter.cuisine }),
     fetchedAt: new Date().toISOString(),
     error,
     days,

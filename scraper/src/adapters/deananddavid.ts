@@ -5,6 +5,7 @@ const adapter: LinkAdapter = {
   title: '🥗 Dean & David',
   url: 'https://deananddavid.com/austria-campus-wien/',
   type: 'link',
+  cuisine: ['Salate', 'Bowls'],
 };
 
 export default adapter;
