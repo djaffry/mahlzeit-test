@@ -13,7 +13,7 @@
     "lon": 16.3926
   },
   "mapUrl": "https://maps.app.goo.gl/vdRCP7oZRrAjeVyb7",
-  "fetchedAt": "2026-03-02T19:14:09.593Z",
+  "fetchedAt": "2026-03-02T19:28:27.633Z",
   "error": null,
   "days": {
     "Montag": {
@@ -335,7 +335,7 @@
               "title": "Geröstete Knödel mit Eier  ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
-                "Vegetarische"
+                "Vegetarisch"
               ],
               "allergens": "A,C,G",
               "description": null

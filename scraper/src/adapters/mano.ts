@@ -7,6 +7,11 @@ const API_URL = `${BASE_URL}/_api/cloud-data/v2/items/query?.r=ewogICJkYXRhQ29sb
 
 const CATEGORY_ORDER = ['Suppe', 'Suppe-Mano', 'Hauptspeise', 'Buffet', 'Bowls', 'Dessert'];
 
+const TAG_MAP: Record<string, string> = {
+  'Vegetarische': 'Vegetarisch',
+  'Vegane': 'Vegan',
+};
+
 interface WixAccessTokens {
   svSession: string;
   hs: number;
@@ -86,7 +91,8 @@ function buildDayMenu(dayItems: WixItemData[]): DayMenu {
     const category = item.kategorie ?? 'Sonstiges';
     if (!catMap.has(category)) catMap.set(category, []);
 
-    const tag = (item.arraystring ?? '').trim();
+    const rawTag = (item.arraystring ?? '').trim();
+    const tag = TAG_MAP[rawTag] ?? rawTag;
 
     catMap.get(category)!.push({
       title: (item.title ?? '').trim(),
