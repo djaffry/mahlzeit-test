@@ -225,7 +225,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservation ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
           ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
           ${SVG.collapse}
@@ -250,7 +250,7 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${!available ? ' link-muted' : ''}${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservation ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
           ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
           ${SVG.collapse}

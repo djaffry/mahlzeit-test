@@ -276,6 +276,16 @@ body {
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
+.reservation-badge {
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 0.08rem 0.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--yellow-dim);
+  color: var(--yellow);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
 .restaurant-collapse-icon {
   width: 14px;
   height: 14px;
