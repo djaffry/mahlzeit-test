@@ -1,4 +1,4 @@
-const CACHE_NAME = 'menu-v3';
+const CACHE_NAME = 'menu-v4';
 
 self.addEventListener('install', () => {
   self.skipWaiting();
@@ -14,6 +14,7 @@ self.addEventListener('activate', event => {
 // Network-first for everything, cache is only offline fallback
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  if (!event.request.url.startsWith(self.location.origin)) return;
 
   event.respondWith(
     fetch(event.request, { cache: 'no-cache' })

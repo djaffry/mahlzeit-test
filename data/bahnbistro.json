@@ -6,7 +6,12 @@
   "cuisine": [
     "Kantine"
   ],
-  "fetchedAt": "2026-03-02T10:27:09.031Z",
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "mapUrl": "https://maps.app.goo.gl/KGhWssEY2zJs7oF4A",
+  "fetchedAt": "2026-03-02T19:14:09.236Z",
   "error": null,
   "days": {
     "Montag": {

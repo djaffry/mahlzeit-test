@@ -33,6 +33,8 @@ interface BaseAdapter {
   cuisine?: string[];
   stampCard?: boolean;
   edenred?: boolean;
+  coordinates?: { lat: number; lon: number };
+  mapUrl?: string;
 }
 
 export interface FullAdapter extends BaseAdapter {
@@ -55,6 +57,8 @@ export interface RestaurantData {
   cuisine?: string[];
   stampCard?: boolean;
   edenred?: boolean;
+  coordinates?: { lat: number; lon: number };
+  mapUrl?: string;
   fetchedAt: string;
   error: string | null;
   days: WeekMenu;

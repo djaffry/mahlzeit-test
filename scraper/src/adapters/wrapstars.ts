@@ -7,6 +7,8 @@ const adapter: LinkAdapter = {
   type: 'link',
   cuisine: ['Wraps', 'Food Truck'],
   availableDays: ['Donnerstag'],
+  coordinates: { lat: 48.2240, lon: 16.3976 },
+  mapUrl: 'https://maps.app.goo.gl/s9atxX4kikQDHibA6',
 };
 
 export default adapter;

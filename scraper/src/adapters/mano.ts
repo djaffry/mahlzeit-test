@@ -131,6 +131,8 @@ const adapter: FullAdapter = {
   type: 'full',
   cuisine: ['Café', 'Bistro'],
   edenred: true,
+  coordinates: { lat: 48.2211, lon: 16.3926 },
+  mapUrl: 'https://maps.app.goo.gl/vdRCP7oZRrAjeVyb7',
   fetchMenu,
 };
 

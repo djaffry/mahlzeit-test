@@ -3,10 +3,9 @@ const DAY_SHORT = { Montag: 'Mo', Dienstag: 'Di', Mittwoch: 'Mi', Donnerstag: 'D
 const DAY_JS_MAP = { 1: 'Montag', 2: 'Dienstag', 3: 'Mittwoch', 4: 'Donnerstag', 5: 'Freitag' };
 
 const SVG = {
-  link: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3H3v10h10v-3M9 1h6v6M9 7L15 1"/></svg>',
-  collapse: '<svg class="restaurant-collapse-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10"/></svg>',
-  expand: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg>',
+  collapse: '<svg class="restaurant-collapse-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>',
   reload: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1v5h5"/><path d="M2.5 10A6 6 0 1 0 4 4.5L1 6"/></svg>',
+  mapPin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
 };
 
 const TAG_COLORS = {
@@ -211,43 +210,54 @@ function renderRestaurant(restaurant, day, collapsedSet) {
     body += '<div class="no-data">(Noch) kein Menü für diesen Tag</div>';
   }
 
+  const websiteLink = restaurant.url
+    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">mehr Infos auf der Website &rarr;</a>`
+    : '';
+
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
-          ${restaurant.url ? `<a class="restaurant-link" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${SVG.link}</a>` : ''}
+          ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
           ${SVG.collapse}
         </div>
       </div>
       <div class="restaurant-content"><div class="restaurant-content-inner">
         ${body}
+        ${websiteLink ? `<div class="link-body">${websiteLink}</div>` : ''}
       </div></div>
     </div>`;
 }
 
-function renderLinkCard(restaurant, day) {
+function renderLinkRestaurant(restaurant, day, collapsedSet) {
   const available = isAvailableOnDay(restaurant, day);
-  const cls = available ? 'link-card' : 'link-card link-card-muted';
   const schedule = !available && restaurant.availableDays
-    ? `<span class="link-card-schedule">nur ${restaurant.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
+    ? `<span class="link-schedule">nur ${restaurant.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
     : '';
-  const cuisine = restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : '';
-  const stamp = restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : '';
-  const edenred = restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : '';
-  return `<a class="${cls}" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${escapeHtml(restaurant.title)}${cuisine}${stamp}${edenred}${schedule}${SVG.link}</a>`;
+  const websiteLink = restaurant.url
+    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">Speisekarte auf der Website &rarr;</a>`
+    : '';
+
+  return `
+    <div class="restaurant-card${!available ? ' link-muted' : ''}${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
+      <div class="restaurant-header">
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}</div>
+        <div style="display:flex;align-items:center;gap:0.4rem">
+          ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
+          ${SVG.collapse}
+        </div>
+      </div>
+      <div class="restaurant-content"><div class="restaurant-content-inner">
+        <div class="link-body">${schedule}${websiteLink}</div>
+      </div></div>
+    </div>`;
 }
 
 function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {
-  let html = `<div class="restaurant-grid">${fullRestaurants.map(r => renderRestaurant(r, day, collapsedSet)).join('')}</div>`;
-  html += '<div class="collapsed-section"></div>';
-  if (linkRestaurants.length > 0) {
-    html += `<div class="link-section">
-      <div class="link-section-title">Weitere Restaurants</div>
-      <div class="link-grid">${linkRestaurants.map(r => renderLinkCard(r, day)).join('')}</div>
-    </div>`;
-  }
-  return html;
+  const cards = fullRestaurants.map(r => renderRestaurant(r, day, collapsedSet)).join('')
+    + linkRestaurants.map(r => renderLinkRestaurant(r, day, collapsedSet)).join('');
+  return `<div class="restaurant-grid">${cards}</div>`;
 }
 
 function openSearch() {
@@ -350,66 +360,20 @@ function applyFilters() {
   });
 }
 
-function updateCollapsedBar() {
-  document.querySelectorAll('.day-panel').forEach(panel => {
-    const section = panel.querySelector('.collapsed-section');
-    if (!section) return;
-    const collapsed = panel.querySelectorAll('.restaurant-card.collapsed');
-    if (collapsed.length === 0) {
-      section.innerHTML = '';
-      return;
-    }
-    const chips = [...collapsed].map(card => {
-      const id = card.dataset.restaurant;
-      const name = card.querySelector('.restaurant-name')?.textContent ?? id;
-      return `<button class="collapsed-chip" data-restaurant="${escapeHtml(id)}">${escapeHtml(name)}${SVG.expand}</button>`;
-    }).join('');
-    section.innerHTML = `<div class="collapsed-section-title">Eingeklappt</div><div class="collapsed-list">${chips}</div>`;
-  });
-}
-
-function balanceGrid(panel) {
-  if (!panel) panel = document.querySelector('.day-panel.active');
-  if (!panel) return;
-  const grid = panel.querySelector('.restaurant-grid');
-  if (!grid) return;
-
-  const allCards = [...grid.querySelectorAll('.restaurant-card')];
-  if (allCards.length === 0) return;
-
-  const visible = allCards.filter(c => !c.classList.contains('collapsed'));
-  const collapsed = allCards.filter(c => c.classList.contains('collapsed'));
-
-  const measured = visible.map(c => ({ card: c, height: c.offsetHeight }));
-
-  allCards.forEach(c => c.remove());
-  grid.querySelectorAll('.restaurant-column').forEach(c => c.remove());
-
-  const gridWidth = grid.offsetWidth;
-  const minColWidth = 340;
-  const maxCols = Math.max(1, Math.floor(gridWidth / minColWidth));
-  const numCols = Math.min(maxCols, visible.length) || 1;
-  const cols = Array.from({ length: numCols }, () => {
-    const col = document.createElement('div');
-    col.className = 'restaurant-column';
-    return col;
-  });
-  const colHeights = new Array(numCols).fill(0);
-
-  for (const { card, height } of measured) {
-    const idx = colHeights.indexOf(Math.min(...colHeights));
-    cols[idx].appendChild(card);
-    colHeights[idx] += height;
+function moveMapCard() {
+  const mapCard = document.getElementById('map-card');
+  if (!mapCard) return;
+  const activeGrid = document.querySelector('.day-panel.active .restaurant-grid');
+  if (!activeGrid) return;
+  if (mapCard.parentElement !== activeGrid) {
+    activeGrid.insertBefore(mapCard, activeGrid.firstChild);
   }
-
-  collapsed.forEach(c => cols[0].appendChild(c));
-  cols.forEach(col => grid.appendChild(col));
+  if (_inlineMap) setTimeout(() => _inlineMap.invalidateSize(), 50);
 }
 
-function refreshPanel(panel) {
+function refreshPanel() {
   applyFilters();
-  updateCollapsedBar();
-  balanceGrid(panel);
+  moveMapCard();
 }
 
 async function fetchMenuData() {
@@ -443,7 +407,7 @@ function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
 
 function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay) {
   const collapsedSet = loadCollapsed();
-  contentEl.innerHTML = DAYS.map(d =>
+  contentEl.innerHTML = renderMapCard() + DAYS.map(d =>
     `<div class="day-panel${d === activeDay ? ' active' : ''}" data-panel="${d}">${renderDay(fullRestaurants, linkRestaurants, d, collapsedSet)}</div>`
   ).join('');
 }
@@ -516,32 +480,26 @@ function setupFilterListeners(filtersEl) {
 
 function setupCollapseExpand(contentEl) {
   contentEl.addEventListener('click', e => {
-    const chip = e.target.closest('.collapsed-chip');
-    if (chip) {
-      const id = chip.dataset.restaurant;
-      contentEl.querySelectorAll(`.restaurant-card[data-restaurant="${id}"]`).forEach(c => {
-        c.classList.remove('collapsed');
-        c.classList.add('expanding');
-        c.addEventListener('animationend', () => c.classList.remove('expanding'), { once: true });
-      });
-      saveCollapsed();
-      updateCollapsedBar();
-      balanceGrid();
-      return;
-    }
-
-    const header = e.target.closest('.restaurant-header');
-    if (!header) return;
-    if (e.target.closest('.restaurant-link')) return;
-    const card = header.closest('.restaurant-card');
-    if (!card) return;
+    if (!e.target.closest('.restaurant-collapse-icon')) return;
+    const card = e.target.closest('.restaurant-card');
+    if (!card || card.classList.contains('map-card')) return;
     const id = card.dataset.restaurant;
+    const shouldCollapse = !card.classList.contains('collapsed');
     contentEl.querySelectorAll(`.restaurant-card[data-restaurant="${id}"]`).forEach(c =>
-      c.classList.add('collapsed')
+      c.classList.toggle('collapsed', shouldCollapse)
     );
     saveCollapsed();
-    updateCollapsedBar();
-    balanceGrid();
+  });
+
+  contentEl.addEventListener('click', e => {
+    const nameEl = e.target.closest('.restaurant-name');
+    if (nameEl) {
+      const card = nameEl.closest('.restaurant-card');
+      if (card && !card.classList.contains('map-card')) {
+        focusOnMap(card.dataset.restaurant);
+        return;
+      }
+    }
   });
 }
 
@@ -574,17 +532,6 @@ function setupSwipeNavigation(contentEl, tabsEl) {
     if (nextIdx < 0 || nextIdx >= DAYS.length) return;
     tabsEl.querySelector(`.tab[data-day="${DAYS[nextIdx]}"]`)?.click();
   }, { passive: true });
-}
-
-function setupResizeHandler() {
-  let resizeTimer;
-  let lastWidth = window.innerWidth;
-  window.addEventListener('resize', () => {
-    if (window.innerWidth === lastWidth) return;
-    lastWidth = window.innerWidth;
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => balanceGrid(), 200);
-  });
 }
 
 function renderFreshness(fullRestaurants, footerEl) {
@@ -628,6 +575,206 @@ function setupThemeToggle() {
   });
 }
 
+let _leafletMap = null;
+let _inlineMap = null;
+let _inlineMarkers = {};
+
+function renderMapCard() {
+  const collapsed = localStorage.getItem('map-collapsed') === 'true';
+  return `
+    <div class="restaurant-card map-card${collapsed ? ' map-collapsed' : ''}" id="map-card">
+      <div class="restaurant-header">
+        <div class="restaurant-name">Karte</div>
+        <div style="display:flex;align-items:center;gap:0.3rem">
+          <button class="map-card-btn" id="map-fullscreen" aria-label="Vollbild"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
+          <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+      <div class="restaurant-content"><div class="restaurant-content-inner">
+        <div id="inline-map"></div>
+      </div></div>
+    </div>`;
+}
+
+function buildMapPopup(r, showLink) {
+  let html = `<strong>${escapeHtml(r.title)}</strong>`;
+  if (r.cuisine?.length) {
+    html += `<br><span style="font-size:0.75rem;opacity:0.8">${r.cuisine.map(c => escapeHtml(c)).join(' \u00b7 ')}</span>`;
+  }
+  if (r.availableDays) {
+    html += `<br><span style="font-size:0.7rem;font-weight:600;color:var(--mauve)">nur ${r.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`;
+  }
+  const badges = [];
+  if (r.edenred) badges.push('<span style="color:var(--red)">Edenred</span>');
+  if (r.stampCard) badges.push('<span style="color:var(--teal)">Stempelkarte</span>');
+  if (badges.length) {
+    html += `<br><span style="font-size:0.68rem;font-weight:600">${badges.join(' \u00b7 ')}</span>`;
+  }
+  if (showLink && r.mapUrl) {
+    html += `<br><a href="${escapeHtml(r.mapUrl)}" target="_blank" rel="noopener" style="font-size:0.75rem">Google Maps</a>`;
+  }
+  return html;
+}
+
+function initInlineMap() {
+  if (_inlineMap) { _inlineMap.invalidateSize(); return; }
+  const container = document.getElementById('inline-map');
+  if (!container) return;
+
+  _inlineMap = L.map('inline-map', { zoomControl: false, attributionControl: false }).setView([48.2225, 16.3945], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(_inlineMap);
+
+  const allRestaurants = [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+  for (const r of allRestaurants) {
+    if (!r.coordinates) continue;
+    const emoji = r.title.match(/^\p{Emoji_Presentation}/u)?.[0] ?? '\u{1F4CD}';
+    const icon = L.divIcon({
+      className: 'map-marker',
+      html: `<span class="map-marker-emoji">${emoji}</span>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 18],
+      popupAnchor: [0, -20],
+    });
+    const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_inlineMap);
+    marker.bindPopup(buildMapPopup(r, false), { closeButton: false, className: 'map-popup' });
+    marker.on('click', () => scrollToRestaurant(r.id));
+    _inlineMarkers[r.id] = marker;
+  }
+}
+
+function scrollToRestaurant(id) {
+  const activePanel = document.querySelector('.day-panel.active');
+  if (!activePanel) return;
+  const card = activePanel.querySelector(`.restaurant-card[data-restaurant="${id}"]`);
+  if (!card) return;
+
+  if (card.classList.contains('collapsed')) {
+    card.classList.remove('collapsed');
+    saveCollapsed();
+  }
+
+  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  card.classList.add('map-highlight');
+  setTimeout(() => card.classList.remove('map-highlight'), 1500);
+}
+
+function focusOnMap(id) {
+  const allRestaurants = [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+  const r = allRestaurants.find(r => r.id === id);
+  if (!r?.coordinates) return false;
+
+  const mapCard = document.getElementById('map-card');
+  if (!mapCard) return false;
+
+  // Expand map if collapsed
+  if (mapCard.classList.contains('map-collapsed')) {
+    toggleMapCard();
+  }
+
+  mapCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  const fly = () => {
+    if (!_inlineMap) return;
+    _inlineMap.flyTo([r.coordinates.lat, r.coordinates.lon], 17, { duration: 0.8 });
+    if (_inlineMarkers[id]) _inlineMarkers[id].openPopup();
+  };
+
+  // Delay to let scroll + possible map init finish
+  setTimeout(fly, _inlineMap ? 300 : 500);
+  return true;
+}
+
+function toggleMapCard() {
+  const card = document.getElementById('map-card');
+  if (!card) return;
+  const isCollapsed = card.classList.toggle('map-collapsed');
+  localStorage.setItem('map-collapsed', isCollapsed);
+  if (!isCollapsed) {
+    if (!_inlineMap) {
+      setTimeout(() => initInlineMap(), 50);
+    } else {
+      setTimeout(() => _inlineMap.invalidateSize(), 300);
+    }
+  }
+}
+
+function openMap() {
+  const overlay = document.getElementById('map-overlay');
+  overlay.hidden = false;
+  document.body.style.overflow = 'hidden';
+  const mapCard = document.getElementById('map-card');
+  if (mapCard) mapCard.style.visibility = 'hidden';
+
+  if (!_leafletMap) {
+    _leafletMap = L.map('map-container', {
+      zoomControl: false,
+    }).setView([48.2225, 16.3945], 16);
+
+    L.control.zoom({ position: 'bottomright' }).addTo(_leafletMap);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19,
+    }).addTo(_leafletMap);
+
+    const allRestaurants = [
+      ...(_menuData?.fullRestaurants ?? []),
+      ...(_menuData?.linkRestaurants ?? []),
+    ];
+
+    for (const r of allRestaurants) {
+      if (!r.coordinates) continue;
+      const emoji = r.title.match(/^\p{Emoji_Presentation}/u)?.[0] ?? '📍';
+      const icon = L.divIcon({
+        className: 'map-marker',
+        html: `<span class="map-marker-emoji">${emoji}</span>`,
+        iconSize: [36, 36],
+        iconAnchor: [18, 18],
+        popupAnchor: [0, -20],
+      });
+      const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_leafletMap);
+      marker.bindPopup(buildMapPopup(r, true), {
+        closeButton: false,
+        className: 'map-popup',
+      });
+    }
+  }
+
+  setTimeout(() => {
+    _leafletMap.invalidateSize();
+  }, 100);
+}
+
+function closeMap() {
+  document.getElementById('map-overlay').hidden = true;
+  document.body.style.overflow = '';
+  const mapCard = document.getElementById('map-card');
+  if (mapCard) mapCard.style.visibility = '';
+}
+
+function setupMapListeners() {
+  // Inline map card header toggles collapse (except fullscreen button)
+  const mapCard = document.getElementById('map-card');
+  if (mapCard) {
+    mapCard.querySelector('.restaurant-header').addEventListener('click', e => {
+      if (e.target.closest('#map-fullscreen')) return;
+      toggleMapCard();
+    });
+    document.getElementById('map-fullscreen').addEventListener('click', openMap);
+  }
+
+  // Fullscreen overlay close
+  document.getElementById('map-close').addEventListener('click', closeMap);
+  document.getElementById('map-overlay').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeMap();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('map-overlay').hidden) {
+      closeMap();
+    }
+  });
+}
+
 async function init() {
   const tabsEl = document.getElementById('day-tabs');
   const contentEl = document.getElementById('content');
@@ -653,12 +800,16 @@ async function init() {
 
     if (isWeekend) renderWeekendState(contentEl, tabsEl);
 
+    if (localStorage.getItem('map-collapsed') !== 'true') {
+      initInlineMap();
+    }
+
     setupTabSwitching(tabsEl, contentEl);
     setupFilterListeners(filtersEl);
     setupCollapseExpand(contentEl);
     setupSearchListeners();
+    setupMapListeners();
     setupSwipeNavigation(contentEl, tabsEl);
-    setupResizeHandler();
     renderFreshness(fullRestaurants, footerEl);
   } catch (err) {
     contentEl.innerHTML = `<div class="error-global">Fehler beim Laden: ${escapeHtml(err.message)}</div>`;

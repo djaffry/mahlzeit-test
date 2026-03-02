@@ -135,6 +135,8 @@ const adapter: FullAdapter = {
   type: 'full',
   cuisine: ['Bowls', 'Eintöpfe'],
   edenred: true,
+  coordinates: { lat: 48.2217, lon: 16.3932 },
+  mapUrl: 'https://maps.app.goo.gl/orhEiJs54jbTGCRq5',
   fetchMenu,
 };
 

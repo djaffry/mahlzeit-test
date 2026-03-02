@@ -191,6 +191,8 @@ const adapter: FullAdapter = {
   type: 'full',
   cuisine: ['Kantine'],
   edenred: true,
+  coordinates: { lat: 48.2218, lon: 16.3935 },
+  mapUrl: 'https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6',
   fetchMenu,
 };
 

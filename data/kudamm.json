@@ -7,7 +7,12 @@
     "Kebap",
     "Pizza"
   ],
-  "fetchedAt": "2026-03-02T10:27:09.913Z",
+  "coordinates": {
+    "lat": 48.2187,
+    "lon": 16.3925
+  },
+  "mapUrl": "https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7",
+  "fetchedAt": "2026-03-02T19:14:09.749Z",
   "error": null,
   "days": {}
 }

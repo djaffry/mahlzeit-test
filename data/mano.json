@@ -8,7 +8,12 @@
     "Bistro"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T10:27:09.265Z",
+  "coordinates": {
+    "lat": 48.2211,
+    "lon": 16.3926
+  },
+  "mapUrl": "https://maps.app.goo.gl/vdRCP7oZRrAjeVyb7",
+  "fetchedAt": "2026-03-02T19:14:09.593Z",
   "error": null,
   "days": {
     "Montag": {

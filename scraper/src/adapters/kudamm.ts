@@ -6,6 +6,8 @@ const adapter: LinkAdapter = {
   url: 'https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7',
   type: 'link',
   cuisine: ['Kebap', 'Pizza'],
+  coordinates: { lat: 48.2187, lon: 16.3925 },
+  mapUrl: 'https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7',
 };
 
 export default adapter;

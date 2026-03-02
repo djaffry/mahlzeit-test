@@ -8,7 +8,12 @@
     "Sushi"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T10:27:09.912Z",
+  "coordinates": {
+    "lat": 48.2216,
+    "lon": 16.3929
+  },
+  "mapUrl": "https://maps.app.goo.gl/njgCV1zgp1pATvzq7",
+  "fetchedAt": "2026-03-02T19:14:09.749Z",
   "error": null,
   "days": {}
 }

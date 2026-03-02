@@ -78,6 +78,8 @@ const adapter: FullAdapter = {
   url: 'https://bahnbistro.digiattack.net',
   type: 'full',
   cuisine: ['Kantine'],
+  coordinates: { lat: 48.2215, lon: 16.3952 },
+  mapUrl: 'https://maps.app.goo.gl/KGhWssEY2zJs7oF4A',
   fetchMenu,
 };
 

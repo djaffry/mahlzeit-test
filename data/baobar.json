@@ -1,13 +1,18 @@
 {
   "id": "baobar",
   "title": "🥟 Bao Bar",
-  "url": "https://www.baobar.at/",
+  "url": "https://www.baobar.at/_files/ugd/8a87dd_361fdb5fd7d74061b65ace8e3ec58e8b.pdf",
   "type": "link",
   "cuisine": [
     "Bao"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T10:27:09.911Z",
+  "coordinates": {
+    "lat": 48.2224,
+    "lon": 16.3924
+  },
+  "mapUrl": "https://maps.app.goo.gl/3J2QoEyrwR6JSysR6",
+  "fetchedAt": "2026-03-02T19:14:09.749Z",
   "error": null,
   "days": {}
 }

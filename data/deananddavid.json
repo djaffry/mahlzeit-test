@@ -8,7 +8,12 @@
     "Bowls"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T10:27:09.911Z",
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "mapUrl": "https://maps.app.goo.gl/MydpeHB6cr2QEAR89",
+  "fetchedAt": "2026-03-02T19:14:09.749Z",
   "error": null,
   "days": {}
 }

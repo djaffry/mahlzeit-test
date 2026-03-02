@@ -208,16 +208,8 @@ body {
 }
 
 .restaurant-grid {
-  display: flex;
-  gap: 0.6rem;
-  align-items: flex-start;
-}
-.restaurant-column {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  columns: 340px;
+  column-gap: 0.6rem;
 }
 
 /* Restaurant card */
@@ -227,10 +219,13 @@ body {
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: box-shadow 0.2s ease;
+  break-inside: avoid;
+  margin-bottom: 0.6rem;
 }
 .restaurant-card:hover { box-shadow: var(--shadow-md); }
-.restaurant-card.collapsed { display: none; }
-.restaurant-card.expanding { animation: fadeIn 0.25s ease; }
+.restaurant-card.collapsed .restaurant-content { grid-template-rows: 0fr; }
+.restaurant-card.collapsed .restaurant-header { border-bottom-color: transparent; }
+.restaurant-card.collapsed .restaurant-collapse-icon { transform: rotate(-90deg); }
 
 .restaurant-header {
   padding: 0.75rem 1rem;
@@ -238,8 +233,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-  user-select: none;
 }
 .restaurant-name {
   font-size: 0.88rem;
@@ -249,7 +242,10 @@ body {
   align-items: center;
   gap: 0.35rem;
   flex-wrap: wrap;
+  cursor: pointer;
+  transition: color 0.15s;
 }
+.restaurant-name:hover { color: var(--accent); }
 .cuisine-tag {
   font-size: 0.58rem;
   font-weight: 600;
@@ -286,32 +282,16 @@ body {
   transition: color 0.15s;
 }
 .restaurant-name a:hover { color: var(--accent); }
-.restaurant-link {
-  color: var(--accent);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-sm);
-  opacity: 0;
-  transition: opacity 0.15s, background 0.15s;
-}
-.restaurant-link:hover { background: var(--surface-dim); }
-.restaurant-card:hover .restaurant-link { opacity: 1; }
-.restaurant-link svg { width: 14px; height: 14px; }
-
 .restaurant-collapse-icon {
   width: 14px;
   height: 14px;
   color: var(--text-muted);
   flex-shrink: 0;
   margin-left: 0.5rem;
-  opacity: 0;
-  transition: opacity 0.15s ease;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.3s ease;
 }
-.restaurant-card:hover .restaurant-collapse-icon { opacity: 1; }
+.restaurant-collapse-icon:hover { color: var(--accent); }
 .restaurant-content {
   display: grid;
   grid-template-rows: 1fr;
@@ -419,80 +399,35 @@ body {
 .footer-stale { color: var(--yellow); }
 .footer-very-stale { color: var(--red); }
 
-/* Link-only restaurants section */
-.link-section {
-  margin-top: 1.2rem;
+/* Link-only restaurant cards */
+.restaurant-card.link-muted {
+  opacity: 0.6;
 }
-.link-section-title {
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
+.restaurant-card.link-muted:hover { opacity: 1; }
+.link-body {
+  padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-.link-section-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-.link-grid {
-  display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
 }
-.link-card {
-  background: var(--surface);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-sm);
-  padding: 0.5rem 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.82rem;
+.link-schedule {
+  font-size: 0.68rem;
   font-weight: 600;
-  transition: all 0.15s ease;
-}
-.link-card:hover {
-  box-shadow: var(--shadow-md);
-  color: var(--accent);
-}
-.link-card svg {
-  width: 12px;
-  height: 12px;
-  color: var(--text-muted);
-  flex-shrink: 0;
-  transition: color 0.15s;
-}
-.link-card:hover svg { color: var(--accent); }
-.link-card.link-card-muted {
-  background: transparent;
-  border: 1.5px dashed var(--border);
-  box-shadow: none;
-  color: var(--text-muted);
-}
-.link-card.link-card-muted:hover {
-  border-color: var(--text-muted);
-  color: var(--text-secondary);
-  box-shadow: none;
-}
-.link-card.link-card-muted svg { color: var(--border); }
-.link-card-schedule {
-  font-size: 0.6rem;
-  font-weight: 600;
-  padding: 0.1rem 0.4rem;
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-pill);
   background: var(--mauve-dim);
   color: var(--mauve);
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
+.link-cta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.link-cta:hover { color: var(--accent); }
 
 /* Theme toggle */
 .theme-toggle {
@@ -642,50 +577,6 @@ body {
 }
 .search-result-meta { font-size: 0.72rem; color: var(--text-secondary); display: flex; gap: 0.25rem; flex-wrap: wrap; align-items: center; line-height: 1.4; }
 
-/* Collapsed restaurant chips */
-.collapsed-section:empty { display: none; }
-.collapsed-section { margin-top: 0.8rem; }
-.collapsed-section-title {
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  margin-bottom: 0.4rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.collapsed-section-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-.collapsed-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-.collapsed-chip {
-  font-family: inherit;
-  font-size: 0.78rem;
-  font-weight: 600;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 0.4rem 0.7rem;
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: all 0.15s ease;
-  animation: fadeIn 0.25s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-.collapsed-chip:hover { border-color: var(--accent); color: var(--text); }
-.collapsed-chip svg { width: 10px; height: 10px; flex-shrink: 0; }
-
 /* Weekend empty state */
 .weekend-state {
   text-align: center;
@@ -735,6 +626,149 @@ body {
 .freshness-badge.very-stale { background: var(--red-dim); color: var(--red); }
 .freshness-badge svg { width: 10px; height: 10px; flex-shrink: 0; }
 
+/* Map pin link on restaurant cards */
+.map-pin-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+.map-pin-link:hover { background: var(--surface-dim); color: var(--accent); }
+.map-pin-link svg { width: 14px; height: 14px; }
+
+/* Map overlay */
+.map-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  animation: mapFadeIn 0.25s ease;
+}
+.map-overlay[hidden] { display: none; }
+
+@keyframes mapFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface-dim);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  z-index: 10;
+}
+.map-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.map-close {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.map-close:hover { border-color: var(--accent); background: var(--surface-dim); }
+.map-close svg { width: 16px; height: 16px; color: var(--text-secondary); }
+
+.map-container {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Leaflet marker & popup overrides */
+.map-marker {
+  background: none !important;
+  border: none !important;
+}
+.map-marker-emoji {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+.map-marker-emoji:hover {
+  transform: scale(1.2);
+}
+
+.map-popup .leaflet-popup-content-wrapper {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.map-popup .leaflet-popup-content {
+  margin: 0.6rem 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.map-popup .leaflet-popup-content a {
+  color: var(--accent);
+}
+.map-popup .leaflet-popup-tip {
+  background: var(--surface);
+}
+
+/* Inline map card (reuses .restaurant-card + .restaurant-header) */
+.map-card { isolation: isolate; }
+.map-card.map-collapsed .restaurant-content { grid-template-rows: 0fr; }
+.map-card.map-collapsed .restaurant-header { border-bottom-color: transparent; }
+.map-card-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.map-card-btn:hover { background: var(--surface-dim); color: var(--accent); }
+.map-card-btn svg { width: 14px; height: 14px; }
+.map-card-chevron {
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.map-card.map-collapsed .map-card-chevron { transform: rotate(-90deg); }
+#inline-map { height: 400px; }
+
+/* Map highlight on restaurant card */
+.restaurant-card.map-highlight {
+  box-shadow: 0 0 0 2px var(--accent), var(--shadow-md) !important;
+  transition: box-shadow 0.3s ease;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .toolbar-inner { padding: 0.6rem 0.75rem; gap: 0.4rem; }
@@ -746,20 +780,16 @@ body {
   .tab .tab-short { display: inline; }
   .tab .tab-full { display: none; }
   .content { padding: 0.5rem 0.5rem 2.5rem; }
-  .restaurant-link { opacity: 1; }
-  .restaurant-collapse-icon { opacity: 0.4; }
   .filters { gap: 0.25rem; }
   .filter-btn { font-size: 0.62rem; padding: 0.25rem 0.55rem; min-height: 30px; }
   .filters-label { display: none; }
-  .link-card { font-size: 0.76rem; padding: 0.5rem 0.7rem; }
-  .collapsed-chip { min-height: 36px; }
   .theme-toggle, .search-trigger, .feedback-link { width: 36px; height: 36px; }
+  #inline-map { height: 300px; }
 }
 
 /* Touch feedback */
 @media (hover: none) and (pointer: coarse) {
-  .tab:active, .filter-btn:active, .collapsed-chip:active,
-  .link-card:active, .weekend-browse-btn:active { transform: scale(0.96); }
+  .tab:active, .filter-btn:active,
+  .weekend-browse-btn:active { transform: scale(0.96); }
   .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active { transform: scale(0.92); }
-  .restaurant-header:active { background: var(--surface-dim); }
 }

@@ -3,11 +3,13 @@ import type { LinkAdapter } from '../types.js';
 const adapter: LinkAdapter = {
   id: 'noodleking',
   title: '🍜 Noodle King',
-  url: 'https://www.noodleking.at/',
+  url: 'https://www.noodleking.at/menus',
   type: 'link',
   cuisine: ['Asiatisch', 'Nudeln'],
   stampCard: true,
   edenred: true,
+  coordinates: { lat: 48.2262, lon: 16.3929 },
+  mapUrl: 'https://maps.app.goo.gl/54bD5sEcN9nDDQPy9',
 };
 
 export default adapter;

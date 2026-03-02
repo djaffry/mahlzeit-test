@@ -4,11 +4,16 @@
   "url": "https://umi-12.jimdosite.com/umi-nordbahn-1020/",
   "type": "link",
   "cuisine": [
-    "Asia Bowls"
+    "Poke Bowls"
   ],
   "stampCard": true,
   "edenred": true,
-  "fetchedAt": "2026-03-02T10:27:09.916Z",
+  "coordinates": {
+    "lat": 48.2245,
+    "lon": 16.3935
+  },
+  "mapUrl": "https://maps.app.goo.gl/nYSyaiDxoQSeEHdu6",
+  "fetchedAt": "2026-03-02T19:14:09.750Z",
   "error": null,
   "days": {}
 }
