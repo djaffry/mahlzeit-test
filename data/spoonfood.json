@@ -8,7 +8,7 @@
     "Eintöpfe"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T09:09:03.599Z",
+  "fetchedAt": "2026-03-02T10:06:59.465Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -139,6 +139,140 @@
               "tags": [
                 "Vegan",
                 "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Montag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Fisolen 🫛-Suppe mit Kokosmilch 🥥 & frischer Petersilie 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Röstkarfiol 🤍-Harissa-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Kaspressknödel auf warmem Sauerkraut 🥬 mit Speck 🥓 & frischer Petersilie 🌿",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Tortelloni - mit 4-Käse 🧀-Füllung - in Tomatensauce 🍅 mit Parmesan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Aromatische Hühner-Tajine mit Orangen 🍊, Trockenfrüchten, Süßkartoffeln 🍠, Zucchini 🥒, Melanzani 🍆, Paprika 🫑 & Reis - optional mit Mandeln",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Cremiger Pastinaken-Topinambur 🫚-Eintopf mit Kichererbsen, Erdäpfeln 🥔, frischer Zitrone 🍋, Thymian 🌿 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bulgur-Tabouleh mit Blutorangen 🍊, Tomaten 🍅, Gurken 🥒, Granatapfelkernen 🍎, 8-Kräuter 🌿-Mischung & frischem Zitronensaft 🍋",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Tiramisu 🤎",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null

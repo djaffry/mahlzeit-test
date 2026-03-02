@@ -7,7 +7,7 @@
     "Kantine"
   ],
   "edenred": true,
-  "fetchedAt": "2026-03-02T09:09:03.614Z",
+  "fetchedAt": "2026-03-02T10:06:59.480Z",
   "error": null,
   "days": {
     "Montag": {
@@ -205,7 +205,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
+              "allergens": "G,L,M,O",
               "description": "Salatecke"
             },
             {
