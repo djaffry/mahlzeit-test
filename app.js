@@ -524,12 +524,14 @@ function setupSearchListeners() {
 }
 
 function setupSwipeNavigation(contentEl, tabsEl) {
-  let touchStartX = 0, touchStartY = 0;
+  let touchStartX = 0, touchStartY = 0, touchIgnored = false;
   contentEl.addEventListener('touchstart', e => {
+    touchIgnored = e.touches.length > 1 || !!e.target.closest('.map-card, .map-overlay');
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
   }, { passive: true });
   contentEl.addEventListener('touchend', e => {
+    if (touchIgnored) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
     const dy = e.changedTouches[0].clientY - touchStartY;
     if (Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx)) return;
