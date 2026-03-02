@@ -7,7 +7,7 @@
     "Kantine"
   ],
   "edenred": true,
-  "fetchedAt": "2026-02-28T21:56:59.708Z",
+  "fetchedAt": "2026-03-02T09:09:03.614Z",
   "error": null,
   "days": {
     "Montag": {
@@ -16,20 +16,23 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit\nReibteig • Grießnockerl • Kaspressknödel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
               "price": null,
               "tags": [
+                "Geflügel",
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "A,C,F,G,L",
               "description": "Tagessuppe klar"
             },
             {
-              "title": "Fenchel - Apfelcremesuppe",
+              "title": "Erdäpfel-Safransuppe\nGrünkern",
               "price": null,
-              "tags": [],
-              "allergens": "L",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,L",
               "description": "Tagessuppe vegan"
             }
           ]
@@ -47,26 +50,26 @@
               "description": "ALL TIME FAVOURITE"
             },
             {
-              "title": "Honigkrustenbraten •\nVeltlinerkraut •\nErdäpfelknödel",
+              "title": "Fiakergulasch mit\nGurkerl • Ei • Würstel •\nSalzerdäpfeln",
               "price": null,
               "tags": [
-                "Schweinefleisch"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,G,O",
+              "allergens": "C,M,O",
               "description": "Hauptspeise Traditionell"
             },
             {
-              "title": "Trüffel Risotto •\ngebratene Birne • Rüben Chips",
+              "title": "Kleine Kürbisknödel • \nPaprikakraut • \ngeröstete Kürbiskerne",
               "price": null,
               "tags": [],
-              "allergens": "L",
+              "allergens": "A,C,G",
               "description": "Hauptspeise Vegetarisch/Vegan"
             },
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle • Kürbis Gnocchi • Dinkel Linguini •\nextra-vergine Olivenöl mit Kräutern • Krensauce • Pistazien Pesto •\nBabyspinat • Zucchini • Cherrytomaten • Grana",
+              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,L,O",
+              "allergens": "C,G",
               "description": "Pasta Station"
             },
             {
@@ -77,12 +80,10 @@
               "description": null
             },
             {
-              "title": "Bunter Blattsalat •\nKarfiol-Leinsamen Laibchen • \nHonig Kefir Dressing",
+              "title": "Süßkartoffel - Chimichuri Wrap • Naturreis • Radicchio •\nMexikanischer Salat",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
+              "tags": [],
+              "allergens": "A,C,G,M",
               "description": "Salatecke"
             },
             {
@@ -105,19 +106,17 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Buttermilch Panna Cotta •\nmarinierte Orangen\nBrombeer Mousse",
+              "title": "Vegane Panna Cotta •\nMangospiegel",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,H,O",
+              "allergens": null,
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Punschschnitte vegan\nTopfen - Obersschnitte",
+              "title": "Haselnuss - Orangenschnitte",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G,O",
+              "tags": [],
+              "allergens": "A,C,G,H,O",
               "description": "Kuchen und Torten"
             },
             {
@@ -137,22 +136,21 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit\nReibteig • Grießnockerl • Kaspressknödel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
               "price": null,
               "tags": [
+                "Geflügel",
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "A,C,F,G,L",
               "description": "Tagessuppe klar"
             },
             {
-              "title": "Vegane Broccolicremesuppe •\ngeröstete Cashewkerne",
+              "title": "Kräuterseitlingcremesuppe • \nFinnenbrot Croutons",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "H,L",
+              "tags": [],
+              "allergens": "A,F,L,N",
               "description": "Tagessuppe vegan"
             }
           ]
@@ -161,35 +159,37 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
+              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "G,L,O",
+              "description": "ALL TIME FAVOURITE"
+            },
+            {
+              "title": "Gebackenes Hühnerschnitzel • \nCornflakes - Panade •\nPetersilienerdäpfel",
               "price": null,
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
-              "description": "ALL TIME FAVOURITE"
-            },
-            {
-              "title": "Gratiniertes Puten - Naturschnitzel •\nTomate • Mozzarella • Basilikum •\nRosmarin Erdäpfel",
-              "price": null,
-              "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,G",
               "description": "Hauptspeise Traditionell"
             },
             {
-              "title": "Wiener Krautfleckerl •\nKnoblauch Dip",
+              "title": "Zucchini- Süßkartoffel Laibchen • \ncremiges Kohlrabigemüse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A",
               "description": "Hauptspeise Vegetarisch/Vegan"
             },
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle • Kürbis Gnocchi • Dinkel Linguini •\nextra-vergine Olivenöl mit Kräutern • Krensauce • Pistazien Pesto •\nBabyspinat • Zucchini • Cherrytomaten • Grana",
+              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,L,O",
+              "allergens": "C,G",
               "description": "Pasta Station"
             },
             {
@@ -200,10 +200,12 @@
               "description": null
             },
             {
-              "title": "\"Chicken Caesars Wrap\" • \nItalienischer Salat",
+              "title": "Bunter Blattsalatteller •\nlauwarmer Ziegenkäse mit Honig & Kräutern •\nCitrus Dressing",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,D,G,M,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": "Salatecke"
             },
             {
@@ -226,19 +228,19 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Grießpudding •\nCranberries\nButtermilch Panna Cotta • marinierte Orangen",
-              "price": null,
-              "tags": [],
-              "allergens": "A,G,H,O",
-              "description": "Creme oder Mousse"
-            },
-            {
-              "title": "Milch Schoko Schnitte\nPunschschnitte",
+              "title": "Kokos - Marillen - Reisdessert",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,O",
+              "allergens": null,
+              "description": "Creme oder Mousse"
+            },
+            {
+              "title": "Schwarzwälder Kirsch Schnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
               "description": "Kuchen und Torten"
             },
             {
@@ -258,21 +260,20 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit\nReibteig • Grießnockerl • Kaspressknödel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
               "price": null,
               "tags": [
+                "Geflügel",
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "A,C,F,G,L",
               "description": "Tagessuppe klar"
             },
             {
-              "title": "Petersilwurzel - Kren Suppe •\nSprossen",
+              "title": "Paradeiser - Mango Suppe • \nKokoschips",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": "L,O",
               "description": "Tagessuppe vegan"
             }
@@ -282,37 +283,35 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
-              "price": null,
-              "tags": [
-                "Geflügel"
-              ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
-              "description": "ALL TIME FAVOURITE"
-            },
-            {
-              "title": "Schweinsragout \"Marengo\" •\nButterspätzle",
+              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
               "price": null,
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "G,L,O",
+              "description": "ALL TIME FAVOURITE"
+            },
+            {
+              "title": "Tiroler Gröst'l •\nSpiegelei",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
               "description": "Hauptspeise Traditionell"
             },
             {
-              "title": "Brotauflauf •\nWaldpilzsauce",
+              "title": "Überbackene Gemüse Cannelloni • \nTomaten-Zucchinisauce",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,G,L,O",
+              "tags": [],
+              "allergens": "A,G",
               "description": "Hauptspeise Vegetarisch/Vegan"
             },
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle • Kürbis Gnocchi • Dinkel Linguini •\nextra-vergine Olivenöl mit Kräutern • Krensauce • Pistazien Pesto •\nBabyspinat • Zucchini • Cherrytomaten • Grana",
+              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,L,O",
+              "allergens": "C,G",
               "description": "Pasta Station"
             },
             {
@@ -323,12 +322,12 @@
               "description": null
             },
             {
-              "title": "Bunter Blattsalat •\nGebackene Tintenfischringe im Backteig •\nHonig- Senfdressing",
+              "title": "Toskanischer Brotsalat \"Panzanella\" •\nCherrytomaten • rote Zwiebel • Basilikum •\ngebratene Putenstreifen",
               "price": null,
               "tags": [
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
+              "allergens": "A,G,O",
               "description": "Salatecke"
             },
             {
@@ -351,17 +350,19 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Ricotta - Limettenmousse\nGrießpudding • Cranberries",
+              "title": "Cappuccino Mousse",
               "price": null,
               "tags": [],
-              "allergens": "A,G,H,O",
+              "allergens": "C,F,G",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Veganer Brombeerstreuselkuchen\nMilch Schoko Schnitte",
+              "title": "Cremige Vegane Matcha Schnitte",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A",
               "description": "Kuchen und Torten"
             },
             {
@@ -381,20 +382,23 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit\nReibteig • Grießnockerl • Kaspressknödel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
               "price": null,
               "tags": [
+                "Geflügel",
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "A,C,F,G,L",
               "description": "Tagessuppe klar"
             },
             {
-              "title": "Kohlrabicremesuppe",
+              "title": "Minestrone",
               "price": null,
-              "tags": [],
-              "allergens": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,L",
               "description": "Tagessuppe vegan"
             }
           ]
@@ -403,35 +407,35 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
-              "price": null,
-              "tags": [
-                "Geflügel"
-              ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
-              "description": "ALL TIME FAVOURITE"
-            },
-            {
-              "title": "Faschierter Braten vom Rind •\nErdäpfelpüree • Marktgemüse",
+              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
               "price": null,
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,C,G,M,O",
+              "allergens": "G,L,O",
+              "description": "ALL TIME FAVOURITE"
+            },
+            {
+              "title": "Saltimbocca vom Huhn mit Prosciutto und Salbei •\nCremige Polenta •\ngegrilltes Gemüse",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "C,G",
               "description": "Hauptspeise Traditionell"
             },
             {
-              "title": "Gemüselasagne •\nTomatensauce",
+              "title": "Faschierter Braten auf vegane Art • \nErdäpfelpüree •\nRöstzwiebel",
               "price": null,
               "tags": [],
-              "allergens": "A,L",
+              "allergens": "A,F,H,L,M,O",
               "description": "Hauptspeise Vegetarisch/Vegan"
             },
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle • Kürbis Gnocchi • Dinkel Linguini •\nextra-vergine Olivenöl mit Kräutern • Krensauce • Pistazien Pesto •\nBabyspinat • Zucchini • Cherrytomaten • Grana",
+              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,L,O",
+              "allergens": "C,G",
               "description": "Pasta Station"
             },
             {
@@ -442,10 +446,10 @@
               "description": null
             },
             {
-              "title": "Salatteller • gebratene Putenstreifen •\nKürbiskerne",
+              "title": "Puy Linsensalat •\nTrauben • Chili • Minze • \ngegrillter Halloumi •\nGranatapfel •\nWalnuss Dressing",
               "price": null,
               "tags": [],
-              "allergens": "M,O",
+              "allergens": "G,H",
               "description": "Salatecke"
             },
             {
@@ -468,17 +472,19 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Vegane Erdnusscreme \nRicotta - Limetten Mousse",
+              "title": "Grießpudding •\nHimbeeren",
               "price": null,
-              "tags": [],
-              "allergens": "E,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Orangenmousse Schnitte\nVeganer Brombeerstreuselkuchen",
+              "title": "Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,F,G",
               "description": "Kuchen und Torten"
             },
             {
@@ -498,20 +504,23 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit\nReibteig • Grießnockerl • Kaspressknödel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
               "price": null,
               "tags": [
+                "Geflügel",
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,L",
+              "allergens": "A,C,F,G,L",
               "description": "Tagessuppe klar"
             },
             {
-              "title": "Fisolencremesuppe • \nfrische Dille • Finnenbrot Croutons",
+              "title": "Quinoa - Porree Suppe",
               "price": null,
-              "tags": [],
-              "allergens": "A,F,L,N",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L",
               "description": "Tagessuppe vegan"
             }
           ]
@@ -520,35 +529,37 @@
           "name": "Hauptgericht",
           "items": [
             {
-              "title": "Ausgelöstes Wiener Backhenderl •\nButterreis •\nErdäpfel-Vogerlsalat •\nSauce Tartare • Preiselbeeren",
+              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Rindfleisch"
               ],
-              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
+              "allergens": "G,L,O",
               "description": "ALL TIME FAVOURITE"
             },
             {
-              "title": "Milchrahmstrudel •\nVanillesauce",
+              "title": "Gebackenes Schollenfilet •\nPetersilienerdäpfel •\nSauce Tartare",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,H",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M,O",
               "description": "Hauptspeise Traditionell"
             },
             {
-              "title": "Geschmorter Fenchel •\nPeperonata •\nQuinoa",
+              "title": "Planted \"Züricher Geschnetzeltes\" •\nRösterdäpfel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,L,O",
               "description": "Hauptspeise Vegetarisch/Vegan"
             },
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle • Kürbis Gnocchi • Dinkel Linguini •\nextra-vergine Olivenöl mit Kräutern • Krensauce • Pistazien Pesto •\nBabyspinat • Zucchini • Cherrytomaten • Grana",
+              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,L,O",
+              "allergens": "C,G",
               "description": "Pasta Station"
             },
             {
@@ -559,10 +570,10 @@
               "description": null
             },
             {
-              "title": "Rote Linsen - Kokosbällchen •\nMisokrautsalat",
+              "title": "Gebratener Curry - Karfiol • \nKarottensticks • Rotkraut • Ei • \nKichererbsen • Gojibeeren • Tahina",
               "price": null,
               "tags": [],
-              "allergens": "F,M,N,O",
+              "allergens": "C,M,N",
               "description": "Salatecke"
             },
             {
@@ -585,19 +596,17 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Grüntee Mousse\nVegane Erdnusscreme",
+              "title": "Amarettocreme",
               "price": null,
               "tags": [],
-              "allergens": "A,E,G,O",
+              "allergens": "G,H",
               "description": "Creme oder Mousse"
             },
             {
-              "title": "Gedeckter Birnenkuchen\nOrangenmousse Schnitte",
+              "title": "Bananen Schnitte",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G,O",
+              "tags": [],
+              "allergens": "A,F,G",
               "description": "Kuchen und Torten"
             },
             {

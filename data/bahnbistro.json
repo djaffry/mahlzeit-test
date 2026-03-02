@@ -3,7 +3,10 @@
   "title": "🚂 OEBB Bahnbistro",
   "url": "https://bahnbistro.digiattack.net",
   "type": "full",
-  "fetchedAt": "2026-02-27T10:09:15.223Z",
+  "cuisine": [
+    "Kantine"
+  ],
+  "fetchedAt": "2026-03-02T09:09:02.674Z",
   "error": null,
   "days": {
     "Montag": {
@@ -24,25 +27,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Emmentaler gebacken",
+              "title": "Vollkorn-Spaghetti",
               "price": null,
               "tags": [],
-              "allergens": "A,G",
-              "description": "Butterkartoffeln, Preiselbeeren"
+              "allergens": "A,H,L",
+              "description": "Linsenbolognese, Grana Vegano"
             },
             {
-              "title": "Lachs-Teriyaki",
+              "title": "Koriander Chicken",
               "price": null,
               "tags": [],
-              "allergens": "A,D,F,N",
-              "description": "Lauch-Pilzgemüse & Reis, Black Sesame"
+              "allergens": "A,F,N,R",
+              "description": "Brokkoli & Maisreis, Schwarzer Sesam"
             },
             {
-              "title": "ChikiChen Burger",
+              "title": "Bratwurst vom Grill",
               "price": null,
               "tags": [],
-              "allergens": "A,F,M",
-              "description": "Rotkraut, Salat & Jungzwiebel, Sriracha-Mayo"
+              "allergens": null,
+              "description": "Krautsalat & Rösterdäpfel, Liebstöckel"
             }
           ]
         },
@@ -50,10 +53,10 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Heidelbeer-Vanillecreme",
+              "title": "Brombeer-Trifle",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -78,25 +81,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Kärntner Steinpilznudeln",
+              "title": "Chickichen-Fingers gebacken",
               "price": null,
               "tags": [],
-              "allergens": "A",
-              "description": "Rucola & getrockenete Tomaten, Flora & Kresse"
+              "allergens": "A,M",
+              "description": "Duftreis & Kartoffelsalat, Zitrone"
             },
             {
-              "title": "Selchschopfbraten",
+              "title": "Gegrillter Lachs",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "Linsen & Semmelknödel, Petersilie"
+              "allergens": "D,G",
+              "description": "Tellerrösti & Tzatziki, Antipasti"
             },
             {
-              "title": "Cashew-Nuts Chicken",
+              "title": "Farmers Gröst'l",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H,R",
-              "description": "Bunte Paprika & Zwiebel, Jasminreis"
+              "allergens": "A,C,G",
+              "description": "Knödel, Geflügel & Gemüse, Frischer Kren"
             }
           ]
         },
@@ -104,10 +107,10 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Peanutbutter-Brownie",
+              "title": "Bananenkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,E,G",
+              "allergens": "A,C",
               "description": null
             }
           ]
@@ -132,25 +135,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Frühlingsrolle",
+              "title": "Champignongulasch",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,L,N",
-              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+              "allergens": "A,F",
+              "description": "Semmelknödel, Plantcream"
             },
             {
-              "title": "Ausgelöstes Backhenderl",
+              "title": "Cordon-bleu Toscana",
               "price": null,
               "tags": [],
-              "allergens": "A,C",
-              "description": "Erdäpfelsalat, Zitrone"
+              "allergens": "A,C,G",
+              "description": "Pommes frites, Zitrone"
             },
             {
-              "title": "Würstel-Gulyas",
+              "title": "Forelle Müllerin",
               "price": null,
               "tags": [],
-              "allergens": "A",
-              "description": "Erdäpfel, Zwiebel & Würstel, Wachauer Laibchen"
+              "allergens": "A,D,G",
+              "description": "Petersilkartofferl, Kräuterbutter & Zitrone"
             }
           ]
         },
@@ -158,10 +161,10 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Cheesecake im Glas",
+              "title": "Biscoff-Tiramisu",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -186,25 +189,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Gemüse Süß-Sauer",
+              "title": "Stir-fried Tofu & Vegetables",
               "price": null,
               "tags": [],
               "allergens": "A,F,N",
-              "description": "Duftreis, Ananas & Limette, Jungzwiebel"
+              "description": "Pak Choi, Karotte & Mais, Basmatireis"
             },
             {
-              "title": "Esterhazy-Rindschnitzel",
+              "title": "Paprika-Henderl",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,L,M",
-              "description": "Wurzelgemüse & Rahm, Eierspätzle"
+              "allergens": "A,C",
+              "description": "Hausgemachte Spätzle, Jungzwiebel"
             },
             {
-              "title": "Cevapcici",
+              "title": "BBQ-Tex Burger",
               "price": null,
               "tags": [],
-              "allergens": "M",
-              "description": "Skin on Wedges, Zwiebelsenf & Ketchup"
+              "allergens": "A,G,L,M,N",
+              "description": "Beef-Patty, Bacon & Beans, Cheddar Cheese"
             }
           ]
         },
@@ -212,7 +215,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Ananas-Streuselkuchen",
+              "title": "Bodenloser Apfelkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,G,H",
@@ -240,25 +243,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Grießschmarren",
+              "title": "Kaiserinnenschmarren",
               "price": null,
               "tags": [],
-              "allergens": "A,G",
-              "description": "Zwetschkenröster, Staubzucker"
+              "allergens": "A,C,G",
+              "description": "Frisch & hausgemacht, Apfelmus"
             },
             {
-              "title": "Alaska-Seelachs gebacken",
+              "title": "Jägerinnenschnitzerl",
               "price": null,
               "tags": [],
-              "allergens": "A,C,D,G,M",
-              "description": "Petersilerdäpfel, Sauce Remoulade"
+              "allergens": "A",
+              "description": "Pilze, Speck & Röstzwiebel, Hörnchen"
             },
             {
-              "title": "Spinatknödel",
+              "title": "Zucchini vom Grill",
               "price": null,
               "tags": [],
               "allergens": "A,F",
-              "description": "Ratatouille, Plantcream"
+              "description": "Orangen-Tomatenbulgur, Oliven & Yofu-Dip"
             }
           ]
         },
@@ -266,10 +269,10 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Joghurt & Früchte",
+              "title": "Kokos-Grießkoch & Himbeeren",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,H",
               "description": null
             }
           ]
