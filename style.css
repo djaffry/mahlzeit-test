@@ -276,12 +276,6 @@ body {
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
-.restaurant-name a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.15s;
-}
-.restaurant-name a:hover { color: var(--accent); }
 .restaurant-collapse-icon {
   width: 14px;
   height: 14px;

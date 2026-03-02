@@ -16,6 +16,8 @@ const TAG_COLORS = {
   Schweinefleisch: 'red',
   Fisch: 'blue',
   'Geflügel': 'peach',
+  Lamm: 'peach',
+  Wild: 'peach',
   Glutenfrei: 'mauve',
   Laktosefrei: 'lavender',
 };
@@ -98,11 +100,16 @@ function highlightMatch(html, query) {
 
 function loadFilters(availableTags) {
   activeFilters.clear();
-  const available = new Set(availableTags);
   try {
     const stored = localStorage.getItem('dietary-filters');
     if (stored) {
-      JSON.parse(stored).forEach(f => { if (available.has(f)) activeFilters.add(f); });
+      const { active, known } = JSON.parse(stored);
+      const knownSet = new Set(known);
+      active.forEach(f => { if (availableTags.includes(f)) activeFilters.add(f); });
+
+      for (const tag of availableTags) {
+        if (!knownSet.has(tag)) activeFilters.add(tag);
+      }
     } else {
       availableTags.forEach(f => activeFilters.add(f));
     }
@@ -112,7 +119,8 @@ function loadFilters(availableTags) {
 }
 
 function saveFilters() {
-  localStorage.setItem('dietary-filters', JSON.stringify([...activeFilters]));
+  const allTags = [...document.querySelectorAll('.filter-btn')].map(b => b.dataset.filter);
+  localStorage.setItem('dietary-filters', JSON.stringify({ active: [...activeFilters], known: allTags }));
 }
 
 function loadCollapsed() {

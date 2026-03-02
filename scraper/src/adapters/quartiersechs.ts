@@ -45,7 +45,7 @@ interface SetMenu extends XmlAttributes {
 }
 
 interface EurestMenuLine extends XmlAttributes {
-  SetMenu?: SetMenu;
+  SetMenu?: SetMenu | SetMenu[];
 }
 
 interface EurestWeekDay extends XmlAttributes {
@@ -111,8 +111,12 @@ function extractDietaryTags(setMenu: SetMenu): string[] {
 
       const categories = toArray(group.Category);
       for (const category of categories) {
-        const tagValue = category['@attributes']?.value ?? category['@attributes']?.name;
-        if (tagValue && !tags.includes(tagValue)) tags.push(tagValue);
+        const raw = category['@attributes']?.value ?? category['@attributes']?.name;
+        if (!raw) continue;
+        for (const part of raw.split(' / ')) {
+          const tag = part.trim();
+          if (tag && !tags.includes(tag)) tags.push(tag);
+        }
       }
     }
   }
@@ -124,26 +128,35 @@ function normalizeCategoryName(lineName: string): string {
   return lineName.replace(/\s*\d+$/, '').trim();
 }
 
-function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem } | null {
+function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem }[] {
   const lineName = menuLine['@attributes']?.Name ?? '';
-  const category = normalizeCategoryName(lineName);
-  if (!category) return null;
+  const fallbackCategory = normalizeCategoryName(lineName);
+  if (!fallbackCategory) return [];
 
-  const setMenu = menuLine.SetMenu;
-  if (!setMenu) return null;
+  const results: { category: string; item: MenuItem }[] = [];
 
-  const price = setMenu['@attributes']?.SalesPrice;
+  for (const setMenu of toArray(menuLine.SetMenu)) {
+    const title = (setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '').trim();
+    if (!title) continue;
 
-  return {
-    category,
-    item: {
-      title: setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '',
-      price: price && price !== '0.00' ? `${price} €` : null,
-      tags: extractDietaryTags(setMenu),
-      allergens: extractAllergens(setMenu),
-      description: setMenu['@attributes']?.DisplayName ?? null,
-    },
-  };
+    const price = setMenu['@attributes']?.SalesPrice;
+
+    const displayName = setMenu['@attributes']?.DisplayName ?? '';
+    const category = normalizeCategoryName(displayName) || fallbackCategory;
+
+    results.push({
+      category,
+      item: {
+        title,
+        price: price && price !== '0.00' ? `${price} €` : null,
+        tags: extractDietaryTags(setMenu),
+        allergens: extractAllergens(setMenu),
+        description: null,
+      },
+    });
+  }
+
+  return results;
 }
 
 async function fetchMenu(): Promise<WeekMenu> {
@@ -167,11 +180,10 @@ async function fetchMenu(): Promise<WeekMenu> {
     const catMap = new Map<string, MenuItem[]>();
 
     for (const menuLine of toArray(weekDay.MenuLine)) {
-      const parsed = parseMenuLine(menuLine);
-      if (!parsed) continue;
-
-      if (!catMap.has(parsed.category)) catMap.set(parsed.category, []);
-      catMap.get(parsed.category)!.push(parsed.item);
+      for (const { category, item } of parseMenuLine(menuLine)) {
+        if (!catMap.has(category)) catMap.set(category, []);
+        catMap.get(category)!.push(item);
+      }
     }
 
     if (catMap.size > 0) {
