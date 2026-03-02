@@ -571,6 +571,15 @@ function renderFreshness(fullRestaurants, footerEl) {
   footerEl.innerHTML = `Seite geladen: ${escapeHtml(pageLoadTime)}<br>${staleLine}`;
 }
 
+function setupPartyMode() {
+  const btn = document.getElementById('party-toggle');
+  if (localStorage.getItem('party') === 'on') document.documentElement.classList.add('party');
+  btn.addEventListener('click', () => {
+    const on = document.documentElement.classList.toggle('party');
+    localStorage.setItem('party', on ? 'on' : '');
+  });
+}
+
 function setupThemeToggle() {
   const saved = localStorage.getItem('theme');
   if (saved) document.documentElement.dataset.theme = saved;
@@ -828,6 +837,7 @@ async function init() {
   }
 }
 
+setupPartyMode();
 setupThemeToggle();
 init();
 

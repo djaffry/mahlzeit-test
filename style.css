@@ -433,6 +433,25 @@ body {
 }
 .link-cta:hover { color: var(--accent); }
 
+/* Party toggle */
+.party-toggle {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+.party-toggle:hover { border-color: var(--accent); background: var(--surface-dim); }
+.party .party-toggle { animation: partySpin 2s linear infinite; border-color: transparent; }
+
 /* Theme toggle */
 .theme-toggle {
   background: var(--surface);
@@ -787,7 +806,7 @@ body {
   .filters { gap: 0.25rem; }
   .filter-btn { font-size: 0.62rem; padding: 0.25rem 0.55rem; min-height: 30px; }
   .filters-label { display: none; }
-  .theme-toggle, .search-trigger, .feedback-link { width: 36px; height: 36px; }
+  .theme-toggle, .search-trigger, .feedback-link, .party-toggle { width: 36px; height: 36px; }
   #inline-map { height: 300px; }
 }
 
@@ -795,5 +814,38 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .tab:active, .filter-btn:active,
   .weekend-browse-btn:active { transform: scale(0.96); }
-  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active { transform: scale(0.92); }
+  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active, .party-toggle:active { transform: scale(0.92); }
+}
+
+/* Party mode */
+@keyframes partyHue { to { filter: hue-rotate(360deg); } }
+@keyframes partySpin { to { transform: rotate(360deg); } }
+@keyframes partyFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(0.5deg); }
+  75% { transform: translateY(2px) rotate(-0.5deg); }
+}
+@keyframes partyBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.party body {
+  animation: partyHue 3s linear infinite;
+  background: linear-gradient(135deg, #1e1e2e, #2d1b69, #1b2838, #1e1e2e, #3b1d4a, #1e1e2e);
+  background-size: 400% 400%;
+  animation: partyHue 3s linear infinite, partyBg 8s ease infinite;
+}
+.party .restaurant-card {
+  animation: partyFloat 3s ease-in-out infinite;
+}
+.party .restaurant-card:nth-child(odd) { animation-delay: -1s; }
+.party .restaurant-card:nth-child(3n) { animation-delay: -2s; animation-duration: 3.5s; }
+.party .toolbar { animation: partyHue 3s linear infinite; }
+.party .tab.active {
+  animation: partyHue 2s linear infinite;
+}
+.party .map-marker-emoji {
+  animation: partySpin 4s linear infinite;
 }
