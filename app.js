@@ -637,7 +637,7 @@ function initInlineMap() {
   const allRestaurants = [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
   for (const r of allRestaurants) {
     if (!r.coordinates) continue;
-    const emoji = r.title.match(/^\p{Emoji_Presentation}/u)?.[0] ?? '\u{1F4CD}';
+    const emoji = r.title.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u)?.[0] ?? '\u{1F4CD}';
     const icon = L.divIcon({
       className: 'map-marker',
       html: `<span class="map-marker-emoji">${emoji}</span>`,
@@ -734,7 +734,7 @@ function openMap() {
 
     for (const r of allRestaurants) {
       if (!r.coordinates) continue;
-      const emoji = r.title.match(/^\p{Emoji_Presentation}/u)?.[0] ?? '📍';
+      const emoji = r.title.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u)?.[0] ?? '📍';
       const icon = L.divIcon({
         className: 'map-marker',
         html: `<span class="map-marker-emoji">${emoji}</span>`,

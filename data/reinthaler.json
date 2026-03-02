@@ -1,0 +1,19 @@
+{
+  "id": "reinthaler",
+  "title": "🍽️ Gasthaus Reinthaler",
+  "url": "https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue",
+  "type": "link",
+  "cuisine": [
+    "Wirtshaus",
+    "Reservierung erforderlich",
+    "Mittagsmenüs"
+  ],
+  "coordinates": {
+    "lat": 48.21892,
+    "lon": 16.39778
+  },
+  "mapUrl": "https://maps.app.goo.gl/HN1hvZRF9ZsyWzKe8",
+  "fetchedAt": "2026-03-02T20:12:51.131Z",
+  "error": null,
+  "days": {}
+}
