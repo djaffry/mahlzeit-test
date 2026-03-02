@@ -211,7 +211,7 @@ const adapter: FullAdapter = {
   url: 'https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue',
   type: 'full',
   cuisine: ['Wirtshaus'],
-  reservation: true,
+  reservationUrl: 'https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung',
   coordinates: { lat: 48.21892, lon: 16.39778 },
   mapUrl: 'https://maps.app.goo.gl/HN1hvZRF9ZsyWzKe8',
   fetchMenu,

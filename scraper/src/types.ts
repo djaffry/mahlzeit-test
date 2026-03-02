@@ -33,7 +33,7 @@ interface BaseAdapter {
   cuisine?: string[];
   stampCard?: boolean;
   edenred?: boolean;
-  reservation?: boolean;
+  reservationUrl?: string;
   coordinates?: { lat: number; lon: number };
   mapUrl?: string;
 }
@@ -58,7 +58,7 @@ export interface RestaurantData {
   cuisine?: string[];
   stampCard?: boolean;
   edenred?: boolean;
-  reservation?: boolean;
+  reservationUrl?: string;
   coordinates?: { lat: number; lon: number };
   mapUrl?: string;
   fetchedAt: string;

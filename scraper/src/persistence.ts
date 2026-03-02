@@ -47,7 +47,7 @@ export function buildRestaurantData(adapter: Adapter, days: WeekMenu, error: str
     ...(adapter.cuisine && { cuisine: adapter.cuisine }),
     ...(adapter.stampCard && { stampCard: adapter.stampCard }),
     ...(adapter.edenred && { edenred: adapter.edenred }),
-    ...(adapter.reservation && { reservation: adapter.reservation }),
+    ...(adapter.reservationUrl && { reservationUrl: adapter.reservationUrl }),
     ...(adapter.coordinates && { coordinates: adapter.coordinates }),
     ...(adapter.mapUrl && { mapUrl: adapter.mapUrl }),
     fetchedAt: new Date().toISOString(),
