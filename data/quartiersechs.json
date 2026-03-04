@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-03T10:23:10.295Z",
+  "fetchedAt": "2026-03-04T10:20:04.473Z",
   "error": null,
   "days": {
     "Montag": {
@@ -645,9 +645,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Cappuccino Mousse",
+              "title": "Cappuccino Mousse\nKokos - Marillen - Reisdessert",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "C,F,G",
               "description": null
             }

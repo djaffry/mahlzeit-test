@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-03T10:23:10.627Z",
+  "fetchedAt": "2026-03-04T10:20:05.242Z",
   "error": null,
   "days": {
     "Montag": {
@@ -287,6 +287,146 @@
               "tags": [
                 "Vegetarisch"
               ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍-Cremesuppe – optional mit Schnittlauch 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gemüsecreme Suppe mit Kokosmilch vg gf",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Faschierter Braten mit Kürbis 🎃-Haselnuss-Püree & Rahmsauce",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Fenchel 🌿-Orangen 🍊-Zucchini 🥒-Gemüse auf Coucous – optional mit Koriander 🌿 | Sauerrahm",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan",
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Red Thai Chicken Curry mit Pak Choi 🥬, Paprika 🫑, Karotten 🥕, Brokkoli 🥦 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "High Protein-Steckrüben-Eintopf mit roten ❤️ Linsen, Kohl 🥬, Karotten 🥕 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bulgur-Tabouleh mit Blutorangen 🍊, Tomaten 🍅, Gurken 🥒, Granatapfelkernen 🍎, 8-Kräuter 🌿-Mischung & frischem Zitronensaft 🍋",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganes Schoko 🍫-Mousse mit Schokoflocken",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Schoko Panna Cotta mit gerösteten Pistazien",
+              "price": "3,90",
+              "tags": [],
               "allergens": null,
               "description": null
             }
