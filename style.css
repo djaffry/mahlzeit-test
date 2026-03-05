@@ -168,7 +168,20 @@ body {
   margin-right: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease;
 }
+.filters-label:hover { color: var(--text); }
+.filters-label .filters-clear {
+  display: inline-block;
+  margin-left: 0.15rem;
+  font-size: 0.6rem;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.filters-label:hover .filters-clear { opacity: 1; }
+
 .filter-btn {
   font-family: inherit;
   font-size: 0.68rem;
@@ -805,7 +818,7 @@ body {
   .content { padding: 0.5rem 0.5rem 2.5rem; }
   .filters { gap: 0.25rem; }
   .filter-btn { font-size: 0.62rem; padding: 0.25rem 0.55rem; min-height: 30px; }
-  .filters-label { display: none; }
+  .filters-label { font-size: 0.62rem; }
   .theme-toggle, .search-trigger, .feedback-link, .party-toggle { width: 36px; height: 36px; }
   #inline-map { height: 300px; }
 }

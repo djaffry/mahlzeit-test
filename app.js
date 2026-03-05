@@ -10,15 +10,18 @@ const SVG = {
 
 const TAG_COLORS = {
   Vegan: 'green',
-  Vegetarisch: 'yellow',
-  Fleisch: 'red',
-  Rindfleisch: 'red',
-  Schweinefleisch: 'red',
+  Vegetarisch: 'teal',
   Fisch: 'blue',
   'Geflügel': 'peach',
-  Lamm: 'peach',
-  Wild: 'peach',
-  Glutenfrei: 'mauve',
+  Huhn: 'peach',
+  Hühnerfleisch: 'peach',
+  Pute: 'peach',
+  Fleisch: 'red',
+  Wild: 'red',
+  Lamm: 'red',
+  Schweinefleisch: 'red',
+  Rindfleisch: 'red',
+  Glutenfrei: 'yellow',
   Laktosefrei: 'lavender',
 };
 
@@ -160,9 +163,20 @@ function collectTags(restaurants) {
   });
 }
 
+function updateFiltersLabel() {
+  const label = document.querySelector('.filters-label');
+  if (!label) return;
+  const total = document.querySelectorAll('.filter-btn').length;
+  const allActive = activeFilters.size === total;
+  label.innerHTML = allActive
+    ? 'Filter <span class="filters-clear">\u25cf</span>'
+    : 'Filter <span class="filters-clear">\u25cb</span>';
+}
+
 function buildFilterButtons(allTags) {
   const filtersEl = document.getElementById('filters');
   filtersEl.innerHTML = '<span class="filters-label">Filter</span>';
+
   for (const tag of allTags) {
     const color = getTagColor(tag);
     const btn = document.createElement('button');
@@ -174,6 +188,7 @@ function buildFilterButtons(allTags) {
     if (activeFilters.has(tag)) btn.classList.add('active');
     filtersEl.appendChild(btn);
   }
+  updateFiltersLabel();
 }
 
 function renderItem(item) {
@@ -346,7 +361,7 @@ function applyFilters() {
   if (!activePanel) return;
 
   const totalFilters = document.querySelectorAll('.filter-btn').length;
-  const showAll = activeFilters.size === 0 || activeFilters.size === totalFilters;
+  const showAll = activeFilters.size === totalFilters;
 
   const cards = activePanel.querySelectorAll('.restaurant-card');
   cards.forEach(card => {
@@ -473,6 +488,20 @@ function setupTabSwitching(tabsEl, contentEl) {
 
 function setupFilterListeners(filtersEl) {
   filtersEl.addEventListener('click', e => {
+    if (e.target.closest('.filters-label')) {
+      const allBtns = filtersEl.querySelectorAll('.filter-btn');
+      const allActive = activeFilters.size === allBtns.length;
+      if (allActive) {
+        activeFilters.clear();
+        allBtns.forEach(b => b.classList.remove('active'));
+      } else {
+        allBtns.forEach(b => { activeFilters.add(b.dataset.filter); b.classList.add('active'); });
+      }
+      updateFiltersLabel();
+      saveFilters();
+      applyFilters();
+      return;
+    }
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
     const filter = btn.dataset.filter;
@@ -483,6 +512,7 @@ function setupFilterListeners(filtersEl) {
       activeFilters.add(filter);
       btn.classList.add('active');
     }
+    updateFiltersLabel();
     saveFilters();
     applyFilters();
   });
