@@ -128,6 +128,20 @@ function normalizeCategoryName(lineName: string): string {
   return lineName.replace(/\s*\d+$/, '').trim();
 }
 
+function inferTagsFromCategory(category: string, title: string, tags: string[]): string[] {
+  if (tags.length > 0) return tags;
+
+  const cat = category.toLowerCase();
+  if (cat.includes('vegan') && !cat.includes('vegetarisch')) return ['Vegan'];
+  if (cat.includes('vegetarisch')) return ['Vegetarisch'];
+  if (cat === 'pasta station') return ['Vegetarisch'];
+  if (cat === 'bowl station') return ['Vegan'];
+  if (cat === 'salatecke') return ['Vegetarisch'];
+  if (cat === 'pizza & co' && /margherita/i.test(title)) return ['Vegetarisch'];
+  if (cat.startsWith('obst')) return ['Vegan'];
+  return tags;
+}
+
 function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem }[] {
   const lineName = menuLine['@attributes']?.Name ?? '';
   const fallbackCategory = normalizeCategoryName(lineName);
@@ -137,7 +151,7 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
 
   for (const setMenu of toArray(menuLine.SetMenu)) {
     const title = (setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '').trim();
-    if (!title) continue;
+    if (!title || /station heute geschlossen/i.test(title)) continue;
 
     const price = setMenu['@attributes']?.SalesPrice;
 
@@ -149,7 +163,7 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
       item: {
         title,
         price: price && price !== '0.00' ? `${price} €` : null,
-        tags: extractDietaryTags(setMenu),
+        tags: inferTagsFromCategory(category, title, extractDietaryTags(setMenu)),
         allergens: extractAllergens(setMenu),
         description: null,
       },

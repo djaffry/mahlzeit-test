@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-05T10:24:04.144Z",
+  "fetchedAt": "2026-03-05T19:34:58.079Z",
   "error": null,
   "days": {
     "Montag": {
@@ -81,7 +81,9 @@
             {
               "title": "Kleine Kürbisknödel • \nPaprikakraut • \ngeröstete Kürbiskerne",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,C,G",
               "description": null
             }
@@ -93,7 +95,9 @@
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,G",
               "description": null
             }
@@ -143,7 +147,9 @@
             {
               "title": "Süßkartoffel - Chimichuri Wrap • Naturreis • Radicchio •\nMexikanischer Salat",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,C,G,M",
               "description": null
             }
@@ -164,7 +170,9 @@
             {
               "title": "Pizza Margherita",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -176,7 +184,9 @@
             {
               "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -228,7 +238,9 @@
             {
               "title": "Obst der Saison",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -260,7 +272,9 @@
             {
               "title": "Kräuterseitlingcremesuppe • \nFinnenbrot Croutons",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F,L,N",
               "description": null
             }
@@ -314,7 +328,9 @@
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,G",
               "description": null
             }
@@ -387,7 +403,9 @@
             {
               "title": "Pizza Margherita",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -399,7 +417,9 @@
             {
               "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -451,7 +471,9 @@
             {
               "title": "Obst der Saison",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -483,7 +505,9 @@
             {
               "title": "Paradeiser - Mango Suppe • \nKokoschips",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "L,O",
               "description": null
             }
@@ -523,7 +547,9 @@
             {
               "title": "Überbackene Gemüse Cannelloni • \nTomaten-Zucchinisauce",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -535,7 +561,9 @@
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,G",
               "description": null
             }
@@ -609,7 +637,9 @@
             {
               "title": "Pizza Margherita",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -621,7 +651,9 @@
             {
               "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -675,7 +707,9 @@
             {
               "title": "Obst der Saison",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -749,7 +783,9 @@
             {
               "title": "Faschierter Braten auf vegane Art • \nErdäpfelpüree •\nRöstzwiebel",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,F,H,L,M,O",
               "description": null
             }
@@ -761,7 +797,9 @@
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,G",
               "description": null
             }
@@ -811,7 +849,9 @@
             {
               "title": "Puy Linsensalat •\nTrauben • Chili • Minze • \ngegrillter Halloumi •\nGranatapfel •\nWalnuss Dressing",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "G,H",
               "description": null
             }
@@ -830,7 +870,9 @@
             {
               "title": "Pizza Margherita",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -842,7 +884,9 @@
             {
               "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -896,7 +940,9 @@
             {
               "title": "Obst der Saison",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -984,20 +1030,10 @@
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,G",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Classic Grill",
-          "items": [
-            {
-              "title": "Station heute geschlossen",
-              "price": null,
-              "tags": [],
-              "allergens": null,
               "description": null
             }
           ]
@@ -1030,27 +1066,10 @@
             {
               "title": "Gebratener Curry - Karfiol • \nKarottensticks • Rotkraut • Ei • \nKichererbsen • Gojibeeren • Tahina",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "C,M,N",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Pizza & Co",
-          "items": [
-            {
-              "title": "Station heute geschlossen",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Station heute geschlossen",
-              "price": null,
-              "tags": [],
-              "allergens": null,
               "description": null
             }
           ]
@@ -1061,19 +1080,9 @@
             {
               "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl Topping",
-          "items": [
-            {
-              "title": "Station heute geschlossen",
-              "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -1109,7 +1118,9 @@
             {
               "title": "Obst der Saison",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
