@@ -10,6 +10,7 @@
   --border-light: #3b3c50;
   --accent: #cba6f7;
   --accent-text: #cba6f7;
+  --accent-dim: rgba(203,166,247,0.15);
   --radius: 12px;
   --radius-sm: 8px;
   --radius-pill: 99px;
@@ -39,6 +40,7 @@
   --border-light: #e6e9ef;
   --accent: #8839ef;
   --accent-text: #8839ef;
+  --accent-dim: rgba(136,57,239,0.1);
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
   --green: #40a02b; --green-dim: rgba(64,160,43,0.12);
@@ -79,17 +81,17 @@ body {
 .toolbar-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 /* Row 1: title + day tabs */
 .toolbar-top {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .toolbar-title {
   font-size: 1rem;
@@ -105,14 +107,14 @@ body {
 .toolbar-actions {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   margin-left: auto;
   flex-shrink: 0;
 }
 
 .day-tabs {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.25rem;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -121,7 +123,7 @@ body {
 .tab-date { font-weight: 400; opacity: 0.7; }
 
 .tab {
-  padding: 0.35rem 0.85rem;
+  padding: 0.3rem 0.75rem;
   border: none;
   background: transparent;
   color: var(--text-secondary);
@@ -157,7 +159,7 @@ body {
 /* Row 2: dietary filters */
 .filters {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.25rem;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -165,7 +167,7 @@ body {
   font-size: 0.68rem;
   color: var(--text-muted);
   font-weight: 500;
-  margin-right: 0.2rem;
+  margin-right: 0.15rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -186,7 +188,7 @@ body {
   font-family: inherit;
   font-size: 0.68rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem 0.5rem;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--border);
   background: var(--surface);
@@ -203,7 +205,7 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 3rem;
+  padding: 0.75rem 1.25rem 2rem;
 }
 
 .day-panel {
@@ -222,7 +224,7 @@ body {
 
 .restaurant-grid {
   columns: 340px;
-  column-gap: 0.6rem;
+  column-gap: 0.75rem;
 }
 
 /* Restaurant card */
@@ -233,7 +235,7 @@ body {
   overflow: hidden;
   transition: box-shadow 0.2s ease;
   break-inside: avoid;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 .restaurant-card:hover { box-shadow: var(--shadow-md); }
 .restaurant-card.collapsed .restaurant-content,
@@ -245,19 +247,19 @@ body {
 .restaurant-card.filter-collapsed:hover { opacity: 0.8; }
 
 .restaurant-header {
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.85rem;
   border-bottom: 1px solid var(--border-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .restaurant-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
   cursor: pointer;
   transition: color 0.15s;
@@ -308,7 +310,7 @@ body {
   height: 14px;
   color: var(--text-muted);
   flex-shrink: 0;
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
   cursor: pointer;
   transition: color 0.15s ease, transform 0.3s ease;
 }
@@ -322,19 +324,19 @@ body {
   overflow: hidden;
 }
 
-.restaurant-body { padding: 0.35rem 1rem 1rem; }
+.restaurant-body { padding: 0.5rem 0.85rem 0.85rem; }
 
 .restaurant-error {
-  padding: 0.6rem 0.85rem;
+  padding: 0.5rem 0.85rem;
   background: var(--red-dim);
   color: var(--red);
   font-size: 0.78rem;
   border-radius: var(--radius-sm);
-  margin: 0.6rem 1rem;
+  margin: 0.5rem 0.85rem;
 }
 
 /* Category */
-.category { margin-bottom: 1rem; }
+.category { margin-bottom: 0.75rem; }
 .category:last-child { margin-bottom: 0; }
 
 .category-title {
@@ -343,13 +345,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
-  padding-bottom: 0.35rem;
-  margin-bottom: 0.15rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
+  border-left: 2px solid var(--accent);
+  padding-left: 0.45rem;
 }
 
 /* Menu item */
 .menu-item {
-  padding: 0.3rem 0;
+  padding: 0.35rem 0;
   border-bottom: 1px solid var(--border-light);
 }
 .menu-item:last-child { border-bottom: none; }
@@ -360,9 +364,18 @@ body {
   font-size: 0.84rem;
   color: var(--text);
   line-height: 1.4;
-  white-space: pre-line;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
 }
-.item-price { font-weight: 600; color: var(--accent-text); }
+.item-title-text { flex: 1; min-width: 0; white-space: pre-line; }
+.item-price {
+  font-weight: 600;
+  color: var(--accent-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 .item-description {
   font-size: 0.78rem;
   color: var(--text-secondary);
@@ -370,8 +383,8 @@ body {
 }
 .item-meta {
   display: flex;
-  gap: 0.25rem;
-  margin-top: 0.1rem;
+  gap: 0.2rem;
+  margin-top: 0.15rem;
   flex-wrap: wrap;
   align-items: center;
   font-size: 0.72rem;
@@ -416,7 +429,7 @@ body {
 
 .footer {
   text-align: center;
-  padding: 1.25rem 1.25rem calc(1.25rem + env(safe-area-inset-bottom));
+  padding: 1rem 1.25rem calc(1rem + env(safe-area-inset-bottom));
   font-size: 0.68rem;
   color: var(--text-muted);
   line-height: 1.7;
@@ -428,10 +441,10 @@ body {
 }
 .restaurant-card.link-muted:hover { opacity: 1; }
 .link-body {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 0.85rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 .link-schedule {
@@ -457,8 +470,8 @@ body {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-pill);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,8 +489,8 @@ body {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-pill);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,8 +509,8 @@ body {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-pill);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,8 +525,8 @@ body {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-pill);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -554,7 +567,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.85rem;
   border-bottom: 1px solid var(--border);
 }
 .search-icon { width: 18px; height: 18px; color: var(--text-muted); flex-shrink: 0; }
@@ -580,7 +593,7 @@ body {
 
 .search-results {
   overflow-y: auto;
-  padding: 0.5rem;
+  padding: 0.4rem;
 }
 .search-results:empty::after {
   content: 'Tippe um zu suchen...';
@@ -588,13 +601,13 @@ body {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.8rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .search-no-results {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.8rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   font-style: italic;
 }
 .search-group-title {
@@ -603,37 +616,37 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-muted);
-  padding: 0.4rem 0.5rem 0.2rem;
+  padding: 0.35rem 0.5rem 0.15rem;
 }
 .search-result-item {
-  padding: 0.45rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   border-radius: var(--radius-sm);
 }
 .search-result-item:hover { background: var(--surface-dim); }
 .search-result-title { font-size: 0.84rem; color: var(--text); }
 .search-result-title mark {
-  background: var(--mauve-dim);
-  color: var(--mauve);
+  background: var(--accent-dim);
+  color: var(--accent);
   border-radius: 2px;
   padding: 0 1px;
 }
-.search-result-meta { font-size: 0.72rem; color: var(--text-secondary); display: flex; gap: 0.25rem; flex-wrap: wrap; align-items: center; line-height: 1.4; }
+.search-result-meta { font-size: 0.72rem; color: var(--text-secondary); display: flex; gap: 0.2rem; flex-wrap: wrap; align-items: center; line-height: 1.4; }
 
 /* Weekend empty state */
 .weekend-state {
   text-align: center;
-  padding: 4rem 1.5rem;
+  padding: 4rem 1.25rem;
   max-width: 420px;
   margin: 0 auto;
 }
 .weekend-emoji { font-size: 3rem; margin-bottom: 1rem; line-height: 1; }
 .weekend-title { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
-.weekend-text { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; }
+.weekend-text { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem; }
 .weekend-browse-btn {
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.5rem 1.2rem;
+  padding: 0.45rem 1.1rem;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--border);
   background: var(--surface);
@@ -659,7 +672,7 @@ body {
   flex-shrink: 0;
   display: none;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.25rem;
 }
 .freshness-badge.page-stale { display: flex; }
 .freshness-badge:hover { opacity: 0.8; }
@@ -672,8 +685,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: var(--radius-sm);
   transition: background 0.15s, color 0.15s;
 }
@@ -701,7 +714,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.25rem;
+  padding: 0.65rem 1.25rem;
   background: var(--surface-dim);
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
@@ -715,8 +728,8 @@ body {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-pill);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -762,7 +775,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .map-popup .leaflet-popup-content {
-  margin: 0.6rem 0.8rem;
+  margin: 0.5rem 0.75rem;
   font-size: 0.82rem;
   line-height: 1.5;
 }
@@ -781,8 +794,8 @@ body {
   background: none;
   border: none;
   color: var(--text-muted);
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -810,19 +823,19 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .toolbar-inner { padding: 0.6rem 0.75rem; gap: 0.4rem; }
+  .toolbar-inner { padding: 0.5rem 0.65rem; gap: 0.35rem; }
   .toolbar-top { gap: 0.5rem; flex-wrap: wrap; }
   .toolbar-title { font-size: 0.88rem; }
   .toolbar-subtitle { order: 2; width: 100%; text-align: center; }
   .day-tabs { order: 1; width: 100%; }
-  .tab { flex: 1; text-align: center; padding: 0.35rem 0.75rem; font-size: 0.75rem; min-height: 36px; }
+  .tab { flex: 1; text-align: center; padding: 0.3rem 0.5rem; font-size: 0.75rem; min-height: 36px; }
   .tab .tab-short { display: inline; }
   .tab .tab-full { display: none; }
-  .content { padding: 0.5rem 0.5rem 2.5rem; }
-  .filters { gap: 0.25rem; }
-  .filter-btn { font-size: 0.62rem; padding: 0.25rem 0.55rem; min-height: 30px; }
+  .content { padding: 0.5rem 0.5rem 2rem; }
+  .filters { gap: 0.2rem; }
+  .filter-btn { font-size: 0.62rem; padding: 0.2rem 0.5rem; min-height: 30px; }
   .filters-label { font-size: 0.62rem; }
-  .theme-toggle, .search-trigger, .feedback-link, .party-toggle { width: 36px; height: 36px; }
+  .theme-toggle, .search-trigger, .feedback-link, .party-toggle { width: 34px; height: 34px; }
   #inline-map { height: 300px; }
 }
 
@@ -841,17 +854,8 @@ body {
   25% { transform: translateY(-3px) rotate(0.5deg); }
   75% { transform: translateY(2px) rotate(-0.5deg); }
 }
-@keyframes partyBg {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .party body {
   animation: partyHue 3s linear infinite;
-  background: linear-gradient(135deg, #1e1e2e, #2d1b69, #1b2838, #1e1e2e, #3b1d4a, #1e1e2e);
-  background-size: 400% 400%;
-  animation: partyHue 3s linear infinite, partyBg 8s ease infinite;
 }
 .party .restaurant-card {
   animation: partyFloat 3s ease-in-out infinite;

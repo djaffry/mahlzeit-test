@@ -183,7 +183,7 @@ function renderItem(item) {
 
   return `
     <div class="menu-item" data-tags="${escapeHtml(tagsData)}">
-      <div class="item-title">${escapeHtml(item.title)}${price}</div>
+      <div class="item-title"><span class="item-title-text">${escapeHtml(item.title)}</span>${price}</div>
       ${desc}
       ${meta ? `<div class="item-meta">${meta}</div>` : ''}
     </div>`;
