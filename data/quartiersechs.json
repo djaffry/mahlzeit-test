@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-04T10:20:04.473Z",
+  "fetchedAt": "2026-03-05T10:24:04.144Z",
   "error": null,
   "days": {
     "Montag": {
@@ -866,12 +866,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding •\nHimbeeren",
+              "title": "Grießpudding •\nHimbeeren\nCappuccino Mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -880,9 +880,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Sacherschnitte",
+              "title": "Sacherschnitte\nCremige vegane Matchaschnitte",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }

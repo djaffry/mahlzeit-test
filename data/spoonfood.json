@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-04T10:20:05.242Z",
+  "fetchedAt": "2026-03-05T10:24:05.800Z",
   "error": null,
   "days": {
     "Montag": {
@@ -427,6 +427,141 @@
               "title": "Schoko Panna Cotta mit gerösteten Pistazien",
               "price": "3,90",
               "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Perlgraupen-Gemüsesuppe 🥦🥕🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Süßkartoffel 🍠-Paprika 🫑-Kokos 🥥-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Quiche Lorraine mit Speck 🥓 & Lauch 🌿",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spätzle in cremiger Ricotta-Kürbis 🎃-Sauce mit frischer Petersilie 🌿 & Parmesan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Pork'n'Beans - Bunter Bohnen 🫘 -Eintopf vom Ötscherblickschwein - mit Käferbohnen, weißen 🤍 & schwarzen 🖤 Bohnen, Paprika 🫑, Mais 🌽 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Aloo Saag – Indisches Spinat 💚-Curry - mit Erdäpfeln 🥔 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Apfel 🍏-Grünkohl 🥬-Salad Bowl mit Quinoa, Nussmix 🥜 & Honig 🍯-Kurkuma 💛-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Schoko 🍫-Panna Cotta mit gerösteten Pistazien 💚",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
               "allergens": null,
               "description": null
             }
