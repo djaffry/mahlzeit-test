@@ -11,7 +11,7 @@
     "lon": 16.3952
   },
   "mapUrl": "https://maps.app.goo.gl/KGhWssEY2zJs7oF4A",
-  "fetchedAt": "2026-03-05T19:34:57.612Z",
+  "fetchedAt": "2026-03-05T19:39:54.565Z",
   "error": null,
   "days": {
     "Montag": {
@@ -41,14 +41,18 @@
             {
               "title": "Koriander Chicken",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Geflügel"
+              ],
               "allergens": "A,F,N,R",
               "description": "Brokkoli & Maisreis, Schwarzer Sesam"
             },
             {
               "title": "Bratwurst vom Grill",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": null,
               "description": "Krautsalat & Rösterdäpfel, Liebstöckel"
             }
@@ -95,14 +99,18 @@
             {
               "title": "Gegrillter Lachs",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Fisch"
+              ],
               "allergens": "D,G",
               "description": "Tellerrösti & Tzatziki, Antipasti"
             },
             {
               "title": "Farmers Gröst'l",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Geflügel"
+              ],
               "allergens": "A,C,G",
               "description": "Knödel, Geflügel & Gemüse, Frischer Kren"
             }
@@ -156,7 +164,9 @@
             {
               "title": "Forelle Müllerin",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Fisch"
+              ],
               "allergens": "A,D,G",
               "description": "Petersilkartofferl, Kräuterbutter & Zitrone"
             }
@@ -196,21 +206,27 @@
             {
               "title": "Stir-fried Tofu & Vegetables",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F,N",
               "description": "Pak Choi, Karotte & Mais, Basmatireis"
             },
             {
               "title": "Paprika-Henderl",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Geflügel"
+              ],
               "allergens": "A,C",
               "description": "Hausgemachte Spätzle, Jungzwiebel"
             },
             {
               "title": "BBQ-Tex Burger",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Rindfleisch"
+              ],
               "allergens": "A,G,L,M,N",
               "description": "Beef-Patty, Bacon & Beans, Cheddar Cheese"
             }
@@ -264,7 +280,9 @@
             {
               "title": "Zucchini vom Grill",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F",
               "description": "Orangen-Tomatenbulgur, Oliven & Yofu-Dip"
             }
