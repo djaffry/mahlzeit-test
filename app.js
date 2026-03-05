@@ -29,8 +29,6 @@ const PALETTE = ['green', 'yellow', 'red', 'blue', 'peach', 'mauve', 'lavender',
 const _fallbackPool = PALETTE.filter(c => !new Set(Object.values(TAG_COLORS)).has(c));
 const _tagColorCache = {};
 
-const FRESHNESS_THRESHOLDS = { stale: 24, veryStale: 48 };
-
 function isAvailableOnDay(restaurant, day) {
   return !restaurant.availableDays || restaurant.availableDays.includes(day);
 }
@@ -70,24 +68,6 @@ function formatShortDate(d) {
 
 function getTodayName() {
   return DAY_JS_MAP[new Date().getDay()] || null;
-}
-
-function relativeTime(dateStr) {
-  const diffMs = Date.now() - new Date(dateStr).getTime();
-  const mins = Math.floor(diffMs / 60000);
-  const hrs = Math.floor(diffMs / 3600000);
-  const days = Math.floor(diffMs / 86400000);
-  if (mins < 1) return 'gerade eben';
-  if (mins < 60) return `vor ${mins} Min.`;
-  if (hrs < 24) return `vor ${hrs} ${hrs === 1 ? 'Stunde' : 'Stunden'}`;
-  if (days < 7) return `vor ${days} ${days === 1 ? 'Tag' : 'Tagen'}`;
-  return `vor ${Math.floor(days / 7)} Wochen`;
-}
-
-function freshnessLevel(diffHrs) {
-  if (diffHrs > FRESHNESS_THRESHOLDS.veryStale) return 'very-stale';
-  if (diffHrs > FRESHNESS_THRESHOLDS.stale) return 'stale';
-  return '';
 }
 
 function escapeHtml(str) {
@@ -582,26 +562,18 @@ function setupSwipeNavigation(contentEl, tabsEl) {
 function renderFreshness(fullRestaurants, footerEl) {
   const latest = fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop();
   const pageLoadTime = new Date().toLocaleString('de-AT', { dateStyle: 'medium', timeStyle: 'short' });
+  const fetchTime = latest ? new Date(latest).toLocaleString('de-AT', { dateStyle: 'medium', timeStyle: 'short' }) : null;
 
-  if (!latest) {
-    footerEl.textContent = `Seite geladen: ${pageLoadTime}`;
-    return;
-  }
+  footerEl.innerHTML = fetchTime
+    ? `Seite geladen: ${escapeHtml(pageLoadTime)}<br>Daten abgerufen: ${fetchTime}`
+    : `Seite geladen: ${escapeHtml(pageLoadTime)}`;
 
-  const diffHrs = (Date.now() - new Date(latest).getTime()) / 3600000;
-  const level = freshnessLevel(diffHrs);
-  const relTime = relativeTime(latest);
-  const fetchTime = new Date(latest).toLocaleString('de-AT', { dateStyle: 'medium', timeStyle: 'short' });
-
-  const badge = document.getElementById('freshness-badge');
-  badge.innerHTML = `${escapeHtml(diffHrs < 1 ? 'Aktuell' : relTime)}${SVG.reload}`;
-  badge.addEventListener('click', () => window.location.reload());
-  if (level) badge.classList.add(level);
-
-  const staleLine = level
-    ? `<span class="footer-${level}">Daten abgerufen: ${fetchTime} (${relTime})</span>`
-    : `Daten abgerufen: ${fetchTime} (${relTime})`;
-  footerEl.innerHTML = `Seite geladen: ${escapeHtml(pageLoadTime)}<br>${staleLine}`;
+  setTimeout(() => {
+    const badge = document.getElementById('freshness-badge');
+    badge.innerHTML = `Neu laden ${SVG.reload}`;
+    badge.classList.add('page-stale');
+    badge.addEventListener('click', () => window.location.reload());
+  }, 5 * 60 * 1000);
 }
 
 function setupPartyMode() {

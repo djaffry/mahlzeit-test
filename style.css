@@ -421,8 +421,6 @@ body {
   color: var(--text-muted);
   line-height: 1.7;
 }
-.footer-stale { color: var(--yellow); }
-.footer-very-stale { color: var(--red); }
 
 /* Link-only restaurant cards */
 .restaurant-card.link-muted {
@@ -645,7 +643,7 @@ body {
 }
 .weekend-browse-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-/* Freshness badge */
+/* Reload badge (appears after page is open for a while) */
 .freshness-badge {
   font-family: inherit;
   font-size: 0.62rem;
@@ -653,21 +651,18 @@ body {
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius-pill);
   border: none;
-  background: var(--green-dim);
-  color: var(--green);
+  background: var(--yellow-dim);
+  color: var(--yellow);
   cursor: pointer;
-  transition: all 0.15s ease;
   white-space: nowrap;
   letter-spacing: 0.03em;
   flex-shrink: 0;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.3rem;
 }
-.freshness-badge:empty { visibility: hidden; min-width: 3.5rem; }
+.freshness-badge.page-stale { display: flex; }
 .freshness-badge:hover { opacity: 0.8; }
-.freshness-badge.stale { background: var(--yellow-dim); color: var(--yellow); }
-.freshness-badge.very-stale { background: var(--red-dim); color: var(--red); }
 .freshness-badge svg { width: 10px; height: 10px; flex-shrink: 0; }
 
 /* Map pin link on restaurant cards */
