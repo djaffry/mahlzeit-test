@@ -11,7 +11,7 @@
     "lon": 16.3952
   },
   "mapUrl": "https://maps.app.goo.gl/KGhWssEY2zJs7oF4A",
-  "fetchedAt": "2026-03-05T19:39:54.565Z",
+  "fetchedAt": "2026-03-05T20:06:34.903Z",
   "error": null,
   "days": {
     "Montag": {
@@ -22,7 +22,9 @@
             {
               "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -80,7 +82,9 @@
             {
               "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -138,7 +142,9 @@
             {
               "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -194,7 +200,9 @@
             {
               "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -254,7 +262,9 @@
             {
               "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }

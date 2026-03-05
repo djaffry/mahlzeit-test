@@ -12,7 +12,7 @@
     "lon": 16.39778
   },
   "mapUrl": "https://maps.app.goo.gl/HN1hvZRF9ZsyWzKe8",
-  "fetchedAt": "2026-03-05T19:39:54.653Z",
+  "fetchedAt": "2026-03-05T20:06:35.035Z",
   "error": null,
   "days": {
     "Montag": {
@@ -28,11 +28,11 @@
               "description": null
             },
             {
-              "title": "Schinkenfleckerln mit grünem salat",
+              "title": "Schinkenfleckerln",
               "price": "10,70 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit grünem salat"
             }
           ]
         },
@@ -40,39 +40,39 @@
           "name": "Tagesteller",
           "items": [
             {
-              "title": "Wienerschnitzel (Vom schwein) mit kartoffelsalat",
+              "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Cordon bleu mit mayonnaisesalat",
+              "title": "Cordon bleu",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit mayonnaisesalat"
             },
             {
-              "title": "Du chef mit petersilienkartoffel",
+              "title": "Du chef",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Bauernschnitzel mit petersilienkartoffel",
+              "title": "Bauernschnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         }
@@ -91,11 +91,11 @@
               "description": null
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "10,70 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         },
@@ -103,39 +103,39 @@
           "name": "Tagesteller",
           "items": [
             {
-              "title": "Wienerschnitzel (Vom schwein) mit kartoffelsalat",
+              "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Cordon bleu mit mayonnaisesalat",
+              "title": "Cordon bleu",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit mayonnaisesalat"
             },
             {
-              "title": "Du chef mit petersilienkartoffel",
+              "title": "Du chef",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Bauernschnitzel mit petersilienkartoffel",
+              "title": "Bauernschnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         }
@@ -154,11 +154,11 @@
               "description": null
             },
             {
-              "title": "Majoranfleisch mit fusilli",
+              "title": "Majoranfleisch",
               "price": "10,70 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit fusilli"
             }
           ]
         },
@@ -166,39 +166,39 @@
           "name": "Tagesteller",
           "items": [
             {
-              "title": "Wienerschnitzel (Vom schwein) mit kartoffelsalat",
+              "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Cordon bleu mit mayonnaisesalat",
+              "title": "Cordon bleu",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit mayonnaisesalat"
             },
             {
-              "title": "Du chef mit petersilienkartoffel",
+              "title": "Du chef",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Bauernschnitzel mit petersilienkartoffel",
+              "title": "Bauernschnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         }
@@ -217,11 +217,11 @@
               "description": null
             },
             {
-              "title": "Einbrennte hund mit knacker (Klassiker der altwienerküche)",
+              "title": "Einbrennte hund",
               "price": "10,70 €",
               "tags": [],
               "allergens": null,
-              "description": null
+              "description": "mit knacker (Klassiker der altwienerküche)"
             }
           ]
         },
@@ -229,39 +229,39 @@
           "name": "Tagesteller",
           "items": [
             {
-              "title": "Wienerschnitzel (Vom schwein) mit kartoffelsalat",
+              "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Cordon bleu mit mayonnaisesalat",
+              "title": "Cordon bleu",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit mayonnaisesalat"
             },
             {
-              "title": "Du chef mit petersilienkartoffel",
+              "title": "Du chef",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Bauernschnitzel mit petersilienkartoffel",
+              "title": "Bauernschnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         }
@@ -280,18 +280,18 @@
               "description": null
             },
             {
-              "title": "Kabeljau gebacken mit kartoffelsalat",
+              "title": "Kabeljau gebacken",
               "price": "12,80 €",
               "tags": [],
               "allergens": "A,C,D,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Kaiserschmarrn mit zwetschkenröster",
+              "title": "Kaiserschmarrn",
               "price": "10,70 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit zwetschkenröster"
             }
           ]
         },
@@ -299,39 +299,39 @@
           "name": "Tagesteller",
           "items": [
             {
-              "title": "Wienerschnitzel (Vom schwein) mit kartoffelsalat",
+              "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit kartoffelsalat"
             },
             {
-              "title": "Cordon bleu mit mayonnaisesalat",
+              "title": "Cordon bleu",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit mayonnaisesalat"
             },
             {
-              "title": "Du chef mit petersilienkartoffel",
+              "title": "Du chef",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Bauernschnitzel mit petersilienkartoffel",
+              "title": "Bauernschnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G",
-              "description": null
+              "description": "mit petersilienkartoffel"
             },
             {
-              "title": "Salamischnitzel mit salat",
+              "title": "Salamischnitzel",
               "price": "12,50 €",
               "tags": [],
               "allergens": "A,C,G,M",
-              "description": null
+              "description": "mit salat"
             }
           ]
         }

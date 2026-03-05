@@ -18,6 +18,7 @@ const DISCLAIMER_RE = /^BITTE\s+UM\s+VERST/i;
 
 interface ParsedDish {
   title: string;
+  description: string | null;
   allergens: string | null;
   price: string | null;
 }
@@ -61,6 +62,12 @@ function toSentenceCase(text: string): string {
   return s;
 }
 
+function splitAtMit(title: string): { title: string; description: string | null } {
+  const i = title.indexOf(' mit ');
+  if (i === -1) return { title, description: null };
+  return { title: title.slice(0, i), description: title.slice(i + 1) };
+}
+
 function parseDishBlock(lines: string[]): ParsedDish[] {
   const dishTexts: string[] = [];
   const prices: string[] = [];
@@ -96,7 +103,8 @@ function parseDishBlock(lines: string[]): ParsedDish[] {
 
   return dishTexts.map((raw, i) => {
     const { title, allergens } = extractAllergens(raw.trim());
-    return { title: toSentenceCase(title), allergens, price: prices[i] ?? null };
+    const { title: name, description } = splitAtMit(toSentenceCase(title));
+    return { title: name, description, allergens, price: prices[i] ?? null };
   });
 }
 
@@ -158,7 +166,8 @@ function parseText(fullText: string) {
 
   const tagesteller = tagestellerLines.map(raw => {
     const { title, allergens } = extractAllergens(raw.trim());
-    return { title: toSentenceCase(title), allergens, price: tagestellerPrice } as ParsedDish;
+    const { title: name, description } = splitAtMit(toSentenceCase(title));
+    return { title: name, description, allergens, price: tagestellerPrice } as ParsedDish;
   });
 
   return { week1, week2, tagesteller };
@@ -168,7 +177,7 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
   const tagestellerCat: MenuCategory = {
     name: 'Tagesteller',
     items: tagesteller.map(d => ({
-      title: d.title, price: d.price, tags: [], allergens: d.allergens, description: null,
+      title: d.title, price: d.price, tags: [], allergens: d.allergens, description: d.description,
     })),
   };
 
@@ -177,7 +186,7 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
     const dailyItems: MenuItem[] = [
       { title: 'Tagessuppe', price: null, tags: [], allergens: null, description: null },
       ...parseDishBlock(day.lines).map(d => ({
-        title: d.title, price: d.price, tags: [], allergens: d.allergens, description: null,
+        title: d.title, price: d.price, tags: [], allergens: d.allergens, description: d.description,
       })),
     ];
 

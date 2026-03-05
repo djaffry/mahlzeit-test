@@ -139,7 +139,7 @@ function inferTagsFromCategory(category: string, title: string, tags: string[]):
   if (cat === 'salatecke') return ['Vegetarisch'];
   if (cat === 'pizza & co' && /margherita/i.test(title)) return ['Vegetarisch'];
   if (cat.startsWith('obst')) return ['Vegan'];
-  return tags;
+  return [];
 }
 
 function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem }[] {

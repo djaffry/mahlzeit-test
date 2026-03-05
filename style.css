@@ -236,9 +236,13 @@ body {
   margin-bottom: 0.6rem;
 }
 .restaurant-card:hover { box-shadow: var(--shadow-md); }
-.restaurant-card.collapsed .restaurant-content { grid-template-rows: 0fr; }
-.restaurant-card.collapsed .restaurant-header { border-bottom-color: transparent; }
+.restaurant-card.collapsed .restaurant-content,
+.restaurant-card.filter-collapsed .restaurant-content { grid-template-rows: 0fr; }
+.restaurant-card.collapsed .restaurant-header,
+.restaurant-card.filter-collapsed .restaurant-header { border-bottom-color: transparent; }
 .restaurant-card.collapsed .restaurant-collapse-icon { transform: rotate(-90deg); }
+.restaurant-card.filter-collapsed { opacity: 0.5; }
+.restaurant-card.filter-collapsed:hover { opacity: 0.8; }
 
 .restaurant-header {
   padding: 0.75rem 1rem;
@@ -248,7 +252,7 @@ body {
   justify-content: space-between;
 }
 .restaurant-name {
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   display: flex;
@@ -356,8 +360,14 @@ body {
   font-size: 0.84rem;
   color: var(--text);
   line-height: 1.4;
+  white-space: pre-line;
 }
 .item-price { font-weight: 600; color: var(--accent-text); }
+.item-description {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
 .item-meta {
   display: flex;
   gap: 0.25rem;
@@ -384,17 +394,14 @@ body {
   color: var(--text-muted);
 }
 
-/* No data / empty filter */
-.no-data, .filter-empty {
+/* No data */
+.no-data {
   padding: 1.25rem;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.8rem;
   font-style: italic;
 }
-.filter-empty { display: none; }
-.restaurant-card.all-filtered .filter-empty { display: block; }
-.restaurant-card.all-filtered .restaurant-body .category { display: none; }
 
 .error-global {
   max-width: 960px;

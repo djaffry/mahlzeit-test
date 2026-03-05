@@ -34,7 +34,7 @@ const KEYWORD_TAGS: [RegExp, string][] = [
   [/lachs|forelle|scholle|garnele|zander|saibling/i, 'Fisch'],
   [/\bbeef\b|rind(?:s|er|fleisch)|tafelspitz/i, 'Rindfleisch'],
   [/bratwurst|schwein/i, 'Schweinefleisch'],
-  [/\btofu\b|\byofu\b/i, 'Vegan'],
+  [/\btofu\b|\byofu\b|\bobst\b/i, 'Vegan'],
 ];
 
 function inferTags(text: string): string[] {

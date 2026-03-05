@@ -197,13 +197,14 @@ function renderItem(item) {
     .map(t => `<span class="tag" style="${tagStyle(t)}">${escapeHtml(t)}</span>`)
     .join('');
   const price = item.price ? ` <span class="item-price">${escapeHtml(item.price)}</span>` : '';
-  const desc = item.description ? `<span>${escapeHtml(item.description)}</span>` : '';
+  const desc = item.description ? `<div class="item-description">${escapeHtml(item.description)}</div>` : '';
   const allergens = item.allergens ? `<span class="allergens">(${escapeHtml(item.allergens)})</span>` : '';
-  const meta = [desc, tags, allergens].filter(Boolean).join(' ');
+  const meta = [tags, allergens].filter(Boolean).join(' ');
 
   return `
     <div class="menu-item" data-tags="${escapeHtml(tagsData)}">
       <div class="item-title">${escapeHtml(item.title)}${price}</div>
+      ${desc}
       ${meta ? `<div class="item-meta">${meta}</div>` : ''}
     </div>`;
 }
@@ -228,7 +229,6 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   }
   if (hasData) {
     body += `<div class="restaurant-body">${renderCategories(dayData.categories)}</div>`;
-    body += '<div class="filter-empty">Keine passenden Gerichte</div>';
   } else if (!hasError) {
     body += '<div class="no-data">(Noch) kein Menü für diesen Tag</div>';
   }
@@ -341,13 +341,14 @@ function performSearch(query) {
     const items = g.items.slice(0, 5).map(({ item }) => {
       const title = highlightMatch(escapeHtml(item.title), q);
       const price = item.price ? `<span class="item-price">${escapeHtml(item.price)}</span>` : '';
-      const desc = item.description ? `<span>${highlightMatch(escapeHtml(item.description), q)}</span>` : '';
+      const desc = item.description ? `<div class="item-description">${highlightMatch(escapeHtml(item.description), q)}</div>` : '';
       const tags = (item.tags || [])
         .map(t => `<span class="tag" style="${tagStyle(t)}">${escapeHtml(t)}</span>`)
         .join('');
-      const meta = [desc, tags, price].filter(Boolean).join(' ');
+      const meta = [tags, price].filter(Boolean).join(' ');
       return `<div class="search-result-item">
         <div class="search-result-title">${title}</div>
+        ${desc}
         ${meta ? `<div class="search-result-meta">${meta}</div>` : ''}
       </div>`;
     }).join('');
@@ -381,7 +382,7 @@ function applyFilters() {
       if (matches) visibleCount++;
     });
 
-    card.classList.toggle('all-filtered', items.length > 0 && visibleCount === 0);
+    card.classList.toggle('filter-collapsed', items.length > 0 && visibleCount === 0);
   });
 }
 
@@ -466,6 +467,8 @@ function setupTabSwitching(tabsEl, contentEl) {
 
     tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.day === day));
     document.getElementById('weekend-state')?.remove();
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     if (currentPanel) {
       currentPanel.style.opacity = '0';

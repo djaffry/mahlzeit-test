@@ -83,6 +83,10 @@ function parseDish(dishHolder: Element): MenuItem | null {
     ? `${prices[0]} / ${prices[1]}`
     : prices[0] ?? null;
 
+  if (tags.length === 0 && /bunter gemischter salat/i.test(cleanName)) {
+    tags.push('Vegetarisch');
+  }
+
   return { title: cleanName, price, tags, allergens: null, description: null };
 }
 
