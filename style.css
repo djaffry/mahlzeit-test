@@ -350,6 +350,7 @@ body {
 }
 .menu-item:last-child { border-bottom: none; }
 .menu-item.hidden { display: none; }
+.category:not(:has(.menu-item:not(.hidden))) { display: none; }
 
 .item-title {
   font-size: 0.84rem;
