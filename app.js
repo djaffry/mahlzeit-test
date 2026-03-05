@@ -449,6 +449,7 @@ function setupTabSwitching(tabsEl, contentEl) {
     document.getElementById('weekend-state')?.remove();
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
 
     if (currentPanel) {
       currentPanel.style.opacity = '0';
@@ -582,6 +583,39 @@ function setupPartyMode() {
   btn.addEventListener('click', () => {
     const on = document.documentElement.classList.toggle('party');
     localStorage.setItem('party', on ? 'on' : '');
+  });
+}
+
+function setupDiceRoll() {
+  const btn = document.getElementById('dice-btn');
+  btn.addEventListener('click', () => {
+    const panel = document.querySelector('.day-panel.active');
+    if (!panel) return;
+
+    const menuItems = [...panel.querySelectorAll('.menu-item:not(.hidden)')]
+      .filter(el => !el.closest('.restaurant-card')?.querySelector('.reservation-badge'));
+
+    const linkCards = [...panel.querySelectorAll('.restaurant-card:not(.link-muted):not(.map-card)')]
+      .filter(card => !card.querySelector('.menu-item') && !card.querySelector('.reservation-badge'));
+
+    const pool = [...menuItems, ...linkCards];
+    if (pool.length === 0) return;
+
+    document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
+
+    btn.classList.add('rolling');
+    btn.addEventListener('animationend', () => btn.classList.remove('rolling'), { once: true });
+
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+
+    const card = pick.closest('.restaurant-card') || pick;
+    if (card.classList.contains('collapsed')) {
+      card.classList.remove('collapsed');
+      saveCollapsed();
+    }
+
+    pick.classList.add('dice-pick');
+    setTimeout(() => pick.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
   });
 }
 
@@ -843,6 +877,7 @@ async function init() {
 }
 
 setupPartyMode();
+setupDiceRoll();
 setupThemeToggle();
 init();
 

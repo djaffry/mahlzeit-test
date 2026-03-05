@@ -465,6 +465,43 @@ body {
 }
 .link-cta:hover { color: var(--accent); }
 
+/* Dice / random pick */
+.dice-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+.dice-btn:hover { border-color: var(--accent); background: var(--surface-dim); }
+.dice-btn.rolling { animation: diceRoll 0.5s ease; }
+@keyframes diceRoll {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.dice-pick {
+  background: var(--accent-dim);
+  box-shadow: 0 0 0 2px var(--accent);
+  animation: partyHue 2s linear infinite;
+}
+.menu-item.dice-pick {
+  border-radius: var(--radius-sm);
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-left: -0.4rem;
+  margin-right: -0.4rem;
+}
+
 /* Party toggle */
 .party-toggle {
   background: var(--surface);
@@ -835,7 +872,7 @@ body {
   .filters { gap: 0.2rem; }
   .filter-btn { font-size: 0.62rem; padding: 0.2rem 0.5rem; min-height: 30px; }
   .filters-label { font-size: 0.62rem; }
-  .theme-toggle, .search-trigger, .feedback-link, .party-toggle { width: 34px; height: 34px; }
+  .theme-toggle, .search-trigger, .feedback-link, .party-toggle, .dice-btn { width: 34px; height: 34px; }
   #inline-map { height: 300px; }
 }
 
@@ -843,7 +880,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .tab:active, .filter-btn:active,
   .weekend-browse-btn:active { transform: scale(0.96); }
-  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active, .party-toggle:active { transform: scale(0.92); }
+  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active, .party-toggle:active, .dice-btn:active { transform: scale(0.92); }
 }
 
 /* Party mode */

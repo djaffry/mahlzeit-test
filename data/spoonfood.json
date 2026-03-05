@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-05T20:54:51.598Z",
+  "fetchedAt": "2026-03-06T15:30:20.716Z",
   "error": null,
   "days": {
     "Montag": {
@@ -563,6 +563,134 @@
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Steckrübensuppe 🥕",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Ofen-Kräuter 🌿-Kartoffeln mit Speck 🥓, Mais 🌽 & Lauch - mit Käse 🧀 gratiniert",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warmer Sticky Toffee 🤎-Bananen 🍌-Brioche-Auflauf mit Schokoladensauce 🍫",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Hoisin-Chicken-Pot mit Chinakohl 🥬, Karotten 🥕, Paprika 🫑, Ingwer 🫚 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Süßkartoffel 🍠-Kichererbsen-Tikka Masala mit Brokkoli 🥦 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Apfel 🍏-Grünkohl 🥬-Salad Bowl mit Quinoa, Nussmix 🥜 & Honig 🍯-Kurkuma 💛-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Karottenkuchen 🥕 - mit Mascarpone-Creme - im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
               ],
               "allergens": null,
               "description": null
