@@ -33,10 +33,15 @@ interface Component {
   ComponentDetails?: ComponentDetails;
 }
 
+interface ProductInfo {
+  Product?: XmlAttributes | XmlAttributes[];
+}
+
 interface SetMenuDetails {
   GastDesc?: XmlAttributes;
   GastDescTranslation?: XmlAttributes;
   AdditiveInfo?: AdditiveInfo;
+  ProductInfo?: ProductInfo;
 }
 
 interface SetMenu extends XmlAttributes {
@@ -142,6 +147,17 @@ function inferTagsFromCategory(category: string, title: string, tags: string[]):
   return [];
 }
 
+function extractProductPrice(setMenu: SetMenu): string | null {
+  const products = toArray(setMenu.SetMenuDetails?.ProductInfo?.Product);
+  for (const product of products) {
+    const price = product['@attributes']?.ProductPrice;
+    if (price && price !== '0.00') {
+      return `${price.replace('.', ',')} €`;
+    }
+  }
+  return null;
+}
+
 function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem }[] {
   const lineName = menuLine['@attributes']?.Name ?? '';
   const fallbackCategory = normalizeCategoryName(lineName);
@@ -153,8 +169,6 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
     const title = (setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '').trim();
     if (!title || /station heute geschlossen/i.test(title)) continue;
 
-    const price = setMenu['@attributes']?.SalesPrice;
-
     const displayName = setMenu['@attributes']?.DisplayName ?? '';
     const category = normalizeCategoryName(displayName) || fallbackCategory;
 
@@ -162,7 +176,7 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
       category,
       item: {
         title,
-        price: price && price !== '0.00' ? `${price} €` : null,
+        price: extractProductPrice(setMenu),
         tags: inferTagsFromCategory(category, title, extractDietaryTags(setMenu)),
         allergens: extractAllergens(setMenu),
         description: null,

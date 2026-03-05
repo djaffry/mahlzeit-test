@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-05T20:06:35.442Z",
+  "fetchedAt": "2026-03-05T20:54:51.945Z",
   "error": null,
   "days": {
     "Montag": {
@@ -52,7 +52,7 @@
           "items": [
             {
               "title": "Kebab Hühnerfleisch direkt vom Spieß • \ntürkischer Reis oder Pommes Frites •\nPfefferoni • Salat • Tomate •\nZwiebel • Rotkraut • Ayran",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Geflügel"
               ],
@@ -66,7 +66,7 @@
           "items": [
             {
               "title": "Fiakergulasch mit\nGurkerl • Ei • Würstel •\nSalzerdäpfeln",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -80,7 +80,7 @@
           "items": [
             {
               "title": "Kleine Kürbisknödel • \nPaprikakraut • \ngeröstete Kürbiskerne",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -94,7 +94,7 @@
           "items": [
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -108,7 +108,7 @@
           "items": [
             {
               "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
-              "price": null,
+              "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Geflügel",
@@ -124,7 +124,7 @@
           "items": [
             {
               "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
-              "price": null,
+              "price": "10,90 €",
               "tags": [
                 "Rindfleisch",
                 "Fisch"
@@ -134,7 +134,7 @@
             },
             {
               "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
-              "price": null,
+              "price": "10,90 €",
               "tags": [],
               "allergens": null,
               "description": null
@@ -146,7 +146,7 @@
           "items": [
             {
               "title": "Süßkartoffel - Chimichuri Wrap • Naturreis • Radicchio •\nMexikanischer Salat",
-              "price": null,
+              "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -160,7 +160,7 @@
           "items": [
             {
               "title": "Pizza\nRucola, Prosciutto \nBüffelmozzarella",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
               ],
@@ -169,7 +169,7 @@
             },
             {
               "title": "Pizza Margherita",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -285,7 +285,7 @@
           "items": [
             {
               "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -299,7 +299,7 @@
           "items": [
             {
               "title": "Gebackenes Hühnerschnitzel • \nCornflakes - Panade •\nPetersilienerdäpfel",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Geflügel"
               ],
@@ -313,7 +313,7 @@
           "items": [
             {
               "title": "Zucchini- Süßkartoffel Laibchen • \ncremiges Kohlrabigemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
@@ -327,7 +327,7 @@
           "items": [
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -341,7 +341,7 @@
           "items": [
             {
               "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
-              "price": null,
+              "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Geflügel",
@@ -357,7 +357,7 @@
           "items": [
             {
               "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
-              "price": null,
+              "price": "10,90 €",
               "tags": [
                 "Rindfleisch",
                 "Fisch"
@@ -367,7 +367,7 @@
             },
             {
               "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
-              "price": null,
+              "price": "10,90 €",
               "tags": [],
               "allergens": null,
               "description": null
@@ -379,7 +379,7 @@
           "items": [
             {
               "title": "Bunter Blattsalatteller •\nlauwarmer Ziegenkäse mit Honig & Kräutern •\nCitrus Dressing",
-              "price": null,
+              "price": "11,90 €",
               "tags": [
                 "Vegan"
               ],
@@ -393,7 +393,7 @@
           "items": [
             {
               "title": "Calzone • \nGrillpaprika • Lachs • \nBasilikum • Käse • Tomatensauce",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Fisch"
               ],
@@ -402,7 +402,7 @@
             },
             {
               "title": "Pizza Margherita",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -518,7 +518,7 @@
           "items": [
             {
               "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -532,7 +532,7 @@
           "items": [
             {
               "title": "Tiroler Gröst'l •\nSpiegelei",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
               ],
@@ -546,7 +546,7 @@
           "items": [
             {
               "title": "Überbackene Gemüse Cannelloni • \nTomaten-Zucchinisauce",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -560,7 +560,7 @@
           "items": [
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -574,7 +574,7 @@
           "items": [
             {
               "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
-              "price": null,
+              "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Geflügel",
@@ -590,7 +590,7 @@
           "items": [
             {
               "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
-              "price": null,
+              "price": "10,90 €",
               "tags": [
                 "Rindfleisch",
                 "Fisch"
@@ -600,7 +600,7 @@
             },
             {
               "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
-              "price": null,
+              "price": "10,90 €",
               "tags": [],
               "allergens": null,
               "description": null
@@ -612,7 +612,7 @@
           "items": [
             {
               "title": "Toskanischer Brotsalat \"Panzanella\" •\nCherrytomaten • rote Zwiebel • Basilikum •\ngebratene Putenstreifen",
-              "price": null,
+              "price": "11,90 €",
               "tags": [
                 "Geflügel"
               ],
@@ -626,7 +626,7 @@
           "items": [
             {
               "title": "Pizza •\nRagout d' Agnello \nherzhafte Lamm Bolognese",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Wild",
                 "Lamm"
@@ -636,7 +636,7 @@
             },
             {
               "title": "Pizza Margherita",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -754,7 +754,7 @@
           "items": [
             {
               "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -768,7 +768,7 @@
           "items": [
             {
               "title": "Saltimbocca vom Huhn mit Prosciutto und Salbei •\nCremige Polenta •\ngegrilltes Gemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Geflügel"
               ],
@@ -782,7 +782,7 @@
           "items": [
             {
               "title": "Faschierter Braten auf vegane Art • \nErdäpfelpüree •\nRöstzwiebel",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -796,7 +796,7 @@
           "items": [
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -810,7 +810,7 @@
           "items": [
             {
               "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
-              "price": null,
+              "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Geflügel",
@@ -826,7 +826,7 @@
           "items": [
             {
               "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
-              "price": null,
+              "price": "10,90 €",
               "tags": [
                 "Rindfleisch",
                 "Fisch"
@@ -836,7 +836,7 @@
             },
             {
               "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
-              "price": null,
+              "price": "10,90 €",
               "tags": [],
               "allergens": null,
               "description": null
@@ -848,7 +848,7 @@
           "items": [
             {
               "title": "Puy Linsensalat •\nTrauben • Chili • Minze • \ngegrillter Halloumi •\nGranatapfel •\nWalnuss Dressing",
-              "price": null,
+              "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -862,14 +862,14 @@
           "items": [
             {
               "title": "Pizza Salami Milano •\nPfefferoni • Paprika •\nZuckermais",
-              "price": null,
+              "price": "9,90 €",
               "tags": [],
               "allergens": "A,G,M",
               "description": null
             },
             {
               "title": "Pizza Margherita",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -987,7 +987,7 @@
           "items": [
             {
               "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -1001,7 +1001,7 @@
           "items": [
             {
               "title": "Gebackenes Schollenfilet •\nPetersilienerdäpfel •\nSauce Tartare",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Fisch"
               ],
@@ -1015,7 +1015,7 @@
           "items": [
             {
               "title": "Planted \"Züricher Geschnetzeltes\" •\nRösterdäpfel",
-              "price": null,
+              "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
@@ -1029,7 +1029,7 @@
           "items": [
             {
               "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
-              "price": null,
+              "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
               ],
@@ -1043,7 +1043,7 @@
           "items": [
             {
               "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
-              "price": null,
+              "price": "10,90 €",
               "tags": [
                 "Rindfleisch",
                 "Fisch"
@@ -1053,7 +1053,7 @@
             },
             {
               "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
-              "price": null,
+              "price": "10,90 €",
               "tags": [],
               "allergens": null,
               "description": null
@@ -1065,7 +1065,7 @@
           "items": [
             {
               "title": "Gebratener Curry - Karfiol • \nKarottensticks • Rotkraut • Ei • \nKichererbsen • Gojibeeren • Tahina",
-              "price": null,
+              "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
