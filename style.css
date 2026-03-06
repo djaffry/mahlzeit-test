@@ -633,7 +633,7 @@ body {
   padding: 0.4rem;
 }
 .search-results:empty::after {
-  content: 'Tippe um zu suchen...';
+  content: 'Gericht oder Restaurant suchen...';
   display: block;
   text-align: center;
   color: var(--text-muted);

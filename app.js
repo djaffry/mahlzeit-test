@@ -285,6 +285,16 @@ function closeSearch() {
   document.getElementById('search-overlay').hidden = true;
 }
 
+function isFilterShowAll() {
+  return activeFilters.size === document.querySelectorAll('.filter-btn').length;
+}
+
+function itemMatchesFilters(item) {
+  const tags = (item.tags ?? []).map(t => t.toLowerCase()).join(' ');
+  if (tags === '') return true;
+  return [...activeFilters].some(f => tags.includes(f.toLowerCase()));
+}
+
 function performSearch(query) {
   const resultsEl = document.getElementById('search-results');
   if (!query.trim()) { resultsEl.innerHTML = ''; return; }
@@ -293,6 +303,8 @@ function performSearch(query) {
   const activeTab = document.querySelector('.tab.active');
   const day = activeTab ? activeTab.dataset.day : 'Montag';
   const restaurants = _menuData?.fullRestaurants ?? [];
+  const showAll = isFilterShowAll();
+  const passes = item => showAll || itemMatchesFilters(item);
   const groups = [];
 
   for (const r of restaurants) {
@@ -302,6 +314,7 @@ function performSearch(query) {
     const matches = [];
     for (const cat of dayData.categories) {
       for (const item of cat.items) {
+        if (!passes(item)) continue;
         const haystack = [item.title, item.description, item.price, ...(item.tags ?? [])].filter(Boolean).join(' ').toLowerCase();
         if (haystack.includes(q)) {
           matches.push({ item });
@@ -310,12 +323,12 @@ function performSearch(query) {
     }
     const titleMatch = r.title.toLowerCase().includes(q);
     if (matches.length > 0 || titleMatch) {
-      groups.push({
-        title: r.title,
-        items: titleMatch && matches.length === 0
-          ? dayData.categories.flatMap(c => c.items.slice(0, 3).map(item => ({ item })))
-          : matches
-      });
+      const filteredItems = titleMatch && matches.length === 0
+        ? dayData.categories.flatMap(c => c.items.filter(passes).slice(0, 3).map(item => ({ item })))
+        : matches;
+      if (filteredItems.length > 0) {
+        groups.push({ title: r.title, items: filteredItems });
+      }
     }
   }
 
@@ -343,34 +356,41 @@ function performSearch(query) {
   }).join('');
 }
 
+function refreshSearchResults() {
+  const overlay = document.getElementById('search-overlay');
+  if (overlay.hidden) return;
+  const input = document.getElementById('search-input');
+  performSearch(input.value);
+}
+
 function applyFilters() {
   const contentEl = document.getElementById('content');
   const activePanel = contentEl.querySelector('.day-panel.active');
   if (!activePanel) return;
 
-  const totalFilters = document.querySelectorAll('.filter-btn').length;
-  const showAll = activeFilters.size === totalFilters;
+  const showAll = isFilterShowAll();
 
   const cards = activePanel.querySelectorAll('.restaurant-card');
   cards.forEach(card => {
     const items = card.querySelectorAll('.menu-item');
     let visibleCount = 0;
 
-    items.forEach(item => {
+    items.forEach(el => {
       if (showAll) {
-        item.classList.remove('hidden');
+        el.classList.remove('hidden');
         visibleCount++;
         return;
       }
-      const itemTags = item.dataset.tags ?? '';
-      const untagged = itemTags === '';
-      const matches = untagged || [...activeFilters].some(f => itemTags.includes(f.toLowerCase()));
-      item.classList.toggle('hidden', !matches);
+      const tags = el.dataset.tags ?? '';
+      const matches = tags === '' || [...activeFilters].some(f => tags.includes(f.toLowerCase()));
+      el.classList.toggle('hidden', !matches);
       if (matches) visibleCount++;
     });
 
     card.classList.toggle('filter-collapsed', items.length > 0 && visibleCount === 0);
   });
+
+  refreshSearchResults();
 }
 
 function moveMapCard() {
@@ -468,11 +488,11 @@ function setupTabSwitching(tabsEl, contentEl) {
         nextPanel.classList.add('active', 'fade-enter');
         nextPanel.offsetHeight; // force reflow
         nextPanel.classList.remove('fade-enter');
-        refreshPanel(nextPanel);
+        refreshPanel();
       }, 150);
     } else {
       nextPanel.classList.add('active');
-      refreshPanel(nextPanel);
+      refreshPanel();
     }
   });
 }
