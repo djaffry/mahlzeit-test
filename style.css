@@ -26,6 +26,7 @@
   --lavender: #b4befe; --lavender-dim: rgba(180,190,254,0.15);
   --teal: #94e2d5; --teal-dim: rgba(148,226,213,0.15);
   --flamingo: #f2cdcd; --flamingo-dim: rgba(242,205,205,0.15);
+  --shimmer: #4a4b63;
 }
 
 /* Catppuccin Latte */
@@ -52,6 +53,7 @@
   --lavender: #7287fd; --lavender-dim: rgba(114,135,253,0.1);
   --teal: #179299; --teal-dim: rgba(23,146,153,0.1);
   --flamingo: #dd7878; --flamingo-dim: rgba(221,120,120,0.1);
+  --shimmer: #ccd0da;
 }
 [data-theme="latte"] .tab.active {
   color: #ffffff;
@@ -256,9 +258,9 @@ body {
 .skeleton-line {
   height: 0.75rem;
   border-radius: 4px;
-  background: linear-gradient(90deg, var(--border-light) 25%, var(--surface-dim) 50%, var(--border-light) 75%);
+  background: linear-gradient(90deg, var(--border-light) 25%, var(--shimmer) 50%, var(--border-light) 75%);
   background-size: 200% 100%;
-  animation: shimmer 3s ease infinite;
+  animation: shimmer 1.5s ease infinite;
 }
 
 .day-panel {
