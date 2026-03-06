@@ -76,6 +76,13 @@ function escapeHtml(str) {
   return el.innerHTML;
 }
 
+function smoothScrollTo(el) {
+  const toolbar = document.querySelector('.toolbar');
+  const offset = toolbar ? toolbar.offsetHeight + 12 : 0;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
 function highlightMatch(html, query) {
   const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
   return html.replace(regex, '<mark>$1</mark>');
@@ -615,7 +622,11 @@ function setupDiceRoll() {
     }
 
     pick.classList.add('dice-pick');
-    setTimeout(() => pick.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+    const isCard = pick.classList.contains('restaurant-card');
+    setTimeout(() => {
+      if (isCard) { smoothScrollTo(pick); }
+      else { pick.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    }, 100);
   });
 }
 
@@ -713,7 +724,7 @@ function scrollToRestaurant(id) {
     saveCollapsed();
   }
 
-  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  smoothScrollTo(card);
   card.classList.add('map-highlight');
   setTimeout(() => card.classList.remove('map-highlight'), 1500);
 }
@@ -731,7 +742,7 @@ function focusOnMap(id) {
     toggleMapCard();
   }
 
-  mapCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  smoothScrollTo(mapCard);
 
   const fly = () => {
     if (!_inlineMap) return;
