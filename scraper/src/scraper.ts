@@ -3,6 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import type { Adapter, FullAdapter, LinkAdapter, RestaurantData } from './types.js';
 import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest } from './persistence.js';
+import { log } from './log.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ADAPTERS_DIR = join(__dirname, 'adapters');
@@ -24,16 +25,16 @@ async function discoverAdapters(): Promise<Adapter[]> {
       const mod: AdapterModule = await import(modulePath);
       const adapter = mod.default;
       if (!adapter?.id || !adapter?.type) {
-        console.warn(`Skipping ${file}: missing id or type export`);
+        log('FAIL', file, 'load', 'missing id or type export');
         continue;
       }
       if (adapter.type === 'full' && typeof adapter.fetchMenu !== 'function') {
-        console.warn(`Skipping ${file}: full adapter missing fetchMenu`);
+        log('FAIL', file, 'load', 'full adapter missing fetchMenu');
         continue;
       }
       adapters.push(adapter);
     } catch (err) {
-      console.error(`Failed to load adapter ${file}:`, err);
+      log('FAIL', file, 'load', err instanceof Error ? err.message : String(err));
     }
   }
   return adapters;
@@ -52,9 +53,9 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
 async function scrapeFullAdapters(adapters: FullAdapter[]): Promise<RestaurantData[]> {
   const results = await Promise.allSettled(
     adapters.map(async (adapter): Promise<RestaurantData> => {
-      console.log(`[${adapter.id}] Fetching...`);
+      log('INFO', adapter.id, 'fetch', 'starting');
       const days = await withTimeout(adapter.fetchMenu(), SCRAPE_TIMEOUT_MS, adapter.id);
-      console.log(`[${adapter.id}] OK: ${Object.keys(days).length} day(s)`);
+      log('OK', adapter.id, 'fetch', `${Object.keys(days).length} day(s)`);
       return buildRestaurantData(adapter, sanitizeWeekMenu(days), null);
     })
   );
@@ -64,7 +65,7 @@ async function scrapeFullAdapters(adapters: FullAdapter[]): Promise<RestaurantDa
 
     const adapter = adapters[i];
     const errorMsg = result.reason instanceof Error ? result.reason.message : String(result.reason);
-    console.error(`[${adapter.id}] FAILED: ${errorMsg}`);
+    log('FAIL', adapter.id, 'fetch', errorMsg);
     return buildRestaurantData(adapter, {}, errorMsg);
   });
 }
@@ -75,7 +76,7 @@ async function main(): Promise<void> {
   const adapters = await discoverAdapters();
   const fullAdapters = adapters.filter((a): a is FullAdapter => a.type === 'full');
   const linkAdapters = adapters.filter((a): a is LinkAdapter => a.type === 'link');
-  console.log(`Discovered ${adapters.length} adapter(s): ${adapters.map(a => a.id).join(', ')}`);
+  log('INFO', '*', 'discover', `${adapters.length} adapter(s): ${adapters.map(a => a.id).join(', ')}`);
 
   const restaurantIds: string[] = [];
 
@@ -95,6 +96,6 @@ async function main(): Promise<void> {
 }
 
 main().catch(err => {
-  console.error('Fatal error:', err);
+  log('FAIL', '*', 'fatal', err instanceof Error ? err.message : String(err));
   process.exit(1);
 });

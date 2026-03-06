@@ -3,6 +3,7 @@ import { dirname, join, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Adapter, RestaurantData, WeekMenu, MenuItem } from './types.js';
 import { WEEKDAYS } from './types.js';
+import { log } from './log.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..', '..');
@@ -90,7 +91,7 @@ export async function saveRestaurant(data: RestaurantData): Promise<void> {
 
   if (data.error) {
     if (await fileExists(filePath)) {
-      console.warn(`[${data.id}] Keeping old data (scrape failed: ${data.error})`);
+      log('INFO', data.id, 'save', `keeping old data (scrape failed: ${data.error})`);
       return;
     }
   } else {
@@ -101,11 +102,11 @@ export async function saveRestaurant(data: RestaurantData): Promise<void> {
   }
 
   await writeFile(filePath, JSON.stringify(data, null, 2));
-  console.log(`[${data.id}] Wrote ${basename(filePath)}`);
+  log('OK', data.id, 'save', basename(filePath));
 }
 
 export async function saveManifest(restaurantIds: string[]): Promise<void> {
   const manifestPath = join(DATA_DIR, 'index.json');
   await writeFile(manifestPath, JSON.stringify(restaurantIds, null, 2));
-  console.log(`\nWrote data/index.json with ${restaurantIds.length} restaurant(s)`);
+  log('OK', '*', 'save', `index.json with ${restaurantIds.length} restaurant(s)`);
 }
