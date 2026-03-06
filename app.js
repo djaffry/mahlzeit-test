@@ -8,6 +8,8 @@ const SVG = {
   mapPin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
 };
 
+function haptic(ms = 10) { navigator.vibrate?.(ms); }
+
 const TAG_COLORS = {
   Vegan: 'green',
   Vegetarisch: 'teal',
@@ -404,9 +406,24 @@ function moveMapCard() {
   if (_inlineMap) setTimeout(() => _inlineMap.invalidateSize(), 50);
 }
 
+function revealCards() {
+  const panel = document.querySelector('.day-panel.active');
+  if (!panel) return;
+  const cards = panel.querySelectorAll('.restaurant-card:not(.visible)');
+  const settleTime = cards.length * 25 + 200;
+  cards.forEach((card, i) => {
+    card.style.transitionDelay = `${i * 25}ms`;
+    requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('visible')));
+  });
+  setTimeout(() => {
+    cards.forEach(card => { card.style.transitionDelay = ''; card.classList.add('settled'); });
+  }, settleTime);
+}
+
 function refreshPanel() {
   applyFilters();
   moveMapCard();
+  revealCards();
 }
 
 async function fetchMenuData() {
@@ -467,6 +484,7 @@ function setupTabSwitching(tabsEl, contentEl) {
   tabsEl.addEventListener('click', e => {
     const btn = e.target.closest('.tab');
     if (!btn) return;
+    haptic();
     const day = btn.dataset.day;
     const currentPanel = contentEl.querySelector('.day-panel.active');
     const nextPanel = contentEl.querySelector(`.day-panel[data-panel="${day}"]`);
@@ -485,6 +503,10 @@ function setupTabSwitching(tabsEl, contentEl) {
         currentPanel.classList.remove('active');
         currentPanel.style.opacity = '';
         currentPanel.style.transform = '';
+        currentPanel.querySelectorAll('.restaurant-card.visible').forEach(c => {
+          c.classList.remove('visible', 'settled');
+          c.style.transitionDelay = '';
+        });
         nextPanel.classList.add('active', 'fade-enter');
         nextPanel.offsetHeight; // force reflow
         nextPanel.classList.remove('fade-enter');
@@ -499,6 +521,8 @@ function setupTabSwitching(tabsEl, contentEl) {
 
 function setupFilterListeners(filtersEl) {
   filtersEl.addEventListener('click', e => {
+    if (!e.target.closest('.filters-label') && !e.target.closest('.filter-btn')) return;
+    haptic();
     if (e.target.closest('.filters-label')) {
       const allBtns = filtersEl.querySelectorAll('.filter-btn');
       const allActive = activeFilters.size === allBtns.length;
@@ -559,7 +583,11 @@ function setupSearchListeners() {
   document.getElementById('search-overlay').addEventListener('click', e => {
     if (e.target === e.currentTarget) closeSearch();
   });
-  document.getElementById('search-input').addEventListener('input', e => performSearch(e.target.value));
+  let searchTimer;
+  document.getElementById('search-input').addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => performSearch(e.target.value), 150);
+  });
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
     if (e.key === 'Escape') closeSearch();
@@ -598,7 +626,7 @@ function renderFreshness(fullRestaurants, footerEl) {
 
   setTimeout(() => {
     const badge = document.getElementById('freshness-badge');
-    badge.innerHTML = `Neu laden ${SVG.reload}`;
+    badge.innerHTML = `<span class="freshness-label">Neu laden</span>${SVG.reload}`;
     badge.classList.add('page-stale');
     badge.addEventListener('click', () => window.location.reload());
   }, 5 * 60 * 1000);
@@ -616,6 +644,7 @@ function setupPartyMode() {
 function setupDiceRoll() {
   const btn = document.getElementById('dice-btn');
   btn.addEventListener('click', () => {
+    haptic(15);
     const panel = document.querySelector('.day-panel.active');
     if (!panel) return;
 
@@ -762,7 +791,7 @@ function focusOnMap(id) {
     toggleMapCard();
   }
 
-  smoothScrollTo(mapCard);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const fly = () => {
     if (!_inlineMap) return;
@@ -878,13 +907,28 @@ async function init() {
 
   renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay);
 
+  // Show skeleton while loading
+  const randLines = () => {
+    const count = 8 + Math.floor(Math.random() * 32);
+    return Array.from({ length: count }, () => {
+      const w = 25 + Math.floor(Math.random() * 65);
+      return `<div class="skeleton-line" style="width:${w}%"></div>`;
+    }).join('');
+  };
+  contentEl.innerHTML = '<div class="restaurant-grid">' +
+    [1,2,3].map(() => `<div class="skeleton-card">${randLines()}</div>`).join('') + '</div>';
+
   try {
+    const loadStart = Date.now();
     const { fullRestaurants, linkRestaurants } = await fetchMenuData();
     _menuData = { fullRestaurants, linkRestaurants };
 
     const allTags = collectTags(fullRestaurants);
     loadFilters(allTags);
     buildFilterButtons(allTags);
+
+    const elapsed = Date.now() - loadStart;
+    if (elapsed < 200) await new Promise(r => setTimeout(r, 200 - elapsed));
 
     renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay);
     refreshPanel();
@@ -910,6 +954,7 @@ async function init() {
 setupPartyMode();
 setupDiceRoll();
 setupThemeToggle();
+
 init();
 
 if ('serviceWorker' in navigator) {

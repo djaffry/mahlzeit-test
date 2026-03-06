@@ -19,10 +19,19 @@
 <div class="toolbar">
   <div class="toolbar-inner">
     <div class="toolbar-top">
-      <div>
-        <div class="toolbar-title">Mittagsmenü</div>
-        <div class="toolbar-subtitle">Austria Campus, Wien</div>
-      </div>
+      <a class="toolbar-brand" href="." onclick="event.preventDefault(); window.location.reload();">
+        <svg class="toolbar-logo" width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="currentColor" class="logo-bg"/>
+          <rect x="13" y="7" width="8" height="28" rx="4" fill="currentColor" class="logo-fg"/>
+          <rect x="43" y="7" width="8" height="28" rx="4" fill="currentColor" class="logo-fg"/>
+          <rect x="13" y="27" width="38" height="8" rx="4" fill="currentColor" class="logo-fg"/>
+          <rect x="28" y="7" width="8" height="50" rx="4" fill="currentColor" class="logo-fg"/>
+        </svg>
+        <div>
+          <div class="toolbar-title">Mittagsmenü</div>
+          <div class="toolbar-subtitle">Austria Campus, Wien</div>
+        </div>
+      </a>
       <div class="day-tabs" id="day-tabs"></div>
       <div class="toolbar-actions">
         <button class="freshness-badge" id="freshness-badge" aria-label="Daten-Aktualität"></button>
@@ -40,10 +49,11 @@
         </button>
       </div>
     </div>
-    <div class="filters" id="filters">
-      <span class="filters-label">Filter</span>
-    </div>
   </div>
+</div>
+
+<div class="filters" id="filters">
+  <span class="filters-label">Filter</span>
 </div>
 
 <div class="content" id="content"></div>
