@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-06T19:48:19.951Z",
+  "fetchedAt": "2026-03-09T08:49:11.901Z",
   "error": null,
   "days": {
     "Montag": {
@@ -21,14 +21,14 @@
           "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Putenschinken - Schöberl • Suppennudeln",
               "price": null,
               "tags": [
-                "Geflügel",
                 "Rindfleisch",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Geflügel"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,L",
               "description": null
             }
           ]
@@ -37,12 +37,12 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Erdäpfel-Safransuppe\nGrünkern",
+              "title": "Rote Rüben - Birnencremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,L",
+              "allergens": "G,L",
               "description": null
             }
           ]
@@ -51,7 +51,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Kebab Hühnerfleisch direkt vom Spieß • \ntürkischer Reis oder Pommes Frites •\nPfefferoni • Salat • Tomate •\nZwiebel • Rotkraut • Ayran",
+              "title": "Kebab Hühnerfleisch direkt vom Spieß • \ntürkischer Reis oder Pommes Frites •\nPfefferoni • Salat • Tomate • Zwiebel • Rotkraut • Ayran",
               "price": "12,30 €",
               "tags": [
                 "Geflügel"
@@ -65,12 +65,12 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Fiakergulasch mit\nGurkerl • Ei • Würstel •\nSalzerdäpfeln",
+              "title": "Gebratenes Hühnerfilet • \ncremige Rote Rüben • Polenta Taler • \nKresse",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Geflügel"
               ],
-              "allergens": "C,M,O",
+              "allergens": "G",
               "description": null
             }
           ]
@@ -79,12 +79,12 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Kleine Kürbisknödel • \nPaprikakraut • \ngeröstete Kürbiskerne",
+              "title": "\"Chili sin Carne\" •\nLauch - Babykartoffel",
               "price": "12,30 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
-              "allergens": "A,C,G",
+              "allergens": "F,M",
               "description": null
             }
           ]
@@ -93,12 +93,12 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
+              "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Vegetarisch"
+                "Rindfleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G,H,L",
               "description": null
             }
           ]
@@ -107,7 +107,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
+              "title": "Beef Minute Steak • Gegrillte Landhendlbrust • Bratwurst •\nDukaten Chips • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nBlackend Louisiana Chicken Burger •\nHühnerbrust • Brioche Bun • Zwiebelmarmelade • Mango Salsa",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -123,17 +123,16 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Rindfleisch",
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,D,E,F,M,N,O",
+              "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
             },
             {
-              "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
+              "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -145,12 +144,12 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Süßkartoffel - Chimichuri Wrap • Naturreis • Radicchio •\nMexikanischer Salat",
+              "title": "\"Superfood Wrap\"  •\nSchwarzer Quinoa • Gojibeeren •\nEisbergsalat • Nussmix • Jungzwiebel •\nBabyspinat • Dilljoghurt",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G,M",
+              "allergens": "A,F,H,O",
               "description": null
             }
           ]
@@ -159,12 +158,10 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza\nRucola, Prosciutto \nBüffelmozzarella",
+              "title": "Pide •\nChampignonragout • Feta • \nfrischer Oregano • Ayran",
               "price": "9,90 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
-              "allergens": "A,G,O",
+              "tags": [],
+              "allergens": "A,G",
               "description": null
             },
             {
@@ -182,7 +179,7 @@
           "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
+              "title": "Create your own Bowl •\nNishikireis • Quinoa weiss •\nvegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -196,12 +193,12 @@
           "name": "Bowl Topping",
           "items": [
             {
-              "title": "Garnelenbällchen •\nFeta in Kräuterpanier",
+              "title": "Gebackene Putenstreifen ´´Sesam`` • \nFalafel",
               "price": null,
               "tags": [
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,B,C,G,H,O",
+              "allergens": "A,C,N",
               "description": null
             }
           ]
@@ -210,10 +207,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Panna Cotta •\nMangospiegel\nGrüntee Mousse",
+              "title": "Kokos - Sojajoghurt Granola mit Sesam,\nDatteln & Cranberries • Ananas\nBiscoff Creme",
               "price": null,
-              "tags": [],
-              "allergens": "A,G,O",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,F,G,H,N,O",
               "description": null
             }
           ]
@@ -222,12 +221,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Haselnuss - Orangenschnitte\nGedeckter Birnenkuchen",
+              "title": "Zitronenkuchen\nBananen Schnitte",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,G,H,O",
+              "tags": [],
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -254,14 +251,14 @@
           "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Putenschinken - Schöberl • Suppennudeln",
               "price": null,
               "tags": [
-                "Geflügel",
                 "Rindfleisch",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Geflügel"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,L",
               "description": null
             }
           ]
@@ -270,12 +267,12 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Kräuterseitlingcremesuppe • \nFinnenbrot Croutons",
+              "title": "Orangen - Schwarzwurzelsuppe • \ngeröstete Sonnenblumenkerne",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,L,N",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -284,12 +281,12 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
+              "title": "Gebratenes Zanderfilet • \nBalsamico-Berglinsen •\nBroccoli",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Fisch"
               ],
-              "allergens": "G,L,O",
+              "allergens": "A,D,F,L,O",
               "description": null
             }
           ]
@@ -298,7 +295,7 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Gebackenes Hühnerschnitzel • \nCornflakes - Panade •\nPetersilienerdäpfel",
+              "title": "Gebackenes Putenschnitzel • Kürbiskernpanade •\nPetersilien Kartoffel",
               "price": "12,30 €",
               "tags": [
                 "Geflügel"
@@ -312,7 +309,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Zucchini- Süßkartoffel Laibchen • \ncremiges Kohlrabigemüse",
+              "title": "Gulasch von Kräuterseitlingen •\nvegane Spätzle",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -326,12 +323,12 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
+              "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Vegetarisch"
+                "Rindfleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G,H,L",
               "description": null
             }
           ]
@@ -340,7 +337,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
+              "title": "Beef Minute Steak • Gegrillte Landhendlbrust • Bratwurst •\nDukaten Chips • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nBlackend Louisiana Chicken Burger •\nHühnerbrust • Brioche Bun • Zwiebelmarmelade • Mango Salsa",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -356,17 +353,16 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Rindfleisch",
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,D,E,F,M,N,O",
+              "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
             },
             {
-              "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
+              "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -378,12 +374,12 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Bunter Blattsalatteller •\nlauwarmer Ziegenkäse mit Honig & Kräutern •\nCitrus Dressing",
+              "title": "Antipasti •\nBüffelmozzarella •\nProsciutto • Ciabatta",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Schweinefleisch"
               ],
-              "allergens": "G,L,M,O",
+              "allergens": "A,C,G,O",
               "description": null
             }
           ]
@@ -392,12 +388,12 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Calzone • \nGrillpaprika • Lachs • \nBasilikum • Käse • Tomatensauce",
+              "title": "Pizza Räucherlachs •\nBasilikum • Ricotta •\nCherrytomaten",
               "price": "9,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,G",
+              "allergens": "A,G",
               "description": null
             },
             {
@@ -415,7 +411,7 @@
           "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
+              "title": "Create your own Bowl •\nNishikireis • Quinoa weiss •\nvegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -429,12 +425,12 @@
           "name": "Bowl Topping",
           "items": [
             {
-              "title": "Garnelenbällchen •\nFeta in Kräuterpanier",
+              "title": "Gebackene Putenstreifen ´´Sesam`` • \nFalafel",
               "price": null,
               "tags": [
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,B,C,G,H,O",
+              "allergens": "A,C,N",
               "description": null
             }
           ]
@@ -443,12 +439,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Marillen - Reisdessert\nVegane Panna Cotta •\nMangospiegel",
+              "title": "Haselnussmousse • \nWeichselröster",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,H",
               "description": null
             }
           ]
@@ -457,10 +453,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schwarzwälder Kirsch Schnitte\nHaselnuss - Orangenschnitte",
+              "title": "Gebackener Käsekuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -487,14 +483,14 @@
           "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Putenschinken - Schöberl • Suppennudeln",
               "price": null,
               "tags": [
-                "Geflügel",
                 "Rindfleisch",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Geflügel"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,L",
               "description": null
             }
           ]
@@ -503,12 +499,12 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Paradeiser - Mango Suppe • \nKokoschips",
+              "title": "Bärlauchcremesuppe • \nPaprika Croutons",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L,O",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -517,12 +513,12 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
+              "title": "Gebratenes Zanderfilet • \nBalsamico-Berglinsen •\nBroccoli",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Fisch"
               ],
-              "allergens": "G,L,O",
+              "allergens": "A,D,F,L,O",
               "description": null
             }
           ]
@@ -531,12 +527,12 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Tiroler Gröst'l •\nSpiegelei",
+              "title": "Reisfleisch vom Schwein • \nfrischer Grana •\nPaprikasauce",
               "price": "12,30 €",
               "tags": [
-                "Schweinefleisch"
+                "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "A,C,G,L",
               "description": null
             }
           ]
@@ -545,12 +541,12 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Überbackene Gemüse Cannelloni • \nTomaten-Zucchinisauce",
+              "title": "Ofenkartoffel • Orangenlinsen •\nveganer Hummus Dip",
               "price": "12,30 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,G",
+              "allergens": "L,N",
               "description": null
             }
           ]
@@ -559,12 +555,12 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
+              "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Vegetarisch"
+                "Rindfleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G,H,L",
               "description": null
             }
           ]
@@ -573,7 +569,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
+              "title": "Beef Minute Steak • Gegrillte Landhendlbrust • Bratwurst •\nDukaten Chips • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nBlackend Louisiana Chicken Burger •\nHühnerbrust • Brioche Bun • Zwiebelmarmelade • Mango Salsa",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -589,17 +585,16 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Rindfleisch",
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,D,E,F,M,N,O",
+              "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
             },
             {
-              "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
+              "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -611,12 +606,12 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Toskanischer Brotsalat \"Panzanella\" •\nCherrytomaten • rote Zwiebel • Basilikum •\ngebratene Putenstreifen",
+              "title": "Bunter Blattsalat •\nBärlauch - Sonnenblumen - Laibchen •\nHonig-Senf Dressing",
               "price": "11,90 €",
               "tags": [
-                "Geflügel"
+                "Vegetarisch"
               ],
-              "allergens": "A,G,O",
+              "allergens": "A,C,G,M,O",
               "description": null
             }
           ]
@@ -625,13 +620,12 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza •\nRagout d' Agnello \nherzhafte Lamm Bolognese",
+              "title": "Pizza Francese • \nPutenschinken • Brie • \ngetrocknete Paradeiser",
               "price": "9,90 €",
               "tags": [
-                "Wild",
-                "Lamm"
+                "Geflügel"
               ],
-              "allergens": "A,G,L",
+              "allergens": "A,C,G,O",
               "description": null
             },
             {
@@ -649,7 +643,7 @@
           "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
+              "title": "Create your own Bowl •\nNishikireis • Quinoa weiss •\nvegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -663,12 +657,12 @@
           "name": "Bowl Topping",
           "items": [
             {
-              "title": "Garnelenbällchen •\nFeta in Kräuterpanier",
+              "title": "Gebackene Putenstreifen ´´Sesam`` • \nFalafel",
               "price": null,
               "tags": [
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,B,C,G,H,O",
+              "allergens": "A,C,N",
               "description": null
             }
           ]
@@ -677,12 +671,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Cappuccino Mousse\nKokos - Marillen - Reisdessert",
+              "title": "Apfel - Zimt Creme",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "C,F,G",
+              "tags": [],
+              "allergens": "C,G,O",
               "description": null
             }
           ]
@@ -691,12 +683,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Cremige Vegane Matcha Schnitte",
+              "title": "Walnuss- Zwetschkenstrudel",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A",
+              "tags": [],
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
@@ -723,14 +713,14 @@
           "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Putenschinken - Schöberl • Suppennudeln",
               "price": null,
               "tags": [
-                "Geflügel",
                 "Rindfleisch",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Geflügel"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,L",
               "description": null
             }
           ]
@@ -739,12 +729,12 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Minestrone",
+              "title": "Gelbe Rüben Cremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -753,12 +743,12 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
+              "title": "Gebratenes Zanderfilet • \nBalsamico-Berglinsen •\nBroccoli",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Fisch"
               ],
-              "allergens": "G,L,O",
+              "allergens": "A,D,F,L,O",
               "description": null
             }
           ]
@@ -767,12 +757,12 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Saltimbocca vom Huhn mit Prosciutto und Salbei •\nCremige Polenta •\ngegrilltes Gemüse",
+              "title": "Hühnerkeule gebraten •\nRosmarinjus •\nErbsenreis",
               "price": "12,30 €",
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "C,G",
+              "allergens": "G,L",
               "description": null
             }
           ]
@@ -781,12 +771,12 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Faschierter Braten auf vegane Art • \nErdäpfelpüree •\nRöstzwiebel",
+              "title": "Gegrillter Tofu •\nGemüsecurry • Zitronengras •\nAnanas Reis",
               "price": "12,30 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
-              "allergens": "A,F,H,L,M,O",
+              "allergens": "A,F,M,N",
               "description": null
             }
           ]
@@ -795,12 +785,12 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
+              "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Vegetarisch"
+                "Rindfleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G,H,L",
               "description": null
             }
           ]
@@ -809,7 +799,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Putenfilet gegrillt • Schweinefilet Spieß • \nPommes Frites • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nAustrian Pulled Beef Burger",
+              "title": "Beef Minute Steak • Gegrillte Landhendlbrust • Bratwurst •\nDukaten Chips • Cole Slaw • BBQ Sauce • Cocktail Sauce • Tagesbeilagen •\nBlackend Louisiana Chicken Burger •\nHühnerbrust • Brioche Bun • Zwiebelmarmelade • Mango Salsa",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -825,17 +815,16 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Rindfleisch",
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,D,E,F,M,N,O",
+              "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
             },
             {
-              "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
+              "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -847,7 +836,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Puy Linsensalat •\nTrauben • Chili • Minze • \ngegrillter Halloumi •\nGranatapfel •\nWalnuss Dressing",
+              "title": "Blattsalat •\ngegrillter Halloumi •\nGranatapfel • Haselnüsse •\nZitrus Dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -861,9 +850,11 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Salami Milano •\nPfefferoni • Paprika •\nZuckermais",
+              "title": "Pizza • gegrillte Zucchini •\nSalami • Bocconcini",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,G,M",
               "description": null
             },
@@ -882,7 +873,7 @@
           "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
+              "title": "Create your own Bowl •\nNishikireis • Quinoa weiss •\nvegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -896,12 +887,12 @@
           "name": "Bowl Topping",
           "items": [
             {
-              "title": "Garnelenbällchen •\nFeta in Kräuterpanier",
+              "title": "Gebackene Putenstreifen ´´Sesam`` • \nFalafel",
               "price": null,
               "tags": [
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,B,C,G,H,O",
+              "allergens": "A,C,N",
               "description": null
             }
           ]
@@ -910,12 +901,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding •\nHimbeeren\nCappuccino Mousse",
+              "title": "Veganer Tapioka Pudding •\nBanane • Erdnuss",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G,H",
+              "tags": [],
+              "allergens": "E,F,G,O",
               "description": null
             }
           ]
@@ -924,12 +913,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Sacherschnitte\nCremige vegane Matchaschnitte",
+              "title": "Malakoffschnitte",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G",
+              "tags": [],
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -956,14 +943,14 @@
           "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Frittaten • Polentastrudel",
+              "title": "Rindsuppe • Hühnersuppe • Gemüsesuppe wahlweise mit \nLeberknödel • Putenschinken - Schöberl • Suppennudeln",
               "price": null,
               "tags": [
-                "Geflügel",
                 "Rindfleisch",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Geflügel"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,L",
               "description": null
             }
           ]
@@ -972,12 +959,12 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Quinoa - Porree Suppe",
+              "title": "Rote Paprikacremesuppe •\nKnoblauchcroutons",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -986,12 +973,12 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Geschmorte Rinderbrust •\nErdäpfel - Trüffel Püree •\nfrisches Marktgemüse",
+              "title": "Gebratenes Zanderfilet • \nBalsamico-Berglinsen •\nBroccoli",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Fisch"
               ],
-              "allergens": "G,L,O",
+              "allergens": "A,D,F,L,O",
               "description": null
             }
           ]
@@ -1000,12 +987,12 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Gebackenes Schollenfilet •\nPetersilienerdäpfel •\nSauce Tartare",
+              "title": "Eiernockerl • Schnittlauch •\nGrüner Salat mit Kernöl",
               "price": "12,30 €",
               "tags": [
-                "Fisch"
+                "Vegan"
               ],
-              "allergens": "A,C,D,G,M,O",
+              "allergens": "A,C,G,M",
               "description": null
             }
           ]
@@ -1014,12 +1001,13 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Planted \"Züricher Geschnetzeltes\" •\nRösterdäpfel",
+              "title": "Gebratene Pilzpolenta •\nLetscho",
               "price": "12,30 €",
               "tags": [
+                "Vegetarisch",
                 "Vegan"
               ],
-              "allergens": "F,L,O",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -1028,12 +1016,12 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika • Salbei Gnocchi • Fussili •\nOlivenöl mit Kräutern • Limonensauce • Basilikumpesto •\nArtischockenherzen • Pinienkerne • Cherrytomaten • Grana",
+              "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Vegetarisch"
+                "Rindfleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G,H,L",
               "description": null
             }
           ]
@@ -1042,17 +1030,16 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Rotes Thai - Rindercurry • \nLachs Teriyaki •\nGebratene Melanzani \"Vietnamesische Art\" •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Rindfleisch",
-                "Fisch"
+                "Geflügel"
               ],
-              "allergens": "A,D,E,F,M,N,O",
+              "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
             },
             {
-              "title": "Sushi & Maki •\nUmami Chicken Katsu •\nCalifornia Roll Rote Rübe",
+              "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -1064,26 +1051,12 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Gebratener Curry - Karfiol • \nKarottensticks • Rotkraut • Ei • \nKichererbsen • Gojibeeren • Tahina",
+              "title": "Geröstete Pilze • \nGewürz - Naturreis •\nAvocado • Heidelbeeren • \nRadicchio • Kefir Dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "C,M,N",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl Station",
-          "items": [
-            {
-              "title": "Create your own Bowl\nFrischer Nishikireis • Bulgur •\nvegane Saucen",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
+              "allergens": "G,M",
               "description": null
             }
           ]
@@ -1092,13 +1065,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding • Himbeeren\nBiscoff Creme",
+              "title": "Kokos\"milch\"reis • \nHeidelbeeren",
               "price": null,
               "tags": [
-                "Vegan",
-                "Vegetarisch"
+                "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "H",
               "description": null
             }
           ]
@@ -1107,10 +1079,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Bananen Schnitte\nSacherschnitte",
+              "title": "Esterhazyschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]

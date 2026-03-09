@@ -12,7 +12,7 @@
     "lon": 16.39778
   },
   "mapUrl": "https://maps.app.goo.gl/HN1hvZRF9ZsyWzKe8",
-  "fetchedAt": "2026-03-06T19:48:19.588Z",
+  "fetchedAt": "2026-03-09T08:49:15.498Z",
   "error": null,
   "days": {
     "Montag": {
@@ -28,11 +28,11 @@
               "description": null
             },
             {
-              "title": "Schinkenfleckerln",
+              "title": "Schweinsbraten",
               "price": "10,70 €",
               "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "mit grünem salat"
+              "allergens": "A,C,G",
+              "description": "mit sauerkraut und semmelknödel"
             }
           ]
         },
@@ -91,11 +91,11 @@
               "description": null
             },
             {
-              "title": "Salamischnitzel",
+              "title": "Du chef (Gebackenes schweinsschnitzel",
               "price": "10,70 €",
               "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "mit salat"
+              "allergens": null,
+              "description": "mit champignon, schinken und käse) mit petersilienkartoffel"
             }
           ]
         },
@@ -154,11 +154,11 @@
               "description": null
             },
             {
-              "title": "Majoranfleisch",
+              "title": "Gebratene hühnerkeule",
               "price": "10,70 €",
               "tags": [],
-              "allergens": "A,C,G",
-              "description": "mit fusilli"
+              "allergens": "A",
+              "description": "mit risipisi"
             }
           ]
         },
@@ -217,11 +217,11 @@
               "description": null
             },
             {
-              "title": "Einbrennte hund",
+              "title": "Spinatspätzle",
               "price": "10,70 €",
               "tags": [],
-              "allergens": null,
-              "description": "mit knacker (Klassiker der altwienerküche)"
+              "allergens": "A,C,G,M",
+              "description": "mit schinken-käse-sauce und grünem salat"
             }
           ]
         },
@@ -292,6 +292,13 @@
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit zwetschkenröster"
+            },
+            {
+              "title": "„wintermüdigkeit: kissenzipfel-abdruck inklusive – frühling kommt trotzdem! bleim ma positiv, so lang kann’s nicht mehr dauern.“",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
             }
           ]
         },
