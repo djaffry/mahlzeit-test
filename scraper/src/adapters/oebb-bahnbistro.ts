@@ -1,5 +1,6 @@
 import type { FullAdapter, WeekMenu, MenuItem } from '../types.js';
 import { isWeekday } from '../types.js';
+import { inferTags } from '../tags.js';
 
 const API_URL = 'https://bahnbistro.digiattack.net/api/menu';
 
@@ -29,33 +30,17 @@ interface BahnbistroResponse {
   days: BahnbistroDay[];
 }
 
-const KEYWORD_TAGS: [RegExp, string][] = [
-  [/chicken|hendl|henderl|h[üu]hn|pute|gefl[üu]gel/i, 'Geflügel'],
-  [/lachs|forelle|scholle|garnele|zander|saibling/i, 'Fisch'],
-  [/\bbeef\b|rind(?:s|er|fleisch)|tafelspitz/i, 'Rindfleisch'],
-  [/bratwurst|schwein/i, 'Schweinefleisch'],
-  [/\btofu\b|\byofu\b|\bobst\b/i, 'Vegan'],
-];
-
-function inferTags(text: string): string[] {
-  const tags: string[] = [];
-  for (const [re, tag] of KEYWORD_TAGS) {
-    if (re.test(text) && !tags.includes(tag)) tags.push(tag);
-  }
-  return tags;
-}
 
 function parseDish(dish: BahnbistroDish): { category: string; item: MenuItem } {
   const title = dish.items[0] ?? dish.name;
   const description = dish.items.length > 1 ? dish.items.slice(1).join(', ') : null;
-  const searchText = description ? `${title} ${description}` : title;
 
   return {
     category: CATEGORY_MAP[dish.name] ?? dish.name,
     item: {
       title,
       price: null,
-      tags: inferTags(searchText),
+      tags: inferTags({ title, description: description ?? undefined }),
       allergens: dish.allergens?.trim().split(/\s+/).join(',') ?? null,
       description,
     },

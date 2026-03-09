@@ -110,3 +110,25 @@ export async function saveManifest(restaurantIds: string[]): Promise<void> {
   await writeFile(manifestPath, JSON.stringify(restaurantIds, null, 2));
   log('OK', '*', 'save', `index.json with ${restaurantIds.length} restaurant(s)`);
 }
+
+export async function saveTagMetadata(metadata: object): Promise<void> {
+  const filePath = join(DATA_DIR, 'tags.json');
+  await writeFile(filePath, JSON.stringify(metadata, null, 2));
+  log('OK', '*', 'save', 'tags.json');
+}
+
+export async function saveUnknownTags(unknownTags: Record<string, { adapter: string; example: string }>): Promise<void> {
+  if (Object.keys(unknownTags).length === 0) return;
+  const filePath = join(DATA_DIR, 'unknown-tags.json');
+
+  let existing: Record<string, { adapter: string; example: string }> = {};
+  try {
+    const raw = await readFile(filePath, 'utf-8');
+    const parsed = JSON.parse(raw);
+    existing = parsed.tags ?? {};
+  } catch { /* file doesn't exist yet */ }
+
+  const merged = { ...existing, ...unknownTags };
+  await writeFile(filePath, JSON.stringify({ tags: merged }, null, 2));
+  log('INFO', '*', 'save', `unknown-tags.json (${Object.keys(merged).length} tag(s))`);
+}

@@ -1,5 +1,6 @@
 import type { FullAdapter, WeekMenu, MenuItem } from '../types.js';
 import { isWeekday } from '../types.js';
+import { inferTags, resolveTags } from '../tags.js';
 
 const API_URL = 'https://www.quartiersechs.at/wp-json/wp/v2/pages/4';
 
@@ -95,15 +96,6 @@ function extractAllergens(setMenu: SetMenu): string | null {
   return codes.length ? codes.join(',') : null;
 }
 
-const MEAT_FISH_TAGS = ['Schweinefleisch', 'Rindfleisch', 'Geflügel', 'Fisch', 'Lamm', 'Wild'];
-const PLANTBASED_DIET_TAGS = ['Vegan', 'Vegetarisch'];
-
-function removeContradictoryDietTags(tags: string[]): string[] {
-  if (tags.some(t => MEAT_FISH_TAGS.includes(t))) {
-    return tags.filter(t => !PLANTBASED_DIET_TAGS.includes(t));
-  }
-  return tags;
-}
 
 function extractDietaryTags(setMenu: SetMenu): string[] {
   const tags: string[] = [];
@@ -126,25 +118,18 @@ function extractDietaryTags(setMenu: SetMenu): string[] {
     }
   }
 
-  return removeContradictoryDietTags(tags);
+  return tags;
 }
 
 function normalizeCategoryName(lineName: string): string {
   return lineName.replace(/\s*\d+$/, '').trim();
 }
 
-function inferTagsFromCategory(category: string, title: string, tags: string[]): string[] {
-  if (tags.length > 0) return tags;
-
-  const cat = category.toLowerCase();
-  if (cat.includes('vegan') && !cat.includes('vegetarisch')) return ['Vegan'];
-  if (cat.includes('vegetarisch')) return ['Vegetarisch'];
-  if (cat === 'pasta station') return ['Vegetarisch'];
-  if (cat === 'bowl station') return ['Vegan'];
-  if (cat === 'salatecke') return ['Vegetarisch'];
-  if (cat === 'pizza & co' && /margherita/i.test(title)) return ['Vegetarisch'];
-  if (cat.startsWith('obst')) return ['Vegan'];
-  return [];
+function buildItemTags(category: string, title: string, xmlTags: string[]): string[] {
+  if (xmlTags.length > 0) {
+    return resolveTags(xmlTags, inferTags({ title, category }));
+  }
+  return inferTags({ title, category });
 }
 
 function extractProductPrice(setMenu: SetMenu): string | null {
@@ -156,6 +141,34 @@ function extractProductPrice(setMenu: SetMenu): string | null {
     }
   }
   return null;
+}
+
+function hasDistinctDishes(dishTags: string[][]): boolean {
+  return new Set(dishTags.flat()).size >= 2;
+}
+
+function splitAsiaCornerWarmDishes(title: string, price: string | null, allergens: string | null): MenuItem[] {
+  const sections = title.split(/•\s*\n/).map(s => s.trim()).filter(Boolean);
+  if (sections.length < 3) return [];
+
+  const dishes = sections.slice(0, 3);
+  const dishTags = dishes.map(d => inferTags({ title: d, category: 'Asia Corner' }));
+  if (!hasDistinctDishes(dishTags)) return [];
+
+  const sides = sections.length > 3
+    ? sections.slice(3).join(' • ')
+    : null;
+
+  return dishes.map((dish, i) => {
+    const dishTitle = sides ? `${dish} mit ${sides}` : dish;
+    return {
+      title: dishTitle.replace(/\s*•\s*/g, ', '),
+      price,
+      tags: dishTags[i],
+      allergens,
+      description: null,
+    };
+  });
 }
 
 function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: MenuItem }[] {
@@ -172,12 +185,20 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
     const displayName = setMenu['@attributes']?.DisplayName ?? '';
     const category = normalizeCategoryName(displayName) || fallbackCategory;
 
+    if (/asia corner/i.test(category) && title.includes('•\n')) {
+      const split = splitAsiaCornerWarmDishes(title, extractProductPrice(setMenu), extractAllergens(setMenu));
+      if (split.length > 0) {
+        for (const item of split) results.push({ category, item });
+        continue;
+      }
+    }
+
     results.push({
       category,
       item: {
         title,
         price: extractProductPrice(setMenu),
-        tags: inferTagsFromCategory(category, title, extractDietaryTags(setMenu)),
+        tags: buildItemTags(category, title, extractDietaryTags(setMenu)),
         allergens: extractAllergens(setMenu),
         description: null,
       },

@@ -1,5 +1,6 @@
 import type { FullAdapter, WeekMenu, Weekday, DayMenu, MenuItem } from '../types.js';
 import { WEEKDAYS, isWeekday } from '../types.js';
+import { inferTags, resolveTags } from '../tags.js';
 
 const BASE_URL = 'https://www.kissthecook.at';
 const TOKENS_URL = `${BASE_URL}/_api/v1/access-tokens`;
@@ -7,10 +8,6 @@ const API_URL = `${BASE_URL}/_api/cloud-data/v2/items/query?.r=ewogICJkYXRhQ29sb
 
 const CATEGORY_ORDER = ['Suppe', 'Suppe-Mano', 'Hauptspeise', 'Buffet', 'Bowls', 'Dessert'];
 
-const TAG_MAP: Record<string, string> = {
-  'Vegetarische': 'Vegetarisch',
-  'Vegane': 'Vegan',
-};
 
 interface WixAccessTokens {
   svSession: string;
@@ -92,12 +89,13 @@ function buildDayMenu(dayItems: WixItemData[]): DayMenu {
     if (!catMap.has(category)) catMap.set(category, []);
 
     const rawTag = (item.arraystring ?? '').trim();
-    const tag = TAG_MAP[rawTag] ?? rawTag;
+    const adapterTags = rawTag ? [rawTag] : [];
+    const title = (item.title ?? '').trim();
 
     catMap.get(category)!.push({
-      title: (item.title ?? '').trim(),
+      title,
       price: item.preis?.trim() || null,
-      tags: tag ? [tag] : [],
+      tags: resolveTags(adapterTags, inferTags({ title })),
       allergens: item.allergene?.replace(/,+$/, '').trim() ?? null,
       description: null,
     });

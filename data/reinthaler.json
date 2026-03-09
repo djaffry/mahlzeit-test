@@ -12,7 +12,7 @@
     "lon": 16.39778
   },
   "mapUrl": "https://maps.app.goo.gl/HN1hvZRF9ZsyWzKe8",
-  "fetchedAt": "2026-03-09T10:28:58.592Z",
+  "fetchedAt": "2026-03-09T22:05:29.080Z",
   "error": null,
   "days": {
     "Montag": {
@@ -30,7 +30,9 @@
             {
               "title": "Schweinsbraten",
               "price": "10,70 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G",
               "description": "mit sauerkraut und semmelknödel"
             }
@@ -42,7 +44,9 @@
             {
               "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G,M",
               "description": "mit kartoffelsalat"
             },
@@ -93,7 +97,9 @@
             {
               "title": "Du chef (Gebackenes schweinsschnitzel",
               "price": "10,70 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": null,
               "description": "mit champignon, schinken und käse) mit petersilienkartoffel"
             }
@@ -105,7 +111,9 @@
             {
               "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G,M",
               "description": "mit kartoffelsalat"
             },
@@ -156,7 +164,9 @@
             {
               "title": "Gebratene hühnerkeule",
               "price": "10,70 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": "A",
               "description": "mit risipisi"
             }
@@ -168,7 +178,9 @@
             {
               "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G,M",
               "description": "mit kartoffelsalat"
             },
@@ -231,7 +243,9 @@
             {
               "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G,M",
               "description": "mit kartoffelsalat"
             },
@@ -308,7 +322,9 @@
             {
               "title": "Wienerschnitzel (Vom schwein)",
               "price": "12,50 €",
-              "tags": [],
+              "tags": [
+                "Schweinefleisch"
+              ],
               "allergens": "A,C,G,M",
               "description": "mit kartoffelsalat"
             },

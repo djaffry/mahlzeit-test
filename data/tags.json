@@ -1,0 +1,46 @@
+{
+  "tags": [
+    "Vegetarisch",
+    "Vegan",
+    "Glutenfrei",
+    "Laktosefrei",
+    "Fleisch",
+    "Schweinefleisch",
+    "Rindfleisch",
+    "Geflügel",
+    "Huhn",
+    "Ente",
+    "Pute",
+    "Lamm",
+    "Meeresfrüchte",
+    "Fisch"
+  ],
+  "hierarchy": {
+    "Fleisch": [
+      "Schweinefleisch",
+      "Rindfleisch",
+      "Geflügel",
+      "Lamm"
+    ],
+    "Geflügel": [
+      "Huhn",
+      "Ente",
+      "Pute"
+    ],
+    "Meeresfrüchte": [
+      "Fisch"
+    ],
+    "Vegetarisch": [
+      "Vegan"
+    ]
+  },
+  "aliases": {
+    "Hühnerfleisch": "Huhn",
+    "Chicken": "Huhn",
+    "Hendl": "Huhn",
+    "Henderl": "Huhn",
+    "Truthahn": "Pute",
+    "Vegetarische": "Vegetarisch",
+    "Vegane": "Vegan"
+  }
+}

@@ -2,17 +2,20 @@ import { readdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import type { Adapter, FullAdapter, LinkAdapter, RestaurantData } from './types.js';
-import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest } from './persistence.js';
+import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest, saveTagMetadata, saveUnknownTags } from './persistence.js';
 import { log } from './log.js';
+import { getTagMetadata, isKnownTag } from './tags.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ADAPTERS_DIR = join(__dirname, 'adapters');
-
-const SCRAPE_TIMEOUT_MS = 30_000;
+type UnknownTagMap = Record<string, { adapter: string; example: string }>;
 
 interface AdapterModule {
   default?: Adapter;
 }
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ADAPTERS_DIR = join(__dirname, 'adapters');
+const SCRAPE_TIMEOUT_MS = 30_000;
+
 
 async function discoverAdapters(): Promise<Adapter[]> {
   const files = await readdir(ADAPTERS_DIR);
@@ -70,6 +73,25 @@ async function scrapeFullAdapters(adapters: FullAdapter[]): Promise<RestaurantDa
   });
 }
 
+function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
+  const found: UnknownTagMap = {};
+  for (const { id, error, days } of results) {
+    if (error) continue;
+    const items = Object.values(days)
+      .flatMap(day => day?.categories ?? [])
+      .flatMap(cat => cat.items);
+    
+      for (const { title, tags } of items) {
+      for (const tag of tags) {
+        if (!isKnownTag(tag) && !found[tag]) {
+          found[tag] = { adapter: id, example: title };
+        }
+      }
+    }
+  }
+  return found;
+}
+
 async function main(): Promise<void> {
   await ensureDataDir();
 
@@ -93,6 +115,8 @@ async function main(): Promise<void> {
   }
 
   await saveManifest(restaurantIds);
+  await saveTagMetadata(getTagMetadata());
+  await saveUnknownTags(discoverUnknownTags(fullResults));
 }
 
 main().catch(err => {

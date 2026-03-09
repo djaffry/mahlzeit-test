@@ -13,13 +13,13 @@ function haptic(ms = 10) { navigator.vibrate?.(ms); }
 const TAG_COLORS = {
   Vegan: 'green',
   Vegetarisch: 'teal',
+  'Meeresfrüchte': 'blue',
   Fisch: 'blue',
   'Geflügel': 'peach',
   Huhn: 'peach',
-  Hühnerfleisch: 'peach',
   Pute: 'peach',
+  Ente: 'peach',
   Fleisch: 'red',
-  Wild: 'red',
   Lamm: 'red',
   Schweinefleisch: 'red',
   Rindfleisch: 'red',
@@ -140,6 +140,11 @@ function collectTags(restaurants) {
         }
       }
     }
+  }
+  // Include parent tags from hierarchy as filter categories
+  // (even if no item has them directly, they're useful for filtering)
+  if (TagUtils.isLoaded()) {
+    for (const parent of TagUtils.getParentTags()) tags.add(parent);
   }
   const presetOrder = Object.keys(TAG_COLORS);
   return [...tags].sort((a, b) => {
@@ -292,9 +297,12 @@ function isFilterShowAll() {
 }
 
 function itemMatchesFilters(item) {
-  const tags = (item.tags ?? []).map(t => t.toLowerCase()).join(' ');
-  if (tags === '') return true;
-  return [...activeFilters].some(f => tags.includes(f.toLowerCase()));
+  const tags = item.tags ?? [];
+  if (tags.length === 0) return true;
+  const expanded = TagUtils.isLoaded()
+    ? TagUtils.expandFilters(activeFilters)
+    : activeFilters;
+  return tags.some(t => expanded.has(t));
 }
 
 function performSearch(query) {
@@ -371,6 +379,9 @@ function applyFilters() {
   if (!activePanel) return;
 
   const showAll = isFilterShowAll();
+  const expanded = !showAll && TagUtils.isLoaded()
+    ? new Set([...TagUtils.expandFilters(activeFilters)].map(f => f.toLowerCase()))
+    : new Set([...activeFilters].map(f => f.toLowerCase()));
 
   const cards = activePanel.querySelectorAll('.restaurant-card');
   cards.forEach(card => {
@@ -384,7 +395,8 @@ function applyFilters() {
         return;
       }
       const tags = el.dataset.tags ?? '';
-      const matches = tags === '' || [...activeFilters].some(f => tags.includes(f.toLowerCase()));
+      const tagList = tags ? tags.split(' ') : [];
+      const matches = tags === '' || tagList.some(t => expanded.has(t));
       el.classList.toggle('hidden', !matches);
       if (matches) visibleCount++;
     });
@@ -920,7 +932,11 @@ async function init() {
 
   try {
     const loadStart = Date.now();
-    const { fullRestaurants, linkRestaurants } = await fetchMenuData();
+    const [, { fullRestaurants, linkRestaurants }] = await Promise.all([
+      TagUtils.load('data/tags.json'),
+      fetchMenuData(),
+    ]);
+
     _menuData = { fullRestaurants, linkRestaurants };
 
     const allTags = collectTags(fullRestaurants);

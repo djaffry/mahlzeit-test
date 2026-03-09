@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "scrape": "node dist/scraper.js"
+    "scrape": "node dist/scraper.js",
+    "test": "npm run build && node --test dist/tags.test.js"
   },
   "engines": {
     "node": ">=20.0.0"

@@ -11,7 +11,7 @@
     "lon": 16.3952
   },
   "mapUrl": "https://maps.app.goo.gl/KGhWssEY2zJs7oF4A",
-  "fetchedAt": "2026-03-09T10:28:58.595Z",
+  "fetchedAt": "2026-03-09T22:05:28.987Z",
   "error": null,
   "days": {
     "Montag": {
@@ -44,7 +44,7 @@
               "title": "Hühnchen Harissa",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Huhn"
               ],
               "allergens": "G,M",
               "description": "Curryreis & Greek Yoghurt, Jungzwiebel"
@@ -111,7 +111,7 @@
               "title": "Spanischer Reis",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Pute"
               ],
               "allergens": "L",
               "description": "Pute & Gemüse, *Classic oder Vegan*"
@@ -162,7 +162,7 @@
               "title": "Putenschnitzerl gebacken",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Pute"
               ],
               "allergens": "A,C",
               "description": "Reis & Preiselbeeren, Zitrone"
@@ -171,7 +171,7 @@
               "title": "Garnelenspieße vom Grill",
               "price": null,
               "tags": [
-                "Fisch"
+                "Meeresfrüchte"
               ],
               "allergens": "A,B,C,F,G,M,N",
               "description": "Spicy Wakame & Wedges, Limetten-Dip"

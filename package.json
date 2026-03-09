@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm test --prefix scraper && node --test tag-utils.test.js"
+  }
+}

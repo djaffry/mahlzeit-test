@@ -1,5 +1,6 @@
 import { extractText } from 'unpdf';
 import type { FullAdapter, WeekMenu, Weekday, MenuItem, MenuCategory } from '../types.js';
+import { inferTags } from '../tags.js';
 
 const PDF_BASE = 'https://irp.cdn-website.com/fead4102/files/uploaded';
 
@@ -177,7 +178,7 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
   const tagestellerCat: MenuCategory = {
     name: 'Tagesteller',
     items: tagesteller.map(d => ({
-      title: d.title, price: d.price, tags: [], allergens: d.allergens, description: d.description,
+      title: d.title, price: d.price, tags: inferTags({ title: d.title, description: d.description ?? undefined }), allergens: d.allergens, description: d.description,
     })),
   };
 
@@ -186,7 +187,7 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
     const dailyItems: MenuItem[] = [
       { title: 'Tagessuppe', price: null, tags: [], allergens: null, description: null },
       ...parseDishBlock(day.lines).map(d => ({
-        title: d.title, price: d.price, tags: [], allergens: d.allergens, description: d.description,
+        title: d.title, price: d.price, tags: inferTags({ title: d.title, description: d.description ?? undefined }), allergens: d.allergens, description: d.description,
       })),
     ];
 

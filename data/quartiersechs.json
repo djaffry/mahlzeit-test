@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-09T10:28:59.552Z",
+  "fetchedAt": "2026-03-09T22:05:29.552Z",
   "error": null,
   "days": {
     "Montag": {
@@ -26,7 +26,8 @@
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Geflügel"
+                "Huhn",
+                "Pute"
               ],
               "allergens": "A,C,L",
               "description": null
@@ -54,7 +55,7 @@
               "title": "Kebab Hühnerfleisch direkt vom Spieß • \ntürkischer Reis oder Pommes Frites •\nPfefferoni • Salat • Tomate • Zwiebel • Rotkraut • Ayran",
               "price": "12,30 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
               ],
               "allergens": "G,O",
               "description": null
@@ -111,8 +112,8 @@
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
               "allergens": "A,C,G,M,N",
               "description": null
@@ -123,10 +124,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Kimchi-Tofu Eintopf, Sprossen, Jungzwiebel, gebratene Tofuwürfel mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Vegan"
               ],
               "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
@@ -134,7 +153,9 @@
             {
               "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             }
@@ -161,15 +182,13 @@
               "title": "Pide •\nChampignonragout • Feta • \nfrischer Oregano • Ayran",
               "price": "9,90 €",
               "tags": [],
-              "allergens": "A,G",
+              "allergens": "A,G,O",
               "description": null
             },
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": "A,G",
               "description": null
             }
@@ -256,7 +275,8 @@
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Geflügel"
+                "Huhn",
+                "Pute"
               ],
               "allergens": "A,C,L",
               "description": null
@@ -298,7 +318,7 @@
               "title": "Gebackenes Putenschnitzel • Kürbiskernpanade •\nPetersilien Kartoffel",
               "price": "12,30 €",
               "tags": [
-                "Geflügel"
+                "Pute"
               ],
               "allergens": "A,C,G",
               "description": null
@@ -341,8 +361,8 @@
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
               "allergens": "A,C,G,M,N",
               "description": null
@@ -353,10 +373,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Kimchi-Tofu Eintopf, Sprossen, Jungzwiebel, gebratene Tofuwürfel mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Vegan"
               ],
               "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
@@ -364,7 +402,9 @@
             {
               "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             }
@@ -399,9 +439,7 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": "A,G",
               "description": null
             }
@@ -488,7 +526,8 @@
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Geflügel"
+                "Huhn",
+                "Pute"
               ],
               "allergens": "A,C,L",
               "description": null
@@ -544,7 +583,7 @@
               "title": "Ofenkartoffel • Orangenlinsen •\nveganer Hummus Dip",
               "price": "12,30 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": "L,N",
               "description": null
@@ -573,8 +612,8 @@
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
               "allergens": "A,C,G,M,N",
               "description": null
@@ -585,10 +624,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Kimchi-Tofu Eintopf, Sprossen, Jungzwiebel, gebratene Tofuwürfel mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Vegan"
               ],
               "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
@@ -596,7 +653,9 @@
             {
               "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             }
@@ -623,7 +682,7 @@
               "title": "Pizza Francese • \nPutenschinken • Brie • \ngetrocknete Paradeiser",
               "price": "9,90 €",
               "tags": [
-                "Geflügel"
+                "Pute"
               ],
               "allergens": "A,C,G,O",
               "description": null
@@ -631,9 +690,7 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": "A,G",
               "description": null
             }
@@ -718,7 +775,8 @@
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Geflügel"
+                "Huhn",
+                "Pute"
               ],
               "allergens": "A,C,L",
               "description": null
@@ -760,7 +818,7 @@
               "title": "Hühnerkeule gebraten •\nRosmarinjus •\nErbsenreis",
               "price": "12,30 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
               ],
               "allergens": "G,L",
               "description": null
@@ -803,8 +861,8 @@
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel",
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
               "allergens": "A,C,G,M,N",
               "description": null
@@ -815,10 +873,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Kimchi-Tofu Eintopf, Sprossen, Jungzwiebel, gebratene Tofuwürfel mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Vegan"
               ],
               "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
@@ -826,7 +902,9 @@
             {
               "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             }
@@ -861,9 +939,7 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": "A,G",
               "description": null
             }
@@ -903,7 +979,9 @@
             {
               "title": "Veganer Tapioka Pudding •\nBanane • Erdnuss",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "E,F,G,O",
               "description": null
             }
@@ -948,7 +1026,8 @@
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Geflügel"
+                "Huhn",
+                "Pute"
               ],
               "allergens": "A,C,L",
               "description": null
@@ -1004,7 +1083,6 @@
               "title": "Gebratene Pilzpolenta •\nLetscho",
               "price": "12,30 €",
               "tags": [
-                "Vegetarisch",
                 "Vegan"
               ],
               "allergens": "L",
@@ -1030,10 +1108,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Chili Chicken •\nGarnelen-Curry •\nKimchi-Tofu Eintopf • Sprossen • Jungzwiebel • gebratene Tofuwürfel •\nWokgemüse • Jasminreis",
+              "title": "Chili Chicken mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Geflügel"
+                "Huhn"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,F,H,L,M,N,O,R",
+              "description": null
+            },
+            {
+              "title": "Kimchi-Tofu Eintopf, Sprossen, Jungzwiebel, gebratene Tofuwürfel mit Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Vegan"
               ],
               "allergens": "A,B,F,H,L,M,N,O,R",
               "description": null
@@ -1041,7 +1137,9 @@
             {
               "title": "Sushi & Maki •\nUramaki Chicken Katsu • \nCalifornia XL Crunch",
               "price": "10,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             }

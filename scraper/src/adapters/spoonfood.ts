@@ -1,5 +1,6 @@
 import { JSDOM } from 'jsdom';
 import type { FullAdapter, WeekMenu, Weekday, MenuCategory, MenuItem } from '../types.js';
+import { inferTags, resolveTags } from '../tags.js';
 
 const PAGE_URL = 'https://www.spoonfood.at/';
 
@@ -87,7 +88,9 @@ function parseDish(dishHolder: Element): MenuItem | null {
     tags.push('Vegetarisch');
   }
 
-  return { title: cleanName, price, tags, allergens: null, description: null };
+  const finalTags = resolveTags(tags, inferTags({ title: cleanName }));
+
+  return { title: cleanName, price, tags: finalTags, allergens: null, description: null };
 }
 
 function parseCategories(section: Element): MenuCategory[] {

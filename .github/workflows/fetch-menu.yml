@@ -2,8 +2,11 @@ name: Fetch Menus
 
 on:
   schedule:
-    - cron: '30 8 * * 1' # UTC
-    - cron: '45 9 * * 1-5' # UTC
+    - cron: '25 8 * * 1'    # 09:25 WT
+    - cron: '15 9 * * 1-5'  # 10:15 WT
+    - cron: '25 9 * * 1-5'  # 10:25 WT
+    - cron: '35 9 * * 1-5'  # 10:35 WT
+    - cron: '45 10 * * 1-5' # 10:45 WT
   workflow_dispatch:
 
 permissions:
