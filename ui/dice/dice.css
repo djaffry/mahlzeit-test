@@ -1,0 +1,35 @@
+.dice-btn {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-pill);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+.dice-btn:hover { background: var(--border-light); }
+.dice-btn.rolling { animation: diceRoll 0.5s ease; }
+@keyframes diceRoll {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.dice-pick {
+  background: var(--accent-dim);
+  box-shadow: 0 0 0 2px var(--accent);
+  animation: partyHue 2s linear infinite;
+}
+.menu-item.dice-pick {
+  border-radius: var(--radius-sm);
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-left: -0.4rem;
+  margin-right: -0.4rem;
+}

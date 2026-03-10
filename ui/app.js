@@ -6,6 +6,7 @@ const SVG = {
   collapse: '<svg class="restaurant-collapse-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>',
   reload: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1v5h5"/><path d="M2.5 10A6 6 0 1 0 4 4.5L1 6"/></svg>',
   mapPin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
 };
 
 function haptic(ms = 10) { navigator.vibrate?.(ms); }
@@ -250,6 +251,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
       <div class="restaurant-header">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
+          <button class="share-select-btn" aria-label="Restaurant auswählen" title="Auswählen">${SVG.check}</button>
           ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
           ${SVG.collapse}
         </div>
@@ -276,6 +278,7 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
       <div class="restaurant-header">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${schedule}</div>
         <div style="display:flex;align-items:center;gap:0.4rem">
+          <button class="share-select-btn" aria-label="Restaurant auswählen" title="Auswählen">${SVG.check}</button>
           ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
           ${SVG.collapse}
         </div>
@@ -975,8 +978,76 @@ async function init() {
   }
 }
 
+/* ── Share data extraction ──────────────────────────────── */
+
+function extractRestaurantMeta(cardElement) {
+  const nameElement = cardElement.querySelector('.restaurant-name');
+  if (!nameElement) return null;
+  const name = nameElement.childNodes[0]?.textContent?.trim() || '';
+  const cuisine = cardElement.querySelector('.cuisine-tag')?.textContent?.trim() || '';
+  const badges = [];
+  if (cardElement.querySelector('.edenred-badge')) badges.push('Edenred');
+  if (cardElement.querySelector('.stamp-card-badge')) badges.push('Stempelkarte');
+  return { name, cuisine, badges };
+}
+
+function extractMenuItem(element) {
+  return {
+    title: element.querySelector('.item-title-text')?.textContent?.trim() || '',
+    price: element.querySelector('.item-price')?.textContent?.trim() || '',
+    description: element.querySelector('.item-description')?.textContent?.trim() || '',
+    tags: [...element.querySelectorAll('.tag')].map(tag => tag.textContent.trim()),
+  };
+}
+
+function groupItemsByCategory(itemElements) {
+  const categoryMap = new Map();
+  for (const element of itemElements) {
+    const categoryElement = element.closest('.category');
+    const categoryName = categoryElement?.querySelector('.category-title')?.textContent?.trim() || '';
+    if (!categoryMap.has(categoryName)) categoryMap.set(categoryName, []);
+    categoryMap.get(categoryName).push(extractMenuItem(element));
+  }
+  return [...categoryMap.entries()].map(([name, items]) => ({ name, items }));
+}
+
+function getShareSelectionData() {
+  const activePanel = document.querySelector('.day-panel.active');
+  if (!activePanel) return null;
+
+  const restaurants = [];
+  for (const card of activePanel.querySelectorAll('.restaurant-card')) {
+    const isCardSelected = card.classList.contains('share-selected');
+    const selectedItems = [...card.querySelectorAll('.menu-item.share-selected:not(.hidden)')];
+    if (!isCardSelected && selectedItems.length === 0) continue;
+
+    const meta = extractRestaurantMeta(card);
+    if (!meta) continue;
+
+    const menuItems = isCardSelected
+      ? [...card.querySelectorAll('.menu-item:not(.hidden)')]
+      : selectedItems;
+
+    restaurants.push({
+      ...meta,
+      restaurant: card.dataset.restaurant,
+      categories: menuItems.length > 0 ? groupItemsByCategory(menuItems) : [],
+    });
+  }
+
+  if (restaurants.length === 0) return null;
+  const day = activePanel.dataset.panel || '';
+  return { day, sections: restaurants };
+}
+
 setupPartyMode();
 Dice.setup({ smoothScrollTo, saveCollapsed });
+Share.setup({
+  title: document.querySelector('.toolbar-title')?.textContent?.trim(),
+  subtitle: document.querySelector('.toolbar-subtitle')?.textContent?.trim(),
+  logo: document.querySelector('.toolbar-logo'),
+  getSelectionData: getShareSelectionData,
+});
 setupThemeToggle();
 
 init();
