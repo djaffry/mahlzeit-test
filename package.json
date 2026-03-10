@@ -2,6 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "npm test --prefix scraper && node --test tag-utils.test.js"
+    "test": "npm test --prefix scraper && node --test tag-utils.test.js dice.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^28.1.0"
   }
 }

@@ -694,44 +694,6 @@ function setupPartyMode() {
   });
 }
 
-function setupDiceRoll() {
-  const btn = document.getElementById('dice-btn');
-  btn.addEventListener('click', () => {
-    haptic(15);
-    const panel = document.querySelector('.day-panel.active');
-    if (!panel) return;
-
-    const menuItems = [...panel.querySelectorAll('.menu-item:not(.hidden)')]
-      .filter(el => !el.closest('.restaurant-card')?.querySelector('.reservation-badge'));
-
-    const linkCards = [...panel.querySelectorAll('.restaurant-card:not(.link-muted):not(.map-card)')]
-      .filter(card => !card.querySelector('.menu-item') && !card.querySelector('.reservation-badge'));
-
-    const pool = [...menuItems, ...linkCards];
-    if (pool.length === 0) return;
-
-    document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
-
-    btn.classList.add('rolling');
-    btn.addEventListener('animationend', () => btn.classList.remove('rolling'), { once: true });
-
-    const pick = pool[Math.floor(Math.random() * pool.length)];
-
-    const card = pick.closest('.restaurant-card') || pick;
-    if (card.classList.contains('collapsed')) {
-      card.classList.remove('collapsed');
-      saveCollapsed();
-    }
-
-    pick.classList.add('dice-pick');
-    const isCard = pick.classList.contains('restaurant-card');
-    setTimeout(() => {
-      if (isCard) { smoothScrollTo(pick); }
-      else { pick.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-    }, 100);
-  });
-}
-
 function setupThemeToggle() {
   const saved = localStorage.getItem('theme');
   if (saved) document.documentElement.dataset.theme = saved;
@@ -1014,7 +976,7 @@ async function init() {
 }
 
 setupPartyMode();
-setupDiceRoll();
+Dice.setup({ haptic, smoothScrollTo, saveCollapsed });
 setupThemeToggle();
 
 init();
