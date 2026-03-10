@@ -6,8 +6,8 @@ const BASE_URL = 'https://www.kissthecook.at';
 const TOKENS_URL = `${BASE_URL}/_api/v1/access-tokens`;
 const API_URL = `${BASE_URL}/_api/cloud-data/v2/items/query?.r=ewogICJkYXRhQ29sbGVjdGlvbklkIjogIk1lbnUiLAogICJxdWVyeSI6IHsKICAgICJmaWx0ZXIiOiB7CiAgICAgICIkb3IiOiBbCiAgICAgICAgeyAic2ljaHRiYXJrZWl0IjogdHJ1ZSwgImRhdHVtIjogIk1vbnRhZyIgfSwKICAgICAgICB7ICJzaWNodGJhcmtlaXQiOiB0cnVlLCAiZGF0dW0iOiAiRGllbnN0YWciIH0sCiAgICAgICAgeyAic2ljaHRiYXJrZWl0IjogdHJ1ZSwgImRhdHVtIjogIk1pdHR3b2NoIiB9LAogICAgICAgIHsgInNpY2h0YmFya2VpdCI6IHRydWUsICJkYXR1bSI6ICJEb25uZXJzdGFnIiB9LAogICAgICAgIHsgInNpY2h0YmFya2VpdCI6IHRydWUsICJkYXR1bSI6ICJGcmVpdGFnIiB9LAogICAgICAgIHsgImRhdHVtIjogIkdhbnplLVdvY2hlIiB9CiAgICAgIF0KICAgIH0sCiAgICAicGFnaW5nIjogeyAib2Zmc2V0IjogMCwgImxpbWl0IjogMTAwIH0sCiAgICAiZmllbGRzIjogW10KICB9LAogICJyZWZlcmVuY2VkSXRlbU9wdGlvbnMiOiBbXSwKICAicmV0dXJuVG90YWxDb3VudCI6IHRydWUsCiAgImVudmlyb25tZW50IjogIkxJVkUiLAogICJhcHBJZCI6ICIyZWMzZmUzMC02MzE0LTRkNWYtYjMzMy03ZTlkMzk1ZTI1MDkiCn0=`;
 
-const CATEGORY_ORDER = ['Suppe', 'Suppe-Mano', 'Hauptspeise', 'Buffet', 'Bowls', 'Dessert'];
-
+const CATEGORY_ORDER = ['Suppe', 'Hauptspeise', 'Buffet', 'Bowls', 'Dessert'];
+const IGNORED_CATEGORIES = new Set(['Suppe-Mano']);
 
 interface WixAccessTokens {
   svSession: string;
@@ -86,6 +86,7 @@ function buildDayMenu(dayItems: WixItemData[]): DayMenu {
 
   for (const item of dayItems) {
     const category = item.kategorie ?? 'Sonstiges';
+    if (IGNORED_CATEGORIES.has(category)) continue;
     if (!catMap.has(category)) catMap.set(category, []);
 
     const rawTag = (item.arraystring ?? '').trim();
@@ -96,7 +97,7 @@ function buildDayMenu(dayItems: WixItemData[]): DayMenu {
       title,
       price: item.preis?.trim() || null,
       tags: resolveTags(adapterTags, inferTags({ title })),
-      allergens: item.allergene?.replace(/,+$/, '').trim() ?? null,
+      allergens: item.allergene?.replace(/^,+|,+$/g, '').trim() || null,
       description: null,
     });
   }

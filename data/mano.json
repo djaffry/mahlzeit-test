@@ -13,7 +13,7 @@
     "lon": 16.3926
   },
   "mapUrl": "https://maps.app.goo.gl/vdRCP7oZRrAjeVyb7",
-  "fetchedAt": "2026-03-10T11:20:45.411Z",
+  "fetchedAt": "2026-03-10T18:26:06.988Z",
   "error": null,
   "days": {
     "Montag": {
@@ -30,20 +30,6 @@
               "allergens": "A,C,G,L",
               "description": null
             },
-            {
-              "title": "Champignoncremesuppe",
-              "price": "3,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Suppe-Mano",
-          "items": [
             {
               "title": "Champignoncremesuppe",
               "price": "3,90 €",
@@ -127,20 +113,6 @@
           ]
         },
         {
-          "name": "Suppe-Mano",
-          "items": [
-            {
-              "title": "Basilikumcremesuppe",
-              "price": "3,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
           "name": "Hauptspeise",
           "items": [
             {
@@ -200,20 +172,6 @@
               "allergens": null,
               "description": null
             },
-            {
-              "title": "Rindsuppe mit Frittaten",
-              "price": "3,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "A,C,G,L",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Suppe-Mano",
-          "items": [
             {
               "title": "Rindsuppe mit Frittaten",
               "price": "3,90 €",
@@ -297,20 +255,6 @@
           ]
         },
         {
-          "name": "Suppe-Mano",
-          "items": [
-            {
-              "title": "Apfel-Selleriecremesuppe",
-              "price": "3,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
           "name": "Hauptspeise",
           "items": [
             {
@@ -328,7 +272,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": ",D,A,G",
+              "allergens": "D,A,G",
               "description": null
             },
             {
