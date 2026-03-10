@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-09T22:05:29.143Z",
+  "fetchedAt": "2026-03-10T10:01:30.690Z",
   "error": null,
   "days": {
     "Montag": {
@@ -104,6 +104,145 @@
             },
             {
               "title": "Kichererbsen-Topinambur 🫚-Tajine mit Mango 🥭, Datteln & Reis – optional mit Koriander 🌿",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Ofenpastinaken-Salad Bowl mit Äpfeln 🍏, Radieschen 🫜, Quinoa & frischer Petersilie 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Malakoff-Torte 🧁 im Becher (mit Rum)",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Tomaten 🍅-Cremesuppe mit Petersilie 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Karotten 🥕-Ingwer 🫚-Cremesuppe – optional mit Schnittlauch 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spargel 🌿-Risotto mit gebratenem Höllerschmid Rebenspeck 🥓 & kleinem Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Erdäpfel 🥔-Zucchini 🥒-Auflauf - mit Käse 🧀 gratiniert - dazu ein kleiner Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Bauern-Eintopf vom Rind (faschiert) mit Kohlrabi 🤍, Rotkraut 🩷, Lauch 🌿 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Westafrikanisches Erdnuss 🥜-Erdäpfel 🥔-Curry mit schwarzen Bohnen 🫘, Brokkoli 🥦, Ananas 🍍 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
