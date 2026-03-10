@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-10T18:26:06.891Z",
+  "fetchedAt": "2026-03-10T18:35:00.041Z",
   "error": null,
   "days": {
     "Montag": {
@@ -97,7 +97,8 @@
               "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Rindfleisch"
+                "Rindfleisch",
+                "Vegetarisch"
               ],
               "allergens": "A,C,G,H,L",
               "description": null
@@ -188,7 +189,9 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -346,7 +349,8 @@
               "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Rindfleisch"
+                "Rindfleisch",
+                "Vegetarisch"
               ],
               "allergens": "A,C,G,H,L",
               "description": null
@@ -439,7 +443,9 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -597,7 +603,8 @@
               "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Rindfleisch"
+                "Rindfleisch",
+                "Vegetarisch"
               ],
               "allergens": "A,C,G,H,L",
               "description": null
@@ -690,7 +697,9 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -846,7 +855,8 @@
               "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Rindfleisch"
+                "Rindfleisch",
+                "Vegetarisch"
               ],
               "allergens": "A,C,G,H,L",
               "description": null
@@ -939,7 +949,9 @@
             {
               "title": "Pizza Margherita",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Vegetarisch"
+              ],
               "allergens": "A,G",
               "description": null
             }
@@ -1097,7 +1109,8 @@
               "title": "Ravioli Lauchfülle • Linguini • Oliven Gnocchi •\nextra-vergine Olivenöl mit Kräutern • Sc. Bolognese - Rind • Mediterranes Kräuter - Orangen Pesto •\ngeröstete Haselnüsse • Fleischtomaten • Grana",
               "price": "9,90 €",
               "tags": [
-                "Rindfleisch"
+                "Rindfleisch",
+                "Vegetarisch"
               ],
               "allergens": "A,C,G,H,L",
               "description": null

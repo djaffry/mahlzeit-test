@@ -96,7 +96,6 @@ function extractAllergens(setMenu: SetMenu): string | null {
   return codes.length ? codes.join(',') : null;
 }
 
-
 function extractDietaryTags(setMenu: SetMenu): string[] {
   const tags: string[] = [];
 
@@ -193,12 +192,21 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
       }
     }
 
+    const tags = buildItemTags(category, title, extractDietaryTags(setMenu));
+
+    if (/pasta station/i.test(category) && !tags.includes('Vegetarisch')) {
+      tags.push('Vegetarisch');
+    }
+    if (/pizza/i.test(category) && /margherita/i.test(title) && !tags.includes('Vegetarisch')) {
+      tags.push('Vegetarisch');
+    }
+
     results.push({
       category,
       item: {
         title,
         price: extractProductPrice(setMenu),
-        tags: buildItemTags(category, title, extractDietaryTags(setMenu)),
+        tags,
         allergens: extractAllergens(setMenu),
         description: null,
       },
