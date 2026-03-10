@@ -4,20 +4,16 @@ var Dice = (() => {
   const SHAKE_THRESHOLD = 25;
   const SHAKE_COOLDOWN = 1500;
 
-  let _haptic, _smoothScrollTo, _saveCollapsed;
+  let _smoothScrollTo, _saveCollapsed;
 
-  function setup({ haptic, smoothScrollTo, saveCollapsed }) {
-    _haptic = haptic;
+  function setup({ smoothScrollTo, saveCollapsed }) {
     _smoothScrollTo = smoothScrollTo;
     _saveCollapsed = saveCollapsed;
 
     const btn = document.getElementById('dice-btn');
     if (!btn) return;
 
-    btn.addEventListener('click', () => {
-      _haptic();
-      roll();
-    });
+    btn.addEventListener('click', () => roll());
 
     setupShake(btn);
   }
@@ -25,6 +21,8 @@ var Dice = (() => {
   function roll(pickIndex) {
     const pool = getPool();
     if (pool.length === 0) return null;
+
+    vibrateRoll();
 
     document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
 
@@ -64,6 +62,13 @@ var Dice = (() => {
       .filter(card => !card.querySelector('.menu-item') && !card.querySelector('.reservation-badge'));
 
     return [...menuItems, ...linkCards];
+  }
+
+  function vibrateRoll() {
+    if (!navigator.vibrate) return;
+    const r = () => 5 + Math.floor(Math.random() * 10);
+    // rapid tumbles → settling → landing thud
+    navigator.vibrate([r(), 30, r(), 30, r(), 40, r(), 50, r(), 70, 20]);
   }
 
   function setupShake(btn) {

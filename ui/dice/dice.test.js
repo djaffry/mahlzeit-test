@@ -23,7 +23,6 @@ function initDice(panelHTML = '') {
   diceScript.runInContext(dom.getInternalVMContext());
 
   win.Dice.setup({
-    haptic: noop,
     smoothScrollTo: noop,
     saveCollapsed() {
       const panel = win.document.querySelector('.day-panel') ?? win.document;
@@ -208,7 +207,7 @@ describe('Dice.setup', () => {
     const dom = new JSDOM(`<!DOCTYPE html><html><body></body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
     dom.window.scrollTo = noop;
     diceScript.runInContext(dom.getInternalVMContext());
-    dom.window.Dice.setup({ haptic: noop, smoothScrollTo: noop, saveCollapsed: noop });
+    dom.window.Dice.setup({ smoothScrollTo: noop, saveCollapsed: noop });
   });
 });
 

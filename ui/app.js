@@ -976,7 +976,7 @@ async function init() {
 }
 
 setupPartyMode();
-Dice.setup({ haptic, smoothScrollTo, saveCollapsed });
+Dice.setup({ smoothScrollTo, saveCollapsed });
 setupThemeToggle();
 
 init();
