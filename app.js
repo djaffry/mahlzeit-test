@@ -52,16 +52,30 @@ function tagStyle(tag) {
   return `background:var(--${c}-dim);color:var(--${c})`;
 }
 
-function getWeekDates() {
-  const now = new Date();
-  const dow = now.getDay();
-  const monday = new Date(now);
-  monday.setDate(now.getDate() - ((dow + 6) % 7));
+function getMondayOfWeek(refDate) {
+  const monday = new Date(refDate);
+  monday.setDate(refDate.getDate() - ((refDate.getDay() + 6) % 7));
+  monday.setHours(0, 0, 0, 0);
+  return monday;
+}
+
+function getWeekDates(refDate) {
+  const monday = getMondayOfWeek(refDate || new Date());
   return DAYS.map((_, i) => {
     const d = new Date(monday);
     d.setDate(monday.getDate() + i);
     return d;
   });
+}
+
+function getLatestFetchDate(fullRestaurants) {
+  const latest = fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop();
+  return latest ? new Date(latest) : null;
+}
+
+function getDataWeekDates(fullRestaurants) {
+  const fetchDate = getLatestFetchDate(fullRestaurants);
+  return getWeekDates(fetchDate && !isNaN(fetchDate.getTime()) ? fetchDate : new Date());
 }
 
 function formatShortDate(d) {
@@ -472,6 +486,33 @@ function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay)
   contentEl.innerHTML = renderMapCard() + DAYS.map(d =>
     `<div class="day-panel${d === activeDay ? ' active' : ''}" data-panel="${d}">${renderDay(fullRestaurants, linkRestaurants, d, collapsedSet)}</div>`
   ).join('');
+}
+
+function isDataFromCurrentWeek(fullRestaurants) {
+  const fetchDate = getLatestFetchDate(fullRestaurants);
+  if (!fetchDate || isNaN(fetchDate.getTime())) return false;
+  const monday = getMondayOfWeek(new Date());
+  const nextMonday = new Date(monday);
+  nextMonday.setDate(monday.getDate() + 7);
+  return fetchDate >= monday && fetchDate < nextMonday;
+}
+
+function renderStaleDataState(contentEl, tabsEl, activeDay) {
+  contentEl.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+  contentEl.insertAdjacentHTML('afterbegin', `
+    <div class="weekend-state" id="stale-state">
+      <div class="weekend-emoji">\u{1F504}</div>
+      <div class="weekend-title">Neue Men\u00fcs noch nicht verf\u00fcgbar</div>
+      <div class="weekend-text">Die Men\u00fcs f\u00fcr diese Woche wurden noch nicht ver\u00f6ffentlicht.<br>Schau sp\u00e4ter nochmal vorbei!</div>
+      <button class="weekend-browse-btn" id="stale-browse">Men\u00fcs der letzten Woche ansehen</button>
+    </div>`);
+  document.getElementById('stale-browse').addEventListener('click', function() {
+    this.closest('.weekend-state').remove();
+    const panel = contentEl.querySelector(`.day-panel[data-panel="${activeDay}"]`);
+    if (panel) panel.classList.add('active');
+    tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.day === activeDay));
+    refreshPanel();
+  });
 }
 
 function renderWeekendState(contentEl, tabsEl) {
@@ -946,10 +987,15 @@ async function init() {
     const elapsed = Date.now() - loadStart;
     if (elapsed < 200) await new Promise(r => setTimeout(r, 200 - elapsed));
 
+    const dataWeekDates = getDataWeekDates(fullRestaurants);
+    const isCurrentWeek = isDataFromCurrentWeek(fullRestaurants);
+    renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeDay);
+
     renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay);
     refreshPanel();
 
     if (isWeekend) renderWeekendState(contentEl, tabsEl);
+    else if (!isCurrentWeek) renderStaleDataState(contentEl, tabsEl, activeDay);
 
     if (localStorage.getItem('map-collapsed') !== 'true') {
       initInlineMap();

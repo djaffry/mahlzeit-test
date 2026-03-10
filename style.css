@@ -175,15 +175,19 @@ body {
 .tab.today::after {
   content: '';
   position: absolute;
-  bottom: 3px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+  width: 65%;
+  height: 1.5px;
+  border-radius: 2px;
   background: var(--accent);
 }
-.tab.active.today::after { background: #1e1e2e; }
+.tab.active.today::after {
+  width: 60%;
+  height: 2px;
+  background: #1e1e2e;
+}
 
 /* Row 2: dietary filters */
 .filters {
