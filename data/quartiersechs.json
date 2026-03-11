@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-10T22:29:20.626Z",
+  "fetchedAt": "2026-03-11T10:01:32.009Z",
   "error": null,
   "days": {
     "Montag": {
@@ -737,10 +737,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Apfel - Zimt Creme",
+              "title": "Apfel - Zimt Creme\nHaselnussmousse • Weichselröster",
               "price": null,
-              "tags": [],
-              "allergens": "C,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -749,9 +751,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss- Zwetschkenstrudel",
+              "title": "Walnuss- Zwetschkenstrudel\nGebackenes Käsekuchen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F,G,H",
               "description": null
             }

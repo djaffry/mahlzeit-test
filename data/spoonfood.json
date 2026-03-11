@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-10T22:29:20.121Z",
+  "fetchedAt": "2026-03-11T10:01:31.799Z",
   "error": null,
   "days": {
     "Montag": {
@@ -280,6 +280,153 @@
         {
           "name": "Sweets",
           "items": [
+            {
+              "title": "Malakoff-Torte 🧁 im Becher (mit Rum)",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Pastinaken-Cremesuppe - optional mit Schnittlauch 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Wildkräuter 🌿-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni mit Salsiccia Piccante 🥓 *Arrabbiata Style* 🍅",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Ricotta-Spinat 💚-Knödel auf fruchtigem Tomaten 🍅-Paprika 🫑-Ragout",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "“Wurzel-Glück”-Teriyaki-Huhn mit gelben 💛 Rüben, Karotten 🥕, Pastinaken & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Frühlingshafter 🌸 Bohnen-Gemüse-Eintopf mit Tofu, weißen 🤍 Bohnen, Kidneybohnen 🫘, Mais 🌽, Paprika 🫑, gelben 💛 Rüben, Karotten 🥕 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Mediterrane Gnocchi-Salad Bowl mit Mozzarellabällchen, Kalamata-Oliven 🫒, Gurken 🥒, getrockneten Tomaten 🍅, Karotten 🥕 & Bärlauch 🌿-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Schoko 🍫-Creme mit Mandel-Hafer-Crunch 🍪",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
             {
               "title": "Malakoff-Torte 🧁 im Becher (mit Rum)",
               "price": "3,90",
