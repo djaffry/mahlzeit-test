@@ -307,7 +307,6 @@ body {
 }
 .restaurant-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
 }
 .restaurant-card.collapsed .restaurant-content,
 .restaurant-card.filter-collapsed .restaurant-content { grid-template-rows: 0fr; }
