@@ -43,7 +43,6 @@ var Share = (() => {
   };
 
   const TOAST_DURATION_MS = 2500;
-  const TOAST_FADE_MS = 300;
   const VIBRATE_MS = 8;
   const WEEKDAYS = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
@@ -127,6 +126,16 @@ var Share = (() => {
       await navigator.clipboard.writeText(text);
       showToast('Text kopiert');
     } catch {
+      // Clipboard blocked — try native share (Firefox Android, etc.)
+      if (navigator.share) {
+        try {
+          await navigator.share({ text });
+          clearSelection();
+          return;
+        } catch (error) {
+          if (error.name === 'AbortError') { clearSelection(); return; }
+        }
+      }
       showToast('Kopieren fehlgeschlagen');
     }
     clearSelection();
@@ -217,7 +226,7 @@ var Share = (() => {
       } catch { /* fall through */ }
     }
 
-    // Web Share API (mainly mobile)
+    // Web Share API with file (Chrome Android, iOS Safari 15+)
     const blob = await canvasToBlob(canvas);
     const file = new File([blob], filename, { type: 'image/png' });
     try {
@@ -232,7 +241,21 @@ var Share = (() => {
       if (error.name === 'AbortError') return;
     }
 
-    // Download fallback
+    // URL-only share fallback (Firefox Android — no file sharing support)
+    if (navigator.share) {
+      try {
+        downloadBlob(blob, filename);
+        await navigator.share({
+          title: headerTitle,
+          url: window.location.origin + window.location.pathname,
+        });
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+
+    // Download fallback (desktop without clipboard support)
     downloadBlob(blob, filename);
     showToast('Bild heruntergeladen', canvas);
   }
@@ -240,6 +263,11 @@ var Share = (() => {
   function showToast(message, canvas) {
     const existing = document.querySelector('.share-toast');
     if (existing) existing.remove();
+    const existingBackdrop = document.querySelector('.share-toast-backdrop');
+    if (existingBackdrop) existingBackdrop.remove();
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'share-toast-backdrop';
 
     const toast = document.createElement('div');
     toast.className = 'share-toast';
@@ -256,12 +284,25 @@ var Share = (() => {
     label.textContent = message;
     toast.appendChild(label);
 
-    document.body.appendChild(toast);
-    requestAnimationFrame(() => toast.classList.add('visible'));
-    setTimeout(() => {
+    let dismissed = false;
+    function dismiss() {
+      if (dismissed) return;
+      dismissed = true;
       toast.classList.remove('visible');
-      setTimeout(() => toast.remove(), TOAST_FADE_MS);
-    }, TOAST_DURATION_MS);
+      backdrop.classList.remove('visible');
+      setTimeout(() => { toast.remove(); backdrop.remove(); }, 400);
+    }
+
+    backdrop.addEventListener('click', dismiss);
+    toast.addEventListener('click', dismiss);
+
+    document.body.appendChild(backdrop);
+    document.body.appendChild(toast);
+    // Force layout so the browser registers the initial state before transitioning
+    toast.offsetHeight;
+    backdrop.classList.add('visible');
+    toast.classList.add('visible');
+    setTimeout(dismiss, TOAST_DURATION_MS);
   }
 
   /* ── Canvas rendering ─────────────────────────────────── */

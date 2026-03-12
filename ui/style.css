@@ -949,3 +949,13 @@ body {
 .party .map-marker-emoji {
   animation: partySpin 4s linear infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-line { animation: none; }
+  .party body,
+  .party .restaurant-card,
+  .party .party-toggle,
+  .party .toolbar,
+  .party .tab.active,
+  .party .map-marker-emoji { animation: none; }
+}

@@ -62,8 +62,8 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
-  padding: 0.6rem 0.65rem 0.6rem 1.25rem;
-  box-shadow: var(--shadow-md);
+  padding: 0.7rem 0.75rem 0.7rem 1.25rem;
+  box-shadow: var(--shadow-md), 0 2px 12px rgba(0,0,0,0.2);
   z-index: 900;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
@@ -106,31 +106,54 @@
 .share-bar-clear:hover { background: var(--border-light); color: var(--text); }
 
 /* Share preview toast */
+.share-toast-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+}
+.share-toast-backdrop.visible {
+  opacity: 1;
+  animation: snapFlash 0.45s ease-out;
+}
+@keyframes snapFlash {
+  0%  { background: rgba(255,255,255,0.4); }
+  40% { background: rgba(255,255,255,0.05); }
+  100%{ background: rgba(0,0,0,0.4); }
+}
 .share-toast {
   position: fixed;
-  bottom: calc(1.5rem + env(safe-area-inset-bottom));
+  top: 50%;
   left: 50%;
   background: var(--surface);
   color: var(--text);
   border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.25);
   z-index: 1000;
   overflow: hidden;
-  width: min(360px, calc(100vw - 2rem));
-  transform: translateX(-50%) translateY(30px) scale(0.92);
+  width: min(480px, calc(100vw - 2rem));
+  transform: translate(-50%, 10%);
   opacity: 0;
-  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Exit: opacity leads (0.2s), slide follows at phi ratio (0.32s) */
+  transition: opacity 0.2s ease-in, transform 0.32s ease-in;
   pointer-events: none;
+  cursor: pointer;
 }
 .share-toast.visible {
   opacity: 1;
-  transform: translateX(-50%) translateY(0) scale(1);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  /* Entrance: opacity 0.4s, slide 0.65s (phi ratio), staggered after flash */
+  transition: opacity 0.4s ease-out 0.15s,
+              transform 0.65s cubic-bezier(0.2, 0, 0, 1) 0.15s;
 }
 .share-toast-preview {
   display: block;
   width: 100%;
-  max-height: 280px;
+  max-height: min(65vh, 600px);
   object-fit: cover;
   object-position: top;
 }
@@ -143,4 +166,11 @@
   white-space: nowrap;
   border-top: 1px solid var(--border-light);
   color: var(--green);
+}
+@media (prefers-reduced-motion: reduce) {
+  .share-bar { transition: none; }
+  .share-toast,
+  .share-toast.visible { transition: opacity 0.15s ease; transform: translate(-50%, -50%); }
+  .share-toast-backdrop { transition: none; }
+  .share-toast-backdrop.visible { animation: none; }
 }

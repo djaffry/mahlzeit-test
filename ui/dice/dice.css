@@ -60,6 +60,7 @@
 @media (prefers-reduced-motion: reduce) {
   .dice-overlay { transition: none; }
   .dice-overlay-emoji { animation: none; }
+  .dice-pick { animation: none; }
 }
 
 .dice-pick {
