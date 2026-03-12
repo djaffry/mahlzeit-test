@@ -14,11 +14,52 @@
   line-height: 1;
 }
 .dice-btn:hover { background: var(--border-light); }
-.dice-btn.rolling { animation: diceRoll 0.5s ease; }
-@keyframes diceRoll {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.2); }
-  100% { transform: rotate(360deg) scale(1); }
+/* Dice roll overlay */
+.dice-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.dice-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.dice-overlay-emoji {
+  position: absolute;
+  font-size: var(--dice-size, 2.5rem);
+  left: var(--dice-x, 50%);
+  top: var(--dice-y, 50%);
+  offset-path: path(var(--wander-path));
+  animation:
+    diceTumble var(--tumble-dur, 1.5s) linear var(--tumble-delay, 0s) both,
+    diceWander var(--tumble-dur, 1.5s) cubic-bezier(0.2, 0.8, 0.3, 1) var(--tumble-delay, 0s) both;
+}
+@keyframes diceTumble {
+  0%   { transform: rotate(0deg)    scale(1);    opacity: 0; }
+  5%   { opacity: 1; }
+  10%  { transform: rotate(240deg)  scale(1.12); }
+  20%  { transform: rotate(520deg)  scale(1);    }
+  30%  { transform: rotate(780deg)  scale(1.08); }
+  42%  { transform: rotate(1000deg) scale(1);    }
+  55%  { transform: rotate(1160deg) scale(1.04); }
+  68%  { transform: rotate(1270deg) scale(1);    }
+  80%  { transform: rotate(1330deg) scale(1.01); }
+  90%  { transform: rotate(1360deg) scale(1);    }
+  100% { transform: rotate(1370deg) scale(1);    }
+}
+@keyframes diceWander {
+  0%   { offset-distance: 0%; }
+  100% { offset-distance: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dice-overlay { transition: none; }
+  .dice-overlay-emoji { animation: none; }
 }
 
 .dice-pick {

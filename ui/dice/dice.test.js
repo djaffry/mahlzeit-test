@@ -15,11 +15,13 @@ function initDice(panelHTML = '') {
     <div class="content" id="content">
       <div class="day-panel active" data-panel="Montag">${panelHTML}</div>
     </div>
+    <div class="dice-overlay" id="dice-overlay" aria-hidden="true"></div>
   </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
 
   const { window: win } = dom;
   win.HTMLElement.prototype.scrollIntoView = noop;
   win.scrollTo = noop;
+  win.matchMedia = () => ({ matches: true });
   diceScript.runInContext(dom.getInternalVMContext());
 
   win.Dice.setup({
@@ -170,14 +172,57 @@ describe('Dice.roll', () => {
     ok(!doc.querySelector('.restaurant-card').classList.contains('collapsed'));
   });
 
-  it('adds rolling class to dice button', () => {
-    const { Dice, doc } = initDice(`
-      <div class="restaurant-card" data-restaurant="r1">
-        <div class="menu-item">Gulasch</div>
+  it('returns null when already rolling', () => {
+    const dom = new JSDOM(`<!DOCTYPE html><html><body>
+      <button class="dice-btn" id="dice-btn">🎲</button>
+      <div class="content" id="content">
+        <div class="day-panel active" data-panel="Montag">
+          <div class="restaurant-card" data-restaurant="r1">
+            <div class="menu-item">Gulasch</div>
+          </div>
+        </div>
       </div>
-    `);
-    Dice.roll(0);
-    ok(doc.getElementById('dice-btn').classList.contains('rolling'));
+      <div class="dice-overlay" id="dice-overlay" aria-hidden="true"></div>
+    </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
+
+    const { window: win } = dom;
+    win.HTMLElement.prototype.scrollIntoView = noop;
+    win.scrollTo = noop;
+    // reduced motion OFF so animation plays and rolling flag is set
+    win.matchMedia = () => ({ matches: false });
+    diceScript.runInContext(dom.getInternalVMContext());
+    win.Dice.setup({ smoothScrollTo: noop, saveCollapsed: noop });
+
+    const first = win.Dice.roll(0);
+    ok(first);
+    // Second call while animating returns null
+    strictEqual(win.Dice.roll(0), null);
+  });
+
+  it('shows overlay during animation when reduced motion is off', () => {
+    const dom = new JSDOM(`<!DOCTYPE html><html><body>
+      <button class="dice-btn" id="dice-btn">🎲</button>
+      <div class="content" id="content">
+        <div class="day-panel active" data-panel="Montag">
+          <div class="restaurant-card" data-restaurant="r1">
+            <div class="menu-item">Gulasch</div>
+          </div>
+        </div>
+      </div>
+      <div class="dice-overlay" id="dice-overlay" aria-hidden="true"></div>
+    </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
+
+    const { window: win } = dom;
+    win.HTMLElement.prototype.scrollIntoView = noop;
+    win.scrollTo = noop;
+    win.matchMedia = () => ({ matches: false });
+    diceScript.runInContext(dom.getInternalVMContext());
+    win.Dice.setup({ smoothScrollTo: noop, saveCollapsed: noop });
+
+    win.Dice.roll(0);
+    const overlay = win.document.getElementById('dice-overlay');
+    ok(overlay.classList.contains('visible'));
+    ok(overlay.querySelectorAll('.dice-overlay-emoji').length > 0, 'should spawn dice emojis');
   });
 
   it('saves collapsed state to localStorage', () => {
@@ -220,5 +265,10 @@ describe('Dice constants', () => {
   it('exports shake cooldown', () => {
     const { Dice } = initDice();
     strictEqual(Dice.SHAKE_COOLDOWN, 1500);
+  });
+
+  it('exports animation duration', () => {
+    const { Dice } = initDice();
+    strictEqual(Dice.ANIMATION_DURATION, 1500);
   });
 });
