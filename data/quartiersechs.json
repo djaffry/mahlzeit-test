@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-11T11:21:10.979Z",
+  "fetchedAt": "2026-03-12T10:01:19.437Z",
   "error": null,
   "days": {
     "Montag": {
@@ -993,12 +993,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganer Tapioka Pudding •\nBanane • Erdnuss",
+              "title": "Veganer Tapioka Pudding •\nBanane • Erdnuss\nApfel - Zimt Creme",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "E,F,G,O",
+              "allergens": "C,E,F,G,O",
               "description": null
             }
           ]
@@ -1007,10 +1007,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Malakoffschnitte",
+              "title": "Malakoffschnitte\nWalnuss - Zwetschken Strudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1171,7 +1171,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "G,M",
+              "allergens": "G,M,O",
               "description": null
             }
           ]
