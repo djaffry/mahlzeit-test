@@ -13,7 +13,7 @@
     "lon": 16.3932
   },
   "mapUrl": "https://maps.app.goo.gl/orhEiJs54jbTGCRq5",
-  "fetchedAt": "2026-03-12T21:46:32.290Z",
+  "fetchedAt": "2026-03-13T09:56:52.164Z",
   "error": null,
   "days": {
     "Montag": {
@@ -527,6 +527,134 @@
             },
             {
               "title": "Süßkartoffel 🍠-Cajun-Pot mit schwarzen Bohnen 🫘, Erdnüssen 🥜, Erdäpfeln 🥔 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Mediterrane Gnocchi-Salad Bowl mit Mozzarellabällchen, Kalamata-Oliven 🫒, Gurken 🥒, getrockneten Tomaten 🍅, Karotten 🥕 & Bärlauch 🌿-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Schoko 🍫-Creme mit Mandel-Hafer-Crunch 🍪",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Kokos 🥥-Cremesuppe mit Kräutern 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Herzhafter Krautfleckerl 🥬-Auflauf mit Kümmel & frischer Petersilie 🌿",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warmer Nuss-Palatschinken 🥞-Auflauf mit Zwetschken 💜-Röster",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Gulasch vom Ötscherblickschwein mit Paprika 🫑 & Reis - optional mit Sauerrahm",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Sellerie 🤍-Pastinaken-Brokkoli 🥦-Eintopf mit Lauch, Dille 🌿 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",

@@ -12,7 +12,7 @@
     "lon": 16.3935
   },
   "mapUrl": "https://maps.app.goo.gl/7wG2m5UuYbBC8HUi6",
-  "fetchedAt": "2026-03-12T21:46:32.660Z",
+  "fetchedAt": "2026-03-13T09:56:52.346Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1180,12 +1180,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos\"milch\"reis • \nHeidelbeeren",
+              "title": "Kokos\"milch\"reis • \nHeidelbeeren\nTapioka Pudding • Banane • Erdnüsse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "H",
+              "allergens": "E,F,G,H,O",
               "description": null
             }
           ]
@@ -1194,10 +1194,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Esterhazyschnitte",
+              "title": "Esterhazyschnitte\nMalakoffschnitte",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
