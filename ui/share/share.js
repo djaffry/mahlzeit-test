@@ -124,7 +124,7 @@ var Share = (() => {
     const text = formatAsText(data);
     try {
       await navigator.clipboard.writeText(text);
-      showToast('Text kopiert');
+      showToast('Text kopiert', null, text);
     } catch {
       // Clipboard blocked — try native share (Firefox Android, etc.)
       if (navigator.share) {
@@ -179,11 +179,9 @@ var Share = (() => {
       <span class="share-bar-count"></span>
       <div class="share-bar-actions">
         <button class="share-bar-picture" aria-label="Als Bild teilen" title="Als Bild">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </button>
-        <button class="share-bar-text" aria-label="Als Text kopieren" title="Als Text">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="13" height="18" rx="2"/><path d="M3 7v13a2 2 0 002 2h10"/><line x1="12" y1="7" x2="17" y2="7"/><line x1="12" y1="11" x2="17" y2="11"/><line x1="12" y1="15" x2="15" y2="15"/></svg>
-        </button>
+        <button class="share-bar-text" aria-label="Als Text kopieren" title="Als Text">Txt</button>
         <button class="share-bar-clear" aria-label="Auswahl aufheben" title="Aufheben">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
@@ -241,26 +239,12 @@ var Share = (() => {
       if (error.name === 'AbortError') return;
     }
 
-    // URL-only share fallback (Firefox Android — no file sharing support)
-    if (navigator.share) {
-      try {
-        downloadBlob(blob, filename);
-        await navigator.share({
-          title: headerTitle,
-          url: window.location.origin + window.location.pathname,
-        });
-        return;
-      } catch (error) {
-        if (error.name === 'AbortError') return;
-      }
-    }
-
-    // Download fallback (desktop without clipboard support)
+    // Download fallback (Firefox Android, desktop without clipboard support)
     downloadBlob(blob, filename);
     showToast('Bild heruntergeladen', canvas);
   }
 
-  function showToast(message, canvas) {
+  function showToast(message, canvas, text) {
     const existing = document.querySelector('.share-toast');
     if (existing) existing.remove();
     const existingBackdrop = document.querySelector('.share-toast-backdrop');
@@ -276,6 +260,11 @@ var Share = (() => {
       const preview = document.createElement('img');
       preview.className = 'share-toast-preview';
       preview.src = canvas.toDataURL('image/png');
+      toast.appendChild(preview);
+    } else if (text) {
+      const preview = document.createElement('pre');
+      preview.className = 'share-toast-text-preview';
+      preview.textContent = text;
       toast.appendChild(preview);
     }
 
@@ -300,6 +289,7 @@ var Share = (() => {
     document.body.appendChild(toast);
     // Force layout so the browser registers the initial state before transitioning
     toast.offsetHeight;
+    if (canvas) backdrop.classList.add('flash');
     backdrop.classList.add('visible');
     toast.classList.add('visible');
     setTimeout(dismiss, TOAST_DURATION_MS);

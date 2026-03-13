@@ -1,5 +1,10 @@
 /* Share — selection highlight, floating bar, toast */
 
+:root {
+  --share-preview-bg: #1e1e2e;
+  --share-preview-text: #cdd6f4;
+}
+
 /* Card-level select button in restaurant header */
 .share-select-btn {
   background: none;
@@ -98,8 +103,8 @@
   color: var(--text-secondary);
 }
 .share-bar-picture svg,
-.share-bar-text svg,
 .share-bar-clear svg { width: 20px; height: 20px; }
+.share-bar-text { font-size: 0.8rem; font-weight: 700; letter-spacing: -0.02em; }
 .share-bar-picture { background: var(--accent-dim); color: var(--accent); }
 .share-bar-picture:hover { background: var(--accent); color: var(--bg); }
 .share-bar-text:hover { background: var(--border-light); color: var(--text); }
@@ -117,6 +122,8 @@
 }
 .share-toast-backdrop.visible {
   opacity: 1;
+}
+.share-toast-backdrop.visible.flash {
   animation: snapFlash 0.45s ease-out;
 }
 @keyframes snapFlash {
@@ -156,6 +163,19 @@
   max-height: min(65vh, 600px);
   object-fit: cover;
   object-position: top;
+}
+.share-toast-text-preview {
+  margin: 0.75rem;
+  padding: 0.85rem;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--share-preview-text);
+  background: var(--share-preview-bg);
+  border-radius: var(--radius-sm);
+  white-space: pre-wrap;
+  max-height: min(50vh, 400px);
+  overflow-y: auto;
 }
 .share-toast-label {
   display: block;
