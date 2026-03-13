@@ -61,6 +61,23 @@
 }
 [data-theme="latte"] .tab.active.today::after { background: #ffffff; }
 
+/* Theme transition — circular reveal (View Transitions API) */
+::view-transition-old(root) { animation: none; }
+::view-transition-new(root) { animation: theme-reveal 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+@keyframes theme-reveal {
+  from { clip-path: circle(0% at var(--toggle-x, 50%) var(--toggle-y, 0)); }
+  to   { clip-path: circle(150% at var(--toggle-x, 50%) var(--toggle-y, 0)); }
+}
+/* Theme transition — color fade fallback (no View Transitions support) */
+.theme-transitioning,
+.theme-transitioning *,
+.theme-transitioning *::before,
+.theme-transitioning *::after {
+  transition: background-color 0.3s ease, color 0.3s ease,
+              border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Reset & base */
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 :focus:not(:focus-visible) { outline: none; }

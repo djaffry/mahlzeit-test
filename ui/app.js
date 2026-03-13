@@ -701,14 +701,35 @@ function setupThemeToggle() {
   const saved = localStorage.getItem('theme');
   if (saved) document.documentElement.dataset.theme = saved;
 
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    const next = document.documentElement.dataset.theme === 'latte' ? '' : 'latte';
-    if (next) {
-      document.documentElement.dataset.theme = next;
-      localStorage.setItem('theme', next);
+  const btn = document.getElementById('theme-toggle');
+  btn.addEventListener('click', () => {
+    const root = document.documentElement;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function applyTheme() {
+      const next = root.dataset.theme === 'latte' ? '' : 'latte';
+      if (next) {
+        root.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      } else {
+        delete root.dataset.theme;
+        localStorage.removeItem('theme');
+      }
+    }
+
+    if (reducedMotion) {
+      applyTheme();
+    } else if (document.startViewTransition) {
+      const rect = btn.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      root.style.setProperty('--toggle-x', x + 'px');
+      root.style.setProperty('--toggle-y', y + 'px');
+      document.startViewTransition(applyTheme);
     } else {
-      delete document.documentElement.dataset.theme;
-      localStorage.removeItem('theme');
+      root.classList.add('theme-transitioning');
+      applyTheme();
+      setTimeout(() => root.classList.remove('theme-transitioning'), 350);
     }
   });
 }
