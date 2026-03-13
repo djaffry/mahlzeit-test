@@ -1,32 +1,20 @@
-.dice-btn {
-  background: transparent;
-  border: none;
-  border-radius: var(--radius-pill);
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-  font-size: 1rem;
-  line-height: 1;
-}
-.dice-btn:hover { background: var(--border-light); }
+/* Base styles inherited from icon-btn group in style.css */
+.dice-btn { font-size: var(--text-lg); line-height: 1; }
 /* Dice roll overlay */
 .dice-overlay {
   position: fixed;
   inset: 0;
   z-index: 950;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--overlay);
   overflow: hidden;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s;
 }
 .dice-overlay.visible {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 .dice-overlay-emoji {
@@ -70,8 +58,8 @@
 }
 .menu-item.dice-pick {
   border-radius: var(--radius-sm);
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  margin-left: -0.4rem;
-  margin-right: -0.4rem;
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+  margin-left: calc(-1 * var(--spacing-xs));
+  margin-right: calc(-1 * var(--spacing-xs));
 }

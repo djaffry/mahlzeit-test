@@ -6,18 +6,22 @@ var Share = (() => {
   const CANVAS_WIDTH = 720;
   const PADDING = 36;
   const CONTENT_WIDTH = CANVAS_WIDTH - PADDING * 2;
-  const LOGO_SIZE = 44;
+  const LOGO_SIZE = 56;
   const FONT_STACK = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
   // Catppuccin Mocha — consistent branding regardless of user theme
   const COLOR = {
     bg:        '#1e1e2e',
+    surface:   '#313244',
     text:      '#cdd6f4',
     secondary: '#a6adc8',
     muted:     '#6c7086',
     accent:    '#cba6f7',
     border:    '#45475a',
+    borderLight: '#3b3c50',
   };
+  const CARD_RADIUS = 12;
+  const CARD_PADDING = 36;
 
   const TAG_COLORS = {
     Vegan:            { bg: 'rgba(166,227,161,0.18)', fg: '#a6e3a1' },
@@ -66,13 +70,24 @@ var Share = (() => {
       if (event.target.closest('.share-bar-text'))    { shareSelectionAsText(); return; }
       if (event.target.closest('.share-bar-clear'))   { clearSelection(); return; }
 
-      const selectBtn = event.target.closest('.share-select-btn');
-      if (selectBtn) {
-        const card = selectBtn.closest('.restaurant-card');
-        if (card) {
-          const wasSelected = card.classList.contains('share-selected');
-          card.querySelectorAll('.menu-item.share-selected').forEach(el => el.classList.remove('share-selected'));
-          card.classList.toggle('share-selected', !wasSelected);
+      // Restaurant name click — select all / toggle link card
+      const nameEl = event.target.closest('.restaurant-name');
+      if (nameEl) {
+        const card = nameEl.closest('.restaurant-card');
+        if (card && !card.classList.contains('map-card')) {
+          const allItems = card.querySelectorAll('.menu-item:not(.hidden)');
+          if (allItems.length === 0) {
+            // Link card — toggle card-level selection
+            card.classList.toggle('share-selected');
+            if (card.classList.contains('share-selected')) card.classList.remove('dice-pick');
+          } else {
+            const allSelected = [...allItems].every(el => el.classList.contains('share-selected'));
+            allItems.forEach(el => {
+              el.classList.toggle('share-selected', !allSelected);
+              if (!allSelected) el.classList.remove('dice-pick');
+            });
+            syncCardSelectedState(card);
+          }
           navigator.vibrate?.(VIBRATE_MS);
           updateSelectionBar();
         }
@@ -82,9 +97,10 @@ var Share = (() => {
       // Menu item selection toggle (ignore clicks on links/buttons inside items)
       const menuItem = event.target.closest('.menu-item');
       if (menuItem && !event.target.closest('a, button')) {
-        const card = menuItem.closest('.restaurant-card');
-        if (card) card.classList.remove('share-selected');
         menuItem.classList.toggle('share-selected');
+        if (menuItem.classList.contains('share-selected')) menuItem.classList.remove('dice-pick');
+        const card = menuItem.closest('.restaurant-card');
+        if (card) syncCardSelectedState(card);
         navigator.vibrate?.(VIBRATE_MS);
         updateSelectionBar();
       }
@@ -101,7 +117,7 @@ var Share = (() => {
     const ctx = canvas.getContext('2d');
     ctx.scale(2, 2);
 
-    fillRoundRect(ctx, 0, 0, CANVAS_WIDTH, height, 16, COLOR.bg);
+    fillRoundRect(ctx, 0, 0, CANVAS_WIDTH, height, 24, COLOR.bg);
     layoutCanvas(ctx, data, true);
 
     return canvas;
@@ -167,6 +183,14 @@ var Share = (() => {
   function clearSelection() {
     document.querySelectorAll('.share-selected').forEach(el => el.classList.remove('share-selected'));
     updateSelectionBar();
+  }
+
+  // Sync card-level share-selected when all items are selected/deselected
+  function syncCardSelectedState(card) {
+    const allItems = card.querySelectorAll('.menu-item:not(.hidden)');
+    const allSelected = allItems.length > 0 &&
+      [...allItems].every(el => el.classList.contains('share-selected'));
+    card.classList.toggle('share-selected', allSelected);
   }
 
   /* ── Floating selection bar ───────────────────────────── */
@@ -300,147 +324,210 @@ var Share = (() => {
   function layoutCanvas(ctx, data, draw) {
     let y = PADDING;
 
-    const titleX = PADDING + LOGO_SIZE + 12;
+    // Header: logo + title + day
+    const titleX = PADDING + LOGO_SIZE + 16;
     if (draw && logoImage) ctx.drawImage(logoImage, PADDING, y, LOGO_SIZE, LOGO_SIZE);
 
-    setFont(ctx, '700 22px');
-    if (draw) { ctx.fillStyle = COLOR.accent; ctx.fillText(headerTitle, titleX, y + 19); }
-    setFont(ctx, '15px');
-    if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(headerSubtitle, titleX, y + 38); }
+    setFont(ctx, '700 28px');
+    if (draw) { ctx.fillStyle = COLOR.accent; ctx.fillText(headerTitle, titleX, y + 24); }
+    setFont(ctx, '20px');
+    if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(headerSubtitle, titleX, y + 48); }
 
     if (data.day) {
-      setFont(ctx, '16px');
+      setFont(ctx, '22px');
       const dayLabel = formatDayLabel(data.day);
       const dayLabelWidth = ctx.measureText(dayLabel).width;
-      if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(dayLabel, CANVAS_WIDTH - PADDING - dayLabelWidth, y + 19); }
+      if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(dayLabel, CANVAS_WIDTH - PADDING - dayLabelWidth, y + 24); }
     }
 
-    y += LOGO_SIZE;
+    y += LOGO_SIZE + 24;
 
-    y += 8;
-    if (draw) { ctx.fillStyle = COLOR.border; ctx.fillRect(PADDING, y, CONTENT_WIDTH, 1); }
-    y += 18;
-
+    // Restaurant cards
     const restaurants = data.sections || [data];
     for (let ri = 0; ri < restaurants.length; ri++) {
-      if (ri > 0) {
-        y += 10;
-        if (draw) { ctx.fillStyle = COLOR.border; ctx.fillRect(PADDING, y, CONTENT_WIDTH, 2); }
-        y += 20;
-      }
-      y = drawRestaurant(ctx, restaurants[ri], y, draw);
+      if (ri > 0) y += 24;
+      y = drawRestaurantCard(ctx, restaurants[ri], y, draw);
     }
 
     return y + PADDING;
   }
 
-  function drawRestaurant(ctx, restaurant, y, draw) {
-    setFont(ctx, '700 22px');
-    const nameLines = wrapText(ctx, restaurant.name, CONTENT_WIDTH);
-    for (const line of nameLines) {
-      if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(line, PADDING, y + 20); }
-      y += 30;
+  function drawRestaurantCard(ctx, restaurant, y, draw) {
+    // Measure card content height first (dry run)
+    const contentHeight = measureCardContent(ctx, restaurant);
+    const headerHeight = measureCardHeader(ctx, restaurant);
+    const bodyTopPad = 12; // website 6px × 2
+    const bodyBottomPad = CARD_PADDING; // website 18px × 2
+    const totalHeight = headerHeight + 1 + bodyTopPad + contentHeight + bodyBottomPad;
+    const cardWidth = CONTENT_WIDTH;
+
+    // Draw card background + border
+    if (draw) {
+      fillRoundRect(ctx, PADDING, y, cardWidth, totalHeight, CARD_RADIUS, COLOR.surface);
+      strokeRoundRect(ctx, PADDING, y, cardWidth, totalHeight, CARD_RADIUS, COLOR.border);
     }
 
-    if (restaurant.cuisine || restaurant.badges.length) {
-      y += 3;
-      let x = PADDING;
-      if (restaurant.cuisine) {
-        setFont(ctx, '600 12px');
-        const textWidth = ctx.measureText(restaurant.cuisine).width;
-        if (draw) {
-          fillRoundRect(ctx, x, y, textWidth + 14, 22, 11, COLOR.border);
-          ctx.fillStyle = COLOR.secondary;
-          ctx.fillText(restaurant.cuisine, x + 7, y + 15);
+    let cy = y;
+
+    // Card header
+    cy = drawCardHeader(ctx, restaurant, cy, draw);
+
+    // Header separator
+    if (draw) { ctx.fillStyle = COLOR.borderLight; ctx.fillRect(PADDING, cy, cardWidth, 1); }
+    cy += 1;
+
+    // Card content
+    cy += bodyTopPad;
+    cy = drawCardContent(ctx, restaurant, cy, draw);
+    cy += bodyBottomPad;
+
+    return cy;
+  }
+
+  function measureCardHeader(ctx, restaurant) {
+    let h = 24; // header top padding (12px × 2)
+    setFont(ctx, '700 32px');
+    const nameLines = wrapText(ctx, restaurant.name, CONTENT_WIDTH - CARD_PADDING * 2);
+    h += nameLines.length * 42;
+    if (restaurant.cuisine || restaurant.badges.length) h += 38;
+    h += 12; // header bottom padding
+    return h;
+  }
+
+  function measureCardContent(ctx, restaurant) {
+    let h = 0;
+    for (let ci = 0; ci < restaurant.categories.length; ci++) {
+      const category = restaurant.categories[ci];
+      h += 24 + 38; // category top padding (24) + title line (38)
+      for (let ii = 0; ii < category.items.length; ii++) {
+        const item = category.items[ii];
+        h += 12; // item padding top
+        setFont(ctx, '30px');
+        const priceWidth = item.price ? ctx.measureText(item.price).width : 0;
+        const titleMaxWidth = item.price ? CONTENT_WIDTH - CARD_PADDING * 2 - priceWidth - 16 : CONTENT_WIDTH - CARD_PADDING * 2;
+        h += wrapText(ctx, item.title, titleMaxWidth).length * 39;
+        if (item.description) {
+          setFont(ctx, '26px');
+          h += wrapText(ctx, item.description, CONTENT_WIDTH - CARD_PADDING * 2).length * 39;
         }
-        x += textWidth + 18;
+        if (item.tags.length) h += 34;
+        h += 12; // item padding bottom
+      }
+      if (ci < restaurant.categories.length - 1) h += 24;
+    }
+    return h;
+  }
+
+  function drawCardHeader(ctx, restaurant, y, draw) {
+    const x = PADDING + CARD_PADDING;
+    const maxW = CONTENT_WIDTH - CARD_PADDING * 2;
+    y += 24; // header top padding
+
+    // Restaurant name
+    setFont(ctx, '700 32px');
+    const nameLines = wrapText(ctx, restaurant.name, maxW);
+    for (const line of nameLines) {
+      if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(line, x, y + 30); }
+      y += 42;
+    }
+
+    // Cuisine + badges row
+    if (restaurant.cuisine || restaurant.badges.length) {
+      let bx = x;
+      if (restaurant.cuisine) {
+        setFont(ctx, '600 20px');
+        const tw = ctx.measureText(restaurant.cuisine).width;
+        if (draw) {
+          fillRoundRect(ctx, bx, y, tw + 20, 30, 15, COLOR.borderLight);
+          ctx.fillStyle = COLOR.secondary;
+          ctx.fillText(restaurant.cuisine, bx + 10, y + 22);
+        }
+        bx += tw + 28;
       }
       for (const badge of restaurant.badges) {
-        setFont(ctx, 'bold 12px');
-        const textWidth = ctx.measureText(badge).width;
+        setFont(ctx, 'bold 20px');
+        const tw = ctx.measureText(badge).width;
         const badgeColor = BADGE_COLORS[badge] || COLOR.accent;
         if (draw) {
-          fillRoundRect(ctx, x, y, textWidth + 14, 22, 11, badgeColor + '30');
+          fillRoundRect(ctx, bx, y, tw + 20, 30, 15, badgeColor + '30');
           ctx.fillStyle = badgeColor;
-          ctx.fillText(badge, x + 7, y + 15);
+          ctx.fillText(badge, bx + 10, y + 22);
         }
-        x += textWidth + 18;
+        bx += tw + 28;
       }
-      y += 28;
+      y += 38;
     }
 
-    y += 10;
+    y += 12; // header bottom padding
+    return y;
+  }
 
-    if (restaurant.categories.length === 0 && restaurant.noData) {
-      setFont(ctx, 'italic 15px');
-      if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(restaurant.noData, PADDING, y + 14); }
-      y += 26;
-    }
+  function drawCardContent(ctx, restaurant, y, draw) {
+    const x = PADDING + CARD_PADDING;
+    const maxW = CONTENT_WIDTH - CARD_PADDING * 2;
 
     for (let ci = 0; ci < restaurant.categories.length; ci++) {
       const category = restaurant.categories[ci];
 
-      if (draw) { ctx.fillStyle = COLOR.accent; ctx.fillRect(PADDING, y + 4, 3, 14); }
-      setFont(ctx, '600 13px');
-      if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(category.name.toUpperCase(), PADDING + 10, y + 16); }
-      y += 28;
+      // Category title
+      y += 24; // category top padding
+      setFont(ctx, '700 26px');
+      if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(category.name, x, y + 27); }
+      y += 38;
 
       for (let ii = 0; ii < category.items.length; ii++) {
         const item = category.items[ii];
+        y += 12; // item padding top
 
-        setFont(ctx, '17px');
+        // Item title + price
+        setFont(ctx, '30px');
         const priceWidth = item.price ? ctx.measureText(item.price).width : 0;
-        const titleMaxWidth = item.price ? CONTENT_WIDTH - priceWidth - 20 : CONTENT_WIDTH;
+        const titleMaxWidth = item.price ? maxW - priceWidth - 16 : maxW;
         const titleLines = wrapText(ctx, item.title, titleMaxWidth);
 
         for (let li = 0; li < titleLines.length; li++) {
-          if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(titleLines[li], PADDING, y + 16); }
+          if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(titleLines[li], x, y + 27); }
           if (li === 0 && item.price && draw) {
-            setFont(ctx, '600 17px');
+            setFont(ctx, '600 30px');
             ctx.fillStyle = COLOR.accent;
-            ctx.fillText(item.price, CANVAS_WIDTH - PADDING - priceWidth, y + 16);
-            setFont(ctx, '17px');
+            ctx.fillText(item.price, PADDING + CONTENT_WIDTH - CARD_PADDING - priceWidth, y + 27);
+            setFont(ctx, '30px');
           }
-          y += 24;
+          y += 39;
         }
 
+        // Description
         if (item.description) {
-          setFont(ctx, '15px');
-          const descriptionLines = wrapText(ctx, item.description, CONTENT_WIDTH);
-          for (const line of descriptionLines) {
-            if (draw) { ctx.fillStyle = COLOR.secondary; ctx.fillText(line, PADDING, y + 14); }
-            y += 20;
+          setFont(ctx, '26px');
+          const descLines = wrapText(ctx, item.description, maxW);
+          for (const line of descLines) {
+            if (draw) { ctx.fillStyle = COLOR.secondary; ctx.fillText(line, x, y + 27); }
+            y += 39;
           }
         }
 
+        // Tags
         if (item.tags.length) {
-          y += 3;
-          let x = PADDING;
-          setFont(ctx, '600 11px');
+          let tx = x;
+          setFont(ctx, '600 20px');
           for (const tag of item.tags) {
             const tagColor = TAG_COLORS[tag] || TAG_COLOR_DEFAULT;
             const tagLabel = tag.toUpperCase();
             const tagWidth = ctx.measureText(tagLabel).width;
             if (draw) {
-              fillRoundRect(ctx, x, y, tagWidth + 10, 18, 9, tagColor.bg);
+              fillRoundRect(ctx, tx, y, tagWidth + 18, 30, 15, tagColor.bg);
               ctx.fillStyle = tagColor.fg;
-              ctx.fillText(tagLabel, x + 5, y + 13);
+              ctx.fillText(tagLabel, tx + 9, y + 22);
             }
-            x += tagWidth + 14;
+            tx += tagWidth + 22;
           }
-          y += 22;
+          y += 34;
         }
 
-        if (ii < category.items.length - 1) {
-          y += 4;
-          if (draw) { ctx.fillStyle = COLOR.border; ctx.fillRect(PADDING, y, CONTENT_WIDTH, 0.5); }
-          y += 8;
-        } else {
-          y += 5;
-        }
+        y += 12; // item padding bottom
       }
 
-      if (ci < restaurant.categories.length - 1) y += 10;
+      if (ci < restaurant.categories.length - 1) y += 24;
     }
 
     return y;
@@ -501,6 +588,27 @@ var Share = (() => {
     }
     ctx.fillStyle = fill;
     ctx.fill();
+  }
+
+  function strokeRoundRect(ctx, x, y, width, height, radius, stroke) {
+    ctx.beginPath();
+    if (ctx.roundRect) {
+      ctx.roundRect(x, y, width, height, radius);
+    } else {
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+    ctx.strokeStyle = stroke;
+    ctx.lineWidth = 1;
+    ctx.stroke();
   }
 
   function formatDayLabel(day) {

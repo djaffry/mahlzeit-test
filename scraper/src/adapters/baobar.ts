@@ -8,7 +8,6 @@ const adapter: LinkAdapter = {
   cuisine: ['Bao'],
   edenred: true,
   coordinates: { lat: 48.2224, lon: 16.3924 },
-  mapUrl: 'https://maps.app.goo.gl/3J2QoEyrwR6JSysR6',
 };
 
 export default adapter;

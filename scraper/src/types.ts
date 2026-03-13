@@ -35,7 +35,6 @@ interface BaseAdapter {
   edenred?: boolean;
   reservationUrl?: string;
   coordinates?: { lat: number; lon: number };
-  mapUrl?: string;
 }
 
 export interface FullAdapter extends BaseAdapter {
@@ -60,7 +59,6 @@ export interface RestaurantData {
   edenred?: boolean;
   reservationUrl?: string;
   coordinates?: { lat: number; lon: number };
-  mapUrl?: string;
   fetchedAt: string;
   error: string | null;
   days: WeekMenu;

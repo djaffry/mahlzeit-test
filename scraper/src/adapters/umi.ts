@@ -9,7 +9,6 @@ const adapter: LinkAdapter = {
   stampCard: true,
   edenred: true,
   coordinates: { lat: 48.2245, lon: 16.3935 },
-  mapUrl: 'https://maps.app.goo.gl/nYSyaiDxoQSeEHdu6',
 };
 
 export default adapter;

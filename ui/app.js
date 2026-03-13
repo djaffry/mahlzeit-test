@@ -6,7 +6,6 @@ const SVG = {
   collapse: '<svg class="restaurant-collapse-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>',
   reload: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1v5h5"/><path d="M2.5 10A6 6 0 1 0 4 4.5L1 6"/></svg>',
   mapPin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
 };
 
 function haptic(ms = 10) { navigator.vibrate?.(ms); }
@@ -250,9 +249,8 @@ function renderRestaurant(restaurant, day, collapsedSet) {
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
-        <div style="display:flex;align-items:center;gap:0.4rem">
-          <button class="share-select-btn" aria-label="Restaurant auswählen" title="Auswählen">${SVG.check}</button>
-          ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
+        <div class="restaurant-header-actions">
+          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
           ${SVG.collapse}
         </div>
       </div>
@@ -277,9 +275,8 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
     <div class="restaurant-card${!available ? ' link-muted' : ''}${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${schedule}</div>
-        <div style="display:flex;align-items:center;gap:0.4rem">
-          <button class="share-select-btn" aria-label="Restaurant auswählen" title="Auswählen">${SVG.check}</button>
-          ${restaurant.mapUrl ? `<a class="map-pin-link" href="${escapeHtml(restaurant.mapUrl)}" target="_blank" rel="noopener" title="Auf Karte anzeigen">${SVG.mapPin}</a>` : ''}
+        <div class="restaurant-header-actions">
+          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
           ${SVG.collapse}
         </div>
       </div>
@@ -623,10 +620,11 @@ function setupCollapseExpand(contentEl) {
   });
 
   contentEl.addEventListener('click', e => {
-    const nameEl = e.target.closest('.restaurant-name');
-    if (nameEl) {
-      const card = nameEl.closest('.restaurant-card');
-      if (card && !card.classList.contains('map-card')) {
+    const pinBtn = e.target.closest('.map-pin-link');
+    if (pinBtn) {
+      const card = pinBtn.closest('.restaurant-card');
+      if (card) {
+        e.preventDefault();
         focusOnMap(card.dataset.restaurant);
         return;
       }
@@ -739,12 +737,13 @@ let _inlineMap = null;
 let _inlineMarkers = {};
 
 function renderMapCard() {
-  const collapsed = localStorage.getItem('map-collapsed') === 'true';
+  const pref = localStorage.getItem('map-collapsed');
+  const collapsed = pref !== null ? pref === 'true' : window.innerWidth <= 768;
   return `
     <div class="restaurant-card map-card${collapsed ? ' map-collapsed' : ''}" id="map-card">
       <div class="restaurant-header">
         <div class="restaurant-name">Karte</div>
-        <div style="display:flex;align-items:center;gap:0.3rem">
+        <div class="restaurant-header-actions">
           <button class="map-card-btn" id="map-fullscreen" aria-label="Vollbild"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
           <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
         </div>
@@ -755,22 +754,19 @@ function renderMapCard() {
     </div>`;
 }
 
-function buildMapPopup(r, showLink) {
+function buildMapPopup(r) {
   let html = `<strong>${escapeHtml(r.title)}</strong>`;
   if (r.cuisine?.length) {
-    html += `<br><span style="font-size:0.75rem;opacity:0.8">${r.cuisine.map(c => escapeHtml(c)).join(' \u00b7 ')}</span>`;
+    html += `<br><span style="font-size:var(--text-xs);color:var(--text-secondary)">${r.cuisine.map(c => escapeHtml(c)).join(' \u00b7 ')}</span>`;
   }
   if (r.availableDays) {
-    html += `<br><span style="font-size:0.7rem;font-weight:600;color:var(--mauve)">nur ${r.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`;
+    html += `<br><span style="font-size:var(--text-xxs);font-weight:600;color:var(--mauve)">nur ${r.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`;
   }
   const badges = [];
   if (r.edenred) badges.push('<span style="color:var(--red)">Edenred</span>');
   if (r.stampCard) badges.push('<span style="color:var(--teal)">Stempelkarte</span>');
   if (badges.length) {
-    html += `<br><span style="font-size:0.68rem;font-weight:600">${badges.join(' \u00b7 ')}</span>`;
-  }
-  if (showLink && r.mapUrl) {
-    html += `<br><a href="${escapeHtml(r.mapUrl)}" target="_blank" rel="noopener" style="font-size:0.75rem">Google Maps</a>`;
+    html += `<br><span style="font-size:var(--text-xxs);font-weight:600">${badges.join(' \u00b7 ')}</span>`;
   }
   return html;
 }
@@ -795,8 +791,10 @@ function initInlineMap() {
       popupAnchor: [0, -20],
     });
     const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_inlineMap);
-    marker.bindPopup(buildMapPopup(r, false), { closeButton: false, className: 'map-popup' });
+    marker.bindPopup(buildMapPopup(r), { closeButton: false, className: 'map-popup' });
     marker.on('click', () => scrollToRestaurant(r.id));
+    marker.on('mouseover', function () { this.openPopup(); });
+    marker.on('mouseout', function () { this.closePopup(); });
     _inlineMarkers[r.id] = marker;
   }
 }
@@ -892,10 +890,12 @@ function openMap() {
         popupAnchor: [0, -20],
       });
       const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_leafletMap);
-      marker.bindPopup(buildMapPopup(r, true), {
+      marker.bindPopup(buildMapPopup(r), {
         closeButton: false,
         className: 'map-popup',
       });
+      marker.on('mouseover', function () { this.openPopup(); });
+      marker.on('mouseout', function () { this.closePopup(); });
     }
   }
 
@@ -983,7 +983,7 @@ async function init() {
     if (isWeekend) renderWeekendState(contentEl, tabsEl);
     else if (!isCurrentWeek) renderStaleDataState(contentEl, tabsEl, activeDay);
 
-    if (localStorage.getItem('map-collapsed') !== 'true') {
+    if (!document.getElementById('map-card')?.classList.contains('map-collapsed')) {
       initInlineMap();
     }
 
@@ -1038,21 +1038,17 @@ function getShareSelectionData() {
 
   const restaurants = [];
   for (const card of activePanel.querySelectorAll('.restaurant-card')) {
-    const isCardSelected = card.classList.contains('share-selected');
     const selectedItems = [...card.querySelectorAll('.menu-item.share-selected:not(.hidden)')];
-    if (!isCardSelected && selectedItems.length === 0) continue;
+    const isCardSelected = card.classList.contains('share-selected');
+    if (selectedItems.length === 0 && !isCardSelected) continue;
 
     const meta = extractRestaurantMeta(card);
     if (!meta) continue;
 
-    const menuItems = isCardSelected
-      ? [...card.querySelectorAll('.menu-item:not(.hidden)')]
-      : selectedItems;
-
     restaurants.push({
       ...meta,
       restaurant: card.dataset.restaurant,
-      categories: menuItems.length > 0 ? groupItemsByCategory(menuItems) : [],
+      categories: selectedItems.length > 0 ? groupItemsByCategory(selectedItems) : [],
     });
   }
 

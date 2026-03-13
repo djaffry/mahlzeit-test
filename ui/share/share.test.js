@@ -54,10 +54,9 @@ function extractCardData(cardElement, selectedItemElements) {
   const categories = selectedItemElements
     ? groupItemsByCategory(selectedItemElements)
     : extractAllCategories(cardElement);
-  const noData = cardElement.querySelector('.no-data')?.textContent?.trim() || '';
   const panel = cardElement.closest('.day-panel');
   const day = panel?.dataset.panel || '';
-  return { ...meta, categories, noData, day, restaurant: cardElement.dataset.restaurant };
+  return { ...meta, categories, day, restaurant: cardElement.dataset.restaurant };
 }
 
 function getSelectionData(doc) {
@@ -66,21 +65,17 @@ function getSelectionData(doc) {
 
   const restaurants = [];
   for (const card of activePanel.querySelectorAll('.restaurant-card')) {
-    const isCardSelected = card.classList.contains('share-selected');
     const selectedItems = [...card.querySelectorAll('.menu-item.share-selected:not(.hidden)')];
-    if (!isCardSelected && selectedItems.length === 0) continue;
+    const isCardSelected = card.classList.contains('share-selected');
+    if (selectedItems.length === 0 && !isCardSelected) continue;
 
     const meta = extractRestaurantMeta(card);
     if (!meta) continue;
 
-    const menuItems = isCardSelected
-      ? [...card.querySelectorAll('.menu-item:not(.hidden)')]
-      : selectedItems;
-
     restaurants.push({
       ...meta,
       restaurant: card.dataset.restaurant,
-      categories: menuItems.length > 0 ? groupItemsByCategory(menuItems) : [],
+      categories: selectedItems.length > 0 ? groupItemsByCategory(selectedItems) : [],
     });
   }
 
@@ -114,7 +109,6 @@ const CARD_WITH_MENU = `
         <span class="cuisine-tag">Caf\u00e9 \u00b7 Bistro</span>
         <span class="edenred-badge">Edenred</span>
       </div>
-      <button class="share-btn">Share</button>
     </div>
     <div class="restaurant-content"><div class="restaurant-content-inner">
       <div class="restaurant-body">
@@ -246,13 +240,12 @@ describe('extractCardData', () => {
     strictEqual(data.categories.length, 0);
   });
 
-  it('extracts no-data message', () => {
+  it('extracts no-data card with empty categories', () => {
     const { doc } = initShare(CARD_NO_DATA);
     const card = doc.querySelector('.restaurant-card');
     const data = extractCardData(card);
 
     strictEqual(data.name, 'Test Restaurant');
-    strictEqual(data.noData, '(Noch) kein Men\u00fc f\u00fcr diesen Tag');
     strictEqual(data.categories.length, 0);
   });
 
