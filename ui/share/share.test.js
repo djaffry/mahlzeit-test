@@ -453,3 +453,39 @@ describe('Share.setup', () => {
     strictEqual(data.name, 'Mano Caf\u00e9');
   });
 });
+
+describe('onClear callback', () => {
+  it('calls onClear when selection is cleared via clear button', () => {
+    const dom = new JSDOM(`<!DOCTYPE html><html><body>
+      <div class="content" id="content">
+        <div class="day-panel active" data-panel="Montag">${CARD_WITH_MENU}</div>
+      </div>
+    </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
+
+    const { window: win } = dom;
+    shareScript.runInContext(dom.getInternalVMContext());
+
+    let cleared = false;
+    win.Share.setup({
+      getSelectionData: () => getSelectionData(win.document),
+      onClear: () => { cleared = true; },
+    });
+
+    // Select an item, then click clear
+    const item = win.document.getElementById('item-a');
+    item.click();
+    ok(item.classList.contains('share-selected'));
+
+    const clearBtn = win.document.querySelector('.share-bar-clear');
+    clearBtn.click();
+    strictEqual(cleared, true, 'onClear callback should have been called');
+  });
+
+  it('does not error when onClear is not provided', () => {
+    const { doc } = initShare(CARD_WITH_MENU);
+    doc.getElementById('item-a').click();
+    const clearBtn = doc.querySelector('.share-bar-clear');
+    clearBtn.click();
+    // No error thrown — pass
+  });
+});

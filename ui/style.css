@@ -174,13 +174,20 @@ body {
 .day-tabs {
   display: flex;
   gap: var(--spacing-xs);
-  overflow-x: auto;
-  scrollbar-width: none;
   flex: 1;
   min-width: 0;
+  justify-content: center;
+  overflow: auto;
+  container-type: inline-size;
 }
-.day-tabs::-webkit-scrollbar { display: none; }
-.tab .tab-short { display: none; }
+.tab .tab-full { display: none; }
+@container (min-width: 480px) {
+  .tab .tab-full { display: inline; }
+  .tab .tab-short { display: none; }
+}
+@container (max-width: 280px) {
+  .tab-date { display: none; }
+}
 .tab-date { font-weight: 400; color: var(--text-muted); }
 
 .tab {
@@ -693,29 +700,36 @@ body {
 }
 .weekend-browse-btn:hover { background: var(--accent-text); }
 
-/* Reload badge (appears after page is open for a while) */
-.freshness-badge {
-  font-family: inherit;
+/* Refresh OSD */
+.refresh-toast {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-sm) var(--spacing-lg);
   font-size: var(--text-sm);
   font-weight: 500;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-pill);
-  border: none;
-  background: transparent;
-  color: var(--yellow);
-  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1),
+              opacity 0.2s ease;
+  z-index: 100;
+  pointer-events: none;
   white-space: nowrap;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  display: none;
-  align-items: center;
-  gap: var(--spacing-xs);
-  transition: background 0.2s ease, color 0.2s ease;
 }
-.freshness-badge.page-stale { display: flex; }
-.freshness-badge:hover { background: var(--border-light); }
-.freshness-badge svg { width: 12px; height: 12px; flex-shrink: 0; }
+.refresh-toast.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .refresh-toast { transition: opacity 0.15s ease; transform: translateX(-50%); }
+}
 
 /* Map pin link on restaurant cards */
 .map-pin-link { color: var(--text-muted); }
@@ -842,11 +856,8 @@ body {
   .toolbar-subtitle { display: none; }
   .day-tabs { order: 3; flex-basis: 100%; }
   .tab { flex: 1; min-width: 0; text-align: center; padding: var(--spacing-xs); }
-  .tab .tab-short { display: inline; }
-  .tab .tab-full { display: none; }
   .content { padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-xl); }
   .filters { padding: var(--spacing-sm); }
-  .freshness-label { display: none; }
   #inline-map { height: 300px; }
 }
 
@@ -854,7 +865,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .tab:active, .filter-btn:active,
   .weekend-browse-btn:active,
-  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .freshness-badge:active, .party-toggle:active, .dice-btn:active { background: var(--border); }
+  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .party-toggle:active, .dice-btn:active { background: var(--border); }
 }
 
 /* Party mode */

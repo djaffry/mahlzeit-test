@@ -55,14 +55,16 @@ var Share = (() => {
   let headerTitle = 'Mittagsmen\u00fc';
   let headerSubtitle = 'Austria Campus, Wien';
   let getSelectionData = null;
+  let onClearCallback = null;
 
   /* ── Public API ───────────────────────────────────────── */
 
-  function setup({ title, subtitle, logo, getSelectionData: selectionDataFn } = {}) {
+  function setup({ title, subtitle, logo, getSelectionData: selectionDataFn, onClear } = {}) {
     if (title) headerTitle = title;
     if (subtitle) headerSubtitle = subtitle;
     if (logo) prepareLogo(logo);
     if (selectionDataFn) getSelectionData = selectionDataFn;
+    if (onClear) onClearCallback = onClear;
     createSelectionBar();
 
     document.addEventListener('click', event => {
@@ -183,6 +185,7 @@ var Share = (() => {
   function clearSelection() {
     document.querySelectorAll('.share-selected').forEach(el => el.classList.remove('share-selected'));
     updateSelectionBar();
+    if (onClearCallback) onClearCallback();
   }
 
   // Sync card-level share-selected when all items are selected/deselected
@@ -639,5 +642,11 @@ var Share = (() => {
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
-  return { setup, renderShareImage };
+  function isActive() {
+    return document.querySelector('.share-selected') !== null
+      || (selectionBar && selectionBar.classList.contains('visible'))
+      || document.querySelector('.share-toast.visible') !== null;
+  }
+
+  return { setup, renderShareImage, isActive };
 })();

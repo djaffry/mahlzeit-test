@@ -4,7 +4,6 @@ const DAY_JS_MAP = { 1: 'Montag', 2: 'Dienstag', 3: 'Mittwoch', 4: 'Donnerstag',
 
 const SVG = {
   collapse: '<svg class="restaurant-collapse-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>',
-  reload: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1v5h5"/><path d="M2.5 10A6 6 0 1 0 4 4.5L1 6"/></svg>',
   mapPin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
 };
 
@@ -68,8 +67,12 @@ function getWeekDates(refDate) {
   });
 }
 
+function getLatestFetchTime(fullRestaurants) {
+  return fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop() || null;
+}
+
 function getLatestFetchDate(fullRestaurants) {
-  const latest = fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop();
+  const latest = getLatestFetchTime(fullRestaurants);
   return latest ? new Date(latest) : null;
 }
 
@@ -432,10 +435,14 @@ function moveMapCard() {
   if (_inlineMap) setTimeout(() => _inlineMap.invalidateSize(), 50);
 }
 
-function revealCards() {
+function revealCards(instant = false) {
   const panel = document.querySelector('.day-panel.active');
   if (!panel) return;
   const cards = panel.querySelectorAll('.restaurant-card:not(.visible)');
+  if (instant) {
+    cards.forEach(card => { card.classList.add('visible', 'settled'); });
+    return;
+  }
   const settleTime = cards.length * 25 + 200;
   cards.forEach((card, i) => {
     card.style.transitionDelay = `${i * 25}ms`;
@@ -446,10 +453,10 @@ function revealCards() {
   }, settleTime);
 }
 
-function refreshPanel() {
+function refreshPanel(instant = false) {
   applyFilters();
   moveMapCard();
-  revealCards();
+  revealCards(instant);
 }
 
 async function fetchMenuData() {
@@ -469,6 +476,46 @@ async function fetchMenuData() {
     fullRestaurants: allRestaurants.filter(r => r.type !== 'link'),
     linkRestaurants: allRestaurants.filter(r => r.type === 'link'),
   };
+}
+
+let _lastContentHash = null;
+
+function contentHash(fullRestaurants, linkRestaurants) {
+  const strip = restaurants => restaurants.map(({ fetchedAt, ...rest }) => rest);
+  return JSON.stringify(strip(fullRestaurants).concat(strip(linkRestaurants)));
+}
+
+async function fetchMenuDataQuiet() {
+  try {
+    const bust = `?_=${Date.now()}`;
+    const manifestRes = await fetch(`data/index.json${bust}`);
+    if (!manifestRes.ok) return null;
+    const manifest = await manifestRes.json();
+
+    const results = await Promise.allSettled(
+      manifest.map(async id => {
+        const res = await fetch(`data/${id}.json${bust}`);
+        if (!res.ok) throw new Error(`${id}: HTTP ${res.status}`);
+        return res.json();
+      })
+    );
+
+    let oldAll;
+    const merged = results.map((r, i) => {
+      if (r.status === 'fulfilled') return r.value;
+      oldAll ??= _menuData.fullRestaurants.concat(_menuData.linkRestaurants);
+      return oldAll.find(o => o.id === manifest[i]) || null;
+    }).filter(Boolean);
+
+    if (merged.length === 0) return null;
+
+    return {
+      fullRestaurants: merged.filter(r => r.type !== 'link'),
+      linkRestaurants: merged.filter(r => r.type === 'link'),
+    };
+  } catch {
+    return null;
+  }
 }
 
 function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
@@ -669,21 +716,107 @@ function setupSwipeNavigation(contentEl, tabsEl) {
   }, { passive: true });
 }
 
-function renderFreshness(fullRestaurants, footerEl) {
-  const latest = fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop();
+let _refreshToastTimer = null;
+
+function showRefreshToast() {
+  let toast = document.querySelector('.refresh-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.className = 'refresh-toast';
+    toast.setAttribute('role', 'status');
+    toast.textContent = 'Menüs aktualisiert';
+    document.body.appendChild(toast);
+  }
+  clearTimeout(_refreshToastTimer);
+  toast.classList.remove('visible');
+  void toast.offsetWidth;
+  toast.classList.add('visible');
+  _refreshToastTimer = setTimeout(() => toast.classList.remove('visible'), 3000);
+}
+
+function renderFooter(latest, footerEl) {
   const pageLoadTime = new Date().toLocaleString('de-AT', { dateStyle: 'medium', timeStyle: 'short' });
   const fetchTime = latest ? new Date(latest).toLocaleString('de-AT', { dateStyle: 'medium', timeStyle: 'short' }) : null;
-
   footerEl.innerHTML = fetchTime
     ? `Seite geladen: ${escapeHtml(pageLoadTime)}<br>Daten abgerufen: ${fetchTime}`
     : `Seite geladen: ${escapeHtml(pageLoadTime)}`;
+}
 
-  setTimeout(() => {
-    const badge = document.getElementById('freshness-badge');
-    badge.innerHTML = `<span class="freshness-label">Neu laden</span>${SVG.reload}`;
-    badge.classList.add('page-stale');
-    badge.addEventListener('click', () => window.location.reload());
-  }, 5 * 60 * 1000);
+/* ── Auto-refresh ─────────────────────────────────────── */
+
+let _pendingRefreshData = null;
+
+function applyRefresh(newData) {
+  // 1. Snapshot
+  const activeTab = document.querySelector('.tab.active')?.dataset.day || 'Montag';
+  const scrollY = window.scrollY;
+
+  // 2. Clear transient state
+  document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
+  document.querySelectorAll('.share-selected').forEach(el => el.classList.remove('share-selected'));
+  document.querySelector('.share-bar')?.classList.remove('visible');
+
+  // 3. Update data
+  _menuData = newData;
+  _lastContentHash = contentHash(newData.fullRestaurants, newData.linkRestaurants);
+  const { fullRestaurants, linkRestaurants } = newData;
+
+  // 4. Re-render tabs
+  const tabsEl = document.getElementById('day-tabs');
+  const contentEl = document.getElementById('content');
+  const today = getTodayName();
+  const isWeekend = !today;
+  const dataWeekDates = getDataWeekDates(fullRestaurants);
+  const isCurrentWeek = isDataFromCurrentWeek(fullRestaurants);
+  renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeTab);
+
+  // 5. Re-render panels
+  renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeTab);
+
+  // 6. Rebuild filters (reads active state from localStorage)
+  const allTags = collectTags(fullRestaurants);
+  loadFilters(allTags);
+  buildFilterButtons(allTags);
+
+  // 7. Restore active tab + instant reveal
+  refreshPanel(true);
+
+  // 8. Restore scroll
+  window.scrollTo(0, scrollY);
+
+  // 9. Rebuild map if visible
+  const mapCard = document.getElementById('map-card');
+  if (mapCard && !mapCard.classList.contains('map-collapsed') && _inlineMap) {
+    _inlineMap.remove();
+    _inlineMap = null;
+    _inlineMarkers = {};
+    initInlineMap();
+  }
+
+  // 10. Re-evaluate stale/weekend overlay
+  if (isWeekend) {
+    renderWeekendState(contentEl, tabsEl);
+  } else if (!isCurrentWeek) {
+    renderStaleDataState(contentEl, tabsEl, activeTab);
+  }
+
+  // 11. Notify user
+  showRefreshToast();
+}
+
+async function checkForUpdates() {
+  const newData = await fetchMenuDataQuiet();
+  if (!newData) return;
+
+  const newHash = contentHash(newData.fullRestaurants, newData.linkRestaurants);
+  if (newHash === _lastContentHash) return;
+
+  if (Share.isActive()) {
+    _pendingRefreshData = newData;
+    return;
+  }
+
+  applyRefresh(newData);
 }
 
 function setupPartyMode() {
@@ -965,6 +1098,7 @@ async function init() {
     ]);
 
     _menuData = { fullRestaurants, linkRestaurants };
+    _lastContentHash = contentHash(fullRestaurants, linkRestaurants);
 
     const allTags = collectTags(fullRestaurants);
     loadFilters(allTags);
@@ -993,7 +1127,10 @@ async function init() {
     setupSearchListeners();
     setupMapListeners();
     setupSwipeNavigation(contentEl, tabsEl);
-    renderFreshness(fullRestaurants, footerEl);
+    renderFooter(getLatestFetchTime(fullRestaurants), footerEl);
+
+    // Auto-refresh polling
+    setInterval(checkForUpdates, 10 * 60 * 1000);
   } catch (err) {
     contentEl.innerHTML = `<div class="error-global">Fehler beim Laden: ${escapeHtml(err.message)}</div>`;
   }
@@ -1064,6 +1201,12 @@ Share.setup({
   subtitle: document.querySelector('.toolbar-subtitle')?.textContent?.trim(),
   logo: document.querySelector('.toolbar-logo'),
   getSelectionData: getShareSelectionData,
+  onClear() {
+    if (_pendingRefreshData) {
+      applyRefresh(_pendingRefreshData);
+      _pendingRefreshData = null;
+    }
+  },
 });
 setupThemeToggle();
 
