@@ -6,6 +6,7 @@ const adapter: LinkAdapter = {
   url: 'https://www.pans.at/tagesmenue/',
   type: 'link',
   cuisine: ['Bistro'],
+  outdoor: true,
   coordinates: { lat: 48.2242, lon: 16.3969 },
 };
 

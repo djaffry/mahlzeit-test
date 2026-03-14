@@ -43,7 +43,8 @@ var Share = (() => {
 
   const BADGE_COLORS = {
     Edenred: '#f38ba8',
-    Stempelkarte: '#94e2d5',
+    Stempelkarte: '#f9e2af',
+    Draußen: '#94e2d5',
   };
 
   const TOAST_DURATION_MS = 2500;

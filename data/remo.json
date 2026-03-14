@@ -6,11 +6,12 @@
   "cuisine": [
     "Neapolitanische Pizza"
   ],
+  "outdoor": true,
   "coordinates": {
     "lat": 48.2254,
     "lon": 16.3948
   },
-  "fetchedAt": "2026-03-14T17:34:59.445Z",
+  "fetchedAt": "2026-03-14T18:08:38.924Z",
   "error": null,
   "days": {}
 }

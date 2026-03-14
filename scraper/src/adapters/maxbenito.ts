@@ -8,6 +8,7 @@ const adapter: LinkAdapter = {
   cuisine: ['Burritos'],
   stampCard: true,
   edenred: true,
+  outdoor: true,
   coordinates: { lat: 48.2231, lon: 16.3926 },
 };
 

@@ -6,11 +6,12 @@
   "cuisine": [
     "Bistro"
   ],
+  "outdoor": true,
   "coordinates": {
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-14T17:34:59.444Z",
+  "fetchedAt": "2026-03-14T18:08:38.924Z",
   "error": null,
   "days": {}
 }

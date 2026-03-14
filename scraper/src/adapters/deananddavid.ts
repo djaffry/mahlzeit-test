@@ -7,6 +7,7 @@ const adapter: LinkAdapter = {
   type: 'link',
   cuisine: ['Salate', 'Bowls'],
   edenred: true,
+  outdoor: true,
   coordinates: { lat: 48.2223, lon: 16.3944 },
 };
 

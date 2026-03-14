@@ -251,7 +251,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
         <div class="restaurant-header-actions">
           ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
           ${SVG.collapse}
@@ -277,7 +277,7 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
   return `
     <div class="restaurant-card${!available ? ' link-muted' : ''}${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${schedule}</div>
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${schedule}</div>
         <div class="restaurant-header-actions">
           ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
           ${SVG.collapse}
@@ -1145,6 +1145,7 @@ function extractRestaurantMeta(cardElement) {
   const cuisine = cardElement.querySelector('.cuisine-tag')?.textContent?.trim() || '';
   const badges = [];
   if (cardElement.querySelector('.edenred-badge')) badges.push('Edenred');
+  if (cardElement.querySelector('.outdoor-badge')) badges.push('Draußen');
   if (cardElement.querySelector('.stamp-card-badge')) badges.push('Stempelkarte');
   return { name, cuisine, badges };
 }

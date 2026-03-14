@@ -384,6 +384,7 @@ body {
 .cuisine-tag,
 .stamp-card-badge,
 .edenred-badge,
+.outdoor-badge,
 .reservation-badge,
 .link-schedule {
   font-size: var(--text-caption);
@@ -392,10 +393,11 @@ body {
   border-radius: var(--radius-pill);
   white-space: nowrap;
 }
-.cuisine-tag { background: var(--border-light); color: var(--text-secondary); }
-.stamp-card-badge { background: var(--teal-dim); color: var(--teal); }
+.cuisine-tag { background: var(--lavender-dim); color: var(--lavender); }
+.stamp-card-badge { background: var(--yellow-dim); color: var(--yellow); }
 .edenred-badge { background: var(--red-dim); color: var(--red); }
-.reservation-badge { background: var(--yellow-dim); color: var(--yellow); }
+.outdoor-badge { background: var(--teal-dim); color: var(--teal); }
+.reservation-badge { background: var(--peach-dim); color: var(--peach); }
 .restaurant-collapse-icon {
   width: 14px;
   height: 14px;

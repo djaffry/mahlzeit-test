@@ -8,11 +8,12 @@
     "Bistro"
   ],
   "edenred": true,
+  "outdoor": true,
   "coordinates": {
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-03-14T17:34:59.227Z",
+  "fetchedAt": "2026-03-14T18:08:38.921Z",
   "error": null,
   "days": {
     "Montag": {
