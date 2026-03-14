@@ -571,6 +571,14 @@ function isDataFromCurrentWeek(fullRestaurants) {
   return fetchDate >= monday && fetchDate < nextMonday;
 }
 
+function syncInlineMap() {
+  const card = document.getElementById('map-card');
+  if (card && !card.classList.contains('map-collapsed')) {
+    if (_inlineMap) _inlineMap.invalidateSize();
+    else initInlineMap();
+  }
+}
+
 function showCarouselForDay(day) {
   const carousel = document.getElementById('carousel');
   if (carousel) carousel.style.display = '';
@@ -578,9 +586,7 @@ function showCarouselForDay(day) {
   Carousel.restorePosition(DAYS.indexOf(day));
   moveInlineMap(DAYS[Carousel.getActiveIndex()]);
   refreshPanel();
-  if (!document.getElementById('map-card')?.classList.contains('map-collapsed')) {
-    if (_inlineMap) { _inlineMap.invalidateSize(); } else { initInlineMap(); }
-  }
+  syncInlineMap();
 }
 
 function renderOfflineState(contentEl, { id, emoji, title, text, browseDay }) {
@@ -635,14 +641,17 @@ function setupTabSwitching(tabsEl) {
     document.getElementById('weekend-state')?.remove();
     document.getElementById('stale-state')?.remove();
     const carousel = document.getElementById('carousel');
-    if (carousel?.style.display === 'none') carousel.style.display = '';
+    const wasHidden = carousel?.style.display === 'none';
+    if (wasHidden) carousel.style.display = '';
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
 
     moveInlineMap(day);
     refreshPanel();
+    if (wasHidden) Carousel.refreshIndicator();
     Carousel.goTo(idx);
+    syncInlineMap();
   });
 }
 

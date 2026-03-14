@@ -144,9 +144,7 @@ var Carousel = (() => {
           if (!_el) return;
           cancelSnap();
           _el.scrollLeft = _lastActiveIdx * _el.offsetWidth;
-          cacheTabRects();
-          _lastIndicatorScroll = -1;
-          updateTabIndicator();
+          refreshIndicator();
           syncHeight();
         }, 100);
       });
@@ -328,9 +326,19 @@ var Carousel = (() => {
 
     _indicator.style.transform = `translateX(${left}px)`;
     _indicator.style.width = `${width}px`;
+
+    // Update tab text color to match indicator position during drag
+    const visualIdx = progress > 0.5 ? Math.min(idx + 1, _days.length - 1) : idx;
+    setActiveTab(_days[visualIdx]);
   }
 
   /* ── Expose ───────────────────────────────────────────── */
+
+  function refreshIndicator() {
+    cacheTabRects();
+    _lastIndicatorScroll = -1;
+    updateTabIndicator();
+  }
 
   return {
     setup,
@@ -340,6 +348,7 @@ var Carousel = (() => {
     cancel,
     syncHeight,
     switchTo,
+    refreshIndicator,
     getActiveIndex: () => _lastActiveIdx,
     getActivePanel,
     isAnimating: () => _isSnapping || _isDragging,
