@@ -60,7 +60,7 @@ function extractCardData(cardElement, selectedItemElements) {
 }
 
 function getSelectionData(doc) {
-  const activePanel = doc.querySelector('.day-panel.active');
+  const activePanel = doc.querySelector('.day-panel');
   if (!activePanel) return null;
 
   const restaurants = [];
@@ -89,11 +89,16 @@ function getSelectionData(doc) {
 function initShare(panelHTML = '') {
   const dom = new JSDOM(`<!DOCTYPE html><html><body>
     <div class="content" id="content">
-      <div class="day-panel active" data-panel="Montag">${panelHTML}</div>
+      <div class="day-panel" data-panel="Montag">${panelHTML}</div>
     </div>
   </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
 
   const { window: win } = dom;
+  win.Carousel = {
+    getActivePanel: () => win.document.querySelector('.day-panel'),
+  };
+  win.DAYS = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
+  win.getMondayOfWeek = (d) => { const m = new Date(d); m.setDate(d.getDate() - ((d.getDay() + 6) % 7)); m.setHours(0,0,0,0); return m; };
   shareScript.runInContext(dom.getInternalVMContext());
   win.Share.setup({
     getSelectionData: () => getSelectionData(win.document),
@@ -458,11 +463,14 @@ describe('onClear callback', () => {
   it('calls onClear when selection is cleared via clear button', () => {
     const dom = new JSDOM(`<!DOCTYPE html><html><body>
       <div class="content" id="content">
-        <div class="day-panel active" data-panel="Montag">${CARD_WITH_MENU}</div>
+        <div class="day-panel" data-panel="Montag">${CARD_WITH_MENU}</div>
       </div>
     </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
 
     const { window: win } = dom;
+    win.Carousel = { getActivePanel: () => win.document.querySelector('.day-panel') };
+    win.DAYS = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
+    win.getMondayOfWeek = (d) => { const m = new Date(d); m.setDate(d.getDate() - ((d.getDay() + 6) % 7)); m.setHours(0,0,0,0); return m; };
     shareScript.runInContext(dom.getInternalVMContext());
 
     let cleared = false;

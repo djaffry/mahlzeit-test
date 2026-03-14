@@ -1,0 +1,50 @@
+/* Carousel — horizontal day-panel scroll container */
+
+.carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  cursor: grab;
+  overscroll-behavior-x: contain;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+}
+.carousel::-webkit-scrollbar { display: none; }
+.carousel-track {
+  display: flex;
+  align-items: flex-start;
+}
+.day-panel {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 0 var(--spacing-lg);
+  box-sizing: border-box;
+}
+
+/* Tab indicator — tracks active day during scroll */
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: var(--accent);
+  border-radius: var(--radius-pill);
+  transition: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .day-panel { padding: 0 var(--spacing-sm); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tab-indicator { transition: none !important; }
+  .carousel { scroll-behavior: auto; }
+}

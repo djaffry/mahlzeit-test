@@ -49,7 +49,6 @@ var Share = (() => {
 
   const TOAST_DURATION_MS = 2500;
   const VIBRATE_MS = 8;
-  const WEEKDAYS = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
   let selectionBar = null;
   let logoImage = null;
@@ -222,8 +221,9 @@ var Share = (() => {
 
   function updateSelectionBar() {
     if (!selectionBar) return;
-    const selectedItems = document.querySelectorAll('.day-panel.active .menu-item.share-selected:not(.hidden)').length;
-    const selectedCards = document.querySelectorAll('.day-panel.active .restaurant-card.share-selected').length;
+    const panel = Carousel.getActivePanel();
+    const selectedItems = panel ? panel.querySelectorAll('.menu-item.share-selected:not(.hidden)').length : 0;
+    const selectedCards = panel ? panel.querySelectorAll('.restaurant-card.share-selected').length : 0;
     const totalSelected = selectedItems + selectedCards;
     const countLabel = selectionBar.querySelector('.share-bar-count');
     countLabel.textContent = totalSelected === 1 ? '1 ausgewählt' : totalSelected + ' ausgewählt';
@@ -576,7 +576,7 @@ var Share = (() => {
     return lines;
   }
 
-  function fillRoundRect(ctx, x, y, width, height, radius, fill) {
+  function roundRectPath(ctx, x, y, width, height, radius) {
     ctx.beginPath();
     if (ctx.roundRect) {
       ctx.roundRect(x, y, width, height, radius);
@@ -592,38 +592,28 @@ var Share = (() => {
       ctx.quadraticCurveTo(x, y, x + radius, y);
       ctx.closePath();
     }
+  }
+
+  function fillRoundRect(ctx, x, y, width, height, radius, fill) {
+    roundRectPath(ctx, x, y, width, height, radius);
     ctx.fillStyle = fill;
     ctx.fill();
   }
 
   function strokeRoundRect(ctx, x, y, width, height, radius, stroke) {
-    ctx.beginPath();
-    if (ctx.roundRect) {
-      ctx.roundRect(x, y, width, height, radius);
-    } else {
-      ctx.moveTo(x + radius, y);
-      ctx.lineTo(x + width - radius, y);
-      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-      ctx.lineTo(x + width, y + height - radius);
-      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-      ctx.lineTo(x + radius, y + height);
-      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-      ctx.lineTo(x, y + radius);
-      ctx.quadraticCurveTo(x, y, x + radius, y);
-      ctx.closePath();
-    }
+    roundRectPath(ctx, x, y, width, height, radius);
     ctx.strokeStyle = stroke;
     ctx.lineWidth = 1;
     ctx.stroke();
   }
 
   function formatDayLabel(day) {
-    const dayIndex = WEEKDAYS.indexOf(day);
+    const dayIndex = DAYS.indexOf(day);
     if (dayIndex === -1) return day;
 
-    const now = new Date();
-    const target = new Date(now);
-    target.setDate(now.getDate() - ((now.getDay() + 6) % 7) + dayIndex);
+    const monday = getMondayOfWeek(new Date());
+    const target = new Date(monday);
+    target.setDate(monday.getDate() + dayIndex);
 
     return target.toLocaleDateString('de-AT', {
       weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
@@ -651,5 +641,5 @@ var Share = (() => {
       || document.querySelector('.share-toast.visible') !== null;
   }
 
-  return { setup, renderShareImage, isActive };
+  return { setup, renderShareImage, isActive, clearSelection };
 })();

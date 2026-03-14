@@ -37,6 +37,10 @@ function isAvailableOnDay(restaurant, day) {
 let activeFilters = new Set();
 let _menuData = null;
 
+function getAllRestaurants() {
+  return [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+}
+
 function getTagColor(tag) {
   if (TAG_COLORS[tag]) return TAG_COLORS[tag];
   if (_tagColorCache[tag]) return _tagColorCache[tag];
@@ -89,16 +93,15 @@ function getTodayName() {
   return DAY_JS_MAP[new Date().getDay()] || null;
 }
 
+const _escapeEl = document.createElement('span');
 function escapeHtml(str) {
-  const el = document.createElement('span');
-  el.textContent = str;
-  return el.innerHTML;
+  _escapeEl.textContent = str;
+  return _escapeEl.innerHTML;
 }
 
+const _toolbarOffset = (document.querySelector('.toolbar')?.offsetHeight ?? 0) + 12;
 function smoothScrollTo(el) {
-  const toolbar = document.querySelector('.toolbar');
-  const offset = toolbar ? toolbar.offsetHeight + 12 : 0;
-  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  const top = el.getBoundingClientRect().top + window.scrollY - _toolbarOffset;
   window.scrollTo({ top, behavior: 'smooth' });
 }
 
@@ -141,7 +144,7 @@ function loadCollapsed() {
 }
 
 function saveCollapsed() {
-  const panel = document.querySelector('.day-panel') ?? document;
+  const panel = Carousel.getActivePanel() ?? document.querySelector('.day-panel') ?? document;
   const ids = [...panel.querySelectorAll('.restaurant-card.collapsed')].map(el => el.dataset.restaurant);
   localStorage.setItem('collapsed-restaurants', JSON.stringify(ids));
 }
@@ -184,9 +187,12 @@ function updateFiltersLabel() {
     : 'Filter <span class="filters-clear">\u25cb</span>';
 }
 
+let _filterCount = 0;
+
 function buildFilterButtons(allTags) {
   const filtersEl = document.getElementById('filters');
   filtersEl.innerHTML = '<span class="filters-label">Filter</span>';
+  _filterCount = allTags.length;
 
   for (const tag of allTags) {
     const color = getTagColor(tag);
@@ -229,6 +235,24 @@ function renderCategories(categories) {
   `).join('');
 }
 
+function renderRestaurantHeader(restaurant, suffix = '') {
+  return `
+      <div class="restaurant-header">
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${suffix}</div>
+        <div class="restaurant-header-actions">
+          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
+          ${SVG.collapse}
+        </div>
+      </div>`;
+}
+
+function renderRestaurantLinks(restaurant) {
+  const reservationLink = restaurant.reservationUrl
+    ? `<div class="link-body"><a class="link-cta" href="${escapeHtml(restaurant.reservationUrl)}" target="_blank" rel="noopener">Online reservieren &rarr;</a></div>`
+    : '';
+  return reservationLink;
+}
+
 function renderRestaurant(restaurant, day, collapsedSet) {
   const dayData = restaurant.days[day];
   const hasError = !!restaurant.error;
@@ -250,17 +274,11 @@ function renderRestaurant(restaurant, day, collapsedSet) {
 
   return `
     <div class="restaurant-card${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
-      <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}</div>
-        <div class="restaurant-header-actions">
-          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
-          ${SVG.collapse}
-        </div>
-      </div>
+      ${renderRestaurantHeader(restaurant)}
       <div class="restaurant-content"><div class="restaurant-content-inner">
         ${body}
         <div class="link-body">${websiteLink}</div>
-        ${restaurant.reservationUrl ? `<div class="link-body"><a class="link-cta" href="${escapeHtml(restaurant.reservationUrl)}" target="_blank" rel="noopener">Online reservieren &rarr;</a></div>` : ''}
+        ${renderRestaurantLinks(restaurant)}
       </div></div>
     </div>`;
 }
@@ -276,16 +294,28 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
 
   return `
     <div class="restaurant-card${!available ? ' link-muted' : ''}${collapsedSet.has(restaurant.id) ? ' collapsed' : ''}" data-restaurant="${escapeHtml(restaurant.id)}">
+      ${renderRestaurantHeader(restaurant, schedule)}
+      <div class="restaurant-content"><div class="restaurant-content-inner">
+        <div class="link-body">${websiteLink}</div>
+        ${renderRestaurantLinks(restaurant)}
+      </div></div>
+    </div>`;
+}
+
+function renderMapCardInGrid() {
+  const pref = localStorage.getItem('map-collapsed');
+  const collapsed = pref !== null ? pref === 'true' : window.innerWidth <= 768;
+  return `
+    <div class="restaurant-card map-card visible settled${collapsed ? ' map-collapsed' : ''}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(' · ')}</span>` : ''}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ''}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ''}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ''}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ''}${schedule}</div>
+        <div class="restaurant-name">Karte</div>
         <div class="restaurant-header-actions">
-          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ''}
-          ${SVG.collapse}
+          <button class="map-card-btn map-fullscreen-btn" aria-label="Vollbild"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
+          <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
         </div>
       </div>
       <div class="restaurant-content"><div class="restaurant-content-inner">
-        <div class="link-body">${websiteLink}</div>
-        ${restaurant.reservationUrl ? `<div class="link-body"><a class="link-cta" href="${escapeHtml(restaurant.reservationUrl)}" target="_blank" rel="noopener">Online reservieren &rarr;</a></div>` : ''}
+        <div class="map-slot"></div>
       </div></div>
     </div>`;
 }
@@ -293,7 +323,7 @@ function renderLinkRestaurant(restaurant, day, collapsedSet) {
 function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {
   const cards = fullRestaurants.map(r => renderRestaurant(r, day, collapsedSet)).join('')
     + linkRestaurants.map(r => renderLinkRestaurant(r, day, collapsedSet)).join('');
-  return `<div class="restaurant-grid">${cards}</div>`;
+  return `<div class="restaurant-grid">${renderMapCardInGrid()}${cards}</div>`;
 }
 
 function openSearch() {
@@ -310,7 +340,7 @@ function closeSearch() {
 }
 
 function isFilterShowAll() {
-  return activeFilters.size === document.querySelectorAll('.filter-btn').length;
+  return activeFilters.size === _filterCount;
 }
 
 function itemMatchesFilters(item) {
@@ -327,8 +357,7 @@ function performSearch(query) {
   if (!query.trim()) { resultsEl.innerHTML = ''; return; }
 
   const q = query.toLowerCase().trim();
-  const activeTab = document.querySelector('.tab.active');
-  const day = activeTab ? activeTab.dataset.day : 'Montag';
+  const day = DAYS[Carousel.getActiveIndex()] ?? 'Montag';
   const restaurants = _menuData?.fullRestaurants ?? [];
   const showAll = isFilterShowAll();
   const passes = item => showAll || itemMatchesFilters(item);
@@ -391,8 +420,7 @@ function refreshSearchResults() {
 }
 
 function applyFilters() {
-  const contentEl = document.getElementById('content');
-  const activePanel = contentEl.querySelector('.day-panel.active');
+  const activePanel = Carousel.getActivePanel();
   if (!activePanel) return;
 
   const showAll = isFilterShowAll();
@@ -424,21 +452,12 @@ function applyFilters() {
   refreshSearchResults();
 }
 
-function moveMapCard() {
-  const mapCard = document.getElementById('map-card');
-  if (!mapCard) return;
-  const activeGrid = document.querySelector('.day-panel.active .restaurant-grid');
-  if (!activeGrid) return;
-  if (mapCard.parentElement !== activeGrid) {
-    activeGrid.insertBefore(mapCard, activeGrid.firstChild);
-  }
-  if (_inlineMap) setTimeout(() => _inlineMap.invalidateSize(), 50);
-}
 
 function revealCards(instant = false) {
-  const panel = document.querySelector('.day-panel.active');
+  const panel = Carousel.getActivePanel();
   if (!panel) return;
   const cards = panel.querySelectorAll('.restaurant-card:not(.visible)');
+  if (cards.length === 0) return;
   if (instant) {
     cards.forEach(card => { card.classList.add('visible', 'settled'); });
     return;
@@ -455,8 +474,8 @@ function revealCards(instant = false) {
 
 function refreshPanel(instant = false) {
   applyFilters();
-  moveMapCard();
   revealCards(instant);
+  Carousel.syncHeight();
 }
 
 async function fetchMenuData() {
@@ -525,14 +544,22 @@ function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
     if (!isWeekend && d === activeDay) cls.push('active');
     const date = formatShortDate(weekDates[i]);
     return `<button class="${cls.join(' ')}" data-day="${d}"><span class="tab-full">${d} <span class="tab-date">${date}</span></span><span class="tab-short">${DAY_SHORT[d]} <span class="tab-date">${date}</span></span></button>`;
-  }).join('');
+  }).join('') + '<div class="tab-indicator" aria-hidden="true"></div>';
 }
 
 function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay) {
   const collapsedSet = loadCollapsed();
-  contentEl.innerHTML = renderMapCard() + DAYS.map(d =>
-    `<div class="day-panel${d === activeDay ? ' active' : ''}" data-panel="${d}">${renderDay(fullRestaurants, linkRestaurants, d, collapsedSet)}</div>`
-  ).join('');
+  contentEl.innerHTML =
+    '<div class="carousel" id="carousel"><div class="carousel-track">' +
+    DAYS.map(d =>
+      `<div class="day-panel" data-panel="${d}">${renderDay(fullRestaurants, linkRestaurants, d, collapsedSet)}</div>`
+    ).join('') +
+    '</div></div>' +
+    '<span class="sr-only" id="day-announcer" aria-live="polite"></span>';
+
+  // Make non-active panels' cards instantly visible (they're seen during swipe)
+  contentEl.querySelectorAll(`.day-panel:not([data-panel="${activeDay}"]) .restaurant-card`)
+    .forEach(c => c.classList.add('visible', 'settled'));
 }
 
 function isDataFromCurrentWeek(fullRestaurants) {
@@ -544,78 +571,78 @@ function isDataFromCurrentWeek(fullRestaurants) {
   return fetchDate >= monday && fetchDate < nextMonday;
 }
 
-function renderStaleDataState(contentEl, tabsEl, activeDay) {
-  contentEl.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+function showCarouselForDay(day) {
+  const carousel = document.getElementById('carousel');
+  if (carousel) carousel.style.display = '';
+  Carousel.switchTo(day);
+  Carousel.restorePosition(DAYS.indexOf(day));
+  moveInlineMap(DAYS[Carousel.getActiveIndex()]);
+  refreshPanel();
+  if (!document.getElementById('map-card')?.classList.contains('map-collapsed')) {
+    if (_inlineMap) { _inlineMap.invalidateSize(); } else { initInlineMap(); }
+  }
+}
+
+function renderOfflineState(contentEl, { id, emoji, title, text, browseDay }) {
+  const carousel = document.getElementById('carousel');
+  if (carousel) carousel.style.display = 'none';
+  const btnId = `${id}-browse`;
   contentEl.insertAdjacentHTML('afterbegin', `
-    <div class="weekend-state" id="stale-state">
-      <div class="weekend-emoji">\u{1F504}</div>
-      <div class="weekend-title">Neue Men\u00fcs noch nicht verf\u00fcgbar</div>
-      <div class="weekend-text">Die Men\u00fcs f\u00fcr diese Woche wurden noch nicht ver\u00f6ffentlicht.<br>Schau sp\u00e4ter nochmal vorbei!</div>
-      <button class="weekend-browse-btn" id="stale-browse">Men\u00fcs der letzten Woche ansehen</button>
+    <div class="weekend-state" id="${id}">
+      <div class="weekend-emoji">${emoji}</div>
+      <div class="weekend-title">${title}</div>
+      <div class="weekend-text">${text}</div>
+      <button class="weekend-browse-btn" id="${btnId}">Men\u00fcs der letzten Woche ansehen</button>
     </div>`);
-  document.getElementById('stale-browse').addEventListener('click', function() {
+  document.getElementById(btnId).addEventListener('click', function() {
     this.closest('.weekend-state').remove();
-    const panel = contentEl.querySelector(`.day-panel[data-panel="${activeDay}"]`);
-    if (panel) panel.classList.add('active');
-    tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.day === activeDay));
-    refreshPanel();
+    showCarouselForDay(browseDay);
   });
 }
 
-function renderWeekendState(contentEl, tabsEl) {
-  contentEl.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
-  contentEl.insertAdjacentHTML('afterbegin', `
-    <div class="weekend-state" id="weekend-state">
-      <div class="weekend-emoji">\u{1F373}\u{1F372}\u{1F957}</div>
-      <div class="weekend-title">Guten Appetit... am Montag!</div>
-      <div class="weekend-text">Am Wochenende haben die Kantinen Pause.<br>Die Men\u00fcs f\u00fcr n\u00e4chste Woche werden am Montag fr\u00fch aktualisiert.</div>
-      <button class="weekend-browse-btn" id="weekend-browse">Men\u00fcs der letzten Woche ansehen</button>
-    </div>`);
-  document.getElementById('weekend-browse').addEventListener('click', function() {
-    this.closest('.weekend-state').remove();
-    const fridayPanel = contentEl.querySelector('.day-panel[data-panel="Freitag"]');
-    if (fridayPanel) fridayPanel.classList.add('active');
-    tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.day === 'Freitag'));
-    refreshPanel();
+function renderStaleDataState(contentEl, activeDay) {
+  renderOfflineState(contentEl, {
+    id: 'stale-state',
+    emoji: '\u{1F504}',
+    title: 'Neue Men\u00fcs noch nicht verf\u00fcgbar',
+    text: 'Die Men\u00fcs f\u00fcr diese Woche wurden noch nicht ver\u00f6ffentlicht.<br>Schau sp\u00e4ter nochmal vorbei!',
+    browseDay: activeDay,
   });
 }
 
-function setupTabSwitching(tabsEl, contentEl) {
+function renderWeekendState(contentEl) {
+  renderOfflineState(contentEl, {
+    id: 'weekend-state',
+    emoji: '\u{1F373}\u{1F372}\u{1F957}',
+    title: 'Guten Appetit... am Montag!',
+    text: 'Am Wochenende haben die Kantinen Pause.<br>Die Men\u00fcs f\u00fcr n\u00e4chste Woche werden am Montag fr\u00fch aktualisiert.',
+    browseDay: DAYS.at(-1),
+  });
+}
+
+function setupTabSwitching(tabsEl) {
   tabsEl.addEventListener('click', e => {
     const btn = e.target.closest('.tab');
     if (!btn) return;
     haptic();
     const day = btn.dataset.day;
-    const currentPanel = contentEl.querySelector('.day-panel.active');
-    const nextPanel = contentEl.querySelector(`.day-panel[data-panel="${day}"]`);
-    if (currentPanel === nextPanel) return;
+    const idx = DAYS.indexOf(day);
+    if (idx === -1) return;
 
-    tabsEl.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.day === day));
+    Carousel.cancel();
+    Carousel.switchTo(day);
+    Share.clearSelection();
     document.getElementById('weekend-state')?.remove();
+    document.getElementById('stale-state')?.remove();
+    const carousel = document.getElementById('carousel');
+    if (carousel?.style.display === 'none') carousel.style.display = '';
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.querySelectorAll('.dice-pick').forEach(el => el.classList.remove('dice-pick'));
 
-    if (currentPanel) {
-      currentPanel.style.opacity = '0';
-      currentPanel.style.transform = 'translateY(4px)';
-      setTimeout(() => {
-        currentPanel.classList.remove('active');
-        currentPanel.style.opacity = '';
-        currentPanel.style.transform = '';
-        currentPanel.querySelectorAll('.restaurant-card.visible').forEach(c => {
-          c.classList.remove('visible', 'settled');
-          c.style.transitionDelay = '';
-        });
-        nextPanel.classList.add('active', 'fade-enter');
-        nextPanel.offsetHeight; // force reflow
-        nextPanel.classList.remove('fade-enter');
-        refreshPanel();
-      }, 150);
-    } else {
-      nextPanel.classList.add('active');
-      refreshPanel();
-    }
+    moveInlineMap(day);
+    refreshPanel();
+    Carousel.goTo(idx);
   });
 }
 
@@ -664,6 +691,7 @@ function setupCollapseExpand(contentEl) {
       c.classList.toggle('collapsed', shouldCollapse)
     );
     saveCollapsed();
+    Carousel.syncHeight();
   });
 
   contentEl.addEventListener('click', e => {
@@ -695,26 +723,6 @@ function setupSearchListeners() {
   });
 }
 
-function setupSwipeNavigation(contentEl, tabsEl) {
-  let touchStartX = 0, touchStartY = 0, touchIgnored = false;
-  contentEl.addEventListener('touchstart', e => {
-    touchIgnored = e.touches.length > 1 || !!e.target.closest('.map-card, .map-overlay');
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-  contentEl.addEventListener('touchend', e => {
-    if (touchIgnored) return;
-    const dx = e.changedTouches[0].clientX - touchStartX;
-    const dy = e.changedTouches[0].clientY - touchStartY;
-    if (Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx)) return;
-    const currentTab = tabsEl.querySelector('.tab.active');
-    if (!currentTab) return;
-    const idx = DAYS.indexOf(currentTab.dataset.day);
-    const nextIdx = dx > 0 ? idx - 1 : idx + 1;
-    if (nextIdx < 0 || nextIdx >= DAYS.length) return;
-    tabsEl.querySelector(`.tab[data-day="${DAYS[nextIdx]}"]`)?.click();
-  }, { passive: true });
-}
 
 let _refreshToastTimer = null;
 
@@ -752,7 +760,17 @@ function renderFooter(latest, footerEl) {
 
 let _pendingRefreshData = null;
 
+function flushPendingRefresh() {
+  if (_pendingRefreshData) {
+    applyRefresh(_pendingRefreshData);
+    _pendingRefreshData = null;
+  }
+}
+
 function applyRefresh(newData) {
+  // 0. Cancel any in-progress snap animation (old carousel DOM is about to be removed)
+  Carousel.cancel();
+
   // 1. Snapshot
   const activeTab = document.querySelector('.tab.active')?.dataset.day || 'Montag';
   const scrollY = window.scrollY;
@@ -779,6 +797,10 @@ function applyRefresh(newData) {
   // 5. Re-render panels
   renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeTab);
 
+  // Restore carousel scroll position (DOM was rebuilt)
+  Carousel.restorePosition(DAYS.indexOf(activeTab));
+  moveInlineMap(DAYS[Carousel.getActiveIndex()]);
+
   // 6. Rebuild filters (reads active state from localStorage)
   const allTags = collectTags(fullRestaurants);
   loadFilters(allTags);
@@ -786,6 +808,9 @@ function applyRefresh(newData) {
 
   // 7. Restore active tab + instant reveal
   refreshPanel(true);
+
+  // Re-attach carousel listeners (DOM was rebuilt)
+  Carousel.attach();
 
   // 8. Restore scroll
   window.scrollTo(0, scrollY);
@@ -801,9 +826,9 @@ function applyRefresh(newData) {
 
   // 10. Re-evaluate stale/weekend overlay
   if (isWeekend) {
-    renderWeekendState(contentEl, tabsEl);
+    renderWeekendState(contentEl);
   } else if (!isCurrentWeek) {
-    renderStaleDataState(contentEl, tabsEl, activeTab);
+    renderStaleDataState(contentEl, activeTab);
   }
 
   // 11. Notify user
@@ -817,7 +842,7 @@ async function checkForUpdates() {
   const newHash = contentHash(newData.fullRestaurants, newData.linkRestaurants);
   if (newHash === _lastContentHash) return;
 
-  if (Share.isActive()) {
+  if (Share.isActive() || Carousel.isAnimating()) {
     _pendingRefreshData = newData;
     return;
   }
@@ -875,23 +900,31 @@ let _leafletMap = null;
 let _inlineMap = null;
 let _inlineMarkers = {};
 
-function renderMapCard() {
-  const pref = localStorage.getItem('map-collapsed');
-  const collapsed = pref !== null ? pref === 'true' : window.innerWidth <= 768;
-  return `
-    <div class="restaurant-card map-card${collapsed ? ' map-collapsed' : ''}" id="map-card">
-      <div class="restaurant-header">
-        <div class="restaurant-name">Karte</div>
-        <div class="restaurant-header-actions">
-          <button class="map-card-btn" id="map-fullscreen" aria-label="Vollbild"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
-          <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
-        </div>
-      </div>
-      <div class="restaurant-content"><div class="restaurant-content-inner">
-        <div id="inline-map"></div>
-      </div></div>
-    </div>`;
+function moveInlineMap(targetDay) {
+  const panel = targetDay
+    ? document.querySelector(`.day-panel[data-panel="${targetDay}"]`)
+    : Carousel.getActivePanel();
+  if (!panel) return;
+  const newMapCard = panel.querySelector('.map-card');
+  if (!newMapCard) return;
+  const oldMapCard = document.getElementById('map-card');
+  if (oldMapCard) oldMapCard.removeAttribute('id');
+  newMapCard.id = 'map-card';
+  const newSlot = newMapCard.querySelector('.map-slot');
+  if (!newSlot) return;
+  let mapDiv = document.getElementById('inline-map');
+  if (mapDiv) {
+    if (mapDiv.parentElement !== newSlot) {
+      newSlot.appendChild(mapDiv);
+      if (_inlineMap) setTimeout(() => _inlineMap.invalidateSize(), 50);
+    }
+  } else {
+    mapDiv = document.createElement('div');
+    mapDiv.id = 'inline-map';
+    newSlot.appendChild(mapDiv);
+  }
 }
+
 
 function buildMapPopup(r) {
   let html = `<strong>${escapeHtml(r.title)}</strong>`;
@@ -910,15 +943,8 @@ function buildMapPopup(r) {
   return html;
 }
 
-function initInlineMap() {
-  if (_inlineMap) { _inlineMap.invalidateSize(); return; }
-  const container = document.getElementById('inline-map');
-  if (!container) return;
-
-  _inlineMap = L.map('inline-map', { zoomControl: false, attributionControl: false }).setView([48.2225, 16.3945], 15);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(_inlineMap);
-
-  const allRestaurants = [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+function addMapMarkers(map, { onClick, store } = {}) {
+  const allRestaurants = getAllRestaurants();
   for (const r of allRestaurants) {
     if (!r.coordinates) continue;
     const emoji = r.title.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u)?.[0] ?? '\u{1F4CD}';
@@ -929,17 +955,27 @@ function initInlineMap() {
       iconAnchor: [18, 18],
       popupAnchor: [0, -20],
     });
-    const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_inlineMap);
+    const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(map);
     marker.bindPopup(buildMapPopup(r), { closeButton: false, className: 'map-popup' });
-    marker.on('click', () => scrollToRestaurant(r.id));
+    if (onClick) marker.on('click', () => onClick(r.id));
     marker.on('mouseover', function () { this.openPopup(); });
     marker.on('mouseout', function () { this.closePopup(); });
-    _inlineMarkers[r.id] = marker;
+    if (store) store[r.id] = marker;
   }
 }
 
+function initInlineMap() {
+  if (_inlineMap) { _inlineMap.invalidateSize(); return; }
+  const container = document.getElementById('inline-map');
+  if (!container) return;
+
+  _inlineMap = L.map('inline-map', { zoomControl: false, attributionControl: false }).setView([48.2225, 16.3945], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(_inlineMap);
+  addMapMarkers(_inlineMap, { onClick: scrollToRestaurant, store: _inlineMarkers });
+}
+
 function scrollToRestaurant(id) {
-  const activePanel = document.querySelector('.day-panel.active');
+  const activePanel = Carousel.getActivePanel();
   if (!activePanel) return;
   const card = activePanel.querySelector(`.restaurant-card[data-restaurant="${id}"]`);
   if (!card) return;
@@ -955,7 +991,7 @@ function scrollToRestaurant(id) {
 }
 
 function focusOnMap(id) {
-  const allRestaurants = [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+  const allRestaurants = getAllRestaurants();
   const r = allRestaurants.find(r => r.id === id);
   if (!r?.coordinates) return false;
 
@@ -981,10 +1017,14 @@ function focusOnMap(id) {
 }
 
 function toggleMapCard() {
-  const card = document.getElementById('map-card');
-  if (!card) return;
-  const isCollapsed = card.classList.toggle('map-collapsed');
+  const primary = document.getElementById('map-card');
+  if (!primary) return;
+  const isCollapsed = primary.classList.toggle('map-collapsed');
   localStorage.setItem('map-collapsed', isCollapsed);
+  // Sync all map cards across panels
+  document.querySelectorAll('.map-card').forEach(c => {
+    if (c !== primary) c.classList.toggle('map-collapsed', isCollapsed);
+  });
   if (!isCollapsed) {
     if (!_inlineMap) {
       setTimeout(() => initInlineMap(), 50);
@@ -992,6 +1032,7 @@ function toggleMapCard() {
       setTimeout(() => _inlineMap.invalidateSize(), 300);
     }
   }
+  Carousel.syncHeight();
 }
 
 function openMap() {
@@ -1013,29 +1054,7 @@ function openMap() {
       maxZoom: 19,
     }).addTo(_leafletMap);
 
-    const allRestaurants = [
-      ...(_menuData?.fullRestaurants ?? []),
-      ...(_menuData?.linkRestaurants ?? []),
-    ];
-
-    for (const r of allRestaurants) {
-      if (!r.coordinates) continue;
-      const emoji = r.title.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u)?.[0] ?? '📍';
-      const icon = L.divIcon({
-        className: 'map-marker',
-        html: `<span class="map-marker-emoji">${emoji}</span>`,
-        iconSize: [36, 36],
-        iconAnchor: [18, 18],
-        popupAnchor: [0, -20],
-      });
-      const marker = L.marker([r.coordinates.lat, r.coordinates.lon], { icon }).addTo(_leafletMap);
-      marker.bindPopup(buildMapPopup(r), {
-        closeButton: false,
-        className: 'map-popup',
-      });
-      marker.on('mouseover', function () { this.openPopup(); });
-      marker.on('mouseout', function () { this.closePopup(); });
-    }
+    addMapMarkers(_leafletMap);
   }
 
   setTimeout(() => {
@@ -1051,15 +1070,18 @@ function closeMap() {
 }
 
 function setupMapListeners() {
-  // Inline map card header toggles collapse (except fullscreen button)
-  const mapCard = document.getElementById('map-card');
-  if (mapCard) {
-    mapCard.querySelector('.restaurant-header').addEventListener('click', e => {
-      if (e.target.closest('#map-fullscreen')) return;
+  // Delegate map card clicks (works across day switches)
+  document.getElementById('content').addEventListener('click', e => {
+    const mapCard = e.target.closest('.map-card');
+    if (!mapCard) return;
+    if (e.target.closest('.map-fullscreen-btn')) {
+      openMap();
+      return;
+    }
+    if (e.target.closest('.restaurant-header')) {
       toggleMapCard();
-    });
-    document.getElementById('map-fullscreen').addEventListener('click', openMap);
-  }
+    }
+  });
 
   // Fullscreen overlay close
   document.getElementById('map-close').addEventListener('click', closeMap);
@@ -1093,8 +1115,8 @@ async function init() {
       return `<div class="skeleton-line" style="width:${w}%"></div>`;
     }).join('');
   };
-  contentEl.innerHTML = '<div class="restaurant-grid">' +
-    [1,2,3].map(() => `<div class="skeleton-card">${randLines()}</div>`).join('') + '</div>';
+  contentEl.innerHTML = '<div class="carousel"><div class="carousel-track"><div class="day-panel"><div class="restaurant-grid">' +
+    [1,2,3].map(() => `<div class="skeleton-card">${randLines()}</div>`).join('') + '</div></div></div></div>';
 
   try {
     const loadStart = Date.now();
@@ -1118,21 +1140,29 @@ async function init() {
     renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeDay);
 
     renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay);
+    Carousel.switchTo(activeDay);
+    const activeIdx = Carousel.getActiveIndex();
+    if (activeIdx > 0) {
+      const carousel = document.getElementById('carousel');
+      if (carousel) carousel.scrollLeft = activeIdx * carousel.offsetWidth;
+    }
+    moveInlineMap(DAYS[Carousel.getActiveIndex()]);
     refreshPanel();
 
-    if (isWeekend) renderWeekendState(contentEl, tabsEl);
-    else if (!isCurrentWeek) renderStaleDataState(contentEl, tabsEl, activeDay);
+    const carouselHidden = isWeekend || !isCurrentWeek;
+    if (isWeekend) renderWeekendState(contentEl);
+    else if (!isCurrentWeek) renderStaleDataState(contentEl, activeDay);
 
-    if (!document.getElementById('map-card')?.classList.contains('map-collapsed')) {
+    if (!carouselHidden && !document.getElementById('map-card')?.classList.contains('map-collapsed')) {
       initInlineMap();
     }
 
-    setupTabSwitching(tabsEl, contentEl);
+    setupTabSwitching(tabsEl);
     setupFilterListeners(filtersEl);
     setupCollapseExpand(contentEl);
     setupSearchListeners();
     setupMapListeners();
-    setupSwipeNavigation(contentEl, tabsEl);
+    Carousel.attach();
     renderFooter(getLatestFetchTime(fullRestaurants), footerEl);
 
     // Auto-refresh polling
@@ -1178,7 +1208,7 @@ function groupItemsByCategory(itemElements) {
 }
 
 function getShareSelectionData() {
-  const activePanel = document.querySelector('.day-panel.active');
+  const activePanel = Carousel.getActivePanel();
   if (!activePanel) return null;
 
   const restaurants = [];
@@ -1203,18 +1233,22 @@ function getShareSelectionData() {
 }
 
 setupPartyMode();
+Carousel.setup({
+  days: DAYS,
+  onDayChange(day) {
+    Share.clearSelection();
+    moveInlineMap(day);
+    refreshPanel();
+    flushPendingRefresh();
+  },
+});
 Dice.setup({ smoothScrollTo, saveCollapsed });
 Share.setup({
   title: document.querySelector('.toolbar-title')?.textContent?.trim(),
   subtitle: document.querySelector('.toolbar-subtitle')?.textContent?.trim(),
   logo: document.querySelector('.toolbar-logo'),
   getSelectionData: getShareSelectionData,
-  onClear() {
-    if (_pendingRefreshData) {
-      applyRefresh(_pendingRefreshData);
-      _pendingRefreshData = null;
-    }
-  },
+  onClear: flushPendingRefresh,
 });
 setupThemeToggle();
 

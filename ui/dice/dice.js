@@ -108,7 +108,7 @@ var Dice = (() => {
   const SKIP_CATEGORIES = /suppe|dessert|kuchen|torten|obst|nachspeise/i;
 
   function getPool() {
-    const panel = document.querySelector('.day-panel.active');
+    const panel = Carousel.getActivePanel();
     if (!panel) return [];
 
     const menuItems = [...panel.querySelectorAll('.menu-item:not(.hidden)')]

@@ -13,7 +13,7 @@ function initDice(panelHTML = '') {
     <div class="toolbar" style="height:48px"></div>
     <button class="dice-btn" id="dice-btn">🎲</button>
     <div class="content" id="content">
-      <div class="day-panel active" data-panel="Montag">${panelHTML}</div>
+      <div class="day-panel" data-panel="Montag">${panelHTML}</div>
     </div>
     <div class="dice-overlay" id="dice-overlay" aria-hidden="true"></div>
   </body></html>`, { url: 'http://localhost', runScripts: 'outside-only' });
@@ -22,6 +22,9 @@ function initDice(panelHTML = '') {
   win.HTMLElement.prototype.scrollIntoView = noop;
   win.scrollTo = noop;
   win.matchMedia = () => ({ matches: true });
+  win.Carousel = {
+    getActivePanel: () => win.document.querySelector('.day-panel'),
+  };
   diceScript.runInContext(dom.getInternalVMContext());
 
   win.Dice.setup({
@@ -37,9 +40,9 @@ function initDice(panelHTML = '') {
 }
 
 describe('Dice.getPool', () => {
-  it('returns empty when no active panel', () => {
+  it('returns empty when no panel element exists', () => {
     const { Dice, doc } = initDice();
-    doc.querySelector('.day-panel').classList.remove('active');
+    doc.querySelector('.day-panel').remove();
     strictEqual(Dice.getPool().length, 0);
   });
 
@@ -176,7 +179,7 @@ describe('Dice.roll', () => {
     const dom = new JSDOM(`<!DOCTYPE html><html><body>
       <button class="dice-btn" id="dice-btn">🎲</button>
       <div class="content" id="content">
-        <div class="day-panel active" data-panel="Montag">
+        <div class="day-panel" data-panel="Montag">
           <div class="restaurant-card" data-restaurant="r1">
             <div class="menu-item">Gulasch</div>
           </div>
@@ -190,6 +193,7 @@ describe('Dice.roll', () => {
     win.scrollTo = noop;
     // reduced motion OFF so animation plays and rolling flag is set
     win.matchMedia = () => ({ matches: false });
+    win.Carousel = { getActivePanel: () => win.document.querySelector('.day-panel') };
     diceScript.runInContext(dom.getInternalVMContext());
     win.Dice.setup({ smoothScrollTo: noop, saveCollapsed: noop });
 
@@ -203,7 +207,7 @@ describe('Dice.roll', () => {
     const dom = new JSDOM(`<!DOCTYPE html><html><body>
       <button class="dice-btn" id="dice-btn">🎲</button>
       <div class="content" id="content">
-        <div class="day-panel active" data-panel="Montag">
+        <div class="day-panel" data-panel="Montag">
           <div class="restaurant-card" data-restaurant="r1">
             <div class="menu-item">Gulasch</div>
           </div>
@@ -216,6 +220,7 @@ describe('Dice.roll', () => {
     win.HTMLElement.prototype.scrollIntoView = noop;
     win.scrollTo = noop;
     win.matchMedia = () => ({ matches: false });
+    win.Carousel = { getActivePanel: () => win.document.querySelector('.day-panel') };
     diceScript.runInContext(dom.getInternalVMContext());
     win.Dice.setup({ smoothScrollTo: noop, saveCollapsed: noop });
 
