@@ -718,20 +718,26 @@ function setupSwipeNavigation(contentEl, tabsEl) {
 
 let _refreshToastTimer = null;
 
+function createRefreshToast() {
+  const toast = document.createElement('div');
+  toast.className = 'refresh-toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  document.body.appendChild(toast);
+  return toast;
+}
+
+let _refreshToast = null;
+
 function showRefreshToast() {
-  let toast = document.querySelector('.refresh-toast');
-  if (!toast) {
-    toast = document.createElement('div');
-    toast.className = 'refresh-toast';
-    toast.setAttribute('role', 'status');
-    toast.textContent = 'Menüs aktualisiert';
-    document.body.appendChild(toast);
-  }
+  _refreshToast ??= createRefreshToast();
   clearTimeout(_refreshToastTimer);
-  toast.classList.remove('visible');
-  void toast.offsetWidth;
-  toast.classList.add('visible');
-  _refreshToastTimer = setTimeout(() => toast.classList.remove('visible'), 3000);
+  _refreshToast.textContent = '';
+  _refreshToast.classList.remove('visible');
+  void _refreshToast.offsetWidth;
+  _refreshToast.textContent = 'Menüs aktualisiert';
+  _refreshToast.classList.add('visible');
+  _refreshToastTimer = setTimeout(() => _refreshToast.classList.remove('visible'), 3000);
 }
 
 function renderFooter(latest, footerEl) {
@@ -1130,6 +1136,7 @@ async function init() {
     renderFooter(getLatestFetchTime(fullRestaurants), footerEl);
 
     // Auto-refresh polling
+    _refreshToast = createRefreshToast();
     setInterval(checkForUpdates, 10 * 60 * 1000);
   } catch (err) {
     contentEl.innerHTML = `<div class="error-global">Fehler beim Laden: ${escapeHtml(err.message)}</div>`;

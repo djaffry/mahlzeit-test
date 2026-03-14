@@ -202,6 +202,8 @@ var Share = (() => {
   function createSelectionBar() {
     const bar = document.createElement('div');
     bar.className = 'share-bar';
+    bar.setAttribute('role', 'status');
+    bar.setAttribute('aria-live', 'polite');
     bar.innerHTML = `
       <span class="share-bar-label">Share</span>
       <span class="share-bar-count"></span>
