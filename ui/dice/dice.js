@@ -105,12 +105,19 @@ var Dice = (() => {
     overlay.innerHTML = '';
   }
 
+  const SKIP_CATEGORIES = /suppe|dessert|kuchen|torten|obst|nachspeise/i;
+
   function getPool() {
     const panel = document.querySelector('.day-panel.active');
     if (!panel) return [];
 
     const menuItems = [...panel.querySelectorAll('.menu-item:not(.hidden)')]
-      .filter(el => !el.closest('.restaurant-card')?.querySelector('.reservation-badge'));
+      .filter(el => {
+        if (el.closest('.restaurant-card')?.querySelector('.reservation-badge')) return false;
+        const cat = el.closest('.category')?.querySelector('.category-title')?.textContent;
+        if (cat && SKIP_CATEGORIES.test(cat)) return false;
+        return true;
+      });
 
     const linkCards = [...panel.querySelectorAll('.restaurant-card:not(.link-muted):not(.map-card)')]
       .filter(card => !card.querySelector('.menu-item') && !card.querySelector('.reservation-badge'));
