@@ -11,7 +11,7 @@
     "lat": 48.21892,
     "lon": 16.39778
   },
-  "fetchedAt": "2026-03-14T22:47:55.656Z",
+  "fetchedAt": "2026-03-16T09:17:01.010Z",
   "error": null,
   "days": {
     "Montag": {
@@ -27,13 +27,11 @@
               "description": null
             },
             {
-              "title": "Schweinsbraten",
+              "title": "Bauerngröstl",
               "price": "10,70 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
-              "allergens": "A,C,G",
-              "description": "mit sauerkraut und semmelknödel"
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit grünem salat"
             }
           ]
         },
@@ -42,7 +40,7 @@
           "items": [
             {
               "title": "Wienerschnitzel (Vom schwein)",
-              "price": "12,50 €",
+              "price": null,
               "tags": [
                 "Schweinefleisch"
               ],
@@ -51,28 +49,28 @@
             },
             {
               "title": "Cordon bleu",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit mayonnaisesalat"
             },
             {
               "title": "Du chef",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Bauernschnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Salamischnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit salat"
@@ -94,13 +92,13 @@
               "description": null
             },
             {
-              "title": "Du chef (Gebackenes schweinsschnitzel",
+              "title": "Gebackenes schnitzel vom schwein",
               "price": "10,70 €",
               "tags": [
                 "Schweinefleisch"
               ],
-              "allergens": null,
-              "description": "mit champignon, schinken und käse) mit petersilienkartoffel"
+              "allergens": "A,C,G",
+              "description": "mit gemischtem salat"
             }
           ]
         },
@@ -109,7 +107,7 @@
           "items": [
             {
               "title": "Wienerschnitzel (Vom schwein)",
-              "price": "12,50 €",
+              "price": null,
               "tags": [
                 "Schweinefleisch"
               ],
@@ -118,28 +116,28 @@
             },
             {
               "title": "Cordon bleu",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit mayonnaisesalat"
             },
             {
               "title": "Du chef",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Bauernschnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Salamischnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit salat"
@@ -161,13 +159,11 @@
               "description": null
             },
             {
-              "title": "Gebratene hühnerkeule",
+              "title": "Szegediner krautfleisch",
               "price": "10,70 €",
-              "tags": [
-                "Huhn"
-              ],
-              "allergens": "A",
-              "description": "mit risipisi"
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit semmelknödel"
             }
           ]
         },
@@ -176,7 +172,7 @@
           "items": [
             {
               "title": "Wienerschnitzel (Vom schwein)",
-              "price": "12,50 €",
+              "price": null,
               "tags": [
                 "Schweinefleisch"
               ],
@@ -185,28 +181,28 @@
             },
             {
               "title": "Cordon bleu",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit mayonnaisesalat"
             },
             {
               "title": "Du chef",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Bauernschnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Salamischnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit salat"
@@ -228,11 +224,13 @@
               "description": null
             },
             {
-              "title": "Spinatspätzle",
+              "title": "Tafelspitz",
               "price": "10,70 €",
-              "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "mit schinken-käse-sauce und grünem salat"
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "mit semmelkren und salzkartoffel"
             }
           ]
         },
@@ -241,7 +239,7 @@
           "items": [
             {
               "title": "Wienerschnitzel (Vom schwein)",
-              "price": "12,50 €",
+              "price": null,
               "tags": [
                 "Schweinefleisch"
               ],
@@ -250,28 +248,28 @@
             },
             {
               "title": "Cordon bleu",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit mayonnaisesalat"
             },
             {
               "title": "Du chef",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Bauernschnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Salamischnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit salat"
@@ -305,13 +303,6 @@
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit zwetschkenröster"
-            },
-            {
-              "title": "„wintermüdigkeit: kissenzipfel-abdruck inklusive – frühling kommt trotzdem! bleim ma positiv, so lang kann’s nicht mehr dauern.“",
-              "price": "12,50 €",
-              "tags": [],
-              "allergens": null,
-              "description": null
             }
           ]
         },
@@ -320,7 +311,7 @@
           "items": [
             {
               "title": "Wienerschnitzel (Vom schwein)",
-              "price": "12,50 €",
+              "price": null,
               "tags": [
                 "Schweinefleisch"
               ],
@@ -329,28 +320,28 @@
             },
             {
               "title": "Cordon bleu",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit mayonnaisesalat"
             },
             {
               "title": "Du chef",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Bauernschnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit petersilienkartoffel"
             },
             {
               "title": "Salamischnitzel",
-              "price": "12,50 €",
+              "price": null,
               "tags": [],
               "allergens": "A,C,G,M",
               "description": "mit salat"
