@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-16T11:34:21.504Z",
+  "fetchedAt": "2026-03-17T10:09:52.397Z",
   "error": null,
   "days": {
     "Montag": {
@@ -314,7 +314,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Bärlauch -Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
+              "title": "Bärlauch- Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -506,10 +506,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding • \nApfelkompott",
+              "title": "Grießpudding • \nApfelkompott\nHonig - Pistazien Mousse",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -518,9 +518,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Marillen-Topfen Strudel",
+              "title": "Pfirsich-Topfen Strudel\nVeganer Pfirsichkuchen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -564,7 +566,7 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Hokkaido-Dillcremesuppe",
+              "title": "Bärlauch Cremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
@@ -578,7 +580,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Bärlauch -Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
+              "title": "Bärlauch- Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -844,7 +846,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Bärlauch -Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
+              "title": "Bärlauch- Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -1106,7 +1108,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Bärlauch -Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
+              "title": "Bärlauch- Käsespätzle •\nmit  Bergkäse • Jungzwiebel •\nSchnittlauch • geröstete Kürbiskerne",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
