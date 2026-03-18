@@ -869,9 +869,7 @@ function setupPartyMode() {
 }
 
 function setupThemeToggle() {
-  const saved = localStorage.getItem('theme');
-  if (saved) document.documentElement.dataset.theme = saved;
-
+  // Theme is already applied by inline <script> in <head> to prevent flash
   const btn = document.getElementById('theme-toggle');
   btn.addEventListener('click', () => {
     const root = document.documentElement;

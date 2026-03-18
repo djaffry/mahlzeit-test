@@ -8,12 +8,14 @@
 <link rel="apple-touch-icon" href="ui/icons/icon-maskable-light-180.png">
 <link rel="manifest" href="ui/manifest.json">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Apply saved theme before CSS loads to prevent dark→light flash -->
+<script>var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;</script>
 <link rel="stylesheet" href="ui/style.css">
 <link rel="stylesheet" href="ui/carousel/carousel.css">
 <link rel="stylesheet" href="ui/dice/dice.css">
 <link rel="stylesheet" href="ui/share/share.css">
 <link rel="stylesheet" href="ui/streak/streak.css">
-<meta name="theme-color" content="#cba6f7">
+<meta name="theme-color" content="#f5c2e7">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Mittagsmenü">
@@ -26,10 +28,7 @@
       <a class="toolbar-brand" href="." onclick="event.preventDefault(); window.location.reload();">
         <svg class="toolbar-logo" width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="64" height="64" rx="16" fill="currentColor" class="logo-bg"/>
-          <rect x="13" y="7" width="8" height="28" rx="4" fill="currentColor" class="logo-fg"/>
-          <rect x="43" y="7" width="8" height="28" rx="4" fill="currentColor" class="logo-fg"/>
-          <rect x="13" y="27" width="38" height="8" rx="4" fill="currentColor" class="logo-fg"/>
-          <rect x="28" y="7" width="8" height="50" rx="4" fill="currentColor" class="logo-fg"/>
+          <path fill-rule="evenodd" fill="currentColor" class="logo-fg" d="M 16,7 L 48,7 Q 52,7 52,11 L 36,35 L 36,53 Q 36,57 32,57 Q 28,57 28,53 L 28,35 L 12,11 Q 12,7 16,7 Z M 23,8 L 27,8 L 29,27 Z M 37,8 L 41,8 L 35,27 Z"/>
         </svg>
         <div>
           <div class="toolbar-title">Mittagsmenü</div>

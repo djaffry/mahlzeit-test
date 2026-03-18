@@ -16,7 +16,7 @@ var Share = (() => {
     text:      '#cdd6f4',
     secondary: '#a6adc8',
     muted:     '#6c7086',
-    accent:    '#cba6f7',
+    accent:    '#f5c2e7',
     border:    '#45475a',
     borderLight: '#3b3c50',
   };
@@ -39,7 +39,7 @@ var Share = (() => {
     Glutenfrei:       { bg: 'rgba(249,226,175,0.18)', fg: '#f9e2af' },
     Laktosefrei:      { bg: 'rgba(180,190,254,0.18)', fg: '#b4befe' },
   };
-  const TAG_COLOR_DEFAULT = { bg: 'rgba(203,166,247,0.18)', fg: '#cba6f7' };
+  const TAG_COLOR_DEFAULT = { bg: 'rgba(245,194,231,0.18)', fg: '#f5c2e7' };
 
   const BADGE_COLORS = {
     Edenred: '#f38ba8',
