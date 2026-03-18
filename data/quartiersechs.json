@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-17T11:31:04.861Z",
+  "fetchedAt": "2026-03-18T10:12:49.967Z",
   "error": null,
   "days": {
     "Montag": {
@@ -772,10 +772,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Toskanisches Beerentrifle",
+              "title": "Toskanisches Beerentrifle\nGrießpudding • Apfelkompott",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -784,12 +784,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brownie",
+              "title": "Veganer Brownie\nPfirsich-Topfen Strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
