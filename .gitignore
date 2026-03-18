@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 .claude
 .worktrees
 docs
+
+# Tesseract.js OCR language data
+*.traineddata

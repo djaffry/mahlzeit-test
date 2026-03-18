@@ -2,7 +2,7 @@
   "id": "pans",
   "title": "🍳 pAn's",
   "url": "https://www.pans.at/tagesmenue/",
-  "type": "link",
+  "type": "full",
   "cuisine": [
     "Bistro"
   ],
@@ -11,7 +11,123 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-18T11:32:49.839Z",
+  "fetchedAt": "2026-03-18T22:09:45.187Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Steinpilz Creme suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,G,A",
+              "description": null
+            },
+            {
+              "title": "Faschierte Laibchen mit Erdäpfelpüree und Röstzwiebeln",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,0,6",
+              "description": null
+            },
+            {
+              "title": "Orientalischer Vorspeisenteller (Ezme,Hummus ‚Schafskäse, Oliven, Tzatziki) mit Fladenbrot",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "A,6,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Hokkaido-Kürbis Creme suppe",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": "L,H,G,A",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Paprikahendl mit Butterspätzle",
+              "price": "17,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,L,H,6",
+              "description": null
+            },
+            {
+              "title": "Lasagne Bolognese (Rind) mit Salat",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,O,M,G,L",
+              "description": null
+            },
+            {
+              "title": "Couscous Salat mit gegrilltem Hühnerfilet und Schafskäse",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Penne mit Lachsstreifen-Dillä la Creme",
+              "price": "18,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,6,0,D",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "0,M,C",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
