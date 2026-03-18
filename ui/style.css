@@ -208,7 +208,6 @@ body {
   z-index: 1;
 }
 .tab:focus-visible { outline-offset: -2px; }
-.tab:hover { background: var(--border-light); color: var(--text); }
 .tab.active {
   background: transparent;
   color: var(--accent-fg);
@@ -256,13 +255,11 @@ body {
   user-select: none;
   transition: background 0.15s ease, color 0.15s ease;
 }
-.filters-label:hover { background: var(--border-light); color: var(--text); }
 .filters-label .filters-clear {
   font-size: var(--text-caption);
   color: var(--text-muted);
   transition: color 0.15s;
 }
-.filters-label:hover .filters-clear { color: var(--text); }
 
 .filter-btn {
   font-family: inherit;
@@ -277,7 +274,6 @@ body {
   transition: background 0.15s ease, color 0.15s ease;
   min-height: 44px;
 }
-.filter-btn:hover { background: var(--border-light); color: var(--text); }
 .filter-btn:focus-visible { outline-offset: -2px; }
 .filter-btn.active { background: var(--filter-dim); color: var(--filter-color); }
 
