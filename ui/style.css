@@ -905,7 +905,7 @@ body {
 
 /* Touch feedback */
 @media (hover: none) and (pointer: coarse) {
-  .tab:active, .filter-btn:active,
+  .filter-btn:active,
   .weekend-browse-btn:active,
   .theme-toggle:active, .search-trigger:active, .feedback-link:active, .dice-btn:active { background: var(--border); }
 }
