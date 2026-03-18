@@ -281,7 +281,7 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-sm) 0 var(--spacing-xl);
+  padding: var(--spacing-sm) 0 var(--spacing-sm);
 }
 
 /* Loading skeleton */
@@ -509,11 +509,38 @@ body {
 
 .footer {
   text-align: center;
-  padding: var(--spacing-lg) var(--spacing-lg) calc(var(--spacing-lg) + env(safe-area-inset-bottom));
+  padding: var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
   font-size: var(--text-xs);
   color: var(--text-muted);
   line-height: 1.7;
 }
+
+/* Party easter egg */
+.party-easter-egg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin: 0 auto;
+  padding: var(--spacing-xs) var(--spacing-lg) calc(var(--spacing-xl) + env(safe-area-inset-bottom));
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.35;
+  font-family: inherit;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  transition: opacity 0.3s ease;
+}
+.party-easter-egg-emoji { font-size: var(--text-lg); line-height: 1; }
+.party-easter-egg-active-text { display: none; }
+.party-easter-egg:hover { opacity: 1; }
+.party .party-easter-egg {
+  opacity: 1;
+}
+.party .party-easter-egg-emoji { animation: partySpin 2s linear infinite; }
+.party .party-easter-egg-text { display: none; }
+.party .party-easter-egg-active-text { display: inline; }
 
 /* Link-only restaurant cards */
 .restaurant-card.link-muted .restaurant-name { color: var(--text-muted); }
@@ -535,7 +562,6 @@ body {
 .link-cta:hover { color: var(--accent); }
 
 /* Icon buttons (44px touch targets) */
-.party-toggle,
 .theme-toggle,
 .feedback-link,
 .search-trigger,
@@ -555,7 +581,6 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
   flex-shrink: 0;
 }
-.party-toggle:hover,
 .theme-toggle:hover,
 .feedback-link:hover,
 .search-trigger:hover,
@@ -565,10 +590,6 @@ body {
 .feedback-link svg,
 .search-trigger svg,
 .map-close svg { width: 18px; height: 18px; color: var(--text-secondary); }
-
-/* Party toggle */
-.party-toggle { font-size: var(--text-lg); line-height: 1; }
-.party .party-toggle { animation: partySpin 2s linear infinite; }
 
 /* Theme toggle */
 .theme-icon-moon { display: none; }
@@ -877,7 +898,7 @@ body {
   .toolbar-subtitle { display: none; }
   .day-tabs { order: 3; flex-basis: 100%; }
   .tab { flex: 1; min-width: 0; text-align: center; padding: var(--spacing-xs); }
-  .content { padding: var(--spacing-sm) 0 var(--spacing-xl); }
+  .content { padding: var(--spacing-sm) 0 var(--spacing-sm); }
   .filters { padding: var(--spacing-sm); }
   .map-slot { height: 300px; }
 }
@@ -886,7 +907,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .tab:active, .filter-btn:active,
   .weekend-browse-btn:active,
-  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .party-toggle:active, .dice-btn:active { background: var(--border); }
+  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .dice-btn:active { background: var(--border); }
 }
 
 /* Party mode */
@@ -897,7 +918,10 @@ body {
   25% { transform: translateY(-3px) rotate(0.5deg); }
   75% { transform: translateY(2px) rotate(-0.5deg); }
 }
-.party body {
+.party .content,
+.party .filters,
+.party .footer,
+.party .party-easter-egg {
   animation: partyHue 3s linear infinite;
 }
 .party .restaurant-card {
@@ -915,10 +939,13 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .skeleton-line { animation: none; }
-  .party body,
+  .party .content,
+  .party .filters,
+  .party .footer,
+  .party .party-easter-egg,
   .party .restaurant-card,
-  .party .party-toggle,
   .party .toolbar,
   .party .tab-indicator,
-  .party .map-marker-emoji { animation: none; }
+  .party .map-marker-emoji,
+  .party .party-easter-egg-emoji { animation: none; }
 }
