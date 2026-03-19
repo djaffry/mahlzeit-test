@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-19T10:22:40.372Z",
+  "fetchedAt": "2026-03-19T11:23:22.572Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1233,7 +1233,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Creme Bruleé",
+              "title": "Limetten Creme Bruleé",
               "price": null,
               "tags": [],
               "allergens": "C,G",
