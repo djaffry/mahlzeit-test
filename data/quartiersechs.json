@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-18T22:09:44.302Z",
+  "fetchedAt": "2026-03-19T10:01:58.159Z",
   "error": null,
   "days": {
     "Montag": {
@@ -888,7 +888,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Rote Rüben-Ricotta •\nZitronen Tagliatelle •\nFenchel Gnocchi •\nOlivenöl mit Kräutern • Tomaten-Zucchinisauce • Haselnuss - Rucola Pesto •\ngegrillter Paprika • Oliven • Cherrytomaten • Grana",
+              "title": "Ravioli mit Rote Rüben-Ricotta •\nZitronen Tagliatelle • Fenchel Gnocchi •\nOlivenöl mit Kräutern • \nTomaten-Zucchinisauce • \nHaselnuss - Rucola Pesto •\ngegrillter Paprika • Oliven • Cherrytomaten • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1036,10 +1036,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Bananen-Karamell Pudding",
+              "title": "Bananen-Karamell Pudding\nToskanisches Beerentrifle",
               "price": null,
               "tags": [],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1048,10 +1048,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Brombeer Streuselkuchen",
+              "title": "Brombeer Streuselkuchen\nVeganer Brownie",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]

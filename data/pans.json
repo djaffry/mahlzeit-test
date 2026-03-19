@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-18T22:09:45.187Z",
+  "fetchedAt": "2026-03-19T10:02:00.299Z",
   "error": null,
   "days": {
     "Mittwoch": {
@@ -100,6 +100,116 @@
               "price": "17,90 €",
               "tags": [],
               "allergens": "0,M,C",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Zucchini Creme suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,G,A",
+              "description": null
+            },
+            {
+              "title": "Chicken Cheese Burger mit Pommes und Currysauce",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,0,G,N",
+              "description": null
+            },
+            {
+              "title": "Pasta mit Schafskäse-Bärlauch Sauce und getrockneten Tomaten (A,6,C,LH)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Steinpilz Creme suppe",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": "L,H,G,A",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Paprikahendl mit Butterspätzle",
+              "price": "17,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,L,H,6",
+              "description": null
+            },
+            {
+              "title": "Lasagne Bolognese (Rind) mit Salat",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,O,M,G,L",
+              "description": null
+            },
+            {
+              "title": "Couscous Salat mit gegrilltem Hühnerfilet und Schafskäse",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Penne mit Lachsstreifen-Dillä la Creme",
+              "price": "18,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,6,0,D",
               "description": null
             },
             {
