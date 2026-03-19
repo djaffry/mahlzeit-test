@@ -6,6 +6,7 @@ var Dice = (() => {
   const ANIMATION_DURATION = 1500;
   const DICE_COUNT = 6;
   let _rolling = false;
+  let _setup = false;
 
   let _smoothScrollTo, _saveCollapsed;
 
@@ -14,11 +15,22 @@ var Dice = (() => {
     _saveCollapsed = saveCollapsed;
 
     const btn = document.getElementById('dice-btn');
-    if (!btn) return;
+    if (!btn || _setup) return;
+    _setup = true;
 
     btn.addEventListener('click', () => roll());
 
     setupShake(btn);
+
+    document.addEventListener('keydown', e => {
+      const k = e.key.toLowerCase();
+      if (k !== 'r' && k !== 'd' && k !== ' ') return;
+      if (e.target.closest('input, textarea, [contenteditable]')) return;
+      if (!document.getElementById('search-overlay')?.hidden) return;
+      if (!document.getElementById('map-overlay')?.hidden) return;
+      if (k === ' ') e.preventDefault();
+      roll();
+    });
   }
 
   function roll(pickIndex) {
