@@ -1103,7 +1103,6 @@ function setupMapListeners() {
 }
 
 async function init() {
-  Streak.init();
   const tabsEl = document.getElementById('day-tabs');
   const contentEl = document.getElementById('content');
   const footerEl = document.getElementById('footer');

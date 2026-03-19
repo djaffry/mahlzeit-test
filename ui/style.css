@@ -892,9 +892,9 @@ body {
 @media (max-width: 768px) {
   .toolbar-inner { padding: var(--spacing-sm); }
   .toolbar-top { gap: var(--spacing-xs); flex-wrap: wrap; }
-  .toolbar-title { display: none; }
   .toolbar-logo { width: 24px; height: 24px; }
-  .toolbar-brand { gap: var(--spacing-xs); }
+  .toolbar-brand { gap: var(--spacing-xs); flex: 1; min-width: 0; }
+  .toolbar-title { font-size: var(--text-sm); }
   .toolbar-subtitle { display: none; }
   .day-tabs { order: 3; flex-basis: 100%; }
   .tab { flex: 1; min-width: 0; text-align: center; padding: var(--spacing-xs); }
@@ -910,7 +910,6 @@ body {
   .theme-toggle:active, .search-trigger:active, .feedback-link:active, .dice-btn:active { background: var(--border); }
 }
 
-/* Party mode */
 @keyframes partyHue { to { filter: hue-rotate(360deg); } }
 @keyframes partySpin { to { transform: rotate(360deg); } }
 @keyframes partyFloat {
