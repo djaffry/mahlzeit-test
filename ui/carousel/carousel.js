@@ -136,6 +136,23 @@ var Carousel = (() => {
         if (_onDayChange) _onDayChange(day, nextIdx);
       });
 
+      // Number keys 1-5 switch weekdays
+      document.addEventListener('keydown', e => {
+        if (e.key < '1' || e.key > '5') return;
+        const idx = Number(e.key) - 1;
+        if (e.target.closest('input, textarea, [contenteditable]')) return;
+        if (!document.getElementById('search-overlay')?.hidden) return;
+        if (!document.getElementById('map-overlay')?.hidden) return;
+        if (idx >= _days.length) return;
+        cancelSnap();
+        _lastActiveIdx = idx;
+        const day = _days[idx];
+        setActiveTab(day);
+        announce(day);
+        goTo(idx);
+        if (_onDayChange) _onDayChange(day, idx);
+      });
+
       // Recalculate on resize
       let resizeTimer = null;
       window.addEventListener('resize', () => {

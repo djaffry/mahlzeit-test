@@ -651,6 +651,50 @@ body {
   background: var(--surface-dim);
 }
 
+/* Adwaita-style keyboard shortcut hints */
+.kbd {
+  font-family: inherit;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  line-height: 1;
+  min-width: 18px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  color: var(--text-muted);
+  background: var(--surface-dim);
+  text-align: center;
+  pointer-events: none;
+}
+/* Toolbar button shortcut badge — below the icon */
+.toolbar-actions .kbd {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+}
+.toolbar-actions button,
+.toolbar-actions a { position: relative; }
+/* Share bar shortcut badges — below each action */
+.share-bar .kbd {
+  position: absolute;
+  bottom: -4px;
+  right: -2px;
+}
+.share-bar-actions button { position: relative; }
+/* Tab shortcut badges */
+.tab .kbd {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  transition: opacity 0.15s ease;
+}
+.tab.active .kbd { opacity: 0; }
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .kbd { display: none; }
+}
+
 .search-results {
   overflow-y: auto;
   padding: var(--spacing-xs);

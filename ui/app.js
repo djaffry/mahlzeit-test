@@ -546,7 +546,7 @@ function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
     if (d === today) cls.push('today');
     if (!isWeekend && d === activeDay) cls.push('active');
     const date = formatShortDate(weekDates[i]);
-    return `<button class="${cls.join(' ')}" data-day="${d}"><span class="tab-full">${d} <span class="tab-date">${date}</span></span><span class="tab-short">${DAY_SHORT[d]} <span class="tab-date">${date}</span></span></button>`;
+    return `<button class="${cls.join(' ')}" data-day="${d}"><span class="tab-full">${d} <span class="tab-date">${date}</span></span><span class="tab-short">${DAY_SHORT[d]} <span class="tab-date">${date}</span></span><kbd class="kbd">${i + 1}</kbd></button>`;
   }).join('') + '<div class="tab-indicator" aria-hidden="true"></div>';
 }
 
@@ -731,6 +731,7 @@ function setupSearchListeners() {
   });
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+    if (e.key === '/' && !e.target.closest('input, textarea, [contenteditable]')) { e.preventDefault(); openSearch(); }
     if (e.key === 'Escape') closeSearch();
   });
 }
@@ -1172,6 +1173,15 @@ async function init() {
     setupCollapseExpand(contentEl);
     setupSearchListeners();
     setupMapListeners();
+
+    document.addEventListener('keydown', e => {
+      if (e.target.closest('input, textarea, [contenteditable]')) return;
+      if (!document.getElementById('search-overlay')?.hidden) return;
+      if (!document.getElementById('map-overlay')?.hidden) return;
+      const k = e.key.toLowerCase();
+      if (k === 'i') document.getElementById('feedback-link')?.click();
+      else if (k === 'r') window.location.reload();
+    });
     Carousel.attach();
     renderFooter(getLatestFetchTime(menuRestaurants), footerEl);
 

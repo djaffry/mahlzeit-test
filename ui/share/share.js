@@ -107,6 +107,17 @@ var Share = (() => {
         updateSelectionBar();
       }
     });
+
+    document.addEventListener('keydown', e => {
+      if (!selectionBar?.classList.contains('visible')) return;
+      if (e.target.closest('input, textarea, [contenteditable]')) return;
+      if (!document.getElementById('search-overlay')?.hidden) return;
+      if (!document.getElementById('map-overlay')?.hidden) return;
+      const k = e.key.toLowerCase();
+      if (k === 'p') shareSelectionAsPicture();
+      else if (k === 't') shareSelectionAsText();
+      else if (k === 'escape') clearSelection();
+    });
   }
 
   function renderShareImage(data) {
@@ -207,11 +218,12 @@ var Share = (() => {
       <span class="share-bar-label">Share</span>
       <span class="share-bar-count"></span>
       <div class="share-bar-actions">
-        <button class="share-bar-picture" aria-label="Als Bild teilen" title="Als Bild">
+        <button class="share-bar-picture" aria-label="Als Bild teilen (P)" title="Als Bild">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <kbd class="kbd">P</kbd>
         </button>
-        <button class="share-bar-text" aria-label="Als Text kopieren" title="Als Text">Txt</button>
-        <button class="share-bar-clear" aria-label="Auswahl aufheben" title="Aufheben">
+        <button class="share-bar-text" aria-label="Als Text kopieren (T)" title="Als Text">Txt<kbd class="kbd">T</kbd></button>
+        <button class="share-bar-clear" aria-label="Auswahl aufheben (Esc)" title="Aufheben">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
       </div>`;

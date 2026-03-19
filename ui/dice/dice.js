@@ -24,7 +24,7 @@ var Dice = (() => {
 
     document.addEventListener('keydown', e => {
       const k = e.key.toLowerCase();
-      if (k !== 'r' && k !== 'd' && k !== ' ') return;
+      if (k !== 'd' && k !== ' ') return;
       if (e.target.closest('input, textarea, [contenteditable]')) return;
       if (!document.getElementById('search-overlay')?.hidden) return;
       if (!document.getElementById('map-overlay')?.hidden) return;
