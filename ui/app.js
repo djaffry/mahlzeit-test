@@ -38,7 +38,7 @@ let activeFilters = new Set();
 let _menuData = null;
 
 function getAllRestaurants() {
-  return [...(_menuData?.fullRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
+  return [...(_menuData?.menuRestaurants ?? []), ...(_menuData?.linkRestaurants ?? [])];
 }
 
 function getTagColor(tag) {
@@ -71,17 +71,17 @@ function getWeekDates(refDate) {
   });
 }
 
-function getLatestFetchTime(fullRestaurants) {
-  return fullRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop() || null;
+function getLatestFetchTime(menuRestaurants) {
+  return menuRestaurants.map(r => r.fetchedAt).filter(Boolean).sort().pop() || null;
 }
 
-function getLatestFetchDate(fullRestaurants) {
-  const latest = getLatestFetchTime(fullRestaurants);
+function getLatestFetchDate(menuRestaurants) {
+  const latest = getLatestFetchTime(menuRestaurants);
   return latest ? new Date(latest) : null;
 }
 
-function getDataWeekDates(fullRestaurants) {
-  const fetchDate = getLatestFetchDate(fullRestaurants);
+function getDataWeekDates(menuRestaurants) {
+  const fetchDate = getLatestFetchDate(menuRestaurants);
   return getWeekDates(fetchDate && !isNaN(fetchDate.getTime()) ? fetchDate : new Date());
 }
 
@@ -268,8 +268,11 @@ function renderRestaurant(restaurant, day, collapsedSet) {
     body += '<div class="no-data">(Noch) kein Menü für diesen Tag</div>';
   }
 
+  const linkText = restaurant.type === 'specials'
+    ? 'nur Specials \u00b7 komplette Karte auf der Website'
+    : 'zur Website';
   const websiteLink = restaurant.url
-    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">Volle Speisekarte auf der Website &rarr;</a>`
+    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${linkText} &rarr;</a>`
     : '';
 
   return `
@@ -320,8 +323,8 @@ function renderMapCardInGrid() {
     </div>`;
 }
 
-function renderDay(fullRestaurants, linkRestaurants, day, collapsedSet) {
-  const cards = fullRestaurants.map(r => renderRestaurant(r, day, collapsedSet)).join('')
+function renderDay(menuRestaurants, linkRestaurants, day, collapsedSet) {
+  const cards = menuRestaurants.map(r => renderRestaurant(r, day, collapsedSet)).join('')
     + linkRestaurants.map(r => renderLinkRestaurant(r, day, collapsedSet)).join('');
   return `<div class="restaurant-grid">${renderMapCardInGrid()}${cards}</div>`;
 }
@@ -358,7 +361,7 @@ function performSearch(query) {
 
   const q = query.toLowerCase().trim();
   const day = DAYS[Carousel.getActiveIndex()] ?? 'Montag';
-  const restaurants = _menuData?.fullRestaurants ?? [];
+  const restaurants = _menuData?.menuRestaurants ?? [];
   const showAll = isFilterShowAll();
   const passes = item => showAll || itemMatchesFilters(item);
   const groups = [];
@@ -492,16 +495,16 @@ async function fetchMenuData() {
   );
 
   return {
-    fullRestaurants: allRestaurants.filter(r => r.type !== 'link'),
+    menuRestaurants: allRestaurants.filter(r => r.type !== 'link'),
     linkRestaurants: allRestaurants.filter(r => r.type === 'link'),
   };
 }
 
 let _lastContentHash = null;
 
-function contentHash(fullRestaurants, linkRestaurants) {
+function contentHash(menuRestaurants, linkRestaurants) {
   const strip = restaurants => restaurants.map(({ fetchedAt, ...rest }) => rest);
-  return JSON.stringify(strip(fullRestaurants).concat(strip(linkRestaurants)));
+  return JSON.stringify(strip(menuRestaurants).concat(strip(linkRestaurants)));
 }
 
 async function fetchMenuDataQuiet() {
@@ -522,14 +525,14 @@ async function fetchMenuDataQuiet() {
     let oldAll;
     const merged = results.map((r, i) => {
       if (r.status === 'fulfilled') return r.value;
-      oldAll ??= _menuData.fullRestaurants.concat(_menuData.linkRestaurants);
+      oldAll ??= _menuData.menuRestaurants.concat(_menuData.linkRestaurants);
       return oldAll.find(o => o.id === manifest[i]) || null;
     }).filter(Boolean);
 
     if (merged.length === 0) return null;
 
     return {
-      fullRestaurants: merged.filter(r => r.type !== 'link'),
+      menuRestaurants: merged.filter(r => r.type !== 'link'),
       linkRestaurants: merged.filter(r => r.type === 'link'),
     };
   } catch {
@@ -547,12 +550,12 @@ function renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay) {
   }).join('') + '<div class="tab-indicator" aria-hidden="true"></div>';
 }
 
-function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay) {
+function renderDayPanels(contentEl, menuRestaurants, linkRestaurants, activeDay) {
   const collapsedSet = loadCollapsed();
   contentEl.innerHTML =
     '<div class="carousel" id="carousel"><div class="carousel-track">' +
     DAYS.map(d =>
-      `<div class="day-panel" data-panel="${d}">${renderDay(fullRestaurants, linkRestaurants, d, collapsedSet)}</div>`
+      `<div class="day-panel" data-panel="${d}">${renderDay(menuRestaurants, linkRestaurants, d, collapsedSet)}</div>`
     ).join('') +
     '</div></div>' +
     '<span class="sr-only" id="day-announcer" aria-live="polite"></span>';
@@ -562,8 +565,8 @@ function renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay)
     .forEach(c => c.classList.add('visible', 'settled'));
 }
 
-function isDataFromCurrentWeek(fullRestaurants) {
-  const fetchDate = getLatestFetchDate(fullRestaurants);
+function isDataFromCurrentWeek(menuRestaurants) {
+  const fetchDate = getLatestFetchDate(menuRestaurants);
   if (!fetchDate || isNaN(fetchDate.getTime())) return false;
   const monday = getMondayOfWeek(new Date());
   const nextMonday = new Date(monday);
@@ -791,27 +794,27 @@ function applyRefresh(newData) {
 
   // 3. Update data
   _menuData = newData;
-  _lastContentHash = contentHash(newData.fullRestaurants, newData.linkRestaurants);
-  const { fullRestaurants, linkRestaurants } = newData;
+  _lastContentHash = contentHash(newData.menuRestaurants, newData.linkRestaurants);
+  const { menuRestaurants, linkRestaurants } = newData;
 
   // 4. Re-render tabs
   const tabsEl = document.getElementById('day-tabs');
   const contentEl = document.getElementById('content');
   const today = getTodayName();
   const isWeekend = !today;
-  const dataWeekDates = getDataWeekDates(fullRestaurants);
-  const isCurrentWeek = isDataFromCurrentWeek(fullRestaurants);
+  const dataWeekDates = getDataWeekDates(menuRestaurants);
+  const isCurrentWeek = isDataFromCurrentWeek(menuRestaurants);
   renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeTab);
 
   // 5. Re-render panels
-  renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeTab);
+  renderDayPanels(contentEl, menuRestaurants, linkRestaurants, activeTab);
 
   // Restore carousel scroll position (DOM was rebuilt)
   Carousel.restorePosition(DAYS.indexOf(activeTab));
   moveInlineMap(DAYS[Carousel.getActiveIndex()]);
 
   // 6. Rebuild filters (reads active state from localStorage)
-  const allTags = collectTags(fullRestaurants);
+  const allTags = collectTags(menuRestaurants);
   loadFilters(allTags);
   buildFilterButtons(allTags);
 
@@ -848,7 +851,7 @@ async function checkForUpdates() {
   const newData = await fetchMenuDataQuiet();
   if (!newData) return;
 
-  const newHash = contentHash(newData.fullRestaurants, newData.linkRestaurants);
+  const newHash = contentHash(newData.menuRestaurants, newData.linkRestaurants);
   if (newHash === _lastContentHash) return;
 
   if (Share.isActive() || Carousel.isAnimating()) {
@@ -1127,26 +1130,26 @@ async function init() {
 
   try {
     const loadStart = Date.now();
-    const [, { fullRestaurants, linkRestaurants }] = await Promise.all([
+    const [, { menuRestaurants, linkRestaurants }] = await Promise.all([
       TagUtils.load('data/tags.json'),
       fetchMenuData(),
     ]);
 
-    _menuData = { fullRestaurants, linkRestaurants };
-    _lastContentHash = contentHash(fullRestaurants, linkRestaurants);
+    _menuData = { menuRestaurants, linkRestaurants };
+    _lastContentHash = contentHash(menuRestaurants, linkRestaurants);
 
-    const allTags = collectTags(fullRestaurants);
+    const allTags = collectTags(menuRestaurants);
     loadFilters(allTags);
     buildFilterButtons(allTags);
 
     const elapsed = Date.now() - loadStart;
     if (elapsed < 200) await new Promise(r => setTimeout(r, 200 - elapsed));
 
-    const dataWeekDates = getDataWeekDates(fullRestaurants);
-    const isCurrentWeek = isDataFromCurrentWeek(fullRestaurants);
+    const dataWeekDates = getDataWeekDates(menuRestaurants);
+    const isCurrentWeek = isDataFromCurrentWeek(menuRestaurants);
     renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeDay);
 
-    renderDayPanels(contentEl, fullRestaurants, linkRestaurants, activeDay);
+    renderDayPanels(contentEl, menuRestaurants, linkRestaurants, activeDay);
     Carousel.switchTo(activeDay);
     const activeIdx = Carousel.getActiveIndex();
     if (activeIdx > 0) {
@@ -1170,7 +1173,7 @@ async function init() {
     setupSearchListeners();
     setupMapListeners();
     Carousel.attach();
-    renderFooter(getLatestFetchTime(fullRestaurants), footerEl);
+    renderFooter(getLatestFetchTime(menuRestaurants), footerEl);
 
     // Auto-refresh polling
     _refreshToast = createRefreshToast();

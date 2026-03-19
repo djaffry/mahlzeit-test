@@ -2,7 +2,7 @@
   "id": "remo",
   "title": "🍕 Remo",
   "url": "https://remopizza.at/#Speisekarte",
-  "type": "full",
+  "type": "specials",
   "cuisine": [
     "Neapolitanische Pizza"
   ],
@@ -11,7 +11,7 @@
     "lat": 48.2254,
     "lon": 16.3948
   },
-  "fetchedAt": "2026-03-19T20:14:32.918Z",
+  "fetchedAt": "2026-03-19T21:37:20.918Z",
   "error": null,
   "days": {
     "Montag": {

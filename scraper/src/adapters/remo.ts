@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
-import type { FullAdapter, WeekMenu, MenuItem, MenuCategory } from '../types.js';
-import { WEEKDAYS } from '../types.js';
+import type { FetchableAdapter, WeekMenu, MenuItem, MenuCategory } from '../types.js';
+import { allDays } from '../types.js';
 import { inferTags, resolveTags } from '../tags.js';
 
 const PAGE_URL = 'https://remopizza.at/';
@@ -52,20 +52,14 @@ async function fetchMenu(): Promise<WeekMenu> {
 
   const specials = parseSpecials(doc);
   if (!specials) return {};
-
-  const categories = [specials];
-  const menu: WeekMenu = {};
-  for (const day of WEEKDAYS) {
-    menu[day] = { categories };
-  }
-  return menu;
+  return allDays([specials]);
 }
 
-const adapter: FullAdapter = {
+const adapter: FetchableAdapter = {
   id: 'remo',
   title: '🍕 Remo',
   url: 'https://remopizza.at/#Speisekarte',
-  type: 'full',
+  type: 'specials',
   cuisine: ['Neapolitanische Pizza'],
   outdoor: true,
   coordinates: { lat: 48.2254, lon: 16.3948 },

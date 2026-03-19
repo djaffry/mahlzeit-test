@@ -1,7 +1,8 @@
 import { readdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import type { Adapter, FullAdapter, LinkAdapter, RestaurantData } from './types.js';
+import type { Adapter, FetchableAdapter, LinkAdapter, RestaurantData } from './types.js';
+import { isFetchable } from './types.js';
 import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest, saveTagMetadata, saveUnknownTags } from './persistence.js';
 import { log } from './log.js';
 import { getTagMetadata, isKnownTag } from './tags.js';
@@ -31,8 +32,8 @@ async function discoverAdapters(): Promise<Adapter[]> {
         log('FAIL', file, 'load', 'missing id or type export');
         continue;
       }
-      if (adapter.type === 'full' && typeof adapter.fetchMenu !== 'function') {
-        log('FAIL', file, 'load', 'full adapter missing fetchMenu');
+      if (adapter.type !== 'link' && !isFetchable(adapter)) {
+        log('FAIL', file, 'load', `${(adapter as { type: string }).type} adapter missing fetchMenu`);
         continue;
       }
       adapters.push(adapter);
@@ -53,7 +54,7 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
   ]).finally(() => clearTimeout(timer));
 }
 
-async function scrapeFullAdapters(adapters: FullAdapter[]): Promise<RestaurantData[]> {
+async function scrapeFetchableAdapters(adapters: FetchableAdapter[]): Promise<RestaurantData[]> {
   const results = await Promise.allSettled(
     adapters.map(async (adapter): Promise<RestaurantData> => {
       log('INFO', adapter.id, 'fetch', 'starting');
@@ -96,14 +97,14 @@ async function main(): Promise<void> {
   await ensureDataDir();
 
   const adapters = await discoverAdapters();
-  const fullAdapters = adapters.filter((a): a is FullAdapter => a.type === 'full');
+  const fetchableAdapters = adapters.filter(isFetchable);
   const linkAdapters = adapters.filter((a): a is LinkAdapter => a.type === 'link');
   log('INFO', '*', 'discover', `${adapters.length} adapter(s): ${adapters.map(a => a.id).join(', ')}`);
 
   const restaurantIds: string[] = [];
 
-  const fullResults = await scrapeFullAdapters(fullAdapters);
-  for (const data of fullResults) {
+  const fetchableResults = await scrapeFetchableAdapters(fetchableAdapters);
+  for (const data of fetchableResults) {
     await saveRestaurant(data);
     restaurantIds.push(data.id);
   }
@@ -116,7 +117,7 @@ async function main(): Promise<void> {
 
   await saveManifest(restaurantIds);
   await saveTagMetadata(getTagMetadata());
-  await saveUnknownTags(discoverUnknownTags(fullResults));
+  await saveUnknownTags(discoverUnknownTags(fetchableResults));
 }
 
 main().catch(err => {

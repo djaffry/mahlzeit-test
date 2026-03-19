@@ -39,7 +39,7 @@ interface BaseAdapter {
 }
 
 export interface FullAdapter extends BaseAdapter {
-  type: 'full';
+  type: 'full' | 'specials';
   fetchMenu: () => Promise<WeekMenu>;
 }
 
@@ -47,7 +47,20 @@ export interface LinkAdapter extends BaseAdapter {
   type: 'link';
 }
 
+export type FetchableAdapter = FullAdapter;
 export type Adapter = FullAdapter | LinkAdapter;
+
+export function isFetchable(a: Adapter): a is FetchableAdapter {
+  return typeof (a as FetchableAdapter).fetchMenu === 'function';
+}
+
+export function allDays(categories: MenuCategory[]): WeekMenu {
+  const menu: WeekMenu = {};
+  for (const day of WEEKDAYS) {
+    menu[day] = { categories };
+  }
+  return menu;
+}
 
 export interface RestaurantData {
   id: string;
