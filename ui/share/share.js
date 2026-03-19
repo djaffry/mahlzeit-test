@@ -235,7 +235,8 @@ var Share = (() => {
     if (!selectionBar) return;
     const panel = Carousel.getActivePanel();
     const selectedItems = panel ? panel.querySelectorAll('.menu-item.share-selected:not(.hidden)').length : 0;
-    const selectedCards = panel ? panel.querySelectorAll('.restaurant-card.share-selected').length : 0;
+    const selectedCards = panel ? [...panel.querySelectorAll('.restaurant-card.share-selected')]
+      .filter(c => c.querySelectorAll('.menu-item:not(.hidden)').length === 0).length : 0;
     const totalSelected = selectedItems + selectedCards;
     const countLabel = selectionBar.querySelector('.share-bar-count');
     countLabel.textContent = totalSelected === 1 ? '1 ausgewählt' : totalSelected + ' ausgewählt';
