@@ -269,7 +269,7 @@ function renderRestaurant(restaurant, day, collapsedSet) {
   }
 
   const websiteLink = restaurant.url
-    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">mehr Infos auf der Website &rarr;</a>`
+    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">Volle Speisekarte auf der Website &rarr;</a>`
     : '';
 
   return `
