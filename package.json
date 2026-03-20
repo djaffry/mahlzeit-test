@@ -1,0 +1,24 @@
+{
+  "name": "forkcast",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp -r data dist/data",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test:ui": "vitest run",
+    "test": "vitest run && cd scraper && npm run test",
+    "scrape": "cd scraper && npm run build && npm run scrape"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "jsdom": "^29.0.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.1",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}
