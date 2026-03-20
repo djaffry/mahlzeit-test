@@ -1,7 +1,7 @@
 /* ── Forkcast — app entry point ────────────────────────── */
 
-// CSS — style.css is loaded from index.html <head> to prevent FOUC.
-// Component CSS is imported here (Vite bundles it into the main CSS chunk).
+// CSS (bundled by Vite)
+import "./styles/style.css"
 import "./styles/carousel.css"
 import "./styles/dice.css"
 import "./styles/share.css"

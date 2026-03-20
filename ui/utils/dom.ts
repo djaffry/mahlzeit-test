@@ -24,7 +24,8 @@ export function isOverlayOpen(): boolean {
   )
 }
 
-const _reduceMotionMq = window.matchMedia("(prefers-reduced-motion: reduce)")
+let _reduceMotionMq: MediaQueryList | null = null
 export function prefersReducedMotion(): boolean {
+  _reduceMotionMq ??= window.matchMedia("(prefers-reduced-motion: reduce)")
   return _reduceMotionMq.matches
 }
