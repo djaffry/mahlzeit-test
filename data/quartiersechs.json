@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-19T21:37:20.978Z",
+  "fetchedAt": "2026-03-20T09:58:39.174Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1233,10 +1233,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Limetten Creme Bruleé",
+              "title": "Limetten Creme Bruleé\nBananen-Karamell Pudding",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1245,10 +1245,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss- Zwetschkenstrudel",
+              "title": "Walnuss- Zwetschkenstrudel\nBrombeer Streuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
