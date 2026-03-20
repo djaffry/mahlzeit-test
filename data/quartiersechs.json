@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-20T11:18:40.324Z",
+  "fetchedAt": "2026-03-20T20:55:56.458Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1136,7 +1136,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Erdäpfelauflauf mit Pilzen & Curcuma • \nKarottensauce",
+              "title": "Erdäpfelgratin mit Pilzen & Curcuma • \nKarottensauce",
               "price": "12,30 €",
               "tags": [
                 "Vegan"

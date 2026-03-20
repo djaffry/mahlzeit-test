@@ -1,8 +1,8 @@
 {
-  "name": "Mittagsmenü – Austria Campus",
-  "short_name": "Mittagsmenü",
-  "description": "Tagesaktuelle Mittagsmenükarten vom Austria Campus Wien",
-  "start_url": "..",
+  "name": "forkcast",
+  "short_name": "forkcast",
+  "description": "Tagesaktuelle Mittagsmenükarten",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#1e1e2e",
   "theme_color": "#f5c2e7",
