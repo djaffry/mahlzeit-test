@@ -22,7 +22,7 @@ export class NoTokenGoogleTranslateAdapter implements TranslationAdapter {
     for (let i = 0; i < texts.length; i++) {
       if (!texts[i] || texts[i].trim() === '') continue
       indexMap.push(i)
-      toTranslate.push(texts[i])
+      toTranslate.push(texts[i].replace(/\n/g, ' '))
     }
 
     if (toTranslate.length === 0) return results

@@ -42,7 +42,6 @@ import {
   syncHeight as carouselSyncHeight,
   cancel as carouselCancel,
   restorePosition as carouselRestorePosition,
-  refreshIndicator as carouselRefreshIndicator,
 } from "./components/carousel"
 import { renderDay, revealCards } from "./components/restaurant-card"
 import {
@@ -77,6 +76,7 @@ import {
 /* ── Module-level state ───────────────────────────────── */
 
 let _restaurants: Restaurant[] = []
+let _overlayDismissed = false
 
 function getMenuRestaurants(): Restaurant[] {
   return _restaurants.filter((r) => r.type !== "link")
@@ -126,14 +126,13 @@ function renderDayTabs(
   tabsEl: HTMLElement,
   weekDates: Date[],
   today: string | null,
-  isWeekend: boolean,
   activeDay: string
 ): void {
   tabsEl.innerHTML =
     DAYS.map((d, i) => {
       const cls = ["tab"]
       if (d === today) cls.push("today")
-      if (!isWeekend && d === activeDay) cls.push("active")
+      if (d === activeDay) cls.push("active")
       const date = formatShortDate(weekDates[i])
       return `<button class="${cls.join(" ")}" data-day="${d}"><span class="tab-full">${t('day.' + d)} <span class="tab-date">${date}</span></span><span class="tab-short">${t('dayShort.' + d)} <span class="tab-date">${date}</span></span><kbd class="kbd">${i + 1}</kbd></button>`
     }).join("") + '<div class="tab-indicator" aria-hidden="true"></div>'
@@ -185,8 +184,7 @@ function renderFooter(latest: string | null, footerEl: HTMLElement): void {
 /* ── Show carousel for a specific day (browse button) ── */
 
 function showCarouselForDay(day: string): void {
-  const carousel = document.getElementById("carousel")
-  if (carousel) carousel.style.display = ""
+  _overlayDismissed = true
   carouselSwitchTo(day)
   carouselRestorePosition(DAYS.indexOf(day as (typeof DAYS)[number]))
   moveInlineMap(DAYS[carouselGetActiveIndex()], carouselGetActivePanel)
@@ -240,18 +238,12 @@ function setupTabSwitching(tabsEl: HTMLElement): void {
     carouselCancel()
     carouselSwitchTo(day)
     shareClearSelection()
-    document.getElementById("weekend-state")?.remove()
-    document.getElementById("stale-state")?.remove()
-    const carousel = document.getElementById("carousel")
-    const wasHidden = carousel?.style.display === "none"
-    if (wasHidden && carousel) carousel.style.display = ""
 
     window.scrollTo({ top: 0, behavior: "smooth" })
     document.querySelectorAll(".dice-pick").forEach((el) => el.classList.remove("dice-pick"))
 
     moveInlineMap(day, carouselGetActivePanel)
     refreshPanel()
-    if (wasHidden) carouselRefreshIndicator()
     carouselGoTo(idx)
     syncInlineMap()
   })
@@ -283,16 +275,23 @@ function applyRefresh(newData: Restaurant[]): void {
   const tabsEl = document.getElementById("day-tabs")!
   const contentEl = document.getElementById("content")!
   const today = getTodayName()
-  const isWeekend = !today
   const dataWeekDates = getDataWeekDates(menuRestaurants)
   const isCurrentWeek = isDataFromCurrentWeek(menuRestaurants)
-  renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeTab)
+  renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, activeTab)
 
   // 5. Re-render panels
   renderDayPanels(contentEl, menuRestaurants, linkRestaurants, activeTab)
 
-  // Restore carousel scroll position (DOM was rebuilt)
-  carouselRestorePosition(DAYS.indexOf(activeTab as (typeof DAYS)[number]))
+  // Restore carousel state — set scrollLeft synchronously before attach
+  // so the tab indicator sees the correct position (no 1-frame flicker)
+  carouselSwitchTo(activeTab)
+  const carousel = document.getElementById("carousel")
+  const activeIdx = DAYS.indexOf(activeTab as (typeof DAYS)[number])
+  if (carousel && activeIdx > 0) carousel.scrollLeft = activeIdx * carousel.offsetWidth
+
+  // Re-attach carousel listeners (DOM was rebuilt)
+  carouselAttach()
+
   moveInlineMap(DAYS[carouselGetActiveIndex()], carouselGetActivePanel)
 
   // 6. Rebuild filters
@@ -303,9 +302,6 @@ function applyRefresh(newData: Restaurant[]): void {
   // 7. Instant reveal
   refreshPanel(true)
 
-  // Re-attach carousel listeners (DOM was rebuilt)
-  carouselAttach()
-
   // 8. Restore scroll
   window.scrollTo(0, scrollY)
 
@@ -315,11 +311,13 @@ function applyRefresh(newData: Restaurant[]): void {
     rebuildInlineMap(getAllRestaurants())
   }
 
-  // 10. Re-evaluate stale/weekend overlay
-  if (isWeekend) {
-    renderWeekendState(contentEl, showCarouselForDay)
-  } else if (!isCurrentWeek) {
-    renderStaleDataState(contentEl, activeTab, showCarouselForDay)
+  // 10. Re-evaluate stale/weekend overlay (skip if user already dismissed it)
+  if (!_overlayDismissed) {
+    if (!today) {
+      renderWeekendState(showCarouselForDay)
+    } else if (!isCurrentWeek) {
+      renderStaleDataState(activeTab, showCarouselForDay)
+    }
   }
 }
 
@@ -364,7 +362,7 @@ async function init(): Promise<void> {
   const activeDay = today || DAYS[0]
   const weekDates = getWeekDates()
 
-  renderDayTabs(tabsEl, weekDates, today, isWeekend, activeDay)
+  renderDayTabs(tabsEl, weekDates, today, activeDay)
 
   // Show skeleton while loading
   renderSkeleton(contentEl)
@@ -391,7 +389,7 @@ async function init(): Promise<void> {
 
     const dataWeekDates = getDataWeekDates(menuRestaurants)
     const isCurrentWeek = isDataFromCurrentWeek(menuRestaurants)
-    renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, isWeekend, activeDay)
+    renderDayTabs(tabsEl, dataWeekDates, isCurrentWeek ? today : null, activeDay)
 
     renderDayPanels(contentEl, menuRestaurants, linkRestaurants, activeDay)
     carouselSwitchTo(activeDay)
@@ -403,11 +401,10 @@ async function init(): Promise<void> {
     moveInlineMap(DAYS[carouselGetActiveIndex()], carouselGetActivePanel)
     refreshPanel()
 
-    const carouselHidden = isWeekend || !isCurrentWeek
-    if (isWeekend) renderWeekendState(contentEl, showCarouselForDay)
-    else if (!isCurrentWeek) renderStaleDataState(contentEl, activeDay, showCarouselForDay)
+    if (isWeekend) renderWeekendState(showCarouselForDay)
+    else if (!isCurrentWeek) renderStaleDataState(activeDay, showCarouselForDay)
 
-    if (!carouselHidden && !document.getElementById("map-card")?.classList.contains("map-collapsed")) {
+    if (!document.getElementById("map-card")?.classList.contains("map-collapsed")) {
       initInlineMap(getAllRestaurants())
     }
 

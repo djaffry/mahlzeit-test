@@ -47,6 +47,7 @@ export function attach(): void {
   _indicator = _tabsEl?.querySelector<HTMLElement>('.tab-indicator') ?? null;
   _lastActiveIdx = _days.indexOf(_tabsEl?.querySelector<HTMLElement>('.tab.active')?.dataset.day ?? _days[0]);
   cacheTabRects();
+  _lastIndicatorScroll = -1;
 
   // Scroll listener for tab indicator
   let rafId: number | null = null;

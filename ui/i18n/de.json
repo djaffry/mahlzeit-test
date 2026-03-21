@@ -30,6 +30,7 @@
   "stale.title": "Neue Menüs noch nicht verfügbar",
   "stale.text": "Die Menüs für diese Woche wurden noch nicht veröffentlicht.<br>Schau später nochmal vorbei!",
   "browse.lastWeek": "Menüs der letzten Woche ansehen",
+  "browse.escKey": "Esc",
   "footer.loaded": "Seite geladen: {{time}}",
   "footer.fetched": "Daten abgerufen: {{time}}",
   "error.loading": "Fehler beim Laden: {{message}}",
