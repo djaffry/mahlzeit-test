@@ -4,7 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import type { Adapter, FetchableAdapter, LinkAdapter, RestaurantData } from './types.js';
 import { isFetchable } from './types.js';
 import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest, saveTagMetadata, saveUnknownTags } from './persistence.js';
-import { log } from './log.js';
+import { log } from '../log.js';
 import { getTagMetadata, isKnownTag } from './tags.js';
 
 type UnknownTagMap = Record<string, { adapter: string; example: string }>;
@@ -81,7 +81,7 @@ function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
     const items = Object.values(days)
       .flatMap(day => day?.categories ?? [])
       .flatMap(cat => cat.items);
-    
+
       for (const { title, tags } of items) {
       for (const tag of tags) {
         if (!isKnownTag(tag) && !found[tag]) {
@@ -93,7 +93,7 @@ function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
   return found;
 }
 
-async function main(): Promise<void> {
+export async function scrape(): Promise<void> {
   await ensureDataDir();
 
   const adapters = await discoverAdapters();
@@ -119,8 +119,3 @@ async function main(): Promise<void> {
   await saveTagMetadata(getTagMetadata());
   await saveUnknownTags(discoverUnknownTags(fetchableResults));
 }
-
-main().catch(err => {
-  log('FAIL', '*', 'fatal', err instanceof Error ? err.message : String(err));
-  process.exit(1);
-});

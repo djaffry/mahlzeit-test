@@ -2,19 +2,14 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { translationConfig } from './translations/config.js'
 import { runTranslation } from './translations/translate.js'
+import { log } from './log.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+const dataDir = resolve(__dirname, '..', '..', 'data')
 
-async function main() {
-  const dataDir = resolve(__dirname, '..', '..', 'data')
-  console.log(`Starting translation pipeline (data dir: ${dataDir})`)
+log('INFO', 'translation', 'init', `data dir: ${dataDir}`)
 
-  try {
-    await runTranslation(dataDir, translationConfig)
-  } catch (error) {
-    console.error('Translation pipeline failed:', error)
-    process.exit(1)
-  }
-}
-
-main()
+runTranslation(dataDir, translationConfig).catch(err => {
+  log('FAIL', 'translation', 'fatal', err instanceof Error ? err.message : String(err))
+  process.exit(1)
+})

@@ -3,10 +3,10 @@ import { dirname, join, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Adapter, RestaurantData, WeekMenu, MenuItem } from './types.js';
 import { WEEKDAYS } from './types.js';
-import { log } from './log.js';
+import { log } from '../log.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..', '..');
+const ROOT = join(__dirname, '..', '..', '..');
 const DATA_DIR = join(ROOT, 'data');
 
 function stripHtml(text: string): string {

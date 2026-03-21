@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs'
 import type { TranslationConfig, TranslationAdapter } from './types.js'
 import { loadCache, saveCache, computeContentHash, getCacheKey } from './cache.js'
 import { log } from '../log.js'
-import type { RestaurantData, Weekday } from '../types.js'
+import type { RestaurantData, Weekday } from '../restaurants/types.js'
 
 export async function runTranslation(dataDir: string, config: TranslationConfig): Promise<void> {
   const { sourceLanguage, targetLanguages, adapter } = config
