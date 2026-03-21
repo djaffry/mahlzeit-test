@@ -8,11 +8,12 @@ import "./styles/share.css"
 
 // Config & constants
 import { config } from "./config"
-import { DAYS, DAY_SHORT } from "./constants"
+import { DAYS } from "./constants"
 import type { Restaurant } from "./types"
 
 // Data layer
-import { fetchMenuData } from "./data/fetcher"
+import { fetchMenuData, fetchLanguages } from "./data/fetcher"
+import { initI18n, getCurrentLanguage, getSourceLanguage, t } from "./i18n/i18n"
 import { initContentHash, startAutoRefresh, flushPendingRefresh } from "./data/auto-refresh"
 
 // Utilities
@@ -24,6 +25,7 @@ import {
   isDataFromCurrentWeek,
   getLatestFetchTime,
   formatShortDate,
+  formatDateTime,
 } from "./utils/date"
 import { escapeHtml, smoothScrollTo, isOverlayOpen } from "./utils/dom"
 import { haptic } from "./utils/haptic"
@@ -52,6 +54,7 @@ import {
   itemMatchesFilters,
 } from "./components/filter-bar"
 import { setupSearchListeners } from "./components/search"
+import { setupLanguageToggle } from "./components/language-toggle"
 import { setupThemeToggle, setupPartyMode } from "./components/theme-toggle"
 import { renderWeekendState, renderStaleDataState } from "./components/weekend-overlay"
 import {
@@ -132,7 +135,7 @@ function renderDayTabs(
       if (d === today) cls.push("today")
       if (!isWeekend && d === activeDay) cls.push("active")
       const date = formatShortDate(weekDates[i])
-      return `<button class="${cls.join(" ")}" data-day="${d}"><span class="tab-full">${d} <span class="tab-date">${date}</span></span><span class="tab-short">${DAY_SHORT[d]} <span class="tab-date">${date}</span></span><kbd class="kbd">${i + 1}</kbd></button>`
+      return `<button class="${cls.join(" ")}" data-day="${d}"><span class="tab-full">${t('day.' + d)} <span class="tab-date">${date}</span></span><span class="tab-short">${t('dayShort.' + d)} <span class="tab-date">${date}</span></span><kbd class="kbd">${i + 1}</kbd></button>`
     }).join("") + '<div class="tab-indicator" aria-hidden="true"></div>'
 }
 
@@ -172,19 +175,11 @@ function refreshPanel(instant = false): void {
 /* ── Footer ───────────────────────────────────────────── */
 
 function renderFooter(latest: string | null, footerEl: HTMLElement): void {
-  const pageLoadTime = new Date().toLocaleString("de-AT", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  })
-  const fetchTime = latest
-    ? new Date(latest).toLocaleString("de-AT", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      })
-    : null
+  const pageLoadTime = formatDateTime(new Date())
+  const fetchTime = latest ? formatDateTime(new Date(latest)) : null
   footerEl.innerHTML = fetchTime
-    ? `Seite geladen: ${escapeHtml(pageLoadTime)}<br>Daten abgerufen: ${fetchTime}`
-    : `Seite geladen: ${escapeHtml(pageLoadTime)}`
+    ? `${escapeHtml(t('footer.loaded', { time: pageLoadTime }))}<br>${escapeHtml(t('footer.fetched', { time: fetchTime }))}`
+    : escapeHtml(t('footer.loaded', { time: pageLoadTime }))
 }
 
 /* ── Show carousel for a specific day (browse button) ── */
@@ -328,9 +323,38 @@ function applyRefresh(newData: Restaurant[]): void {
   }
 }
 
+/* ── Dynamic aria-labels / placeholders ───────────────── */
+
+function updateTranslatedUI(): void {
+  // Title bar
+  document.title = config.title + " - " + config.subtitle
+  const toolbarTitle = document.querySelector(".toolbar-title")
+  if (toolbarTitle) toolbarTitle.textContent = config.title
+  const toolbarSubtitle = document.querySelector(".toolbar-subtitle")
+  if (toolbarSubtitle) toolbarSubtitle.textContent = config.subtitle
+
+  // Aria-labels and placeholders
+  document.getElementById('search-trigger')?.setAttribute('aria-label', t('search.ariaLabel'))
+  document.getElementById('feedback-link')?.setAttribute('aria-label', t('feedback.ariaLabel'))
+  document.getElementById('dice-btn')?.setAttribute('aria-label', t('dice.ariaLabel'))
+  document.getElementById('theme-toggle')?.setAttribute('aria-label', t('theme.ariaLabel'))
+  document.getElementById('party-toggle')?.setAttribute('aria-label', t('party.ariaLabel'))
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null
+  if (searchInput) searchInput.placeholder = t('search.placeholder')
+  const mapTitle = document.querySelector('.map-title')
+  if (mapTitle) mapTitle.textContent = t('map.title')
+  const mapClose = document.getElementById('map-close')
+  if (mapClose) mapClose.setAttribute('aria-label', t('map.close'))
+}
+
 /* ── Init ─────────────────────────────────────────────── */
 
 async function init(): Promise<void> {
+  // Initialize i18n first so all rendering uses translated strings
+  const languages = await fetchLanguages()
+  initI18n(languages)
+  updateTranslatedUI()
+
   const tabsEl = document.getElementById("day-tabs")!
   const contentEl = document.getElementById("content")!
   const footerEl = document.getElementById("footer")!
@@ -349,7 +373,7 @@ async function init(): Promise<void> {
     const loadStart = Date.now()
     const [, allRestaurants] = await Promise.all([
       loadTagsFromUrl(`${config.dataPath}/tags.json`),
-      fetchMenuData(),
+      fetchMenuData(getCurrentLanguage(), getSourceLanguage()),
     ])
 
     _restaurants = allRestaurants
@@ -403,11 +427,35 @@ async function init(): Promise<void> {
       if (isOverlayOpen()) return
       const k = e.key.toLowerCase()
       if (k === "i") document.getElementById("feedback-link")?.click()
+      else if (k === "l") document.getElementById("language-toggle")?.click()
       else if (k === "r") window.location.reload()
     })
 
     carouselAttach()
     renderFooter(getLatestFetchTime(menuRestaurants), footerEl)
+
+    // Share setup (after initI18n so t() works)
+    shareSetup({
+      title: config.title,
+      subtitle: config.subtitle,
+      logo: document.querySelector<HTMLElement>(".toolbar-logo"),
+      getSelectionData: () => getShareSelectionData(carouselGetActivePanel),
+      onClear: () => flushPendingRefresh(applyRefresh),
+    })
+
+    // Language toggle
+    setupLanguageToggle(async () => {
+      updateTranslatedUI()
+      renderFooter(getLatestFetchTime(_restaurants), footerEl)
+
+      try {
+        const newData = await fetchMenuData(getCurrentLanguage(), getSourceLanguage())
+        applyRefresh(newData)
+        renderFooter(getLatestFetchTime(newData), footerEl)
+      } catch {
+        // Keep existing data on failure
+      }
+    })
 
     // Auto-refresh polling
     startAutoRefresh(
@@ -416,18 +464,11 @@ async function init(): Promise<void> {
       applyRefresh
     )
   } catch (err) {
-    contentEl.innerHTML = `<div class="error-global">Fehler beim Laden: ${escapeHtml((err as Error).message)}</div>`
+    contentEl.innerHTML = `<div class="error-global">${escapeHtml(t('error.loading', { message: (err as Error).message }))}</div>`
   }
 }
 
 /* ── Setup & boot ─────────────────────────────────────── */
-
-// Set document title and toolbar text from config
-document.title = config.title + " - " + config.subtitle
-const toolbarTitle = document.querySelector(".toolbar-title")
-if (toolbarTitle) toolbarTitle.textContent = config.title
-const toolbarSubtitle = document.querySelector(".toolbar-subtitle")
-if (toolbarSubtitle) toolbarSubtitle.textContent = config.subtitle
 
 // Party mode runs before init
 setupPartyMode()
@@ -448,15 +489,6 @@ diceSetup({
   smoothScrollTo,
   saveCollapsed,
   getActivePanel: carouselGetActivePanel,
-})
-
-// Share setup
-shareSetup({
-  title: document.querySelector(".toolbar-title")?.textContent?.trim() ?? config.title,
-  subtitle: document.querySelector(".toolbar-subtitle")?.textContent?.trim() ?? config.subtitle,
-  logo: document.querySelector<HTMLElement>(".toolbar-logo"),
-  getSelectionData: () => getShareSelectionData(carouselGetActivePanel),
-  onClear: () => flushPendingRefresh(applyRefresh),
 })
 
 // Theme toggle

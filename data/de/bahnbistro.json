@@ -1,0 +1,315 @@
+{
+  "id": "bahnbistro",
+  "title": "🚂 OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-03-21T20:38:37.164Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Erdäpfelnudeln",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Ratatouille & Rucola, Yofu-Dip"
+            },
+            {
+              "title": "Polpetti",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Spaghetti & Tomatenragout, Grana Padano"
+            },
+            {
+              "title": "Geflügelspieß vom Grill",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "C,M",
+              "description": "Skin-on Wedges & Mexikogemüse, Curry-Honig Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kokos-Ananas Trifle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pinzgauer Kässpätzle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Spätzle & Bierkas, Röstzwiebel & Speck"
+            },
+            {
+              "title": "Lachsschnitte gegrillt",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Grillgemüse & Kräuter-Fraiche, Jungzwiebel"
+            },
+            {
+              "title": "Tofu-Tortilla",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,N",
+              "description": "Hummus, Chili & Gemüse, Bunte Kräuter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Zimtschneckerlkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Bunte Reispfanne",
+              "price": null,
+              "tags": [],
+              "allergens": "F,H,L",
+              "description": "Tomate, Gemüse & Edamame, Cashewkerne"
+            },
+            {
+              "title": "Puten-Cordon Bleu",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": "Pommes frites, Zitrone"
+            },
+            {
+              "title": "Teppanyaki-Beef",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "F,N,R",
+              "description": "Sprossen & Pilze, Duftreis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pasta Primavera",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Zucchini, Erbsen & Pilze, Grana Vegano"
+            },
+            {
+              "title": "Szegediner Krautfleisch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Semmelknödel & Sauerrahm, Frischer Schnittlauch"
+            },
+            {
+              "title": "Crunchy-Chicken Burger",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Huhn, Cheddar & Salat, BB-Big Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Apfel-Streuselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Topfenpalatschinken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Vanillesauce & Himbeeren, Schlagobers"
+            },
+            {
+              "title": "Scholle gebacken",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,F,G,M",
+              "description": "Petersilkartoffeln, Sauce Tartare"
+            },
+            {
+              "title": "Gegrillter Halloumi",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Tzatziki & Antipasti, Focaccia"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeermousse & Cookies",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

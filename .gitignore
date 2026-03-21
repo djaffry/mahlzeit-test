@@ -144,3 +144,5 @@ docs
 
 # Tesseract.js OCR language data
 *.traineddata
+
+.vite

@@ -1,4 +1,5 @@
 import { DAYS } from "../constants"
+import { t } from '../i18n/i18n'
 
 interface OverlayConfig {
   id: string
@@ -22,7 +23,7 @@ function renderOfflineState(
       <div class="weekend-emoji">${cfg.emoji}</div>
       <div class="weekend-title">${cfg.title}</div>
       <div class="weekend-text">${cfg.text}</div>
-      <button class="weekend-browse-btn" id="${btnId}">Menüs der letzten Woche ansehen</button>
+      <button class="weekend-browse-btn" id="${btnId}">${t('browse.lastWeek')}</button>
     </div>`
   )
   document.getElementById(btnId)!.addEventListener("click", function (this: HTMLElement) {
@@ -40,8 +41,8 @@ export function renderWeekendState(
     {
       id: "weekend-state",
       emoji: "\u{1F373}\u{1F372}\u{1F957}",
-      title: "Guten Appetit... am Montag!",
-      text: "Am Wochenende haben die Kantinen Pause.<br>Die Menüs für nächste Woche werden am Montag früh aktualisiert.",
+      title: t('weekend.title'),
+      text: t('weekend.text'),
       browseDay: DAYS.at(-1)!,
     },
     onBrowse
@@ -58,8 +59,8 @@ export function renderStaleDataState(
     {
       id: "stale-state",
       emoji: "\u{1F504}",
-      title: "Neue Menüs noch nicht verfügbar",
-      text: "Die Menüs für diese Woche wurden noch nicht veröffentlicht.<br>Schau später nochmal vorbei!",
+      title: t('stale.title'),
+      text: t('stale.text'),
       browseDay: activeDay,
     },
     onBrowse

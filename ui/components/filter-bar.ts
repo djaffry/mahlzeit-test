@@ -1,5 +1,6 @@
 import { getTagColor, expandFilters, isLoaded } from "../utils/tag-utils"
 import { haptic } from "../utils/haptic"
+import { t } from '../i18n/i18n'
 
 let activeFilters = new Set<string>()
 let _filterCount = 0
@@ -56,14 +57,14 @@ function updateFiltersLabel(): void {
   if (!label) return
   const allActive = activeFilters.size === _filterCount
   label.innerHTML = allActive
-    ? 'Filter <span class="filters-clear">\u25cf</span>'
-    : 'Filter <span class="filters-clear">\u25cb</span>'
+    ? `${t('filter.label')} <span class="filters-clear">\u25cf</span>`
+    : `${t('filter.label')} <span class="filters-clear">\u25cb</span>`
 }
 
 export function buildFilterButtons(allTags: string[]): void {
   const filtersEl = document.getElementById('filters')
   if (!filtersEl) return
-  filtersEl.innerHTML = '<span class="filters-label">Filter</span>'
+  filtersEl.innerHTML = `<span class="filters-label">${t('filter.label')}</span>`
   _allTags = allTags
   _filterCount = allTags.length
 
@@ -72,7 +73,7 @@ export function buildFilterButtons(allTags: string[]): void {
     const btn = document.createElement('button')
     btn.className = 'filter-btn'
     btn.dataset.filter = tag
-    btn.textContent = tag
+    btn.textContent = t('tag.' + tag)
     btn.style.setProperty('--filter-color', `var(--${color})`)
     btn.style.setProperty('--filter-dim', `var(--${color}-dim)`)
     if (activeFilters.has(tag)) btn.classList.add('active')

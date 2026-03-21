@@ -2,7 +2,7 @@ import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 import { config } from "../config"
 import { escapeHtml, smoothScrollTo } from "../utils/dom"
-import { DAY_SHORT } from "../constants"
+import { t } from '../i18n/i18n'
 import { syncHeight } from "./carousel"
 import type { Restaurant } from "../types"
 
@@ -22,11 +22,11 @@ function buildMapPopup(r: Restaurant): string {
     html += `<br><span style="font-size:var(--text-xs);color:var(--text-secondary)">${r.cuisine.map(c => escapeHtml(c)).join(' \u00b7 ')}</span>`
   }
   if (r.availableDays) {
-    html += `<br><span style="font-size:var(--text-xxs);font-weight:600;color:var(--mauve)">nur ${r.availableDays.map(d => DAY_SHORT[d]).join(', ')}</span>`
+    html += `<br><span style="font-size:var(--text-xxs);font-weight:600;color:var(--mauve)">${t('map.onlyDays', { days: r.availableDays.map(d => t('dayShort.' + d)).join(', ') })}</span>`
   }
   const badges: string[] = []
-  if (r.edenred) badges.push('<span style="color:var(--red)">Edenred</span>')
-  if (r.stampCard) badges.push('<span style="color:var(--teal)">Stempelkarte</span>')
+  if (r.edenred) badges.push(`<span style="color:var(--red)">${t('badge.edenred')}</span>`)
+  if (r.stampCard) badges.push(`<span style="color:var(--teal)">${t('badge.stampCard')}</span>`)
   if (badges.length) {
     html += `<br><span style="font-size:var(--text-xxs);font-weight:600">${badges.join(' \u00b7 ')}</span>`
   }

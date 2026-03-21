@@ -1,5 +1,6 @@
 import { config } from "../config"
 import { fetchMenuDataQuiet } from "./fetcher"
+import { getCurrentLanguage, getSourceLanguage, t } from '../i18n/i18n'
 import type { Restaurant } from "../types"
 
 let _lastContentHash: string | null = null
@@ -31,7 +32,7 @@ function showRefreshToast(): void {
   _refreshToast.textContent = ""
   _refreshToast.classList.remove("visible")
   void _refreshToast.offsetWidth
-  _refreshToast.textContent = "Menüs aktualisiert"
+  _refreshToast.textContent = t("refresh.toast")
   _refreshToast.classList.add("visible")
   _refreshToastTimer = setTimeout(() => _refreshToast!.classList.remove("visible"), 3000)
 }
@@ -50,7 +51,7 @@ export function startAutoRefresh(
 ): void {
   async function checkForUpdates(): Promise<void> {
     const current = getCurrentRestaurants()
-    const newData = await fetchMenuDataQuiet(current)
+    const newData = await fetchMenuDataQuiet(current, getCurrentLanguage(), getSourceLanguage())
     if (!newData) return
 
     const newHash = contentHash(newData)

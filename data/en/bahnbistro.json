@@ -4,22 +4,22 @@
   "url": "https://bahnbistro.digiattack.net",
   "type": "full",
   "cuisine": [
-    "Kantine"
+    "Canteen"
   ],
   "coordinates": {
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-03-20T20:55:55.894Z",
+  "fetchedAt": "2026-03-21T19:58:50.307Z",
   "error": null,
   "days": {
     "Montag": {
       "categories": [
         {
-          "name": "Vorspeise",
+          "name": "Appetizer",
           "items": [
             {
-              "title": "Obst",
+              "title": "fruit",
               "price": null,
               "tags": [
                 "Vegan"
@@ -30,41 +30,43 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Champignon-Gemüseragout",
-              "price": null,
-              "tags": [],
-              "allergens": "A,F,L",
-              "description": "Semmelknödel & Plantcream, Frische Kresse"
-            },
-            {
-              "title": "Hühnerfilet Colbert",
+              "title": "Carinthian potato noodles",
               "price": null,
               "tags": [
-                "Huhn"
+                "Vegan"
               ],
-              "allergens": "A,G,L,O",
-              "description": "Kroketten & Kohl-Gemüse, Pfeffercremesoße"
+              "allergens": "A,F",
+              "description": "Ratatouille & rocket, yofu dip"
             },
             {
-              "title": "Bifteki",
+              "title": "Polpetti",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
-              "description": "Tomatenreis & Tzatziki, Frische Petersilie"
+              "allergens": "A,C,F,G",
+              "description": "Spaghetti & tomato ragout, Grana Padano"
+            },
+            {
+              "title": "Grilled chicken skewer",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "C,M",
+              "description": "Skin-on wedges & Mexican vegetables, curry honey dip"
             }
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Beeren-Mascarponecreme",
+              "title": "Coconut Pineapple Trifle",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -74,10 +76,10 @@
     "Dienstag": {
       "categories": [
         {
-          "name": "Vorspeise",
+          "name": "Appetizer",
           "items": [
             {
-              "title": "Obst",
+              "title": "fruit",
               "price": null,
               "tags": [
                 "Vegan"
@@ -88,42 +90,40 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Spinatlasagne",
+              "title": "Pinzgauer Kässpätzle",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,H",
-              "description": "Blattspinat & Bechamel, Grana Vegano"
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Spaetzle & Bierkas, fried onions & bacon"
             },
             {
-              "title": "Zander serbisch",
+              "title": "Grilled salmon slices",
               "price": null,
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,G",
-              "description": "Petersilkartoffeln, Kräuterbutter"
+              "allergens": "D,G",
+              "description": "Grilled vegetables & herb fraiche, spring onions"
             },
             {
-              "title": "THAI Peanut-Chicken",
+              "title": "Tofu tortilla",
               "price": null,
               "tags": [
-                "Huhn"
+                "Vegan"
               ],
-              "allergens": "A,E,F",
-              "description": "Erbsenschoten & Maiskölbchen, Jasminreis"
+              "allergens": "A,F,N",
+              "description": "Hummus, chili & vegetables, colorful herbs"
             }
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Kokos-Buttermilchkuchen",
+              "title": "Cinnamon bun cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,G",
@@ -136,10 +136,10 @@
     "Mittwoch": {
       "categories": [
         {
-          "name": "Vorspeise",
+          "name": "Appetizer",
           "items": [
             {
-              "title": "Obst",
+              "title": "fruit",
               "price": null,
               "tags": [
                 "Vegan"
@@ -150,41 +150,43 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Kisir-Bowl",
+              "title": "Colorful rice pan",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H,N",
-              "description": "Kisir, Falafel & Hummus, Minze & Mandeln"
+              "allergens": "F,H,L",
+              "description": "Tomato, vegetables & edamame, cashews"
             },
             {
-              "title": "Hühnerschnitzerl gebacken",
+              "title": "Turkey Cordon Bleu",
               "price": null,
               "tags": [
-                "Huhn"
+                "Pute"
               ],
-              "allergens": "A,C",
-              "description": "Erbsenreis, Zitrone"
+              "allergens": "A,C,G",
+              "description": "French fries, lemon"
             },
             {
-              "title": "Spinat-Käseknödel",
+              "title": "Teppanyaki beef",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "Rahmsoße & Bacon, Frischer Kren"
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "F,N,R",
+              "description": "Sprouts & mushrooms, fragrant rice"
             }
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Schokomousse & Kirschen",
+              "title": "Tiramisu",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -194,10 +196,10 @@
     "Donnerstag": {
       "categories": [
         {
-          "name": "Vorspeise",
+          "name": "Appetizer",
           "items": [
             {
-              "title": "Obst",
+              "title": "fruit",
               "price": null,
               "tags": [
                 "Vegan"
@@ -208,43 +210,43 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Lemongrass-Chili Tofu",
+              "title": "Pasta Primavera",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,H,N",
-              "description": "Cashewreis & Limette, Jungzwiebel"
+              "allergens": "A,H",
+              "description": "Zucchini, peas & mushrooms, Grana Vegano"
             },
             {
-              "title": "Cremige Schinkenfleckerl",
-              "price": null,
-              "tags": [
-                "Pute"
-              ],
-              "allergens": "A,C,G",
-              "description": "Putenschinken, Obers & Käse, Frischer Schnittlauch"
-            },
-            {
-              "title": "Bratwurst vom Grill",
+              "title": "Szeged cabbage meat",
               "price": null,
               "tags": [],
-              "allergens": "M",
-              "description": "Pusztasalat & SkinOn-Wedges, Zwiebelsenf"
+              "allergens": "A,C,G",
+              "description": "Bread dumplings & sour cream, fresh chives"
+            },
+            {
+              "title": "Crunchy chicken burgers",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Chicken, Cheddar & Salad, BB-Big Sauce"
             }
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Glaced Lemoncake",
+              "title": "Apple crumble cake",
               "price": null,
               "tags": [],
-              "allergens": "A",
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
@@ -254,10 +256,10 @@
     "Freitag": {
       "categories": [
         {
-          "name": "Vorspeise",
+          "name": "Appetizer",
           "items": [
             {
-              "title": "Obst",
+              "title": "fruit",
               "price": null,
               "tags": [
                 "Vegan"
@@ -268,39 +270,41 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Wiener Kipferlauflauf",
+              "title": "Curd cheese pancakes",
               "price": null,
               "tags": [],
               "allergens": "A,C,G",
-              "description": "Mürbes & Topfen, Staubzucker"
+              "description": "Vanilla sauce & raspberries, whipped cream"
             },
             {
-              "title": "Faschiertes Laibchen",
+              "title": "Baked plaice",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "Kartoffelpüree, Röstzwiebel"
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,F,G,M",
+              "description": "Parsley potatoes, tartare sauce"
             },
             {
-              "title": "Krautfleckerl",
+              "title": "Grilled halloumi",
               "price": null,
               "tags": [],
-              "allergens": "A",
-              "description": "Frisches Kraut & Zwiebel, *Süß oder Sauer*"
+              "allergens": "A,G",
+              "description": "Tzatziki & antipasti, focaccia"
             }
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Rahm-Früchtchen",
+              "title": "Strawberry mousse & cookies",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]

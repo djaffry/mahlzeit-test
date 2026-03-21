@@ -9,7 +9,8 @@
     "rootDir": ".",
     "isolatedModules": true,
     "noEmit": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "include": ["ui/**/*.ts"],
   "exclude": ["node_modules", "dist", "scraper"]

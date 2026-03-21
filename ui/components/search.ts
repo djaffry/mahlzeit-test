@@ -1,6 +1,7 @@
 import { escapeHtml, highlightMatch } from "../utils/dom"
 import { renderTags } from "../utils/tag-utils"
 import { isAvailableOnDay } from "../utils/date"
+import { t } from '../i18n/i18n'
 import type { Restaurant } from "../types"
 
 export function openSearch(): void {
@@ -64,7 +65,7 @@ function performSearch(query: string, deps: SearchDeps): void {
   }
 
   if (groups.length === 0) {
-    resultsEl.innerHTML = '<div class="search-no-results">Keine Ergebnisse</div>'
+    resultsEl.innerHTML = `<div class="search-no-results">${t('search.noResults')}</div>`
     return
   }
 

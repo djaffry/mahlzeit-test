@@ -34,7 +34,7 @@ describe('fetchMenuData', () => {
       return { ok: false, status: 404 }
     }))
 
-    const result = await fetchMenuData()
+    const result = await fetchMenuData('de', 'de')
 
     expect(result).toHaveLength(2)
     expect(result[0].id).toBe('r1')
@@ -51,7 +51,7 @@ describe('fetchMenuData', () => {
       return { ok: false, status: 503 }
     }))
 
-    await expect(fetchMenuData()).rejects.toThrow('503')
+    await expect(fetchMenuData('de', 'de')).rejects.toThrow('503')
   })
 
   it('throws when a restaurant JSON returns non-ok response', async () => {
@@ -62,7 +62,7 @@ describe('fetchMenuData', () => {
       return { ok: false, status: 404 }
     }))
 
-    await expect(fetchMenuData()).rejects.toThrow('r1: HTTP 404')
+    await expect(fetchMenuData('de', 'de')).rejects.toThrow('r1: HTTP 404')
   })
 })
 
@@ -72,7 +72,7 @@ describe('fetchMenuDataQuiet', () => {
       throw new Error('Network failure')
     }))
 
-    const result = await fetchMenuDataQuiet([r1, r2])
+    const result = await fetchMenuDataQuiet([r1, r2], 'de', 'de')
     expect(result).toBeNull()
   })
 
@@ -81,7 +81,7 @@ describe('fetchMenuDataQuiet', () => {
       return { ok: false, status: 503 }
     }))
 
-    const result = await fetchMenuDataQuiet([r1, r2])
+    const result = await fetchMenuDataQuiet([r1, r2], 'de', 'de')
     expect(result).toBeNull()
   })
 
@@ -97,7 +97,7 @@ describe('fetchMenuDataQuiet', () => {
       return { ok: false, status: 500 }
     }))
 
-    const result = await fetchMenuDataQuiet([r1, r2])
+    const result = await fetchMenuDataQuiet([r1, r2], 'de', 'de')
 
     expect(result).not.toBeNull()
     expect(result).toHaveLength(2)
@@ -120,7 +120,7 @@ describe('fetchMenuDataQuiet', () => {
       return { ok: false, status: 404 }
     }))
 
-    const result = await fetchMenuDataQuiet([r1, r2])
+    const result = await fetchMenuDataQuiet([r1, r2], 'de', 'de')
 
     expect(result).not.toBeNull()
     expect(result).toHaveLength(2)

@@ -1,4 +1,5 @@
 import { DAYS, DAY_JS_MAP, type DayName } from "../constants"
+import { getLocale } from '../i18n/i18n'
 
 export function getMondayOfWeek(refDate: Date): Date {
   const monday = new Date(refDate)
@@ -32,6 +33,13 @@ export function getDataWeekDates(restaurants: { fetchedAt: string }[]): Date[] {
 
 export function formatShortDate(d: Date): string {
   return `${d.getDate()}.${d.getMonth() + 1}.`
+}
+
+export function formatDateTime(date: Date): string {
+  return date.toLocaleString(getLocale(), {
+    dateStyle: "medium",
+    timeStyle: "short",
+  })
 }
 
 export function getTodayName(): DayName | null {

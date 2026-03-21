@@ -1,0 +1,17 @@
+{
+  "id": "kudamm",
+  "title": "🥙 Ku'damm",
+  "url": "https://maps.app.goo.gl/p9CJgwVnXj5bZUGh7",
+  "type": "link",
+  "cuisine": [
+    "Kebab",
+    "Pizza"
+  ],
+  "coordinates": {
+    "lat": 48.2187,
+    "lon": 16.3925
+  },
+  "fetchedAt": "2026-03-21T19:58:50.815Z",
+  "error": null,
+  "days": {}
+}

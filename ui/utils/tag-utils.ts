@@ -1,6 +1,7 @@
 import { TAG_COLORS, PALETTE } from "../constants"
 import type { TagHierarchy, Restaurant } from "../types"
 import { escapeHtml } from "./dom"
+import { t } from '../i18n/i18n'
 
 let _hierarchy: Record<string, string[]> = {}
 let _loaded = false
@@ -75,7 +76,7 @@ export function tagStyle(tag: string): string {
 
 export function renderTags(tags: string[]): string {
   return tags
-    .map((t) => `<span class="tag" style="${tagStyle(t)}">${escapeHtml(t)}</span>`)
+    .map((tag) => `<span class="tag" style="${tagStyle(tag)}">${escapeHtml(t('tag.' + tag))}</span>`)
     .join("")
 }
 

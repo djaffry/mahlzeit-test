@@ -4,8 +4,8 @@
   "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
   "type": "full",
   "cuisine": [
-    "Café",
-    "Bistro"
+    "Cafe",
+    "bistro"
   ],
   "edenred": true,
   "outdoor": true,
@@ -13,16 +13,16 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-03-20T20:55:56.290Z",
+  "fetchedAt": "2026-03-21T19:58:50.581Z",
   "error": null,
   "days": {
     "Montag": {
       "categories": [
         {
-          "name": "Suppe",
+          "name": "Soup",
           "items": [
             {
-              "title": "Rindsuppe mit Grießnockerl",
+              "title": "Beef soup with semolina dumplings",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -31,7 +31,7 @@
               "description": null
             },
             {
-              "title": "Erdäpfel-Lauch-Safrancremesuppe",
+              "title": "Potato, leek and saffron cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -42,10 +42,10 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Rindfleischlasagne mit Grana Padano, Tomatensauce",
+              "title": "Beef lasagne with Grana Padano, tomato sauce",
               "price": "11,90 €",
               "tags": [
                 "Rindfleisch"
@@ -54,7 +54,7 @@
               "description": null
             },
             {
-              "title": "Buntbarschfilet Piccata auf Zitrus-Kapern-Risotto",
+              "title": "Tilapia fillet piccata on citrus caper risotto",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -63,7 +63,7 @@
               "description": null
             },
             {
-              "title": "Kürbis  Gnocchi mit Schafskäse    , Salat Vom Buffet",
+              "title": "Pumpkin gnocchi with sheep's cheese, salad from the buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
@@ -74,10 +74,10 @@
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Pancakes mit Beerenragout",
+              "title": "Pancakes with berry ragout",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -90,10 +90,10 @@
     "Dienstag": {
       "categories": [
         {
-          "name": "Suppe",
+          "name": "Soup",
           "items": [
             {
-              "title": "Tomaten-Basilikumcremesuppe",
+              "title": "Tomato and basil cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -102,7 +102,7 @@
               "description": null
             },
             {
-              "title": "Rindsuppe mit Leberknödel",
+              "title": "Beef soup with liver dumplings",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -113,10 +113,10 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "BBQ Schweineschopfbraten auf Babyerdäpfel , Griechischer Salat",
+              "title": "BBQ roast pork on baby potatoes, Greek salad",
               "price": "11,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -125,7 +125,7 @@
               "description": null
             },
             {
-              "title": "Spanische Paella (Fisch , Garnele , Muschel,Tintenfisch)",
+              "title": "Spanish paella (fish, shrimp, mussel, squid)",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -134,7 +134,7 @@
               "description": null
             },
             {
-              "title": "Tortelli Gransole Zitrone & Basilikum  ,Salat vom Buffet",
+              "title": "Tortelli Gransole lemon & basil, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -145,10 +145,10 @@
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Valrhona Schokomousse ,Weichsel",
+              "title": "Valrhona chocolate mousse, Vistula",
               "price": "3,90 €",
               "tags": [],
               "allergens": "G,H",
@@ -161,10 +161,10 @@
     "Mittwoch": {
       "categories": [
         {
-          "name": "Suppe",
+          "name": "Soup",
           "items": [
             {
-              "title": "Orangen-Kürbiscremesuppe",
+              "title": "Orange pumpkin cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -173,7 +173,7 @@
               "description": null
             },
             {
-              "title": "Rindsuppe mit Frittaten",
+              "title": "Beef soup with fries",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -184,10 +184,10 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "XXL Hühnerschnitzel auf Mais-Rucola-Reis, Preiselbeeren",
+              "title": "XXL chicken schnitzel on corn-rocket rice, cranberries",
               "price": "11,90",
               "tags": [
                 "Huhn"
@@ -196,7 +196,7 @@
               "description": null
             },
             {
-              "title": "Chili-Garnelen Avocado-Mango-Papayasalat",
+              "title": "Chili shrimp avocado mango papaya salad",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -205,7 +205,7 @@
               "description": null
             },
             {
-              "title": "Spinat-Süßkartoffel-Käse Strudel , Salat von Büffet",
+              "title": "Spinach-sweet potato-cheese strudel, salad from buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -216,10 +216,10 @@
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Omas Apfelkuchen",
+              "title": "Grandma's apple pie",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -232,10 +232,10 @@
     "Donnerstag": {
       "categories": [
         {
-          "name": "Suppe",
+          "name": "Soup",
           "items": [
             {
-              "title": "Kapia-Paprikacremesuppe",
+              "title": "Kapia pepper cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -244,7 +244,7 @@
               "description": null
             },
             {
-              "title": "Rindsuppe mit Kaspressknödeln",
+              "title": "Beef soup with cheese dumplings",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -255,10 +255,10 @@
           ]
         },
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Esterhazy Rindsbraten  mit Hörnchennudeln ,Karotten-Julienne",
+              "title": "Esterhazy roast beef with croissant noodles, carrot julienne",
               "price": "12,90 €",
               "tags": [
                 "Rindfleisch"
@@ -267,7 +267,7 @@
               "description": null
             },
             {
-              "title": "Lachsfiletsteak Parmesan-Walnusskruste  mit Manioka Fritta ,Grilltomaten",
+              "title": "Salmon fillet steak Parmesan walnut crust with cassava fritta, grilled tomatoes",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -276,7 +276,7 @@
               "description": null
             },
             {
-              "title": "Kürbis Erdäpfel Laibchen  auf Melanzanisalat    ,Salat vom Buffet",
+              "title": "Pumpkin potato loaves on aubergine salad, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -287,10 +287,10 @@
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Hausgemachte Topfengolatsche",
+              "title": "Homemade curd cheese",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -303,10 +303,10 @@
     "Freitag": {
       "categories": [
         {
-          "name": "Hauptspeise",
+          "name": "Main course",
           "items": [
             {
-              "title": "Gebackene Zanderfilet ,Petersilerdäpfel ,Rahmgurkensalat",
+              "title": "Baked zander fillet, parsley potatoes, cream cucumber salad",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -315,7 +315,7 @@
               "description": null
             },
             {
-              "title": "Bärlauch-Schupfnudeln mit Mozzarella   ,Salat Becher",
+              "title": "Wild garlic dumplings with mozzarella, salad cup",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -326,10 +326,10 @@
           ]
         },
         {
-          "name": "Dessert",
+          "name": "dessert",
           "items": [
             {
-              "title": "Tages Dessert",
+              "title": "Dessert of the day",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H,E",

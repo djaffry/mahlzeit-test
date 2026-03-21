@@ -4,55 +4,55 @@
   "url": "https://remopizza.at/#Speisekarte",
   "type": "specials",
   "cuisine": [
-    "Neapolitanische Pizza"
+    "Neapolitan pizza"
   ],
   "outdoor": true,
   "coordinates": {
     "lat": 48.2254,
     "lon": 16.3948
   },
-  "fetchedAt": "2026-03-20T20:55:56.330Z",
+  "fetchedAt": "2026-03-21T19:58:50.716Z",
   "error": null,
   "days": {
     "Montag": {
       "categories": [
         {
-          "name": "Aktuelle Specials",
+          "name": "Current specials",
           "items": [
             {
               "title": "Pizza Donna Verde",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, gegrille Zucchini, gegrillte Champignons, rote Zwiebel, gelbe Datterini Passata, Rucola, Basilikum"
+              "description": "Grilled aubergine, grilled zucchini, grilled mushrooms, red onion, yellow datterini passata, rocket, basil"
             },
             {
               "title": "Pizza Fire Starter",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Salami Napoli, Ndujacreme, Ricotta, grüne Pomodori semisecchi, Mozzarella Fior di Latte, Basilikum"
+              "description": "Salami Napoli, Nduja cream, ricotta, green Pomodori semisecchi, Mozzarella Fior di Latte, basil"
             },
             {
-              "title": "Pizza Big Apple",
+              "title": "Big Apple Pizza",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Ital. Roastbeef, Mozzarella Fior di Latte, Stracciatella, Rucola, hausgemachtes Zwiebelchutney, Zitronenöl"
+              "description": "Italian Roast beef, mozzarella fior di latte, stracciatella, rocket, homemade onion chutney, lemon oil"
             },
             {
               "title": "Pizza Melanzani Sunrise",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, Pesto di Pomodori secchi, gelbe Datterini Passata, hausgemachtes Zwiebelchutney, Mozzarella Fior di Latte, Parmesan, Basilikum"
+              "description": "Grilled aubergine, pesto di pomodori secchi, yellow datterini passata, homemade onion chutney, mozzarella fior di latte, parmesan, basil"
             },
             {
               "title": "Pizza Tartufata",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Champignons gegrillt, Trüffelöl, Mozzarella Fior di Latte, Ricotta Tartufata, Rucola, Parmesan Flocken, Basilikum"
+              "description": "Grilled mushrooms, truffle oil, mozzarella fior di latte, ricotta tartufata, rocket, parmesan flakes, basil"
             }
           ]
         }
@@ -61,42 +61,42 @@
     "Dienstag": {
       "categories": [
         {
-          "name": "Aktuelle Specials",
+          "name": "Current specials",
           "items": [
             {
               "title": "Pizza Donna Verde",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, gegrille Zucchini, gegrillte Champignons, rote Zwiebel, gelbe Datterini Passata, Rucola, Basilikum"
+              "description": "Grilled aubergine, grilled zucchini, grilled mushrooms, red onion, yellow datterini passata, rocket, basil"
             },
             {
               "title": "Pizza Fire Starter",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Salami Napoli, Ndujacreme, Ricotta, grüne Pomodori semisecchi, Mozzarella Fior di Latte, Basilikum"
+              "description": "Salami Napoli, Nduja cream, ricotta, green Pomodori semisecchi, Mozzarella Fior di Latte, basil"
             },
             {
-              "title": "Pizza Big Apple",
+              "title": "Big Apple Pizza",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Ital. Roastbeef, Mozzarella Fior di Latte, Stracciatella, Rucola, hausgemachtes Zwiebelchutney, Zitronenöl"
+              "description": "Italian Roast beef, mozzarella fior di latte, stracciatella, rocket, homemade onion chutney, lemon oil"
             },
             {
               "title": "Pizza Melanzani Sunrise",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, Pesto di Pomodori secchi, gelbe Datterini Passata, hausgemachtes Zwiebelchutney, Mozzarella Fior di Latte, Parmesan, Basilikum"
+              "description": "Grilled aubergine, pesto di pomodori secchi, yellow datterini passata, homemade onion chutney, mozzarella fior di latte, parmesan, basil"
             },
             {
               "title": "Pizza Tartufata",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Champignons gegrillt, Trüffelöl, Mozzarella Fior di Latte, Ricotta Tartufata, Rucola, Parmesan Flocken, Basilikum"
+              "description": "Grilled mushrooms, truffle oil, mozzarella fior di latte, ricotta tartufata, rocket, parmesan flakes, basil"
             }
           ]
         }
@@ -105,42 +105,42 @@
     "Mittwoch": {
       "categories": [
         {
-          "name": "Aktuelle Specials",
+          "name": "Current specials",
           "items": [
             {
               "title": "Pizza Donna Verde",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, gegrille Zucchini, gegrillte Champignons, rote Zwiebel, gelbe Datterini Passata, Rucola, Basilikum"
+              "description": "Grilled aubergine, grilled zucchini, grilled mushrooms, red onion, yellow datterini passata, rocket, basil"
             },
             {
               "title": "Pizza Fire Starter",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Salami Napoli, Ndujacreme, Ricotta, grüne Pomodori semisecchi, Mozzarella Fior di Latte, Basilikum"
+              "description": "Salami Napoli, Nduja cream, ricotta, green Pomodori semisecchi, Mozzarella Fior di Latte, basil"
             },
             {
-              "title": "Pizza Big Apple",
+              "title": "Big Apple Pizza",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Ital. Roastbeef, Mozzarella Fior di Latte, Stracciatella, Rucola, hausgemachtes Zwiebelchutney, Zitronenöl"
+              "description": "Italian Roast beef, mozzarella fior di latte, stracciatella, rocket, homemade onion chutney, lemon oil"
             },
             {
               "title": "Pizza Melanzani Sunrise",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, Pesto di Pomodori secchi, gelbe Datterini Passata, hausgemachtes Zwiebelchutney, Mozzarella Fior di Latte, Parmesan, Basilikum"
+              "description": "Grilled aubergine, pesto di pomodori secchi, yellow datterini passata, homemade onion chutney, mozzarella fior di latte, parmesan, basil"
             },
             {
               "title": "Pizza Tartufata",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Champignons gegrillt, Trüffelöl, Mozzarella Fior di Latte, Ricotta Tartufata, Rucola, Parmesan Flocken, Basilikum"
+              "description": "Grilled mushrooms, truffle oil, mozzarella fior di latte, ricotta tartufata, rocket, parmesan flakes, basil"
             }
           ]
         }
@@ -149,42 +149,42 @@
     "Donnerstag": {
       "categories": [
         {
-          "name": "Aktuelle Specials",
+          "name": "Current specials",
           "items": [
             {
               "title": "Pizza Donna Verde",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, gegrille Zucchini, gegrillte Champignons, rote Zwiebel, gelbe Datterini Passata, Rucola, Basilikum"
+              "description": "Grilled aubergine, grilled zucchini, grilled mushrooms, red onion, yellow datterini passata, rocket, basil"
             },
             {
               "title": "Pizza Fire Starter",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Salami Napoli, Ndujacreme, Ricotta, grüne Pomodori semisecchi, Mozzarella Fior di Latte, Basilikum"
+              "description": "Salami Napoli, Nduja cream, ricotta, green Pomodori semisecchi, Mozzarella Fior di Latte, basil"
             },
             {
-              "title": "Pizza Big Apple",
+              "title": "Big Apple Pizza",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Ital. Roastbeef, Mozzarella Fior di Latte, Stracciatella, Rucola, hausgemachtes Zwiebelchutney, Zitronenöl"
+              "description": "Italian Roast beef, mozzarella fior di latte, stracciatella, rocket, homemade onion chutney, lemon oil"
             },
             {
               "title": "Pizza Melanzani Sunrise",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, Pesto di Pomodori secchi, gelbe Datterini Passata, hausgemachtes Zwiebelchutney, Mozzarella Fior di Latte, Parmesan, Basilikum"
+              "description": "Grilled aubergine, pesto di pomodori secchi, yellow datterini passata, homemade onion chutney, mozzarella fior di latte, parmesan, basil"
             },
             {
               "title": "Pizza Tartufata",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Champignons gegrillt, Trüffelöl, Mozzarella Fior di Latte, Ricotta Tartufata, Rucola, Parmesan Flocken, Basilikum"
+              "description": "Grilled mushrooms, truffle oil, mozzarella fior di latte, ricotta tartufata, rocket, parmesan flakes, basil"
             }
           ]
         }
@@ -193,42 +193,42 @@
     "Freitag": {
       "categories": [
         {
-          "name": "Aktuelle Specials",
+          "name": "Current specials",
           "items": [
             {
               "title": "Pizza Donna Verde",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, gegrille Zucchini, gegrillte Champignons, rote Zwiebel, gelbe Datterini Passata, Rucola, Basilikum"
+              "description": "Grilled aubergine, grilled zucchini, grilled mushrooms, red onion, yellow datterini passata, rocket, basil"
             },
             {
               "title": "Pizza Fire Starter",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Salami Napoli, Ndujacreme, Ricotta, grüne Pomodori semisecchi, Mozzarella Fior di Latte, Basilikum"
+              "description": "Salami Napoli, Nduja cream, ricotta, green Pomodori semisecchi, Mozzarella Fior di Latte, basil"
             },
             {
-              "title": "Pizza Big Apple",
+              "title": "Big Apple Pizza",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Ital. Roastbeef, Mozzarella Fior di Latte, Stracciatella, Rucola, hausgemachtes Zwiebelchutney, Zitronenöl"
+              "description": "Italian Roast beef, mozzarella fior di latte, stracciatella, rocket, homemade onion chutney, lemon oil"
             },
             {
               "title": "Pizza Melanzani Sunrise",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Gegrillte Melanzani, Pesto di Pomodori secchi, gelbe Datterini Passata, hausgemachtes Zwiebelchutney, Mozzarella Fior di Latte, Parmesan, Basilikum"
+              "description": "Grilled aubergine, pesto di pomodori secchi, yellow datterini passata, homemade onion chutney, mozzarella fior di latte, parmesan, basil"
             },
             {
               "title": "Pizza Tartufata",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "Champignons gegrillt, Trüffelöl, Mozzarella Fior di Latte, Ricotta Tartufata, Rucola, Parmesan Flocken, Basilikum"
+              "description": "Grilled mushrooms, truffle oil, mozzarella fior di latte, ricotta tartufata, rocket, parmesan flakes, basil"
             }
           ]
         }

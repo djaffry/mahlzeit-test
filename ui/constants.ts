@@ -1,10 +1,6 @@
 export const DAYS = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"] as const
 export type DayName = (typeof DAYS)[number]
 
-export const DAY_SHORT: Record<string, string> = {
-  Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do", Freitag: "Fr",
-}
-
 export const DAY_JS_MAP: Record<number, DayName> = {
   1: "Montag", 2: "Dienstag", 3: "Mittwoch", 4: "Donnerstag", 5: "Freitag",
 }

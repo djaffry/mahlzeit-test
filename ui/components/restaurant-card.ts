@@ -1,7 +1,8 @@
 import { escapeHtml } from "../utils/dom"
 import { isAvailableOnDay } from "../utils/date"
-import { SVG, DAY_SHORT } from "../constants"
+import { SVG } from "../constants"
 import { renderItem } from "./menu-item"
+import { t } from '../i18n/i18n'
 import type { Restaurant, MenuCategory } from "../types"
 
 function renderCategories(categories: MenuCategory[]): string {
@@ -19,9 +20,9 @@ function renderCategories(categories: MenuCategory[]): string {
 function renderRestaurantHeader(restaurant: Restaurant, suffix = ""): string {
   return `
     <div class="restaurant-header">
-      <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(" · ")}</span>` : ""}${restaurant.stampCard ? '<span class="stamp-card-badge">Stempelkarte</span>' : ""}${restaurant.edenred ? '<span class="edenred-badge">Edenred</span>' : ""}${restaurant.outdoor ? '<span class="outdoor-badge">Draußen</span>' : ""}${restaurant.reservationUrl ? '<span class="reservation-badge">Reservierung erforderlich</span>' : ""}${suffix}</div>
+      <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(" · ")}</span>` : ""}${restaurant.stampCard ? `<span class="stamp-card-badge">${t('badge.stampCard')}</span>` : ""}${restaurant.edenred ? `<span class="edenred-badge">${t('badge.edenred')}</span>` : ""}${restaurant.outdoor ? `<span class="outdoor-badge">${t('badge.outdoor')}</span>` : ""}${restaurant.reservationUrl ? `<span class="reservation-badge">${t('badge.reservationRequired')}</span>` : ""}${suffix}</div>
       <div class="restaurant-header-actions">
-        ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="Auf Karte anzeigen" title="Auf Karte anzeigen">${SVG.mapPin}</button>` : ""}
+        ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="${t('map.showOnMap')}" title="${t('map.showOnMap')}">${SVG.mapPin}</button>` : ""}
         ${SVG.collapse}
       </div>
     </div>`
@@ -29,7 +30,7 @@ function renderRestaurantHeader(restaurant: Restaurant, suffix = ""): string {
 
 function renderRestaurantLinks(restaurant: Restaurant): string {
   return restaurant.reservationUrl
-    ? `<div class="link-body"><a class="link-cta" href="${escapeHtml(restaurant.reservationUrl)}" target="_blank" rel="noopener">Online reservieren &rarr;</a></div>`
+    ? `<div class="link-body"><a class="link-cta" href="${escapeHtml(restaurant.reservationUrl)}" target="_blank" rel="noopener">${t('card.reserveOnline')} &rarr;</a></div>`
     : ""
 }
 
@@ -49,13 +50,13 @@ export function renderRestaurant(
   if (hasData) {
     body += `<div class="restaurant-body">${renderCategories(dayData.categories)}</div>`
   } else if (!hasError) {
-    body += '<div class="no-data">(Noch) kein Menü für diesen Tag</div>'
+    body += `<div class="no-data">${t('card.noMenu')}</div>`
   }
 
   const linkText =
     restaurant.type === "specials"
-      ? "nur Specials \u00b7 komplette Karte auf der Website"
-      : "zur Website"
+      ? t('card.specialsLink')
+      : t('card.websiteLink')
   const websiteLink = restaurant.url
     ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${linkText} &rarr;</a>`
     : ""
@@ -79,10 +80,10 @@ export function renderLinkRestaurant(
   const available = isAvailableOnDay(restaurant, day)
   const schedule =
     !available && restaurant.availableDays
-      ? `<span class="link-schedule">nur ${restaurant.availableDays.map((d) => DAY_SHORT[d]).join(", ")}</span>`
+      ? `<span class="link-schedule">${t('map.onlyDays', { days: restaurant.availableDays.map((d) => t('dayShort.' + d)).join(", ") })}</span>`
       : ""
   const websiteLink = restaurant.url
-    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">Speisekarte auf der Website &rarr;</a>`
+    ? `<a class="link-cta" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener">${t('card.linkWebsite')} &rarr;</a>`
     : ""
 
   return `
@@ -99,9 +100,9 @@ export function renderMapCardInGrid(mapCollapsed: boolean): string {
   return `
     <div class="restaurant-card map-card visible settled${mapCollapsed ? " map-collapsed" : ""}">
       <div class="restaurant-header">
-        <div class="restaurant-name">Karte</div>
+        <div class="restaurant-name">${t('map.cardTitle')}</div>
         <div class="restaurant-header-actions">
-          <button class="map-card-btn map-fullscreen-btn" aria-label="Vollbild"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
+          <button class="map-card-btn map-fullscreen-btn" aria-label="${t('map.fullscreen')}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
           <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
         </div>
       </div>

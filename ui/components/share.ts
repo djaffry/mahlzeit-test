@@ -2,10 +2,10 @@
 
 import "../styles/share.css"
 import { DAYS } from "../constants"
-import { config } from "../config"
 import { getMondayOfWeek } from "../utils/date"
 import { isOverlayOpen } from "../utils/dom"
 import { haptic } from "../utils/haptic"
+import { t, getLocale } from '../i18n/i18n'
 
 /* ── Types ─────────────────────────────────────────────── */
 
@@ -61,9 +61,9 @@ const TAG_COLORS: Record<string, { bg: string; fg: string }> = {
 const TAG_COLOR_DEFAULT = { bg: 'rgba(245,194,231,0.18)', fg: '#f5c2e7' }
 
 const BADGE_COLORS: Record<string, string> = {
-  Edenred:     '#f38ba8',
-  Stempelkarte: '#f9e2af',
-  Draußen:     '#94e2d5',
+  'badge.edenred':   '#f38ba8',
+  'badge.stampCard':  '#f9e2af',
+  'badge.outdoor':    '#94e2d5',
 }
 
 const TOAST_DURATION_MS = 2500
@@ -73,8 +73,8 @@ const VIBRATE_MS = 8
 
 let selectionBar: HTMLElement | null = null
 let logoImage: HTMLImageElement | null = null
-let headerTitle = config.title
-let headerSubtitle = config.subtitle
+let headerTitle = ''
+let headerSubtitle = ''
 let _getSelectionData: (() => ShareSelectionData | null) | null = null
 let onClearCallback: (() => void) | null = null
 
@@ -170,7 +170,7 @@ async function shareSelectionAsPicture(): Promise<void> {
   const data = _getSelectionData?.()
   if (!data) return
   const canvas = renderShareImage(data)
-  const filename = data.sections.length === 1 ? data.sections[0].restaurant : 'auswahl'
+  const filename = data.sections.length === 1 ? data.sections[0].restaurant : t('share.filename')
   await exportImage(canvas, filename)
   clearSelection()
 }
@@ -181,7 +181,7 @@ async function shareSelectionAsText(): Promise<void> {
   const text = formatAsText(data)
   try {
     await navigator.clipboard.writeText(text)
-    showToast('Text kopiert', null, text)
+    showToast(t('share.copied'), null, text)
   } catch {
     // Clipboard blocked — try native share (Firefox Android, etc.)
     if (navigator.share) {
@@ -193,7 +193,7 @@ async function shareSelectionAsText(): Promise<void> {
         if ((error as Error).name === 'AbortError') { clearSelection(); return }
       }
     }
-    showToast('Kopieren fehlgeschlagen')
+    showToast(t('share.copyFailed'))
   }
   clearSelection()
 }
@@ -243,15 +243,15 @@ function createSelectionBar(): void {
   bar.setAttribute('role', 'status')
   bar.setAttribute('aria-live', 'polite')
   bar.innerHTML = `
-    <span class="share-bar-label">Share</span>
+    <span class="share-bar-label">${t('share.label')}</span>
     <span class="share-bar-count"></span>
     <div class="share-bar-actions">
-      <button class="share-bar-picture" aria-label="Als Bild teilen (P)" title="Als Bild">
+      <button class="share-bar-picture" aria-label="${t('share.asImage')}" title="${t('share.asImage')}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <kbd class="kbd">P</kbd>
       </button>
-      <button class="share-bar-text" aria-label="Als Text kopieren (T)" title="Als Text">Txt<kbd class="kbd">T</kbd></button>
-      <button class="share-bar-clear" aria-label="Auswahl aufheben (Esc)" title="Aufheben">
+      <button class="share-bar-text" aria-label="${t('share.asText')}" title="${t('share.asText')}">Txt<kbd class="kbd">T</kbd></button>
+      <button class="share-bar-clear" aria-label="${t('share.clearSelection')}" title="${t('share.clearSelection')}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
     </div>`
@@ -276,7 +276,7 @@ function updateSelectionBar(): void {
     }
   }
   const countLabel = selectionBar.querySelector('.share-bar-count')!
-  countLabel.textContent = totalSelected === 1 ? '1 ausgewählt' : totalSelected + ' ausgewählt'
+  countLabel.textContent = t('share.selectedCount', { count: String(totalSelected) })
   selectionBar.classList.toggle('visible', totalSelected > 0)
 }
 
@@ -296,7 +296,7 @@ async function exportImage(canvas: HTMLCanvasElement, name: string): Promise<voi
     try {
       const blob = await canvasToBlob(canvas)
       await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
-      showToast('In Zwischenablage kopiert', canvas)
+      showToast(t('share.clipboardCopied'), canvas)
       return
     } catch { /* fall through */ }
 
@@ -305,7 +305,7 @@ async function exportImage(canvas: HTMLCanvasElement, name: string): Promise<voi
       await navigator.clipboard.write([new ClipboardItem({
         'image/png': new Promise<Blob>(resolve => canvas.toBlob(b => resolve(b!), 'image/png')),
       })])
-      showToast('In Zwischenablage kopiert', canvas)
+      showToast(t('share.clipboardCopied'), canvas)
       return
     } catch { /* fall through */ }
   }
@@ -327,7 +327,7 @@ async function exportImage(canvas: HTMLCanvasElement, name: string): Promise<voi
 
   // Download fallback (Firefox Android, desktop without clipboard support)
   downloadBlob(blob, filename)
-  showToast('Bild heruntergeladen', canvas)
+  showToast(t('share.imageDownloaded'), canvas)
 }
 
 function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: string): void {
@@ -518,12 +518,13 @@ function drawCardHeader(
     }
     for (const badge of restaurant.badges) {
       setFont(ctx, 'bold 20px')
-      const tw = ctx.measureText(badge).width
+      const badgeLabel = t(badge)
+      const tw = ctx.measureText(badgeLabel).width
       const badgeColor = BADGE_COLORS[badge] || COLOR.accent
       if (draw) {
         fillRoundRect(ctx, bx, y, tw + 20, 30, 15, badgeColor + '30')
         ctx.fillStyle = badgeColor
-        ctx.fillText(badge, bx + 10, y + 22)
+        ctx.fillText(badgeLabel, bx + 10, y + 22)
       }
       bx += tw + 28
     }
@@ -589,7 +590,7 @@ function drawCardContent(
         setFont(ctx, '600 20px')
         for (const tag of item.tags) {
           const tagColor = TAG_COLORS[tag] || TAG_COLOR_DEFAULT
-          const tagLabel = tag.toUpperCase()
+          const tagLabel = t('tag.' + tag).toUpperCase()
           const tagWidth = ctx.measureText(tagLabel).width
           if (draw) {
             fillRoundRect(ctx, tx, y, tagWidth + 18, 30, 15, tagColor.bg)
@@ -618,9 +619,9 @@ export function extractRestaurantMeta(cardElement: HTMLElement): { name: string;
   const name = (nameElement.childNodes[0] as Text | undefined)?.textContent?.trim() || ''
   const cuisine = cardElement.querySelector('.cuisine-tag')?.textContent?.trim() || ''
   const badges: string[] = []
-  if (cardElement.querySelector('.edenred-badge')) badges.push('Edenred')
-  if (cardElement.querySelector('.outdoor-badge')) badges.push('Draußen')
-  if (cardElement.querySelector('.stamp-card-badge')) badges.push('Stempelkarte')
+  if (cardElement.querySelector('.edenred-badge')) badges.push('badge.edenred')
+  if (cardElement.querySelector('.outdoor-badge')) badges.push('badge.outdoor')
+  if (cardElement.querySelector('.stamp-card-badge')) badges.push('badge.stampCard')
   return { name, cuisine, badges }
 }
 
@@ -770,7 +771,7 @@ function formatDayLabel(day: string): string {
   const target = new Date(monday)
   target.setDate(monday.getDate() + dayIndex)
 
-  return target.toLocaleDateString('de-AT', {
+  return target.toLocaleDateString(getLocale(), {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
   })
 }

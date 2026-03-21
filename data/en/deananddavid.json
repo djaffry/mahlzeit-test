@@ -4,7 +4,7 @@
   "url": "https://deananddavid.com/austria-campus-wien/",
   "type": "specials",
   "cuisine": [
-    "Salate",
+    "Salads",
     "Bowls"
   ],
   "edenred": true,
@@ -13,7 +13,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-03-20T20:55:56.156Z",
+  "fetchedAt": "2026-03-21T19:58:50.564Z",
   "error": null,
   "days": {
     "Montag": {
@@ -28,14 +28,14 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
             },
             {
               "title": "Korean BBQ Bowl",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
             }
           ]
         }
@@ -53,14 +53,14 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
             },
             {
               "title": "Korean BBQ Bowl",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
             }
           ]
         }
@@ -78,14 +78,14 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
             },
             {
               "title": "Korean BBQ Bowl",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
             }
           ]
         }
@@ -103,14 +103,14 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
             },
             {
               "title": "Korean BBQ Bowl",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
             }
           ]
         }
@@ -128,14 +128,14 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
             },
             {
               "title": "Korean BBQ Bowl",
               "price": null,
               "tags": [],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
             }
           ]
         }

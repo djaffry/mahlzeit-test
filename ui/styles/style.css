@@ -563,6 +563,7 @@ body {
 
 /* Icon buttons (44px touch targets) */
 .theme-toggle,
+.language-toggle,
 .feedback-link,
 .search-trigger,
 .dice-btn,
@@ -582,6 +583,7 @@ body {
   flex-shrink: 0;
 }
 .theme-toggle:hover,
+.language-toggle:hover,
 .feedback-link:hover,
 .search-trigger:hover,
 .dice-btn:hover,
@@ -590,6 +592,9 @@ body {
 .feedback-link svg,
 .search-trigger svg,
 .map-close svg { width: 18px; height: 18px; color: var(--text-secondary); }
+
+/* Language toggle */
+.language-toggle { font-size: var(--text-sm); font-weight: 600; color: var(--text-secondary); }
 
 /* Theme toggle */
 .theme-icon-moon { display: none; }
@@ -951,7 +956,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .filter-btn:active,
   .weekend-browse-btn:active,
-  .theme-toggle:active, .search-trigger:active, .feedback-link:active, .dice-btn:active { background: var(--border); }
+  .theme-toggle:active, .language-toggle:active, .search-trigger:active, .feedback-link:active, .dice-btn:active { background: var(--border); }
 }
 
 @keyframes partyHue { to { filter: hue-rotate(360deg); } }

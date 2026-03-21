@@ -18,7 +18,7 @@ describe("extractRestaurantMeta", () => {
     expect(meta).not.toBeNull()
     expect(meta!.name).toBe("Mano Café")
     expect(meta!.cuisine).toBe("Café · Bistro")
-    expect(meta!.badges).toContain("Edenred")
+    expect(meta!.badges).toContain("badge.edenred")
   })
 
   it("returns null when restaurant-name element is missing", () => {
@@ -45,8 +45,8 @@ describe("extractRestaurantMeta", () => {
         <span class="stamp-card-badge">Stempelkarte</span>
       </div>`
     const meta = extractRestaurantMeta(card)
-    expect(meta!.badges).toContain("Draußen")
-    expect(meta!.badges).toContain("Stempelkarte")
+    expect(meta!.badges).toContain("badge.outdoor")
+    expect(meta!.badges).toContain("badge.stampCard")
   })
 
   it("trims whitespace from name", () => {
@@ -240,7 +240,7 @@ describe("getShareSelectionData", () => {
     expect(result!.sections[0].restaurant).toBe("link-only")
     expect(result!.sections[0].name).toBe("Link-Only Place")
     expect(result!.sections[0].categories).toHaveLength(0)
-    expect(result!.sections[0].badges).toContain("Edenred")
+    expect(result!.sections[0].badges).toContain("badge.edenred")
   })
 
   it("skips hidden items when collecting selected items", () => {

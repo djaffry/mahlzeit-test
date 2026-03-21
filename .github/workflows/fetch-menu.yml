@@ -33,6 +33,11 @@ jobs:
       - run: npm run scrape
         working-directory: scraper
 
+      - name: Translate menu data
+        continue-on-error: true
+        run: npm run translate
+        working-directory: scraper
+
       - name: Commit and push menu data
         run: |
           git config user.name "github-actions[bot]"
