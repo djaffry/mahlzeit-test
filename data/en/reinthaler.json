@@ -11,7 +11,7 @@
     "lat": 48.21892,
     "lon": 16.39778
   },
-  "fetchedAt": "2026-03-21T21:59:05.002Z",
+  "fetchedAt": "2026-03-23T09:15:42.969Z",
   "error": null,
   "days": {
     "Montag": {
@@ -27,11 +27,11 @@
               "description": null
             },
             {
-              "title": "Bauerngröstl",
+              "title": "Blunzengröstl",
               "price": "10,70 €",
               "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "with green salad"
+              "allergens": "A",
+              "description": "with sauerkraut"
             }
           ]
         },
@@ -92,13 +92,11 @@
               "description": null
             },
             {
-              "title": "Baked pork schnitzel",
+              "title": "Farmer's schnitzel",
               "price": "10,70 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
+              "tags": [],
               "allergens": "A,C,G",
-              "description": "with mixed salad"
+              "description": "with parsley potatoes"
             }
           ]
         },
@@ -159,11 +157,13 @@
               "description": null
             },
             {
-              "title": "Szeged cabbage meat",
+              "title": "Pork roulade",
               "price": "10,70 €",
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "with bread dumplings"
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C",
+              "description": "with spirals"
             }
           ]
         },
@@ -224,13 +224,11 @@
               "description": null
             },
             {
-              "title": "Tafelspitz",
+              "title": "Viennese krautfleckerln",
               "price": "10,70 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "A,C,G",
-              "description": "with bread horseradish and boiled potatoes"
+              "tags": [],
+              "allergens": "A,C",
+              "description": "with green salad"
             }
           ]
         },
@@ -303,6 +301,20 @@
               "tags": [],
               "allergens": "A,C,G",
               "description": "with plum roaster"
+            },
+            {
+              "title": "“My thoughts are already at the beginning of the new era – at spring,",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": "with all its beautiful, quiet lightness. Bye, winter – it’s been long enough!” Beginning of spring March 20, 2026 3:45 p.m. Central European time"
+            },
+            {
+              "title": "Menu at Gasthaus Reinthaler Stuwerstrasse 5 1020 Vienna Tel 01/7268282",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
             }
           ]
         },

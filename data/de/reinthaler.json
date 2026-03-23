@@ -11,7 +11,7 @@
     "lat": 48.21892,
     "lon": 16.39778
   },
-  "fetchedAt": "2026-03-21T21:59:36.932Z",
+  "fetchedAt": "2026-03-23T09:15:42.969Z",
   "error": null,
   "days": {
     "Montag": {
@@ -27,11 +27,11 @@
               "description": null
             },
             {
-              "title": "Bauerngröstl",
+              "title": "Blunzengröstl",
               "price": "10,70 €",
               "tags": [],
-              "allergens": "A,C,G,M",
-              "description": "mit grünem salat"
+              "allergens": "A",
+              "description": "mit sauerkraut"
             }
           ]
         },
@@ -92,13 +92,11 @@
               "description": null
             },
             {
-              "title": "Gebackenes schnitzel vom schwein",
+              "title": "Bauernschnitzel",
               "price": "10,70 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
+              "tags": [],
               "allergens": "A,C,G",
-              "description": "mit gemischtem salat"
+              "description": "mit petersilienkartoffel"
             }
           ]
         },
@@ -159,11 +157,13 @@
               "description": null
             },
             {
-              "title": "Szegediner krautfleisch",
+              "title": "Schweinsroulade",
               "price": "10,70 €",
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "mit semmelknödel"
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C",
+              "description": "mit spiralen"
             }
           ]
         },
@@ -224,13 +224,11 @@
               "description": null
             },
             {
-              "title": "Tafelspitz",
+              "title": "Wiener krautfleckerln",
               "price": "10,70 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "A,C,G",
-              "description": "mit semmelkren und salzkartoffel"
+              "tags": [],
+              "allergens": "A,C",
+              "description": "mit grünem salat"
             }
           ]
         },
@@ -303,6 +301,20 @@
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit zwetschkenröster"
+            },
+            {
+              "title": "„mit meinen gedanken bin ich schon beim beginn der neuen zeit – beim frühling,",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": "mit all seiner schönen, stillen leichtigkeit. tschüss, winter – es war lang genug!“ frühlingsbeginn 20.märz 2026 15:45 mitteleuropäische zeit"
+            },
+            {
+              "title": "Menükarte gasthaus reinthaler stuwerstrasse 5 1020 wien tel 01/7268282",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
             }
           ]
         },

@@ -11,7 +11,125 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-21T21:59:04.641Z",
+  "fetchedAt": "2026-03-23T09:15:46.771Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Menu",
+          "items": [
+            {
+              "title": "Spring onion cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "L,N,A,O,G",
+              "description": null
+            },
+            {
+              "title": "Baked chicken schnitzel with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,M,0,6",
+              "description": null
+            },
+            {
+              "title": "Cheese spaetzle with salad",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,C,O,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Daily recommendations",
+          "items": [
+            {
+              "title": "Hokkaido pumpkin coconut milk soup (vegan)",
+              "price": "5,50 € / 7,50 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "O,N,L",
+              "description": null
+            },
+            {
+              "title": "Salad bowl with avocado, sheep cheese and hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Wild garlic penne a la cream (A,‚C,G,O,L,N)",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chili con Tofu (Vegan) with fried potatoes",
+              "price": "16,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "O,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fried potatoes and salad with mustard onion",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Couscous salad with grilled chicken fillet and sheep's cheese",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Penne with salmon strips dillä la creme",
+              "price": "18,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,6,0,D",
+              "description": null
+            },
+            {
+              "title": "Fried slices grilled with buttered olives and parsley potatoes",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Grilled salmon fillet with parsley potatoes and salad",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Chocolate cakes with chocolate sauce and whipped cream",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

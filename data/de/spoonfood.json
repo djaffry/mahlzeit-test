@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-21T21:59:36.980Z",
+  "fetchedAt": "2026-03-23T09:15:44.377Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -46,7 +46,7 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Getrüffelte Karfiol 🤍-Suppe",
+              "title": "Gelbe 💛 Röstpaprika 🫑-Suppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,19 +61,18 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Schweinsbraten vom Ötscherblickschwein mit Rotkraut 💜 & Schupfnudeln",
+              "title": "Salbei 🌿-Süßkartoffel 🍠-Crumble mit Speck 🥓 – optional mit Sauerrahm - dazu ein kleiner Beilagensalat 🥗",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Schweinefleisch"
-              ],
+              "tags": [],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Warmer Topfen-Grieß-Auflauf mit Topaz-Äpfeln 🍎, Rosinen & Vanillesauce 💛",
+              "title": "Tomaten 🍅-Risotto mit getrockneten Tomaten, Mozzarellabällchen & frischem Basilikum 🌿 – optional mit Parmesan",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -84,7 +83,7 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Chicken Korma – in cremiger Cahew-Mandel-Kokos 🥥-Sauce – mit griech. Joghurt, Romanesco 🥦, Zimt 🧡, Kardamom 🤎, Karfiol 🤍& Reis",
+              "title": "Butter Chicken mit Brokkoli 🥦 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
@@ -94,7 +93,7 @@
               "description": null
             },
             {
-              "title": "Gemüse-Curry mit Paprika 🫑, Chinakohl 🥬, Melanzani 🍆, Champignons 🍄‍🟫, grünen Spargel 🌿, Kaiserschoten 🫛, Karotten 🥕, gelben 💛 Rüben & Reis",
+              "title": "Kichererbsen-Tomaten 🍅-Eintopf mit Paprika 🫑, Kreuzkümmel 🤎 & Reis – optional mit Schafskäse",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -109,7 +108,16 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Hirse-Salad Bowl mit gerösteten Karotten 🥕, Rucolasalat 🌿, Vogerlsalat & Tahini-Zitronen 🍋-Dressing",
+              "title": "Bärlauch 🌿-Couscous-Salad Bowl mit getrockneten Tomaten 🍅, Karotten 🥕, Gurken 🥒 & frischer Zitrone 🍋",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Asiatische Glasnudel-Salad Bowl mit Edamame 🫛, Wakame 🌿, Gurken 🥒, Paprika 🫑, Erdnüssen 🥜 & Kürbiskern 🎃-Miso-Limetten 🍋‍🟩-Sesam-Dressing",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
@@ -133,11 +141,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Veganer Chia-Kokos 🥥-Pudding mit Mandelmilch, Kokosflocken & Mango 🥭",
+              "title": "Giotto-Haselnuss-Creme mit Birne 🍐",
               "price": "3,90",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null

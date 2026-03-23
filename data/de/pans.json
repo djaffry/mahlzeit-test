@@ -11,7 +11,125 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-21T21:59:36.782Z",
+  "fetchedAt": "2026-03-23T09:15:46.771Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Frühlingszwiebel Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,N,A,O,G",
+              "description": null
+            },
+            {
+              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,M,0,6",
+              "description": null
+            },
+            {
+              "title": "Käsespätzle mit Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,C,O,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Hokkaido-Kürbis-Kokosmilch-Suppe(Vegan)",
+              "price": "5,50 € / 7,50 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "O,N,L",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Bärlauch-Penne ä la Creme (A,‚C,G,O,L,N)",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chili con Tofu (Vegan) mit Braterdäpfeln",
+              "price": "16,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "O,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Couscous Salat mit gegrilltem Hühnerfilet und Schafskäse",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Penne mit Lachsstreifen-Dillä la Creme",
+              "price": "18,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,6,0,D",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

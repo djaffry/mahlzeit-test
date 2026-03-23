@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-21T21:59:04.790Z",
+  "fetchedAt": "2026-03-23T09:15:44.377Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "One pot meal",
@@ -46,7 +46,7 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Truffled cauliflower 🤍 soup",
+              "title": "Yellow 💛 roasted pepper 🫑 soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,19 +61,18 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Roast pork from the Ötscherblick pig with red cabbage 💜 & Schupfnudeln",
+              "title": "Sage 🌿-sweet potato 🍠-crumble with bacon 🥓 - optionally with sour cream - with a small side salad 🥗",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Schweinefleisch"
-              ],
+              "tags": [],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Warm curd semolina casserole with Topaz apples 🍎, raisins & vanilla sauce 💛",
+              "title": "Tomato 🍅 risotto with dried tomatoes, mozzarella balls & fresh basil 🌿 - optionally with Parmesan",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -84,7 +83,7 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Chicken Korma - in creamy cahew-almond-coconut 🥥 sauce - with Greek yogurt, Romanesco 🥦, cinnamon 🧡, cardamom 🤎, cauliflower 🤍 & rice",
+              "title": "Butter chicken with broccoli 🥦 & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
@@ -94,7 +93,7 @@
               "description": null
             },
             {
-              "title": "Vegetable curry with peppers 🫑, Chinese cabbage 🥬, aubergine 🍆, mushrooms 🍄‍🟫, green asparagus 🌿, snow peas 🫛, carrots 🥕, yellow 💛 beets & rice",
+              "title": "Chickpea and tomato 🍅 stew with peppers 🫑, cumin 🤎 & rice - optionally with sheep's cheese",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -109,7 +108,16 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Millet salad bowl with roasted carrots 🥕, rocket salad 🌿, bird salad & tahini lemon 🍋 dressing",
+              "title": "Wild garlic 🌿 couscous salad bowl with dried tomatoes 🍅, carrots 🥕, cucumbers 🥒 & fresh lemon 🍋",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Asian glass noodle salad bowl with edamame 🫛, wakame 🌿, cucumber 🥒, peppers 🫑, peanuts 🥜 & pumpkin seed 🎃 miso lime 🍋‍🟩 sesame dressing",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
@@ -133,11 +141,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vegan chia-coconut 🥥 pudding with almond milk, coconut flakes & mango 🥭",
+              "title": "Giotto hazelnut cream with pear 🍐",
               "price": "3,90",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
