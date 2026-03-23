@@ -1,5 +1,9 @@
 name: Deploy to GitHub Pages
 
+# Deploys on code changes to main.
+# Data updates are deployed by fetch-and-deploy.yml
+# (GITHUB_TOKEN pushes don't trigger this workflow).
+
 on:
   push:
     branches: [main]
@@ -17,27 +21,40 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "24"
-          cache: "npm"
+          node-version: '24'
+          cache: 'npm'
 
-      - run: npm ci
-      - run: cd scraper && npm ci
-      - run: npm run typecheck
-      - run: npm test
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Install scraper dependencies
+        run: npm ci
+        working-directory: scraper
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
