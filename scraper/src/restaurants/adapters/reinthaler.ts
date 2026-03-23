@@ -161,9 +161,9 @@ function parseText(fullText: string) {
   }
   if (currentDay) currentWeek.push(currentDay);
 
-  // Tagesteller price floats at the very end of the PDF text (visual label)
-  const lastPrice = fullText.trimEnd().match(/€\s*(\d+[.,]\d{2})\s*$/);
-  if (lastPrice) tagestellerPrice = formatPrice(lastPrice[1]);
+  // Tagesteller price is a standalone € line near the end of the PDF, after the menu data
+  const allPrices = [...fullText.matchAll(/^€\s*(\d+[.,]\d{2})\s*$/gm)];
+  if (allPrices.length > 0) tagestellerPrice = formatPrice(allPrices[allPrices.length - 1][1]);
 
   const tagesteller = tagestellerLines.map(raw => {
     const { title, allergens } = extractAllergens(raw.trim());
