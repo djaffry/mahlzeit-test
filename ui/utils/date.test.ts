@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, it, expect, vi, afterEach } from "vitest"
 import { getMondayOfWeek, getWeekDates, formatShortDate, isAvailableOnDay, isDataFromCurrentWeek, getLatestFetchTime } from "./date"
 
 describe("getMondayOfWeek", () => {
@@ -12,6 +12,13 @@ describe("getMondayOfWeek", () => {
   it("returns same day for a Monday", () => {
     const mon = new Date(2026, 2, 16)
     const monday = getMondayOfWeek(mon)
+    expect(monday.getDate()).toBe(16)
+  })
+
+  it("returns Monday for a Sunday", () => {
+    const sun = new Date(2026, 2, 22) // Sunday
+    const monday = getMondayOfWeek(sun)
+    expect(monday.getDay()).toBe(1)
     expect(monday.getDate()).toBe(16)
   })
 })
@@ -46,16 +53,20 @@ describe("isAvailableOnDay", () => {
 })
 
 describe("isDataFromCurrentWeek", () => {
-  // Today's date in the test environment: 2026-03-20 (Friday)
-  // Current week Monday: 2026-03-16
+  afterEach(() => vi.useRealTimers())
 
   it("returns true when fetchedAt is in the current week", () => {
-    // Wednesday of the current week
-    expect(isDataFromCurrentWeek([{ fetchedAt: "2026-03-18T10:00:00Z" }])).toBe(true)
+    vi.useFakeTimers({ now: new Date("2026-03-20T12:00:00Z") }) // Friday
+    expect(isDataFromCurrentWeek([{ fetchedAt: "2026-03-18T10:00:00Z" }])).toBe(true) // Wednesday same week
+  })
+
+  it("returns true on Monday for data fetched that day", () => {
+    vi.useFakeTimers({ now: new Date("2026-03-16T08:00:00Z") }) // Monday
+    expect(isDataFromCurrentWeek([{ fetchedAt: "2026-03-16T07:00:00Z" }])).toBe(true)
   })
 
   it("returns false when fetchedAt is from last week", () => {
-    // Monday of the previous week
+    vi.useFakeTimers({ now: new Date("2026-03-20T12:00:00Z") }) // Friday
     expect(isDataFromCurrentWeek([{ fetchedAt: "2026-03-09T10:00:00Z" }])).toBe(false)
   })
 

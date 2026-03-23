@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
-import { fetchMenuData, fetchMenuDataQuiet } from './fetcher'
+import { fetchMenuData, fetchMenuDataQuiet, fetchLanguages } from './fetcher'
 import type { Restaurant } from '../types'
 
 const makeRestaurant = (id: string): Restaurant => ({
@@ -63,6 +63,37 @@ describe('fetchMenuData', () => {
     }))
 
     await expect(fetchMenuData('de', 'de')).rejects.toThrow('r1: HTTP 404')
+  })
+})
+
+describe('fetchLanguages', () => {
+  it('returns language array on success', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: true,
+      json: async () => ['de', 'en'],
+    })))
+
+    const result = await fetchLanguages()
+    expect(result).toEqual(['de', 'en'])
+  })
+
+  it('falls back to ["de"] when response is not ok', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: false,
+      status: 404,
+    })))
+
+    const result = await fetchLanguages()
+    expect(result).toEqual(['de'])
+  })
+
+  it('falls back to ["de"] on network error', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => {
+      throw new Error('Network failure')
+    }))
+
+    const result = await fetchLanguages()
+    expect(result).toEqual(['de'])
   })
 })
 

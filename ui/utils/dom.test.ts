@@ -37,8 +37,7 @@ describe("highlightMatch", () => {
 
   it("is case insensitive", () => {
     const result = highlightMatch("Wiener Schnitzel", "wiener")
-    expect(result).toContain("<mark>")
-    expect(result.toLowerCase()).toContain("wiener")
+    expect(result).toContain("<mark>Wiener</mark>")
   })
 
   it("escapes regex special characters in the query", () => {
@@ -57,6 +56,11 @@ describe("highlightMatch", () => {
 
   it("returns the original string unchanged when query is not found", () => {
     const result = highlightMatch("Schnitzel", "Gulasch")
+    expect(result).toBe("Schnitzel")
+  })
+
+  it("returns the original string unchanged when query is empty", () => {
+    const result = highlightMatch("Schnitzel", "")
     expect(result).toBe("Schnitzel")
   })
 })

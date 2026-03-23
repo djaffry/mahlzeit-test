@@ -31,12 +31,14 @@ export function isLoaded(): boolean {
   return _loaded
 }
 
-export function getDescendants(tag: string): Set<string> {
+export function getDescendants(tag: string, visited = new Set<string>()): Set<string> {
   const result = new Set([tag])
+  if (visited.has(tag)) return result
+  visited.add(tag)
   const children = _hierarchy[tag]
   if (children) {
     for (const child of children) {
-      for (const d of getDescendants(child)) {
+      for (const d of getDescendants(child, visited)) {
         result.add(d)
       }
     }

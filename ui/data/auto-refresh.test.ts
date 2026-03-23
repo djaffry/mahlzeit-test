@@ -1,5 +1,7 @@
-import { describe, it, expect, vi, beforeEach } from "vitest"
-import { contentHash, flushPendingRefresh } from "./auto-refresh"
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest"
+import { contentHash, flushPendingRefresh, startAutoRefresh, initContentHash } from "./auto-refresh"
+import { fetchMenuDataQuiet } from "./fetcher"
+import { config } from "../config"
 import type { Restaurant } from "../types"
 
 // auto-refresh imports config and fetcher — mock the fetcher to avoid real network calls
@@ -30,9 +32,10 @@ const makeRestaurant = (overrides: Partial<Restaurant> = {}): Restaurant => ({
 /* ── contentHash ────────────────────────────────────────── */
 
 describe("contentHash", () => {
-  it("produces consistent hash for the same data", () => {
-    const restaurants = [makeRestaurant()]
-    expect(contentHash(restaurants)).toBe(contentHash(restaurants))
+  it("produces consistent hash for structurally identical data", () => {
+    const a = [makeRestaurant()]
+    const b = [makeRestaurant()]
+    expect(contentHash(a)).toBe(contentHash(b))
   })
 
   it("produces a different hash when content changes", () => {
@@ -74,5 +77,74 @@ describe("flushPendingRefresh", () => {
     const callback = vi.fn()
     flushPendingRefresh(callback)
     expect(callback).not.toHaveBeenCalled()
+  })
+})
+
+/* ── startAutoRefresh ─────────────────────────────────── */
+
+describe("startAutoRefresh", () => {
+  beforeEach(() => vi.useFakeTimers())
+  afterEach(() => vi.useRealTimers())
+
+  it("calls applyRefresh when fetched data has new content", async () => {
+    const current = [makeRestaurant()]
+    initContentHash(current)
+
+    const updated = [makeRestaurant({ title: "Updated Restaurant" })]
+    vi.mocked(fetchMenuDataQuiet).mockResolvedValueOnce(updated)
+
+    const applyRefresh = vi.fn()
+    startAutoRefresh(() => current, () => false, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+
+    expect(applyRefresh).toHaveBeenCalledWith(updated)
+  })
+
+  it("does not call applyRefresh when content hash is unchanged", async () => {
+    const current = [makeRestaurant()]
+    initContentHash(current)
+
+    vi.mocked(fetchMenuDataQuiet).mockResolvedValueOnce([makeRestaurant()])
+
+    const applyRefresh = vi.fn()
+    startAutoRefresh(() => current, () => false, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+
+    expect(applyRefresh).not.toHaveBeenCalled()
+  })
+
+  it("defers refresh when isRefreshDeferred returns true", async () => {
+    const current = [makeRestaurant()]
+    initContentHash(current)
+
+    const updated = [makeRestaurant({ title: "Deferred Update" })]
+    vi.mocked(fetchMenuDataQuiet).mockResolvedValueOnce(updated)
+
+    const applyRefresh = vi.fn()
+    startAutoRefresh(() => current, () => true, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+
+    expect(applyRefresh).not.toHaveBeenCalled()
+
+    // Flush the pending data
+    flushPendingRefresh(applyRefresh)
+    expect(applyRefresh).toHaveBeenCalledWith(updated)
+  })
+
+  it("does nothing when fetch returns null", async () => {
+    const current = [makeRestaurant()]
+    initContentHash(current)
+
+    vi.mocked(fetchMenuDataQuiet).mockResolvedValueOnce(null)
+
+    const applyRefresh = vi.fn()
+    startAutoRefresh(() => current, () => false, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+
+    expect(applyRefresh).not.toHaveBeenCalled()
   })
 })

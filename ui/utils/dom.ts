@@ -13,6 +13,7 @@ export function smoothScrollTo(el: HTMLElement): void {
 }
 
 export function highlightMatch(html: string, query: string): string {
+  if (!query) return html
   const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi")
   return html.replace(regex, "<mark>$1</mark>")
 }

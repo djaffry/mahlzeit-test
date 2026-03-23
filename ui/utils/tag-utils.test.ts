@@ -9,23 +9,29 @@ describe("tag hierarchy", () => {
     Vegetarisch: ["Vegan"],
   }
 
+  beforeEach(() => loadHierarchy(hierarchy))
+
   it("getDescendants returns all nested children", () => {
-    loadHierarchy(hierarchy)
     const desc = getDescendants("Fleisch")
     expect(desc).toContain("Fleisch")
     expect(desc).toContain("Schweinefleisch")
     expect(desc).toContain("Huhn")
   })
 
+  it("getDescendants handles circular hierarchy without infinite loop", () => {
+    loadHierarchy({ A: ["B"], B: ["A"] })
+    const desc = getDescendants("A")
+    expect(desc).toContain("A")
+    expect(desc).toContain("B")
+  })
+
   it("expandFilters expands all active filters", () => {
-    loadHierarchy(hierarchy)
     const expanded = expandFilters(new Set(["Vegetarisch"]))
     expect(expanded).toContain("Vegetarisch")
     expect(expanded).toContain("Vegan")
   })
 
   it("getParentTags returns hierarchy keys", () => {
-    loadHierarchy(hierarchy)
     expect(getParentTags()).toContain("Fleisch")
     expect(getParentTags()).toContain("Vegetarisch")
   })
