@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-23T10:33:32.057Z",
+  "fetchedAt": "2026-03-24T10:10:30.682Z",
   "error": null,
   "days": {
     "Montag": {
@@ -294,7 +294,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Grilled salmon fillet • Zucchini vegetables • Creamy wild garlic polenta •",
@@ -339,7 +339,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with sheep's cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Peas - mint pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
+              "title": "Ravioli with sheep cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Hazelnut pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -470,10 +470,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Passion fruit cream",
+              "title": "Passion fruit cream, berry groats • Nut oatmeal crumble",
               "price": null,
-              "tags": [],
-              "allergens": "G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -482,10 +484,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "\"Galaktoboureko\" Greek semolina cake",
+              "title": "\"Galaktoboureko\" Greek semolina cake with pear strudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -538,7 +540,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Grilled salmon fillet • Zucchini vegetables • Creamy wild garlic polenta •",
@@ -583,7 +585,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with sheep's cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Peas - mint pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
+              "title": "Ravioli with sheep cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Hazelnut pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -784,7 +786,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Grilled salmon fillet • Zucchini vegetables • Creamy wild garlic polenta •",
@@ -829,7 +831,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with sheep's cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Peas - mint pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
+              "title": "Ravioli with sheep cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Hazelnut pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1032,7 +1034,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Grilled salmon fillet • Zucchini vegetables • Creamy wild garlic polenta •",
@@ -1077,7 +1079,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with sheep's cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Peas - mint pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
+              "title": "Ravioli with sheep cheese and olive filling • Pink pepper pappardelle • Celery gnocchi • Olive oil herbs • Dill sauce • Hazelnut pesto • Herb mushrooms • Caper berries • Dried tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"

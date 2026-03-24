@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-23T19:18:04.086Z",
+  "fetchedAt": "2026-03-24T10:10:30.620Z",
   "error": null,
   "days": {
-    "Montag": {
+    "Dienstag": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -46,7 +46,7 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Gelbe 💛 Röstpaprika 🫑-Suppe",
+              "title": "Tomaten 🍅-Paprika 🫑-Cremesuppe mit Kokosmilch 🥥",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,18 +61,19 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Salbei 🌿-Süßkartoffel 🍠-Crumble mit Speck 🥓 – optional mit Sauerrahm - dazu ein kleiner Beilagensalat 🥗",
+              "title": "BBQ-Hühnerkeulen mit Potatoe Wedges 🥔 & BBQ-Dip | Kräuterdip 🌿",
               "price": "7,90 / 10,90",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Tomaten 🍅-Risotto mit getrockneten Tomaten, Mozzarellabällchen & frischem Basilikum 🌿 – optional mit Parmesan",
+              "title": "Bärlauch 🌿-Spinat 💚-Feta-Quiche mit kleinem Beilagensalat 🥗",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -83,17 +84,17 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Butter Chicken mit Brokkoli 🥦 & Reis",
+              "title": "Teriyaki-Beef mit Brokkoli 🥦, Pak Choi 🥬, Paprika 🫑, Karotten 🥕 & Reis – optional mit Koriander 🌿",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Huhn"
+                "Laktosefrei",
+                "Rindfleisch"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Kichererbsen-Tomaten 🍅-Eintopf mit Paprika 🫑, Kreuzkümmel 🤎 & Reis – optional mit Schafskäse",
+              "title": "High Protein-Bohnen 🫘-Kichererbsen-Stew mit Salbei 🌿, Babykarotten 🥕 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",

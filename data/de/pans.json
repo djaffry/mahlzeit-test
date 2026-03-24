@@ -11,35 +11,37 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-23T19:18:05.272Z",
+  "fetchedAt": "2026-03-24T10:10:32.893Z",
   "error": null,
   "days": {
-    "Montag": {
+    "Dienstag": {
       "categories": [
         {
           "name": "Menü",
           "items": [
             {
-              "title": "Frühlingszwiebel Creme Suppe",
+              "title": "Süßkartoffel-Kokosmilch (Vegan) Suppe",
               "price": null,
-              "tags": [],
-              "allergens": "L,N,A,O,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L,N,O",
               "description": null
             },
             {
-              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat",
+              "title": "Lasagne Bolognese (Rind) mit Mozzarella dazu Salat",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Rindfleisch"
               ],
               "allergens": "A,C,M,0,6",
               "description": null
             },
             {
-              "title": "Käsespätzle mit Salat",
+              "title": "Bärlauch-Risotto mit Salat dazu Parmesan (L,6c,N,0,M)",
               "price": "11,90 €",
               "tags": [],
-              "allergens": "A,6,C,O,M",
+              "allergens": null,
               "description": null
             }
           ]
@@ -93,15 +95,6 @@
                 "Huhn"
               ],
               "allergens": "A,0,M,6",
-              "description": null
-            },
-            {
-              "title": "Penne mit Lachsstreifen-Dillä la Creme",
-              "price": "18,90 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "A,C,6,0,D",
               "description": null
             },
             {

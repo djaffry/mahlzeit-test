@@ -11,35 +11,37 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-23T09:15:46.771Z",
+  "fetchedAt": "2026-03-24T10:10:32.893Z",
   "error": null,
   "days": {
-    "Montag": {
+    "Dienstag": {
       "categories": [
         {
           "name": "Menu",
           "items": [
             {
-              "title": "Spring onion cream soup",
+              "title": "Sweet potato coconut milk (vegan) soup",
               "price": null,
-              "tags": [],
-              "allergens": "L,N,A,O,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L,N,O",
               "description": null
             },
             {
-              "title": "Baked chicken schnitzel with potato salad",
+              "title": "Lasagna Bolognese (beef) with mozzarella and salad",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Rindfleisch"
               ],
               "allergens": "A,C,M,0,6",
               "description": null
             },
             {
-              "title": "Cheese spaetzle with salad",
+              "title": "Wild garlic risotto with salad and parmesan (L,6c,N,0,M)",
               "price": "11,90 €",
               "tags": [],
-              "allergens": "A,6,C,O,M",
+              "allergens": null,
               "description": null
             }
           ]
@@ -93,15 +95,6 @@
                 "Huhn"
               ],
               "allergens": "A,0,M,6",
-              "description": null
-            },
-            {
-              "title": "Penne with salmon strips dillä la creme",
-              "price": "18,90 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "A,C,6,0,D",
               "description": null
             },
             {

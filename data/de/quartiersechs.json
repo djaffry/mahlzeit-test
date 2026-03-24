@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-23T19:18:04.950Z",
+  "fetchedAt": "2026-03-24T10:10:30.682Z",
   "error": null,
   "days": {
     "Montag": {
@@ -339,7 +339,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Erbsen - Minz Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
+              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Haselnuss Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -470,10 +470,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Passionsfruchtcreme",
+              "title": "Passionsfruchtcreme\nBeerengrütze • Nuss-Haferflocken Crumble",
               "price": null,
-              "tags": [],
-              "allergens": "G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -482,10 +484,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "\"Galaktoboureko\"\nGriechischer Grießkuchen",
+              "title": "\"Galaktoboureko\"\nGriechischer Grießkuchen\nBirnenstrudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -583,7 +585,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Erbsen - Minz Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
+              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Haselnuss Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -829,7 +831,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Erbsen - Minz Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
+              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Haselnuss Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1077,7 +1079,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Erbsen - Minz Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
+              "title": "Ravioli mit Schafskäse- Olivenfülle • Rosa Pfeffer Pappardelle • Sellerie Gnocchi •\nOlivenöl Kräuter • Dillsauce • Haselnuss Pesto •\nKräuterseitlinge • Kapernbeeren • getrocknete Tomaten • Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
