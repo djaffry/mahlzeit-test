@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-24T10:10:30.620Z",
+  "fetchedAt": "2026-03-25T10:10:19.769Z",
   "error": null,
   "days": {
-    "Dienstag": {
+    "Mittwoch": {
       "categories": [
         {
           "name": "One pot meal",
@@ -46,7 +46,7 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Tomato 🍅 pepper 🫑 cream soup with coconut milk 🥥",
+              "title": "Jerusalem artichoke 🫚 carrot 🥕 cream soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,16 +61,18 @@
           "name": "Specials",
           "items": [
             {
-              "title": "BBQ chicken legs with potato wedges 🥔 & BBQ dip | Herb dip 🌿",
+              "title": "Chicken biryani with cashews, raisins, almonds, pickled red onions 🧅 & a small side salad 🥗",
               "price": "7,90 / 10,90",
               "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Wild garlic 🌿 spinach 💚 feta quiche with a small side salad 🥗",
+              "title": "Romanesco 🥦 potatoes 🥔 gratin with cheese 🧀 gratinated - with a small side salad 🥗",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
@@ -84,17 +86,16 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Teriyaki beef with broccoli 🥦, pak choy 🥬, peppers 🫑, carrots 🥕 & rice - optionally with coriander 🌿",
+              "title": "Chicken and cream stew with mushrooms 🍄‍🟫, oregano 🌿 & rice",
               "price": "6,90 / 9,90",
               "tags": [
-                "Laktosefrei",
-                "Rindfleisch"
+                "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "High protein beans 🫘 chickpea stew with sage 🌿, baby carrots 🥕 & rice",
+              "title": "Rose vegetables 🥦-Madras - in cashews-coconut 🥥 sauce - with cafiol 🤍, Romanesco, broccoli, ginger 🫚 & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -118,16 +119,6 @@
               "description": null
             },
             {
-              "title": "Asian glass noodle salad bowl with edamame 🫛, wakame 🌿, cucumber 🥒, peppers 🫑, peanuts 🥜 & pumpkin seed 🎃 miso lime 🍋‍🟩 sesame dressing",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": null
-            },
-            {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
@@ -143,6 +134,15 @@
           "items": [
             {
               "title": "Giotto hazelnut cream with pear 🍐",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Raffaello coconut 🥥 cream with raspberry mirror 🍓",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"

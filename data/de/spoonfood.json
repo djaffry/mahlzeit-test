@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-24T11:29:40.623Z",
+  "fetchedAt": "2026-03-25T10:10:19.769Z",
   "error": null,
   "days": {
-    "Dienstag": {
+    "Mittwoch": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -46,7 +46,7 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Tomaten 🍅-Paprika 🫑-Cremesuppe mit Kokosmilch 🥥",
+              "title": "Topinambur 🫚-Karotten 🥕-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,16 +61,18 @@
           "name": "Specials",
           "items": [
             {
-              "title": "BBQ-Hühnerkeulen mit Potatoe Wedges 🥔 & BBQ-Dip | Kräuterdip 🌿",
+              "title": "Hühner-Biryani mit Cashews, Rosinen, Mandeln, gepickelten, roten Zwiebeln 🧅 & kleinem Beilagensalat 🥗",
               "price": "7,90 / 10,90",
               "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Bärlauch 🌿-Spinat 💚-Feta-Quiche mit kleinem Beilagensalat 🥗",
+              "title": "Romanesco 🥦-Erdäpfel 🥔-Gratin mit Käse 🧀 überbacken - dazu ein kleiner Beilagensalat 🥗",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
@@ -84,17 +86,16 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Teriyaki-Beef mit Brokkoli 🥦, Pak Choi 🥬, Paprika 🫑, Karotten 🥕 & Reis – optional mit Koriander 🌿",
+              "title": "Hühner-Rahm-Eintopf mit Pilzen 🍄‍🟫, Oregano 🌿 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
-                "Laktosefrei",
-                "Rindfleisch"
+                "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "High Protein-Bohnen 🫘-Kichererbsen-Stew mit Salbei 🌿, Babykarotten 🥕 & Reis",
+              "title": "Rosengemüse 🥦-Madras – in Cashews-Kokos 🥥-Sauce - mit Kafiol 🤍, Romanesco, Brokkoli, Ingwer 🫚 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -118,16 +119,6 @@
               "description": null
             },
             {
-              "title": "Asiatische Glasnudel-Salad Bowl mit Edamame 🫛, Wakame 🌿, Gurken 🥒, Paprika 🫑, Erdnüssen 🥜 & Kürbiskern 🎃-Miso-Limetten 🍋‍🟩-Sesam-Dressing",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": null
-            },
-            {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
@@ -143,6 +134,15 @@
           "items": [
             {
               "title": "Giotto-Haselnuss-Creme mit Birne 🍐",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Raffaello-Kokos 🥥-Creme mit Himbeerspiegel 🍓",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"

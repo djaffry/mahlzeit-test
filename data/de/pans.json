@@ -11,34 +11,32 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-24T11:29:43.059Z",
+  "fetchedAt": "2026-03-25T10:10:22.502Z",
   "error": null,
   "days": {
-    "Dienstag": {
+    "Mittwoch": {
       "categories": [
         {
           "name": "Menü",
           "items": [
             {
-              "title": "Süßkartoffel-Kokosmilch (Vegan) Suppe",
+              "title": "Bärlauch Creme Suppe",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "L,N,O",
+              "tags": [],
+              "allergens": "L,N,G,A",
               "description": null
             },
             {
-              "title": "Lasagne Bolognese (Rind) mit Mozzarella dazu Salat",
+              "title": "Crispy Chicken auf Erdäpfel-Blattsalat (A,c,M‚0,6,L)",
               "price": "11,90 €",
               "tags": [
-                "Rindfleisch"
+                "Huhn"
               ],
-              "allergens": "A,C,M,0,6",
+              "allergens": null,
               "description": null
             },
             {
-              "title": "Bärlauch-Risotto mit Salat dazu Parmesan (L,6c,N,0,M)",
+              "title": "Thymian-Rahmlinsen mit Wurzelgemüse dazu Serviettenknödel (.,c,N,c,A)",
               "price": "11,90 €",
               "tags": [],
               "allergens": null,
@@ -82,9 +80,34 @@
               "description": null
             },
             {
+              "title": "Bärlauch-Risotto mit Salat dazu Parmesan",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "L,6,N,0,M",
+              "description": null
+            },
+            {
+              "title": "Lasagne Bolognese (Rind) mit Mozzarella dazu Salat (A,c,M‚0,6)",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
               "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel",
               "price": "17,90 €",
               "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Pans Sommersalat mit gegrilltem Hühnerfilet, Mozzarella und Basilikumpesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
               "allergens": "C,O,M",
               "description": null
             },

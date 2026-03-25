@@ -11,34 +11,32 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-24T10:10:32.893Z",
+  "fetchedAt": "2026-03-25T10:10:22.502Z",
   "error": null,
   "days": {
-    "Dienstag": {
+    "Mittwoch": {
       "categories": [
         {
           "name": "Menu",
           "items": [
             {
-              "title": "Sweet potato coconut milk (vegan) soup",
+              "title": "Wild garlic cream soup",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "L,N,O",
+              "tags": [],
+              "allergens": "L,N,G,A",
               "description": null
             },
             {
-              "title": "Lasagna Bolognese (beef) with mozzarella and salad",
+              "title": "Crispy chicken on potato leaf salad (A,c,M‚0.6,L)",
               "price": "11,90 €",
               "tags": [
-                "Rindfleisch"
+                "Huhn"
               ],
-              "allergens": "A,C,M,0,6",
+              "allergens": null,
               "description": null
             },
             {
-              "title": "Wild garlic risotto with salad and parmesan (L,6c,N,0,M)",
+              "title": "Thyme cream lentils with root vegetables and napkin dumplings (.,c,N,c,A)",
               "price": "11,90 €",
               "tags": [],
               "allergens": null,
@@ -82,9 +80,34 @@
               "description": null
             },
             {
+              "title": "Wild garlic risotto with salad and parmesan",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "L,6,N,0,M",
+              "description": null
+            },
+            {
+              "title": "Lasagna Bolognese (beef) with mozzarella and salad (A,c,M‚0.6)",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
               "title": "Cevapcici with fried potatoes and salad with mustard onion",
               "price": "17,90 €",
               "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Pan's summer salad with grilled chicken fillet, mozzarella and basil pesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
               "allergens": "C,O,M",
               "description": null
             },
