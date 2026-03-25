@@ -89,9 +89,9 @@ async function translateRestaurant(
 ): Promise<RestaurantData> {
   const translated = JSON.parse(JSON.stringify(data)) as RestaurantData
 
-  // Collect ALL translatable strings for the entire restaurant in one pass
+  // Collect all translatable strings, deduplicating identical ones
+  // (e.g. allDays() restaurants repeat the same menu for every weekday)
   const texts: string[] = []
-  const cuisineCount = translated.cuisine?.length ?? 0
   for (const c of translated.cuisine ?? []) {
     texts.push(c)
   }
@@ -102,29 +102,29 @@ async function translateRestaurant(
       texts.push(category.name)
       for (const item of category.items) {
         texts.push(item.title)
-        texts.push(item.description ?? '')
+        if (item.description) texts.push(item.description)
       }
     }
   }
 
-  // Single batch call for the whole restaurant
-  const results = await adapter.translateBatch(texts, from, to)
+  const uniqueTexts = [...new Set(texts)]
+  const results = await adapter.translateBatch(uniqueTexts, from, to)
+  const translationMap = new Map(uniqueTexts.map((t, i) => [t, results[i]]))
 
-  // Apply results back in the same order
-  let idx = 0
+  // Apply translations back using the map
   if (translated.cuisine) {
-    translated.cuisine = results.slice(0, cuisineCount)
-    idx = cuisineCount
+    translated.cuisine = translated.cuisine.map(c => translationMap.get(c) ?? c)
   }
   for (const dayKey of (Object.keys(translated.days) as Weekday[])) {
     const day = translated.days[dayKey]
     if (!day?.categories) continue
     for (const category of day.categories) {
-      category.name = results[idx++]
+      category.name = translationMap.get(category.name) ?? category.name
       for (const item of category.items) {
-        item.title = results[idx++]
-        const desc = results[idx++]
-        item.description = desc || item.description
+        item.title = translationMap.get(item.title) ?? item.title
+        if (item.description) {
+          item.description = translationMap.get(item.description) ?? item.description
+        }
       }
     }
   }

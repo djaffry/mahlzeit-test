@@ -4,7 +4,8 @@ const GOOGLE_TRANSLATE_URL = 'https://translate.googleapis.com/translate_a/singl
 const REQUEST_TIMEOUT_MS = 5000
 const INTER_REQUEST_DELAY_MS = 200
 const MAX_CHARS_PER_REQUEST = 4000
-const SEPARATOR = '\n'
+const SEPARATOR = '\n\n'
+const MAX_RETRIES = 2
 
 function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -12,7 +13,6 @@ function sleep(ms: number): Promise<void> {
 
 export class NoTokenGoogleTranslateAdapter implements TranslationAdapter {
   name = 'no-token-google-translate-adapter'
-
 
   async translateBatch(texts: string[], from: string, to: string): Promise<string[]> {
     const indexMap: number[] = []
@@ -52,26 +52,65 @@ export class NoTokenGoogleTranslateAdapter implements TranslationAdapter {
     }
 
     for (let c = 0; c < chunks.length; c++) {
+      const chunk = chunks[c]
+      const indices = chunkIndexMaps[c]
+
       try {
-        const joined = chunks[c].join(SEPARATOR)
-        const translated = await this.translateSingle(joined, from, to)
-        const parts = translated.split(SEPARATOR)
-
-        for (let i = 0; i < chunkIndexMaps[c].length; i++) {
-          if (i < parts.length && parts[i].trim()) {
-            results[chunkIndexMaps[c][i]] = parts[i].trim()
-          }
+        const batchResults = await this.translateChunkBatch(chunk, from, to)
+        for (let i = 0; i < indices.length; i++) {
+          results[indices[i]] = batchResults[i]
         }
-      } catch (error) {
-        console.warn(`Batch translation failed for chunk ${c + 1}/${chunks.length}: ${error}`)
+
+      } catch {
+        // Batch failed or count mismatch — fall back to individual translation
+        for (let i = 0; i < chunk.length; i++) {
+          try {
+            const translated = (await this.translateWithRetry(chunk[i], from, to)).trim()
+            if (translated) {
+              results[indices[i]] = translated
+            }
+          } catch (error) {
+            console.warn(`Individual translation failed for item ${i + 1}/${chunk.length}: ${error}`)
+          }
+          if (i < chunk.length - 1) await sleep(INTER_REQUEST_DELAY_MS)
+        }
       }
 
-      if (c < chunks.length - 1) {
-        await sleep(INTER_REQUEST_DELAY_MS)
-      }
+      if (c < chunks.length - 1) await sleep(INTER_REQUEST_DELAY_MS)
     }
 
     return results
+  }
+
+  private async translateChunkBatch(
+    chunk: string[],
+    from: string,
+    to: string,
+  ): Promise<string[]> {
+    const joined = chunk.join(SEPARATOR)
+    const translated = await this.translateWithRetry(joined, from, to)
+    const parts = translated.trim().split(SEPARATOR).map(p => p.trim())
+
+    if (parts.length !== chunk.length) {
+      throw new Error(`Batch count mismatch: expected ${chunk.length}, got ${parts.length}`)
+    }
+
+    return parts
+  }
+
+  private async translateWithRetry(text: string, from: string, to: string): Promise<string> {
+    let lastError: unknown
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        return await this.translateSingle(text, from, to)
+      } catch (error) {
+        lastError = error
+        if (attempt < MAX_RETRIES) {
+          await sleep(INTER_REQUEST_DELAY_MS * Math.pow(2, attempt + 1))
+        }
+      }
+    }
+    throw lastError
   }
 
   private async translateSingle(text: string, from: string, to: string): Promise<string> {
