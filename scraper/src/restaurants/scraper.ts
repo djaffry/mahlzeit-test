@@ -16,7 +16,24 @@ interface AdapterModule {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ADAPTERS_DIR = join(__dirname, 'adapters');
 const SCRAPE_TIMEOUT_MS = 30_000;
+const MAX_RETRIES = 2;
+const RETRY_DELAY_MS = 2_000;
 
+function extractErrorMessage(err: unknown): string {
+  if (!(err instanceof Error)) return String(err);
+  const parts: string[] = [err.message];
+  const seen = new Set<object>([err]);
+  let cause = err.cause;
+  while (cause instanceof Error && !seen.has(cause)) {
+    seen.add(cause);
+    parts.push(cause.message);
+    cause = cause.cause;
+  }
+  if (cause !== undefined && !(cause instanceof Error)) {
+    parts.push(String(cause));
+  }
+  return parts.join(' → ');
+}
 
 async function discoverAdapters(): Promise<Adapter[]> {
   const files = await readdir(ADAPTERS_DIR);
@@ -38,7 +55,7 @@ async function discoverAdapters(): Promise<Adapter[]> {
       }
       adapters.push(adapter);
     } catch (err) {
-      log('FAIL', file, 'load', err instanceof Error ? err.message : String(err));
+      log('FAIL', file, 'load', extractErrorMessage(err));
     }
   }
   return adapters;
@@ -54,24 +71,36 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
   ]).finally(() => clearTimeout(timer));
 }
 
-async function scrapeFetchableAdapters(adapters: FetchableAdapter[]): Promise<RestaurantData[]> {
-  const results = await Promise.allSettled(
-    adapters.map(async (adapter): Promise<RestaurantData> => {
-      log('INFO', adapter.id, 'fetch', 'starting');
+function delay(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchWithRetry(adapter: FetchableAdapter): Promise<RestaurantData> {
+  let lastErrorMsg = '';
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      if (attempt > 0) {
+        log('INFO', adapter.id, 'fetch', `retry ${attempt}/${MAX_RETRIES}`);
+        await delay(RETRY_DELAY_MS);
+      }
       const days = await withTimeout(adapter.fetchMenu(), SCRAPE_TIMEOUT_MS, adapter.id);
       log('OK', adapter.id, 'fetch', `${Object.keys(days).length} day(s)`);
       return buildRestaurantData(adapter, sanitizeWeekMenu(days), null);
+    } catch (err) {
+      lastErrorMsg = extractErrorMessage(err);
+      log('FAIL', adapter.id, 'fetch', `attempt ${attempt + 1}: ${lastErrorMsg}`);
+    }
+  }
+  return buildRestaurantData(adapter, {}, lastErrorMsg);
+}
+
+async function scrapeFetchableAdapters(adapters: FetchableAdapter[]): Promise<RestaurantData[]> {
+  return Promise.all(
+    adapters.map(async (adapter): Promise<RestaurantData> => {
+      log('INFO', adapter.id, 'fetch', 'starting');
+      return fetchWithRetry(adapter);
     })
   );
-
-  return results.map((result, i) => {
-    if (result.status === 'fulfilled') return result.value;
-
-    const adapter = adapters[i];
-    const errorMsg = result.reason instanceof Error ? result.reason.message : String(result.reason);
-    log('FAIL', adapter.id, 'fetch', errorMsg);
-    return buildRestaurantData(adapter, {}, errorMsg);
-  });
 }
 
 function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
