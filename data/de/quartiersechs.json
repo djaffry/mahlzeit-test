@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-26T10:30:37.957Z",
+  "fetchedAt": "2026-03-26T11:33:58.905Z",
   "error": null,
   "days": {
     "Montag": {
@@ -803,7 +803,7 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Moussaka • \nGurken-Tomatensalat •",
+              "title": "Moussaka vom Rind • \nGurken-Tomatensalat •",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
