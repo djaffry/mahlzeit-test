@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-25T10:10:19.769Z",
+  "fetchedAt": "2026-03-26T10:12:38.427Z",
   "error": null,
   "days": {
-    "Mittwoch": {
+    "Donnerstag": {
       "categories": [
         {
           "name": "One pot meal",
@@ -46,11 +46,10 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Jerusalem artichoke 🫚 carrot 🥕 cream soup",
+              "title": "SpoonFood's Beef Tea (clear beef broth 💪) with vermicelli & chives 🌿",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Rindfleisch"
               ],
               "allergens": null,
               "description": null
@@ -61,21 +60,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Chicken biryani with cashews, raisins, almonds, pickled red onions 🧅 & a small side salad 🥗",
+              "title": "Grenadier march with noodles, potatoes 🥔, dumplings, Viennese sausage, chicken & leek 🌿 - optionally with pickled red onions 🧅 | sour cream",
               "price": "7,90 / 10,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Romanesco 🥦 potatoes 🥔 gratin with cheese 🧀 gratinated - with a small side salad 🥗",
+              "title": "Carnaroli risotto with gyros mushrooms 🍄‍🟫 & braised peppers 🫑",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -86,16 +84,18 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Chicken and cream stew with mushrooms 🍄‍🟫, oregano 🌿 & rice",
+              "title": "Chicken tagine with chickpeas, almonds, raisins, aubergine 🍆, zucchini 🥒, celery 🌿, dates, dried apricots 🍑 & rice",
               "price": "6,90 / 9,90",
               "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Rose vegetables 🥦-Madras - in cashews-coconut 🥥 sauce - with cafiol 🤍, Romanesco, broccoli, ginger 🫚 & rice",
+              "title": "Dal Makhani - beluga lentil dal with kidney beans 🫘, coconut milk 🥥, carrots 🥕, white 🤍 beans & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -110,10 +110,21 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Wild garlic 🌿 couscous salad bowl with dried tomatoes 🍅, carrots 🥕, cucumbers 🥒 & fresh lemon 🍋",
+              "title": "Wild herbs 🌿 quinoa radishes 🫜 salad bowl with citrus 🍋 honey 🍯 dressing",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan"
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gabbage lentil salad bowl with peppers 🫑, radishes 🫜, tomatoes 🍅, pomegranate 🍎, cucumbers 🥒 & fresh parsley 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null

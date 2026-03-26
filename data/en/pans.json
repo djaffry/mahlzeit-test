@@ -11,35 +11,33 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-25T10:10:22.502Z",
+  "fetchedAt": "2026-03-26T10:12:40.388Z",
   "error": null,
   "days": {
-    "Mittwoch": {
+    "Donnerstag": {
       "categories": [
         {
           "name": "Menu",
           "items": [
             {
-              "title": "Wild garlic cream soup",
+              "title": "Carrot-ginger cream soup (L,N,G‚O)",
               "price": null,
               "tags": [],
-              "allergens": "L,N,G,A",
-              "description": null
-            },
-            {
-              "title": "Crispy chicken on potato leaf salad (A,c,M‚0.6,L)",
-              "price": "11,90 €",
-              "tags": [
-                "Huhn"
-              ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Thyme cream lentils with root vegetables and napkin dumplings (.,c,N,c,A)",
+              "title": "Cevapcici with fries and salad with mustard onion",
               "price": "11,90 €",
               "tags": [],
-              "allergens": null,
+              "allergens": "C,M,O",
+              "description": null
+            },
+            {
+              "title": "Penne Arrabiata with Parmesan",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,6,N,C,A",
               "description": null
             }
           ]
@@ -87,37 +85,12 @@
               "description": null
             },
             {
-              "title": "Lasagna Bolognese (beef) with mozzarella and salad (A,c,M‚0.6)",
-              "price": "17,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Cevapcici with fried potatoes and salad with mustard onion",
-              "price": "17,90 €",
-              "tags": [],
-              "allergens": "C,O,M",
-              "description": null
-            },
-            {
               "title": "Pan's summer salad with grilled chicken fillet, mozzarella and basil pesto",
               "price": "18,90 €",
               "tags": [
                 "Huhn"
               ],
               "allergens": "C,O,M",
-              "description": null
-            },
-            {
-              "title": "Couscous salad with grilled chicken fillet and sheep's cheese",
-              "price": "18,90 €",
-              "tags": [
-                "Huhn"
-              ],
-              "allergens": "A,0,M,6",
               "description": null
             },
             {

@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-25T20:09:39.952Z",
+  "fetchedAt": "2026-03-26T10:12:38.427Z",
   "error": null,
   "days": {
-    "Mittwoch": {
+    "Donnerstag": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -46,11 +46,10 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Topinambur 🫚-Karotten 🥕-Cremesuppe",
+              "title": "SpoonFood's Beef-Tea (klare Rinder-Kraftbrühe 💪) mit Fadennulden & Schnittlauch 🌿",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Rindfleisch"
               ],
               "allergens": null,
               "description": null
@@ -61,21 +60,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Hühner-Biryani mit Cashews, Rosinen, Mandeln, gepickelten, roten Zwiebeln 🧅 & kleinem Beilagensalat 🥗",
+              "title": "Grenadiermarsch mit Nudeln, Erdäpfeln 🥔, Knödeln, Wiener Wurst, Huhn & Lauch 🌿 – optional mit eingelegten, roten Zwiebeln 🧅 | Sauerrahm",
               "price": "7,90 / 10,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Romanesco 🥦-Erdäpfel 🥔-Gratin mit Käse 🧀 überbacken - dazu ein kleiner Beilagensalat 🥗",
+              "title": "Carnaroli-Risotto mit Gyros-Pilzen 🍄‍🟫 & geschmorter Paprika 🫑",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -86,16 +84,18 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Hühner-Rahm-Eintopf mit Pilzen 🍄‍🟫, Oregano 🌿 & Reis",
+              "title": "Hühner-Tajine mit Kichererbsen, Mandeln, Rosinen, Melanzani 🍆, Zucchini 🥒, Stangensellerie 🌿, Datteln, getrockneten Marillen 🍑 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Rosengemüse 🥦-Madras – in Cashews-Kokos 🥥-Sauce - mit Kafiol 🤍, Romanesco, Brokkoli, Ingwer 🫚 & Reis",
+              "title": "Dal Makhani - Belugalinsen-Dal mit Kidneybohnen 🫘, Kokosmilch 🥥, Karotten 🥕, weißen 🤍 Bohnen & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -110,10 +110,21 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Bärlauch 🌿-Couscous-Salad Bowl mit getrockneten Tomaten 🍅, Karotten 🥕, Gurken 🥒 & frischer Zitrone 🍋",
+              "title": "Wildkräuter 🌿-Quinoa-Radieschen 🫜-Salad Bowl mit Zitrus 🍋-Honig 🍯-Dressing",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan"
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gabbage-Linsen-Salad Bowl mit Paprika 🫑, Radieschen 🫜, Tomaten 🍅, Granatapfel 🍎, Gurken 🥒 & frischer Petersilie 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
