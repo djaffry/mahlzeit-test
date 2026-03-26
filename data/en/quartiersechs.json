@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-25T10:10:20.188Z",
+  "fetchedAt": "2026-03-26T10:29:02.344Z",
   "error": null,
   "days": {
     "Montag": {
@@ -964,12 +964,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan chocolate mousse • Amarena cherries",
+              "title": "Vegan chocolate mousse • Amarena cherries Greek yogurt • Honey • Nuts",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "F,G,H,O",
               "description": null
             }
           ]
@@ -978,10 +978,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Baklava",
+              "title": "Baklava Vegan Blackberry Streusel Cake Raspberry Streusel Cake",
               "price": null,
-              "tags": [],
-              "allergens": "A,G,H",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
