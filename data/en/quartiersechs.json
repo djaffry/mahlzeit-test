@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-27T10:07:44.872Z",
+  "fetchedAt": "2026-03-27T10:25:50.614Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1087,21 +1087,6 @@
                 "Vegetarisch"
               ],
               "allergens": "A,G,L,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Classic Grill",
-          "items": [
-            {
-              "title": "Beef Minute Steak • Country Chicken Breast • Souvlaki • French Fries • Cole Slaw • BBQ Sauce • Cocktail Sauce • Daily Side Dishes • Fried Chicken Burger • Pumpkin Oil Mayo • Pickles • Roasted Onions",
-              "price": "11,40 €",
-              "tags": [
-                "Rindfleisch",
-                "Huhn"
-              ],
-              "allergens": "A,M,O",
               "description": null
             }
           ]
