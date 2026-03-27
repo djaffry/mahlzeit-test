@@ -11,33 +11,42 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-26T10:12:40.388Z",
+  "fetchedAt": "2026-03-27T10:07:48.082Z",
   "error": null,
   "days": {
-    "Donnerstag": {
+    "Freitag": {
       "categories": [
         {
           "name": "Menu",
           "items": [
             {
-              "title": "Carrot-ginger cream soup (L,N,G‚O)",
+              "title": "Broccoli cream soup",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "O,L,N,G",
               "description": null
             },
             {
-              "title": "Cevapcici with fries and salad with mustard onion",
+              "title": "Salmon fillet fried with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Fish burger with tartare sauce and fries",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "0,A,C,D",
+              "description": null
+            },
+            {
+              "title": "M3: Vegetable curry with chickpeas and basmati rice (.,N,0,6)",
               "price": "11,90 €",
               "tags": [],
-              "allergens": "C,M,O",
-              "description": null
-            },
-            {
-              "title": "Penne Arrabiata with Parmesan",
-              "price": "11,50 €",
-              "tags": [],
-              "allergens": "L,6,N,C,A",
+              "allergens": null,
               "description": null
             }
           ]
@@ -75,6 +84,13 @@
                 "Vegan"
               ],
               "allergens": "O,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fried potatoes and salad with mustard onion (c, m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
               "description": null
             },
             {

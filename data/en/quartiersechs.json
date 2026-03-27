@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-26T11:33:58.905Z",
+  "fetchedAt": "2026-03-27T10:07:44.872Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1191,10 +1191,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Greek rice pudding • raisins • cinnamon",
+              "title": "Greek rice pudding • Raisins • Cinnamon Chocolate Mousse • Amarena cherries",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -1203,12 +1203,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Coconut cupcake",
+              "title": "Coconut Cupcake Baklava",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,O",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]

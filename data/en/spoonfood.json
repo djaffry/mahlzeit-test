@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-26T10:12:38.427Z",
+  "fetchedAt": "2026-03-27T10:07:44.202Z",
   "error": null,
   "days": {
-    "Donnerstag": {
+    "Freitag": {
       "categories": [
         {
           "name": "One pot meal",
@@ -46,10 +46,11 @@
           "name": "Soups",
           "items": [
             {
-              "title": "SpoonFood's Beef Tea (clear beef broth 💪) with vermicelli & chives 🌿",
+              "title": "Lentil and vegetable 🥦🥕🌿 cream soup with coconut milk 🥥",
               "price": "4,20 / 6,20",
               "tags": [
-                "Rindfleisch"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -60,20 +61,19 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Grenadier march with noodles, potatoes 🥔, dumplings, Viennese sausage, chicken & leek 🌿 - optionally with pickled red onions 🧅 | sour cream",
+              "title": "Gnocchi Quattro Formaggi 🧀 with parsley 🌿 - optionally with Parmesan",
               "price": "7,90 / 10,90",
               "tags": [
-                "Huhn"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Carnaroli risotto with gyros mushrooms 🍄‍🟫 & braised peppers 🫑",
+              "title": "Warm bread pudding with white chocolate 🍫, cranberries 🍓 & vanilla sauce 💛",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -84,22 +84,21 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Chicken tagine with chickpeas, almonds, raisins, aubergine 🍆, zucchini 🥒, celery 🌿, dates, dried apricots 🍑 & rice",
+              "title": "Chili con carne with minced beef, kidney beans 🫘, corn 🌽, peppers 🫑 & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei",
-                "Huhn"
+                "Rindfleisch"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Dal Makhani - beluga lentil dal with kidney beans 🫘, coconut milk 🥥, carrots 🥕, white 🤍 beans & rice",
+              "title": "Balsamic lentils with bread dumpling cubes | Rice – optionally with fresh chives 🌿",
               "price": "6,90 / 9,90",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
               "description": null
@@ -144,19 +143,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Giotto hazelnut cream with pear 🍐",
+              "title": "Vegan white peach mousse 🍑 with vanilla 💛, oat milk, coconut flakes 🥥 & apricot",
               "price": "3,90",
               "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Raffaello coconut 🥥 cream with raspberry mirror 🍓",
-              "price": "3,90",
-              "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
               "description": null
