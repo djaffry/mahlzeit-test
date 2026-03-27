@@ -28,8 +28,8 @@ const CONTENT_WIDTH = CANVAS_WIDTH - PADDING * 2
 const LOGO_SIZE = 56
 const FONT_STACK = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
 
-// Catppuccin Mocha — consistent branding regardless of user theme
-const COLOR = {
+// Catppuccin color palettes
+const COLOR_MOCHA = {
   bg:          '#1e1e2e',
   surface:     '#313244',
   text:        '#cdd6f4',
@@ -39,10 +39,21 @@ const COLOR = {
   border:      '#45475a',
   borderLight: '#3b3c50',
 }
+const COLOR_LATTE = {
+  bg:          '#eff1f5',
+  surface:     '#ffffff',
+  text:        '#4c4f69',
+  secondary:   '#6c6f85',
+  muted:       '#9ca0b0',
+  accent:      '#8839ef',
+  border:      '#ccd0da',
+  borderLight: '#e6e9ef',
+}
+let COLOR = COLOR_MOCHA
 const CARD_RADIUS = 12
 const CARD_PADDING = 36
 
-const TAG_COLORS: Record<string, { bg: string; fg: string }> = {
+const TAG_COLORS_MOCHA: Record<string, { bg: string; fg: string }> = {
   Vegan:            { bg: 'rgba(166,227,161,0.18)', fg: '#a6e3a1' },
   Vegetarisch:      { bg: 'rgba(148,226,213,0.18)', fg: '#94e2d5' },
   Fisch:            { bg: 'rgba(137,180,250,0.18)', fg: '#89b4fa' },
@@ -58,13 +69,38 @@ const TAG_COLORS: Record<string, { bg: string; fg: string }> = {
   Glutenfrei:       { bg: 'rgba(249,226,175,0.18)', fg: '#f9e2af' },
   Laktosefrei:      { bg: 'rgba(180,190,254,0.18)', fg: '#b4befe' },
 }
-const TAG_COLOR_DEFAULT = { bg: 'rgba(245,194,231,0.18)', fg: '#f5c2e7' }
+const TAG_COLORS_LATTE: Record<string, { bg: string; fg: string }> = {
+  Vegan:            { bg: 'rgba(64,160,43,0.12)',   fg: '#40a02b' },
+  Vegetarisch:      { bg: 'rgba(23,146,153,0.12)',  fg: '#179299' },
+  Fisch:            { bg: 'rgba(30,102,245,0.10)',  fg: '#1e66f5' },
+  'Meeresfrüchte':  { bg: 'rgba(30,102,245,0.10)',  fg: '#1e66f5' },
+  'Geflügel':       { bg: 'rgba(254,100,11,0.10)',  fg: '#fe640b' },
+  Huhn:             { bg: 'rgba(254,100,11,0.10)',  fg: '#fe640b' },
+  Pute:             { bg: 'rgba(254,100,11,0.10)',  fg: '#fe640b' },
+  Ente:             { bg: 'rgba(254,100,11,0.10)',  fg: '#fe640b' },
+  Fleisch:          { bg: 'rgba(210,15,57,0.10)',   fg: '#d20f39' },
+  Lamm:             { bg: 'rgba(210,15,57,0.10)',   fg: '#d20f39' },
+  Schweinefleisch:  { bg: 'rgba(210,15,57,0.10)',   fg: '#d20f39' },
+  Rindfleisch:      { bg: 'rgba(210,15,57,0.10)',   fg: '#d20f39' },
+  Glutenfrei:       { bg: 'rgba(223,142,29,0.12)',  fg: '#df8e1d' },
+  Laktosefrei:      { bg: 'rgba(114,135,253,0.10)', fg: '#7287fd' },
+}
+let TAG_COLORS: Record<string, { bg: string; fg: string }> = TAG_COLORS_MOCHA
+const TAG_COLOR_DEFAULT_MOCHA = { bg: 'rgba(245,194,231,0.18)', fg: '#f5c2e7' }
+const TAG_COLOR_DEFAULT_LATTE = { bg: 'rgba(136,57,239,0.10)', fg: '#8839ef' }
+let TAG_COLOR_DEFAULT = TAG_COLOR_DEFAULT_MOCHA
 
-const BADGE_COLORS: Record<string, string> = {
+const BADGE_COLORS_MOCHA: Record<string, string> = {
   'badge.edenred':   '#f38ba8',
   'badge.stampCard':  '#f9e2af',
   'badge.outdoor':    '#94e2d5',
 }
+const BADGE_COLORS_LATTE: Record<string, string> = {
+  'badge.edenred':   '#d20f39',
+  'badge.stampCard':  '#df8e1d',
+  'badge.outdoor':    '#179299',
+}
+let BADGE_COLORS: Record<string, string> = BADGE_COLORS_MOCHA
 
 const TOAST_DURATION_MS = 2500
 const VIBRATE_MS = 8
@@ -72,6 +108,8 @@ const VIBRATE_MS = 8
 /* ── Module state ──────────────────────────────────────── */
 
 let selectionBar: HTMLElement | null = null
+let logoImageDark: HTMLImageElement | null = null
+let logoImageLight: HTMLImageElement | null = null
 let logoImage: HTMLImageElement | null = null
 let headerTitle = ''
 let headerSubtitle = ''
@@ -149,6 +187,8 @@ export function setup(deps: {
 }
 
 export function renderShareImage(data: ShareSelectionData): HTMLCanvasElement {
+  applyTheme()
+
   const measureCtx = document.createElement('canvas').getContext('2d')!
   const height = layoutCanvas(measureCtx, data, false)
 
@@ -158,10 +198,20 @@ export function renderShareImage(data: ShareSelectionData): HTMLCanvasElement {
   const ctx = canvas.getContext('2d')!
   ctx.scale(2, 2)
 
-  fillRoundRect(ctx, 0, 0, CANVAS_WIDTH, height, 24, COLOR.bg)
+  ctx.fillStyle = COLOR.bg
+  ctx.fillRect(0, 0, CANVAS_WIDTH, height)
   layoutCanvas(ctx, data, true)
 
   return canvas
+}
+
+function applyTheme(): void {
+  const isLatte = document.documentElement.dataset.theme === 'latte'
+  COLOR = isLatte ? COLOR_LATTE : COLOR_MOCHA
+  TAG_COLORS = isLatte ? TAG_COLORS_LATTE : TAG_COLORS_MOCHA
+  TAG_COLOR_DEFAULT = isLatte ? TAG_COLOR_DEFAULT_LATTE : TAG_COLOR_DEFAULT_MOCHA
+  BADGE_COLORS = isLatte ? BADGE_COLORS_LATTE : BADGE_COLORS_MOCHA
+  logoImage = isLatte ? logoImageLight : logoImageDark
 }
 
 /* ── Selection & sharing ──────────────────────────────── */
@@ -675,15 +725,24 @@ export function getShareSelectionData(getActivePanel: () => HTMLElement | null):
 /* ── Helpers ──────────────────────────────────────────── */
 
 function prepareLogo(svgElement: HTMLElement): void {
+  createLogoImage(svgElement, COLOR_MOCHA, img => { logoImageDark = img })
+  createLogoImage(svgElement, COLOR_LATTE, img => { logoImageLight = img })
+}
+
+function createLogoImage(
+  svgElement: HTMLElement,
+  colors: { accent: string; bg: string },
+  onReady: (img: HTMLImageElement) => void,
+): void {
   const clone = svgElement.cloneNode(true) as SVGElement
   clone.setAttribute('width', '64')
   clone.setAttribute('height', '64')
-  clone.querySelector('.logo-bg')?.setAttribute('fill', COLOR.accent)
-  clone.querySelectorAll('.logo-fg').forEach(el => el.setAttribute('fill', COLOR.bg))
+  clone.querySelector('.logo-bg')?.setAttribute('fill', colors.accent)
+  clone.querySelectorAll('.logo-fg').forEach(el => el.setAttribute('fill', colors.bg))
   const blob = new Blob([clone.outerHTML], { type: 'image/svg+xml' })
   const blobUrl = URL.createObjectURL(blob)
   const img = new Image()
-  img.onload = () => { logoImage = img; URL.revokeObjectURL(blobUrl) }
+  img.onload = () => { onReady(img); URL.revokeObjectURL(blobUrl) }
   img.src = blobUrl
 }
 

@@ -2,7 +2,7 @@
 
 :root {
   --share-preview-bg: var(--bg, #1e1e2e);
-  --share-preview-text: #cdd6f4;
+  --share-preview-text: var(--text, #cdd6f4);
 }
 
 /* Selection highlight — accent text only */
