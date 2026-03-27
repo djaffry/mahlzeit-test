@@ -16,6 +16,8 @@ const PRICE_STANDALONE_RE = /^€\s*(\d+[.,]\d{2})\s*$/;
 const TAGESTELLER_RE = /^TAGESTELLER\b/i;
 const SECTION_RE = /^MEN(?:Ü|U)\s+UND\s+TAGESTELLER/i;
 const DISCLAIMER_RE = /^BITTE\s+UM\s+VERST/i;
+const FOOTER_RE = /^MEN[ÜU]KARTE\s+GASTHAUS/i;
+const SAYING_RE = /^[„"]/;
 
 interface ParsedDish {
   title: string;
@@ -122,10 +124,12 @@ function parseText(fullText: string) {
   let currentWeek = week1;
   let currentDay: DayBlock | null = null;
   let inTavesteller = false;
+  let skipRemainingLines = false;
 
   for (const line of lines) {
     if (SECTION_RE.test(line)) {
       if (currentDay) { currentWeek.push(currentDay); currentDay = null; }
+      skipRemainingLines = false;
       continue;
     }
 
@@ -136,6 +140,7 @@ function parseText(fullText: string) {
 
     if (DISCLAIMER_RE.test(line)) {
       inTavesteller = false;
+      skipRemainingLines = false;
       currentWeek = week2;
       continue;
     }
@@ -150,10 +155,23 @@ function parseText(fullText: string) {
       if (currentDay) currentWeek.push(currentDay);
       const weekday = DAY_MAP[dayMatch[1]];
       currentDay = { weekday, lines: [] };
+      skipRemainingLines = false;
       continue;
     }
 
+    if (skipRemainingLines) continue;
+
     if (line === 'TAGESSUPPE') continue;
+
+    if (FOOTER_RE.test(line)) {
+      if (currentDay) { currentWeek.push(currentDay); currentDay = null; }
+      break;
+    }
+
+    if (SAYING_RE.test(line)) {
+      skipRemainingLines = true;
+      continue;
+    }
 
     if (currentDay) {
       currentDay.lines.push(line);
