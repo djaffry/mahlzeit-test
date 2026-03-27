@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-27T10:25:50.614Z",
+  "fetchedAt": "2026-03-27T11:27:35.214Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1140,34 +1140,6 @@
                 "Vegetarisch"
               ],
               "allergens": "O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl station",
-          "items": [
-            {
-              "title": "Create your own Bowl Fresh Nishiki rice • Couscous • vegan sauces",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl topping",
-          "items": [
-            {
-              "title": "\"Dakgangjeong\" - Sweet Crispy Korean Fried Chicken • Oven-fried sweet potato",
-              "price": null,
-              "tags": [
-                "Geflügel"
-              ],
-              "allergens": "G",
               "description": null
             }
           ]
