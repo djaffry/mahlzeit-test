@@ -11,7 +11,7 @@
     "lat": 48.21892,
     "lon": 16.39778
   },
-  "fetchedAt": "2026-03-27T11:27:33.851Z",
+  "fetchedAt": "2026-03-27T20:50:33.193Z",
   "error": null,
   "days": {
     "Montag": {
@@ -301,20 +301,6 @@
               "tags": [],
               "allergens": "A,C,G",
               "description": "mit zwetschkenröster"
-            },
-            {
-              "title": "„mit meinen gedanken bin ich schon beim beginn der neuen zeit – beim frühling,",
-              "price": "12,50 €",
-              "tags": [],
-              "allergens": null,
-              "description": "mit all seiner schönen, stillen leichtigkeit. tschüss, winter – es war lang genug!“ frühlingsbeginn 20.märz 2026 15:45 mitteleuropäische zeit"
-            },
-            {
-              "title": "Menükarte gasthaus reinthaler stuwerstrasse 5 1020 wien tel 01/7268282",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
             }
           ]
         },

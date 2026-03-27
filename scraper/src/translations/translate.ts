@@ -1,7 +1,10 @@
-import { readFile, writeFile, mkdir, copyFile, unlink } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, copyFile, access } from 'node:fs/promises'
 import { join } from 'node:path'
-import { existsSync } from 'node:fs'
 import type { TranslationConfig, TranslationAdapter } from './types.js'
+
+async function fileExists(path: string): Promise<boolean> {
+  try { await access(path); return true } catch { return false }
+}
 import { loadCache, saveCache, computeContentHash, getCacheKey } from './cache.js'
 import { log } from '../log.js'
 import type { RestaurantData, Weekday } from '../restaurants/types.js'
@@ -15,15 +18,6 @@ export async function runTranslation(dataDir: string, config: TranslationConfig)
   const restaurantIds: string[] = JSON.parse(indexRaw)
 
   const sourceLangDir = join(dataDir, sourceLanguage)
-  await mkdir(sourceLangDir, { recursive: true })
-
-  for (const id of restaurantIds) {
-    const flatPath = join(dataDir, `${id}.json`)
-    if (existsSync(flatPath)) {
-      await copyFile(flatPath, join(sourceLangDir, `${id}.json`))
-    }
-  }
-
   const languages = [sourceLanguage, ...targetLanguages]
   await writeFile(join(dataDir, 'languages.json'), JSON.stringify(languages) + '\n', 'utf-8')
 
@@ -44,7 +38,7 @@ export async function runTranslation(dataDir: string, config: TranslationConfig)
         const cacheKey = getCacheKey(id, targetLang)
         const targetFile = join(targetDir, `${id}.json`)
 
-        if (cache[cacheKey]?.hash === contentHash && existsSync(targetFile)) {
+        if (cache[cacheKey]?.hash === contentHash && await fileExists(targetFile)) {
           log('OK', id, 'translate', `[${targetLang}] cached`)
           continue
         }
@@ -67,13 +61,6 @@ export async function runTranslation(dataDir: string, config: TranslationConfig)
     await saveCache(dataDir, cache)
   }
 
-  for (const id of restaurantIds) {
-    const flatPath = join(dataDir, `${id}.json`)
-    if (existsSync(flatPath)) {
-      await unlink(flatPath)
-    }
-  }
-
   if (failures.length > 0) {
     log('FAIL', 'translation', 'done', `${failures.length} failure(s): ${failures.join(', ')}`)
   } else {
@@ -87,7 +74,7 @@ async function translateRestaurant(
   from: string,
   to: string,
 ): Promise<RestaurantData> {
-  const translated = JSON.parse(JSON.stringify(data)) as RestaurantData
+  const translated = structuredClone(data)
 
   // Collect all translatable strings, deduplicating identical ones
   // (e.g. allDays() restaurants repeat the same menu for every weekday)

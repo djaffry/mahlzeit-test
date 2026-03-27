@@ -1,4 +1,4 @@
-export function log(status: 'OK' | 'FAIL' | 'INFO', restaurant: string, action: string, detail?: string): void {
+export function log(status: 'OK' | 'FAIL' | 'INFO' | 'IGNORE', restaurant: string, action: string, detail?: string): void {
   const entry: Record<string, string> = {
     ts: new Date().toISOString(),
     status,

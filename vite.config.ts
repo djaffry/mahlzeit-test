@@ -14,6 +14,9 @@ export default defineConfig({
   },
   test: {
     environment: "jsdom",
-    exclude: [".worktrees/**", "scraper/**", "node_modules/**"],
+    exclude: [".worktrees/**", "scraper/dist/**", "scraper/node_modules/**", "node_modules/**"],
+    environmentMatchGlobs: [
+      ["scraper/src/**", "node"],
+    ],
   },
 })

@@ -1,13 +1,17 @@
-import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Adapter, RestaurantData, WeekMenu, MenuItem } from './types.js';
 import { WEEKDAYS } from './types.js';
 import { log } from '../log.js';
+import { SOURCE_LANGUAGE } from '../config.js';
+
+interface ExistingFile { data: RestaurantData; raw: string }
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..', '..', '..');
 const DATA_DIR = join(ROOT, 'data');
+const RESTAURANT_DIR = join(DATA_DIR, SOURCE_LANGUAGE);
 
 function stripHtml(text: string): string {
   return text.replace(/<[^>]*>/g, '').trim();
@@ -69,51 +73,52 @@ function isSameWeek(dateStr: string): boolean {
   return date >= monday && date < nextMonday;
 }
 
-async function fileExists(path: string): Promise<boolean> {
-  try { await access(path); return true; } catch { return false; }
-}
-
-async function readExisting(id: string): Promise<RestaurantData | null> {
+async function readExisting(id: string): Promise<ExistingFile | null> {
   try {
-    const raw = await readFile(join(DATA_DIR, `${id}.json`), 'utf-8');
-    return JSON.parse(raw) as RestaurantData;
+    const raw = await readFile(join(RESTAURANT_DIR, `${id}.json`), 'utf-8');
+    return { data: JSON.parse(raw) as RestaurantData, raw };
   } catch {
     return null;
   }
 }
 
 export async function ensureDataDir(): Promise<void> {
-  await mkdir(DATA_DIR, { recursive: true });
+  await mkdir(RESTAURANT_DIR, { recursive: true });
 }
 
 export async function saveRestaurant(data: RestaurantData): Promise<void> {
-  const filePath = join(DATA_DIR, `${data.id}.json`);
+  const filePath = join(RESTAURANT_DIR, `${data.id}.json`);
+  const existing = await readExisting(data.id);
 
   if (data.error) {
-    if (await fileExists(filePath)) {
-      log('INFO', data.id, 'save', `keeping old data (scrape failed: ${data.error})`);
+    if (existing) {
+      log('FAIL', data.id, 'save', `keeping old data (scrape failed: ${data.error})`);
       return;
     }
-  } else {
-    const existing = await readExisting(data.id);
-    if (existing && !existing.error && isSameWeek(existing.fetchedAt)) {
-      data.days = { ...existing.days, ...data.days };
+  } else if (existing) {
+    if (!existing.data.error && isSameWeek(existing.data.fetchedAt)) {
+      data.days = { ...existing.data.days, ...data.days };
+    }
+
+    if (JSON.stringify({ ...data, fetchedAt: existing.data.fetchedAt }, null, 2) + '\n' === existing.raw) {
+      log('IGNORE', data.id, 'save', 'no changes');
+      return;
     }
   }
 
-  await writeFile(filePath, JSON.stringify(data, null, 2));
+  await writeFile(filePath, JSON.stringify(data, null, 2) + '\n');
   log('OK', data.id, 'save', basename(filePath));
 }
 
 export async function saveManifest(restaurantIds: string[]): Promise<void> {
   const manifestPath = join(DATA_DIR, 'index.json');
-  await writeFile(manifestPath, JSON.stringify(restaurantIds, null, 2));
+  await writeFile(manifestPath, JSON.stringify(restaurantIds, null, 2) + '\n');
   log('OK', '*', 'save', `index.json with ${restaurantIds.length} restaurant(s)`);
 }
 
 export async function saveTagMetadata(metadata: object): Promise<void> {
   const filePath = join(DATA_DIR, 'tags.json');
-  await writeFile(filePath, JSON.stringify(metadata, null, 2));
+  await writeFile(filePath, JSON.stringify(metadata, null, 2) + '\n');
   log('OK', '*', 'save', 'tags.json');
 }
 
@@ -129,6 +134,6 @@ export async function saveUnknownTags(unknownTags: Record<string, { adapter: str
   } catch { /* file doesn't exist yet */ }
 
   const merged = { ...existing, ...unknownTags };
-  await writeFile(filePath, JSON.stringify({ tags: merged }, null, 2));
+  await writeFile(filePath, JSON.stringify({ tags: merged }, null, 2) + '\n');
   log('INFO', '*', 'save', `unknown-tags.json (${Object.keys(merged).length} tag(s))`);
 }

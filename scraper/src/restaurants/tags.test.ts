@@ -1,175 +1,171 @@
-import { describe, it } from 'node:test';
-import { deepStrictEqual, strictEqual } from 'node:assert';
+import { describe, it, expect } from 'vitest'
 import {
   inferTags,
   resolveTags,
   isKnownTag,
   getTagMetadata,
-} from './tags.js';
+} from './tags.js'
 
 describe('inferTags', () => {
   it('infers Huhn from chicken-related words', () => {
-    deepStrictEqual(inferTags({ title: 'Hühnersuppe' }), ['Huhn']);
-    deepStrictEqual(inferTags({ title: 'Chicken Curry' }), ['Huhn']);
-    deepStrictEqual(inferTags({ title: 'Hendl mit Kartoffelsalat' }), ['Huhn']);
-  });
+    expect(inferTags({ title: 'Hühnersuppe' })).toEqual(['Huhn'])
+    expect(inferTags({ title: 'Chicken Curry' })).toEqual(['Huhn'])
+    expect(inferTags({ title: 'Hendl mit Kartoffelsalat' })).toEqual(['Huhn'])
+  })
 
   it('infers Rindfleisch', () => {
-    deepStrictEqual(inferTags({ title: 'Rindsgulasch' }), ['Rindfleisch']);
-    deepStrictEqual(inferTags({ title: 'Tafelspitz mit Rösti' }), ['Rindfleisch']);
-    deepStrictEqual(inferTags({ title: 'Beef Burger' }), ['Rindfleisch']);
-  });
+    expect(inferTags({ title: 'Rindsgulasch' })).toEqual(['Rindfleisch'])
+    expect(inferTags({ title: 'Tafelspitz mit Rösti' })).toEqual(['Rindfleisch'])
+    expect(inferTags({ title: 'Beef Burger' })).toEqual(['Rindfleisch'])
+  })
 
   it('infers Schweinefleisch', () => {
-    deepStrictEqual(inferTags({ title: 'Schweinsbraten' }), ['Schweinefleisch']);
-    deepStrictEqual(inferTags({ title: 'Ötscherblickschwein mit Tzatziki' }), ['Schweinefleisch']);
-  });
+    expect(inferTags({ title: 'Schweinsbraten' })).toEqual(['Schweinefleisch'])
+    expect(inferTags({ title: 'Ötscherblickschwein mit Tzatziki' })).toEqual(['Schweinefleisch'])
+  })
 
   it('infers Lamm', () => {
-    deepStrictEqual(inferTags({ title: 'Lammkeule mit Rosmarin' }), ['Lamm']);
-  });
+    expect(inferTags({ title: 'Lammkeule mit Rosmarin' })).toEqual(['Lamm'])
+  })
 
   it('infers Geflügel for generic poultry', () => {
-    deepStrictEqual(inferTags({ title: 'Geflügelwurst' }), ['Geflügel']);
-  });
+    expect(inferTags({ title: 'Geflügelwurst' })).toEqual(['Geflügel'])
+  })
 
   it('infers Pute', () => {
-    deepStrictEqual(inferTags({ title: 'Putenfilet gegrillt' }), ['Pute']);
-  });
+    expect(inferTags({ title: 'Putenfilet gegrillt' })).toEqual(['Pute'])
+  })
 
   it('infers Ente', () => {
-    deepStrictEqual(inferTags({ title: 'Ente mit Orangensauce' }), ['Ente']);
-  });
+    expect(inferTags({ title: 'Ente mit Orangensauce' })).toEqual(['Ente'])
+  })
 
   it('infers generic Fleisch only for standalone "fleisch"', () => {
-    deepStrictEqual(inferTags({ title: 'Fleisch vom Grill' }), ['Fleisch']);
-  });
+    expect(inferTags({ title: 'Fleisch vom Grill' })).toEqual(['Fleisch'])
+  })
 
   it('infers Fisch from fish keywords', () => {
-    deepStrictEqual(inferTags({ title: 'Lachs mit Gemüse' }), ['Fisch']);
-    deepStrictEqual(inferTags({ title: 'Zanderfilet' }), ['Fisch']);
-    deepStrictEqual(inferTags({ title: 'Thunfisch Salat' }), ['Fisch']);
-  });
+    expect(inferTags({ title: 'Lachs mit Gemüse' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Zanderfilet' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Thunfisch Salat' })).toEqual(['Fisch'])
+  })
 
   it('infers Meeresfrüchte from seafood keywords', () => {
-    deepStrictEqual(inferTags({ title: 'Garnelen auf Pasta' }), ['Meeresfrüchte']);
-    deepStrictEqual(inferTags({ title: 'Calamari fritti' }), ['Meeresfrüchte']);
-  });
+    expect(inferTags({ title: 'Garnelen auf Pasta' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Calamari fritti' })).toEqual(['Meeresfrüchte'])
+  })
 
   it('infers Vegan', () => {
-    deepStrictEqual(inferTags({ title: 'Veganes Curry' }), ['Vegan']);
-    deepStrictEqual(inferTags({ title: 'Tofu Bowl' }), ['Vegan']);
-    deepStrictEqual(inferTags({ title: 'Obst klein' }), ['Vegan']);
-  });
+    expect(inferTags({ title: 'Veganes Curry' })).toEqual(['Vegan'])
+    expect(inferTags({ title: 'Tofu Bowl' })).toEqual(['Vegan'])
+    expect(inferTags({ title: 'Obst klein' })).toEqual(['Vegan'])
+  })
 
   it('infers Vegetarisch', () => {
-    deepStrictEqual(inferTags({ title: 'Vegetarisch Lasagne' }), ['Vegetarisch']);
-  });
+    expect(inferTags({ title: 'Vegetarisch Lasagne' })).toEqual(['Vegetarisch'])
+  })
 
   it('returns empty for ambiguous or unknown items', () => {
-    deepStrictEqual(inferTags({ title: 'Grüner Salat' }), []);
-    deepStrictEqual(inferTags({ title: 'Schnitzel mit Pommes' }), []);
-    deepStrictEqual(inferTags({ title: 'Pizza Margherita' }), []);
-  });
+    expect(inferTags({ title: 'Grüner Salat' })).toEqual([])
+    expect(inferTags({ title: 'Schnitzel mit Pommes' })).toEqual([])
+    expect(inferTags({ title: 'Pizza Margherita' })).toEqual([])
+  })
 
   it('returns leaf tags only — no ancestors', () => {
-    const tags = inferTags({ title: 'Hühnersuppe' });
-    deepStrictEqual(tags, ['Huhn']);
-    strictEqual(tags.includes('Geflügel'), false);
-    strictEqual(tags.includes('Fleisch'), false);
-  });
+    const tags = inferTags({ title: 'Hühnersuppe' })
+    expect(tags).toEqual(['Huhn'])
+    expect(tags.includes('Geflügel')).toBe(false)
+    expect(tags.includes('Fleisch')).toBe(false)
+  })
 
   it('prunes ancestors when both parent and child match', () => {
-    deepStrictEqual(inferTags({ title: 'Geflügel Hühnersuppe' }), ['Huhn']);
-  });
+    expect(inferTags({ title: 'Geflügel Hühnersuppe' })).toEqual(['Huhn'])
+  })
 
   it('respects word boundaries', () => {
-    deepStrictEqual(inferTags({ title: 'Wildkräutersalat' }), []);
-  });
+    expect(inferTags({ title: 'Wildkräutersalat' })).toEqual([])
+  })
 
   it('uses category fallback when no text match', () => {
-    deepStrictEqual(inferTags({ title: 'Bowl', category: 'Bowl Station' }), ['Vegan']);
-    deepStrictEqual(inferTags({ title: 'Penne', category: 'Pasta Station' }), ['Vegetarisch']);
-    deepStrictEqual(inferTags({ title: 'Blattsalat', category: 'Salatecke' }), ['Vegetarisch']);
-    deepStrictEqual(inferTags({ title: 'Apfel', category: 'Obst klein' }), ['Vegan']);
-  });
+    expect(inferTags({ title: 'Bowl', category: 'Bowl Station' })).toEqual(['Vegan'])
+    expect(inferTags({ title: 'Penne', category: 'Pasta Station' })).toEqual(['Vegetarisch'])
+    expect(inferTags({ title: 'Blattsalat', category: 'Salatecke' })).toEqual(['Vegetarisch'])
+    expect(inferTags({ title: 'Apfel', category: 'Obst klein' })).toEqual(['Vegan'])
+  })
 
   it('skips category fallback when text matches', () => {
-    deepStrictEqual(inferTags({ title: 'Hühnercurry', category: 'vegan' }), ['Huhn']);
-  });
+    expect(inferTags({ title: 'Hühnercurry', category: 'vegan' })).toEqual(['Huhn'])
+  })
 
   it('uses description for inference', () => {
-    deepStrictEqual(inferTags({ title: 'Gulasch', description: 'mit Rindfleisch' }), ['Rindfleisch']);
-  });
+    expect(inferTags({ title: 'Gulasch', description: 'mit Rindfleisch' })).toEqual(['Rindfleisch'])
+  })
 
   it('removes contradictions per-item', () => {
-    deepStrictEqual(inferTags({ title: 'Vegan Chicken Steak' }), ['Huhn']);
-  });
-});
+    expect(inferTags({ title: 'Vegan Chicken Steak' })).toEqual(['Huhn'])
+  })
+})
 
 describe('resolveTags', () => {
   it('combines adapter and inferred tags', () => {
-    deepStrictEqual(resolveTags(['Vegetarisch'], ['Glutenfrei']), ['Vegetarisch', 'Glutenfrei']);
-  });
+    expect(resolveTags(['Vegetarisch'], ['Glutenfrei'])).toEqual(['Vegetarisch', 'Glutenfrei'])
+  })
 
   it('blocks meat/seafood inference when adapter provides plant-based', () => {
-    deepStrictEqual(resolveTags(['Vegetarisch'], ['Huhn']), ['Vegetarisch']);
-    deepStrictEqual(resolveTags(['Vegan'], ['Fisch']), ['Vegan']);
-  });
+    expect(resolveTags(['Vegetarisch'], ['Huhn'])).toEqual(['Vegetarisch'])
+    expect(resolveTags(['Vegan'], ['Fisch'])).toEqual(['Vegan'])
+  })
 
   it('removes contradictions from adapter tags', () => {
-    deepStrictEqual(resolveTags(['Vegan', 'Huhn'], []), ['Huhn']);
-    deepStrictEqual(resolveTags(['Vegetarisch', 'Fisch'], []), ['Fisch']);
-  });
+    expect(resolveTags(['Vegan', 'Huhn'], [])).toEqual(['Huhn'])
+    expect(resolveTags(['Vegetarisch', 'Fisch'], [])).toEqual(['Fisch'])
+  })
 
   it('preserves plant-based when no meat present', () => {
-    deepStrictEqual(resolveTags(['Vegan'], []), ['Vegan']);
-    deepStrictEqual(resolveTags(['Vegetarisch'], []), ['Vegetarisch']);
-  });
+    expect(resolveTags(['Vegan'], [])).toEqual(['Vegan'])
+    expect(resolveTags(['Vegetarisch'], [])).toEqual(['Vegetarisch'])
+  })
 
   it('keeps non-dietary tags alongside meat', () => {
-    deepStrictEqual(resolveTags(['Rindfleisch', 'Glutenfrei'], []), ['Rindfleisch', 'Glutenfrei']);
-  });
+    expect(resolveTags(['Rindfleisch', 'Glutenfrei'], [])).toEqual(['Rindfleisch', 'Glutenfrei'])
+  })
 
   it('prunes ancestors when inference adds specificity', () => {
-    deepStrictEqual(resolveTags(['Fleisch'], ['Rindfleisch']), ['Rindfleisch']);
-  });
+    expect(resolveTags(['Fleisch'], ['Rindfleisch'])).toEqual(['Rindfleisch'])
+  })
 
   it('deduplicates', () => {
-    deepStrictEqual(resolveTags(['Vegan'], ['Vegan']), ['Vegan']);
-  });
+    expect(resolveTags(['Vegan'], ['Vegan'])).toEqual(['Vegan'])
+  })
 
   it('normalizes adapter tags', () => {
-    deepStrictEqual(resolveTags(['Hühnerfleisch'], []), ['Huhn']);
-  });
-});
-
+    expect(resolveTags(['Hühnerfleisch'], [])).toEqual(['Huhn'])
+  })
+})
 
 describe('isKnownTag', () => {
   it('returns true for canonical tags', () => {
-    strictEqual(isKnownTag('Huhn'), true);
-    strictEqual(isKnownTag('Vegan'), true);
-    strictEqual(isKnownTag('Meeresfrüchte'), true);
-  });
+    expect(isKnownTag('Huhn')).toBe(true)
+    expect(isKnownTag('Vegan')).toBe(true)
+    expect(isKnownTag('Meeresfrüchte')).toBe(true)
+  })
 
   it('returns false for aliases and unknown strings', () => {
-    strictEqual(isKnownTag('Hühnerfleisch'), false);
-    strictEqual(isKnownTag('RandomTag'), false);
-  });
-});
+    expect(isKnownTag('Hühnerfleisch')).toBe(false)
+    expect(isKnownTag('RandomTag')).toBe(false)
+  })
+})
 
 describe('getTagMetadata', () => {
   it('returns hierarchy and aliases', () => {
-    const meta = getTagMetadata();
-    strictEqual(meta.tags.length > 0, true);
-    strictEqual('Fleisch' in meta.hierarchy, true);
-    strictEqual(meta.hierarchy['Fleisch'].includes('Rindfleisch'), true);
-    strictEqual('Hühnerfleisch' in meta.aliases, true);
-    strictEqual(meta.aliases['Hühnerfleisch'], 'Huhn');
-  });
+    const meta = getTagMetadata()
+    expect(meta.tags.length).toBeGreaterThan(0)
+    expect(meta.hierarchy['Fleisch']).toContain('Rindfleisch')
+    expect(meta.aliases['Hühnerfleisch']).toBe('Huhn')
+  })
 
   it('contains no presentation data', () => {
-    const meta = getTagMetadata();
-    strictEqual('colors' in meta, false);
-  });
-});
+    const meta = getTagMetadata()
+    expect('colors' in meta).toBe(false)
+  })
+})

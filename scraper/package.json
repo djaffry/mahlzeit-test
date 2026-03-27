@@ -7,7 +7,6 @@
     "clean": "rimraf dist",
     "build": "tsc",
     "scrape": "node dist/scrape-runner.js",
-    "test": "npm run build && node --test dist/restaurants/tags.test.js dist/translations/cache.test.js",
     "translate": "node dist/translate-runner.js"
   },
   "engines": {
