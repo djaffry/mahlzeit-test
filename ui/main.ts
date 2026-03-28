@@ -5,6 +5,7 @@ import "./styles/style.css"
 import "./styles/carousel.css"
 import "./styles/dice.css"
 import "./styles/share.css"
+import "./styles/voting.css"
 
 // Config & constants
 import { config } from "./config"
@@ -72,6 +73,18 @@ import {
   clearSelection as shareClearSelection,
   getShareSelectionData,
 } from "./components/share"
+import {
+  initVoting,
+  acceptVoting,
+  getVotingCardHtml,
+  onDayChangeVoting,
+  toggleVote,
+  toggleAllVotes,
+  isVotingActive,
+  setVotingCollapsed,
+} from "./rooms/voting-lifecycle"
+import { copyBusinessCard } from "./rooms/business-card"
+import { getOrCreateIdentity } from "./rooms/user-identity"
 
 /* ── Module-level state ───────────────────────────────── */
 
@@ -152,7 +165,7 @@ function renderDayPanels(
     '<div class="carousel" id="carousel"><div class="carousel-track">' +
     DAYS.map(
       (d) =>
-        `<div class="day-panel" data-panel="${d}">${renderDay(menuRestaurants, linkRestaurants, d, collapsedSet, mapCollapsed)}</div>`
+        `<div class="day-panel" data-panel="${d}">${renderDay(menuRestaurants, linkRestaurants, d, collapsedSet, mapCollapsed, getVotingCardHtml(d))}</div>`
     ).join("") +
     '</div></div><span class="sr-only" id="day-announcer" aria-live="polite"></span>'
 
@@ -219,6 +232,57 @@ function setupCollapseExpand(contentEl: HTMLElement): void {
         focusOnMap(card.dataset.restaurant ?? "", getAllRestaurants())
         return
       }
+    }
+  })
+
+  // Voting card interactions
+  contentEl.addEventListener("click", (e) => {
+    const target = e.target as Element
+
+    const acceptBtn = target.closest?.(".voting-consent-accept")
+    if (acceptBtn) {
+      acceptVoting()
+      return
+    }
+
+    const voteRow = target.closest?.(".voting-row")
+    if (voteRow) {
+      if (voteRow.closest(".voting-past")) return
+      const id = (voteRow as HTMLElement).dataset.restaurantId
+      if (id) toggleVote(id)
+      return
+    }
+
+    const infoToggle = target.closest?.(".voting-info-toggle")
+    if (infoToggle) {
+      infoToggle.closest(".voting-card")?.querySelector(".voting-info-panel")?.toggleAttribute("hidden")
+      return
+    }
+
+    // Chevron toggles collapse
+    const chevron = target.closest?.(".voting-card .collapse-btn")
+    if (chevron) {
+      const card = chevron.closest<HTMLElement>(".voting-card")
+      if (card) {
+        card.classList.toggle("collapsed")
+        setVotingCollapsed(card.classList.contains("collapsed"))
+      }
+      return
+    }
+
+    // Identity badge copies the avatar business card
+    const identityBadge = target.closest?.(".voting-identity")
+    if (identityBadge) {
+      copyBusinessCard(getOrCreateIdentity().avatar)
+      return
+    }
+
+    // Clicking the card title selects/deselects all restaurants
+    const votingName = target.closest?.(".voting-card > .restaurant-header .restaurant-name")
+    if (votingName) {
+      if (votingName.closest(".voting-past")) return
+      toggleAllVotes()
+      return
     }
   })
 }
@@ -378,6 +442,7 @@ async function init(): Promise<void> {
 
     _restaurants = allRestaurants
     initContentHash(allRestaurants)
+    await initVoting(_restaurants)
 
     const menuRestaurants = getMenuRestaurants()
     const linkRestaurants = getLinkRestaurants()
@@ -480,6 +545,10 @@ carouselSetup({
     moveInlineMap(day, carouselGetActivePanel)
     refreshPanel()
     flushPendingRefresh(applyRefresh)
+    if (isVotingActive()) {
+      const dayIndex = DAYS.indexOf(day as (typeof DAYS)[number])
+      if (dayIndex >= 0) onDayChangeVoting(dayIndex)
+    }
   },
 })
 

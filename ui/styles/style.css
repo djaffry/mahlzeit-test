@@ -44,6 +44,9 @@
   /* Semantic tokens */
   --overlay: rgba(0, 0, 0, 0.3);
   --accent-fg: #1e1e2e;
+  --flash-peak: rgba(255, 255, 255, 0.4);
+  --flash-fade: rgba(255, 255, 255, 0.05);
+  --flash-duration: 0.45s;
 }
 
 /* Catppuccin Latte */
@@ -73,6 +76,9 @@
   --shimmer: #ccd0da;
   --overlay: rgba(0, 0, 0, 0.15);
   --accent-fg: #ffffff;
+  --flash-peak: rgba(255, 255, 255, 0.5);
+  --flash-fade: rgba(255, 255, 255, 0.05);
+  --flash-duration: 0.45s;
 }
 [data-theme="latte"] .tab.active {
   color: var(--accent-fg);

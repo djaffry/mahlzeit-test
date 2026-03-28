@@ -1,0 +1,9 @@
+{
+  "relays": [
+    "wss://relay.damus.io",
+    "wss://nos.lol",
+    "wss://relay.primal.net",
+    "wss://relay.nostr.band"
+  ],
+  "minRelays": 2
+}

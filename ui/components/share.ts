@@ -6,6 +6,7 @@ import { getMondayOfWeek } from "../utils/date"
 import { isOverlayOpen } from "../utils/dom"
 import { haptic } from "../utils/haptic"
 import { t, getLocale } from '../i18n/i18n'
+import { getIdentity } from '../rooms/user-identity'
 
 /* ── Types ─────────────────────────────────────────────── */
 
@@ -143,7 +144,7 @@ export function setup(deps: {
     const selectAllBtn = target.closest('.select-all-btn')
     if (selectAllBtn) {
       const card = selectAllBtn.closest('.restaurant-card') as HTMLElement | null
-      if (card && !card.classList.contains('map-card')) {
+      if (card && !card.classList.contains('map-card') && !card.classList.contains('voting-card')) {
         const allItems = card.querySelectorAll<HTMLElement>('.menu-item:not(.hidden)')
         if (allItems.length === 0) {
           // Link card — toggle card-level selection
@@ -269,6 +270,12 @@ function formatAsText(data: ShareSelectionData): string {
   lines.push('')
   lines.push(window.location.origin + window.location.pathname)
 
+  const identity = getIdentity()
+  if (identity) {
+    lines.push('')
+    lines.push(identity.avatar.label)
+  }
+
   return lines.join('\n')
 }
 
@@ -384,7 +391,7 @@ async function exportImage(canvas: HTMLCanvasElement, name: string): Promise<voi
   showToast(t('share.imageDownloaded'), canvas)
 }
 
-function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: string): void {
+export function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: string): void {
   const existing = document.querySelector('.share-toast')
   if (existing) existing.remove()
   const existingBackdrop = document.querySelector('.share-toast-backdrop')
@@ -454,6 +461,26 @@ function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, d
     const dayLabel = formatDayLabel(data.day)
     const dayLabelWidth = ctx.measureText(dayLabel).width
     if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(dayLabel, CANVAS_WIDTH - PADDING - dayLabelWidth, y + 24) }
+  }
+
+  // Show voter identity so recipients know who shared the selection
+  if (draw) {
+    const identity = getIdentity()
+    if (identity) {
+      const avatarRadius = 24
+      const avatarX = PADDING + LOGO_SIZE + 16
+      const avatarY = y + LOGO_SIZE - avatarRadius
+      ctx.beginPath()
+      ctx.arc(avatarX + avatarRadius, avatarY, avatarRadius, 0, Math.PI * 2)
+      ctx.fillStyle = identity.avatar.color
+      ctx.fill()
+      setFont(ctx, `${avatarRadius * 1.2}px`)
+      ctx.textAlign = 'center'
+      ctx.textBaseline = 'middle'
+      ctx.fillText(identity.avatar.emoji, avatarX + avatarRadius, avatarY)
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'alphabetic'
+    }
   }
 
   y += LOGO_SIZE + 24

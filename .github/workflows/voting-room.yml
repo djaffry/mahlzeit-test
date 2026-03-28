@@ -1,0 +1,98 @@
+name: Create Voting Rooms
+
+on:
+  schedule:
+    # Monday 4:00 UTC (5:00 CET / 6:00 CEST)
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: voting-room
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  create-rooms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      data-changed: ${{ steps.changes.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            rooms/package-lock.json
+
+      - name: Install rooms dependencies
+        run: npm ci
+        working-directory: rooms
+
+      - name: Build rooms
+        run: npm run build
+        working-directory: rooms
+
+      - name: Create voting rooms
+        run: npm run create-rooms
+        working-directory: rooms
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -z "$(git status --porcelain data/voting.json)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pull latest (avoid push race with fetch-and-deploy)
+        if: steps.changes.outputs.changed == 'true'
+        run: git pull --rebase
+
+      - name: Commit and push voting data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/voting.json
+          git commit -m "chore: create voting rooms for week of $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Install root dependencies
+        if: steps.changes.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Install scraper dependencies
+        if: steps.changes.outputs.changed == 'true'
+        run: npm ci
+        working-directory: scraper
+
+      - name: Build site
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Upload pages artifact
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: create-rooms
+    if: needs.create-rooms.outputs.data-changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
