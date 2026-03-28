@@ -10,7 +10,8 @@ describe("extractRestaurantMeta", () => {
   it("extracts name, cuisine, and badges", () => {
     const card = document.createElement("div")
     card.innerHTML = `
-      <div class="restaurant-name">Mano Café
+      <div class="restaurant-name">Mano Café</div>
+      <div class="restaurant-badges">
         <span class="cuisine-tag">Café · Bistro</span>
         <span class="edenred-badge">Edenred</span>
       </div>`
@@ -40,7 +41,8 @@ describe("extractRestaurantMeta", () => {
   it("extracts outdoor and stamp-card badges", () => {
     const card = document.createElement("div")
     card.innerHTML = `
-      <div class="restaurant-name">Zum Wirt
+      <div class="restaurant-name">Zum Wirt</div>
+      <div class="restaurant-badges">
         <span class="outdoor-badge">Draußen</span>
         <span class="stamp-card-badge">Stempelkarte</span>
       </div>`
@@ -174,9 +176,8 @@ describe("getShareSelectionData", () => {
   it("extracts selected items grouped by restaurant", () => {
     panel.innerHTML = `
       <div class="restaurant-card" data-restaurant="bistro-x">
-        <div class="restaurant-name">Bistro X
-          <span class="cuisine-tag">Österreichisch</span>
-        </div>
+        <div class="restaurant-name">Bistro X</div>
+        <div class="restaurant-badges"><span class="cuisine-tag">Österreichisch</span></div>
         <div class="category">
           <div class="category-title">Tagesmenü</div>
           <div class="menu-item share-selected">
@@ -227,12 +228,11 @@ describe("getShareSelectionData", () => {
     expect(result!.sections[1].restaurant).toBe("restaurant-b")
   })
 
-  it("includes link-only cards that are share-selected (with empty categories)", () => {
+  it("includes link-only cards that are share-all (with empty categories)", () => {
     panel.innerHTML = `
-      <div class="restaurant-card share-selected" data-restaurant="link-only">
-        <div class="restaurant-name">Link-Only Place
-          <span class="edenred-badge">Edenred</span>
-        </div>
+      <div class="restaurant-card share-all" data-restaurant="link-only">
+        <div class="restaurant-name">Link-Only Place</div>
+        <div class="restaurant-badges"><span class="edenred-badge">Edenred</span></div>
       </div>`
     const result = getShareSelectionData(() => panel)
     expect(result).not.toBeNull()

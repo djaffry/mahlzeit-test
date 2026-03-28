@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest"
+import { describe, it, expect, beforeEach, afterEach } from "vitest"
 import {
   loadFilters,
   saveFilters,
@@ -7,7 +7,9 @@ import {
   itemMatchesFilters,
   buildFilterButtons,
   applyFilters,
+  setupFilterListeners,
 } from "./filter-bar"
+import { loadHierarchy } from "../utils/tag-utils"
 
 beforeEach(() => {
   // Reset module-level state: clear localStorage and reset activeFilters + _filterCount
@@ -129,7 +131,7 @@ describe("isFilterShowAll", () => {
 
 describe("itemMatchesFilters", () => {
   it("returns true for items with no tags (untagged items always shown)", () => {
-    loadFilters([]) // no active filters
+    loadFilters([])
     expect(itemMatchesFilters({ tags: [] })).toBe(true)
   })
 
@@ -143,6 +145,98 @@ describe("itemMatchesFilters", () => {
     localStorage.setItem("dietary-filters", stored)
     loadFilters(["Vegan", "Fleisch"])
     expect(itemMatchesFilters({ tags: ["Fleisch"] })).toBe(false)
+  })
+})
+
+/* ── itemMatchesFilters with hierarchy ─────────────────── */
+
+describe("itemMatchesFilters (hierarchy)", () => {
+  const ALL_TAGS = ["Vegetarisch", "Vegan", "Glutenfrei", "Fleisch", "Geflügel", "Huhn"]
+  const HIERARCHY = {
+    Fleisch: ["Geflügel"],
+    Geflügel: ["Huhn"],
+    Vegetarisch: ["Vegan"],
+  }
+
+  beforeEach(() => {
+    loadHierarchy(HIERARCHY)
+    buildFilterButtons(ALL_TAGS)
+  })
+
+  afterEach(() => {
+    // Reset hierarchy so other tests aren't affected
+    loadHierarchy({})
+  })
+
+  function activateOnly(tags: string[]): void {
+    localStorage.setItem("dietary-filters", JSON.stringify({ active: tags, known: ALL_TAGS }))
+    loadFilters(ALL_TAGS)
+  }
+
+  it("parent active expands to include children", () => {
+    activateOnly(["Fleisch", "Geflügel", "Huhn"])
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
+  })
+
+  it("parent active alone expands to match child-tagged items", () => {
+    // Fleisch active → expands to include Geflügel, Huhn
+    activateOnly(["Fleisch"])
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
+    expect(itemMatchesFilters({ tags: ["Geflügel"] })).toBe(true)
+  })
+
+  it("child active without parent still matches", () => {
+    activateOnly(["Huhn"])
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
+  })
+
+  it("multi-tag item matches if any tag is active", () => {
+    // Vegetarisch not active, but Glutenfrei is
+    activateOnly(["Glutenfrei"])
+    expect(itemMatchesFilters({ tags: ["Vegetarisch", "Glutenfrei"] })).toBe(true)
+  })
+
+  it("item with only active tags is shown", () => {
+    activateOnly(["Glutenfrei", "Vegetarisch", "Vegan"])
+    expect(itemMatchesFilters({ tags: ["Vegetarisch", "Glutenfrei"] })).toBe(true)
+  })
+
+  it("untagged items always shown regardless of filter state", () => {
+    activateOnly([])
+    expect(itemMatchesFilters({ tags: [] })).toBe(true)
+    expect(itemMatchesFilters({})).toBe(true)
+  })
+
+  it("all filters active shows everything", () => {
+    activateOnly(ALL_TAGS)
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
+    expect(itemMatchesFilters({ tags: ["Vegetarisch", "Glutenfrei"] })).toBe(true)
+  })
+
+  it("disabling all filters hides all tagged items", () => {
+    activateOnly([])
+    expect(itemMatchesFilters({ tags: ["Vegan"] })).toBe(false)
+    expect(itemMatchesFilters({ tags: ["Fleisch"] })).toBe(false)
+  })
+
+  it("Vegetarisch active expands to include Vegan", () => {
+    activateOnly(["Vegetarisch"])
+    expect(itemMatchesFilters({ tags: ["Vegan"] })).toBe(true)
+  })
+
+  it("item with no matching active tags is hidden", () => {
+    activateOnly(["Glutenfrei"])
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(false)
+  })
+
+  it("item with unknown tag not in hierarchy is hidden", () => {
+    activateOnly(ALL_TAGS)
+    expect(itemMatchesFilters({ tags: ["Nüsse"] })).toBe(false)
+  })
+
+  it("item with mix of known active tag and unknown tag is shown", () => {
+    activateOnly(ALL_TAGS)
+    expect(itemMatchesFilters({ tags: ["Vegan", "Nüsse"] })).toBe(true)
   })
 })
 
@@ -220,5 +314,136 @@ describe("applyFilters", () => {
 
   it("does nothing when panel is null", () => {
     expect(() => applyFilters(null)).not.toThrow()
+  })
+})
+
+/* ── Cascading toggles ─────────────────────────────────── */
+
+describe("cascading toggles", () => {
+  const ALL_TAGS = ["Vegetarisch", "Vegan", "Fleisch", "Geflügel", "Huhn", "Pute", "Lamm"]
+  const HIERARCHY = {
+    Fleisch: ["Geflügel", "Lamm"],
+    Geflügel: ["Huhn", "Pute"],
+    Vegetarisch: ["Vegan"],
+  }
+
+  let filtersEl: HTMLElement
+  let changeCount: number
+
+  beforeEach(() => {
+    loadHierarchy(HIERARCHY)
+    filtersEl = document.getElementById("filters")!
+    loadFilters(ALL_TAGS)
+    buildFilterButtons(ALL_TAGS)
+    changeCount = 0
+    setupFilterListeners(filtersEl, () => { changeCount++ })
+  })
+
+  afterEach(() => {
+    loadHierarchy({})
+  })
+
+  function clickFilter(tag: string): void {
+    const btn = filtersEl.querySelector<HTMLElement>(`.filter-btn[data-filter="${tag}"]`)
+    btn!.click()
+  }
+
+  function isActive(tag: string): boolean {
+    return getActiveFilters().has(tag)
+  }
+
+  function btnIsActive(tag: string): boolean {
+    return filtersEl.querySelector<HTMLElement>(`.filter-btn[data-filter="${tag}"]`)!.classList.contains("active")
+  }
+
+  it("toggling parent OFF cascades to all descendants", () => {
+    clickFilter("Fleisch")
+    expect(isActive("Fleisch")).toBe(false)
+    expect(isActive("Geflügel")).toBe(false)
+    expect(isActive("Huhn")).toBe(false)
+    expect(isActive("Pute")).toBe(false)
+    expect(isActive("Lamm")).toBe(false)
+    // Unrelated tags unaffected
+    expect(isActive("Vegetarisch")).toBe(true)
+    expect(isActive("Vegan")).toBe(true)
+  })
+
+  it("toggling parent ON cascades to all descendants", () => {
+    // First turn off, then back on
+    clickFilter("Fleisch")
+    clickFilter("Fleisch")
+    expect(isActive("Fleisch")).toBe(true)
+    expect(isActive("Geflügel")).toBe(true)
+    expect(isActive("Huhn")).toBe(true)
+    expect(isActive("Pute")).toBe(true)
+    expect(isActive("Lamm")).toBe(true)
+  })
+
+  it("toggling mid-level parent cascades only to its subtree", () => {
+    clickFilter("Geflügel")
+    expect(isActive("Geflügel")).toBe(false)
+    expect(isActive("Huhn")).toBe(false)
+    expect(isActive("Pute")).toBe(false)
+    // Parent and siblings unaffected
+    expect(isActive("Fleisch")).toBe(true)
+    expect(isActive("Lamm")).toBe(true)
+  })
+
+  it("toggling leaf tag only affects itself", () => {
+    clickFilter("Huhn")
+    expect(isActive("Huhn")).toBe(false)
+    expect(isActive("Geflügel")).toBe(true)
+    expect(isActive("Pute")).toBe(true)
+    expect(isActive("Fleisch")).toBe(true)
+  })
+
+  it("individual child toggle after parent cascade works", () => {
+    // Turn off all meat
+    clickFilter("Fleisch")
+    // Turn Lamm back on individually
+    clickFilter("Lamm")
+    expect(isActive("Fleisch")).toBe(false)
+    expect(isActive("Geflügel")).toBe(false)
+    expect(isActive("Huhn")).toBe(false)
+    expect(isActive("Lamm")).toBe(true)
+  })
+
+  it("button visuals sync with cascaded state", () => {
+    clickFilter("Fleisch")
+    expect(btnIsActive("Fleisch")).toBe(false)
+    expect(btnIsActive("Geflügel")).toBe(false)
+    expect(btnIsActive("Huhn")).toBe(false)
+    expect(btnIsActive("Pute")).toBe(false)
+    expect(btnIsActive("Lamm")).toBe(false)
+    // Unrelated buttons stay active
+    expect(btnIsActive("Vegetarisch")).toBe(true)
+  })
+
+  it("onFilterChange fires once per click (not per cascaded tag)", () => {
+    clickFilter("Fleisch")
+    expect(changeCount).toBe(1)
+  })
+
+  it("cascade + matching: root OFF hides all descendant-tagged items", () => {
+    clickFilter("Fleisch")
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(false)
+    expect(itemMatchesFilters({ tags: ["Lamm"] })).toBe(false)
+    expect(itemMatchesFilters({ tags: ["Fleisch"] })).toBe(false)
+    // Unrelated tags still work
+    expect(itemMatchesFilters({ tags: ["Vegan"] })).toBe(true)
+  })
+
+  it("cascade + matching: root ON restores all descendant-tagged items", () => {
+    clickFilter("Fleisch")
+    clickFilter("Fleisch")
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
+    expect(itemMatchesFilters({ tags: ["Lamm"] })).toBe(true)
+  })
+
+  it("cascade + matching: mid-level OFF still shows child via grandparent expansion", () => {
+    // Geflügel OFF cascades Huhn/Pute OFF, but Fleisch is still active
+    // expandFilters(Fleisch) → includes Geflügel → Huhn, so Huhn still matches
+    clickFilter("Geflügel")
+    expect(itemMatchesFilters({ tags: ["Huhn"] })).toBe(true)
   })
 })

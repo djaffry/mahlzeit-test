@@ -197,7 +197,7 @@ function showCarouselForDay(day: string): void {
 function setupCollapseExpand(contentEl: HTMLElement): void {
   contentEl.addEventListener("click", (e) => {
     if (!(e.target instanceof Element)) return
-    if (!e.target.closest(".restaurant-collapse-icon")) return
+    if (!e.target.closest(".collapse-btn")) return
     const card = e.target.closest(".restaurant-card") as HTMLElement | null
     if (!card || card.classList.contains("map-card")) return
     const id = card.dataset.restaurant
@@ -260,9 +260,7 @@ function applyRefresh(newData: Restaurant[]): void {
     (document.querySelector(".tab.active") as HTMLElement | null)?.dataset.day ?? DAYS[0]
   const scrollY = window.scrollY
 
-  // 2. Clear transient state
-  document.querySelectorAll(".dice-pick").forEach((el) => el.classList.remove("dice-pick"))
-  document.querySelectorAll(".share-selected").forEach((el) => el.classList.remove("share-selected"))
+  // 2. Clear transient state (share-bar lives outside #content, so clear it explicitly)
   document.querySelector(".share-bar")?.classList.remove("visible")
 
   // 3. Update data

@@ -1,6 +1,6 @@
 import { escapeHtml } from "../utils/dom"
 import { isAvailableOnDay } from "../utils/date"
-import { SVG } from "../constants"
+import { SVG, BADGES } from "../constants"
 import { renderItem } from "./menu-item"
 import { t } from '../i18n/i18n'
 import type { Restaurant, MenuCategory } from "../types"
@@ -17,14 +17,27 @@ function renderCategories(categories: MenuCategory[]): string {
     .join("")
 }
 
+function renderBadges(restaurant: Restaurant, suffix = ""): string {
+  const html = [
+    restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(" · ")}</span>` : "",
+    ...BADGES.filter(b => restaurant[b.prop]).map(b => `<span class="${b.css}">${t(b.i18n)}</span>`),
+    suffix,
+  ].join("")
+  return html ? `<div class="restaurant-badges">${html}</div>` : ""
+}
+
 function renderRestaurantHeader(restaurant: Restaurant, suffix = ""): string {
   return `
     <div class="restaurant-header">
-      <div class="restaurant-name">${escapeHtml(restaurant.title)}${restaurant.cuisine?.length ? `<span class="cuisine-tag">${restaurant.cuisine.map(escapeHtml).join(" · ")}</span>` : ""}${restaurant.stampCard ? `<span class="stamp-card-badge">${t('badge.stampCard')}</span>` : ""}${restaurant.edenred ? `<span class="edenred-badge">${t('badge.edenred')}</span>` : ""}${restaurant.outdoor ? `<span class="outdoor-badge">${t('badge.outdoor')}</span>` : ""}${restaurant.reservationUrl ? `<span class="reservation-badge">${t('badge.reservationRequired')}</span>` : ""}${suffix}</div>
-      <div class="restaurant-header-actions">
-        ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="${t('map.showOnMap')}" title="${t('map.showOnMap')}">${SVG.mapPin}</button>` : ""}
-        ${SVG.collapse}
+      <div class="restaurant-header-top">
+        <div class="restaurant-name">${escapeHtml(restaurant.title)}</div>
+        <div class="restaurant-header-actions">
+          <button class="select-all-btn" aria-label="${t('card.selectAll')}">${SVG.selectAll}</button>
+          ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="${t('map.showOnMap')}" title="${t('map.showOnMap')}">${SVG.mapPin}</button>` : ""}
+          <button class="collapse-btn" aria-label="${t('card.collapse')}">${SVG.chevron}</button>
+        </div>
       </div>
+      ${renderBadges(restaurant, suffix)}
     </div>`
 }
 
@@ -100,10 +113,12 @@ export function renderMapCardInGrid(mapCollapsed: boolean): string {
   return `
     <div class="restaurant-card map-card visible settled${mapCollapsed ? " map-collapsed" : ""}">
       <div class="restaurant-header">
-        <div class="restaurant-name">${t('map.cardTitle')}</div>
-        <div class="restaurant-header-actions">
-          <button class="map-card-btn map-fullscreen-btn" aria-label="${t('map.fullscreen')}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg></button>
-          <svg class="map-card-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6l4 4 4-4"/></svg>
+        <div class="restaurant-header-top">
+          <div class="restaurant-name">${t('map.cardTitle')}</div>
+          <div class="restaurant-header-actions">
+            <button class="map-card-btn map-fullscreen-btn" aria-label="${t('map.fullscreen')}">${SVG.fullscreen}</button>
+            <button class="collapse-btn" aria-label="${t('card.collapse')}">${SVG.chevron}</button>
+          </div>
         </div>
       </div>
       <div class="restaurant-content"><div class="restaurant-content-inner">

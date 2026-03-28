@@ -1,7 +1,7 @@
 /* Share — select menu items, render to canvas, copy to clipboard or share */
 
 import "../styles/share.css"
-import { DAYS } from "../constants"
+import { DAYS, BADGES } from "../constants"
 import { getMondayOfWeek } from "../utils/date"
 import { isOverlayOpen } from "../utils/dom"
 import { haptic } from "../utils/haptic"
@@ -139,16 +139,17 @@ export function setup(deps: {
     if (target.closest('.share-bar-text'))    { shareSelectionAsText(); return }
     if (target.closest('.share-bar-clear'))   { clearSelection(); return }
 
-    // Restaurant name click — select all / toggle link card
-    const nameEl = target.closest('.restaurant-name')
-    if (nameEl) {
-      const card = nameEl.closest('.restaurant-card') as HTMLElement | null
+    // Select-all button — select all / toggle link card
+    const selectAllBtn = target.closest('.select-all-btn')
+    if (selectAllBtn) {
+      const card = selectAllBtn.closest('.restaurant-card') as HTMLElement | null
       if (card && !card.classList.contains('map-card')) {
         const allItems = card.querySelectorAll<HTMLElement>('.menu-item:not(.hidden)')
         if (allItems.length === 0) {
           // Link card — toggle card-level selection
-          card.classList.toggle('share-selected')
-          if (card.classList.contains('share-selected')) card.classList.remove('dice-pick')
+          const on = card.classList.toggle('share-all')
+          card.classList.toggle('share-any', on)
+          if (on) card.classList.remove('dice-pick')
         } else {
           const allSelected = [...allItems].every(el => el.classList.contains('share-selected'))
           allItems.forEach(el => {
@@ -272,17 +273,20 @@ function formatAsText(data: ShareSelectionData): string {
 }
 
 export function clearSelection(): void {
-  document.querySelectorAll('.share-selected').forEach(el => el.classList.remove('share-selected'))
+  document.querySelectorAll('.share-selected, .share-any, .share-all').forEach(el => el.classList.remove('share-selected', 'share-any', 'share-all'))
   updateSelectionBar()
   if (onClearCallback) onClearCallback()
 }
 
-// Sync card-level share-selected when all items are selected/deselected
+// Sync card-level classes when items are selected/deselected
 function syncCardSelectedState(card: HTMLElement): void {
   const allItems = card.querySelectorAll('.menu-item:not(.hidden)')
-  const allSelected = allItems.length > 0 &&
-    [...allItems].every(el => el.classList.contains('share-selected'))
-  card.classList.toggle('share-selected', allSelected)
+  let selected = 0
+  for (const el of allItems) {
+    if (el.classList.contains('share-selected')) selected++
+  }
+  card.classList.toggle('share-any', selected > 0)
+  card.classList.toggle('share-all', allItems.length > 0 && selected === allItems.length)
 }
 
 /* ── Floating selection bar ───────────────────────────── */
@@ -666,12 +670,9 @@ function drawCardContent(
 export function extractRestaurantMeta(cardElement: HTMLElement): { name: string; cuisine: string; badges: string[] } | null {
   const nameElement = cardElement.querySelector('.restaurant-name')
   if (!nameElement) return null
-  const name = (nameElement.childNodes[0] as Text | undefined)?.textContent?.trim() || ''
+  const name = nameElement.textContent?.trim() || ''
   const cuisine = cardElement.querySelector('.cuisine-tag')?.textContent?.trim() || ''
-  const badges: string[] = []
-  if (cardElement.querySelector('.edenred-badge')) badges.push('badge.edenred')
-  if (cardElement.querySelector('.outdoor-badge')) badges.push('badge.outdoor')
-  if (cardElement.querySelector('.stamp-card-badge')) badges.push('badge.stampCard')
+  const badges = BADGES.filter(b => cardElement.querySelector(`.${b.css}`)).map(b => b.i18n)
   return { name, cuisine, badges }
 }
 
@@ -704,7 +705,7 @@ export function getShareSelectionData(getActivePanel: () => HTMLElement | null):
   const restaurants: ShareSelectionData['sections'] = []
   for (const card of activePanel.querySelectorAll<HTMLElement>('.restaurant-card')) {
     const selectedItems = [...card.querySelectorAll<HTMLElement>('.menu-item.share-selected:not(.hidden)')]
-    const isCardSelected = card.classList.contains('share-selected')
+    const isCardSelected = card.classList.contains('share-all')
     if (selectedItems.length === 0 && !isCardSelected) continue
 
     const meta = extractRestaurantMeta(card)

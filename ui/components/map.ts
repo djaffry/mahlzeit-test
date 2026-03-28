@@ -1,6 +1,7 @@
 import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 import { config } from "../config"
+import { BADGES } from "../constants"
 import { escapeHtml, smoothScrollTo } from "../utils/dom"
 import { t } from '../i18n/i18n'
 import { syncHeight } from "./carousel"
@@ -24,9 +25,7 @@ function buildMapPopup(r: Restaurant): string {
   if (r.availableDays) {
     html += `<br><span style="font-size:var(--text-xxs);font-weight:600;color:var(--mauve)">${t('map.onlyDays', { days: r.availableDays.map(d => t('dayShort.' + d)).join(', ') })}</span>`
   }
-  const badges: string[] = []
-  if (r.edenred) badges.push(`<span style="color:var(--red)">${t('badge.edenred')}</span>`)
-  if (r.stampCard) badges.push(`<span style="color:var(--teal)">${t('badge.stampCard')}</span>`)
+  const badges = BADGES.filter(b => r[b.prop]).map(b => `<span style="color:var(--${b.color})">${t(b.i18n)}</span>`)
   if (badges.length) {
     html += `<br><span style="font-size:var(--text-xxs);font-weight:600">${badges.join(' \u00b7 ')}</span>`
   }
@@ -208,7 +207,7 @@ export function setupMapListeners(restaurants: Restaurant[]): void {
       openMap(restaurants)
       return
     }
-    if (target.closest('.restaurant-header')) {
+    if (target.closest('.collapse-btn')) {
       toggleMapCard()
     }
   })

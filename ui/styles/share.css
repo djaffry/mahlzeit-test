@@ -12,8 +12,9 @@
 .menu-item.share-selected .item-price {
   color: var(--accent);
 }
-/* Link card selection — accent text on restaurant name */
-.restaurant-card.share-selected .restaurant-name {
+/* Select-all button highlight when any items are selected */
+.restaurant-card.share-any .select-all-btn,
+.restaurant-card.share-all .select-all-btn {
   color: var(--accent);
 }
 

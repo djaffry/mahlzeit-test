@@ -343,13 +343,15 @@ body {
 .restaurant-card.filter-collapsed .restaurant-content { grid-template-rows: 0fr; }
 .restaurant-card.collapsed .restaurant-header,
 .restaurant-card.filter-collapsed .restaurant-header { border-bottom-color: transparent; }
-.restaurant-card.collapsed .restaurant-collapse-icon { transform: rotate(-90deg); }
+.restaurant-card.collapsed .collapse-btn svg { transform: rotate(-90deg); }
 .restaurant-card.filter-collapsed .restaurant-name { color: var(--text-muted); }
 .restaurant-card.filter-collapsed:hover .restaurant-name { color: var(--text-secondary); }
 
 .restaurant-header {
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-xs) var(--spacing-sm) var(--spacing-md);
   border-bottom: 1px solid var(--border-light);
+}
+.restaurant-header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,20 +359,22 @@ body {
 .restaurant-header-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  flex-shrink: 0;
 }
 .restaurant-name {
   font-size: var(--text-lg);
   font-weight: 700;
   line-height: 1.3;
+  flex: 1;
+  min-width: 0;
+}
+.restaurant-badges {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
   flex-wrap: wrap;
-  cursor: pointer;
-  transition: color 0.15s;
+  padding: var(--spacing-xs) var(--spacing-xs) 0;
 }
-.restaurant-name:hover { color: var(--accent); }
 /* Badge base */
 .cuisine-tag,
 .stamp-card-badge,
@@ -389,20 +393,15 @@ body {
 .edenred-badge { background: var(--red-dim); color: var(--red); }
 .outdoor-badge { background: var(--teal-dim); color: var(--teal); }
 .reservation-badge { background: var(--peach-dim); color: var(--peach); }
-.restaurant-collapse-icon {
-  width: 14px;
-  height: 14px;
-  color: var(--text-muted);
-  flex-shrink: 0;
-  margin-left: var(--spacing-xs);
-  cursor: pointer;
-  transition: color 0.15s ease, transform 0.3s ease;
+.collapse-btn svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
 }
-.restaurant-collapse-icon:hover { color: var(--text); }
 .restaurant-content {
   display: grid;
   grid-template-rows: 1fr;
-  transition: grid-template-rows 0.25s ease;
+  transition: grid-template-rows 0.4s ease;
 }
 .restaurant-content-inner {
   overflow: hidden;
@@ -569,7 +568,9 @@ body {
 .dice-btn,
 .map-close,
 .map-pin-link,
-.map-card-btn {
+.map-card-btn,
+.select-all-btn,
+.collapse-btn {
   background: transparent;
   border: none;
   border-radius: var(--radius-pill);
@@ -587,7 +588,11 @@ body {
 .feedback-link:hover,
 .search-trigger:hover,
 .dice-btn:hover,
-.map-close:hover { background: var(--border-light); }
+.map-close:hover,
+.map-pin-link:hover,
+.map-card-btn:hover,
+.select-all-btn:hover,
+.collapse-btn:hover { background: var(--border-light); color: var(--text); }
 .theme-toggle svg,
 .feedback-link svg,
 .search-trigger svg,
@@ -808,10 +813,14 @@ body {
   .refresh-toast { transition: opacity 0.15s ease; transform: translateX(-50%); }
 }
 
-/* Map pin link on restaurant cards */
-.map-pin-link { color: var(--text-muted); }
-.map-pin-link:hover { background: var(--border-light); color: var(--text); }
-.map-pin-link svg { width: 18px; height: 18px; }
+/* Card header action buttons */
+.map-pin-link,
+.map-card-btn,
+.select-all-btn,
+.collapse-btn { color: var(--text-muted); }
+.map-pin-link svg,
+.map-card-btn svg,
+.select-all-btn svg { width: 18px; height: 18px; }
 
 /* Map overlay */
 .map-overlay {
@@ -899,22 +908,7 @@ body {
 .map-card { isolation: isolate; }
 .map-card.map-collapsed .restaurant-content { grid-template-rows: 0fr; }
 .map-card.map-collapsed .restaurant-header { border-bottom-color: transparent; }
-.map-card-btn {
-  border-radius: var(--radius-sm);
-  color: var(--text-muted);
-  transition: background 0.15s, color 0.15s;
-}
-.map-card-btn:hover { background: var(--surface-dim); color: var(--accent); }
-.map-card-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--accent); background: var(--surface-dim); color: var(--accent); }
-.map-card-btn svg { width: 18px; height: 18px; }
-.map-card-chevron {
-  width: 14px;
-  height: 14px;
-  color: var(--text-muted);
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-.map-card.map-collapsed .map-card-chevron { transform: rotate(-90deg); }
+.map-card.map-collapsed .collapse-btn svg { transform: rotate(-90deg); }
 .map-slot {
   height: 400px;
   background: var(--surface-dim);

@@ -1,12 +1,15 @@
-import { getTagColor, expandFilters, isLoaded } from "../utils/tag-utils"
+import { getTagColor, expandFilters, getDescendants, isLoaded } from "../utils/tag-utils"
 import { haptic } from "../utils/haptic"
 import { t } from '../i18n/i18n'
 
 let activeFilters = new Set<string>()
 let _filterCount = 0
 let _allTags: string[] = []
+let _effectiveCache: Set<string> | null = null
+let _effectiveLowerCache: Set<string> | null = null
 
 export function loadFilters(availableTags: string[]): void {
+  invalidateEffectiveCache()
   activeFilters.clear()
   try {
     const stored = localStorage.getItem('dietary-filters')
@@ -28,6 +31,7 @@ export function loadFilters(availableTags: string[]): void {
 }
 
 export function saveFilters(): void {
+  invalidateEffectiveCache()
   localStorage.setItem('dietary-filters', JSON.stringify({ active: [...activeFilters], known: _allTags }))
 }
 
@@ -43,13 +47,24 @@ export function isFilterShowAll(): boolean {
   return activeFilters.size === _filterCount
 }
 
+function invalidateEffectiveCache(): void { _effectiveCache = null; _effectiveLowerCache = null }
+
+function getEffectiveFilters(): Set<string> {
+  if (_effectiveCache) return _effectiveCache
+  _effectiveCache = isLoaded() ? expandFilters(activeFilters) : new Set(activeFilters)
+  return _effectiveCache
+}
+
+function getEffectiveFiltersLower(): Set<string> {
+  if (_effectiveLowerCache) return _effectiveLowerCache
+  _effectiveLowerCache = new Set([...getEffectiveFilters()].map(f => f.toLowerCase()))
+  return _effectiveLowerCache
+}
+
 export function itemMatchesFilters(item: { tags?: string[] }): boolean {
   const tags = item.tags ?? []
   if (tags.length === 0) return true
-  const expanded = isLoaded()
-    ? expandFilters(activeFilters)
-    : activeFilters
-  return tags.some(t => expanded.has(t))
+  return tags.some(tag => getEffectiveFilters().has(tag))
 }
 
 function updateFiltersLabel(): void {
@@ -66,6 +81,7 @@ export function buildFilterButtons(allTags: string[]): void {
   if (!filtersEl) return
   filtersEl.innerHTML = `<span class="filters-label">${t('filter.label')}</span>`
   _allTags = allTags
+  invalidateEffectiveCache()
   _filterCount = allTags.length
 
   for (const tag of allTags) {
@@ -86,9 +102,7 @@ export function applyFilters(activePanel: HTMLElement | null): void {
   if (!activePanel) return
 
   const showAll = isFilterShowAll()
-  const expanded = !showAll && isLoaded()
-    ? new Set([...expandFilters(activeFilters)].map(f => f.toLowerCase()))
-    : new Set([...activeFilters].map(f => f.toLowerCase()))
+  const effective = showAll ? null : getEffectiveFiltersLower()
 
   const cards = activePanel.querySelectorAll('.restaurant-card')
   cards.forEach(card => {
@@ -103,7 +117,7 @@ export function applyFilters(activePanel: HTMLElement | null): void {
       }
       const tags = (el as HTMLElement & { dataset: { tags?: string } }).dataset.tags ?? ''
       const tagList = tags ? tags.split(' ') : []
-      const matches = tags === '' || tagList.some(t => expanded.has(t))
+      const matches = tags === '' || tagList.some(tag => effective!.has(tag))
       el.classList.toggle('hidden', !matches)
       if (matches) visibleCount++
     })
@@ -139,12 +153,16 @@ export function setupFilterListeners(filtersEl: HTMLElement, onFilterChange: () 
     if (!btn) return
     const filter = btn.dataset.filter
     if (!filter) return
-    if (activeFilters.has(filter)) {
-      activeFilters.delete(filter)
-      btn.classList.remove('active')
-    } else {
-      activeFilters.add(filter)
-      btn.classList.add('active')
+    const turning_on = !activeFilters.has(filter)
+    const affected = isLoaded() ? getDescendants(filter) : new Set([filter])
+    for (const tag of affected) {
+      if (turning_on) activeFilters.add(tag)
+      else activeFilters.delete(tag)
+    }
+    invalidateEffectiveCache()
+    for (const tag of affected) {
+      const b = filtersEl.querySelector<HTMLElement>(`.filter-btn[data-filter="${tag}"]`)
+      if (b) b.classList.toggle('active', turning_on)
     }
     updateFiltersLabel()
     saveFilters()
