@@ -10,6 +10,8 @@
   "party.hint": "Psst...",
   "party.label": "Party!",
   "filter.label": "Filter",
+  "filter.toggleAll": "Toggle all filters",
+  "filter.toggleTag": "Toggle {{tag}} filter",
   "map.title": "Nearby Restaurants",
   "map.close": "Close map",
   "map.onlyDays": "only {{days}}",

@@ -24,4 +24,5 @@ function updateButton(btn: HTMLElement): void {
   btn.textContent = getCurrentLanguage().toUpperCase()
   if (kbd) btn.appendChild(kbd)
   btn.setAttribute('aria-label', t('language.ariaLabel'))
+  btn.setAttribute('title', t('language.ariaLabel'))
 }

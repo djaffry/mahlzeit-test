@@ -329,18 +329,22 @@ function updateTranslatedUI(): void {
   const toolbarSubtitle = document.querySelector(".toolbar-subtitle")
   if (toolbarSubtitle) toolbarSubtitle.textContent = config.subtitle
 
-  // Aria-labels and placeholders
-  document.getElementById('search-trigger')?.setAttribute('aria-label', t('search.ariaLabel'))
-  document.getElementById('feedback-link')?.setAttribute('aria-label', t('feedback.ariaLabel'))
-  document.getElementById('dice-btn')?.setAttribute('aria-label', t('dice.ariaLabel'))
-  document.getElementById('theme-toggle')?.setAttribute('aria-label', t('theme.ariaLabel'))
-  document.getElementById('party-toggle')?.setAttribute('aria-label', t('party.ariaLabel'))
+  // Aria-labels, titles, and placeholders
+  for (const [id, key] of [
+    ['search-trigger', 'search.ariaLabel'],
+    ['feedback-link', 'feedback.ariaLabel'],
+    ['dice-btn', 'dice.ariaLabel'],
+    ['theme-toggle', 'theme.ariaLabel'],
+    ['party-toggle', 'party.ariaLabel'],
+    ['map-close', 'map.close'],
+  ] as const) {
+    const el = document.getElementById(id)
+    if (el) { const v = t(key); el.setAttribute('aria-label', v); el.setAttribute('title', v) }
+  }
   const searchInput = document.getElementById('search-input') as HTMLInputElement | null
   if (searchInput) searchInput.placeholder = t('search.placeholder')
   const mapTitle = document.querySelector('.map-title')
   if (mapTitle) mapTitle.textContent = t('map.title')
-  const mapClose = document.getElementById('map-close')
-  if (mapClose) mapClose.setAttribute('aria-label', t('map.close'))
 }
 
 /* ── Init ─────────────────────────────────────────────── */

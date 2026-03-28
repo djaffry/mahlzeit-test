@@ -32,9 +32,9 @@ function renderRestaurantHeader(restaurant: Restaurant, suffix = ""): string {
       <div class="restaurant-header-top">
         <div class="restaurant-name">${escapeHtml(restaurant.title)}</div>
         <div class="restaurant-header-actions">
-          <button class="select-all-btn" aria-label="${t('card.selectAll')}">${SVG.selectAll}</button>
+          <button class="select-all-btn" aria-label="${t('card.selectAll')}" title="${t('card.selectAll')}">${SVG.selectAll}</button>
           ${restaurant.coordinates ? `<button class="map-pin-link" aria-label="${t('map.showOnMap')}" title="${t('map.showOnMap')}">${SVG.mapPin}</button>` : ""}
-          <button class="collapse-btn" aria-label="${t('card.collapse')}">${SVG.chevron}</button>
+          <button class="collapse-btn" aria-label="${t('card.collapse')}" title="${t('card.collapse')}">${SVG.chevron}</button>
         </div>
       </div>
       ${renderBadges(restaurant, suffix)}
@@ -116,8 +116,8 @@ export function renderMapCardInGrid(mapCollapsed: boolean): string {
         <div class="restaurant-header-top">
           <div class="restaurant-name">${t('map.cardTitle')}</div>
           <div class="restaurant-header-actions">
-            <button class="map-card-btn map-fullscreen-btn" aria-label="${t('map.fullscreen')}">${SVG.fullscreen}</button>
-            <button class="collapse-btn" aria-label="${t('card.collapse')}">${SVG.chevron}</button>
+            <button class="map-card-btn map-fullscreen-btn" aria-label="${t('map.fullscreen')}" title="${t('map.fullscreen')}">${SVG.fullscreen}</button>
+            <button class="collapse-btn" aria-label="${t('card.collapse')}" title="${t('card.collapse')}">${SVG.chevron}</button>
           </div>
         </div>
       </div>

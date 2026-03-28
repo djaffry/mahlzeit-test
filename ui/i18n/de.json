@@ -10,6 +10,8 @@
   "party.hint": "Psst...",
   "party.label": "Party!",
   "filter.label": "Filter",
+  "filter.toggleAll": "Alle Filter umschalten",
+  "filter.toggleTag": "{{tag}}-Filter umschalten",
   "map.title": "Restaurants in der Nähe",
   "map.close": "Karte schließen",
   "map.onlyDays": "nur {{days}}",

@@ -1,5 +1,6 @@
 import { getTagColor, expandFilters, getDescendants, isLoaded } from "../utils/tag-utils"
 import { haptic } from "../utils/haptic"
+import { escapeHtml } from '../utils/dom'
 import { t } from '../i18n/i18n'
 
 let activeFilters = new Set<string>()
@@ -72,14 +73,14 @@ function updateFiltersLabel(): void {
   if (!label) return
   const allActive = activeFilters.size === _filterCount
   label.innerHTML = allActive
-    ? `${t('filter.label')} <span class="filters-clear">\u25cf</span>`
-    : `${t('filter.label')} <span class="filters-clear">\u25cb</span>`
+    ? `${escapeHtml(t('filter.label'))} <span class="filters-clear">\u25cf</span>`
+    : `${escapeHtml(t('filter.label'))} <span class="filters-clear">\u25cb</span>`
 }
 
 export function buildFilterButtons(allTags: string[]): void {
   const filtersEl = document.getElementById('filters')
   if (!filtersEl) return
-  filtersEl.innerHTML = `<span class="filters-label">${t('filter.label')}</span>`
+  filtersEl.innerHTML = `<span class="filters-label" title="${escapeHtml(t('filter.toggleAll'))}">${escapeHtml(t('filter.label'))}</span>`
   _allTags = allTags
   invalidateEffectiveCache()
   _filterCount = allTags.length
@@ -89,7 +90,9 @@ export function buildFilterButtons(allTags: string[]): void {
     const btn = document.createElement('button')
     btn.className = 'filter-btn'
     btn.dataset.filter = tag
-    btn.textContent = t('tag.' + tag)
+    const label = t('tag.' + tag)
+    btn.textContent = label
+    btn.title = t('filter.toggleTag', { tag: label })
     btn.style.setProperty('--filter-color', `var(--${color})`)
     btn.style.setProperty('--filter-dim', `var(--${color}-dim)`)
     if (activeFilters.has(tag)) btn.classList.add('active')
