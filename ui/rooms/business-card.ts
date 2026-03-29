@@ -1,10 +1,13 @@
 import { t } from "../i18n/i18n"
 import { showToast } from "../components/share"
+import { avatarToImage } from "./avatars"
 import type { Avatar } from "./types"
 
 const CARD_HEIGHT = 80
 const PADDING_LEFT = 80
 const PADDING_RIGHT = 20
+const DPR = 2
+const PREVIEW_SCALE = 0.8
 const FONT = '600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
 
 function cssVar(name: string): string {
@@ -32,8 +35,9 @@ export async function copyBusinessCard(avatar: Avatar): Promise<void> {
   const totalWidth = ctx.measureText(label).width
   const cardWidth = Math.ceil(PADDING_LEFT + totalWidth + PADDING_RIGHT)
 
-  _canvas.width = cardWidth
-  _canvas.height = CARD_HEIGHT
+  _canvas.width = cardWidth * DPR
+  _canvas.height = CARD_HEIGHT * DPR
+  ctx.scale(DPR, DPR)
 
   ctx.fillStyle = bg
   ctx.fillRect(0, 0, cardWidth, CARD_HEIGHT)
@@ -43,10 +47,10 @@ export async function copyBusinessCard(avatar: Avatar): Promise<void> {
   ctx.arc(44, CARD_HEIGHT / 2, 24, 0, Math.PI * 2)
   ctx.fill()
 
-  ctx.font = "28px sans-serif"
-  ctx.textAlign = "center"
-  ctx.textBaseline = "middle"
-  ctx.fillText(avatar.emoji, 44, CARD_HEIGHT / 2 + 1)
+  try {
+    const img = await avatarToImage(avatar, 28 * DPR)
+    ctx.drawImage(img, 44 - 14, CARD_HEIGHT / 2 - 14, 28, 28)
+  } catch { /* icon render failed, circle is still visible */ }
 
   ctx.font = FONT
   ctx.textAlign = "left"
@@ -73,5 +77,11 @@ export async function copyBusinessCard(avatar: Avatar): Promise<void> {
     await navigator.clipboard.writeText(label)
   }
 
-  showToast(t("voting.copied"), _canvas)
+  const pw = Math.round(cardWidth * PREVIEW_SCALE * DPR)
+  const ph = Math.round(CARD_HEIGHT * PREVIEW_SCALE * DPR)
+  const preview = document.createElement("canvas")
+  preview.width = pw
+  preview.height = ph
+  preview.getContext("2d")!.drawImage(_canvas, 0, 0, pw, ph)
+  showToast(t("voting.copied"), preview)
 }

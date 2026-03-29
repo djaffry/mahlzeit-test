@@ -82,10 +82,14 @@
 .voting-identity:hover { background: var(--accent-dim); filter: brightness(1.2); }
 
 .voting-identity .voting-avatar {
-  width: 18px;
-  height: 18px;
-  font-size: 11px;
+  width: 22px;
+  height: 22px;
   border: none;
+}
+
+.voting-identity .voting-avatar svg {
+  width: 14px;
+  height: 14px;
 }
 
 .voting-identity-label {
@@ -194,13 +198,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  font-size: 13px;
-  line-height: 1;
   flex-shrink: 0;
   border: 1px solid var(--border-light);
+}
+
+.voting-avatar svg {
+  width: 18px;
+  height: 18px;
 }
 
 .voting-avatar-user {

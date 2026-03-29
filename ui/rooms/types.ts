@@ -14,7 +14,8 @@ export interface UserVote {
 }
 
 export interface Avatar {
-  emoji: string
+  icon: string
   color: string
+  iconColor: string
   label: string
 }

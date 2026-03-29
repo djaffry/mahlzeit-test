@@ -9,7 +9,7 @@ describe("getOrCreateIdentity", () => {
   it("creates a new identity on first call", () => {
     const id = getOrCreateIdentity()
     expect(id.pubkey).toHaveLength(64)
-    expect(id.avatar.emoji).toBeTruthy()
+    expect(id.avatar.icon).toBeTruthy()
     expect(id.avatar.color).toBeTruthy()
   })
 

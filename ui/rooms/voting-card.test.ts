@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest"
 import { renderVotingCard, renderVotingCardCollapsed } from "./voting-card"
 import type { Avatar } from "./types"
 
-const mockAvatar: Avatar = { emoji: "\u{1F355}", color: "#f38ba8", label: "\u{1F355} coral" }
+const mockAvatar: Avatar = { icon: '<path d="m12 14-1 1"/>', color: "#f38ba8", iconColor: "white", label: "The Red Pizza" }
 
 describe("renderVotingCard", () => {
   it("renders card with header and restaurant rows", () => {
@@ -21,7 +21,7 @@ describe("renderVotingCard", () => {
     expect(html).toContain("voting-card")
     expect(html).toContain("Mano")
     expect(html).toContain("Bao Bar")
-    expect(html).toContain("\u{1F355}")
+    expect(html).toContain("voting-avatar")
     expect(html).toContain("3")
   })
 

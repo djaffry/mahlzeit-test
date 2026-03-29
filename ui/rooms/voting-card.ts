@@ -1,6 +1,7 @@
 import { escapeHtml } from "../utils/dom"
 import { SVG } from "../constants"
 import { t } from "../i18n/i18n"
+import { avatarSvg } from "./avatars"
 import type { Avatar } from "./types"
 
 /* ── Types ────────────────────────────────────────────────── */
@@ -38,7 +39,7 @@ const COPY_ICON = '<svg class="voting-identity-copy" viewBox="0 0 16 16" fill="n
 
 function renderAvatarBadge(avatar: Avatar, isUser = false): string {
   const cls = isUser ? "voting-avatar voting-avatar-user" : "voting-avatar"
-  return `<span class="${cls}" style="background:${avatar.color}" title="${escapeHtml(avatar.label)}">${escapeHtml(avatar.emoji)}</span>`
+  return `<span class="${cls}" style="background:${avatar.color}" title="${escapeHtml(avatar.label)}">${avatarSvg(avatar)}</span>`
 }
 
 function renderIdentityBadge(avatar: Avatar): string {

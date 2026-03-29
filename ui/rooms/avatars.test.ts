@@ -1,13 +1,14 @@
 import { describe, it, expect } from "vitest"
-import { getAvatar, FOOD_EMOJIS, AVATAR_COLORS } from "./avatars"
+import { getAvatar, FOOD_ICONS, AVATAR_COLORS } from "./avatars"
 
 describe("getAvatar", () => {
-  it("returns an emoji, color, and label", () => {
+  it("returns an icon, color, iconColor, and label", () => {
     const avatar = getAvatar("a".repeat(64))
-    expect(FOOD_EMOJIS.map((f) => f.emoji)).toContain(avatar.emoji)
+    expect(FOOD_ICONS.map((f) => f.svg)).toContain(avatar.icon)
     expect(AVATAR_COLORS.map((c) => c.hex)).toContain(avatar.color)
+    expect(avatar.iconColor).toMatch(/^(white|#2b2b3d)$/)
     expect(avatar.label).toBeTruthy()
-    expect(avatar.label).toMatch(/^The \w+ \w+$/)
+    expect(avatar.label).toMatch(/^The \w+/)
   })
 
   it("is deterministic for the same pubkey", () => {
@@ -19,7 +20,7 @@ describe("getAvatar", () => {
   it("produces different avatars for different pubkeys", () => {
     const a = getAvatar("a".repeat(64))
     const b = getAvatar("b".repeat(64))
-    const same = a.emoji === b.emoji && a.color === b.color
+    const same = a.icon === b.icon && a.color === b.color
     expect(same).toBe(false)
   })
 })
