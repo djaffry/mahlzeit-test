@@ -11,42 +11,35 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-27T20:50:34.477Z",
+  "fetchedAt": "2026-03-30T09:53:07.182Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "Menü",
           "items": [
             {
-              "title": "Brokkoli Creme Suppe",
+              "title": "Orientalische Linsen Suppe",
               "price": null,
               "tags": [],
-              "allergens": "O,L,N,G",
+              "allergens": "L,H",
               "description": null
             },
             {
-              "title": "Lachsfilet gebraten mit Petersilienerdäpfeln und Salat",
-              "price": "14,90 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "O,0,M,6",
-              "description": null
-            },
-            {
-              "title": "Fischburger mit Sauce Tartare und Pommes",
-              "price": "12,50 €",
-              "tags": [],
-              "allergens": "0,A,C,D",
-              "description": null
-            },
-            {
-              "title": "M3: Gemüse-Curry mit Kichererbsen dazu Basmatireis (.,N,0,6)",
+              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat (c,m‚0.A,6)",
               "price": "11,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Erdäpfelgulasch mit Fladenbrot",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,H,0,A",
               "description": null
             }
           ]
@@ -55,12 +48,17 @@
           "name": "Tagesempfehlungen",
           "items": [
             {
-              "title": "Hokkaido-Kürbis-Kokosmilch-Suppe(Vegan)",
+              "title": "Karotten-Ingwer-Cremesuppe (G,‚O,N,L)",
               "price": "5,50 € / 7,50 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "O,N,L",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gemüse-Curry mit Kichererbsen dazu Basmatireis",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
               "description": null
             },
             {
@@ -78,12 +76,10 @@
               "description": null
             },
             {
-              "title": "Chili con Tofu (Vegan) mit Braterdäpfeln",
-              "price": "16,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "O,L,N",
+              "title": "Pasta Arrabbiata mit Parmesan",
+              "price": "17,50 €",
+              "tags": [],
+              "allergens": "A,G,C,L,N",
               "description": null
             },
             {

@@ -11,42 +11,35 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-27T10:07:48.082Z",
+  "fetchedAt": "2026-03-30T09:53:07.182Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "Menu",
           "items": [
             {
-              "title": "Broccoli cream soup",
+              "title": "Oriental lentil soup",
               "price": null,
               "tags": [],
-              "allergens": "O,L,N,G",
+              "allergens": "L,H",
               "description": null
             },
             {
-              "title": "Salmon fillet fried with parsley potatoes and salad",
-              "price": "14,90 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "O,0,M,6",
-              "description": null
-            },
-            {
-              "title": "Fish burger with tartare sauce and fries",
-              "price": "12,50 €",
-              "tags": [],
-              "allergens": "0,A,C,D",
-              "description": null
-            },
-            {
-              "title": "M3: Vegetable curry with chickpeas and basmati rice (.,N,0,6)",
+              "title": "Chicken schnitzel baked with potato salad (c,m‚0.A,6)",
               "price": "11,90 €",
-              "tags": [],
+              "tags": [
+                "Huhn"
+              ],
               "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Potato goulash with flatbread",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,H,0,A",
               "description": null
             }
           ]
@@ -55,12 +48,17 @@
           "name": "Daily recommendations",
           "items": [
             {
-              "title": "Hokkaido pumpkin coconut milk soup (vegan)",
+              "title": "Carrot ginger cream soup (G,‚O,N,L)",
               "price": "5,50 € / 7,50 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "O,N,L",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Vegetable curry with chickpeas and basmati rice",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
               "description": null
             },
             {
@@ -78,12 +76,10 @@
               "description": null
             },
             {
-              "title": "Chili con Tofu (Vegan) with fried potatoes",
-              "price": "16,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "O,L,N",
+              "title": "Pasta Arrabbiata with Parmesan",
+              "price": "17,50 €",
+              "tags": [],
+              "allergens": "A,G,C,L,N",
               "description": null
             },
             {

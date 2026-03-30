@@ -13,10 +13,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-27T10:07:44.202Z",
+  "fetchedAt": "2026-03-30T09:53:04.860Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "One pot meal",
@@ -46,7 +46,7 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Lentil and vegetable 🥦🥕🌿 cream soup with coconut milk 🥥",
+              "title": "Beetroot 🫜 pear 🍐 soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -61,19 +61,18 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Gnocchi Quattro Formaggi 🧀 with parsley 🌿 - optionally with Parmesan",
+              "title": "Königsberger Klopse – in mustard 💛 caper sauce – with rice",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Warm bread pudding with white chocolate 🍫, cranberries 🍓 & vanilla sauce 💛",
+              "title": "Carnaroli risotto Primavera with mushrooms 🍄‍🟫, zucchini 🥒, dried tomatoes 🍅, broccoli 🥦 & parmesan",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -84,18 +83,16 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Chili con carne with minced beef, kidney beans 🫘, corn 🌽, peppers 🫑 & rice",
+              "title": "Marjoram 🌿-meat from the Ötscherblick pig with rice",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei",
-                "Rindfleisch"
+                "Schweinefleisch"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Balsamic lentils with bread dumpling cubes | Rice – optionally with fresh chives 🌿",
+              "title": "Wok vegetables 🥦🥕🥒 with ginger 🫚, tofu & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan"
@@ -109,21 +106,20 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Wild herbs 🌿 quinoa radishes 🫜 salad bowl with citrus 🍋 honey 🍯 dressing",
+              "title": "Styrian salad bowl with runner beans 🫘, white 🤍 giant beans, radishes 🫜, peppers 🫑, pumpkin seed oil & sausage",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Glutenfrei",
+                "Laktosefrei"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Gabbage lentil salad bowl with peppers 🫑, radishes 🫜, tomatoes 🍅, pomegranate 🍎, cucumbers 🥒 & fresh parsley 🌿",
+              "title": "Green 💚 Spring 🌸 Orecchiette Salad Bowl with peas 🫛, green asparagus 🌿, radishes 🫜 & citrus 🍋 honey 🍯 vinaigrette",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -143,10 +139,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vegan white peach mousse 🍑 with vanilla 💛, oat milk, coconut flakes 🥥 & apricot",
+              "title": "Cheesecake - with strawberry 🍓 - in a cup",
               "price": "3,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
