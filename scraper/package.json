@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "build": "tsc",
     "scrape": "node dist/scrape-runner.js",
     "translate": "node dist/translate-runner.js"
@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
-    "rimraf": "^6.1.3",
     "typescript": "^5.7.0"
   }
 }

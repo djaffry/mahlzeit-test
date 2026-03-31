@@ -5,6 +5,7 @@ import "./styles/style.css"
 import "./styles/carousel.css"
 import "./styles/dice.css"
 import "./styles/share.css"
+import "./styles/voting.css"
 
 // Config & constants
 import { config } from "./config"
@@ -71,7 +72,29 @@ import {
   isActive as shareIsActive,
   clearSelection as shareClearSelection,
   getShareSelectionData,
+  showToast,
 } from "./components/share"
+import {
+  initVoting,
+  acceptVoting,
+  getVotingCardHtml,
+  onDayChangeVoting,
+  toggleVote,
+  toggleAllVotes,
+  isVotingActive,
+  setVotingCollapsed,
+  createRoom,
+  switchToRoom,
+  leaveRoom,
+  getActiveRoom,
+  getKnownRooms,
+  encodeRoomPayload,
+  setRoomListOpen,
+  setConfirmLeaveRoom,
+  renameRoom,
+} from "./rooms/voting-lifecycle"
+import { copyBusinessCard } from "./rooms/business-card"
+import { getOrCreateIdentity } from "./rooms/user-identity"
 
 /* ── Module-level state ───────────────────────────────── */
 
@@ -152,7 +175,7 @@ function renderDayPanels(
     '<div class="carousel" id="carousel"><div class="carousel-track">' +
     DAYS.map(
       (d) =>
-        `<div class="day-panel" data-panel="${d}">${renderDay(menuRestaurants, linkRestaurants, d, collapsedSet, mapCollapsed)}</div>`
+        `<div class="day-panel" data-panel="${d}">${renderDay(menuRestaurants, linkRestaurants, d, collapsedSet, mapCollapsed, getVotingCardHtml(d))}</div>`
     ).join("") +
     '</div></div><span class="sr-only" id="day-announcer" aria-live="polite"></span>'
 
@@ -219,6 +242,140 @@ function setupCollapseExpand(contentEl: HTMLElement): void {
         focusOnMap(card.dataset.restaurant ?? "", getAllRestaurants())
         return
       }
+    }
+  })
+
+  // Voting card interactions
+  contentEl.addEventListener("click", (e) => {
+    const target = e.target as Element
+
+    const acceptBtn = target.closest?.(".voting-consent-accept")
+    if (acceptBtn) {
+      acceptVoting()
+      return
+    }
+
+    // Room bar — open/close room list
+    const roomCurrentBtn = target.closest?.(".voting-room-current")
+    if (roomCurrentBtn) {
+      const action = (roomCurrentBtn as HTMLElement).dataset.action
+      setRoomListOpen(action === "open-room-list")
+      return
+    }
+
+    // Room list — select room (default room button or private room select)
+    const roomItemSelect = target.closest?.(".voting-room-item-select")
+    const roomItemDefault = !roomItemSelect ? target.closest?.(".voting-room-item[data-room-id='']") : null
+    if (roomItemSelect || roomItemDefault) {
+      const el = (roomItemSelect || roomItemDefault) as HTMLElement
+      const roomId = el.dataset.roomId
+      if (!roomId) {
+        switchToRoom(null)
+      } else {
+        const room = getKnownRooms().find((r) => r.id === roomId)
+        if (room) switchToRoom(room)
+      }
+      return
+    }
+
+    // Room list — request leave (shows inline confirmation)
+    const roomLeaveBtn = target.closest?.(".voting-room-item-leave")
+    if (roomLeaveBtn) {
+      const roomId = (roomLeaveBtn as HTMLElement).dataset.roomId
+      if (roomId) setConfirmLeaveRoom(roomId)
+      return
+    }
+
+    // Room list — confirm leave
+    const confirmYes = target.closest?.(".voting-room-confirm-yes")
+    if (confirmYes) {
+      const roomId = (confirmYes as HTMLElement).dataset.roomId
+      if (roomId) leaveRoom(roomId)
+      return
+    }
+
+    // Room list — cancel leave
+    const confirmNo = target.closest?.(".voting-room-confirm-no")
+    if (confirmNo) {
+      setConfirmLeaveRoom(null)
+      return
+    }
+
+    // Room list — create new room
+    const createBtn = target.closest?.(".voting-room-item-create")
+    if (createBtn) {
+      const name = window.prompt(t("voting.createRoomPrompt"))
+      if (name?.trim()) createRoom(name.trim())
+      return
+    }
+
+    // Room bar — share room link
+    const shareBtn = target.closest?.(".voting-room-share")
+    if (shareBtn) {
+      const room = getActiveRoom()
+      if (room) {
+        const url = `${window.location.origin}${window.location.pathname}?room=${encodeRoomPayload(room)}`
+        navigator.clipboard.writeText(url).then(() => {
+          showToast(t("voting.roomLinkCopied"))
+        }).catch(() => {
+          window.prompt(t("voting.roomLinkCopied"), url)
+        })
+      }
+      return
+    }
+
+    // Room bar — rename room
+    const renameBtn = target.closest?.(".voting-room-rename")
+    if (renameBtn) {
+      const roomId = (renameBtn as HTMLElement).dataset.roomId
+      const room = getKnownRooms().find((r) => r.id === roomId)
+      if (room) {
+        const newName = window.prompt(t("voting.renameRoomPrompt"), room.name)
+        if (newName?.trim() && newName.trim() !== room.name) {
+          renameRoom(room.id, newName.trim())
+        }
+      }
+      return
+    }
+
+    const voteRow = target.closest?.(".voting-row")
+    if (voteRow) {
+      if (voteRow.closest(".voting-past")) return
+      const id = (voteRow as HTMLElement).dataset.restaurantId
+      if (id) toggleVote(id)
+      return
+    }
+
+    const infoToggle = target.closest?.(".voting-info-toggle")
+    if (infoToggle) {
+      infoToggle.closest(".voting-card")?.querySelector(".voting-info-panel")?.toggleAttribute("hidden")
+      return
+    }
+
+    // Chevron toggles collapse
+    const chevron = target.closest?.(".voting-card .collapse-btn")
+    if (chevron) {
+      const card = chevron.closest<HTMLElement>(".voting-card")
+      if (card) {
+        card.classList.toggle("collapsed")
+        setVotingCollapsed(card.classList.contains("collapsed"))
+      }
+      return
+    }
+
+    // Identity badge copies the avatar business card
+    const identityBadge = target.closest?.(".voting-identity")
+    if (identityBadge) {
+      copyBusinessCard(getOrCreateIdentity().avatar)
+      return
+    }
+
+    // Clicking the card title selects/deselects all restaurants
+    const votingName = target.closest?.(".voting-card > .restaurant-header .restaurant-name")
+    if (votingName) {
+      if (votingName.closest(".voting-past")) return
+      toggleAllVotes()
+      return
     }
   })
 }
@@ -378,6 +535,7 @@ async function init(): Promise<void> {
 
     _restaurants = allRestaurants
     initContentHash(allRestaurants)
+    await initVoting(_restaurants)
 
     const menuRestaurants = getMenuRestaurants()
     const linkRestaurants = getLinkRestaurants()
@@ -480,6 +638,10 @@ carouselSetup({
     moveInlineMap(day, carouselGetActivePanel)
     refreshPanel()
     flushPendingRefresh(applyRefresh)
+    if (isVotingActive()) {
+      const dayIndex = DAYS.indexOf(day as (typeof DAYS)[number])
+      if (dayIndex >= 0) onDayChangeVoting(dayIndex)
+    }
   },
 })
 

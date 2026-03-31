@@ -132,12 +132,13 @@ export function renderDay(
   linkRestaurants: Restaurant[],
   day: string,
   collapsedSet: Set<string>,
-  mapCollapsed: boolean
+  mapCollapsed: boolean,
+  votingCardHtml = ""
 ): string {
   const cards =
     menuRestaurants.map((r) => renderRestaurant(r, day, collapsedSet)).join("") +
     linkRestaurants.map((r) => renderLinkRestaurant(r, day, collapsedSet)).join("")
-  return `<div class="restaurant-grid">${renderMapCardInGrid(mapCollapsed)}${cards}</div>`
+  return `<div class="restaurant-grid">${renderMapCardInGrid(mapCollapsed)}${votingCardHtml}${cards}</div>`
 }
 
 export function revealCards(panel: HTMLElement, instant = false): void {

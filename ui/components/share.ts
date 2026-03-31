@@ -6,6 +6,9 @@ import { getMondayOfWeek } from "../utils/date"
 import { isOverlayOpen } from "../utils/dom"
 import { haptic } from "../utils/haptic"
 import { t, getLocale } from '../i18n/i18n'
+import { getIdentity } from '../rooms/user-identity'
+import { avatarToImage } from '../rooms/avatars'
+import type { Avatar } from '../rooms/types'
 
 /* ── Types ─────────────────────────────────────────────── */
 
@@ -25,33 +28,27 @@ export interface ShareSelectionData {
 const CANVAS_WIDTH = 720
 const PADDING = 36
 const CONTENT_WIDTH = CANVAS_WIDTH - PADDING * 2
-const LOGO_SIZE = 56
+const LOGO_SIZE = 40
 const FONT_STACK = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
 
 // Catppuccin color palettes
 const COLOR_MOCHA = {
   bg:          '#1e1e2e',
-  surface:     '#313244',
   text:        '#cdd6f4',
   secondary:   '#a6adc8',
   muted:       '#6c7086',
   accent:      '#f5c2e7',
-  border:      '#45475a',
   borderLight: '#3b3c50',
 }
 const COLOR_LATTE = {
   bg:          '#eff1f5',
-  surface:     '#ffffff',
   text:        '#4c4f69',
   secondary:   '#6c6f85',
   muted:       '#9ca0b0',
   accent:      '#8839ef',
-  border:      '#ccd0da',
   borderLight: '#e6e9ef',
 }
 let COLOR = COLOR_MOCHA
-const CARD_RADIUS = 12
-const CARD_PADDING = 36
 
 const TAG_COLORS_MOCHA: Record<string, { bg: string; fg: string }> = {
   Vegan:            { bg: 'rgba(166,227,161,0.18)', fg: '#a6e3a1' },
@@ -89,18 +86,6 @@ let TAG_COLORS: Record<string, { bg: string; fg: string }> = TAG_COLORS_MOCHA
 const TAG_COLOR_DEFAULT_MOCHA = { bg: 'rgba(245,194,231,0.18)', fg: '#f5c2e7' }
 const TAG_COLOR_DEFAULT_LATTE = { bg: 'rgba(136,57,239,0.10)', fg: '#8839ef' }
 let TAG_COLOR_DEFAULT = TAG_COLOR_DEFAULT_MOCHA
-
-const BADGE_COLORS_MOCHA: Record<string, string> = {
-  'badge.edenred':   '#f38ba8',
-  'badge.stampCard':  '#f9e2af',
-  'badge.outdoor':    '#94e2d5',
-}
-const BADGE_COLORS_LATTE: Record<string, string> = {
-  'badge.edenred':   '#d20f39',
-  'badge.stampCard':  '#df8e1d',
-  'badge.outdoor':    '#179299',
-}
-let BADGE_COLORS: Record<string, string> = BADGE_COLORS_MOCHA
 
 const TOAST_DURATION_MS = 2500
 const VIBRATE_MS = 8
@@ -143,7 +128,7 @@ export function setup(deps: {
     const selectAllBtn = target.closest('.select-all-btn')
     if (selectAllBtn) {
       const card = selectAllBtn.closest('.restaurant-card') as HTMLElement | null
-      if (card && !card.classList.contains('map-card')) {
+      if (card && !card.classList.contains('map-card') && !card.classList.contains('voting-card')) {
         const allItems = card.querySelectorAll<HTMLElement>('.menu-item:not(.hidden)')
         if (allItems.length === 0) {
           // Link card — toggle card-level selection
@@ -187,11 +172,11 @@ export function setup(deps: {
   })
 }
 
-export function renderShareImage(data: ShareSelectionData): HTMLCanvasElement {
+export async function renderShareImage(data: ShareSelectionData): Promise<HTMLCanvasElement> {
   applyTheme()
 
   const measureCtx = document.createElement('canvas').getContext('2d')!
-  const height = layoutCanvas(measureCtx, data, false)
+  const { height } = layoutCanvas(measureCtx, data, false)
 
   const canvas = document.createElement('canvas')
   canvas.width = CANVAS_WIDTH * 2
@@ -201,7 +186,16 @@ export function renderShareImage(data: ShareSelectionData): HTMLCanvasElement {
 
   ctx.fillStyle = COLOR.bg
   ctx.fillRect(0, 0, CANVAS_WIDTH, height)
-  layoutCanvas(ctx, data, true)
+  const { avatarDraw } = layoutCanvas(ctx, data, true)
+
+  if (avatarDraw) {
+    const { avatar, x, y, size } = avatarDraw
+    const iconSize = Math.round(size * 0.6)
+    try {
+      const img = await avatarToImage(avatar, iconSize * 2)
+      ctx.drawImage(img, x - iconSize / 2, y - iconSize / 2, iconSize, iconSize)
+    } catch { /* icon render failed, circle is still visible */ }
+  }
 
   return canvas
 }
@@ -211,7 +205,6 @@ function applyTheme(): void {
   COLOR = isLatte ? COLOR_LATTE : COLOR_MOCHA
   TAG_COLORS = isLatte ? TAG_COLORS_LATTE : TAG_COLORS_MOCHA
   TAG_COLOR_DEFAULT = isLatte ? TAG_COLOR_DEFAULT_LATTE : TAG_COLOR_DEFAULT_MOCHA
-  BADGE_COLORS = isLatte ? BADGE_COLORS_LATTE : BADGE_COLORS_MOCHA
   logoImage = isLatte ? logoImageLight : logoImageDark
 }
 
@@ -220,7 +213,7 @@ function applyTheme(): void {
 async function shareSelectionAsPicture(): Promise<void> {
   const data = _getSelectionData?.()
   if (!data) return
-  const canvas = renderShareImage(data)
+  const canvas = await renderShareImage(data)
   const filename = data.sections.length === 1 ? data.sections[0].restaurant : t('share.filename')
   await exportImage(canvas, filename)
   clearSelection()
@@ -268,6 +261,12 @@ function formatAsText(data: ShareSelectionData): string {
 
   lines.push('')
   lines.push(window.location.origin + window.location.pathname)
+
+  const identity = getIdentity()
+  if (identity) {
+    lines.push('')
+    lines.push('- ' + identity.avatar.label)
+  }
 
   return lines.join('\n')
 }
@@ -384,7 +383,7 @@ async function exportImage(canvas: HTMLCanvasElement, name: string): Promise<voi
   showToast(t('share.imageDownloaded'), canvas)
 }
 
-function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: string): void {
+export function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: string): void {
   const existing = document.querySelector('.share-toast')
   if (existing) existing.remove()
   const existingBackdrop = document.querySelector('.share-toast-backdrop')
@@ -437,232 +436,136 @@ function showToast(message: string, canvas?: HTMLCanvasElement | null, text?: st
 
 /* ── Canvas rendering ─────────────────────────────────── */
 
-function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, draw: boolean): number {
+type AvatarDraw = { avatar: Avatar; x: number; y: number; size: number }
+
+function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, draw: boolean): { height: number; avatarDraw: AvatarDraw | null } {
   let y = PADDING
+  let avatarDraw: AvatarDraw | null = null
+  const x = PADDING
+  const maxW = CONTENT_WIDTH
+  const rightX = CANVAS_WIDTH - PADDING
 
-  // Header: logo + title + day
-  const titleX = PADDING + LOGO_SIZE + 16
-  if (draw && logoImage) ctx.drawImage(logoImage, PADDING, y, LOGO_SIZE, LOGO_SIZE)
+  // ── Header: logo + title + subtitle ──
+  const identX = x + LOGO_SIZE + 14
+  if (draw && logoImage) ctx.drawImage(logoImage, x, y + 4, LOGO_SIZE, LOGO_SIZE)
 
-  setFont(ctx, '700 28px')
-  if (draw) { ctx.fillStyle = COLOR.accent; ctx.fillText(headerTitle, titleX, y + 24) }
-  setFont(ctx, '20px')
-  if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(headerSubtitle, titleX, y + 48) }
+  setFont(ctx, '700 22px')
+  if (draw) { ctx.fillStyle = COLOR.accent; ctx.fillText(headerTitle, identX, y + 20) }
+  const titleWidth = ctx.measureText(headerTitle).width
+
+  setFont(ctx, '15px')
+  if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(headerSubtitle, identX, y + 38) }
+
+  // Right column: avatar badge (row 1), date (row 2)
+  const identity = getIdentity()
+  if (identity) {
+    const avatarSize = 24
+    setFont(ctx, '600 14px')
+    const maxLabelW = rightX - (identX + titleWidth + 24) - avatarSize - 6
+    const label = ellipsize(ctx, identity.avatar.label, Math.max(maxLabelW, 60))
+    const labelWidth = ctx.measureText(label).width
+    const groupW = avatarSize + 6 + labelWidth
+    const groupX = rightX - groupW
+    const avatarCy = y + 10
+
+    if (draw) {
+      ctx.beginPath()
+      ctx.arc(groupX + avatarSize / 2, avatarCy, avatarSize / 2, 0, Math.PI * 2)
+      ctx.fillStyle = identity.avatar.color
+      ctx.fill()
+      avatarDraw = { avatar: identity.avatar, x: groupX + avatarSize / 2, y: avatarCy, size: avatarSize }
+      ctx.fillStyle = COLOR.text
+      ctx.fillText(label, groupX + avatarSize + 6, avatarCy + 5)
+    }
+  }
 
   if (data.day) {
-    setFont(ctx, '22px')
+    setFont(ctx, '14px')
     const dayLabel = formatDayLabel(data.day)
-    const dayLabelWidth = ctx.measureText(dayLabel).width
-    if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(dayLabel, CANVAS_WIDTH - PADDING - dayLabelWidth, y + 24) }
+    if (draw) {
+      ctx.fillStyle = COLOR.muted
+      ctx.textAlign = 'right'
+      ctx.fillText(dayLabel, rightX, y + 42)
+      ctx.textAlign = 'left'
+    }
   }
 
-  y += LOGO_SIZE + 24
+  y += 48
 
-  // Restaurant cards
+  // ── Restaurant sections ──
   const restaurants = data.sections
   for (let ri = 0; ri < restaurants.length; ri++) {
-    if (ri > 0) y += 24
-    y = drawRestaurantCard(ctx, restaurants[ri], y, draw)
-  }
+    // Separator line between header/restaurants and between restaurants
+    y += 20
+    if (draw) { ctx.fillStyle = COLOR.borderLight; ctx.fillRect(x, y, maxW, 1) }
+    y += 20
 
-  return y + PADDING
-}
+    const restaurant = restaurants[ri]
 
-function drawRestaurantCard(
-  ctx: CanvasRenderingContext2D,
-  restaurant: ShareSelectionData['sections'][number],
-  y: number,
-  draw: boolean,
-): number {
-  // Measure card content height first (dry run)
-  const contentHeight = measureCardContent(ctx, restaurant)
-  const headerHeight = measureCardHeader(ctx, restaurant)
-  const bodyTopPad = 12 // website 6px × 2
-  const bodyBottomPad = CARD_PADDING // website 18px × 2
-  const totalHeight = headerHeight + 1 + bodyTopPad + contentHeight + bodyBottomPad
-  const cardWidth = CONTENT_WIDTH
-
-  // Draw card background + border
-  if (draw) {
-    fillRoundRect(ctx, PADDING, y, cardWidth, totalHeight, CARD_RADIUS, COLOR.surface)
-    strokeRoundRect(ctx, PADDING, y, cardWidth, totalHeight, CARD_RADIUS, COLOR.border)
-  }
-
-  let cy = y
-
-  // Card header
-  cy = drawCardHeader(ctx, restaurant, cy, draw)
-
-  // Header separator
-  if (draw) { ctx.fillStyle = COLOR.borderLight; ctx.fillRect(PADDING, cy, cardWidth, 1) }
-  cy += 1
-
-  // Card content
-  cy += bodyTopPad
-  cy = drawCardContent(ctx, restaurant, cy, draw)
-  cy += bodyBottomPad
-
-  return cy
-}
-
-function measureCardHeader(ctx: CanvasRenderingContext2D, restaurant: ShareSelectionData['sections'][number]): number {
-  let h = 24 // header top padding (12px × 2)
-  setFont(ctx, '700 32px')
-  const nameLines = wrapText(ctx, restaurant.name, CONTENT_WIDTH - CARD_PADDING * 2)
-  h += nameLines.length * 42
-  if (restaurant.cuisine || restaurant.badges.length) h += 38
-  h += 12 // header bottom padding
-  return h
-}
-
-function measureCardContent(ctx: CanvasRenderingContext2D, restaurant: ShareSelectionData['sections'][number]): number {
-  let h = 0
-  for (let ci = 0; ci < restaurant.categories.length; ci++) {
-    const category = restaurant.categories[ci]
-    h += 24 + 38 // category top padding (24) + title line (38)
-    for (let ii = 0; ii < category.items.length; ii++) {
-      const item = category.items[ii]
-      h += 12 // item padding top
-      setFont(ctx, '30px')
-      const priceWidth = item.price ? ctx.measureText(item.price).width : 0
-      const titleMaxWidth = item.price ? CONTENT_WIDTH - CARD_PADDING * 2 - priceWidth - 16 : CONTENT_WIDTH - CARD_PADDING * 2
-      h += wrapText(ctx, item.title, titleMaxWidth).length * 39
-      if (item.description) {
-        setFont(ctx, '26px')
-        h += wrapText(ctx, item.description, CONTENT_WIDTH - CARD_PADDING * 2).length * 39
-      }
-      if (item.tags.length) h += 34
-      h += 12 // item padding bottom
+    // Restaurant name
+    setFont(ctx, '700 24px')
+    const nameLines = wrapText(ctx, restaurant.name, maxW)
+    for (const line of nameLines) {
+      if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(line, x, y + 22) }
+      y += 32
     }
-    if (ci < restaurant.categories.length - 1) h += 24
-  }
-  return h
-}
 
-function drawCardHeader(
-  ctx: CanvasRenderingContext2D,
-  restaurant: ShareSelectionData['sections'][number],
-  y: number,
-  draw: boolean,
-): number {
-  const x = PADDING + CARD_PADDING
-  const maxW = CONTENT_WIDTH - CARD_PADDING * 2
-  y += 24 // header top padding
+    y += 4
 
-  // Restaurant name
-  setFont(ctx, '700 32px')
-  const nameLines = wrapText(ctx, restaurant.name, maxW)
-  for (const line of nameLines) {
-    if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(line, x, y + 30) }
-    y += 42
-  }
+    // Items (categories flattened)
+    for (let ci = 0; ci < restaurant.categories.length; ci++) {
+      const category = restaurant.categories[ci]
 
-  // Cuisine + badges row
-  if (restaurant.cuisine || restaurant.badges.length) {
-    let bx = x
-    if (restaurant.cuisine) {
-      setFont(ctx, '600 20px')
-      const tw = ctx.measureText(restaurant.cuisine).width
-      if (draw) {
-        fillRoundRect(ctx, bx, y, tw + 20, 30, 15, COLOR.borderLight)
-        ctx.fillStyle = COLOR.secondary
-        ctx.fillText(restaurant.cuisine, bx + 10, y + 22)
-      }
-      bx += tw + 28
-    }
-    for (const badge of restaurant.badges) {
-      setFont(ctx, 'bold 20px')
-      const badgeLabel = t(badge)
-      const tw = ctx.measureText(badgeLabel).width
-      const badgeColor = BADGE_COLORS[badge] || COLOR.accent
-      if (draw) {
-        fillRoundRect(ctx, bx, y, tw + 20, 30, 15, badgeColor + '30')
-        ctx.fillStyle = badgeColor
-        ctx.fillText(badgeLabel, bx + 10, y + 22)
-      }
-      bx += tw + 28
-    }
-    y += 38
-  }
+      for (const item of category.items) {
+        y += 8
 
-  y += 12 // header bottom padding
-  return y
-}
+        setFont(ctx, '20px')
+        const priceWidth = item.price ? ctx.measureText(item.price).width : 0
+        const titleMaxW = item.price ? maxW - priceWidth - 14 : maxW
+        const titleLines = wrapText(ctx, item.title, titleMaxW)
 
-function drawCardContent(
-  ctx: CanvasRenderingContext2D,
-  restaurant: ShareSelectionData['sections'][number],
-  y: number,
-  draw: boolean,
-): number {
-  const x = PADDING + CARD_PADDING
-  const maxW = CONTENT_WIDTH - CARD_PADDING * 2
-
-  for (let ci = 0; ci < restaurant.categories.length; ci++) {
-    const category = restaurant.categories[ci]
-
-    // Category title
-    y += 24 // category top padding
-    setFont(ctx, '700 26px')
-    if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(category.name, x, y + 27) }
-    y += 38
-
-    for (let ii = 0; ii < category.items.length; ii++) {
-      const item = category.items[ii]
-      y += 12 // item padding top
-
-      // Item title + price
-      setFont(ctx, '30px')
-      const priceWidth = item.price ? ctx.measureText(item.price).width : 0
-      const titleMaxWidth = item.price ? maxW - priceWidth - 16 : maxW
-      const titleLines = wrapText(ctx, item.title, titleMaxWidth)
-
-      for (let li = 0; li < titleLines.length; li++) {
-        if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(titleLines[li], x, y + 27) }
-        if (li === 0 && item.price && draw) {
-          setFont(ctx, '600 30px')
-          ctx.fillStyle = COLOR.accent
-          ctx.fillText(item.price, PADDING + CONTENT_WIDTH - CARD_PADDING - priceWidth, y + 27)
-          setFont(ctx, '30px')
-        }
-        y += 39
-      }
-
-      // Description
-      if (item.description) {
-        setFont(ctx, '26px')
-        const descLines = wrapText(ctx, item.description, maxW)
-        for (const line of descLines) {
-          if (draw) { ctx.fillStyle = COLOR.secondary; ctx.fillText(line, x, y + 27) }
-          y += 39
-        }
-      }
-
-      // Tags
-      if (item.tags.length) {
-        let tx = x
-        setFont(ctx, '600 20px')
-        for (const tag of item.tags) {
-          const tagColor = TAG_COLORS[tag] || TAG_COLOR_DEFAULT
-          const tagLabel = t('tag.' + tag).toUpperCase()
-          const tagWidth = ctx.measureText(tagLabel).width
-          if (draw) {
-            fillRoundRect(ctx, tx, y, tagWidth + 18, 30, 15, tagColor.bg)
-            ctx.fillStyle = tagColor.fg
-            ctx.fillText(tagLabel, tx + 9, y + 22)
+        for (let li = 0; li < titleLines.length; li++) {
+          if (draw) { ctx.fillStyle = COLOR.text; ctx.fillText(titleLines[li], x, y + 18) }
+          if (li === 0 && item.price && draw) {
+            setFont(ctx, '600 20px')
+            ctx.fillStyle = COLOR.accent
+            ctx.fillText(item.price, rightX - priceWidth, y + 18)
+            setFont(ctx, '20px')
           }
-          tx += tagWidth + 22
+          y += 28
         }
-        y += 34
+
+        if (item.description) {
+          y += 2
+          setFont(ctx, '15px')
+          for (const line of wrapText(ctx, item.description, maxW)) {
+            if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(line, x, y + 13) }
+            y += 21
+          }
+        }
+
+        if (item.tags.length) {
+          y += 4
+          let tx = x
+          setFont(ctx, '600 12px')
+          for (const tag of item.tags) {
+            const tagColor = TAG_COLORS[tag] || TAG_COLOR_DEFAULT
+            const tagLabel = t('tag.' + tag).toUpperCase()
+            const tagWidth = ctx.measureText(tagLabel).width
+            if (draw) {
+              fillRoundRect(ctx, tx, y, tagWidth + 12, 20, 10, tagColor.bg)
+              ctx.fillStyle = tagColor.fg
+              ctx.fillText(tagLabel, tx + 6, y + 14)
+            }
+            tx += tagWidth + 10
+          }
+          y += 20
+        }
       }
-
-      y += 12 // item padding bottom
     }
-
-    if (ci < restaurant.categories.length - 1) y += 24
   }
 
-  return y
+  return { height: y + PADDING, avatarDraw }
 }
 
 /* ── Share data extraction ──────────────────────────────── */
@@ -769,6 +672,15 @@ function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number)
   return lines
 }
 
+function ellipsize(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string {
+  if (ctx.measureText(text).width <= maxWidth) return text
+  for (let i = text.length - 1; i > 0; i--) {
+    const truncated = text.slice(0, i) + '…'
+    if (ctx.measureText(truncated).width <= maxWidth) return truncated
+  }
+  return '…'
+}
+
 function roundRectPath(
   ctx: CanvasRenderingContext2D,
   x: number,
@@ -806,21 +718,6 @@ function fillRoundRect(
   roundRectPath(ctx, x, y, width, height, radius)
   ctx.fillStyle = fill
   ctx.fill()
-}
-
-function strokeRoundRect(
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  width: number,
-  height: number,
-  radius: number,
-  stroke: string,
-): void {
-  roundRectPath(ctx, x, y, width, height, radius)
-  ctx.strokeStyle = stroke
-  ctx.lineWidth = 1
-  ctx.stroke()
 }
 
 function formatDayLabel(day: string): string {

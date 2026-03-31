@@ -89,12 +89,12 @@
   visibility: visible;
 }
 .share-toast-backdrop.visible.flash {
-  animation: snapFlash 0.45s ease-out;
+  animation: snapFlash var(--flash-duration) ease-out;
 }
 @keyframes snapFlash {
-  0%  { background: rgba(255,255,255,0.4); }
-  40% { background: rgba(255,255,255,0.05); }
-  100%{ background: var(--overlay); } /* matches .share-toast-backdrop */
+  0%  { background: var(--flash-peak); }
+  50% { background: var(--flash-fade); }
+  100%{ background: var(--overlay); }
 }
 .share-toast {
   position: fixed;
@@ -136,7 +136,7 @@
 .share-toast-text-preview {
   margin: var(--spacing-sm);
   padding: var(--spacing-sm);
-  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-family: var(--font-mono);
   font-size: var(--text-xs);
   line-height: 1.6;
   color: var(--share-preview-text);
