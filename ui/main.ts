@@ -72,6 +72,7 @@ import {
   isActive as shareIsActive,
   clearSelection as shareClearSelection,
   getShareSelectionData,
+  showToast,
 } from "./components/share"
 import {
   initVoting,
@@ -82,6 +83,15 @@ import {
   toggleAllVotes,
   isVotingActive,
   setVotingCollapsed,
+  createRoom,
+  switchToRoom,
+  leaveRoom,
+  getActiveRoom,
+  getKnownRooms,
+  encodeRoomPayload,
+  setRoomListOpen,
+  setConfirmLeaveRoom,
+  renameRoom,
 } from "./rooms/voting-lifecycle"
 import { copyBusinessCard } from "./rooms/business-card"
 import { getOrCreateIdentity } from "./rooms/user-identity"
@@ -242,6 +252,89 @@ function setupCollapseExpand(contentEl: HTMLElement): void {
     const acceptBtn = target.closest?.(".voting-consent-accept")
     if (acceptBtn) {
       acceptVoting()
+      return
+    }
+
+    // Room bar — open/close room list
+    const roomCurrentBtn = target.closest?.(".voting-room-current")
+    if (roomCurrentBtn) {
+      const action = (roomCurrentBtn as HTMLElement).dataset.action
+      setRoomListOpen(action === "open-room-list")
+      return
+    }
+
+    // Room list — select room (default room button or private room select)
+    const roomItemSelect = target.closest?.(".voting-room-item-select")
+    const roomItemDefault = !roomItemSelect ? target.closest?.(".voting-room-item[data-room-id='']") : null
+    if (roomItemSelect || roomItemDefault) {
+      const el = (roomItemSelect || roomItemDefault) as HTMLElement
+      const roomId = el.dataset.roomId
+      if (!roomId) {
+        switchToRoom(null)
+      } else {
+        const room = getKnownRooms().find((r) => r.id === roomId)
+        if (room) switchToRoom(room)
+      }
+      return
+    }
+
+    // Room list — request leave (shows inline confirmation)
+    const roomLeaveBtn = target.closest?.(".voting-room-item-leave")
+    if (roomLeaveBtn) {
+      const roomId = (roomLeaveBtn as HTMLElement).dataset.roomId
+      if (roomId) setConfirmLeaveRoom(roomId)
+      return
+    }
+
+    // Room list — confirm leave
+    const confirmYes = target.closest?.(".voting-room-confirm-yes")
+    if (confirmYes) {
+      const roomId = (confirmYes as HTMLElement).dataset.roomId
+      if (roomId) leaveRoom(roomId)
+      return
+    }
+
+    // Room list — cancel leave
+    const confirmNo = target.closest?.(".voting-room-confirm-no")
+    if (confirmNo) {
+      setConfirmLeaveRoom(null)
+      return
+    }
+
+    // Room list — create new room
+    const createBtn = target.closest?.(".voting-room-item-create")
+    if (createBtn) {
+      const name = window.prompt(t("voting.createRoomPrompt"))
+      if (name?.trim()) createRoom(name.trim())
+      return
+    }
+
+    // Room bar — share room link
+    const shareBtn = target.closest?.(".voting-room-share")
+    if (shareBtn) {
+      const room = getActiveRoom()
+      if (room) {
+        const url = `${window.location.origin}${window.location.pathname}?room=${encodeRoomPayload(room)}`
+        navigator.clipboard.writeText(url).then(() => {
+          showToast(t("voting.roomLinkCopied"))
+        }).catch(() => {
+          window.prompt(t("voting.roomLinkCopied"), url)
+        })
+      }
+      return
+    }
+
+    // Room bar — rename room
+    const renameBtn = target.closest?.(".voting-room-rename")
+    if (renameBtn) {
+      const roomId = (renameBtn as HTMLElement).dataset.roomId
+      const room = getKnownRooms().find((r) => r.id === roomId)
+      if (room) {
+        const newName = window.prompt(t("voting.renameRoomPrompt"), room.name)
+        if (newName?.trim() && newName.trim() !== room.name) {
+          renameRoom(room.id, newName.trim())
+        }
+      }
       return
     }
 

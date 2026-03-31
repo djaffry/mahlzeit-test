@@ -2,7 +2,7 @@ import { SimplePool } from "nostr-tools/pool"
 import { finalizeEvent } from "nostr-tools/pure"
 import type { EventTemplate } from "nostr-tools/pure"
 import type { SubCloser } from "nostr-tools/pool"
-import type { UserVote, VotingData } from "./types"
+import type { UserVote, VotingData, RoomTarget } from "./types"
 
 const APP_STATE_KIND = 30078
 
@@ -26,19 +26,21 @@ export async function obfuscateId(salt: string, restaurantId: string): Promise<s
 
 export interface CreateVoteParams {
   appId: string
-  date: string
-  roomEventId: string
+  target: RoomTarget
   votedIds: string[]
+}
+
+function buildDTag(appId: string, target: RoomTarget): string {
+  return target.type === "default"
+    ? `${appId}/vote/${target.date}`
+    : `${appId}/pvote/${target.roomId}/${target.date}`
 }
 
 export function createVoteEvent(params: CreateVoteParams): EventTemplate {
   return {
     kind: APP_STATE_KIND,
     created_at: Math.floor(Date.now() / 1000),
-    tags: [
-      ["d", `${params.appId}/vote/${params.date}`],
-      ["e", params.roomEventId],
-    ],
+    tags: [["d", buildDTag(params.appId, params.target)]],
     content: JSON.stringify({ votes: params.votedIds }),
   }
 }
@@ -71,7 +73,9 @@ let _onUpdate: (() => void) | null = null
 let _relayUrls: string[] = []
 let _debounceTimer: ReturnType<typeof setTimeout> | null = null
 
-export function getVotes(): Map<string, UserVote> {
+const EVENT_DEBOUNCE_MS = 16 // ~one frame, coalesces burst of relay events
+
+export function getVotes(): ReadonlyMap<string, UserVote> {
   return _votes
 }
 
@@ -80,40 +84,35 @@ function scheduleUpdate(): void {
   _debounceTimer = setTimeout(() => {
     _debounceTimer = null
     _onUpdate?.()
-  }, 16)
+  }, EVENT_DEBOUNCE_MS)
 }
 
 export function subscribe(
   votingData: VotingData,
-  date: string,
+  target: RoomTarget,
   onUpdate: () => void
 ): void {
+  _subscription?.close()
   _onUpdate = onUpdate
   _votes = new Map()
   _relayUrls = votingData.relays
 
-  // Reuse existing pool or create one; kept alive across day switches
   if (!_pool) {
-    _pool = new SimplePool({
-      onRelayConnectionSuccess: () => scheduleUpdate(),
-      onRelayConnectionFailure: () => scheduleUpdate(),
-    } as ConstructorParameters<typeof SimplePool>[0])
+    _pool = new SimplePool()
   }
 
-  const room = votingData.rooms[date]
-  if (!room) return
+  const dTag = buildDTag(votingData.appId, target)
+  const since = Math.floor(Date.now() / 1000) - 6 * 86400
 
   _subscription = _pool.subscribeMany(
     votingData.relays,
     {
       kinds: [APP_STATE_KIND],
-      "#d": [`${votingData.appId}/vote/${date}`],
+      "#d": [dTag],
+      since,
     },
     {
       onevent(event) {
-        const eTag = event.tags.find((t: string[]) => t[0] === "e")
-        if (!eTag || eTag[1] !== room.roomEventId) return
-
         const vote = parseVoteEvent(event)
         if (!vote) return
 
@@ -140,19 +139,15 @@ export interface PublishResult {
 
 export async function publishVote(
   votingData: VotingData,
-  date: string,
+  target: RoomTarget,
   secretKey: Uint8Array,
   votedIds: string[]
 ): Promise<PublishResult> {
   if (!_pool) return { ok: 0, failed: 0 }
 
-  const room = votingData.rooms[date]
-  if (!room) return { ok: 0, failed: 0 }
-
   const template = createVoteEvent({
     appId: votingData.appId,
-    date,
-    roomEventId: room.roomEventId,
+    target,
     votedIds,
   })
 

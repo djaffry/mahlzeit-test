@@ -22,20 +22,92 @@ describe("obfuscateId", () => {
 })
 
 describe("createVoteEvent", () => {
-  it("creates a kind 30078 event template", () => {
+  it("creates a default room event with vote d-tag", () => {
     const template = createVoteEvent({
       appId: "test-uuid",
-      date: "2026-03-24",
-      roomEventId: "evt123",
+      target: { type: "default", date: "2026-03-24" },
       votedIds: ["hash1", "hash2"],
     })
 
     expect(template.kind).toBe(30078)
     expect(template.tags).toContainEqual(["d", "test-uuid/vote/2026-03-24"])
-    expect(template.tags).toContainEqual(["e", "evt123"])
+    expect(template.tags).toHaveLength(1)
 
     const content = JSON.parse(template.content)
     expect(content.votes).toEqual(["hash1", "hash2"])
+  })
+
+  it("creates a private room event with pvote d-tag", () => {
+    const template = createVoteEvent({
+      appId: "test-uuid",
+      target: { type: "private", roomId: "AbCd1234", date: "2026-03-24" },
+      votedIds: ["hash1"],
+    })
+
+    expect(template.kind).toBe(30078)
+    expect(template.tags).toContainEqual(["d", "test-uuid/pvote/AbCd1234/2026-03-24"])
+    expect(template.tags).toHaveLength(1)
+
+    const content = JSON.parse(template.content)
+    expect(content.votes).toEqual(["hash1"])
+  })
+
+  it("creates event with empty votedIds", () => {
+    const template = createVoteEvent({
+      appId: "test-uuid",
+      target: { type: "default", date: "2026-03-24" },
+      votedIds: [],
+    })
+
+    const content = JSON.parse(template.content)
+    expect(content.votes).toEqual([])
+  })
+
+  it("default and private d-tags never collide", () => {
+    const defaultTag = createVoteEvent({
+      appId: "app",
+      target: { type: "default", date: "2026-03-24" },
+      votedIds: [],
+    }).tags[0][1]
+
+    const privateTag = createVoteEvent({
+      appId: "app",
+      target: { type: "private", roomId: "vote", date: "2026-03-24" },
+      votedIds: [],
+    }).tags[0][1]
+
+    expect(defaultTag).not.toBe(privateTag)
+    expect(defaultTag).toBe("app/vote/2026-03-24")
+    expect(privateTag).toBe("app/pvote/vote/2026-03-24")
+  })
+
+  it("includes roomId in private d-tag to isolate rooms", () => {
+    const room1 = createVoteEvent({
+      appId: "app",
+      target: { type: "private", roomId: "room1", date: "2026-03-24" },
+      votedIds: [],
+    }).tags[0][1]
+
+    const room2 = createVoteEvent({
+      appId: "app",
+      target: { type: "private", roomId: "room2", date: "2026-03-24" },
+      votedIds: [],
+    }).tags[0][1]
+
+    expect(room1).not.toBe(room2)
+  })
+
+  it("sets created_at to current time in seconds", () => {
+    const before = Math.floor(Date.now() / 1000)
+    const template = createVoteEvent({
+      appId: "app",
+      target: { type: "default", date: "2026-03-24" },
+      votedIds: [],
+    })
+    const after = Math.floor(Date.now() / 1000)
+
+    expect(template.created_at).toBeGreaterThanOrEqual(before)
+    expect(template.created_at).toBeLessThanOrEqual(after)
   })
 })
 
@@ -45,7 +117,7 @@ describe("parseVoteEvent", () => {
       kind: 30078,
       pubkey: "abc",
       created_at: 1000,
-      tags: [["d", "uuid/vote/2026-03-24"], ["e", "evt123"]],
+      tags: [["d", "uuid/vote/2026-03-24"]],
       content: JSON.stringify({ votes: ["hash1", "hash2"] }),
       id: "evtid",
       sig: "sig",

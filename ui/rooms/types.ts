@@ -1,10 +1,7 @@
 export interface VotingData {
-  week: string
   appId: string
-  pubkey: string
   salt: string
   relays: string[]
-  rooms: Record<string, { roomEventId: string }>
 }
 
 export interface UserVote {
@@ -19,3 +16,15 @@ export interface Avatar {
   iconColor: string
   label: string
 }
+
+/** A private room known to this browser */
+export interface PrivateRoom {
+  id: string
+  name: string
+  joinedAt: number
+}
+
+/** Discriminated union for subscribe/publish targeting */
+export type RoomTarget =
+  | { type: "default"; date: string }
+  | { type: "private"; roomId: string; date: string }

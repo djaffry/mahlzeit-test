@@ -1,13 +1,15 @@
-name: Create Voting Rooms
+name: Update Voting Config
 
 on:
-  schedule:
-    # Monday 4:00 UTC (5:00 CET / 6:00 CEST)
-    - cron: '0 4 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'rooms/config/**'
+      - 'rooms/src/**'
   workflow_dispatch:
 
 concurrency:
-  group: voting-room
+  group: voting-config
   cancel-in-progress: false
 
 permissions:
@@ -16,9 +18,9 @@ permissions:
   id-token: write
 
 jobs:
-  create-rooms:
+  update-voting:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     outputs:
       data-changed: ${{ steps.changes.outputs.changed }}
     steps:
@@ -40,8 +42,8 @@ jobs:
         run: npm run build
         working-directory: rooms
 
-      - name: Create voting rooms
-        run: npm run create-rooms
+      - name: Generate voting.json
+        run: npm run generate
         working-directory: rooms
 
       - name: Check for changes
@@ -63,7 +65,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/voting.json
-          git commit -m "chore: create voting rooms for week of $(date -u +%Y-%m-%d)"
+          git commit -m "chore: update voting config"
           git push
 
       - name: Install root dependencies
@@ -86,8 +88,8 @@ jobs:
           path: dist
 
   deploy:
-    needs: create-rooms
-    if: needs.create-rooms.outputs.data-changed == 'true'
+    needs: update-voting
+    if: needs.update-voting.outputs.data-changed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     environment:

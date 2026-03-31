@@ -23,18 +23,9 @@ vi.mock("./nostr-client", () => ({
 /* ── Mock fetch for voting.json ──────────────────────────── */
 
 const MOCK_VOTING_DATA: VotingData = {
-  week: "2026-03-23",
   appId: "test-app",
-  pubkey: "serverpub",
   salt: "testsalt",
   relays: ["wss://relay.test"],
-  rooms: {
-    "2026-03-23": { roomEventId: "room-mon" },
-    "2026-03-24": { roomEventId: "room-tue" },
-    "2026-03-25": { roomEventId: "room-wed" },
-    "2026-03-26": { roomEventId: "room-thu" },
-    "2026-03-27": { roomEventId: "room-fri" },
-  },
 }
 
 const MOCK_RESTAURANTS: Restaurant[] = [
@@ -47,7 +38,13 @@ const MOCK_RESTAURANTS: Restaurant[] = [
 
 vi.mock("../utils/date", () => ({
   getTodayName: () => "Mittwoch",
-  getWeekDates: () => [],
+  getWeekDates: () => [
+    new Date("2026-03-23"),
+    new Date("2026-03-24"),
+    new Date("2026-03-25"),
+    new Date("2026-03-26"),
+    new Date("2026-03-27"),
+  ],
   getMondayOfWeek: () => new Date("2026-03-23"),
 }))
 
@@ -62,6 +59,18 @@ import {
   getVotingCardHtml,
   destroyVoting,
   onDayChangeVoting,
+  createRoom,
+  joinRoom,
+  switchToRoom,
+  leaveRoom,
+  getActiveRoom,
+  getKnownRooms,
+  encodeRoomPayload,
+  setRoomListOpen,
+  isRoomListOpen,
+  setConfirmLeaveRoom,
+  getConfirmLeaveRoomId,
+  renameRoom,
 } from "./voting-lifecycle"
 
 /* ── Helpers ─────────────────────────────────────────────── */
@@ -89,6 +98,8 @@ beforeEach(() => {
   mockDestroy.mockClear()
   setupFetch()
   localStorage.setItem("forkcast:votingOptIn", "true")
+  localStorage.removeItem("forkcast:rooms")
+  localStorage.removeItem("forkcast:activeRoom")
   document.body.innerHTML = ""
 })
 
@@ -120,7 +131,7 @@ describe("initVoting", () => {
     await flush()
     expect(mockSubscribe).toHaveBeenCalledWith(
       MOCK_VOTING_DATA,
-      "2026-03-25",
+      { type: "default", date: "2026-03-25" },
       expect.any(Function)
     )
   })
@@ -179,7 +190,7 @@ describe("toggleVote", () => {
     expect(mockPublishVote).toHaveBeenCalledTimes(1)
     expect(mockPublishVote).toHaveBeenCalledWith(
       MOCK_VOTING_DATA,
-      "2026-03-25",
+      { type: "default", date: "2026-03-25" },
       expect.any(Uint8Array),
       ["hash_mano"]
     )
@@ -356,7 +367,7 @@ describe("onDayChangeVoting", () => {
     expect(mockUnsubscribe).toHaveBeenCalled()
     expect(mockSubscribe).toHaveBeenCalledWith(
       MOCK_VOTING_DATA,
-      "2026-03-23",
+      { type: "default", date: "2026-03-23" },
       expect.any(Function)
     )
   })
@@ -375,7 +386,7 @@ describe("onDayChangeVoting", () => {
     expect(mockPublishVote).toHaveBeenCalledTimes(1)
     expect(mockPublishVote).toHaveBeenCalledWith(
       MOCK_VOTING_DATA,
-      "2026-03-25", // old date
+      { type: "default", date: "2026-03-25" }, // old date's target
       expect.any(Uint8Array),
       ["hash_mano"]
     )
@@ -522,6 +533,462 @@ describe("consent flow", () => {
     expect(html).toContain("voting-btn-active")
     await vi.advanceTimersByTimeAsync(1100)
     expect(mockPublishVote).toHaveBeenCalledTimes(1)
+  })
+})
+
+describe("private rooms", () => {
+  beforeEach(async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    mockSubscribe.mockClear()
+    mockUnsubscribe.mockClear()
+  })
+
+  it("creates a room and switches to it", () => {
+    const room = createRoom("Team A")
+    expect(room.name).toBe("Team A")
+    expect(room.id).toHaveLength(16)
+    expect(getActiveRoom()).toBe(room)
+    expect(getKnownRooms()).toContain(room)
+  })
+
+  it("generates unique room IDs", () => {
+    const room1 = createRoom("Room 1")
+    switchToRoom(null) // back to default so next create works
+    const room2 = createRoom("Room 2")
+    expect(room1.id).not.toBe(room2.id)
+  })
+
+  it("room ID is URL-safe", () => {
+    const room = createRoom("Test")
+    expect(room.id).toMatch(/^[A-Za-z0-9_-]{16}$/)
+  })
+
+  it("subscribes with private room target after creating", () => {
+    const room = createRoom("Team A")
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: room.id, date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("unsubscribes from previous room when switching", () => {
+    createRoom("Team A")
+    mockUnsubscribe.mockClear()
+    createRoom("Team B")
+    expect(mockUnsubscribe).toHaveBeenCalled()
+  })
+
+  it("persists rooms to localStorage", () => {
+    createRoom("Team A")
+    const stored = JSON.parse(localStorage.getItem("forkcast:rooms") ?? "[]")
+    expect(stored).toHaveLength(1)
+    expect(stored[0].name).toBe("Team A")
+  })
+
+  it("persists active room ID to localStorage", () => {
+    const room = createRoom("Team A")
+    expect(localStorage.getItem("forkcast:activeRoom")).toBe(room.id)
+  })
+
+  it("removes active room key when switching to default", () => {
+    createRoom("Team A")
+    switchToRoom(null)
+    expect(localStorage.getItem("forkcast:activeRoom")).toBeNull()
+  })
+
+  it("switches back to default room", () => {
+    createRoom("Team A")
+    mockSubscribe.mockClear()
+    switchToRoom(null)
+    expect(getActiveRoom()).toBeNull()
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "default", date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("flushes pending votes when switching rooms", async () => {
+    toggleVote("mano")
+    createRoom("Team A") // should flush pending
+    expect(mockPublishVote).toHaveBeenCalledTimes(1)
+  })
+
+  it("flushes votes to the OLD room target before switching", async () => {
+    toggleVote("mano")
+    createRoom("Team A")
+    // The flush should publish to the default room, not the new private room
+    expect(mockPublishVote).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "default", date: "2026-03-25" },
+      expect.any(Uint8Array),
+      ["hash_mano"]
+    )
+  })
+
+  it("clears user votes on room switch", () => {
+    toggleVote("mano")
+    createRoom("Team A")
+    const html = getVotingCardHtml("Mittwoch")
+    const activeCount = (html.match(/voting-btn-active/g) || []).length
+    expect(activeCount).toBe(0)
+  })
+
+  it("leaves a room and returns to default", () => {
+    const room = createRoom("Team A")
+    mockSubscribe.mockClear()
+    leaveRoom(room.id)
+    expect(getActiveRoom()).toBeNull()
+    expect(getKnownRooms()).toHaveLength(0)
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "default", date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("leaving a non-active room keeps current room", () => {
+    const roomA = createRoom("Team A")
+    switchToRoom(null) // back to default
+    const roomB = createRoom("Team B")
+    mockSubscribe.mockClear()
+    mockUnsubscribe.mockClear()
+    leaveRoom(roomA.id)
+    // Should still be in Team B, not switch
+    expect(getActiveRoom()).toBe(roomB)
+    expect(getKnownRooms()).toHaveLength(1)
+    expect(getKnownRooms()[0].id).toBe(roomB.id)
+    // No unsubscribe/subscribe should happen
+    expect(mockUnsubscribe).not.toHaveBeenCalled()
+    expect(mockSubscribe).not.toHaveBeenCalled()
+  })
+
+  it("leaving removes room from localStorage", () => {
+    const room = createRoom("Team A")
+    leaveRoom(room.id)
+    const stored = JSON.parse(localStorage.getItem("forkcast:rooms") ?? "[]")
+    expect(stored).toHaveLength(0)
+  })
+
+  it("day switch preserves active room", () => {
+    const room = createRoom("Team A")
+    mockSubscribe.mockClear()
+    onDayChangeVoting(0) // Monday
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: room.id, date: "2026-03-23" },
+      expect.any(Function)
+    )
+  })
+
+  it("supports multiple rooms", () => {
+    createRoom("Team A")
+    switchToRoom(null)
+    createRoom("Team B")
+    expect(getKnownRooms()).toHaveLength(2)
+    expect(getKnownRooms()[0].name).toBe("Team A")
+    expect(getKnownRooms()[1].name).toBe("Team B")
+  })
+
+  it("switches between private rooms", () => {
+    const roomA = createRoom("Team A")
+    switchToRoom(null)
+    const roomB = createRoom("Team B")
+    mockSubscribe.mockClear()
+    switchToRoom(roomA)
+    expect(getActiveRoom()?.id).toBe(roomA.id)
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: roomA.id, date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("voting in a private room publishes with private target", async () => {
+    const room = createRoom("Team A")
+    mockPublishVote.mockClear()
+    toggleVote("mano")
+    await vi.advanceTimersByTimeAsync(1100)
+    expect(mockPublishVote).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: room.id, date: "2026-03-25" },
+      expect.any(Uint8Array),
+      ["hash_mano"]
+    )
+  })
+
+  it("renders room bar with current room name", () => {
+    createRoom("Team A")
+    const html = getVotingCardHtml("Mittwoch")
+    expect(html).toContain("voting-room-bar")
+    expect(html).toContain("voting-room-current")
+    expect(html).toContain("Team A")
+  })
+
+  it("renders default room name when no room selected", () => {
+    createRoom("Team A")
+    switchToRoom(null)
+    const html = getVotingCardHtml("Mittwoch")
+    expect(html).toContain("Allgemein")
+  })
+})
+
+describe("room persistence", () => {
+  it("restores rooms from localStorage on init", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    localStorage.setItem("forkcast:rooms", JSON.stringify([
+      { id: "test1234", name: "Saved Room", joinedAt: 1 },
+    ]))
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    expect(getKnownRooms()).toHaveLength(1)
+    expect(getKnownRooms()[0].name).toBe("Saved Room")
+  })
+
+  it("restores active room from localStorage on init", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    localStorage.setItem("forkcast:rooms", JSON.stringify([
+      { id: "test1234", name: "Saved Room", joinedAt: 1 },
+    ]))
+    localStorage.setItem("forkcast:activeRoom", "test1234")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    expect(getActiveRoom()?.id).toBe("test1234")
+    // Should subscribe to the private room, not default
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: "test1234", date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("falls back to default when saved active room is not in rooms list", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    localStorage.setItem("forkcast:rooms", JSON.stringify([]))
+    localStorage.setItem("forkcast:activeRoom", "nonexistent")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    expect(getActiveRoom()).toBeNull()
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "default", date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+
+  it("handles corrupted rooms JSON gracefully", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    localStorage.setItem("forkcast:rooms", "not valid json{{{")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    expect(getKnownRooms()).toHaveLength(0)
+    expect(isVotingActive()).toBe(true)
+  })
+})
+
+describe("joinRoom", () => {
+  beforeEach(async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    mockSubscribe.mockClear()
+  })
+
+  it("adds a new room and switches to it", () => {
+    joinRoom({ id: "join1234", name: "Joined Room", joinedAt: Date.now() })
+    expect(getKnownRooms()).toHaveLength(1)
+    expect(getActiveRoom()?.id).toBe("join1234")
+  })
+
+  it("is idempotent — joining the same room twice does not duplicate", () => {
+    joinRoom({ id: "join1234", name: "Joined Room", joinedAt: Date.now() })
+    joinRoom({ id: "join1234", name: "Joined Room", joinedAt: Date.now() })
+    expect(getKnownRooms()).toHaveLength(1)
+  })
+
+  it("subscribes to the joined room", () => {
+    joinRoom({ id: "join1234", name: "Joined Room", joinedAt: Date.now() })
+    expect(mockSubscribe).toHaveBeenCalledWith(
+      MOCK_VOTING_DATA,
+      { type: "private", roomId: "join1234", date: "2026-03-25" },
+      expect.any(Function)
+    )
+  })
+})
+
+describe("URL room parameter", () => {
+  const originalLocation = window.location
+
+  afterEach(() => {
+    Object.defineProperty(window, "location", { value: originalLocation, writable: true })
+  })
+
+  function encodeRoomParam(id: string, name: string): string {
+    return encodeRoomPayload({ id, name, joinedAt: 0 })
+  }
+
+  it("auto-joins room from URL parameter", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    const encoded = encodeRoomParam("url12345", "URL Room")
+    Object.defineProperty(window, "location", {
+      value: { ...window.location, search: `?room=${encoded}`, href: `http://localhost?room=${encoded}`, pathname: "/" },
+      writable: true,
+    })
+    window.history.replaceState = vi.fn()
+
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+
+    expect(getKnownRooms()).toHaveLength(1)
+    expect(getKnownRooms()[0].name).toBe("URL Room")
+    expect(getActiveRoom()?.id).toBe("url12345")
+  })
+
+  it("strips room parameter from URL after joining", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    const encoded = encodeRoomParam("url12345", "URL Room")
+    Object.defineProperty(window, "location", {
+      value: { ...window.location, search: `?room=${encoded}`, href: `http://localhost?room=${encoded}`, pathname: "/" },
+      writable: true,
+    })
+    const replaceStateSpy = vi.fn()
+    window.history.replaceState = replaceStateSpy
+
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+
+    expect(replaceStateSpy).toHaveBeenCalledWith({}, "", "/")
+  })
+
+  it("ignores malformed room parameter", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    Object.defineProperty(window, "location", {
+      value: { ...window.location, search: "?room=not-valid-base64!!!", href: "http://localhost?room=not-valid-base64!!!", pathname: "/" },
+      writable: true,
+    })
+    window.history.replaceState = vi.fn()
+
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+
+    expect(getKnownRooms()).toHaveLength(0)
+    expect(getActiveRoom()).toBeNull()
+    expect(isVotingActive()).toBe(true)
+  })
+
+  it("does not duplicate room when URL param matches existing room", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    localStorage.setItem("forkcast:rooms", JSON.stringify([
+      { id: "url12345", name: "URL Room", joinedAt: 1 },
+    ]))
+    const encoded = encodeRoomParam("url12345", "URL Room")
+    Object.defineProperty(window, "location", {
+      value: { ...window.location, search: `?room=${encoded}`, href: `http://localhost?room=${encoded}`, pathname: "/" },
+      writable: true,
+    })
+    window.history.replaceState = vi.fn()
+
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+
+    expect(getKnownRooms()).toHaveLength(1)
+  })
+})
+
+describe("destroyVoting with rooms", () => {
+  it("resets room state", async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+    createRoom("Team A")
+    expect(getActiveRoom()).not.toBeNull()
+    expect(getKnownRooms()).toHaveLength(1)
+
+    destroyVoting()
+    expect(getActiveRoom()).toBeNull()
+    expect(getKnownRooms()).toHaveLength(0)
+  })
+})
+
+describe("room list panel state", () => {
+  beforeEach(async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+  })
+
+  it("starts closed", () => {
+    expect(isRoomListOpen()).toBe(false)
+  })
+
+  it("can be opened and closed", () => {
+    setRoomListOpen(true)
+    expect(isRoomListOpen()).toBe(true)
+    setRoomListOpen(false)
+    expect(isRoomListOpen()).toBe(false)
+  })
+
+  it("opening resets confirm leave state", () => {
+    setConfirmLeaveRoom("some-id")
+    expect(getConfirmLeaveRoomId()).toBe("some-id")
+    setRoomListOpen(true)
+    expect(getConfirmLeaveRoomId()).toBeNull()
+  })
+
+  it("switchToRoom closes the list", () => {
+    createRoom("Team A")
+    setRoomListOpen(true)
+    switchToRoom(null)
+    expect(isRoomListOpen()).toBe(false)
+  })
+
+  it("createRoom closes the list", () => {
+    setRoomListOpen(true)
+    createRoom("Team A")
+    expect(isRoomListOpen()).toBe(false)
+  })
+
+  it("leaveRoom resets confirm state", () => {
+    const room = createRoom("Team A")
+    setConfirmLeaveRoom(room.id)
+    leaveRoom(room.id)
+    expect(getConfirmLeaveRoomId()).toBeNull()
+  })
+})
+
+describe("renameRoom", () => {
+  beforeEach(async () => {
+    fakeNow("2026-03-25T12:00:00Z")
+    await initVoting(MOCK_RESTAURANTS)
+    await flush()
+  })
+
+  it("renames a known room", () => {
+    const room = createRoom("Old Name")
+    renameRoom(room.id, "New Name")
+    expect(getKnownRooms()[0].name).toBe("New Name")
+  })
+
+  it("updates activeRoom if it is the renamed room", () => {
+    const room = createRoom("Old Name")
+    renameRoom(room.id, "New Name")
+    expect(getActiveRoom()?.name).toBe("New Name")
+  })
+
+  it("persists rename to localStorage", () => {
+    const room = createRoom("Old Name")
+    renameRoom(room.id, "New Name")
+    const stored = JSON.parse(localStorage.getItem("forkcast:rooms") ?? "[]")
+    expect(stored[0].name).toBe("New Name")
+  })
+
+  it("is a no-op for unknown room ID", () => {
+    createRoom("Team A")
+    renameRoom("nonexistent", "New Name")
+    expect(getKnownRooms()[0].name).toBe("Team A")
   })
 })
 

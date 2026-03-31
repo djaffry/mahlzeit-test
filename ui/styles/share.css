@@ -136,7 +136,7 @@
 .share-toast-text-preview {
   margin: var(--spacing-sm);
   padding: var(--spacing-sm);
-  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-family: var(--font-mono);
   font-size: var(--text-xs);
   line-height: 1.6;
   color: var(--share-preview-text);

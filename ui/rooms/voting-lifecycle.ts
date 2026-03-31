@@ -2,7 +2,7 @@
 
 import { config } from "../config"
 import { DAYS } from "../constants"
-import { getTodayName } from "../utils/date"
+import { getTodayName, getWeekDates } from "../utils/date"
 import { getOrCreateIdentity } from "./user-identity"
 import { getAvatar } from "./avatars"
 import {
@@ -16,23 +16,27 @@ import {
 } from "./nostr-client"
 import { renderVotingCard, renderConsentCard } from "./voting-card"
 import type { RestaurantVoteRow, VoterInfo } from "./voting-card"
-import type { VotingData } from "./types"
+import type { VotingData, RoomTarget, PrivateRoom } from "./types"
 import type { Restaurant } from "../types"
 
 const CONSENT_KEY = "forkcast:votingOptIn"
 const COLLAPSED_KEY = "forkcast:votingCollapsed"
+const ROOMS_KEY = "forkcast:rooms"
+const ACTIVE_ROOM_KEY = "forkcast:activeRoom"
 
 /* ── Module state ────────────────────────────────────────── */
 
 let _votingData: VotingData | null = null
 let _restaurants: Restaurant[] = []
 let _active = false
-let _consented = false
 let _currentDate: string | null = null
+let _activeRoom: PrivateRoom | null = null
+let _knownRooms: PrivateRoom[] = []
+let _roomListOpen = false
+let _confirmLeaveRoomId: string | null = null
+let _joinedViaUrl = false
 
-/** Votes use hashed IDs so relay content doesn't visibly reference restaurant names (not a privacy guarantee — see nostr-client.ts) */
 let _hashMap: Map<string, string> = new Map()
-let _reverseHashMap: Map<string, string> = new Map()
 
 /** Ordered date strings from voting.json rooms (Mon-Fri) */
 let _dates: string[] = []
@@ -68,6 +72,45 @@ function isReadOnly(dayIndex: number): boolean {
 export function setVotingCollapsed(value: boolean): void {
   _collapsed = value
   localStorage.setItem(COLLAPSED_KEY, String(value))
+}
+
+/* ── Room helpers ────────────────────────────────────────── */
+
+function loadRooms(): void {
+  try {
+    const raw = localStorage.getItem(ROOMS_KEY)
+    _knownRooms = raw ? JSON.parse(raw) : []
+  } catch {
+    _knownRooms = []
+  }
+  const activeId = localStorage.getItem(ACTIVE_ROOM_KEY)
+  _activeRoom = activeId ? _knownRooms.find((r) => r.id === activeId) ?? null : null
+}
+
+function saveRooms(): void {
+  localStorage.setItem(ROOMS_KEY, JSON.stringify(_knownRooms))
+}
+
+function saveActiveRoom(): void {
+  if (_activeRoom) {
+    localStorage.setItem(ACTIVE_ROOM_KEY, _activeRoom.id)
+  } else {
+    localStorage.removeItem(ACTIVE_ROOM_KEY)
+  }
+}
+
+function buildRoomTarget(): RoomTarget | null {
+  if (!_currentDate) return null
+  if (_activeRoom) {
+    return { type: "private", roomId: _activeRoom.id, date: _currentDate }
+  }
+  return { type: "default", date: _currentDate }
+}
+
+function generateRoomId(): string {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-"
+  const arr = crypto.getRandomValues(new Uint8Array(16))
+  return Array.from(arr, (b) => chars[b % chars.length]).join("")
 }
 
 const PUBLISH_DEBOUNCE_MS = 1000
@@ -128,14 +171,21 @@ function markFailed(): void { markResult(_failedIds, FAILED_DISPLAY_MS) }
 
 async function doPublish(): Promise<void> {
   if (!_active || !_votingData || !_currentDate) return
+  const target = buildRoomTarget()
+  if (!target) return
+  const dateAtPublish = _currentDate
+  const roomAtPublish = _activeRoom?.id ?? null
   const votedHashedIds = [..._userVotedIds]
     .map((id) => _hashMap.get(id))
     .filter((h): h is string => h !== undefined)
   const identity = getOrCreateIdentity()
-  const result = await publishVote(_votingData, _currentDate, identity.secretKey, votedHashedIds)
+  const result = await publishVote(_votingData, target, identity.secretKey, votedHashedIds)
+  // Context may have switched (day/room change) while publish was in-flight
+  if (_currentDate !== dateAtPublish || (_activeRoom?.id ?? null) !== roomAtPublish) return
   if (result.ok > 0) {
     markSent()
   } else {
+    rerenderVotingCard()
     markFailed()
   }
 }
@@ -159,9 +209,12 @@ function syncUserVotesFromRelay(): void {
   const myVote = votes.get(identity.pubkey)
   if (!myVote) return
 
+  const reverseMap = new Map<string, string>()
+  for (const [id, hashed] of _hashMap) reverseMap.set(hashed, id)
+
   _userVotedIds = new Set()
   for (const hashedId of myVote.votes) {
-    const restaurantId = _reverseHashMap.get(hashedId)
+    const restaurantId = reverseMap.get(hashedId)
     if (restaurantId) _userVotedIds.add(restaurantId)
   }
 }
@@ -232,16 +285,23 @@ function rerenderVotingCard(): void {
   for (const panel of panels) {
     const existingCard = panel.querySelector(".voting-card")
     if (existingCard) {
+      // Preserve content height when switching to the room list panel
+      const contentInner = existingCard.querySelector<HTMLElement>(".restaurant-content-inner")
+      const prevHeight = _roomListOpen ? (contentInner?.offsetHeight ?? 0) : 0
+
       const html = renderCardForDate(_currentDate)
       const temp = document.createElement("div")
       temp.innerHTML = html
       const newCard = temp.firstElementChild
       if (newCard) {
+        if (prevHeight > 0) {
+          const newInner = newCard.querySelector<HTMLElement>(".restaurant-content-inner")
+          if (newInner) newInner.style.minHeight = `${prevHeight}px`
+        }
         existingCard.replaceWith(newCard)
       }
     }
   }
-  updateRowIndicators()
 }
 
 function refreshVotingCards(): void {
@@ -249,9 +309,6 @@ function refreshVotingCards(): void {
   rerenderVotingCard()
 }
 
-function refreshVotingCardsOptimistic(): void {
-  rerenderVotingCard()
-}
 
 /* ── Render card HTML for a specific date ────────────────── */
 
@@ -271,6 +328,11 @@ function renderCardForDate(date: string): string {
     isReadOnly: past,
     relayStatus,
     collapsed: _collapsed,
+    activeRoom: _activeRoom,
+    knownRooms: _knownRooms,
+    roomListOpen: _roomListOpen,
+    confirmLeaveRoomId: _confirmLeaveRoomId,
+    joinedViaUrl: _joinedViaUrl,
   })
 }
 
@@ -304,7 +366,6 @@ async function connectAndSubscribe(): Promise<void> {
   )
   for (const { id, hashed } of hashEntries) {
     _hashMap.set(id, hashed)
-    _reverseHashMap.set(hashed, id)
   }
 
   _active = true
@@ -317,20 +378,21 @@ async function connectAndSubscribe(): Promise<void> {
   const date = dateForDayIndex(subIndex)
   if (date) {
     _currentDate = date
-    subscribe(_votingData, date, refreshVotingCards)
+    const target = buildRoomTarget()
+    if (target) subscribe(_votingData, target, refreshVotingCards)
   }
 }
 
 export async function initVoting(restaurants: Restaurant[]): Promise<void> {
   _restaurants = restaurants
   _active = false
-  _consented = localStorage.getItem(CONSENT_KEY) === "true"
   _votingData = null
   _hashMap = new Map()
-  _reverseHashMap = new Map()
   _dates = []
   _userVotedIds = new Set()
   _collapsed = localStorage.getItem(COLLAPSED_KEY) === "true"
+  loadRooms()
+  handleRoomUrlParam()
 
   try {
     const resp = await fetch(`${config.dataPath}/voting.json`)
@@ -340,19 +402,16 @@ export async function initVoting(restaurants: Restaurant[]): Promise<void> {
     return
   }
 
-  const roomDates = Object.keys(_votingData.rooms).sort()
-  if (roomDates.length === 0) return
-  _dates = roomDates
+  _dates = getWeekDates().map((d) => d.toISOString().slice(0, 10))
 
   // If already opted in, connect in the background (don't block rendering)
-  if (_consented) {
-    connectAndSubscribe()
+  if (localStorage.getItem(CONSENT_KEY) === "true") {
+    connectAndSubscribe().catch(() => {})
   }
 }
 
 export async function acceptVoting(): Promise<void> {
-  if (_consented || !_votingData) return
-  _consented = true
+  if (localStorage.getItem(CONSENT_KEY) === "true" || !_votingData) return
   localStorage.setItem(CONSENT_KEY, "true")
   await connectAndSubscribe()
 }
@@ -361,30 +420,39 @@ export function isVotingActive(): boolean {
   return _active
 }
 
+/** Flush pending publish, clear status indicators, unsubscribe */
+function clearTimersAndIndicators(): void {
+  if (_publishTimer) clearTimeout(_publishTimer)
+  _publishTimer = null
+  if (_sentTimer) clearTimeout(_sentTimer)
+  _sentTimer = null
+  _pendingIds = new Set()
+  _sentIds = new Set()
+  _failedIds = new Set()
+}
+
+function flushAndTeardown(): void {
+  if (_publishTimer) void doPublish()
+  clearTimersAndIndicators()
+  unsubscribe()
+  _userVotedIds = new Set()
+}
+
+function resubscribe(): void {
+  if (!_votingData) return
+  const target = buildRoomTarget()
+  if (target) subscribe(_votingData, target, refreshVotingCards)
+}
+
 export function onDayChangeVoting(dayIndex: number): void {
   if (!_active || !_votingData) return
 
   const date = dateForDayIndex(dayIndex)
   if (!date) return
 
-  // Flush pending vote before switching days
-  if (_publishTimer) {
-    clearTimeout(_publishTimer)
-    _publishTimer = null
-    void doPublish()
-  }
-
-  _pendingIds = new Set()
-  _sentIds = new Set()
-  _failedIds = new Set()
-  if (_sentTimer) { clearTimeout(_sentTimer); _sentTimer = null }
-  unsubscribe()
-
+  flushAndTeardown()
   _currentDate = date
-  _userVotedIds = new Set()
-
-  // Subscribe to new day
-  subscribe(_votingData, date, refreshVotingCards)
+  resubscribe()
 }
 
 export function toggleVote(restaurantId: string): void {
@@ -401,7 +469,7 @@ export function toggleVote(restaurantId: string): void {
 
   markPending([restaurantId])
   schedulePublish()
-  refreshVotingCardsOptimistic()
+  rerenderVotingCard()
 }
 
 export function toggleAllVotes(): void {
@@ -421,7 +489,7 @@ export function toggleAllVotes(): void {
 
   markPending(allIds)
   schedulePublish()
-  refreshVotingCardsOptimistic()
+  rerenderVotingCard()
 }
 
 export function getVotingCardHtml(day: string): string {
@@ -437,32 +505,150 @@ export function getVotingCardHtml(day: string): string {
 
   // Not yet active: show consent if user hasn't opted in,
   // otherwise empty (connectAndSubscribe will inject when ready)
-  if (!_consented) {
+  if (localStorage.getItem(CONSENT_KEY) !== "true") {
     const identity = getOrCreateIdentity()
     return renderConsentCard({
       userAvatar: identity.avatar,
       relayUrls: _votingData.relays,
+      highlight: _joinedViaUrl,
     })
   }
 
   return ""
 }
 
+/* ── Private rooms ───────────────────────────────────────── */
+
+export function encodeRoomPayload(room: PrivateRoom): string {
+  return btoa(JSON.stringify({ id: room.id, name: room.name }))
+    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "")
+}
+
+function decodeRoomPayload(encoded: string): { id: string; name: string } | null {
+  try {
+    const padded = encoded.replace(/-/g, "+").replace(/_/g, "/")
+    const { id, name } = JSON.parse(atob(padded))
+    if (typeof id !== "string" || typeof name !== "string") return null
+    return { id, name }
+  } catch {
+    return null
+  }
+}
+
+function handleRoomUrlParam(): void {
+  const params = new URLSearchParams(window.location.search)
+  const roomParam = params.get("room")
+  if (!roomParam) return
+
+  const decoded = decodeRoomPayload(roomParam)
+  if (!decoded) return
+
+  joinRoom({ id: decoded.id, name: decoded.name, joinedAt: Date.now() })
+  _joinedViaUrl = true
+
+  const url = new URL(window.location.href)
+  url.searchParams.delete("room")
+  window.history.replaceState({}, "", url.pathname + url.search)
+}
+
+export function createRoom(name: string): PrivateRoom {
+  const room: PrivateRoom = { id: generateRoomId(), name, joinedAt: Date.now() }
+  _knownRooms.push(room)
+  saveRooms()
+  _roomListOpen = false
+  switchToRoom(room)
+  return room
+}
+
+export function joinRoom(room: PrivateRoom): void {
+  if (!_knownRooms.some((r) => r.id === room.id)) {
+    _knownRooms.push(room)
+    saveRooms()
+  }
+  if (_active && _votingData) {
+    switchToRoom(room)
+  } else {
+    _activeRoom = room
+    saveActiveRoom()
+  }
+}
+
+export function switchToRoom(room: PrivateRoom | null): void {
+  if (!_active || !_votingData) return
+  if (room?.id === _activeRoom?.id) return
+
+  _roomListOpen = false
+  _confirmLeaveRoomId = null
+  flushAndTeardown()
+  _activeRoom = room
+  saveActiveRoom()
+  resubscribe()
+}
+
+export function leaveRoom(roomId: string): void {
+  _confirmLeaveRoomId = null
+  _knownRooms = _knownRooms.filter((r) => r.id !== roomId)
+  saveRooms()
+  if (_activeRoom?.id === roomId) {
+    switchToRoom(null)
+  } else {
+    rerenderVotingCard()
+  }
+}
+
+export function getActiveRoom(): PrivateRoom | null {
+  return _activeRoom
+}
+
+export function getKnownRooms(): readonly PrivateRoom[] {
+  return _knownRooms
+}
+
+export function setRoomListOpen(open: boolean): void {
+  _roomListOpen = open
+  _confirmLeaveRoomId = null
+  rerenderVotingCard()
+}
+
+export function isRoomListOpen(): boolean {
+  return _roomListOpen
+}
+
+export function setConfirmLeaveRoom(roomId: string | null): void {
+  _confirmLeaveRoomId = roomId
+  rerenderVotingCard()
+}
+
+export function getConfirmLeaveRoomId(): string | null {
+  return _confirmLeaveRoomId
+}
+
+export function isJoinedViaUrl(): boolean {
+  return _joinedViaUrl
+}
+
+export function renameRoom(roomId: string, newName: string): void {
+  const room = _knownRooms.find((r) => r.id === roomId)
+  if (!room) return
+  room.name = newName
+  saveRooms()
+  if (_activeRoom?.id === roomId) _activeRoom = room
+  rerenderVotingCard()
+}
+
 export function destroyVoting(): void {
-  if (_publishTimer) clearTimeout(_publishTimer)
-  _publishTimer = null
-  if (_sentTimer) clearTimeout(_sentTimer)
-  _sentTimer = null
-  _pendingIds = new Set()
-  _sentIds = new Set()
-  _failedIds = new Set()
+  clearTimersAndIndicators()
   destroyNostrClient()
   _votingData = null
   _restaurants = []
   _active = false
   _currentDate = null
   _hashMap = new Map()
-  _reverseHashMap = new Map()
   _dates = []
   _userVotedIds = new Set()
+  _activeRoom = null
+  _knownRooms = []
+  _roomListOpen = false
+  _confirmLeaveRoomId = null
+  _joinedViaUrl = false
 }

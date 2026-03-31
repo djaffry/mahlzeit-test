@@ -93,5 +93,18 @@
   "voting.consentPrivacy": "Kein Konto, keine persönlichen Daten. Stimmen sind anonym aber permanent.",
   "voting.consentIdentity": "Dein Avatar ist in diesem Browser gespeichert. Neues Gerät oder Daten gelöscht = neuer Avatar.",
   "voting.consentAccept": "Mitmachen",
-  "voting.businessCard": "Hi! Ich bin {{avatar}}"
+  "voting.businessCard": "Hi! Ich bin {{avatar}}",
+  "voting.defaultRoom": "Allgemein",
+  "voting.defaultRoomBadge": "Standard",
+  "voting.createRoom": "Raum erstellen",
+  "voting.createRoomPrompt": "Name für den neuen Raum:",
+  "voting.createNewRoom": "Neuen Raum erstellen",
+  "voting.shareRoom": "Einladungslink teilen",
+  "voting.renameRoom": "Umbenennen",
+  "voting.renameRoomPrompt": "Neuer Name für den Raum:",
+  "voting.leaveRoom": "Raum verlassen",
+  "voting.leaveConfirm": "\"{{room}}\" verlassen?",
+  "voting.leaveConfirmYes": "Verlassen",
+  "voting.leaveConfirmNo": "Abbrechen",
+  "voting.roomLinkCopied": "Raum-Link kopiert!"
 }

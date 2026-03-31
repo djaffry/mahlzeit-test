@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-31T10:14:35.417Z",
+  "fetchedAt": "2026-03-31T20:06:46.513Z",
   "error": null,
   "days": {
     "Montag": {
@@ -41,7 +41,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,H,L",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -69,7 +69,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "C,F,G,H,L,O",
+              "allergens": "F,G,L,O",
               "description": null
             }
           ]
@@ -97,7 +97,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -112,7 +112,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,H,L,M",
+              "allergens": "C,F,G,L,M",
               "description": null
             }
           ]
@@ -127,7 +127,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,C,D,F,H,L,N",
+              "allergens": "A,D,F,L,N",
               "description": null
             },
             {
@@ -275,7 +275,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -317,7 +317,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,H",
+              "allergens": "A,F",
               "description": null
             }
           ]
@@ -331,7 +331,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -346,7 +346,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,H,L,M",
+              "allergens": "C,F,G,L,M",
               "description": null
             }
           ]
@@ -361,7 +361,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,C,D,F,H,L,N",
+              "allergens": "A,D,F,L,N",
               "description": null
             },
             {
@@ -535,7 +535,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,G,O",
               "description": null
             }
           ]
@@ -563,7 +563,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -578,7 +578,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,H,L,M",
+              "allergens": "C,F,G,L,M",
               "description": null
             }
           ]
@@ -593,7 +593,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,C,D,F,H,L,N",
+              "allergens": "A,D,F,L,N",
               "description": null
             },
             {
@@ -737,7 +737,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -793,7 +793,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -808,7 +808,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,H,L,M",
+              "allergens": "C,F,G,L,M",
               "description": null
             }
           ]
@@ -823,7 +823,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,C,D,F,H,L,N",
+              "allergens": "A,D,F,L,N",
               "description": null
             },
             {
@@ -969,7 +969,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -1011,7 +1011,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1025,7 +1025,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -1040,7 +1040,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,C,D,F,H,L,N",
+              "allergens": "A,D,F,L,N",
               "description": null
             },
             {

@@ -1,21 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { validateRelayCount, validateRelayConfig, validateAppConfig } from "./create-rooms"
-
-describe("validateRelayCount", () => {
-  it("throws when below minimum", () => {
-    expect(() => validateRelayCount(1, 2)).toThrow(
-      /Only 1 relay\(s\) reachable, minimum is 2/
-    )
-  })
-
-  it("does not throw when at minimum", () => {
-    expect(() => validateRelayCount(2, 2)).not.toThrow()
-  })
-
-  it("does not throw when above minimum", () => {
-    expect(() => validateRelayCount(3, 2)).not.toThrow()
-  })
-})
+import { validateRelayConfig, validateAppConfig } from "./create-rooms.js"
 
 describe("validateRelayConfig", () => {
   it("accepts valid config", () => {
@@ -30,6 +14,10 @@ describe("validateRelayConfig", () => {
 
   it("rejects non-array relays", () => {
     expect(() => validateRelayConfig({ relays: "wss://r.test", minRelays: 1 })).toThrow(/relays/)
+  })
+
+  it("rejects empty relays", () => {
+    expect(() => validateRelayConfig({ relays: [], minRelays: 0 })).toThrow(/must not be empty/)
   })
 
   it("rejects missing minRelays", () => {

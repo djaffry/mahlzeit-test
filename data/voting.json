@@ -1,28 +1,10 @@
 {
-  "week": "2026-03-23",
   "appId": "0487a473-aa3f-4cc7-96c4-820fba32c884",
-  "pubkey": "232aa20126b7daf92816f8a6dadd113eab7c030e6a93239e250d299f6411e165",
   "salt": "c0a76d55bd2a2558763215348ea299a4ee06cc1061f2324048eae3b3946868b2",
   "relays": [
     "wss://relay.damus.io",
     "wss://nos.lol",
-    "wss://relay.primal.net"
-  ],
-  "rooms": {
-    "2026-03-23": {
-      "roomEventId": "848b20dc56168898610090e703660888cf00f21140c30498271049fbfe585521"
-    },
-    "2026-03-24": {
-      "roomEventId": "ddeb148447785deeec6546b92e7117a3b451b3036ec81a67ff35d49f2b09da82"
-    },
-    "2026-03-25": {
-      "roomEventId": "d009ac78afc19ac8e6c4a4a426e5ce29822377cd2d57ab1117b9f0848787386e"
-    },
-    "2026-03-26": {
-      "roomEventId": "753af5c3e4ce6a0ea2fef38e7e771ec7ed573df3aaccc14e562bb345d7784749"
-    },
-    "2026-03-27": {
-      "roomEventId": "288ef30b728f0888ea36c2f708cb5e1e6785c7d46a8d5b706d61ca33d48a142d"
-    }
-  }
+    "wss://relay.primal.net",
+    "wss://relay.snort.social"
+  ]
 }
