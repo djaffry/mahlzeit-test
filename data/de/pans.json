@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-30T09:53:07.182Z",
+  "fetchedAt": "2026-03-31T10:14:37.569Z",
   "error": null,
   "days": {
     "Montag": {
@@ -102,6 +102,124 @@
               "tags": [
                 "Huhn"
               ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Knoblauch Creme Suppe mit Croutons",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,A,G",
+              "description": null
+            },
+            {
+              "title": "Erdäpfel-Datschi gefüllt mit Rinderfaschiertes dazu Salat und Kräuter-Rahmsauce(m,o0,6)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spätzle in Paprika-Rahmsauce",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,H,C,6,A",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Karotten-Ingwer-Cremesuppe (G,‚O,N,L)",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gemüse-Curry mit Kichererbsen dazu Basmatireis",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Bärlauch-Penne ä la Creme (A,‚C,G,O,L,N)",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pasta Arrabbiata mit Parmesan",
+              "price": "17,50 €",
+              "tags": [],
+              "allergens": "A,G,C,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel (c,m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pans Sommersalat mit gegrilltem Hühnerfilet, Mozzarella und Basilikumpesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Adana (Faschiertes am Spieß) mit Reis,Salat und Joghurt",
+              "price": "19,90 €",
+              "tags": [],
               "allergens": "C,O,M",
               "description": null
             },

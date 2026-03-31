@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-30T09:53:04.860Z",
+  "fetchedAt": "2026-03-31T10:14:35.478Z",
   "error": null,
   "days": {
     "Montag": {
@@ -96,6 +96,144 @@
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Styrian salad bowl with runner beans 🫘, white 🤍 giant beans, radishes 🫜, peppers 🫑, pumpkin seed oil & sausage",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Green 💚 Spring 🌸 Orecchiette Salad Bowl with peas 🫛, green asparagus 🌿, radishes 🫜 & citrus 🍋 honey 🍯 vinaigrette",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Cheesecake - with strawberry 🍓 - in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Golden 💛 turmeric cauliflower soup - optionally with chives 🌿",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Schupfnudel pan - from beef - baby carrots 🥕, mushrooms 🍄‍🟫 & onions 🧅",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spring vegetable quiche with carrots 🥕, zucchini 🥒, leeks 🌿, radish & herb dip",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Chipotle pork stew with corn 🌽 & beans 🫘 - optionally chopped jalapeños 🫑 - with rice",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Lentil stew with cabbage 🥬, celery, carrots 🥕, zucchini 🥒, potatoes 🥔 & rice",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null

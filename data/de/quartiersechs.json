@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-30T10:40:34.086Z",
+  "fetchedAt": "2026-03-31T10:14:35.417Z",
   "error": null,
   "days": {
     "Montag": {
@@ -41,7 +41,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,L",
+              "allergens": "A,C,H,L",
               "description": null
             }
           ]
@@ -69,7 +69,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "F,G,L,O",
+              "allergens": "C,F,G,H,L,O",
               "description": null
             }
           ]
@@ -97,7 +97,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -112,7 +112,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "C,F,G,H,L,M",
               "description": null
             }
           ]
@@ -127,7 +127,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,C,D,F,H,L,N",
               "description": null
             },
             {
@@ -227,7 +227,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -275,7 +275,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -284,7 +284,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel •\nSchnittlauchsauce",
+              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -317,7 +317,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,H",
               "description": null
             }
           ]
@@ -331,7 +331,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -346,7 +346,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "C,F,G,H,L,M",
               "description": null
             }
           ]
@@ -361,7 +361,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,C,D,F,H,L,N",
               "description": null
             },
             {
@@ -442,12 +442,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Mousse au chocolat •\nHimbeere",
+              "title": "Veganes Mousse au chocolat •\nHimbeere\nGefülltes Duett von Profiteroles",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "A,C,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -456,10 +456,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Topfenstrudel",
+              "title": "Oreo Schnitte\nKirschstreuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -516,7 +516,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel •\nSchnittlauchsauce",
+              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -535,7 +535,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -563,7 +563,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -578,7 +578,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "C,F,G,H,L,M",
               "description": null
             }
           ]
@@ -593,7 +593,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,C,D,F,H,L,N",
               "description": null
             },
             {
@@ -689,7 +689,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,F,G,H,N,O,P",
               "description": null
             }
           ]
@@ -737,7 +737,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -793,7 +793,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -808,7 +808,7 @@
                 "Rindfleisch",
                 "Geflügel"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "C,F,G,H,L,M",
               "description": null
             }
           ]
@@ -823,7 +823,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,C,D,F,H,L,N",
               "description": null
             },
             {
@@ -909,7 +909,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "H",
               "description": null
             }
           ]
@@ -921,7 +921,7 @@
               "title": "Kaffeeschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,E,F,G,H,L,N,O",
               "description": null
             }
           ]
@@ -969,7 +969,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -978,7 +978,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel •\nSchnittlauchsauce",
+              "title": "Gekochtes mageres Meisel •\nCremespinat • \nRösterdäpfel",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -1011,7 +1011,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1025,7 +1025,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1040,7 +1040,7 @@
                 "Schweinefleisch",
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,C,D,F,H,L,N",
               "description": null
             },
             {
@@ -1075,7 +1075,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]

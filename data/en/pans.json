@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-03-30T09:53:07.182Z",
+  "fetchedAt": "2026-03-31T10:14:37.569Z",
   "error": null,
   "days": {
     "Montag": {
@@ -102,6 +102,124 @@
               "tags": [
                 "Huhn"
               ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Fried slices grilled with buttered olives and parsley potatoes",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Grilled salmon fillet with parsley potatoes and salad",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Chocolate cakes with chocolate sauce and whipped cream",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Menu",
+          "items": [
+            {
+              "title": "Garlic cream soup with croutons",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,A,G",
+              "description": null
+            },
+            {
+              "title": "Potato Datschi filled with minced beef with salad and herb cream sauce (m,o0,6)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spaetzle in paprika cream sauce",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,H,C,6,A",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Daily recommendations",
+          "items": [
+            {
+              "title": "Carrot ginger cream soup (G,‚O,N,L)",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Vegetable curry with chickpeas and basmati rice",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Salad bowl with avocado, sheep cheese and hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Wild garlic penne a la cream (A,‚C,G,O,L,N)",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pasta Arrabbiata with Parmesan",
+              "price": "17,50 €",
+              "tags": [],
+              "allergens": "A,G,C,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fried potatoes and salad with mustard onion (c, m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pan's summer salad with grilled chicken fillet, mozzarella and basil pesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Adana (minced meat on a skewer) with rice, salad and yoghurt",
+              "price": "19,90 €",
+              "tags": [],
               "allergens": "C,O,M",
               "description": null
             },
