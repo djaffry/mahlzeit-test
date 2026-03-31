@@ -10,7 +10,7 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-03-21T21:59:04.727Z",
+  "fetchedAt": "2026-03-31T11:32:08.909Z",
   "error": null,
   "days": {
     "Montag": {
@@ -33,29 +33,29 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Carinthian potato noodles",
+              "title": "Vegetable lasagne",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
-              "description": "Ratatouille & rocket, yofu dip"
+              "allergens": "A,H",
+              "description": "Colorful vegetables & bechamel, Grana Vegano"
             },
             {
-              "title": "Polpetti",
+              "title": "Old Viennese rice meat",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
-              "description": "Spaghetti & tomato ragout, Grana Padano"
+              "allergens": "A,G",
+              "description": "Juice & sour cream, fresh parsley"
             },
             {
-              "title": "Grilled chicken skewer",
+              "title": "Styrian chicken burger",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Huhn"
               ],
-              "allergens": "C,M",
-              "description": "Skin-on wedges & Mexican vegetables, curry honey dip"
+              "allergens": "A,C,G,M,N",
+              "description": "Grilled chicken & rocket, pumpkin seed oil mayonnaise"
             }
           ]
         },
@@ -63,10 +63,10 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Coconut Pineapple Trifle",
+              "title": "Apple Swirl",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "G,H",
               "description": null
             }
           ]
@@ -93,29 +93,27 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Pinzgauer Kässpätzle",
+              "title": "Baked Emmental cheese",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
-              "description": "Spaetzle & Bierkas, fried onions & bacon"
+              "allergens": "A,C,G,M",
+              "description": "Parsley potatoes, tartare sauce"
             },
             {
-              "title": "Grilled salmon slices",
+              "title": "Onion beef schnitzel",
               "price": null,
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "D,G",
-              "description": "Grilled vegetables & herb fraiche, spring onions"
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Cucumber & fried onions, fresh dumplings"
             },
             {
-              "title": "Tofu tortilla",
+              "title": "WOK chicken",
               "price": null,
               "tags": [
-                "Vegan"
+                "Huhn"
               ],
-              "allergens": "A,F,N",
-              "description": "Hummus, chili & vegetables, colorful herbs"
+              "allergens": "A,F,N,R",
+              "description": "Carrot, zucchini & cabbage, fragrant rice"
             }
           ]
         },
@@ -123,7 +121,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Cinnamon bun cake",
+              "title": "Curd currant cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,G",
@@ -153,29 +151,25 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Colorful rice pan",
+              "title": "Mushrooms a la creme",
               "price": null,
               "tags": [],
-              "allergens": "F,H,L",
-              "description": "Tomato, vegetables & edamame, cashews"
+              "allergens": "A,L",
+              "description": "Schupfnudeln, fresh chives"
             },
             {
-              "title": "Turkey Cordon Bleu",
+              "title": "Pumpkin seed schnitzel",
               "price": null,
-              "tags": [
-                "Pute"
-              ],
-              "allergens": "A,C,G",
-              "description": "French fries, lemon"
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Rice & cranberries, lemon"
             },
             {
-              "title": "Teppanyaki beef",
+              "title": "Spicy Tuna Buddha Bowl",
               "price": null,
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "F,N,R",
-              "description": "Sprouts & mushrooms, fragrant rice"
+              "tags": [],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, corn & red cabbage, toppings & Sriracha mayo"
             }
           ]
         },
@@ -183,128 +177,10 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Tiramisu",
+              "title": "Vanilla cream & blackberries",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
-              "description": null
-            }
-          ]
-        }
-      ]
-    },
-    "Donnerstag": {
-      "categories": [
-        {
-          "name": "Appetizer",
-          "items": [
-            {
-              "title": "fruit",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course",
-          "items": [
-            {
-              "title": "Pasta Primavera",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,H",
-              "description": "Zucchini, peas & mushrooms, Grana Vegano"
-            },
-            {
-              "title": "Szeged cabbage meat",
-              "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "Bread dumplings & sour cream, fresh chives"
-            },
-            {
-              "title": "Crunchy chicken burgers",
-              "price": null,
-              "tags": [
-                "Huhn"
-              ],
-              "allergens": "A,C,G,M",
-              "description": "Chicken, Cheddar & Salad, BB-Big Sauce"
-            }
-          ]
-        },
-        {
-          "name": "dessert",
-          "items": [
-            {
-              "title": "Apple crumble cake",
-              "price": null,
-              "tags": [],
-              "allergens": "A,C,G,H",
-              "description": null
-            }
-          ]
-        }
-      ]
-    },
-    "Freitag": {
-      "categories": [
-        {
-          "name": "Appetizer",
-          "items": [
-            {
-              "title": "fruit",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course",
-          "items": [
-            {
-              "title": "Curd cheese pancakes",
-              "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
-              "description": "Vanilla sauce & raspberries, whipped cream"
-            },
-            {
-              "title": "Baked plaice",
-              "price": null,
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "A,C,D,F,G,M",
-              "description": "Parsley potatoes, tartare sauce"
-            },
-            {
-              "title": "Grilled halloumi",
-              "price": null,
-              "tags": [],
-              "allergens": "A,G",
-              "description": "Tzatziki & antipasti, focaccia"
-            }
-          ]
-        },
-        {
-          "name": "dessert",
-          "items": [
-            {
-              "title": "Strawberry mousse & cookies",
-              "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "G",
               "description": null
             }
           ]
