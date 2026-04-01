@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-03-31T10:14:35.478Z",
+  "fetchedAt": "2026-04-01T09:00:11.491Z",
   "error": null,
   "days": {
     "Montag": {
@@ -276,6 +276,155 @@
         {
           "name": "Sweets",
           "items": [
+            {
+              "title": "Cheesecake - mit Erdbeer 🍓 - im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Karotten 🥕-Orangen 🍊-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frittata mit Salsiccia, schwarzen Oliven 🫒, Zucchini 🥒, Erdäpfeln 🥔 & Paprika 🫑",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Tarhonya-Pfanne mit geschmorter Paprika 🫑, Champignons 🍄‍🟫 & Babyspinat 💚",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Orientalische Orangen 🍊-Hühner-Tajine mit Karotten 🥕, Kichererbsen, Fenchel 🌿, Pastinaken, Ras el-Hanout 🤎, Harissa & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Detox-Gemüse-Eintopf mit Karotten 🥕, Kohl 🥬, Fisolen 🫛, Brokkoli 🥦 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Steirische Salad Bowl mit Käferbohnen 🫘, weißen 🤍 Riesenbohnen, Radieschen 🫜, Paprika 🫑, Kernöl & Wurst",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Grüne 💚 Frühlings 🌸-Orecchiette-Salad Bowl mit Erbsen 🫛, grünem Spargel 🌿, Radieschen 🫜 & Zitrus 🍋-Honig 🍯-Vinaigrette",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Zitronengras 🌿-Panna Cotta mit Brombeer 🫐-Spiegel & Haselnuss-Krokant",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
             {
               "title": "Cheesecake - mit Erdbeer 🍓 - im Becher",
               "price": "3,90",

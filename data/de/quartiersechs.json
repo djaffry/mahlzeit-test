@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-31T20:06:46.513Z",
+  "fetchedAt": "2026-04-01T09:00:12.079Z",
   "error": null,
   "days": {
     "Montag": {
@@ -227,7 +227,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,E,F,G,H,N,O",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -447,7 +447,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,E,F,G,H,N,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -459,7 +459,7 @@
               "title": "Oreo Schnitte\nKirschstreuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,E,F,G,H,N,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -672,10 +672,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Zitronen Creme Brulee",
+              "title": "Zitronen Creme Brulee\nMousse au Chocolat • Himbeeren",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "C,F,G,O",
               "description": null
             }
           ]
@@ -684,12 +684,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Bananenkuchen •\nNuss Granola",
+              "title": "Veganer Bananenkuchen •\nNuss Granola\nOreo Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H,N,O,P",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -751,7 +751,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G,L",
               "description": null
             }
           ]
@@ -909,7 +909,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "H",
+              "allergens": null,
               "description": null
             }
           ]
@@ -921,7 +921,7 @@
               "title": "Kaffeeschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,E,F,G,H,L,N,O",
+              "allergens": "A,C,G,O",
               "description": null
             }
           ]
@@ -1006,7 +1006,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Süßkartoffel - Bärlauchstrudel •\nChampigonsauce",
+              "title": "Süßkartoffel - Bärlauchstrudel •\nChampignonsauce",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -1075,7 +1075,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
