@@ -13,7 +13,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-01T09:00:10.743Z",
+  "fetchedAt": "2026-04-01T11:34:24.465Z",
   "error": null,
   "days": {
     "Montag": {
@@ -220,7 +220,7 @@
           "items": [
             {
               "title": "Karotten-Limettenkuchen",
-              "price": "2,50",
+              "price": "2,50 €",
               "tags": [],
               "allergens": "A,C,G,H",
               "description": null
