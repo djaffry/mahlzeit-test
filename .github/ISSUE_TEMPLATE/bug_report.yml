@@ -1,0 +1,48 @@
+name: Bug Report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read the [Contributing Guidelines](https://github.com/djaffry/mahlzeit-test/blob/main/CONTRIBUTING.md) before submitting.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and Steps to Reproduce
+      description: What were you doing when the bug occurred? List the steps to reproduce it.
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and Device
+      description: Which browser and device are you using?
+      placeholder: e.g. Chrome 125 on Android 15, Safari 18 on iPhone 16
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the issue.
+    validations:
+      required: false
