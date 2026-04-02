@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-01T09:00:12.079Z",
+  "fetchedAt": "2026-04-02T09:31:38.205Z",
   "error": null,
   "days": {
     "Montag": {
@@ -904,12 +904,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Aperolmousse •\nOrangenfliets",
+              "title": "Veganes Aperolmousse •\nOrangenfliets\nZitronen Creme Brulée",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "C,G",
               "description": null
             }
           ]
@@ -918,10 +918,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Kaffeeschnitte",
+              "title": "Kaffeeschnitte\nBananenkuchen • Nuss Granola",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]

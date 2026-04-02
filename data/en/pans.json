@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-01T09:00:14.002Z",
+  "fetchedAt": "2026-04-02T09:31:39.969Z",
   "error": null,
   "days": {
     "Montag": {
@@ -302,6 +302,112 @@
               "price": "17,50 €",
               "tags": [],
               "allergens": "A,G,C,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fried potatoes and salad with mustard onion (c, m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pan's summer salad with grilled chicken fillet, mozzarella and basil pesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Adana (minced meat on a skewer) with rice, salad and yoghurt",
+              "price": "19,90 €",
+              "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Fried slices grilled with buttered olives and parsley potatoes",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Grilled salmon fillet with parsley potatoes and salad",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Chocolate cakes with chocolate sauce and whipped cream",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Menu",
+          "items": [
+            {
+              "title": "Broccoli cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Rice meat (beef) with parmesan and salad (,n,M,0.6)",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Creamed spinach with fried egg and potato rosti",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,N,C,6,0",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Daily recommendations",
+          "items": [
+            {
+              "title": "Salad bowl with avocado, sheep cheese and hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Wild garlic farfalle a la cream",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "A,C,G,O,L,N",
+              "description": null
+            },
+            {
+              "title": "Potato dacchi filled with minced beef with salad and herb cream sauce",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "M,0,6",
               "description": null
             },
             {

@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-01T09:00:14.002Z",
+  "fetchedAt": "2026-04-02T09:31:39.969Z",
   "error": null,
   "days": {
     "Montag": {
@@ -302,6 +302,112 @@
               "price": "17,50 €",
               "tags": [],
               "allergens": "A,G,C,L,N",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel (c,m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pans Sommersalat mit gegrilltem Hühnerfilet, Mozzarella und Basilikumpesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Adana (Faschiertes am Spieß) mit Reis,Salat und Joghurt",
+              "price": "19,90 €",
+              "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Brokkoli Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Reisfleisch (Rind) dazu Parmesan und Salat (,n,M‚0,6)",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Cremespinat mit Spiegelei und Erdäpfelrösti",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,N,C,6,0",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Bärlauch-Farfalle ä la Creme",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "A,C,G,O,L,N",
+              "description": null
+            },
+            {
+              "title": "Erdäpfel-Datschi gefüllt mit Rinderfaschiertes dazu Salat und Kräuter-Rahmsauce",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "M,0,6",
               "description": null
             },
             {
