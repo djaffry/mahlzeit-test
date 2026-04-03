@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-02T09:31:38.205Z",
+  "fetchedAt": "2026-04-03T08:53:18.636Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1056,7 +1056,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Iceberg • Arugula • Romaine Lettuce • Goat Cheese • Pomegranate • Walnut Oil • White Balsamic Vinegar",
+              "title": "Iceberg • Arugula • Romaine Lettuce • Goat Cheese • Pomegranate • Walnut Oil • Nut Dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1070,10 +1070,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Lotus cream with caramel cookies",
+              "title": "Lotus cream with caramel cookies. Vegan aperol mousse with orange fluff",
               "price": null,
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": "A,F,G",
               "description": null
@@ -1084,12 +1084,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan currant cake",
+              "title": "Vegan currant cake coffee slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]

@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-02T09:31:38.205Z",
+  "fetchedAt": "2026-04-03T08:53:18.636Z",
   "error": null,
   "days": {
     "Montag": {
@@ -1056,7 +1056,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Eisberg • Rucola • Römersalat • \nZiegenkäse • Granatapfel • \nWalnussöl • Weisser Balsamico",
+              "title": "Eisberg • Rucola • Römersalat • \nZiegenkäse • Granatapfel • \nWalnussöl • Nuss Dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1070,10 +1070,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Lotus Creme mit Karamellkeksen",
+              "title": "Lotus Creme mit Karamellkeksen\nVeganes Aperolmousse \nmit Orangenfliets",
               "price": null,
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": "A,F,G",
               "description": null
@@ -1084,12 +1084,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Ribiselkuchen",
+              "title": "Veganer Ribiselkuchen\nKaffeeschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
