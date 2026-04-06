@@ -11,257 +11,22 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-03T08:53:18.636Z",
+  "fetchedAt": "2026-04-06T09:44:48.103Z",
   "error": null,
   "days": {
-    "Montag": {
-      "categories": [
-        {
-          "name": "Soup of the day clear",
-          "items": [
-            {
-              "title": "Beef soup • Chicken soup • Vegetable soup optionally with wild garlic fries • Turkey ham dumplings • Vegetable strudel",
-              "price": null,
-              "tags": [
-                "Rindfleisch",
-                "Huhn",
-                "Pute"
-              ],
-              "allergens": "A,C,F,G,L",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Vegan soup of the day",
-          "items": [
-            {
-              "title": "Wild garlic cream soup • Paprika croutons",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,L",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "ALL-TIME FAVORITE",
-          "items": [
-            {
-              "title": "Kebab chicken straight from the skewer • Turkish rice or French fries • Pepperoni • Lettuce • Tomato • Onion • Red cabbage • Ayran",
-              "price": "12,30 €",
-              "tags": [
-                "Huhn"
-              ],
-              "allergens": "G,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course traditional",
-          "items": [
-            {
-              "title": "Braised beef cheeks • Potato-wild garlic puree • Vegetable strips",
-              "price": "12,30 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "F,G,L,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course vegetarian/vegan",
-          "items": [
-            {
-              "title": "\"Imam Bayildi\" Stuffed Braised Melanzani • Bulgur Pilaf • Lime Sauce",
-              "price": "12,30 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Pasta station",
-          "items": [
-            {
-              "title": "Ravioli with brie & cranberries • Wild garlic linguini • Gnocchi with porcini mushroom filling • Olive oil with herbs • Thyme sauce • Wild garlic pesto • Grilled peppers • Olives • Cherry tomatoes • Grana",
-              "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": "A,F,G",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Classic Grill",
-          "items": [
-            {
-              "title": "Beef Minute Steak • Turkey fillet • Chicken wings • French fries • Cole slaw • BBQ sauce • Cocktail sauce • Daily side dishes • “Loaded fries” • Pulled beef • Cheddar sauce • Jalapenos • Fried onion • Tomato salsa",
-              "price": "11,40 €",
-              "tags": [
-                "Rindfleisch",
-                "Geflügel"
-              ],
-              "allergens": "C,F,G,L,M",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Asia Corner",
-          "items": [
-            {
-              "title": "Sweet and sour pork • Tilapia fillet fried • Coconut chili sauce • Samosa with vegetables • Wok vegetables • Jasmine rice",
-              "price": "10,90 €",
-              "tags": [
-                "Schweinefleisch",
-                "Fisch"
-              ],
-              "allergens": "A,D,F,L,N",
-              "description": null
-            },
-            {
-              "title": "Sushi & maki",
-              "price": "10,90 €",
-              "tags": [],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "salad corner",
-          "items": [
-            {
-              "title": "Colorful salad • Beets • Smoked salmon strips • Krengervais • Mustard-dill dressing",
-              "price": "11,90 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "A,C,D,F,G,M,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Pizza & Co",
-          "items": [
-            {
-              "title": "Pizza \"Hawaii\" • country ham • fresh pineapple • cheddar",
-              "price": "9,90 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
-              "allergens": "A,G",
-              "description": null
-            },
-            {
-              "title": "Pizza Margherita",
-              "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": "A,G",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl station",
-          "items": [
-            {
-              "title": "Create your own Bowl Fresh Nishiki rice • Bulgur • vegan sauces",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Bowl topping",
-          "items": [
-            {
-              "title": "Herbed chicken breast • fried sweet potato cubes",
-              "price": null,
-              "tags": [
-                "Geflügel"
-              ],
-              "allergens": "M",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Cream or mousse",
-          "items": [
-            {
-              "title": "Stuffed Duet of Profiteroles Greek Rice Pudding • Raisins • Cinnamon",
-              "price": null,
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": "A,C,F,G,H",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Cakes and tarts",
-          "items": [
-            {
-              "title": "Cherry crumble cake coconut cupcake",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,G,H,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Fruit small",
-          "items": [
-            {
-              "title": "Seasonal fruit",
-              "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": null
-            }
-          ]
-        }
-      ]
-    },
     "Dienstag": {
       "categories": [
         {
           "name": "Soup of the day clear",
           "items": [
             {
-              "title": "Beef soup • Chicken soup • Vegetable soup optionally with wild garlic fries • Turkey ham dumplings • Vegetable strudel",
+              "title": "Beef soup • Chicken soup • Vegetable soup optionally with Tyrolean dumplings • Semolina dumplings • Soup noodles",
               "price": null,
               "tags": [
-                "Rindfleisch",
                 "Huhn",
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,G,L",
               "description": null
             }
           ]
@@ -270,7 +35,7 @@
           "name": "Vegan soup of the day",
           "items": [
             {
-              "title": "Cream of potato soup • Morels",
+              "title": "Vegan scallion cream soup • fresh dill",
               "price": null,
               "tags": [
                 "Vegan"
@@ -284,12 +49,13 @@
           "name": "ALL-TIME FAVORITE",
           "items": [
             {
-              "title": "Boiled lean Meisel • Creamed spinach • Roasted potatoes",
+              "title": "Paella Valenciana • Chicken • Pork",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "A,C,F,G,L,M,O",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -298,10 +64,10 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Baked chicken schnitzel • Pea rice",
+              "title": "Wild garlic cordon bleu from turkey • Edam cheese • turkey ham • butter rice",
               "price": "12,30 €",
               "tags": [
-                "Huhn"
+                "Pute"
               ],
               "allergens": "A,C,G",
               "description": null
@@ -312,12 +78,12 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Vegan wild garlic and spinach dumplings • Paprika ragout",
+              "title": "Fried zucchini patties • spicy tomato and olive salad • soy yogurt dip",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,F,M,O",
               "description": null
             }
           ]
@@ -326,12 +92,13 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with brie & cranberries • Wild garlic linguini • Gnocchi with porcini mushroom filling • Olive oil with herbs • Thyme sauce • Wild garlic pesto • Grilled peppers • Olives • Cherry tomatoes • Grana",
+              "title": "Ravioli with mountain cheese & pears • Penne • Wild garlic gnocchi • extra-virgin olive oil with herbs • White wine sauce • Basil pesto • Spinach leaves • Roasted pine nuts • Cherry tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
+                "Vegan",
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,L,O",
               "description": null
             }
           ]
@@ -340,13 +107,14 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Turkey fillet • Chicken wings • French fries • Cole slaw • BBQ sauce • Cocktail sauce • Daily side dishes • “Loaded fries” • Pulled beef • Cheddar sauce • Jalapenos • Fried onion • Tomato salsa",
+              "title": "Beef Minute Steak • Country Chicken Breast • Cevapcici • French Fries • Cole Slaw • BBQ Sauce • Cocktail Sauce • Daily Sides “Korean Burger” • Sweet Crispy Fried Chicken • Lime Mayo • Miso Coleslaw • Frisee",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "A,C,F,G,M,N",
               "description": null
             }
           ]
@@ -355,13 +123,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Sweet and sour pork • Tilapia fillet fried • Coconut chili sauce • Samosa with vegetables • Wok vegetables • Jasmine rice",
+              "title": "Red Thai - beef curry, peanuts, mushrooms, peppers with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [
-                "Schweinefleisch",
+                "Rindfleisch"
+              ],
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "\"Chu Chi Salmon\" salmon fillet, coconut chili sauce with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "Zucchini tempura with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": "A,D,E,F,M,N",
               "description": null
             },
             {
@@ -377,12 +160,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Leaf salad • Arancini rice balls with mozzarella filling • Balsamic dressing",
+              "title": "Leaf salad • Baked brie • Caramel nuts • Cranberry dressing",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
-              "allergens": "A,C,G,L,O",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -391,12 +174,12 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza chicken gyros • pepper strips • red onion • olives • feta cubes • mint yogurt",
+              "title": "Pizza root bacon • mushrooms • pepperoni • mountain cheese",
               "price": "9,90 €",
               "tags": [
-                "Huhn"
+                "Schweinefleisch"
               ],
-              "allergens": "A,G",
+              "allergens": "A,G,L,M",
               "description": null
             },
             {
@@ -414,7 +197,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice • Bulgur • vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice • quinoa • vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -428,12 +211,12 @@
           "name": "Bowl topping",
           "items": [
             {
-              "title": "Herbed chicken breast • fried sweet potato cubes",
+              "title": "Torpedo shrimp • lukewarm goat cheese with honey & herbs",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Fisch"
               ],
-              "allergens": "M",
+              "allergens": "A,B,F,G,L,M",
               "description": null
             }
           ]
@@ -442,12 +225,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan mousse au chocolat • Raspberry filled duet of profiteroles",
+              "title": "Melon salad with mint syrup",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": null,
               "description": null
             }
           ]
@@ -456,10 +239,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Oreo slices cherry crumble cake",
+              "title": "Apple crumble slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
@@ -486,14 +269,13 @@
           "name": "Soup of the day clear",
           "items": [
             {
-              "title": "Beef soup • Chicken soup • Vegetable soup optionally with wild garlic fries • Turkey ham dumplings • Vegetable strudel",
+              "title": "Beef soup • Chicken soup • Vegetable soup optionally with Tyrolean dumplings • Semolina dumplings • Soup noodles",
               "price": null,
               "tags": [
-                "Rindfleisch",
                 "Huhn",
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,G,L",
               "description": null
             }
           ]
@@ -502,7 +284,7 @@
           "name": "Vegan soup of the day",
           "items": [
             {
-              "title": "Leek and coconut cream soup",
+              "title": "Red lentil soup • cumin • lemon",
               "price": null,
               "tags": [
                 "Vegan"
@@ -516,12 +298,13 @@
           "name": "ALL-TIME FAVORITE",
           "items": [
             {
-              "title": "Boiled lean Meisel • Creamed spinach • Roasted potatoes",
+              "title": "Paella Valenciana • Chicken • Pork",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "A,C,F,G,L,M,O",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -530,12 +313,12 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Whole fried turkey breast • mushroom sauce • fried wild garlic napkin dumplings",
+              "title": "Chicken ragout “Zurich style” • Wild garlic dumplings",
               "price": "12,30 €",
               "tags": [
-                "Pute"
+                "Huhn"
               ],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,G,L,O",
               "description": null
             }
           ]
@@ -544,12 +327,12 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Hummus • Fried mushrooms • Pomegranate seeds • Parsley • Ras-el-hanout • Foccacia",
+              "title": "Falafel • Hummus • Cabbage sprouts • Arugula pesto • Pita bread",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,H,N,O",
+              "allergens": "A,G,N,O",
               "description": null
             }
           ]
@@ -558,12 +341,13 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with brie & cranberries • Wild garlic linguini • Gnocchi with porcini mushroom filling • Olive oil with herbs • Thyme sauce • Wild garlic pesto • Grilled peppers • Olives • Cherry tomatoes • Grana",
+              "title": "Ravioli with mountain cheese & pears • Penne • Wild garlic gnocchi • extra-virgin olive oil with herbs • White wine sauce • Basil pesto • Spinach leaves • Roasted pine nuts • Cherry tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
+                "Vegan",
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,L,O",
               "description": null
             }
           ]
@@ -572,13 +356,14 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Turkey fillet • Chicken wings • French fries • Cole slaw • BBQ sauce • Cocktail sauce • Daily side dishes • “Loaded fries” • Pulled beef • Cheddar sauce • Jalapenos • Fried onion • Tomato salsa",
+              "title": "Beef Minute Steak • Country Chicken Breast • Cevapcici • French Fries • Cole Slaw • BBQ Sauce • Cocktail Sauce • Daily Sides “Korean Burger” • Sweet Crispy Fried Chicken • Lime Mayo • Miso Coleslaw • Frisee",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "A,C,F,G,M,N",
               "description": null
             }
           ]
@@ -587,13 +372,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Sweet and sour pork • Tilapia fillet fried • Coconut chili sauce • Samosa with vegetables • Wok vegetables • Jasmine rice",
+              "title": "Red Thai - beef curry, peanuts, mushrooms, peppers with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [
-                "Schweinefleisch",
+                "Rindfleisch"
+              ],
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "\"Chu Chi Salmon\" salmon fillet, coconut chili sauce with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "Zucchini tempura with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": "A,D,E,F,M,N",
               "description": null
             },
             {
@@ -609,12 +409,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Salad with oranges • quinoa • basil • buffalo mozzarella • prosciutto",
+              "title": "Leaf salad • Wild garlic arancini rice balls • Mozzarella filling • Honey mustard dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "G,O",
+              "allergens": "A,C,G,L,M,O",
               "description": null
             }
           ]
@@ -623,9 +423,11 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pide mozzarella • tomato • basil • black olives • mint yogurt",
+              "title": "Turkish pide • Minced beef • Tomatoes • Mint yogurt • Ayran",
               "price": "9,90 €",
-              "tags": [],
+              "tags": [
+                "Rindfleisch"
+              ],
               "allergens": "A,G",
               "description": null
             },
@@ -644,7 +446,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice • Bulgur • vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice • quinoa • vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -658,12 +460,12 @@
           "name": "Bowl topping",
           "items": [
             {
-              "title": "Herbed chicken breast • fried sweet potato cubes",
+              "title": "Torpedo shrimp • lukewarm goat cheese with honey & herbs",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Fisch"
               ],
-              "allergens": "M",
+              "allergens": "A,B,F,G,L,M",
               "description": null
             }
           ]
@@ -672,10 +474,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Lemon Creme Brulee Chocolate Mousse • Raspberries",
+              "title": "Coconut - rice pudding • walnuts • pistachios",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,O",
+              "allergens": "G,H",
               "description": null
             }
           ]
@@ -684,12 +486,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan Banana Cake • Nut Granola Oreo Slices",
+              "title": "Banana slices",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G,H",
+              "tags": [],
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -716,14 +516,13 @@
           "name": "Soup of the day clear",
           "items": [
             {
-              "title": "Beef soup • Chicken soup • Vegetable soup optionally with wild garlic fries • Turkey ham dumplings • Vegetable strudel",
+              "title": "Beef soup • Chicken soup • Vegetable soup optionally with Tyrolean dumplings • Semolina dumplings • Soup noodles",
               "price": null,
               "tags": [
-                "Rindfleisch",
                 "Huhn",
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,G,L",
               "description": null
             }
           ]
@@ -732,7 +531,7 @@
           "name": "Vegan soup of the day",
           "items": [
             {
-              "title": "Wild Garlic Velouté",
+              "title": "Artichoke cream soup",
               "price": null,
               "tags": [
                 "Vegan"
@@ -746,12 +545,13 @@
           "name": "ALL-TIME FAVORITE",
           "items": [
             {
-              "title": "Creamed spinach • Fried egg • Roasted potatoes",
+              "title": "Paella Valenciana • Chicken • Pork",
               "price": "12,30 €",
               "tags": [
-                "Vegan"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -760,12 +560,12 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Pork loin steak • Djuvec • Ajvar",
+              "title": "Grammel dumplings • caraway jus • sauerkraut",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
               ],
-              "allergens": "O",
+              "allergens": "A,C,L,O",
               "description": null
             }
           ]
@@ -774,12 +574,12 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Tofu & Lime Sofritas • Quinoa • Quail Beans • Sweet Potato Salsa",
+              "title": "Vegan kohlrabi schnitzel • carrot puree • wild garlic pesto",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,L",
+              "allergens": "A,C,G,L,M",
               "description": null
             }
           ]
@@ -788,12 +588,13 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with brie & cranberries • Wild garlic linguini • Gnocchi with porcini mushroom filling • Olive oil with herbs • Thyme sauce • Wild garlic pesto • Grilled peppers • Olives • Cherry tomatoes • Grana",
+              "title": "Ravioli with mountain cheese & pears • Penne • Wild garlic gnocchi • extra-virgin olive oil with herbs • White wine sauce • Basil pesto • Spinach leaves • Roasted pine nuts • Cherry tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
+                "Vegan",
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,L,O",
               "description": null
             }
           ]
@@ -802,13 +603,14 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak • Turkey fillet • Chicken wings • French fries • Cole slaw • BBQ sauce • Cocktail sauce • Daily side dishes • “Loaded fries” • Pulled beef • Cheddar sauce • Jalapenos • Fried onion • Tomato salsa",
+              "title": "Beef Minute Steak • Country Chicken Breast • Cevapcici • French Fries • Cole Slaw • BBQ Sauce • Cocktail Sauce • Daily Sides “Korean Burger” • Sweet Crispy Fried Chicken • Lime Mayo • Miso Coleslaw • Frisee",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
-                "Geflügel"
+                "Schweinefleisch",
+                "Huhn"
               ],
-              "allergens": "C,F,G,L,M",
+              "allergens": "A,C,F,G,M,N",
               "description": null
             }
           ]
@@ -817,13 +619,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Sweet and sour pork • Tilapia fillet fried • Coconut chili sauce • Samosa with vegetables • Wok vegetables • Jasmine rice",
+              "title": "Red Thai - beef curry, peanuts, mushrooms, peppers with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [
-                "Schweinefleisch",
+                "Rindfleisch"
+              ],
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "\"Chu Chi Salmon\" salmon fillet, coconut chili sauce with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "Zucchini tempura with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": "A,D,E,F,M,N",
               "description": null
             },
             {
@@ -839,12 +656,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Sweet Potato - Chimichuri Wrap • Brown Rice • Radicchio • Mexican Salad",
+              "title": "Colorful leaf lettuce, pumpkin seed oil dressing, fried chicken strips",
               "price": "11,90 €",
               "tags": [
-                "Vegetarisch"
+                "Geflügel"
               ],
-              "allergens": "A,C,G,M",
+              "allergens": "M,O",
               "description": null
             }
           ]
@@ -853,12 +670,13 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Tyrolia • Tyrolean bacon • Corn • Tomatoes • Cheese • Ham • Onion",
+              "title": "Pizza • Turkey ham • Brie • Sun-dried tomatoes • Basil pesto",
               "price": "9,90 €",
               "tags": [
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Pute"
               ],
-              "allergens": "A,G,M",
+              "allergens": "A,C,G,O",
               "description": null
             },
             {
@@ -876,7 +694,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice • Bulgur • vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice • quinoa • vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -890,12 +708,12 @@
           "name": "Bowl topping",
           "items": [
             {
-              "title": "Herbed chicken breast • fried sweet potato cubes",
+              "title": "Torpedo shrimp • lukewarm goat cheese with honey & herbs",
               "price": null,
               "tags": [
-                "Geflügel"
+                "Fisch"
               ],
-              "allergens": "M",
+              "allergens": "A,B,F,G,L,M",
               "description": null
             }
           ]
@@ -904,12 +722,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan Aperol Mousse • Orange Flets Lemon Creme Brulée",
+              "title": "Vegan raspberry cream",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,G",
+              "allergens": null,
               "description": null
             }
           ]
@@ -918,10 +736,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Coffee slices banana cake • nut granola",
+              "title": "Curd cheese - top cuts",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,G,O",
               "description": null
             }
           ]
@@ -948,14 +766,13 @@
           "name": "Soup of the day clear",
           "items": [
             {
-              "title": "Beef soup • Chicken soup • Vegetable soup optionally with wild garlic fries • Turkey ham dumplings • Vegetable strudel",
+              "title": "Beef soup • Chicken soup • Vegetable soup optionally with Tyrolean dumplings • Semolina dumplings • Soup noodles",
               "price": null,
               "tags": [
-                "Rindfleisch",
                 "Huhn",
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,F,G,L",
+              "allergens": "A,C,G,L",
               "description": null
             }
           ]
@@ -964,8 +781,49 @@
           "name": "Vegan soup of the day",
           "items": [
             {
-              "title": "Cream of cauliflower soup",
+              "title": "Curry - celery soup • roasted almonds",
               "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "H,L,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "ALL-TIME FAVORITE",
+          "items": [
+            {
+              "title": "Paella Valenciana • Chicken • Pork",
+              "price": "12,30 €",
+              "tags": [
+                "Schweinefleisch",
+                "Huhn"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course traditional",
+          "items": [
+            {
+              "title": "Milk cream strudel • Vanilla sauce",
+              "price": "12,30 €",
+              "tags": [],
+              "allergens": "A,C,F,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course vegetarian/vegan",
+          "items": [
+            {
+              "title": "Peppers stuffed with lentils • Tomato-artichoke sauce",
+              "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
@@ -975,57 +833,16 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
-          "items": [
-            {
-              "title": "Boiled lean Meisel • Creamed spinach • Roasted potatoes",
-              "price": "12,30 €",
-              "tags": [
-                "Rindfleisch"
-              ],
-              "allergens": "A,C,F,G,L,M,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course traditional",
-          "items": [
-            {
-              "title": "Grilled zander fillet • Paprika butter • “Ebly” tender wheat • Letscho",
-              "price": "12,30 €",
-              "tags": [
-                "Fisch"
-              ],
-              "allergens": "A,D,G,L",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Main course vegetarian/vegan",
-          "items": [
-            {
-              "title": "Sweet potato - wild garlic strudel • Mushroom sauce",
-              "price": "12,30 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,C,F,G,O",
-              "description": null
-            }
-          ]
-        },
-        {
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with brie & cranberries • Wild garlic linguini • Gnocchi with porcini mushroom filling • Olive oil with herbs • Thyme sauce • Wild garlic pesto • Grilled peppers • Olives • Cherry tomatoes • Grana",
+              "title": "Ravioli with mountain cheese & pears • Penne • Wild garlic gnocchi • extra-virgin olive oil with herbs • White wine sauce • Basil pesto • Spinach leaves • Roasted pine nuts • Cherry tomatoes • Grana",
               "price": "9,90 €",
               "tags": [
+                "Vegan",
                 "Vegetarisch"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,L,O",
               "description": null
             }
           ]
@@ -1034,13 +851,28 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "Sweet and sour pork • Tilapia fillet fried • Coconut chili sauce • Samosa with vegetables • Wok vegetables • Jasmine rice",
+              "title": "Red Thai - beef curry, peanuts, mushrooms, peppers with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [
-                "Schweinefleisch",
+                "Rindfleisch"
+              ],
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "\"Chu Chi Salmon\" salmon fillet, coconut chili sauce with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,L,N",
+              "allergens": "A,D,E,F,M,N",
+              "description": null
+            },
+            {
+              "title": "Zucchini tempura with wok vegetables, jasmine rice",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": "A,D,E,F,M,N",
               "description": null
             },
             {
@@ -1056,12 +888,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Iceberg • Arugula • Romaine Lettuce • Goat Cheese • Pomegranate • Walnut Oil • Nut Dressing",
+              "title": "Cous Cous • Cauliflower • Beet Falafel • Peanut Coconut Sauce",
               "price": "11,90 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
-              "allergens": "G,H,O",
+              "allergens": "A,E,L,M,O",
               "description": null
             }
           ]
@@ -1070,12 +902,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Lotus cream with caramel cookies. Vegan aperol mousse with orange fluff",
+              "title": "Peach yogurt cream • Coconut",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F,G",
+              "tags": [],
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -1084,12 +914,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan currant cake coffee slices",
+              "title": "Vegan punch cuts",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,F,O",
               "description": null
             }
           ]

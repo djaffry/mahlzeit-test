@@ -13,7 +13,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-01T11:34:24.465Z",
+  "fetchedAt": "2026-04-06T09:44:46.634Z",
   "error": null,
   "days": {
     "Montag": {
@@ -31,7 +31,7 @@
               "description": null
             },
             {
-              "title": "Süßkartoffel-Kokoscremesuppe",
+              "title": "Erdäpfel-Bärlauchcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -45,30 +45,30 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Maishuhnfilet Hasselback auf Bärlauch-Parmesan-Risotto",
+              "title": "Piccata Milanese vom Hühnerfilet auf Tomaten-Basiklikum Pasta",
               "price": "11,90 €",
               "tags": [
-                "Fleisch"
+                "Huhn"
               ],
-              "allergens": "G",
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Lachforellenfilet auf Frühlings-Letscho,Spinatknödeln",
+              "title": "Zanderfiletsteak in Chorizobutter ,Petersilerdäpfel,Gurkensalat",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,C,D,G",
+              "allergens": "D,G",
               "description": null
             },
             {
-              "title": "Kärntner Steinpilz-Kasnudeln in brauner Butter      , Salat Vom Buffet",
+              "title": "Indische Karfiol-Kichererbsen-Curry ,Basmatireis , Salat Vom Buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": null,
               "description": null
             }
           ]
@@ -93,7 +93,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Jungzwiebel-Selleriecremesuppe",
+              "title": "Erdäpfel-Bärlauchcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -116,16 +116,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Kalbsrahmgulasch mit Rucola-Spätzle ,Sauerrahm",
+              "title": "Piccata Milanese vom Hühnerfilet auf Tomaten-Basiklikum Pasta",
               "price": "12,90 €",
               "tags": [
-                "Fleisch"
+                "Huhn"
               ],
               "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Brasilianische Mouqueca(Fisch,Garnele) Basmatireis",
+              "title": "Zanderfiletsteak in Chorizobutter ,Petersilerdäpfel,Gurkensalat",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -134,7 +134,7 @@
               "description": null
             },
             {
-              "title": "Vegan Chili Sin Carne mit Melanzani  ,Salat vom Buffet",
+              "title": "Indische Karfiol-Kichererbsen-Curry ,Basmatireis , Salat Vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -148,7 +148,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Erdbeer-Mascarpone-Mousse",
+              "title": "Erdbeer-Topfenknödel",
               "price": "3,90 €",
               "tags": [],
               "allergens": "G",
@@ -164,7 +164,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Tomatencremesuppe",
+              "title": "Steinpilzcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -187,25 +187,25 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Hühner Cordon Bleu mit Risi-Pisi , Preiselbeeren",
+              "title": "Kürbis-Putenfiletschnitzel Karotten-Maisreis  , Preiselbeeren",
               "price": "11,90",
               "tags": [
-                "Huhn"
+                "Pute"
               ],
               "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Wolfsbarschfilet auf Penne all\"Arrabbiata",
+              "title": "Chili-Garnelen auf Ceasar-Salat ,Croutons",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,C,G,D",
+              "allergens": "A,C,G,B",
               "description": null
             },
             {
-              "title": "Linsen-Gemüseburger im Bagel ,Avocadosauce , Salat von Büffet",
+              "title": "Kartoffelknödel mit Tomaten-Mozzarella , Salat von Büffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -219,7 +219,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Karotten-Limettenkuchen",
+              "title": "Kirschstrudel",
               "price": "2,50 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -235,7 +235,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Knoblauchcremesuppe",
+              "title": "Weißwurzelcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -244,10 +244,10 @@
               "description": null
             },
             {
-              "title": "Gulaschsuppe",
+              "title": "Rindsuppe mit Karottenjulienne",
               "price": "3,90 €",
               "tags": [
-                "Fleisch"
+                "Rindfleisch"
               ],
               "allergens": "A,C,G,L",
               "description": null
@@ -258,16 +258,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Entefilet auf Apfel-Rotkraut,Erdäpfelknödel",
+              "title": "Gekochter Tafelspitz,Cremespinat ,Rösterdäpfel",
               "price": "12,90 €",
               "tags": [
-                "Ente"
+                "Rindfleisch"
               ],
-              "allergens": "A,C,O,L,G",
+              "allergens": "L,G",
               "description": null
             },
             {
-              "title": "Lachsfiletsteak auf Rahmspinat ,Rösti-Taler",
+              "title": "Lachsfiletsteak ,Bärlauchkruste  auf Grillgemüse",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -276,12 +276,12 @@
               "description": null
             },
             {
-              "title": "Bärlauch-Spinat -Käse-Palatschinken     ,Salat vom Buffet",
+              "title": "Cremiger Spinat mit Rösterdäpfel,Spiegeleier      ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "C,G",
               "description": null
             }
           ]
@@ -290,7 +290,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Hausgemachte Zimtschnecke",
+              "title": "Hausgemachte Apfelschnecke",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -306,21 +306,21 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Lammbraten in Rotweinsauce ,Polentini",
-              "price": "11,90 €",
+              "title": "Wolfsbarschfilet mit Süßkartoffel-Gemüse",
+              "price": "12,90 €",
               "tags": [
-                "Lamm"
+                "Fisch"
               ],
-              "allergens": "G,O,L",
+              "allergens": "D",
               "description": null
             },
             {
-              "title": "Gefüllte -Paprika in Tomatensauce    ,Salat Becher",
+              "title": "Grill Käse auf Süßkartoffel-Gröstl    ,Salat Becher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "G",
               "description": null
             }
           ]
