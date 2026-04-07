@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-06T09:44:48.235Z",
+  "fetchedAt": "2026-04-07T09:39:15.290Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -154,6 +154,142 @@
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse-Kurkuma 💛-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortelloni in würziger Tomaten 🍅-Chorizo-Sauce mit Karotten 🥕, Paprika 🫑 & Stangensellerie 🌿 - optional mit Parmesan",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Schupfnudeln in Bärlauch 🌿-Zitrus 🍋-Béchamelsauce",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Szegediner Krautfleisch vom Ötscherblickschwein mit Reis – optional mit Sauerrahm",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rote Linsen-Kokos 🥥-Dal mit Babyspinat 💚, Süßkartoffeln 🍠 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Griechische Orzo-Salad Bowl mit Kalamata-Oliven 🫒, Gurken 🥒, Tomaten 🍅, Schafskäse & frischer Petersilie 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bulgur-Tabouleh mit Gurken 🥒, Karotten 🥕, Tomaten 🍅, Nüssen 🥜, Minze, Petersilie 🌿, gebratenem Räucher-Tofu & Granatapfel 🍎-Zitrus 🍋-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Schokomousse 🍫 mit Pistazien 💚",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null

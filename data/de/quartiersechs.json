@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-06T09:44:48.103Z",
+  "fetchedAt": "2026-04-07T09:39:18.052Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -225,12 +225,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Melonensalat mit Minzsirup",
+              "title": "Melonensalat mit Minzsirup\nLotus Creme mit Karamellkeksen",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -239,10 +239,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Apfelstreuselschnitte",
+              "title": "Apfelstreuselschnitte\nVeganer Ribiselkuchen",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G,H",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
