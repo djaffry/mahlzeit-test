@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-07T09:39:17.498Z",
+  "fetchedAt": "2026-04-08T09:39:16.282Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -73,6 +73,128 @@
               "price": "17,20 €",
               "tags": [],
               "allergens": "L,H,0,M,G",
+              "description": null
+            },
+            {
+              "title": "Potato dacchi filled with minced beef with salad and herb cream sauce",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "M,0,6",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fried potatoes and salad with mustard onion (c, m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rice meat (beef) with parmesan and cucumber cream salad",
+              "price": "18,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "L,H,0,6",
+              "description": null
+            },
+            {
+              "title": "Pan's summer salad with grilled chicken fillet, mozzarella and basil pesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Fried slices grilled with buttered olives and parsley potatoes",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Grilled salmon fillet with parsley potatoes and salad",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Chocolate cakes with chocolate sauce and whipped cream",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Menu",
+          "items": [
+            {
+              "title": "Cauliflower cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "O,L,N,G",
+              "description": null
+            },
+            {
+              "title": "Lasagna Bolognese (beef) with salad (A.c,o,M‚6)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Wild garlic risotto with parmesan and salad",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,H,0,M,6",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Daily recommendations",
+          "items": [
+            {
+              "title": "Hokkaido pumpkin cream soup",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Salad bowl with avocado, sheep cheese and hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Pasta, wild garlic and mozzarella casserole with tomato sauce and salad",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,A,C,6,M",
+              "description": null
+            },
+            {
+              "title": "Cheese spaetzle with salad",
+              "price": "17,20 €",
+              "tags": [],
+              "allergens": "A,C,0,G,M",
               "description": null
             },
             {
