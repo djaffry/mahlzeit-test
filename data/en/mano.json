@@ -13,7 +13,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-06T09:44:46.634Z",
+  "fetchedAt": "2026-04-08T10:18:00.557Z",
   "error": null,
   "days": {
     "Montag": {
@@ -220,7 +220,7 @@
           "items": [
             {
               "title": "Cherry strudel",
-              "price": "2,50 €",
+              "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
               "description": null
