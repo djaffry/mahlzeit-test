@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-08T09:39:13.816Z",
+  "fetchedAt": "2026-04-08T11:37:05.993Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -424,11 +424,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Schokomousse 🍫 mit Pistazien 💚",
+              "title": "Orangen 🍊-Tiramisu",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
