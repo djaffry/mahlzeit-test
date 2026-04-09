@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-08T11:37:05.993Z",
+  "fetchedAt": "2026-04-09T09:44:19.110Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -423,6 +423,151 @@
         {
           "name": "Sweets",
           "items": [
+            {
+              "title": "Orange 🍊 tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Carrot 🥕 miso soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Piri Piri chicken pan with sweet potatoes 🍠, potatoes 🥔 & broccoli 🥦 - with a small side salad 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Cheese spaetzle 🧀 with fried onions, chives 🌿 & small side salad 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Sliced Waldviertler free-range turkey - in mustard 💛 cream sauce - with forest mushrooms 🍄‍🟫, chanterelles, porcini mushrooms, mushrooms & rice",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Cambodian pumpkin 🎃 chickpea curry with peas 🫛 & fresh lime 🍋‍🟩 - optionally with coriander 🌿",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Italian salad bowl with yellow 💛 & red tomatoes 🍅, cucumbers 🥒, mozzarella balls & fresh basil 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bulgur tabbouleh with cucumber 🥒, carrots 🥕, tomatoes 🍅, nuts 🥜, mint, parsley 🌿, fried smoked tofu & pomegranate 🍎 citrus 🍋 dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan apple 🍎 cinnamon 🤎 cake",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
             {
               "title": "Orange 🍊 tiramisu",
               "price": "3,90",

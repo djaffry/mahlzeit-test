@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-08T11:37:05.993Z",
+  "fetchedAt": "2026-04-09T09:44:19.110Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -423,6 +423,151 @@
         {
           "name": "Sweets",
           "items": [
+            {
+              "title": "Orangen 🍊-Tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Karotten 🥕-Miso-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Piri Piri Hühner-Pfanne mit Süßkartoffeln 🍠, Erdäpfeln 🥔 & Brokkoli 🥦 – dazu ein kleiner Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Käsespätzle 🧀 mit Röstzwiebeln, Schnittlauch 🌿 & kleinem Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Geschnetzeltes von der Waldviertler Freilandpute – in Senf 💛-Rahmsauce – mit Waldpilzen 🍄‍🟫, Pfifferlingen, Steinpilzen, Champignons & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Kambodschanisches Kürbis 🎃-Kichererbsen-Curry mit Erbsen 🫛 & frischer Limette 🍋‍🟩 – optional mit Koriander 🌿",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Italienische Salad Bowl mit gelben 💛 & roten Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & frischem Basilikum 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bulgur-Tabouleh mit Gurken 🥒, Karotten 🥕, Tomaten 🍅, Nüssen 🥜, Minze, Petersilie 🌿, gebratenem Räucher-Tofu & Granatapfel 🍎-Zitrus 🍋-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Apfel 🍎-Zimt 🤎-Kuchen",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
             {
               "title": "Orangen 🍊-Tiramisu",
               "price": "3,90",

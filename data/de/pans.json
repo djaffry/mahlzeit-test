@@ -11,7 +11,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-08T09:39:16.282Z",
+  "fetchedAt": "2026-04-09T09:44:22.680Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -229,6 +229,135 @@
                 "Huhn"
               ],
               "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Beiriedschnitte gegrillt mit Butterfisolen und Petersilienerdäpfel",
+              "price": "24,90 €",
+              "tags": [],
+              "allergens": "0,6",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gegrillt mit Petersilienerdäpfel und Salat",
+              "price": "22,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,O,M,G",
+              "description": null
+            },
+            {
+              "title": "Schokoküchlein mit Schokosauce und Schlagobers",
+              "price": "7,20 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Menü",
+          "items": [
+            {
+              "title": "Steinpilz Creme Suppe (AL,H,G)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Putenschnitzel gebacken mit Erdäpfelsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,O,M,C",
+              "description": null
+            },
+            {
+              "title": "Penne mit Spargel ä 1a Creme (LH.A,C,6)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagesempfehlungen",
+          "items": [
+            {
+              "title": "Karfiol Creme Suppe",
+              "price": "5,50 € / 7,50 €",
+              "tags": [],
+              "allergens": "L,N,0,G",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,M,G,N",
+              "description": null
+            },
+            {
+              "title": "Nudel-Bärlauch-Mozzarella-Auflauf dazu Tomatensauce und Salat",
+              "price": "16,90 €",
+              "tags": [],
+              "allergens": "0,A,C,6,M",
+              "description": null
+            },
+            {
+              "title": "Bärlauch-Risotto mit Parmesan und Salat",
+              "price": "17,20 €",
+              "tags": [],
+              "allergens": "L,H,0,M,6",
+              "description": null
+            },
+            {
+              "title": "Erdäpfel-Datschi gefüllt mit Rinderfaschiertes dazu Salat und Kräuter-Rahmsauce",
+              "price": "17,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "M,0,6",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Bratkartoffeln und Salat dazu Senf Zwiebel (c,m‚o)",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Marchfelder Solospargel mit Petersilienerdäpfeln und Kräuter-Oberssauce",
+              "price": "17,90 €",
+              "tags": [],
+              "allergens": "L,H,0,G,A",
+              "description": null
+            },
+            {
+              "title": "Pans Sommersalat mit gegrilltem Hühnerfilet, Mozzarella und Basilikumpesto",
+              "price": "18,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Gegrillte Hühnerfilet mit grünem Spargel dazu Reis und Kräuter-Oberssauce",
+              "price": "19,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,H,0,G,A",
               "description": null
             },
             {

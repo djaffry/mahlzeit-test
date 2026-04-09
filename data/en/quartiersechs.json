@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-08T09:39:14.030Z",
+  "fetchedAt": "2026-04-09T09:44:19.051Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -726,12 +726,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan raspberry cream",
+              "title": "Vegan raspberry cream coconut - rice pudding • walnuts • pistachios",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "G,H",
               "description": null
             }
           ]
@@ -740,10 +740,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Curd cheese - top cuts",
+              "title": "Curd cheese - top slices banana slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]

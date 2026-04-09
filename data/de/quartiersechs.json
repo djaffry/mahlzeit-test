@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-08T09:39:14.030Z",
+  "fetchedAt": "2026-04-09T09:44:19.051Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -726,12 +726,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Himbeercreme",
+              "title": "Vegane Himbeercreme\nKokos - Milchreis • \nWalnüsse • Pistazien",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "G,H",
               "description": null
             }
           ]
@@ -740,10 +740,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Topfen - Obersschnitte",
+              "title": "Topfen - Obersschnitte\nBananen Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
