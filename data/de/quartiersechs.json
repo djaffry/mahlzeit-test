@@ -11,7 +11,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-09T09:44:19.051Z",
+  "fetchedAt": "2026-04-10T09:41:41.288Z",
   "error": null,
   "days": {
     "Dienstag": {
@@ -906,9 +906,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Pfirsich - Joghurtcreme •\nKokos",
+              "title": "Pfirsich - Joghurtcreme •\nKokos\nVegane Himbeercreme",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "G,O",
               "description": null
             }
@@ -918,12 +920,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Punschschnitte vegan",
+              "title": "Punschschnitte vegan\nTopfen - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]

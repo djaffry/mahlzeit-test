@@ -13,7 +13,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-09T09:44:19.110Z",
+  "fetchedAt": "2026-04-10T09:41:41.542Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -46,10 +46,11 @@
           "name": "Soups",
           "items": [
             {
-              "title": "SpoonFood's Veg-Tea (clear vegetable broth 💪) with fries & chives 🌿",
+              "title": "Sweet potato 🍠 kalamansi 🍊 soup",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegetarisch"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
               "description": null
@@ -60,14 +61,16 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Gnocchi alla Bolognese 🍅 with Parmesan",
+              "title": "Beef moussaka with potatoes 🥔, aubergine 🍆 & carrots 🥕",
               "price": "7,90 / 10,90",
-              "tags": [],
+              "tags": [
+                "Rindfleisch"
+              ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Warm brioche casserole with plum roaster 💜",
+              "title": "Warm curd pancake casserole with vanilla sauce 💛",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
@@ -81,17 +84,14 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Sopas Mallorquinas with chorizo, tomatoes 🍅, cabbage 🥬, carrots 🥕, peppers 🫑, baby spinach 💚 & rice",
+              "title": "Split pea stew with potatoes 🥔, beans 🫛, peas 💚, carrots 🥕, smoked meat, frankfurters & rice",
               "price": "6,90 / 9,90",
-              "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
-              ],
+              "tags": [],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Kitchari - Ayurvedic stew - with cauliflower 🤍, carrots 🥕, celery 🌿, chard 🥬 & rice - optionally add mango 🥭 chutney",
+              "title": "Ratatouille with tomatoes 🍅, zucchini 🥒, olives 🫒, peppers 🫑, aubergine 🍆 & rice",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
@@ -106,21 +106,19 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Styrian salad bowl with runner beans 🫘, white 🤍 giant beans, radishes 🫜, peppers 🫑, pumpkin seed oil & sausage",
+              "title": "Italian salad bowl with yellow 💛 & red tomatoes 🍅, cucumbers 🥒, mozzarella balls & fresh basil 🌿",
               "price": "6,10 / 8,10",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Quinoa salad bowl with radishes 🫜, carrots 🥕, celery, apples 🍏, nuts, fresh parsley 🌿, mint & citrus dressing 🍋",
+              "title": "Bulgur tabbouleh with cucumber 🥒, carrots 🥕, tomatoes 🍅, nuts 🥜, mint, parsley 🌿, fried smoked tofu & pomegranate 🍎 citrus 🍋 dressing",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
               "description": null
@@ -140,20 +138,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Lemongrass 🌿 panna cotta with blackberry 🫐 mirror & hazelnut brittle",
+              "title": "Vegan apple 🍎 cinnamon 🤎 cake",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Blueberry 🫐 vanilla 💛 yoghurt with spelled crunch",
-              "price": "3,90",
-              "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
               "description": null
