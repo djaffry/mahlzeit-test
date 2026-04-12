@@ -1,8 +1,9 @@
 {
   "id": "deananddavid",
-  "title": "🥗 Dean & David",
+  "title": "Dean & David",
   "url": "https://deananddavid.com/austria-campus-wien/",
   "type": "specials",
+  "icon": "salad",
   "cuisine": [
     "Salate",
     "Bowls"
@@ -13,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-03-27T20:50:33.404Z",
+  "fetchedAt": "2026-04-12T14:28:24.132Z",
   "error": null,
   "days": {
     "Montag": {

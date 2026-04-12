@@ -2,7 +2,7 @@
   "id": "pans",
   "title": "pAn's",
   "url": "https://www.pans.at/tagesmenue/",
-  "type": "full",
+  "type": "specials",
   "icon": "chef-hat",
   "cuisine": [
     "Bistro"
@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-12T13:12:52.144Z",
+  "fetchedAt": "2026-04-12T14:28:22.733Z",
   "error": null,
   "days": {
     "Dienstag": {
