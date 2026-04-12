@@ -1,8 +1,9 @@
 {
   "id": "baobar",
-  "title": "🥟 Bao Bar",
+  "title": "Bao Bar",
   "url": "https://www.baobar.at/_files/ugd/8a87dd_361fdb5fd7d74061b65ace8e3ec58e8b.pdf",
   "type": "link",
+  "icon": "hamburger",
   "cuisine": [
     "Bao"
   ],
@@ -12,7 +13,7 @@
     "lat": 48.2224,
     "lon": 16.3924
   },
-  "fetchedAt": "2026-03-21T21:59:05.212Z",
+  "fetchedAt": "2026-04-12T15:00:34.599Z",
   "error": null,
   "days": {}
 }

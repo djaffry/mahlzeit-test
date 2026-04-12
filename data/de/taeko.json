@@ -1,0 +1,362 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanisch",
+    "Chinesisch"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-12T15:00:30.107Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Gr. Hühnerkeule Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Gr. Veggie Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
+            },
+            {
+              "title": "Glasnudeln mit Fisch",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Gr. Hühnerkeule Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Gr. Veggie Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
+            },
+            {
+              "title": "Glasnudeln mit Fisch",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Gr. Hühnerkeule Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Gr. Veggie Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
+            },
+            {
+              "title": "Glasnudeln mit Fisch",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Gr. Hühnerkeule Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Gr. Veggie Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
+            },
+            {
+              "title": "Glasnudeln mit Fisch",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Gr. Hühnerkeule Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Gr. Veggie Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
+            },
+            {
+              "title": "Glasnudeln mit Fisch",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

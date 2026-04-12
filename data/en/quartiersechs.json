@@ -1,8 +1,9 @@
 {
   "id": "quartiersechs",
-  "title": "🏠 Quartier Sechs",
+  "title": "Quartier Sechs",
   "url": "https://www.quartiersechs.at/",
   "type": "full",
+  "icon": "utensils",
   "cuisine": [
     "Canteen"
   ],
@@ -11,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-10T09:41:41.288Z",
+  "fetchedAt": "2026-04-12T15:00:30.064Z",
   "error": null,
   "days": {
     "Dienstag": {

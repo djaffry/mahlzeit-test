@@ -1,8 +1,9 @@
 {
   "id": "noodleking",
-  "title": "🍜 Noodle King",
+  "title": "Noodle King",
   "url": "https://www.noodleking.at/menus",
   "type": "link",
+  "icon": "crown",
   "cuisine": [
     "Asian",
     "Noodles"
@@ -13,7 +14,7 @@
     "lat": 48.2262,
     "lon": 16.3929
   },
-  "fetchedAt": "2026-03-21T21:59:05.212Z",
+  "fetchedAt": "2026-04-12T15:00:34.600Z",
   "error": null,
   "days": {}
 }

@@ -1,0 +1,362 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanese",
+    "Chinese"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-12T15:00:30.107Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Gr. Chicken leg ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Gr. Veggie udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
+            },
+            {
+              "title": "Glass noodles with fish",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Gr. Chicken leg ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Gr. Veggie udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
+            },
+            {
+              "title": "Glass noodles with fish",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Gr. Chicken leg ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Gr. Veggie udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
+            },
+            {
+              "title": "Glass noodles with fish",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Gr. Chicken leg ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Gr. Veggie udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
+            },
+            {
+              "title": "Glass noodles with fish",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Gr. Chicken leg ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D,F",
+              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Gr. Veggie udon",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
+            },
+            {
+              "title": "Glass noodles with fish",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,D,F",
+              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -6,22 +6,22 @@
     "hash": "c03ad7a70cc447fd"
   },
   "bahnbistro_en": {
-    "hash": "2bff7f532db13a96"
+    "hash": "44136fa355b3678a"
   },
   "pans_en": {
-    "hash": "3c66bd6ad7dff053"
+    "hash": "44136fa355b3678a"
   },
   "quartiersechs_en": {
     "hash": "3dca32ab0b08e800"
   },
   "reinthaler_en": {
-    "hash": "e4172a9f185ddd52"
+    "hash": "44136fa355b3678a"
   },
   "remo_en": {
     "hash": "d4effd305eb05eec"
   },
   "spoonfood_en": {
-    "hash": "fece852c060b5cae"
+    "hash": "2096b4a42a90b422"
   },
   "albasha_en": {
     "hash": "44136fa355b3678a"
@@ -46,5 +46,8 @@
   },
   "wrapstars_en": {
     "hash": "44136fa355b3678a"
+  },
+  "taeko_en": {
+    "hash": "7e9763573891c618"
   }
 }

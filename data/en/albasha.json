@@ -1,8 +1,9 @@
 {
   "id": "albasha",
-  "title": "🥙 Imbiss Al Basha",
+  "title": "Imbiss Al Basha",
   "url": "https://maps.app.goo.gl/X946ACqhL7r1NM2J7",
   "type": "link",
+  "icon": "flame",
   "cuisine": [
     "Shawarma"
   ],
@@ -10,7 +11,7 @@
     "lat": 48.217,
     "lon": 16.3906
   },
-  "fetchedAt": "2026-03-21T21:59:05.211Z",
+  "fetchedAt": "2026-04-12T15:00:34.599Z",
   "error": null,
   "days": {}
 }
