@@ -62,12 +62,11 @@ function parseItemLine(line: string): MenuItem | null {
   return { title, price, tags, allergens, description: null };
 }
 
-type Section = 'menu' | 'tagesempfehlungen' | 'dessert' | 'drinks' | 'skip';
+type Section = 'menu' | 'drinks' | 'skip';
 
 function detectSection(line: string): Section | null {
   const upper = line.toUpperCase();
-  if (upper.includes('TAGESEMPFEHLUNG')) return 'tagesempfehlungen';
-  if (upper.startsWith('DESSERT')) return 'dessert';
+  if (upper.includes('TAGESEMPFEHLUNG') || upper.startsWith('DESSERT')) return 'skip';
   return null;
 }
 
@@ -85,8 +84,6 @@ function parseMenuText(text: string): MenuCategory[] {
   const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
 
   const menuItems: MenuItem[] = [];
-  const tagesItems: MenuItem[] = [];
-  const dessertItems: MenuItem[] = [];
 
   let section: Section = 'skip';
 
@@ -120,17 +117,11 @@ function parseMenuText(text: string): MenuCategory[] {
     const item = parseItemLine(line);
     if (!item) continue;
 
-    switch (section) {
-      case 'menu': menuItems.push(item); break;
-      case 'tagesempfehlungen': tagesItems.push(item); break;
-      case 'dessert': dessertItems.push(item); break;
-    }
+    if (section === 'menu') menuItems.push(item);
   }
 
   const categories: MenuCategory[] = [];
-  if (menuItems.length > 0) categories.push({ name: 'Menü', items: menuItems });
-  if (tagesItems.length > 0) categories.push({ name: 'Tagesempfehlungen', items: tagesItems });
-  if (dessertItems.length > 0) categories.push({ name: 'Dessert', items: dessertItems });
+  if (menuItems.length > 0) categories.push({ name: 'Mittagsmenü', items: menuItems });
   return categories;
 }
 
@@ -172,7 +163,7 @@ const adapter: FullAdapter = {
   title: 'pAn\'s',
   icon: 'chef-hat',
   url: 'https://www.pans.at/tagesmenue/',
-  type: 'full',
+  type: 'specials',
   cuisine: ['Bistro'],
   outdoor: true,
   coordinates: { lat: 48.2242, lon: 16.3969 },
