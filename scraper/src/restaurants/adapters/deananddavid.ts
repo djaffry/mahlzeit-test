@@ -68,7 +68,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FetchableAdapter = {
   id: 'deananddavid',
-  title: '🥗 Dean & David',
+  title: 'Dean & David',
+  icon: 'salad',
   url: 'https://deananddavid.com/austria-campus-wien/',
   type: 'specials',
   cuisine: ['Salate', 'Bowls'],

@@ -235,7 +235,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'reinthaler',
-  title: '🍽️ Gasthaus Reinthaler',
+  title: 'Gasthaus Reinthaler',
+  icon: 'beer',
   url: 'https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue',
   type: 'full',
   cuisine: ['Wirtshaus'],

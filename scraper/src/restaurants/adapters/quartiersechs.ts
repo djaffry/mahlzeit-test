@@ -255,7 +255,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'quartiersechs',
-  title: '🏠 Quartier Sechs',
+  title: 'Quartier Sechs',
+  icon: 'utensils',
   url: 'https://www.quartiersechs.at/',
   type: 'full',
   cuisine: ['Kantine'],

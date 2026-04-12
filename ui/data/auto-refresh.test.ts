@@ -1,10 +1,10 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest"
-import { contentHash, flushPendingRefresh, startAutoRefresh, initContentHash } from "./auto-refresh"
+import { contentHash, startAutoRefresh, initContentHash } from "./auto-refresh"
 import { fetchMenuDataQuiet } from "./fetcher"
 import { config } from "../config"
 import type { Restaurant } from "../types"
 
-// auto-refresh imports config and fetcher — mock the fetcher to avoid real network calls
+// auto-refresh imports config and fetcher - mock the fetcher to avoid real network calls
 vi.mock("./fetcher", () => ({
   fetchMenuDataQuiet: vi.fn().mockResolvedValue(null),
 }))
@@ -44,7 +44,7 @@ describe("contentHash", () => {
     expect(contentHash(r1)).not.toBe(contentHash(r2))
   })
 
-  it("ignores fetchedAt differences — same content with different timestamps yields same hash", () => {
+  it("ignores fetchedAt differences - same content with different timestamps yields same hash", () => {
     const r1 = [makeRestaurant({ fetchedAt: "2026-03-20T10:00:00Z" })]
     const r2 = [makeRestaurant({ fetchedAt: "2026-03-20T11:00:00Z" })]
     expect(contentHash(r1)).toBe(contentHash(r2))
@@ -67,16 +67,6 @@ describe("contentHash", () => {
       }),
     ]
     expect(contentHash(r1)).not.toBe(contentHash(r2))
-  })
-})
-
-/* ── flushPendingRefresh ────────────────────────────────── */
-
-describe("flushPendingRefresh", () => {
-  it("does nothing when no pending data exists", () => {
-    const callback = vi.fn()
-    flushPendingRefresh(callback)
-    expect(callback).not.toHaveBeenCalled()
   })
 })
 
@@ -128,9 +118,24 @@ describe("startAutoRefresh", () => {
     await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
 
     expect(applyRefresh).not.toHaveBeenCalled()
+  })
 
-    // Flush the pending data
-    flushPendingRefresh(applyRefresh)
+  it("flushes deferred data on next cycle when deferral ends", async () => {
+    const current = [makeRestaurant()]
+    initContentHash(current)
+
+    const updated = [makeRestaurant({ title: "Deferred Update" })]
+    vi.mocked(fetchMenuDataQuiet).mockResolvedValueOnce(updated)
+
+    const applyRefresh = vi.fn()
+    let deferred = true
+    startAutoRefresh(() => current, () => deferred, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+    expect(applyRefresh).not.toHaveBeenCalled()
+
+    deferred = false
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
     expect(applyRefresh).toHaveBeenCalledWith(updated)
   })
 

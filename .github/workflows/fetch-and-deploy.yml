@@ -6,7 +6,7 @@ name: Fetch and Deploy Menus
 on:
   schedule:
     # UTC — add 1h for CET (winter), 2h for CEST (summer)
-    - cron: '25 8 * * 1-5'
+    - cron: '25 8 * * 1'
     - cron: '15 9 * * 1-5'
     - cron: '25 9 * * 1-5'
     - cron: '35 9 * * 1-5'
@@ -17,21 +17,18 @@ concurrency:
   group: fetch-and-deploy
   cancel-in-progress: false
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   fetch-and-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 10
     outputs:
       data-changed: ${{ steps.changes.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
           cache: 'npm'
@@ -59,7 +56,7 @@ jobs:
 
       - name: Warn if translation failed
         if: steps.translate.outcome == 'failure'
-        run: echo "::warning::Translation failed — deploying without translations"
+        run: echo "::warning::Translation failed. deploying without translations"
 
       - name: Check for data changes
         id: changes
@@ -93,7 +90,7 @@ jobs:
 
       - name: Upload pages artifact
         if: steps.changes.outputs.changed == 'true'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: dist
 
@@ -102,9 +99,12 @@ jobs:
     if: needs.fetch-and-build.outputs.data-changed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

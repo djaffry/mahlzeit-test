@@ -1,0 +1,10 @@
+/* ── Footer ─────────────────────────────────────────────── */
+
+.footer {
+  max-width: 960px;
+  margin: var(--space-xl) auto var(--space-lg);
+  padding: 0 var(--space-md);
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  text-align: center;
+}

@@ -29,6 +29,7 @@ interface BaseAdapter {
   id: string;
   title: string;
   url: string;
+  icon?: string;
   availableDays?: Weekday[];
   cuisine?: string[];
   stampCard?: boolean;
@@ -67,6 +68,7 @@ export interface RestaurantData {
   title: string;
   url: string;
   type: Adapter['type'];
+  icon?: string;
   availableDays?: Weekday[];
   cuisine?: string[];
   stampCard?: boolean;

@@ -71,7 +71,7 @@ describe('inferTags', () => {
     expect(inferTags({ title: 'Pizza Margherita' })).toEqual([])
   })
 
-  it('returns leaf tags only — no ancestors', () => {
+  it('returns leaf tags only. no ancestors', () => {
     const tags = inferTags({ title: 'Hühnersuppe' })
     expect(tags).toEqual(['Huhn'])
     expect(tags.includes('Geflügel')).toBe(false)

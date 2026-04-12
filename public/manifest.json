@@ -1,11 +1,11 @@
 {
-  "name": "forkcast",
-  "short_name": "forkcast",
-  "description": "Tagesaktuelle Mittagsmenükarten",
+  "name": "Peckish",
+  "short_name": "Peckish",
+  "description": "Lunch menus, Austria Campus",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#1e1e2e",
-  "theme_color": "#f5c2e7",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "icons/favicon.svg",
@@ -14,13 +14,13 @@
       "purpose": "any"
     },
     {
-      "src": "icons/icon-maskable-dark-192.png",
+      "src": "icons/icon-maskable-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-maskable-dark-512.png",
+      "src": "icons/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

@@ -62,7 +62,7 @@ export class NoTokenGoogleTranslateAdapter implements TranslationAdapter {
         }
 
       } catch {
-        // Batch failed or count mismatch — fall back to individual translation
+        // Batch failed or count mismatch. fall back to individual translation
         for (let i = 0; i < chunk.length; i++) {
           try {
             const translated = (await this.translateWithRetry(chunk[i], from, to)).trim()

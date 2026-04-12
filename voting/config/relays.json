@@ -1,0 +1,10 @@
+{
+  "_comment": "When changing relays, also update connect-src in index.html CSP",
+  "relays": [
+    "wss://relay.damus.io",
+    "wss://nos.lol",
+    "wss://relay.primal.net",
+    "wss://relay.snort.social"
+  ],
+  "minRelays": 2
+}

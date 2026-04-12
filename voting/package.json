@@ -1,0 +1,19 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "generate": "node dist/generate-runner.js",
+    "health-check": "node dist/health-check-runner.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.15",
+    "typescript": "5.9.3"
+  }
+}

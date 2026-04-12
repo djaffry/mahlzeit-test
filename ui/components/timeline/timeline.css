@@ -1,0 +1,176 @@
+/* ── Timeline ───────────────────────────────────────────── */
+
+.timeline {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+.day-section {
+  margin-bottom: var(--space-sm);
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: var(--space-sm) 0;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--duration-fast) ease;
+}
+
+.day-header:hover {
+  background: var(--bg-subtle);
+  margin: 0 calc(-1 * var(--space-md));
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.day-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.day-header-chevron {
+  color: var(--fg-muted);
+  transition: transform var(--duration-normal) var(--ease-out);
+  display: flex;
+}
+
+.day-header-chevron svg {
+  width: 16px;
+  height: 16px;
+}
+
+.day-section.expanded .day-header-chevron {
+  transform: rotate(90deg);
+}
+
+.day-header-label {
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.day-header-today {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.day-header-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+  min-width: 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* ── Sticky expanded day header ─────────────────────── */
+
+.day-section.expanded .day-header {
+  position: sticky;
+  top: 48px;
+  z-index: 8;
+  background: var(--bg);
+}
+
+/* ── Leader pills ───────────────────────────────────── */
+
+.leader-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 7px 2px 4px;
+  border-radius: 10px;
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--fg-muted);
+  white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+}
+
+.leader-pill-1st {
+  color: var(--fg);
+  border-color: var(--border);
+}
+
+.leader-pill-1st .leader-pill-ord {
+  color: var(--tag-yellow);
+}
+
+.leader-pill-crown {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.leader-pill-crown svg {
+  width: 10px;
+  height: 10px;
+  color: var(--tag-yellow);
+}
+
+.leader-pill-ord {
+  font-size: 0.65rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: var(--fg-muted);
+}
+
+.leader-pill-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.leader-pill-icon svg {
+  width: 10px;
+  height: 10px;
+}
+
+.leader-pill-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day-section.past .day-header-label {
+  color: var(--fg-muted);
+}
+
+.day-content {
+  overflow: hidden;
+  transition: height var(--duration-slow) var(--ease-out);
+}
+
+.day-section:not(.expanded) .day-content {
+  height: 0;
+}
+
+/* Mobile: only show 1st-place pill */
+@media (max-width: 1024px) {
+  .leader-pill:not(.leader-pill-1st) {
+    display: none;
+  }
+}
+
+/* Desktop: two-column layout within expanded day */
+@media (min-width: 1025px) {
+  .day-restaurants {
+    columns: 2;
+    column-gap: var(--space-xl);
+  }
+
+  .restaurant-section {
+    break-inside: avoid;
+  }
+}

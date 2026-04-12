@@ -4,47 +4,44 @@ on:
   push:
     branches: [main]
     paths:
-      - 'rooms/config/**'
-      - 'rooms/src/**'
+      - 'voting/config/**'
+      - 'voting/src/**'
   workflow_dispatch:
 
 concurrency:
   group: voting-config
   cancel-in-progress: false
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   update-voting:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 5
     outputs:
       data-changed: ${{ steps.changes.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
           cache: 'npm'
           cache-dependency-path: |
             package-lock.json
-            rooms/package-lock.json
+            voting/package-lock.json
 
-      - name: Install rooms dependencies
+      - name: Install voting dependencies
         run: npm ci
-        working-directory: rooms
+        working-directory: voting
 
-      - name: Build rooms
+      - name: Build voting
         run: npm run build
-        working-directory: rooms
+        working-directory: voting
 
       - name: Generate voting.json
         run: npm run generate
-        working-directory: rooms
+        working-directory: voting
 
       - name: Check for changes
         id: changes
@@ -83,7 +80,7 @@ jobs:
 
       - name: Upload pages artifact
         if: steps.changes.outputs.changed == 'true'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: dist
 
@@ -92,9 +89,12 @@ jobs:
     if: needs.update-voting.outputs.data-changed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

@@ -1,0 +1,97 @@
+/* ── More Menu Overlay ──────────────────────────────────── */
+
+.more-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.more-menu-overlay.visible {
+  opacity: 1;
+}
+
+.more-menu-overlay[hidden] { display: none; }
+
+.more-menu {
+  position: absolute;
+  top: 52px;
+  right: var(--space-md);
+  min-width: 220px;
+  padding: var(--space-sm) 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform-origin: top right;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform var(--duration-fast) var(--ease-out), opacity var(--duration-fast) ease;
+}
+
+.more-menu-overlay.visible .more-menu {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.more-menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-base);
+  color: var(--fg);
+  text-align: left;
+  transition: background var(--duration-fast) ease;
+}
+
+.more-menu-item:hover {
+  background: var(--bg-subtle);
+}
+
+.more-menu-label {
+  flex: 1;
+}
+
+.more-menu-item kbd {
+  margin-left: auto;
+  opacity: 0.5;
+}
+
+.more-menu-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--fg-secondary);
+  flex-shrink: 0;
+}
+
+.more-menu-separator {
+  height: 1px;
+  margin: var(--space-xs) 0;
+  background: var(--border);
+}
+
+/* ── Mobile Bottom Sheet ────────────────────────────────── */
+
+@media (max-width: 639px) {
+  .more-menu {
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+    transform-origin: bottom center;
+    transform: translateY(100%);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .more-menu-overlay.visible .more-menu {
+    transform: translateY(0);
+  }
+}

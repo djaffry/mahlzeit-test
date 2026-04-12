@@ -1,92 +1,74 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Mittagsmenü am Austria Campus</title>
-<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
-<link rel="apple-touch-icon" href="icons/icon-maskable-light-180.png">
-<link rel="manifest" href="manifest.json">
-<!-- Apply saved theme before CSS loads to prevent dark→light flash -->
-<script>var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;</script>
-<meta name="theme-color" content="#f5c2e7">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Mittagsmenü">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Peckish</title>
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.json" />
+  <!-- CSP: connect-src relay list must match voting/config/relays.json -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UBRi4PPF4Q6t8CHZHKoUNUKBT76/bfp9+X23Qrw8StQ='; style-src 'self' 'unsafe-inline'; connect-src 'self' wss://relay.damus.io wss://nos.lol wss://relay.primal.net wss://relay.snort.social; img-src 'self' data: https://*.tile.openstreetmap.org;" />
+  <script>
+    (function() {
+      var d = document.documentElement;
+      var t = localStorage.getItem("theme");
+      var dark = t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      if (dark) {
+        d.dataset.theme = "dark";
+        d.style.background = "#111";
+        d.style.color = "#e8e8e8";
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", "#111111");
+      } else {
+        d.style.background = "#fff";
+        d.style.color = "#1a1a1a";
+      }
+    })();
+  </script>
+  <style>
+    /* Prevent FOUC: hide icon buttons until CSS loads and paints */
+    .icon-btn { visibility: hidden; }
+  </style>
 </head>
 <body>
+  <header class="header" id="header">
+    <a class="header-brand" href="." id="brand-link">
+      <span class="header-icon" id="brand-icon"></span>
+      <span class="header-title">peckish</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn desktop-only" id="reload-trigger" aria-label="Reload"></button>
+      <button class="icon-btn" id="filter-trigger" aria-label="Filters"></button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Language"></button>
+      <button class="avatar-badge" id="avatar-badge" hidden aria-label="Voting rooms"></button>
+      <button class="icon-btn" id="more-menu-trigger" aria-label="Menu"></button>
+    </div>
+  </header>
 
-<div class="toolbar">
-  <div class="toolbar-inner">
-    <div class="toolbar-top">
-      <a class="toolbar-brand" href="." onclick="event.preventDefault(); window.location.reload();">
-        <svg class="toolbar-logo" width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="64" height="64" rx="16" fill="currentColor" class="logo-bg"/>
-          <path fill-rule="evenodd" fill="currentColor" class="logo-fg" d="M 16,7 L 48,7 Q 52,7 52,11 L 36,35 L 36,53 Q 36,57 32,57 Q 28,57 28,53 L 28,35 L 12,11 Q 12,7 16,7 Z M 23,8 L 27,8 L 29,27 Z M 37,8 L 41,8 L 35,27 Z"/>
-        </svg>
-        <div>
-          <div class="toolbar-title">Mittagsmenü</div>
-          <div class="toolbar-subtitle">Austria Campus, Wien</div>
-        </div>
-      </a>
-      <div class="day-tabs" id="day-tabs"></div>
-      <div class="toolbar-actions">
-        <button class="search-trigger" id="search-trigger" aria-label="Suche (Ctrl+K)" title="Suche (Ctrl+K)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <kbd class="kbd">/</kbd>
-        </button>
-        <a class="feedback-link" id="feedback-link" href="https://github.com/djaffry/mahlzeit-test/issues" target="_blank" rel="noopener" aria-label="Feedback & Beitragen (I)" title="Feedback & Beitragen (I)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-          <kbd class="kbd">I</kbd>
-        </a>
-        <button class="dice-btn" id="dice-btn" aria-label="Zufällig auswählen" title="Zufällig auswählen">🎲<kbd class="kbd">D</kbd></button>
-        <button id="language-toggle" class="language-toggle" aria-label="Switch language" title="Switch language"><kbd class="kbd">L</kbd></button>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Theme umschalten" title="Theme umschalten">
-          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-        </button>
-      </div>
+  <div class="main-content">
+    <main class="timeline" id="timeline"></main>
+
+    <footer class="footer" id="footer"></footer>
+  </div>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="search-overlay" hidden>
+    <div class="search-container">
+      <input class="search-input" id="search-input" type="search" autocomplete="off" />
+      <div class="search-results" id="search-results"></div>
     </div>
   </div>
-</div>
 
-<div class="filters" id="filters">
-  <span class="filters-label">Filter</span>
-</div>
-
-<div class="content" id="content"></div>
-
-<div class="footer" id="footer"></div>
-
-<button class="party-easter-egg" id="party-toggle" aria-label="Party Modus" title="Party Modus">
-  <span class="party-easter-egg-emoji">🪩</span>
-  <span class="party-easter-egg-text">Psst...</span>
-  <span class="party-easter-egg-active-text">Party!</span>
-</button>
-
-<div class="search-overlay" id="search-overlay" hidden>
-  <div class="search-modal">
-    <div class="search-input-wrapper">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-      <input type="text" class="search-input" id="search-input" placeholder="Gericht oder Restaurant suchen..." autocomplete="off" />
-      <kbd class="search-kbd">Esc</kbd>
-    </div>
-    <div class="search-results" id="search-results" aria-live="polite" aria-atomic="true"></div>
+  <!-- More menu (popover on desktop, bottom sheet on mobile) -->
+  <div class="more-menu-overlay" id="more-menu-overlay" hidden>
+    <nav class="more-menu" id="more-menu"></nav>
   </div>
-</div>
 
-<div class="map-overlay" id="map-overlay" hidden>
-  <div class="map-header">
-    <span class="map-title">Restaurants in der Nähe</span>
-    <button class="map-close" id="map-close" aria-label="Karte schließen" title="Karte schließen">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
-    </button>
-  </div>
-  <div class="map-container" id="map-container"></div>
-</div>
+  <!-- Dice overlay -->
+  <div class="dice-overlay" id="dice-overlay" hidden></div>
 
-<div class="dice-overlay" id="dice-overlay" aria-hidden="true"></div>
-
-<script type="module" src="/ui/main.ts"></script>
+  <script type="module" src="/ui/main.ts"></script>
 </body>
 </html>

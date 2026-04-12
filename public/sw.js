@@ -1,4 +1,4 @@
-const CACHE_NAME = 'menu-v4';
+const CACHE_NAME = 'menu-v5';
 
 self.addEventListener('install', () => {
   self.skipWaiting();

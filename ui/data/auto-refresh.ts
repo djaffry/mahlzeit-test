@@ -1,12 +1,13 @@
 import { config } from "../config"
 import { fetchMenuDataQuiet } from "./fetcher"
-import { getCurrentLanguage, getSourceLanguage, t } from '../i18n/i18n'
+import { getCurrentLanguage, getSourceLanguage, t } from "../i18n/i18n"
 import type { Restaurant } from "../types"
+
+const TOAST_DURATION_MS = 3000
 
 let _lastContentHash: string | null = null
 let _refreshToast: HTMLElement | null = null
 let _refreshToastTimer: ReturnType<typeof setTimeout> | null = null
-let _pendingRefreshData: Restaurant[] | null = null
 
 export function contentHash(restaurants: Restaurant[]): string {
   const strip = (rs: Restaurant[]) => rs.map(({ fetchedAt, ...rest }) => rest)
@@ -34,22 +35,34 @@ function showRefreshToast(): void {
   void _refreshToast.offsetWidth
   _refreshToast.textContent = t("refresh.toast")
   _refreshToast.classList.add("visible")
-  _refreshToastTimer = setTimeout(() => _refreshToast!.classList.remove("visible"), 3000)
+  _refreshToastTimer = setTimeout(() => _refreshToast!.classList.remove("visible"), TOAST_DURATION_MS)
 }
 
-export function flushPendingRefresh(applyRefresh: (data: Restaurant[]) => void): void {
-  if (_pendingRefreshData) {
-    applyRefresh(_pendingRefreshData)
-    _pendingRefreshData = null
-  }
-}
 
 export function startAutoRefresh(
   getCurrentRestaurants: () => Restaurant[],
   isRefreshDeferred: () => boolean,
   applyRefresh: (data: Restaurant[]) => void
 ): void {
+  let pendingData: Restaurant[] | null = null
+
+  let pendingHash: string | null = null
+
+  function applyData(data: Restaurant[], hash: string): void {
+    pendingData = null
+    pendingHash = null
+    _lastContentHash = hash
+    applyRefresh(data)
+    showRefreshToast()
+  }
+
   async function checkForUpdates(): Promise<void> {
+    // Flush buffered data from a previous deferred cycle
+    if (pendingData && pendingHash && !isRefreshDeferred()) {
+      applyData(pendingData, pendingHash)
+      return
+    }
+
     const current = getCurrentRestaurants()
     const newData = await fetchMenuDataQuiet(current, getCurrentLanguage(), getSourceLanguage())
     if (!newData) return
@@ -58,13 +71,12 @@ export function startAutoRefresh(
     if (newHash === _lastContentHash) return
 
     if (isRefreshDeferred()) {
-      _pendingRefreshData = newData
+      pendingData = newData
+      pendingHash = newHash
       return
     }
 
-    _lastContentHash = newHash
-    applyRefresh(newData)
-    showRefreshToast()
+    applyData(newData, newHash)
   }
 
   setInterval(checkForUpdates, config.autoRefreshInterval)

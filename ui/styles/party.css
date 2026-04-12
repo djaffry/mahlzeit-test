@@ -1,0 +1,212 @@
+/* ── Party Mode (Easter Egg) ──────────────────────────── */
+
+/* Trigger button in footer */
+.party-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: var(--space-sm) auto 0;
+  padding: 0;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: var(--fg-muted);
+  cursor: pointer;
+  transition: color var(--duration-normal) ease,
+              border-color var(--duration-normal) ease;
+}
+
+.party-toggle:hover {
+  color: var(--fg-secondary);
+  border-color: var(--border);
+}
+
+/* Vivid party palette - overrides muted theme tokens */
+html.party {
+  --party-red: #ef4444;
+  --party-orange: #f97316;
+  --party-yellow: #eab308;
+  --party-green: #22c55e;
+  --party-blue: #3b82f6;
+  --party-purple: #a855f7;
+}
+
+html.party .party-toggle {
+  color: var(--party-red);
+  border-color: var(--party-red);
+  animation: party-hue 6s linear infinite;
+}
+
+html.party .party-toggle svg {
+  animation: party-spin 4s linear infinite;
+}
+
+/* ── Rainbow borders ── */
+
+html.party .day-header,
+html.party .restaurant-section,
+html.party .sidebar-toc,
+html.party .map-panel-header,
+html.party .more-menu {
+  border-image: linear-gradient(90deg,
+    var(--party-red), var(--party-orange), var(--party-yellow),
+    var(--party-green), var(--party-blue), var(--party-purple), var(--party-red)) 1;
+}
+
+html.party .toc-viewport {
+  border-left-color: var(--party-purple);
+  animation: party-hue 8s linear infinite;
+}
+
+html.party .map-marker-icon {
+  animation: party-hue 6s linear infinite;
+}
+
+/* ── Icons: timeline - spin + hue ── */
+
+html.party .restaurant-icon svg {
+  animation: party-spin 4s linear infinite, party-hue 8s linear infinite;
+}
+
+/* ── Icons: TOC - spin + hue ── */
+
+html.party .toc-restaurant-icon svg {
+  animation: party-spin 5s linear infinite, party-hue 8s linear infinite;
+}
+
+/* ── Icons: map markers - spin ── */
+
+html.party .map-marker-icon svg {
+  animation: party-spin 4s linear infinite;
+}
+
+/* ── Brand bird: spin ── */
+
+html.party #brand-icon svg {
+  color: var(--party-red);
+  animation: party-spin 4s linear infinite, party-hue 6s linear infinite;
+}
+
+/* ── Day headers: rainbow text ── */
+
+html.party .day-header-label {
+  background: linear-gradient(90deg,
+    var(--party-red), var(--party-orange), var(--party-yellow),
+    var(--party-green), var(--party-blue), var(--party-purple), var(--party-red));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: party-shimmer 6s linear infinite;
+}
+
+/* ── Badges, leader pills, dots: slow hue cycle ── */
+
+html.party .restaurant-badge-dot,
+html.party .leader-pill-crown svg,
+html.party .leader-pill-ord {
+  animation: party-hue 6s linear infinite;
+}
+
+/* ── Vote hearts: gentle pulse + hue ── */
+
+html.party .vote-btn svg {
+  animation: party-pulse 2s ease-in-out infinite, party-hue 6s linear infinite;
+}
+
+/* ── Voter dots: gentle wave ── */
+
+html.party .voter-dot {
+  animation: party-bounce 1.5s ease-in-out infinite;
+}
+
+html.party .voter-dot:nth-child(2) { animation-delay: 0.2s; }
+html.party .voter-dot:nth-child(3) { animation-delay: 0.4s; }
+html.party .voter-dot:nth-child(4) { animation-delay: 0.6s; }
+html.party .voter-dot:nth-child(5) { animation-delay: 0.8s; }
+
+/* ── Filter pills: jiggle on hover ── */
+
+html.party .filter-pill:hover {
+  animation: party-hue 8s linear infinite, party-jiggle 0.4s ease;
+}
+
+/* ── TOC: rainbow today ── */
+
+html.party .sidebar-toc-today-badge {
+  animation: party-hue 6s linear infinite;
+}
+
+html.party .sidebar-toc-day.today {
+  background: linear-gradient(90deg,
+    var(--party-red), var(--party-orange), var(--party-yellow),
+    var(--party-green), var(--party-blue), var(--party-purple), var(--party-red));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: party-shimmer 6s linear infinite;
+}
+
+/* ── Keyframes ── */
+
+@keyframes party-hue {
+  0% { filter: hue-rotate(0deg) saturate(1.6); }
+  100% { filter: hue-rotate(360deg) saturate(1.6); }
+}
+
+@keyframes party-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes party-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes party-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes party-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes party-jiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+/* Confetti burst */
+.party-confetti {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  color: var(--party-red, var(--tag-red));
+  animation: party-confetti-burst 1.2s ease-out forwards, party-hue 1.2s linear forwards;
+}
+
+.party-confetti svg {
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes party-confetti-burst {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0.5) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(1) rotate(360deg);
+  }
+}

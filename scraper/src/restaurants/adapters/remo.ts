@@ -57,7 +57,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FetchableAdapter = {
   id: 'remo',
-  title: '🍕 Remo',
+  title: 'Remo',
+  icon: 'pizza',
   url: 'https://remopizza.at/#Speisekarte',
   type: 'specials',
   cuisine: ['Neapolitanische Pizza'],

@@ -131,7 +131,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'mano',
-  title: '☕ Mano Café & Bistro',
+  title: 'Mano Café & Bistro',
+  icon: 'coffee',
   url: 'https://www.kissthecook.at/mano-cafe-und-bistro',
   type: 'full',
   cuisine: ['Café', 'Bistro'],

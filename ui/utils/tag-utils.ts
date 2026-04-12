@@ -1,18 +1,8 @@
-import { TAG_COLORS, PALETTE } from "../constants"
+import { TAG_COLORS } from "../constants"
 import type { TagHierarchy, Restaurant } from "../types"
-import { escapeHtml } from "./dom"
-import { t } from '../i18n/i18n'
 
 let _hierarchy: Record<string, string[]> = {}
 let _loaded = false
-
-const _fallbackPool = PALETTE.filter((c) => !new Set(Object.values(TAG_COLORS)).has(c))
-const _tagColorCache: Record<string, string> = {}
-
-export function loadHierarchy(hierarchy: Record<string, string[]>): void {
-  _hierarchy = hierarchy
-  _loaded = true
-}
 
 export async function loadTagsFromUrl(url: string): Promise<TagHierarchy | null> {
   try {
@@ -56,30 +46,9 @@ export function expandFilters(activeFilters: Set<string>): Set<string> {
   return expanded
 }
 
-export function getParentTags(): string[] {
-  return Object.keys(_hierarchy)
-}
-
 export function getTagColor(tag: string): string {
-  if (TAG_COLORS[tag]) return TAG_COLORS[tag]
-  if (_tagColorCache[tag]) return _tagColorCache[tag]
-  let hash = 0
-  for (let i = 0; i < tag.length; i++) {
-    hash = ((hash << 5) - hash + tag.charCodeAt(i)) | 0
-  }
-  const pool = _fallbackPool.length > 0 ? _fallbackPool : [...PALETTE]
-  return (_tagColorCache[tag] = pool[Math.abs(hash) % pool.length])
-}
-
-export function tagStyle(tag: string): string {
-  const c = getTagColor(tag)
-  return `background:var(--${c}-dim);color:var(--${c})`
-}
-
-export function renderTags(tags: string[]): string {
-  return tags
-    .map((tag) => `<span class="tag" style="${tagStyle(tag)}">${escapeHtml(t('tag.' + tag))}</span>`)
-    .join("")
+  const lower = tag.toLowerCase()
+  return TAG_COLORS[lower] ?? "--fg-muted"
 }
 
 export function collectTags(restaurants: Restaurant[]): string[] {
@@ -95,12 +64,12 @@ export function collectTags(restaurants: Restaurant[]): string[] {
     }
   }
   if (_loaded) {
-    for (const parent of getParentTags()) tags.add(parent)
+    for (const parent of Object.keys(_hierarchy)) tags.add(parent)
   }
   const presetOrder = new Map(Object.keys(TAG_COLORS).map((k, i) => [k, i]))
   return [...tags].sort((a, b) => {
-    const ai = presetOrder.get(a) ?? -1
-    const bi = presetOrder.get(b) ?? -1
+    const ai = presetOrder.get(a.toLowerCase()) ?? -1
+    const bi = presetOrder.get(b.toLowerCase()) ?? -1
     if (ai !== -1 && bi !== -1) return ai - bi
     if (ai !== -1) return -1
     if (bi !== -1) return 1
