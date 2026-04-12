@@ -5,13 +5,302 @@
   "type": "full",
   "icon": "train",
   "cuisine": [
-    "canteen"
+    "Canteen"
   ],
   "coordinates": {
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-04-12T15:00:33.593Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-04-12T21:12:21.930Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Bohemian cabbage pan",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L",
+              "description": "Fresh cabbage & plant cream, bread dumplings"
+            },
+            {
+              "title": "Lasagna Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Minced meat & vegetables, béchamel & cheese"
+            },
+            {
+              "title": "Chicken wings",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Skin-on wedges & coleslaw, blue cheese dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Strawberry curd cream",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Baked vegetable patties",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Curry orange bulgur, tartare sauce"
+            },
+            {
+              "title": "Köttbullar",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Mashed potatoes & vegetables, cream sauce & cranberries"
+            },
+            {
+              "title": "Sweet Fried Chili Fish",
+              "price": null,
+              "tags": [],
+              "allergens": "A,D",
+              "description": "Spring onions & peppers, basmati rice"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Besbousa - semolina cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "THAI eggplant",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,N",
+              "description": "Coconut, lime & spring onion, eggnoodles"
+            },
+            {
+              "title": "Baked turkey schnitzel",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "French fries, lemon"
+            },
+            {
+              "title": "Grilled pork skewers",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "G",
+              "description": "Rice & Mexican vegetables, garlic dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Raspberry tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Tortelloni ricotta spinach",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Tomato ragout & basil, Grana Padano"
+            },
+            {
+              "title": "Original chili con carne",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,F,G,M",
+              "description": "Beef, corn & beans, Kornspitz"
+            },
+            {
+              "title": "JustVish Burgers",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Cucumber, radish & onion, lemon mayo"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Fantastic pistachio cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Nougat dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H",
+              "description": "Cherry ragout, powdered sugar"
+            },
+            {
+              "title": "Mullerin pollack fillet",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Potato salad & lemon, remoulade sauce"
+            },
+            {
+              "title": "Egg dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Roasted onion, fresh chives"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chocolate donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

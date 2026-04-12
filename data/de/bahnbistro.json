@@ -11,7 +11,296 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-04-12T15:00:33.593Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-04-12T21:12:21.930Z",
+  "error": null,
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Böhmische Krautpfanne",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L",
+              "description": "Frisches Kraut & Plantcream, Semmelknödel"
+            },
+            {
+              "title": "Lasagne Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Faschiertes & Gemüse, Bechamel & Käse"
+            },
+            {
+              "title": "Chicken Wings",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Skin-on Wedges & Coleslaw, Blue Cheese-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeer-Topfencreme",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüselaibchen gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Curry-Orangenbulgur, Sauce Tartare"
+            },
+            {
+              "title": "Köttbullar",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Kartoffelpüree & Gemüse, Rahmsoße & Preiselbeeren"
+            },
+            {
+              "title": "Sweet Fried Chili-Fish",
+              "price": null,
+              "tags": [],
+              "allergens": "A,D",
+              "description": "Jungzwiebel & Paprika, Basmatireis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Besbousa - Grießkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "THAI Auberginen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,N",
+              "description": "Kokos, Limette & Jungzwiebel, Eggnoodles"
+            },
+            {
+              "title": "Putenschnitzerl gebacken",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "Pommes frites, Zitrone"
+            },
+            {
+              "title": "Schweinsspieße vom Grill",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "G",
+              "description": "Reis & Mexicogemüse, Knoblauch-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tortelloni Ricotta-Spinat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Tomatenragout & Basilikum, Grana Padano"
+            },
+            {
+              "title": "Original Chili con Carne",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,F,G,M",
+              "description": "Rind, Mais & Bohne, Kornspitz"
+            },
+            {
+              "title": "JustVish-Burger",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Gurke, Radieschen & Zwiebel, Lemon-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Fantastischer Pistazienkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Nougatknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H",
+              "description": "Kirschragout, Staubzucker"
+            },
+            {
+              "title": "Seelachsfilet Müllerin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Erdäpfelsalat & Zitrone, Sauce Remoulade"
+            },
+            {
+              "title": "Eiernockerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Röstzwiebel, Frischer Schnittlauch"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Schoko-Donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
