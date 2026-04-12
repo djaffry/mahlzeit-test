@@ -1,8 +1,9 @@
 {
   "id": "mano",
-  "title": "☕ Mano Café & Bistro",
+  "title": "Mano Café & Bistro",
   "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
   "type": "full",
+  "icon": "coffee",
   "cuisine": [
     "Cafe",
     "bistro"
@@ -13,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-08T10:18:00.557Z",
+  "fetchedAt": "2026-04-12T13:12:53.269Z",
   "error": null,
   "days": {
     "Montag": {
@@ -31,7 +32,7 @@
               "description": null
             },
             {
-              "title": "Potato and wild garlic cream soup",
+              "title": "Ginger coconut cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -45,16 +46,16 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Piccata Milanese made from chicken fillet on tomato-basic pasta",
+              "title": "Turkey fillet in satay sauce (coconut, peanut, honey) saffron rice",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Pute"
               ],
-              "allergens": "A,C,G",
+              "allergens": "F,N",
               "description": null
             },
             {
-              "title": "Zander fillet steak in chorizo butter, parsley potatoes, cucumber salad",
+              "title": "Trout fillet in herb butter, pan-fried potatoes and vegetables",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -63,12 +64,12 @@
               "description": null
             },
             {
-              "title": "Indian cauliflower chickpea curry, basmati rice, salad from the buffet",
+              "title": "Wild garlic gnocchi with mozzarella, basmati rice, salad from the buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -77,7 +78,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Chocolate coconut brownie",
+              "title": "Povidl dumplings in walnut crumbs",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -93,7 +94,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Potato and wild garlic cream soup",
+              "title": "Kohlrabi cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -116,30 +117,30 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Piccata Milanese made from chicken fillet on tomato-basic pasta",
-              "price": "12,90 €",
+              "title": "Chicken gyros plate with spicy wedges, salad, pita bread",
+              "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Fleisch"
               ],
               "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Zander fillet steak in chorizo butter, parsley potatoes, cucumber salad",
+              "title": "Short-fried tuna fillet steak on wok vegetables, soybean sprouts",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,B",
+              "allergens": "D,F,N",
               "description": null
             },
             {
-              "title": "Indian cauliflower chickpea curry, basmati rice, salad from the buffet",
+              "title": "Zucchini-avocado patties with guacamole, salad from the buffet",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -148,7 +149,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Strawberry curd dumplings",
+              "title": "Chocolate raspberry mousse",
               "price": "3,90 €",
               "tags": [],
               "allergens": "G",
@@ -164,7 +165,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Cream of porcini mushroom soup",
+              "title": "Cream of asparagus soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -187,25 +188,25 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Pumpkin turkey fillet schnitzel, carrot corn rice, cranberries",
+              "title": "Kentucky chicken fillet in a crispy coating, tomato rice, BBQ sauce",
               "price": "11,90",
               "tags": [
-                "Pute"
+                "Huhn"
               ],
               "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Chili prawns on Caesar salad, croutons",
+              "title": "St. Peter's fish fillet on creamy asparagus bulgur with chervil",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,C,G,B",
+              "allergens": "G,B",
               "description": null
             },
             {
-              "title": "Potato dumplings with tomato mozzarella, salad from the buffet",
+              "title": "Spinach and ricotta lasagne with Grana Padano, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -219,7 +220,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Cherry strudel",
+              "title": "Sacher cuts",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -235,7 +236,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "White root cream soup",
+              "title": "Cream of spring onion soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -244,7 +245,7 @@
               "description": null
             },
             {
-              "title": "Beef soup with carrot julienne",
+              "title": "Beef soup with cheese dumplings",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -258,16 +259,16 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Boiled boiled beef, creamed spinach, roasted potatoes",
-              "price": "12,90 €",
+              "title": "Crispy Chinese pork belly, cabbage salad, potatoes",
+              "price": "11,90 €",
               "tags": [
-                "Rindfleisch"
+                "Schweinefleisch"
               ],
-              "allergens": "L,G",
+              "allergens": "N,F",
               "description": null
             },
             {
-              "title": "Salmon fillet steak, wild garlic crust on grilled vegetables",
+              "title": "Salmon fillet steak with herb crust on grilled asparagus vegetables",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -276,12 +277,12 @@
               "description": null
             },
             {
-              "title": "Creamy spinach with roasted potatoes, fried eggs, salad from the buffet",
+              "title": "Roasted dumplings with eggs, fried onions, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "C,G",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -290,7 +291,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Homemade apple snail",
+              "title": "Homemade poppy seed snail",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -306,21 +307,21 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Sea bass fillet with sweet potato vegetables",
-              "price": "12,90 €",
+              "title": "Veal ragout with wax beans and dumplings",
+              "price": "11,90 €",
               "tags": [
-                "Fisch"
+                "Fleisch"
               ],
-              "allergens": "D",
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Grilled cheese on sweet potato gröstl, salad cup",
+              "title": "Spaetzle with mushroom cream sauce, salad cup",
               "price": "11,90 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
-              "allergens": "G",
+              "allergens": "A",
               "description": null
             }
           ]

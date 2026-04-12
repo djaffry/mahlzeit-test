@@ -1,8 +1,9 @@
 {
   "id": "wrapstars",
-  "title": "🌯 Wrapstars",
+  "title": "Wrapstars",
   "url": "https://www.wrapstars.at/pages/food-truck",
   "type": "link",
+  "icon": "truck",
   "availableDays": [
     "Donnerstag"
   ],
@@ -14,7 +15,7 @@
     "lat": 48.224,
     "lon": 16.3976
   },
-  "fetchedAt": "2026-03-27T20:50:34.481Z",
+  "fetchedAt": "2026-04-12T13:13:27.631Z",
   "error": null,
   "days": {}
 }

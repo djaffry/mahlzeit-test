@@ -1,8 +1,9 @@
 {
   "id": "umi",
-  "title": "🍣 Umi",
+  "title": "Umi",
   "url": "https://umi-12.jimdosite.com/umi-nordbahn-1020/",
   "type": "link",
+  "icon": "waves",
   "cuisine": [
     "Poke Bowls"
   ],
@@ -12,7 +13,7 @@
     "lat": 48.2245,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-03-27T20:50:34.481Z",
+  "fetchedAt": "2026-04-12T13:13:27.631Z",
   "error": null,
   "days": {}
 }

@@ -1,8 +1,9 @@
 {
   "id": "spoonfood",
-  "title": "🥄 SpoonFood",
+  "title": "SpoonFood",
   "url": "https://www.spoonfood.at/",
   "type": "full",
+  "icon": "leaf",
   "cuisine": [
     "Bowls",
     "Stews"
@@ -13,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-10T09:41:41.542Z",
+  "fetchedAt": "2026-04-12T13:12:53.495Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -61,22 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Beef moussaka with potatoes 🥔, aubergine 🍆 & carrots 🥕",
+              "title": "Beef moussaka",
               "price": "7,90 / 10,90",
               "tags": [
                 "Rindfleisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Potatoes 🥔, aubergine 🍆 & carrots 🥕"
             },
             {
-              "title": "Warm curd pancake casserole with vanilla sauce 💛",
+              "title": "Warm curd pancake casserole",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Vanilla sauce 💛"
             }
           ]
         },
@@ -84,21 +85,21 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Split pea stew with potatoes 🥔, beans 🫛, peas 💚, carrots 🥕, smoked meat, frankfurters & rice",
+              "title": "Split pea stew",
               "price": "6,90 / 9,90",
               "tags": [],
               "allergens": null,
-              "description": null
+              "description": "Potatoes 🥔, beans 🫛, peas 💚, carrots 🥕, smoked meat, frankfurters & rice"
             },
             {
-              "title": "Ratatouille with tomatoes 🍅, zucchini 🥒, olives 🫒, peppers 🫑, aubergine 🍆 & rice",
+              "title": "Ratatouille",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": null
+              "description": "Tomatoes 🍅, zucchini 🥒, olives 🫒, peppers 🫑, aubergine 🍆 & rice"
             }
           ]
         },
@@ -106,22 +107,22 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Italian salad bowl with yellow 💛 & red tomatoes 🍅, cucumbers 🥒, mozzarella balls & fresh basil 🌿",
+              "title": "Italian Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "yellow 💛 & red tomatoes 🍅, cucumbers 🥒, mozzarella balls & fresh basil 🌿"
             },
             {
-              "title": "Bulgur tabbouleh with cucumber 🥒, carrots 🥕, tomatoes 🍅, nuts 🥜, mint, parsley 🌿, fried smoked tofu & pomegranate 🍎 citrus 🍋 dressing",
+              "title": "Bulgur tabbouleh",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": null
+              "description": "Cucumbers 🥒, carrots 🥕, tomatoes 🍅, nuts 🥜, mint, parsley 🌿, fried smoked tofu & pomegranate 🍎 citrus 🍋 dressing"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
