@@ -169,7 +169,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'pans',
-  title: '🍳 pAn\'s',
+  title: 'pAn\'s',
+  icon: 'chef-hat',
   url: 'https://www.pans.at/tagesmenue/',
   type: 'full',
   cuisine: ['Bistro'],

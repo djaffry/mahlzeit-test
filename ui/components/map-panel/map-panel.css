@@ -1,0 +1,190 @@
+/* ── Map Panel ──────────────────────────────────────────── */
+
+.map-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  height: 60vh;
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-radius: 12px 12px 0 0;
+  transform: translateY(100%);
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.map-panel.visible {
+  transform: translateY(0);
+}
+
+.map-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 149;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity var(--duration-slow) ease;
+  pointer-events: none;
+}
+
+.map-backdrop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.map-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.map-panel-header h2 {
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.map-container {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  .map-panel {
+    left: auto;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    border-left: 1px solid var(--border);
+    border-top: none;
+    transform: translateX(100%);
+  }
+
+  .map-panel.visible {
+    transform: translateX(0);
+  }
+}
+
+.map-marker {
+  background: none !important;
+  border: none !important;
+}
+
+.map-marker-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: var(--bg);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map-marker-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Leaflet popup override for consistent app styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  font-family: var(--font);
+  font-size: var(--text-sm);
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-tip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.leaflet-control-attribution {
+  background: var(--bg) !important;
+  color: var(--fg-muted) !important;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+[data-theme="dark"] .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) saturate(0.6) brightness(0.85);
+}
+
+/* ── Map drag handle ───────────────────────────────────── */
+
+.map-drag-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  cursor: ns-resize;
+  touch-action: none;
+  flex-shrink: 0;
+}
+
+.map-drag-handle:hover .map-drag-pill,
+.map-drag-handle:active .map-drag-pill {
+  opacity: 0.8;
+}
+
+/* On mobile only the middle pill is visible as a bar */
+.map-drag-pill {
+  width: 40px;
+  height: 5px;
+  background: var(--fg-muted);
+  border-radius: 3px;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+
+.map-drag-pill:first-child,
+.map-drag-pill:last-child {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .map-drag-handle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    padding: 0;
+    cursor: ew-resize;
+    z-index: 10;
+    flex-direction: column;
+    gap: 3px;
+    background: var(--border);
+    transition: background 0.15s;
+  }
+
+  .map-drag-handle:hover,
+  .map-drag-handle:active {
+    background: color-mix(in srgb, var(--accent) 50%, transparent);
+  }
+
+  .map-drag-pill {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--fg-muted);
+    opacity: 0.6;
+    flex-shrink: 0;
+    display: block;
+  }
+}
+

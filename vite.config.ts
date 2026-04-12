@@ -14,10 +14,10 @@ export default defineConfig({
   },
   test: {
     environment: "jsdom",
-    exclude: [".worktrees/**", "scraper/dist/**", "scraper/node_modules/**", "rooms/dist/**", "rooms/node_modules/**", "node_modules/**"],
+    exclude: [".worktrees/**", "scraper/dist/**", "scraper/node_modules/**", "voting/dist/**", "voting/node_modules/**", "node_modules/**"],
     environmentMatchGlobs: [
       ["scraper/src/**", "node"],
-      ["rooms/src/**", "node"],
+      ["voting/src/**", "node"],
     ],
   },
 })

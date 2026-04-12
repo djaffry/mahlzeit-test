@@ -1,10 +1,10 @@
-# Forkcast
+# Peckish
 
 **Discover lunch menus. Vote with your team. Decide where to eat.**
 
-Forkcast aggregates daily lunch menus from a wide range of restaurants near Austria Campus in Vienna and lets you vote on where to eat using decentralized [Nostr](https://nostr.com/) protocol, no accounts, no signups, no servers.
+Peckish aggregates daily lunch menus from a wide range of restaurants near Austria Campus in Vienna and lets you vote on where to eat using decentralized [Nostr](https://nostr.com/) protocol, no accounts, no signups, no servers.
 
-Most restaurants in the area only publish their menus in German. For colleagues who don't speak German well, that makes lunch a guessing or lookup game. Forkcast scrapes these menus, translates them automatically, and gives everyone an equal seat at the table, both in understanding what's on the menu and in voting where to go.
+Most restaurants in the area only publish their menus in German. For colleagues who don't speak German well, that makes lunch a guessing or lookup game. Peckish scrapes these menus, translates them automatically, and gives everyone an equal seat at the table, both in understanding what's on the menu and in voting where to go.
 
 > **Try it out for yourself: https://djaffry.github.io/mahlzeit-test/**
 
@@ -26,7 +26,7 @@ The UI auto-refreshes in the background every 10 minutes with hash diffing and o
 
 Tags are inferred automatically from menu text using keyword matching against a configurable tag hierarchy:
 
-- **Hierarchy-aware filtering** selecting a parent tag (e.g. "Meat") expands to include all children (Beef, Pork, Poultry, Lamb). Implemented with recursive expansion.
+- **Hierarchy-aware filtering** selecting a parent tag (e.g. "Meat") expands to include all children (Beef, Pork, Poultry, Lamb)
 - **Contradiction resolution** if an item matches both plant-based and meat keywords, the meat tag wins and the plant-based tag is pruned
 - **Category fallback** if no item-level keywords match, the category name is checked (e.g. a "Vegan Bowls" category tags all its items as Vegan)
 - Filter state is persisted in `localStorage` across sessions
@@ -44,36 +44,48 @@ Voting runs entirely on the [Nostr](https://nostr.com/) protocol - no backend, n
 
 ### Interactive Tools
 
-- **Dice roll** random menu or restaurant picker triggered by keyboard (`D` / `Space`), button, or device shake (`DeviceMotionEvent`)
-- **Map** interactive map with markers per restaurant
-- **Full-text search** indexes restaurant names and all menu item text, accessible via `/` or `Ctrl+K`
-- **Image-based and Text-based sharing** selected menu items are rendered as an image or text, then exported to clipboard or the Web Share API
+- **Dice roll** random menu or restaurant picker triggered by keyboard (`D`), button, or device shake (`DeviceMotionEvent`)
+- **Map** Leaflet-based slide panel with restaurant markers, lazy-loaded on first open
+- **Full-text search** indexes restaurant names and all menu item text, filterable by dietary tags
+- **Image and text sharing** selected menu items are rendered to a themed canvas image or plain text, then exported to clipboard or the Web Share API. Titles and descriptions are combined into a single flowing line; category names, cuisine, and badges are shown inline.
 - **Identity card export** share your Nostr voting identity as a visual business card
 
 ### UI & Frontend
 
 Built as a very lightweight, vanilla TypeScript SPA with zero framework dependencies, just DOM APIs, CSS custom properties and Vite:
 
-- **Catppuccin theming** Mocha (dark) and Latte (light) palettes - https://catppuccin.com/
-- **Bilingual i18n** English and German with a custom translation system, toggled at runtime
+- **Monochrome theming** light/dark with a strict black/white palette. Color only on dietary tags and badges. Respects `prefers-color-scheme` in system mode.
+- **Timeline layout** with collapsible day sections, sticky day headers, and sidebar table-of-contents with scroll-spy (desktop)
+- **Surgical vote updates** vote button state (count, voter dots, classes) is patched in-place without re-rendering entire restaurant sections
+- **Lucide stroke-based icons** used throughout the UI for consistent, lightweight iconography
+- **Bilingual i18n** English and German with a custom translation system, toggled at runtime with rollback on fetch failure
 - **PWA manifest** installable on mobile with themed browser chrome and maskable icons
 - **Haptic feedback** `navigator.vibrate()` on supported devices for tactile interaction cues
 - **Keyboard-driven** shortcut coverage (see table below)
 
 ### Keyboard Shortcuts
 
+**Active in the Overview**
+
 | Key | Action |
 |-----|--------|
-| `/` or `Ctrl+K` / `Cmd+K` | Open search |
-| `Escape` | Close search, map overlay, or dismiss notifications |
-| `1` - `5` | Jump to weekday (Monday - Friday) |
-| `Arrow Left` / `Arrow Right` | Navigate between days |
-| `D` or `Space` | Roll the dice |
+| `/` | Open search |
+| `Escape` | Close overlay / collapse to today |
+| `1` - `5` | Jump to weekday (1 = Monday, 2 = Tuesday, …, 5 = Friday) |
+| `D` | Roll the dice |
+| `F` | Open filters |
+| `V` | Open voting rooms |
 | `L` | Toggle language (DE/EN) |
-| `I` | Open feedback link |
-| `R` | Reload page |
-| `P` | Share selection as picture (when items selected) |
-| `T` | Share selection as text (when items selected) |
+| `M` | Toggle map |
+| `T` | Cycle theme |
+| `?` | Show shortcuts modal |
+
+**When share bar is active**
+
+| Key | Action |
+|-----|--------|
+| `P` | Share selection as picture |
+| `C` | Share selection as text |
 
 ## Architecture
 
@@ -83,7 +95,7 @@ The project is split into four domains that communicate through a shared, transi
 project_root/
   data/                 # Transient shared output (generated JSON, treat as transient, never hand-edited)
   scraper/              # Menu scraping & translation pipeline
-  rooms/                # Nostr voting room configuration generator
+  voting/               # Nostr voting room configuration generator
   ui/                   # Vanilla TypeScript frontend (served by Vite)
   .github/workflows/    # CI/CD automation
 ```
@@ -96,7 +108,7 @@ graph TB
 
   subgraph CI["GitHub Actions"]
     S["scraper/\n(Node.js)"] -->|menus, tags,\nindex, translations| D["data/\n(transient JSON)"]
-    R["rooms/\n(Node.js)"] -->|voting.json| D
+    R["voting/\n(Node.js)"] -->|voting.json| D
   end
 
   D -->|bundled into| GH["GitHub Pages\n(static hosting)"]
@@ -163,13 +175,13 @@ Translation is a separate step in the same module:
 4. Writes translated output to `data/{target_lang}/{id}.json`
 5. If translation fails for a restaurant, the original language JSON is copied as a fallback
 
-### Rooms (`rooms/`)
+### Voting Config (`voting/`)
 
 A small module that generates the voting configuration:
 
-- `rooms/config/relays.json` list of Nostr relay URLs and a `minRelays` threshold
-- `rooms/config/app.json` a unique `appId` (UUID) and `salt` (hex) for hashing restaurant IDs in vote events
-- `rooms/src/create-rooms.ts` validates both configs and writes `data/voting.json`
+- `voting/config/relays.json` list of Nostr relay URLs and a `minRelays` threshold
+- `voting/config/app.json` a unique `appId` (UUID) and `salt` (hex) for hashing restaurant IDs in vote events
+- `voting/src/create-rooms.ts` validates both configs and writes `data/voting.json`
 - Health check script probes all relays via WebSocket and fails if fewer than `minRelays` are reachable
 
 ### UI (`ui/`)
@@ -178,23 +190,31 @@ A vanilla TypeScript single-page app bundled with Vite. No framework, just DOM A
 
 ```
 ui/
-  main.ts               # App bootstrap and render orchestration
+  main.ts               # App bootstrap (theme, party mode, service worker)
   config.ts             # Title, subtitle, data path, map center, refresh interval
-  types.ts              # Core data types (RestaurantData, WeekMenu, DayMenu, etc.)
-  data/                 # Data fetching and auto-refresh
-  components/           # UI components (search, filters, map, dice, share, carousel)
-  rooms/                # Voting: Nostr client, lifecycle, avatars, identity
+  types.ts              # Core data types (Restaurant, DayMenu, MenuItem, etc.)
+  constants.ts          # Day names, badges, tag colors
+  icons.ts              # Lucide icon registry and restaurant icon helpers
+  data/                 # Data fetching (fetcher) and background auto-refresh
+  views/                # App orchestration, keyboard setup, voting flow
+  components/           # Timeline, restaurant sections, menu items, search, filters, map panel,
+                        #   dice, share, overlay, more-menu, sidebar TOC, theme, voting rooms,
+                        #   shortcuts modal, header scroll, footer, empty state, avatar badge,
+                        #   deep link, stale banner, party mode
+  voting/               # Nostr client, voting init, publish debounce, rooms, avatars, identity
   i18n/                 # Translation system with de.json and en.json
-  styles/               # CSS with Catppuccin Mocha/Latte palettes, CSS variables
-  utils/                # Date, DOM, haptic feedback, tag hierarchy helpers
+  styles/               # Modular CSS (tokens, reset, header, icon-colors, party)
+  utils/                # Date, DOM, haptic, keyboard registry, canvas, scroll, device,
+                        #   tab badge, tag hierarchy, SVG, overlay helpers
 ```
 
 ```mermaid
 graph LR
   subgraph boot["Bootstrap"]
-    M[main.ts] --> F[fetcher]
-    M --> COMP[components/]
-    M --> VLC[voting-lifecycle]
+    M[main.ts] --> APP[views/app.ts]
+    APP --> F[fetcher]
+    APP --> COMP[components/]
+    APP --> VI[voting/init]
   end
 
   subgraph refresh["Background"]
@@ -202,18 +222,19 @@ graph LR
   end
 
   F -->|read| MENU["data/\nindex, languages,\n{lang}/{id}.json"]
-  M -->|read| TJ[data/tags.json]
-  VLC -->|read| VJ[data/voting.json]
-  VLC --> NC[nostr-client]
+  APP -->|read| TJ[data/tags.json]
+  VI -->|read| VJ[data/voting.json]
+  VI --> NC[nostr-client]
   NC <-->|WebSocket| NR[Nostr Relays]
 ```
 
 ### CI/CD (`.github/workflows/`)
 
-Three workflows automate the pipeline:
+Four workflows automate the pipeline:
 
 - **fetch-and-deploy.yml** runs on weekday mornings (staggered schedule). Scrapes all restaurants, translates, typechecks, tests, commits data changes, and deploys to GitHub Pages. Translation failures are non-blocking (warns but continues).
-- **voting-room.yml** triggered on changes to `rooms/config/` or `rooms/src/`. Regenerates `data/voting.json`, commits, and redeploys.
+- **deploy.yml** deploys to GitHub Pages on code changes pushed to `main`. Data-only updates from `fetch-and-deploy.yml` do not trigger this workflow (GITHUB_TOKEN pushes are excluded).
+- **voting-room.yml** triggered on changes to `voting/config/` or `voting/src/`. Regenerates `data/voting.json`, commits, and redeploys.
 - **relay-health-check.yml** runs daily. Probes all Nostr relays and fails if too few are reachable.
 
 ## Getting Started
@@ -221,7 +242,7 @@ Three workflows automate the pipeline:
 ```bash
 npm install
 cd scraper && npm install && cd ..
-cd rooms && npm install && cd ..
+cd voting && npm install && cd ..
 
 # Scrape menus (fetches latest from restaurant websites)
 npm run scrape
@@ -251,7 +272,7 @@ npm run verify
 
 ### Zero cost, zero backend, zero accounts
 
-Forkcast runs entirely without a backend server. The frontend is a static site on GitHub Pages, menu data is generated by CI, and voting happens directly between browsers and public Nostr relays. There is no database, no API server, no cloud functions, no hosting bill. No account or signup is needed, not to use the app, not to host it, not to develop on it. Everything runs on GitHub's free tier (Actions + Pages) and volunteer-operated Nostr relays.
+Peckish runs entirely without a backend server. The frontend is a static site on GitHub Pages, menu data is generated by CI, and voting happens directly between browsers and public Nostr relays. There is no database, no API server, no cloud functions, no hosting bill. No account or signup is needed, not to use the app, not to host it, not to develop on it. Everything runs on GitHub's free tier (Actions + Pages) and volunteer-operated Nostr relays.
 
 ### Fresh data through CI scraping
 
@@ -341,7 +362,7 @@ Adapters can also specify:
 
 ## Relay Configuration
 
-Voting relays are configured in `rooms/config/relays.json`:
+Voting relays are configured in `voting/config/relays.json`:
 
 ```json
 {
@@ -358,11 +379,11 @@ Voting relays are configured in `rooms/config/relays.json`:
 - **relays** Nostr relay WebSocket URLs. Votes are published to all of them for redundancy. Adding or removing a relay here and pushing to `main` triggers the voting-room workflow to regenerate `data/voting.json` and redeploy.
 - **minRelays** the health check fails if fewer than this many relays are reachable (5-second WebSocket probe per relay). This prevents deploying a broken voting config.
 
-The app identity is configured in `rooms/config/app.json` (a UUID and salt). **Please change this if you're forking the project**.
+The app identity is configured in `voting/config/app.json` (a UUID and salt). **Please change this if you're forking the project**.
 
 ## Browser Support
 
-Forkcast targets **ES2022** and uses the following browser APIs:
+Peckish targets **ES2022** and uses the following browser APIs:
 
 | API | Required | Used for |
 |-----|----------|----------|
@@ -402,7 +423,7 @@ Look for `FAIL` lines in the output. The `error` field in the restaurant's JSON 
 ### Voting not loading
 
 - Check that `data/voting.json` exists and contains valid relay URLs
-- Run the relay health check: `cd rooms && npm run build && npm run health-check`
+- Run the relay health check: `cd voting && npm run build && npm run health-check`
 - Open browser DevTools and look for WebSocket connection errors
 - Public relays occasionally go down, if one is unreachable, voting still works as long as others are available
 
@@ -416,9 +437,9 @@ cd scraper && npm run build && npm run translate
 
 The translation cache (`data/.translation-cache.json`) skips unchanged restaurants, so re-running is cheap.
 
-### Stale data overlay showing
+### Stale data banner showing
 
-The UI shows a "stale data" overlay when menu data is older than expected. This usually means the CI scrape didn't run or didn't find changes. Check the GitHub Actions workflow runs for failures.
+The UI shows a "stale data" banner above the timeline when menu data is older than expected. This usually means the CI scrape didn't run or didn't find changes. Check the GitHub Actions workflow runs for failures.
 
 ## Contributing
 
@@ -426,7 +447,7 @@ Contributions are welcome! Whether it's adding a new restaurant, fixing a scrape
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
 
-The quickest way to start: [open an issue](https://github.com/djaffry/mahlzeit-test/issues/new) on GitHub.
+The quickest way to start: [open an issue](https://github.com/djaffry/mahlzeit-test/issues/new/choose) on GitHub.
 
 ## License
 

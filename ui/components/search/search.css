@@ -1,0 +1,109 @@
+/* ── Search Overlay ─────────────────────────────────────── */
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.search-overlay.visible {
+  opacity: 1;
+}
+
+.search-overlay[hidden] { display: none; }
+
+.search-container {
+  width: 90%;
+  max-width: 560px;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-sm) 0;
+  font-size: var(--text-lg);
+  font-family: var(--font);
+  color: var(--fg);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--fg-muted);
+}
+
+.search-results {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin-top: var(--space-sm);
+  background: var(--bg);
+  border-radius: 8px;
+}
+
+.search-result {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.search-result:hover {
+  background: var(--bg-subtle);
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}
+
+.search-result-restaurant {
+  font-weight: 600;
+  font-size: var(--text-base);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-result-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.search-result-item {
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+}
+
+.search-highlight {
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 2px;
+}
+
+@media (max-width: 639px) {
+  .search-overlay {
+    padding-top: 48px;
+  }
+
+  .search-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-input {
+    padding: var(--space-md);
+    border-bottom-width: 1px;
+  }
+
+  .search-results {
+    flex: 1;
+    border-radius: 0;
+  }
+}

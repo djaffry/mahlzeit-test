@@ -1,0 +1,28 @@
+/* ── Shared icon-to-color mapping for restaurant icons ── */
+
+[data-icon="salad"],
+[data-icon="leaf"] { color: var(--tag-green); }
+
+[data-icon="flame"],
+[data-icon="beef"] { color: var(--tag-red); }
+
+[data-icon="pizza"],
+[data-icon="sandwich"],
+[data-icon="hamburger"] { color: var(--tag-peach); }
+
+[data-icon="fish"],
+[data-icon="waves"] { color: var(--tag-blue); }
+
+[data-icon="coffee"],
+[data-icon="beer"],
+[data-icon="crown"] { color: var(--tag-yellow); }
+
+[data-icon="soup"],
+[data-icon="cooking-pot"],
+[data-icon="chef-hat"] { color: var(--tag-lavender); }
+
+[data-icon="utensils"],
+[data-icon="truck"],
+[data-icon="train"] { color: var(--tag-teal); }
+
+[data-icon="bean"] { color: var(--tag-red); }

@@ -147,7 +147,7 @@ describe('fetchMenuDataQuiet', () => {
       if (url.includes('r1.json')) {
         return { ok: true, json: async () => r1Fresh }
       }
-      // r2 fails — falls back to currentRestaurants
+      // r2 fails - falls back to currentRestaurants
       return { ok: false, status: 404 }
     }))
 

@@ -1,0 +1,70 @@
+/* ── Design Tokens ──────────────────────────────────────── */
+
+:root {
+  --fg: #1a1a1a;
+  --fg-secondary: #6b6b6b;
+  --fg-muted: #999;
+  --bg: #fff;
+  --bg-subtle: #f5f5f5;
+  --border: #e0e0e0;
+  --accent: #000;
+
+  /* Semantic colors - tags and badges only */
+  --tag-green: #2d8a4e;
+  --tag-yellow: #9a7b2d;
+  --tag-red: #c44d4d;
+  --tag-blue: #3a7bc8;
+  --tag-peach: #c47a2d;
+  --tag-teal: #2a8a7a;
+  --tag-lavender: #7a6bc4;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Typography */
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --text-base: 0.875rem;
+  --text-sm: 0.8125rem;
+  --text-xs: 0.75rem;
+  --text-lg: 1rem;
+  --line-height: 1.5;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+}
+
+[data-theme="dark"] {
+  --fg: #e8e8e8;
+  --fg-secondary: #8b8b8b;
+  --fg-muted: #555;
+  --bg: #111;
+  --bg-subtle: #1a1a1a;
+  --border: #2a2a2a;
+  --accent: #fff;
+
+  --tag-green: #5cb87a;
+  --tag-yellow: #c4a84d;
+  --tag-red: #e07070;
+  --tag-blue: #6a9fd8;
+  --tag-peach: #d4a060;
+  --tag-teal: #5cb8a8;
+  --tag-lavender: #a090d8;
+}
+
+/* Theme transition (applied briefly during toggle) */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: color var(--duration-slow) var(--ease-out),
+              background-color var(--duration-slow) var(--ease-out),
+              border-color var(--duration-slow) var(--ease-out),
+              box-shadow var(--duration-slow) var(--ease-out) !important;
+}

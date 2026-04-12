@@ -1,0 +1,393 @@
+/* ── Restaurant Section (Document Style) ────────────────── */
+
+.restaurant-section {
+  padding: var(--space-lg) 0 var(--space-md);
+  border-top: 1px solid var(--border);
+}
+
+.restaurant-section:first-child {
+  border-top: none;
+}
+
+.restaurant-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.restaurant-name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.restaurant-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.restaurant-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.restaurant-website-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--fg-secondary);
+  text-decoration: none;
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
+}
+
+.restaurant-website-link:hover {
+  background: var(--bg-subtle);
+  color: var(--fg);
+}
+
+.restaurant-website-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Restaurant actions / map fly button ───────────────── */
+
+.restaurant-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.map-fly-btn {
+  width: 32px;
+  height: 32px;
+}
+
+.map-fly-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.restaurant-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+}
+
+.restaurant-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: var(--text-xs);
+  color: var(--fg-secondary);
+}
+
+.restaurant-badge-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vote-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--fg-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease, transform var(--duration-normal) var(--ease-out);
+}
+
+.vote-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--fg);
+}
+
+/* When others have voted - grouped pill */
+.vote-btn.vote-active {
+  width: auto;
+  height: 28px;
+  padding: 0 4px 0 6px;
+  gap: 5px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--fg);
+}
+
+.vote-btn.vote-active:hover {
+  border-color: var(--fg-muted);
+}
+
+/* When user has voted - filled heart */
+.vote-btn.voted .vote-check svg {
+  fill: var(--accent);
+  color: var(--accent);
+}
+
+.vote-check {
+  display: flex;
+  align-items: center;
+}
+
+.vote-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.vote-count {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* Vote publish status */
+.vote-btn.vote-saving,
+.vote-btn.vote-saved {
+  width: auto;
+  gap: 5px;
+}
+
+.vote-btn.vote-saving::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid var(--fg-muted);
+  border-top-color: transparent;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: vote-spin 0.6s linear infinite;
+}
+
+@keyframes vote-spin {
+  to { transform: rotate(360deg); }
+}
+
+.vote-btn.vote-saved::after {
+  content: '✓';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  color: var(--tag-green);
+}
+
+/* Category */
+.menu-category {
+  margin-bottom: var(--space-md);
+}
+
+.category-name {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-muted);
+  margin-bottom: var(--space-xs);
+}
+
+/* Menu item */
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 3px 0;
+  padding-left: calc(var(--space-sm) - 2px);
+  border-left: 2px solid transparent;
+  gap: var(--space-xs);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background var(--duration-fast) ease;
+}
+
+.menu-item:hover {
+  background: var(--bg-subtle);
+}
+
+.menu-item-title {
+  font-size: var(--text-base);
+  color: var(--fg);
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-item-price {
+  font-size: var(--text-base);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+  white-space: nowrap;
+}
+
+.menu-item-tags {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: var(--space-xs);
+}
+
+.tag-pill {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: var(--text-xs);
+  color: var(--tag-color, var(--fg-muted));
+  border: 1px solid var(--tag-color, var(--border));
+  border-radius: 99px;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.menu-item-description {
+  width: 100%;
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+  padding-left: 0;
+}
+
+.menu-item-allergens {
+  width: 100%;
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+}
+
+/* Link restaurant card */
+.restaurant-meta-inline {
+  font-size: var(--text-sm);
+  color: var(--fg-muted);
+}
+
+/* Availability tag (e.g. "Thu") for limited-day restaurants */
+.availability-tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--fg-muted);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 1px 8px;
+  margin-left: var(--space-sm);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Unavailable restaurant - dimmed */
+.restaurant-section.restaurant-unavailable {
+  opacity: 0.45;
+}
+
+/* Selection for sharing */
+.menu-item.selected {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border-left-color: var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Selection check indicator - hidden by default */
+.menu-item-check {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.menu-item-check svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Show checkmark when selected */
+.menu-item.selected .menu-item-check {
+  display: flex;
+}
+
+/* Dim unselected items when card has any selection */
+.restaurant-section.share-any .menu-item:not(.selected) {
+  opacity: 0.45;
+}
+
+.restaurant-section.share-any .menu-item:not(.selected):hover {
+  opacity: 0.7;
+}
+
+.restaurant-section.share-all {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  border-radius: 6px;
+}
+
+/* Random pick highlight */
+.restaurant-section.highlighted {
+  animation: pulse-highlight 600ms ease-out;
+}
+
+@keyframes pulse-highlight {
+  0% { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  100% { background: transparent; }
+}
+
+/* ── Voter dots (used by restaurant sections and timeline) ── */
+
+.voter-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.voter-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--voter-color);
+  margin-left: -5px;
+  border: 1.5px solid var(--bg);
+}
+
+.voter-dot:first-child {
+  margin-left: 0;
+}
+
+.voter-dot svg {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.voter-dot-self {
+  border-color: var(--accent);
+  border-width: 2px;
+}
+
+.voter-dot-overflow {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--fg-muted);
+  margin-left: 2px;
+}

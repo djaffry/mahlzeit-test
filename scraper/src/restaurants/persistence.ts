@@ -14,7 +14,7 @@ const DATA_DIR = join(ROOT, 'data');
 const RESTAURANT_DIR = join(DATA_DIR, SOURCE_LANGUAGE);
 
 function stripHtml(text: string): string {
-  return text.replace(/<[^>]*>/g, '').trim();
+  return text.replace(/<[^>]*>?/g, '').trim();
 }
 
 function sanitizeItem(item: MenuItem): MenuItem {
@@ -48,6 +48,7 @@ export function buildRestaurantData(adapter: Adapter, days: WeekMenu, error: str
     title: adapter.title,
     url: adapter.url,
     type: adapter.type,
+    ...(adapter.icon && { icon: adapter.icon }),
     ...(adapter.availableDays && { availableDays: adapter.availableDays }),
     ...(adapter.cuisine && { cuisine: adapter.cuisine }),
     ...(adapter.stampCard && { stampCard: adapter.stampCard }),
@@ -87,6 +88,9 @@ export async function ensureDataDir(): Promise<void> {
 }
 
 export async function saveRestaurant(data: RestaurantData): Promise<void> {
+  if (basename(data.id) !== data.id || data.id.includes('..')) {
+    throw new Error(`Invalid restaurant ID: ${data.id}`);
+  }
   const filePath = join(RESTAURANT_DIR, `${data.id}.json`);
   const existing = await readExisting(data.id);
 

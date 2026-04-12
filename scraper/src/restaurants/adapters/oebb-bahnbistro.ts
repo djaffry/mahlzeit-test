@@ -79,7 +79,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'bahnbistro',
-  title: '🚂 OEBB Bahnbistro',
+  title: 'OEBB Bahnbistro',
+  icon: 'train',
   url: 'https://bahnbistro.digiattack.net',
   type: 'full',
   cuisine: ['Kantine'],

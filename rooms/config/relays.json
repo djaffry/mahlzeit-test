@@ -1,9 +1,0 @@
-{
-  "relays": [
-    "wss://relay.damus.io",
-    "wss://nos.lol",
-    "wss://relay.primal.net",
-    "wss://relay.snort.social"
-  ],
-  "minRelays": 2
-}

@@ -5,6 +5,7 @@ export interface Restaurant {
   title: string
   url: string
   type: "full" | "specials" | "link"
+  icon?: string
   cuisine?: string[]
   coordinates?: { lat: number; lon: number }
   edenred?: boolean
@@ -32,6 +33,13 @@ export interface MenuItem {
   price: string | null
   tags: string[]
   allergens: string | null
+}
+
+export interface Voter {
+  color: string
+  label: string
+  iconSvg: string
+  isSelf: boolean
 }
 
 export interface TagHierarchy {

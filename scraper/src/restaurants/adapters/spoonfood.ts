@@ -68,6 +68,15 @@ function parseComboMenus(section: Element): MenuCategory[] {
   return categories;
 }
 
+function splitDishAndSides(name: string): { title: string; description: string | null } {
+  const match = name.match(/^(.+?)\s+mit\s+(.+)$/);
+  if (!match) return { title: name, description: null };
+
+  const title = match[1].replace(/[\u2013\-]+$/, '').trim();
+
+  return { title, description: match[2].trim() };
+}
+
 function parseDish(dishHolder: Element): MenuItem | null {
   if (dishHolder.classList.contains('w-condition-invisible')) return null;
 
@@ -75,6 +84,7 @@ function parseDish(dishHolder: Element): MenuItem | null {
   if (!rawName) return null;
 
   const { cleanName, tags } = extractTags(rawName);
+  const { title, description } = splitDishAndSides(cleanName);
 
   const priceEls = dishHolder.querySelectorAll('.preis-holder p.text-weight-bold:not(.w-condition-invisible)');
   const prices = Array.from(priceEls)
@@ -84,13 +94,13 @@ function parseDish(dishHolder: Element): MenuItem | null {
     ? `${prices[0]} / ${prices[1]}`
     : prices[0] ?? null;
 
-  if (tags.length === 0 && /bunter gemischter salat/i.test(cleanName)) {
+  if (tags.length === 0 && /bunter gemischter salat/i.test(title)) {
     tags.push('Vegetarisch');
   }
 
-  const finalTags = resolveTags(tags, inferTags({ title: cleanName }));
+  const finalTags = resolveTags(tags, inferTags({ title }));
 
-  return { title: cleanName, price, tags: finalTags, allergens: null, description: null };
+  return { title, price, tags: finalTags, allergens: null, description };
 }
 
 function parseCategories(section: Element): MenuCategory[] {
@@ -137,7 +147,8 @@ async function fetchMenu(): Promise<WeekMenu> {
 
 const adapter: FullAdapter = {
   id: 'spoonfood',
-  title: '🥄 SpoonFood',
+  title: 'SpoonFood',
+  icon: 'leaf',
   url: 'https://www.spoonfood.at/',
   type: 'full',
   cuisine: ['Bowls', 'Eintöpfe'],

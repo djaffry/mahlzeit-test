@@ -1,5 +1,5 @@
 import { DAYS, DAY_JS_MAP, type DayName } from "../constants"
-import { getLocale } from '../i18n/i18n'
+import { getLocale, t } from '../i18n/i18n'
 
 export function getMondayOfWeek(refDate: Date): Date {
   const monday = new Date(refDate)
@@ -42,8 +42,17 @@ export function formatDateTime(date: Date): string {
   })
 }
 
+export function formatDayHeader(date: Date): string {
+  return date.toLocaleDateString(getLocale(), { weekday: "long", day: "numeric", month: "short" })
+}
+
 export function getTodayName(): DayName | null {
   return DAY_JS_MAP[new Date().getDay()] || null
+}
+
+export function todayDayIndex(): number {
+  const d = new Date().getDay()
+  return d >= 1 && d <= 5 ? d - 1 : -1
 }
 
 export function isDataFromCurrentWeek(restaurants: { fetchedAt: string }[]): boolean {
@@ -57,4 +66,8 @@ export function isDataFromCurrentWeek(restaurants: { fetchedAt: string }[]): boo
 
 export function isAvailableOnDay(restaurant: { availableDays?: readonly string[] }, day: string): boolean {
   return !restaurant.availableDays || restaurant.availableDays.includes(day)
+}
+
+export function formatAvailableDays(days: readonly string[]): string {
+  return days.map(d => t(`dayShort.${d}`)).join(", ")
 }

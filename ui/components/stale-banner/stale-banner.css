@@ -1,0 +1,24 @@
+/* ── Stale / Weekend Banner ─────────────────────────────── */
+
+.stale-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+  background: color-mix(in srgb, var(--tag-peach) 10%, var(--bg));
+  border-bottom: 1px solid color-mix(in srgb, var(--tag-peach) 25%, var(--border));
+  text-align: center;
+  position: sticky;
+  top: var(--header-height, 48px);
+  z-index: 9;
+}
+
+.stale-banner svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}

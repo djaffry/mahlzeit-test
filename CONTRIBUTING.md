@@ -1,4 +1,4 @@
-# Contributing to Forkcast
+# Contributing to Peckish
 
 Thanks for your interest in contributing! Here's how to get involved.
 
@@ -46,8 +46,8 @@ Translation files live in `ui/i18n/`. Add missing keys or improve existing trans
 ## Getting Started
 
 1. Read the README.md in its entirety to get familiar with the project and the processes. 
-2. [Open an issue](https://github.com/djaffry/mahlzeit-test/issues/new) describing what you'd like to work on
-3. Fork the repository and create a branch from `main`. **If you're testing voting**, change the `appId` in `rooms/config/app.json` first so your test events don't end up in the default voting channel.
+2. [Open an issue](https://github.com/djaffry/mahlzeit-test/issues/new/choose) describing what you'd like to work on
+3. Fork the repository and create a branch from `main`. **If you're testing voting**, change the `appId` in `voting/config/app.json` first so your test events don't end up in the default voting channel.
 4. Make your changes
 5. Run tests, checks and verify before submitting
 6. Open a pull request and reference the issue

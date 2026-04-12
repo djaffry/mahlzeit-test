@@ -1,0 +1,83 @@
+/* ── Dice Overlay ──────────────────────────────────────── */
+
+.dice-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  opacity: 0;
+  transition: opacity var(--duration-normal) ease;
+  pointer-events: none;
+}
+
+.dice-overlay[hidden] { display: none; }
+
+.dice-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dice-face {
+  position: absolute;
+  font-size: 3rem;
+  animation: dice-tumble 1.5s var(--ease-out) forwards;
+  animation-delay: calc(var(--dice-i) * 50ms);
+  opacity: 0;
+}
+
+@keyframes dice-tumble {
+  0% {
+    opacity: 1;
+    transform:
+      translate(calc((var(--dice-i) - 2.5) * 40px), 60px)
+      rotate(0deg)
+      scale(0.5);
+  }
+  30% {
+    opacity: 1;
+    transform:
+      translate(calc((var(--dice-i) - 2.5) * 60px), -30px)
+      rotate(calc(var(--dice-i) * 120deg))
+      scale(1.2);
+  }
+  70% {
+    opacity: 1;
+    transform:
+      translate(calc((var(--dice-i) - 2.5) * 30px), 10px)
+      rotate(calc(var(--dice-i) * 240deg))
+      scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform:
+      translate(calc((var(--dice-i) - 2.5) * 20px), 0)
+      rotate(calc(var(--dice-i) * 360deg))
+      scale(0.8);
+  }
+}
+
+/* Dice pick highlight - hue-cycling rainbow border */
+@property --dice-hue {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.dice-pick {
+  --dice-hue: 0deg;
+  animation: dice-hue-cycle 4s linear infinite;
+  padding: var(--space-xs) var(--space-sm);
+  margin: var(--space-xs) 0;
+  background: hsl(var(--dice-hue) 80% 50% / 0.06);
+  box-shadow:
+    inset 0 0 0 2px hsl(var(--dice-hue) 75% 55%),
+    0 0 10px 1px hsl(var(--dice-hue) 75% 55% / 0.25);
+}
+
+@keyframes dice-hue-cycle {
+  from { --dice-hue: 0deg; }
+  to { --dice-hue: 360deg; }
+}

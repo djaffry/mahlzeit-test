@@ -1,0 +1,54 @@
+/* ── Shortcuts Table ──────────────────────────────────── */
+
+.shortcuts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.shortcuts-table tr {
+  transition: background var(--duration-fast) ease;
+  border-radius: 6px;
+}
+
+.shortcuts-table tr:hover {
+  background: var(--bg-subtle);
+}
+
+.shortcuts-table td {
+  padding: var(--space-sm) var(--space-sm);
+}
+
+.shortcuts-keys {
+  white-space: nowrap;
+  width: 1%;
+  padding-right: var(--space-lg) !important;
+}
+
+.shortcuts-keys kbd {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  padding: 3px 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.shortcuts-desc {
+  color: var(--fg-secondary);
+}
+
+.shortcuts-section th {
+  padding: var(--space-md) var(--space-sm) var(--space-xs);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-muted);
+}
+
+.shortcuts-section:first-child th {
+  padding-top: var(--space-xs);
+}
