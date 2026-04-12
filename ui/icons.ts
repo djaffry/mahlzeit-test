@@ -47,6 +47,7 @@ import {
   Copy,
   Heart,
   Disc3,
+  TreePine,
 } from "lucide"
 import type { IconNode } from "lucide"
 
@@ -106,6 +107,7 @@ export const icons = {
   hamburger: svg(Hamburger, 16),
   bean: svg(Bean, 16),
   crown: svg(Crown, 16),
+  "tree-pine": svg(TreePine, 16),
   heart: svg(Heart, 16),
   checkSmall: svg(Check, 12, 2.5),
   rotateCcw: svg(RotateCcw),
