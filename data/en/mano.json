@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-12T15:00:29.798Z",
+  "fetchedAt": "2026-04-13T10:56:03.121Z",
   "error": null,
   "days": {
     "Montag": {
@@ -64,7 +64,7 @@
               "description": null
             },
             {
-              "title": "Wild garlic gnocchi with mozzarella, basmati rice, salad from the buffet",
+              "title": "Wild garlic gnocchi with mozzarella, salad from the buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
