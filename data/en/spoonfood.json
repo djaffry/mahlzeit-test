@@ -14,10 +14,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-12T15:00:29.635Z",
+  "fetchedAt": "2026-04-13T10:09:23.828Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "One pot meal",
@@ -47,14 +47,13 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Sweet potato 🍠 kalamansi 🍊 soup",
+              "title": "SpoonFood's Beef Tea (clear beef broth 💪)",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Tarhonya & chives 🌿"
             }
           ]
         },
@@ -62,22 +61,23 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Beef moussaka",
+              "title": "Stuffed peppers 🫑",
               "price": "7,90 / 10,90",
               "tags": [
-                "Rindfleisch"
+                "Glutenfrei",
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Potatoes 🥔, aubergine 🍆 & carrots 🥕"
+              "description": "Minced beef, tomato sauce 🍅 & rice - optional: add sour cream"
             },
             {
-              "title": "Warm curd pancake casserole",
+              "title": "Curry 💛 rice",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Vanilla sauce 💛"
+              "description": "Sweet & Sticky Tofu, broccoli 🥦 & small side salad 🥗"
             }
           ]
         },
@@ -85,21 +85,23 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Split pea stew",
+              "title": "Beef goulash from the Höllerschmid ox",
               "price": "6,90 / 9,90",
-              "tags": [],
+              "tags": [
+                "Rindfleisch"
+              ],
               "allergens": null,
-              "description": "Potatoes 🥔, beans 🫛, peas 💚, carrots 🥕, smoked meat, frankfurters & rice"
+              "description": "croissant"
             },
             {
-              "title": "Ratatouille",
+              "title": "Sweet potato 🍠 chickpea tagine",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Tomatoes 🍅, zucchini 🥒, olives 🫒, peppers 🫑, aubergine 🍆 & rice"
+              "description": "dried fruits 🍑, Romanesco 🥦 & rice"
             }
           ]
         },
@@ -107,22 +109,23 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Italian Salad Bowl",
+              "title": "Colorful Farfalle Salad Bowl alla Genovese 🌿",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "yellow 💛 & red tomatoes 🍅, cucumbers 🥒, mozzarella balls & fresh basil 🌿"
+              "description": "Cucumbers 🥒, mozzarella balls, radishes 🫜, kalamata olives 🫒 & dried tomatoes 🍅"
             },
             {
-              "title": "Bulgur tabbouleh",
+              "title": "Mediterranean Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Cucumbers 🥒, carrots 🥕, tomatoes 🍅, nuts 🥜, mint, parsley 🌿, fried smoked tofu & pomegranate 🍎 citrus 🍋 dressing"
+              "description": "black rice, bell pepper tricolore 💛🧡💚, carrots 🥕, kalamata olives 🫒 & basil 🌿 honey 🍯 vinaigrette"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
@@ -139,10 +142,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vegan apple 🍎 cinnamon 🤎 cake",
+              "title": "Passion fruit 🍊 cheesecake in a cup",
               "price": "3,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null

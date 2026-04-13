@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-13T06:07:55.191Z",
+  "fetchedAt": "2026-04-13T10:09:24.153Z",
   "error": null,
   "days": {
     "Montag": {
@@ -196,7 +196,7 @@
           "name": "Bowl topping",
           "items": [
             {
-              "title": "Panko - chicken strips • Fried herb mushrooms",
+              "title": "Panko - chicken strips • King oyster mushrooms",
               "price": null,
               "tags": [
                 "Huhn"
@@ -210,10 +210,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "White chocolate - pistachio mousse",
+              "title": "White chocolate - pistachio mousse peach - yogurt cream • coconut",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -222,12 +222,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan Sacherschnitte",
+              "title": "Vegan Sacherschnitte punch cuts vegan",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,F,G,O",
               "description": null
             }
           ]

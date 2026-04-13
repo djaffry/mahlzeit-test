@@ -14,10 +14,10 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-12T15:00:29.635Z",
+  "fetchedAt": "2026-04-13T10:09:23.828Z",
   "error": null,
   "days": {
-    "Freitag": {
+    "Montag": {
       "categories": [
         {
           "name": "Eintopf-Menü",
@@ -47,14 +47,13 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Süßkartoffel 🍠-Kalamansi 🍊-Suppe",
+              "title": "SpoonFood's Beef-Tea (klare Rinder-Kraftbrühe 💪)",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Tarhonya & Schnittlauch 🌿"
             }
           ]
         },
@@ -62,22 +61,23 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Moussaka vom Rind",
+              "title": "Gefüllte Paprika 🫑",
               "price": "7,90 / 10,90",
               "tags": [
-                "Rindfleisch"
+                "Glutenfrei",
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Erdäpfeln 🥔, Melanzani 🍆 & Karotten 🥕"
+              "description": "Rinderfaschiertem, Tomatensauce 🍅 & Reis - optional: Sauerrahm dazu"
             },
             {
-              "title": "Warmer Topfen-Palatschinken-Auflauf",
+              "title": "Curry 💛-Reis",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Vanillesauce 💛"
+              "description": "Sweet & Sticky Tofu, Brokkoli 🥦 & kleinem Beilagensalat 🥗"
             }
           ]
         },
@@ -85,21 +85,23 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Spalterbsen-Eintopf",
+              "title": "Rindsgulasch vom Höllerschmid-Ochsen",
               "price": "6,90 / 9,90",
-              "tags": [],
+              "tags": [
+                "Rindfleisch"
+              ],
               "allergens": null,
-              "description": "Erdäpfeln 🥔, Fisolen 🫛, Erbsen 💚, Karotten 🥕, Selchfleisch, Frankfurtern & Reis"
+              "description": "Hörnchen"
             },
             {
-              "title": "Ratatouille",
+              "title": "Süßkartoffel 🍠-Kichererbsen-Tajine",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Tomaten 🍅, Zucchini 🥒, Oliven 🫒, Paprika 🫑, Melanzani 🍆 & Reis"
+              "description": "getrockneten Früchten 🍑, Romanesco 🥦 & Reis"
             }
           ]
         },
@@ -107,22 +109,23 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Italienische Salad Bowl",
+              "title": "Bunte Farfalle Salad Bowl alla Genovese 🌿",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "gelben 💛 & roten Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & frischem Basilikum 🌿"
+              "description": "Gurken 🥒, Mozzarellabällchen, Radieschen 🫜, Kalamata-Oliven 🫒 & getrockneten Tomaten 🍅"
             },
             {
-              "title": "Bulgur-Tabouleh",
+              "title": "Mediterrane Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, Karotten 🥕, Tomaten 🍅, Nüssen 🥜, Minze, Petersilie 🌿, gebratenem Räucher-Tofu & Granatapfel 🍎-Zitrus 🍋-Dressing"
+              "description": "schwarzem Reis, Paprika Tricolore 💛🧡💚, Karotten 🥕, Kalamata-Oliven 🫒 & Basilikum 🌿-Honig 🍯-Vinaigrette"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -139,10 +142,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Veganer Apfel 🍎-Zimt 🤎-Kuchen",
+              "title": "Maracuja 🍊-Cheesecake im Becher",
               "price": "3,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null

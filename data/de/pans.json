@@ -12,7 +12,40 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-12T15:00:29.446Z",
+  "fetchedAt": "2026-04-13T10:09:27.157Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Karotten-Kokosmilch Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H",
+              "description": null
+            },
+            {
+              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat (A, c,o,M,c)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Eiernockerl mit Salat (0,M‚A.c,6)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-13T06:07:55.191Z",
+  "fetchedAt": "2026-04-13T10:09:24.153Z",
   "error": null,
   "days": {
     "Montag": {
@@ -196,7 +196,7 @@
           "name": "Bowl Topping",
           "items": [
             {
-              "title": "Panko - Hühnerstreifen •\nGebratene Kräuterseitlinge",
+              "title": "Panko - Hühnerstreifen •\nKräuterseitlinge",
               "price": null,
               "tags": [
                 "Huhn"
@@ -210,10 +210,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Weißes Schokolade - Pistazien Mousse",
+              "title": "Weißes Schokolade - Pistazien Mousse\nPfirsich - Joghurtcreme • Kokos",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -222,12 +222,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Vegane Sacherschnitte",
+              "title": "Vegane Sacherschnitte\nPunschschnitte vegan",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,F,G,O",
               "description": null
             }
           ]
