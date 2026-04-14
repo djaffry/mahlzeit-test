@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-13T10:09:24.153Z",
+  "fetchedAt": "2026-04-14T10:40:57.642Z",
   "error": null,
   "days": {
     "Montag": {
@@ -270,7 +270,7 @@
           "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Broccolicremesuppe •\ngeröstete Cashewkerne",
+              "title": "Romanesco Cremesuppe •\ngeröstete Cashewkerne",
               "price": null,
               "tags": [
                 "Vegan"
@@ -444,12 +444,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Panna Cotta •\nMangospiegel",
+              "title": "Vegane Panna Cotta •\nMangospiegel\nWeißes Schokolade - Pistazien Mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "C,F,G,H",
               "description": null
             }
           ]
@@ -458,10 +458,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Orientalischer \nOrangen - Grießkuchen",
+              "title": "Orientalischer \nOrangen - Grießkuchen\nVegane Sacherschnitte",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G,H",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]

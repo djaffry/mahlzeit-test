@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-13T10:09:27.157Z",
+  "fetchedAt": "2026-04-14T10:41:00.062Z",
   "error": null,
   "days": {
     "Montag": {
@@ -39,6 +39,36 @@
             {
               "title": "Egg dumplings with salad (0,M‚A.c,6)",
               "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Styrian cream soup (L,H,A,G,O)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Minced roast with mashed potatoes and fried onions",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,L,H,G",
+              "description": null
+            },
+            {
+              "title": "Green asparagus risotto with parmesan and salad (o,M‚A.L,H,G)",
+              "price": "11,90 €",
               "tags": [],
               "allergens": null,
               "description": null

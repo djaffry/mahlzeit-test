@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-13T10:09:27.157Z",
+  "fetchedAt": "2026-04-14T10:41:00.062Z",
   "error": null,
   "days": {
     "Montag": {
@@ -39,6 +39,36 @@
             {
               "title": "Eiernockerl mit Salat (0,M‚A.c,6)",
               "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Dienstag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Steirische Rahmsuppe (L,H,A,G,‚O)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Faschierter Braten mit Erdäpfelpüree und Röstzwiebeln",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,L,H,G",
+              "description": null
+            },
+            {
+              "title": "Grüner Spargel-Risotto mit Parmesan und Salat (o,M‚A.L,H,G)",
+              "price": "11,90 €",
               "tags": [],
               "allergens": null,
               "description": null
