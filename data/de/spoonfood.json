@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-14T10:40:57.402Z",
+  "fetchedAt": "2026-04-15T10:39:13.821Z",
   "error": null,
   "days": {
     "Montag": {
@@ -240,6 +240,146 @@
               ],
               "allergens": null,
               "description": "Karotten 🥕 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bunte Farfalle Salad Bowl alla Genovese 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Mozzarellabällchen, Radieschen 🫜, Kalamata-Oliven 🫒 & getrockneten Tomaten 🍅"
+            },
+            {
+              "title": "Mediterrane Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "schwarzem Reis, Paprika Tricolore 💛🧡💚, Karotten 🥕, Kalamata-Oliven 🫒 & Basilikum 🌿-Honig 🍯-Vinaigrette"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Maracuja 🍊-Cheesecake im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Orientalische Kichererbsen-Süßkartoffel 🍠-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el-Hanout 🤎 – optional mit Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Orientalische Hühner-Reis-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "getrockneten Marillen 🍑, Karotten 🥕, karamellisierten Zwiebeln & Minz 🌿-Joghurt - optional mit gepickelten roten Zwiebeln"
+            },
+            {
+              "title": "Spinat 💚-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Zitronen 🍋-Ricotta-Béchamel & kleinem Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Mediterraner Riesenbohnen 🫘-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Chorizo, Fenchel 🌿, Babykarotten 🥕 & Reis"
+            },
+            {
+              "title": "Grünes 💚 Thai Gemüse-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Tofu, Erbsen 🫛, Romanesco 🥦, Pak Choi 🥬, frischer Limette 🍋‍🟩, Zitronengras 🌿 & Reis"
             }
           ]
         },

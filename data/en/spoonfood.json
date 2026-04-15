@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-14T10:40:57.402Z",
+  "fetchedAt": "2026-04-15T10:39:13.821Z",
   "error": null,
   "days": {
     "Montag": {
@@ -240,6 +240,146 @@
               ],
               "allergens": null,
               "description": "Carrots 🥕 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Colorful Farfalle Salad Bowl alla Genovese 🌿",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, mozzarella balls, radishes 🫜, kalamata olives 🫒 & dried tomatoes 🍅"
+            },
+            {
+              "title": "Mediterranean Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "black rice, bell pepper tricolore 💛🧡💚, carrots 🥕, kalamata olives 🫒 & basil 🌿 honey 🍯 vinaigrette"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Passion fruit 🍊 cheesecake in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Mittwoch": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Oriental chickpea and sweet potato 🍠 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el-Hanout 🤎 – optionally with chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Oriental chicken and rice stir-fry",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "dried apricots 🍑, carrots 🥕, caramelized onions & mint 🌿 yogurt - optionally with pickled red onions"
+            },
+            {
+              "title": "Spinach 💚 lasagna",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Lemon 🍋 ricotta béchamel & small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Mediterranean giant beans 🫘 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, chorizo, fennel 🌿, baby carrots 🥕 & rice"
+            },
+            {
+              "title": "Green 💚 Thai vegetable curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥, tofu, peas 🫛, Romanesco 🥦, bok choy 🥬, fresh lime 🍋‍🟩, lemongrass 🌿 & rice"
             }
           ]
         },

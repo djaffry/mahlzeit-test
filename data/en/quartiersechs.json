@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-14T10:40:57.642Z",
+  "fetchedAt": "2026-04-15T10:39:13.846Z",
   "error": null,
   "days": {
     "Montag": {
@@ -680,9 +680,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Wild blueberry mousse • Blossom honey",
+              "title": "Wild blueberry mousse • Blossom honey Vegan panna cotta • Mango mirror",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "G,O",
               "description": null
             }
@@ -692,10 +694,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apple crumble cake",
+              "title": "Apple crumble cake Oriental orange semolina cake",
               "price": null,
               "tags": [],
-              "allergens": "A,C,H",
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
