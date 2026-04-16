@@ -206,6 +206,15 @@ function setupFilterTrigger(): void {
   }
 }
 
+function showAcceptConsent(): void {
+  showConsentOverlay({ onAccept: acceptVoting })
+}
+
+function openVotingRoomsOrConsent(): void {
+  if (isVotingActive()) openVotingRoomsPanel()
+  else showAcceptConsent()
+}
+
 function setupVotingUI(): void {
   setOnVoteChange((changedDate) => {
     const hadPending = hasPending()
@@ -218,11 +227,7 @@ function setupVotingUI(): void {
       onVoteReceived(isForToday, hadPending)
     }
   })
-  const showAcceptOnlyConsent = () => showConsentOverlay({ onAccept: async () => { await acceptVoting() } })
-  document.getElementById("avatar-badge")?.addEventListener("click", () => {
-    if (isVotingActive()) openVotingRoomsPanel()
-    else showAcceptOnlyConsent()
-  })
+  document.getElementById("avatar-badge")?.addEventListener("click", openVotingRoomsOrConsent)
   document.addEventListener(LANG_CHANGE_EVENT, showAvatarBadge)
   initVoting(() => _restaurants).then(() => {
     showAvatarBadge()
@@ -231,7 +236,7 @@ function setupVotingUI(): void {
       openVotingRoomsPanel({ banner: joinResult })
     } else if (!isVotingActive() && (joinResult || !isConsentSeen())) {
       markConsentSeen()
-      showAcceptOnlyConsent()
+      showAcceptConsent()
     }
   }).catch((err) => {
     console.warn("[voting] init failed:", err)
@@ -315,7 +320,7 @@ export async function initApp(): Promise<void> {
         onMap: toggleMapPanel,
         onDice: diceRoll,
         isDiceAvailable,
-        onVotingRooms: openVotingRoomsPanel,
+        onVotingRooms: openVotingRoomsOrConsent,
         onTheme: cycleTheme,
         onFeedback: () => window.open("https://github.com/djaffry/mahlzeit-test/issues/new/choose", "_blank"),
         onShortcuts: showShortcutsModal,
@@ -357,7 +362,7 @@ export async function initApp(): Promise<void> {
       expandDay,
       collapseAllExceptToday,
       openFilterSelector,
-      openVotingRoomsPanel,
+      openVotingRoomsPanel: openVotingRoomsOrConsent,
       cycleTheme,
       showShortcutsModal,
       switchLanguage,
