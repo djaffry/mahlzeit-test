@@ -98,5 +98,8 @@
   "voting.leaveRoom": "Raum verlassen",
   "voting.leaveConfirm": "\"{{room}}\" verlassen?",
   "voting.joinedRoom": "Du bist \"{{room}}\" beigetreten",
-  "voting.alreadyInRoom": "Bereits in \"{{room}}\""
+  "voting.alreadyInRoom": "Bereits in \"{{room}}\"",
+  "favorites.pin": "Anpinnen",
+  "favorites.unpin": "Loslösen",
+  "favorites.others": "Weitere"
 }

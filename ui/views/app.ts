@@ -54,6 +54,7 @@ import {
 } from "../components/filter-bar/filter-bar"
 import { setupSearch, openSearch, updateSearchRestaurants, closeSearch } from "../components/search/search"
 import { cycleTheme } from "../components/theme-toggle/theme-toggle"
+import { loadFavorites } from "../components/favorites/favorites"
 import {
   renderLoadingState,
   renderErrorState,
@@ -282,6 +283,7 @@ export async function initApp(): Promise<void> {
 
     _restaurants = allRestaurants
     initContentHash(allRestaurants)
+    loadFavorites()
 
     const menuRestaurants = getMenuRestaurants()
     const weekDates = getDataWeekDates(menuRestaurants)

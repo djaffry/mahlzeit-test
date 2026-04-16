@@ -1,0 +1,61 @@
+/* ── Pin Button ─────────────────────────────────────────── */
+
+.pin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--fg-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
+}
+
+.pin-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--fg);
+}
+
+@media (min-width: 720px) {
+  .pin-btn:hover {
+    background: var(--bg);
+  }
+}
+
+.pin-btn.pinned {
+  color: var(--tag-yellow);
+}
+
+.pin-btn.pinned svg {
+  fill: currentColor;
+}
+
+.pin-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Pinned Divider ─────────────────────────────────────── */
+
+.pinned-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) 0 0;
+  color: var(--fg-muted);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  column-span: all;
+}
+
+.pinned-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}

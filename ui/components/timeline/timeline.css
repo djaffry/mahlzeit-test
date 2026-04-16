@@ -1,9 +1,23 @@
 /* ── Timeline ───────────────────────────────────────────── */
 
 .timeline {
-  max-width: 960px;
+  max-width: 720px;
   margin: 0 auto;
   padding: var(--space-md);
+}
+
+@media (min-width: 1441px) {
+  .timeline,
+  .main-content .timeline {
+    max-width: 1060px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .timeline,
+  .main-content .timeline {
+    max-width: 1500px;
+  }
 }
 
 .day-section {
@@ -152,6 +166,10 @@
   transition: height var(--duration-slow) var(--ease-out);
 }
 
+.day-section.expanded .day-content {
+  padding-top: var(--space-sm);
+}
+
 .day-section:not(.expanded) .day-content {
   height: 0;
 }
@@ -163,14 +181,25 @@
   }
 }
 
-/* Desktop: two-column layout within expanded day */
-@media (min-width: 1025px) {
+/* Two-column layout from tablet up */
+@media (min-width: 720px) {
+  .timeline {
+    max-width: 960px;
+  }
+
   .day-restaurants {
     columns: 2;
-    column-gap: var(--space-xl);
+    column-gap: var(--space-sm);
   }
 
   .restaurant-section {
     break-inside: avoid;
   }
 }
+
+@media (min-width: 1921px) {
+  .day-restaurants {
+    columns: 3;
+  }
+}
+

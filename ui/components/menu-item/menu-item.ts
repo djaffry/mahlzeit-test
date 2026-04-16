@@ -29,7 +29,8 @@ export function renderItem(item: MenuItem, catIdx?: number, itemIdx?: number): s
     <div class="menu-item" data-tags="${escapeHtml(dataTags)}"${catIdx != null ? ` data-cat-idx="${catIdx}"` : ""}${itemIdx != null ? ` data-item-idx="${itemIdx}"` : ""}>
       <span class="menu-item-check">${icons.checkSmall}</span>
       <span class="menu-item-title">${escapeHtml(item.title)}</span>
-      ${price}${tags}
+      ${price ? `<span class="menu-item-end">${price}</span>` : ""}
+      ${tags}
       ${desc}
       ${allergens}
     </div>`

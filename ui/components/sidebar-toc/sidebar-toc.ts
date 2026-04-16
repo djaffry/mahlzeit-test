@@ -5,6 +5,7 @@ import { t } from "../../i18n/i18n"
 import { todayDayIndex, isAvailableOnDay, formatDayHeader } from "../../utils/date"
 import { getRestaurantIcon } from "../../icons"
 import { escapeHtml, smoothScrollTo } from "../../utils/dom"
+import { sortWithFavorites } from "../favorites/favorites"
 
 const _state = {
   expandDay: (() => {}) as (index: number) => void,
@@ -82,7 +83,7 @@ export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[]
   const children: HTMLElement[] = []
   let insertAfter: Element = dayLink
 
-  for (const r of restaurants) {
+  for (const r of sortWithFavorites(restaurants)) {
     const hasMenu = !!(r.days?.[dayName]?.categories?.length)
     const isLink = r.type === "link" && isAvailableOnDay(r, dayName)
     if (!hasMenu && !isLink) continue

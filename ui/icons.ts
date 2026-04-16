@@ -48,6 +48,7 @@ import {
   Heart,
   Disc3,
   TreePine,
+  Pin,
 } from "lucide"
 import type { IconNode } from "lucide"
 
@@ -118,6 +119,7 @@ export const icons = {
   logOut: svg(LogOut, 14),
   copy: svg(Copy, 14),
   disc3: svg(Disc3, 14),
+  pin: svg(Pin, 16),
 } as const
 
 export function getRestaurantIcon(name: string): string {

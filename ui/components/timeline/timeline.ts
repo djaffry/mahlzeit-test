@@ -7,6 +7,8 @@ import { icons, restaurantIconSpan } from "../../icons"
 import { todayDayIndex, formatDayHeader } from "../../utils/date"
 import { smoothScrollTo, escapeHtml } from "../../utils/dom"
 import { renderRestaurantSection, renderVoterDots } from "../restaurant-section/restaurant-section"
+import { sortWithFavorites, isFavorite, toggleFavorite } from "../favorites/favorites"
+import { haptic } from "../../utils/haptic"
 
 export interface TimelineOptions {
   restaurants: Restaurant[]
@@ -179,13 +181,28 @@ function renderDay(index: number): void {
     return
   }
   const filters = _state.getFilters()
-  const sections = day.restaurants
-    .map((r) => {
-      const menu = r.days?.[day.dayName]
-      const vote = dayVotes.get(r.id) ?? { count: 0, userVoted: false, voters: [] }
-      return renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: vote.count, userVoted: vote.userVoted, voters: vote.voters, dayIndex: index, filters })
-    })
-    .join("")
+  const sorted = sortWithFavorites(day.restaurants)
+  let pinnedCount = 0
+  let totalCount = 0
+  let lastPinnedIdx = -1
+
+  const sectionStrings = sorted.map((r, i) => {
+    const pinned = isFavorite(r.id)
+    const menu = r.days?.[day.dayName]
+    const vote = dayVotes.get(r.id) ?? { count: 0, userVoted: false, voters: [] }
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: vote.count, userVoted: vote.userVoted, voters: vote.voters, dayIndex: index, filters, isPinned: pinned })
+    if (html) {
+      totalCount++
+      if (pinned) { pinnedCount++; lastPinnedIdx = i }
+    }
+    return html
+  })
+
+  if (pinnedCount > 0 && pinnedCount < totalCount) {
+    sectionStrings.splice(lastPinnedIdx + 1, 0, `<div class="pinned-divider">${escapeHtml(t("favorites.others"))}</div>`)
+  }
+
+  const sections = sectionStrings.join("")
   contentEl.innerHTML = `<div class="day-restaurants">${sections}</div>`
   _state.onDayRender?.()
 }
@@ -217,6 +234,17 @@ function setupListeners(): void {
       const dayIndex = daySection ? Number(daySection.dataset.dayIndex) : -1
       if (restaurantId && _state.onVote && dayIndex >= 0) {
         _state.onVote(restaurantId, dayIndex)
+      }
+      return
+    }
+
+    const pinBtn = target.closest(".pin-btn") as HTMLElement | null
+    if (pinBtn) {
+      const restaurantId = pinBtn.dataset.pinId
+      if (restaurantId) {
+        haptic()
+        toggleFavorite(restaurantId)
+        rerenderExpandedDays()
       }
       return
     }

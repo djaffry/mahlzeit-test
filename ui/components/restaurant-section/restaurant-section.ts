@@ -1,4 +1,5 @@
 import "./restaurant-section.css"
+import "../favorites/favorites.css"
 import type { Restaurant, DayMenu, Voter } from "../../types"
 import { BADGES, DAYS } from "../../constants"
 import { icons, restaurantIconSpan } from "../../icons"
@@ -68,10 +69,11 @@ export interface RenderSectionOptions {
   voters?: Voter[]
   dayIndex?: number
   filters?: Set<string> | null
+  isPinned?: boolean
 }
 
 export function renderRestaurantSection(opts: RenderSectionOptions): string {
-  const { restaurant, dayMenu, voteCount, userVoted, voters = [], dayIndex, filters = null } = opts
+  const { restaurant, dayMenu, voteCount, userVoted, voters = [], dayIndex, filters = null, isPinned = false } = opts
   const sectionId = dayIndex != null ? `r-${dayIndex}-${escapeHtml(restaurant.id)}` : `r-${escapeHtml(restaurant.id)}`
   const iconSvg = restaurantIconSpan(restaurant.icon)
   const dayName = dayIndex != null ? DAYS[dayIndex] : undefined
@@ -92,6 +94,11 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
   const mapBtn = restaurant.coordinates
     ? `<button class="icon-btn map-fly-btn" data-fly-id="${escapeHtml(restaurant.id)}" aria-label="${escapeHtml(t("map.showOnMap"))}" title="${escapeHtml(t("map.showOnMap"))}">${icons.mapPin}</button>`
     : ""
+  const pinClass = isPinned ? "pin-btn pinned" : "pin-btn"
+  const pinAriaLabel = isPinned
+    ? `${escapeHtml(t("favorites.unpin"))} ${escapeHtml(restaurant.title)}`
+    : `${escapeHtml(t("favorites.pin"))} ${escapeHtml(restaurant.title)}`
+  const pinBtn = `<button class="${pinClass}" data-pin-id="${escapeHtml(restaurant.id)}" aria-label="${pinAriaLabel}">${icons.pin}</button>`
   const voteAriaLabel = hasVotes
     ? `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}, ${voteCount} ${voteCount === 1 ? "vote" : "votes"}`
     : `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}`
@@ -121,6 +128,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         </div>
         <div class="restaurant-actions">
           ${mapBtn}
+          ${pinBtn}
           ${voteBtn}
         </div>
       </div>
@@ -152,6 +160,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         </div>
         <div class="restaurant-actions">
           ${mapBtn}
+          ${pinBtn}
           ${voteBtn}
         </div>
       </div>

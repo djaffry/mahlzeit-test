@@ -2,8 +2,9 @@ import { describe, it, expect, vi } from "vitest"
 import type { Restaurant, DayMenu, Voter } from "../../types"
 
 vi.mock("./restaurant-section.css", () => ({}))
+vi.mock("../favorites/favorites.css", () => ({}))
 vi.mock("../../icons", () => ({
-  icons: { externalLink: "<svg>ext</svg>", mapPin: "<svg>pin</svg>", heart: "<svg>heart</svg>" },
+  icons: { externalLink: "<svg>ext</svg>", mapPin: "<svg>pin</svg>", heart: "<svg>heart</svg>", pin: "<svg>thumbtack</svg>" },
   restaurantIconSpan: (icon?: string) => `<span class="restaurant-icon">${icon ?? "utensils"}</span>`,
 }))
 vi.mock("../../i18n/i18n", () => ({ t: (k: string) => k }))
@@ -74,5 +75,26 @@ describe("renderRestaurantSection", () => {
     ])
     const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, voters: [], dayIndex: 0, filters: new Set(["vegan"]) })
     expect(html).toBe("")
+  })
+
+  it("renders pin button when isPinned is false", () => {
+    const r = makeRestaurant()
+    const menu = makeMenu([{ title: "Dish", tags: [] }])
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: false })
+    expect(html).toContain('class="pin-btn"')
+    expect(html).not.toContain('pin-btn pinned')
+  })
+
+  it("renders pin button with pinned class when isPinned is true", () => {
+    const r = makeRestaurant()
+    const menu = makeMenu([{ title: "Dish", tags: [] }])
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: true })
+    expect(html).toContain('pin-btn pinned')
+  })
+
+  it("renders pin button on link cards too", () => {
+    const r = makeRestaurant({ type: "link" })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: false })
+    expect(html).toContain('pin-btn')
   })
 })

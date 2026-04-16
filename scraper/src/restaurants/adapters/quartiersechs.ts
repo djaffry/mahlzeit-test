@@ -178,14 +178,15 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
   const results: { category: string; item: MenuItem }[] = [];
 
   for (const setMenu of toArray(menuLine.SetMenu)) {
-    const title = (setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '').trim();
-    if (!title || /station heute geschlossen/i.test(title)) continue;
+    const rawTitle = (setMenu.SetMenuDetails?.GastDesc?.['@attributes']?.value ?? '').trim();
+    if (!rawTitle || /station heute geschlossen/i.test(rawTitle)) continue;
+    const title = rawTitle.replace(/\s*•\s*/g, ', ').replace(/\s*\n\s*/g, ' ').replace(/,\s*,/g, ',').replace(/\s{2,}/g, ' ').replace(/^,\s*|,\s*$/g, '').trim();
 
     const displayName = setMenu['@attributes']?.DisplayName ?? '';
     const category = normalizeCategoryName(displayName) || fallbackCategory;
 
-    if (/asia corner/i.test(category) && title.includes('•\n')) {
-      const split = splitAsiaCornerWarmDishes(title, extractProductPrice(setMenu), extractAllergens(setMenu));
+    if (/asia corner/i.test(category) && rawTitle.includes('•\n')) {
+      const split = splitAsiaCornerWarmDishes(rawTitle, extractProductPrice(setMenu), extractAllergens(setMenu));
       if (split.length > 0) {
         for (const item of split) results.push({ category, item });
         continue;

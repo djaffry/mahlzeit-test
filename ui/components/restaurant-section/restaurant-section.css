@@ -1,4 +1,4 @@
-/* ── Restaurant Section (Document Style) ────────────────── */
+/* ── Restaurant Section ──────────────────────────────────── */
 
 .restaurant-section {
   padding: var(--space-lg) 0 var(--space-md);
@@ -7,6 +7,17 @@
 
 .restaurant-section:first-child {
   border-top: none;
+}
+
+/* Card style on tablet+ (when columns are active) */
+@media (min-width: 720px) {
+  .restaurant-section {
+    padding: var(--space-md);
+    margin-bottom: var(--space-sm);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+  }
 }
 
 .restaurant-header-row {
@@ -47,12 +58,20 @@
   border-radius: 8px;
   color: var(--fg-secondary);
   text-decoration: none;
-  transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
+  transition:
+    background var(--duration-fast) ease,
+    color var(--duration-fast) ease;
 }
 
 .restaurant-website-link:hover {
   background: var(--bg-subtle);
   color: var(--fg);
+}
+
+@media (min-width: 720px) {
+  .restaurant-website-link:hover {
+    background: var(--bg);
+  }
 }
 
 .restaurant-website-link svg {
@@ -116,12 +135,21 @@
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background var(--duration-fast) ease, color var(--duration-fast) ease, transform var(--duration-normal) var(--ease-out);
+  transition:
+    background var(--duration-fast) ease,
+    color var(--duration-fast) ease,
+    transform var(--duration-normal) var(--ease-out);
 }
 
 .vote-btn:hover {
   background: var(--bg-subtle);
   color: var(--fg);
+}
+
+@media (min-width: 720px) {
+  .vote-btn:hover {
+    background: var(--bg);
+  }
 }
 
 /* When others have voted - grouped pill */
@@ -171,7 +199,7 @@
 }
 
 .vote-btn.vote-saving::after {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   border: 1.5px solid var(--fg-muted);
@@ -182,11 +210,13 @@
 }
 
 @keyframes vote-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .vote-btn.vote-saved::after {
-  content: '✓';
+  content: "✓";
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -197,6 +227,7 @@
 /* Category */
 .menu-category {
   margin-bottom: var(--space-md);
+  break-inside: avoid;
 }
 
 .category-name {
@@ -213,7 +244,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
   padding: 3px 0;
   padding-left: calc(var(--space-sm) - 2px);
   border-left: 2px solid transparent;
@@ -221,17 +251,33 @@
   cursor: pointer;
   border-radius: 4px;
   transition: background var(--duration-fast) ease;
+  break-inside: avoid;
 }
 
 .menu-item:hover {
   background: var(--bg-subtle);
 }
 
+@media (min-width: 720px) {
+  .menu-item:hover {
+    background: var(--bg);
+  }
+}
+
 .menu-item-title {
   font-size: var(--text-base);
   color: var(--fg);
   flex: 1;
-  min-width: 0;
+  min-width: 40%;
+}
+
+.menu-item-end {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+  margin-left: auto;
+  padding-left: var(--space-sm);
+  flex-shrink: 0;
 }
 
 .menu-item-price {
@@ -242,20 +288,22 @@
 }
 
 .menu-item-tags {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   gap: 3px;
-  margin-left: var(--space-xs);
+  width: 100%;
 }
 
 .tag-pill {
   display: inline-block;
-  padding: 1px 6px;
-  font-size: var(--text-xs);
+  padding: 0 4px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
   color: var(--tag-color, var(--fg-muted));
   border: 1px solid var(--tag-color, var(--border));
   border-radius: 99px;
   white-space: nowrap;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .menu-item-description {
@@ -336,7 +384,12 @@
 
 .restaurant-section.share-all {
   background: color-mix(in srgb, var(--accent) 6%, transparent);
-  border-radius: 6px;
+}
+
+@media (min-width: 720px) {
+  .restaurant-section.share-all {
+    background: color-mix(in srgb, var(--accent) 6%, var(--bg-subtle));
+  }
 }
 
 /* Random pick highlight */
@@ -347,6 +400,13 @@
 @keyframes pulse-highlight {
   0% { background: color-mix(in srgb, var(--accent) 10%, transparent); }
   100% { background: transparent; }
+}
+
+@media (min-width: 720px) {
+  @keyframes pulse-highlight {
+    0% { background: color-mix(in srgb, var(--accent) 10%, var(--bg-subtle)); }
+    100% { background: var(--bg-subtle); }
+  }
 }
 
 /* ── Voter dots (used by restaurant sections and timeline) ── */
