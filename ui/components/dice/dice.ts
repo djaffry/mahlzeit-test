@@ -9,7 +9,10 @@ import { haptic } from "../../utils/haptic"
 const DICE_EMOJI = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"]
 const ANIMATION_MS = 1500
 const ROLL_COOLDOWN_MS = 2000
-const SHAKE_THRESHOLD = 25
+const SHAKE_THRESHOLD = 45
+const SHAKE_COUNT_NEEDED = 3
+const SHAKE_COUNT_WINDOW_MS = 800
+const SHAKE_COUNT_GAP_MS = 200
 const SHAKE_COOLDOWN_MS = 1500
 
 const EXCLUDE_CAT_RE = /dessert|kuchen|cake|nachspeise|obst|fruit|süß|sweet|suppe|soup|beilage|side/i
@@ -27,6 +30,9 @@ const _state = {
   overlayEl: null as HTMLElement | null,
   rolling: false,
   lastShakeMs: 0,
+  shakeCount: 0,
+  firstShakeMs: 0,
+  lastCountedShakeMs: 0,
 }
 
 /* ── Setup ──────────────────────────────────────────────── */
@@ -77,13 +83,26 @@ function setupShakeDetection(): void {
 
 function listenShake(): void {
   window.addEventListener("devicemotion", (e) => {
+    if (_state.rolling) return
     const acc = e.accelerationIncludingGravity
     if (!acc) return
     const total = Math.abs(acc.x ?? 0) + Math.abs(acc.y ?? 0) + Math.abs(acc.z ?? 0)
     if (total > SHAKE_THRESHOLD) {
       const now = Date.now()
-      if (now - _state.lastShakeMs > SHAKE_COOLDOWN_MS) {
+      if (now - _state.lastShakeMs < SHAKE_COOLDOWN_MS) return
+
+      if (now - _state.firstShakeMs > SHAKE_COUNT_WINDOW_MS) {
+        _state.shakeCount = 0
+        _state.firstShakeMs = now
+        _state.lastCountedShakeMs = 0
+      }
+      if (now - _state.lastCountedShakeMs < SHAKE_COUNT_GAP_MS) return
+      _state.lastCountedShakeMs = now
+      _state.shakeCount++
+
+      if (_state.shakeCount >= SHAKE_COUNT_NEEDED) {
         _state.lastShakeMs = now
+        _state.shakeCount = 0
         roll()
       }
     }
