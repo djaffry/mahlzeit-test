@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-15T10:39:13.821Z",
+  "fetchedAt": "2026-04-16T10:41:24.697Z",
   "error": null,
   "days": {
     "Montag": {
@@ -427,6 +427,145 @@
               ],
               "allergens": null,
               "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Celery apple 🍏 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "BBQ chicken on baked baby potatoes 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Coleslaw 🌿"
+            },
+            {
+              "title": "Asian gochujang udon noodles",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wok vegetables 🥒🥕🥦 & braised red onions"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Indian curry from Waldviertler free-range turkey - in tomato 🍅 cashew butter sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Romanesco 🥦, carrots 🥕 & rice"
+            },
+            {
+              "title": "Chana masala chickpea coconut 🥥 curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peppers 🫑, potatoes 🥔 & rice - optionally with mango 🥭 chutney"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Colorful, veggie Caesar's salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "red chicory, lettuce hearts 💚, Chinese cabbage 🥬, radishes 🫜, Choggia beets, parmesan & mayo-yoghurt dressing"
+            },
+            {
+              "title": "Couscous carrot 🥕 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Runner beans 🫘, radishes 🫜, fresh parsley 🌿 & orange 🍊 vinaigrette"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pistachios 💚"
             }
           ]
         }

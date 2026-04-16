@@ -15,7 +15,7 @@
     "lat": 48.2169,
     "lon": 16.3881
   },
-  "fetchedAt": "2026-04-12T15:00:30.107Z",
+  "fetchedAt": "2026-04-16T10:41:23.965Z",
   "error": null,
   "days": {
     "Montag": {
@@ -40,47 +40,45 @@
               "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
             },
             {
-              "title": "Gr. Chicken leg ramen",
+              "title": "Chicken vegetable ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
             },
             {
-              "title": "Gr. Veggie udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
-            },
-            {
-              "title": "Glass noodles with fish",
+              "title": "Glass noodle stew",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
             },
             {
               "title": "Sushi plate",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Rice bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
             }
           ]
         }
@@ -108,47 +106,45 @@
               "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
             },
             {
-              "title": "Gr. Chicken leg ramen",
+              "title": "Chicken vegetable ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
             },
             {
-              "title": "Gr. Veggie udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
-            },
-            {
-              "title": "Glass noodles with fish",
+              "title": "Glass noodle stew",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
             },
             {
               "title": "Sushi plate",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Rice bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
             }
           ]
         }
@@ -176,47 +172,45 @@
               "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
             },
             {
-              "title": "Gr. Chicken leg ramen",
+              "title": "Chicken vegetable ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
             },
             {
-              "title": "Gr. Veggie udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
-            },
-            {
-              "title": "Glass noodles with fish",
+              "title": "Glass noodle stew",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
             },
             {
               "title": "Sushi plate",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Rice bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
             }
           ]
         }
@@ -244,47 +238,45 @@
               "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
             },
             {
-              "title": "Gr. Chicken leg ramen",
+              "title": "Chicken vegetable ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
             },
             {
-              "title": "Gr. Veggie udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
-            },
-            {
-              "title": "Glass noodles with fish",
+              "title": "Glass noodle stew",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
             },
             {
               "title": "Sushi plate",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Rice bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
             }
           ]
         }
@@ -312,47 +304,45 @@
               "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
             },
             {
-              "title": "Gr. Chicken leg ramen",
+              "title": "Chicken vegetable ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Fried chicken leg, bamboo, pak choi, nori, spring onion, egg"
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
             },
             {
-              "title": "Gr. Veggie udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Seasonal vegetables, vegan Seitan, udon noodles"
-            },
-            {
-              "title": "Glass noodles with fish",
+              "title": "Glass noodle stew",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, thin slices of fish, glass noodles, onoki mushrooms, garlic + rice"
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
             },
             {
               "title": "Sushi plate",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 pcs. Beef roll with avocado and cucumber, 5 nigiri mix"
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Rice bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Fried rice with shrimp in red curry, 3 nigiri mix, fruit, gyoza, carrage"
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
             }
           ]
         }

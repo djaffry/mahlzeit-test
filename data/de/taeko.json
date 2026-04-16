@@ -15,7 +15,7 @@
     "lat": 48.2169,
     "lon": 16.3881
   },
-  "fetchedAt": "2026-04-12T15:00:30.107Z",
+  "fetchedAt": "2026-04-16T10:41:23.965Z",
   "error": null,
   "days": {
     "Montag": {
@@ -40,47 +40,45 @@
               "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
             },
             {
-              "title": "Gr. Hühnerkeule Ramen",
+              "title": "Hähnchen Gemüse Ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
             },
             {
-              "title": "Gr. Veggie Udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
-            },
-            {
-              "title": "Glasnudeln mit Fisch",
+              "title": "Glasnudeln Eintopf",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
             },
             {
               "title": "Sushi Teller",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Reis Bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
             }
           ]
         }
@@ -108,47 +106,45 @@
               "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
             },
             {
-              "title": "Gr. Hühnerkeule Ramen",
+              "title": "Hähnchen Gemüse Ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
             },
             {
-              "title": "Gr. Veggie Udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
-            },
-            {
-              "title": "Glasnudeln mit Fisch",
+              "title": "Glasnudeln Eintopf",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
             },
             {
               "title": "Sushi Teller",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Reis Bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
             }
           ]
         }
@@ -176,47 +172,45 @@
               "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
             },
             {
-              "title": "Gr. Hühnerkeule Ramen",
+              "title": "Hähnchen Gemüse Ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
             },
             {
-              "title": "Gr. Veggie Udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
-            },
-            {
-              "title": "Glasnudeln mit Fisch",
+              "title": "Glasnudeln Eintopf",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
             },
             {
               "title": "Sushi Teller",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Reis Bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
             }
           ]
         }
@@ -244,47 +238,45 @@
               "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
             },
             {
-              "title": "Gr. Hühnerkeule Ramen",
+              "title": "Hähnchen Gemüse Ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
             },
             {
-              "title": "Gr. Veggie Udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
-            },
-            {
-              "title": "Glasnudeln mit Fisch",
+              "title": "Glasnudeln Eintopf",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
             },
             {
               "title": "Sushi Teller",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Reis Bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
             }
           ]
         }
@@ -312,47 +304,45 @@
               "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
             },
             {
-              "title": "Gr. Hühnerkeule Ramen",
+              "title": "Hähnchen Gemüse Ramen",
               "price": "12,90 €",
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,D,F",
-              "description": "Gebratene Hühnerkeule, Bambus, Pakchoi,Nori, Frühlingszwiebel, Ei"
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
             },
             {
-              "title": "Gr. Veggie Udon",
-              "price": "12,90 €",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,F",
-              "description": "Saisongemüse, vegan Seitan, Udonnudeln"
-            },
-            {
-              "title": "Glasnudeln mit Fisch",
+              "title": "Glasnudeln Eintopf",
               "price": "12,90 €",
               "tags": [],
-              "allergens": "A,D,F",
-              "description": "Sauerkraut, dünne Fischscheiben, Glasnudeln, onokipilze,Knoblauch +Reis"
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
             },
             {
               "title": "Sushi Teller",
               "price": "12,90 €",
-              "tags": [
-                "Rindfleisch"
-              ],
+              "tags": [],
               "allergens": "A,B,D,F",
-              "description": "4 stk. Rindfleisch Roll mit Avocado und Gurken, 5 nigiri mix"
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
             },
             {
               "title": "Gr. Reis Bento",
               "price": "12,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Vegan"
               ],
               "allergens": "A,B,D,F",
-              "description": "Gebratener Reis mit mit Garnelen in rotem Curry, 3 nigiri mix,Obst, Gyoza, Karrage"
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
             }
           ]
         }

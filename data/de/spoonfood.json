@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-15T10:39:13.821Z",
+  "fetchedAt": "2026-04-16T10:41:24.697Z",
   "error": null,
   "days": {
     "Montag": {
@@ -427,6 +427,145 @@
               ],
               "allergens": null,
               "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Donnerstag": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Sellerie-Apfel 🍏-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "BBQ-Hendl auf Ofen-Babykartoffeln 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Coleslaw 🌿"
+            },
+            {
+              "title": "Asiatische Gochujang-Udonnudeln",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wokgemüse 🥒🥕🥦 & geschmorten roten Zwiebeln"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Indisches Curry von der Waldviertler Freilandpute - in Tomaten 🍅-Cashew-Butter-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Romanesco 🥦, Karotten 🥕 & Reis"
+            },
+            {
+              "title": "Chana-Masala-Kichererbsen-Kokos 🥥-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Erdäpfeln 🥔 & Reis – optional mit Mango 🥭-Chutney"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bunte, Veggie-Caesar's Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "rotem Chicorée, Salatherzen 💚, Chinakohl 🥬, Radieschen 🫜, Choggia-Rüben, Parmesan & Mayo-Joghurt-Dressing"
+            },
+            {
+              "title": "Couscous-Karotten 🥕-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Käferbohnen 🫘, Radieschen 🫜, frischer Petersilie 🌿 & Orangen 🍊-Vinaigrette"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pistazien 💚"
             }
           ]
         }
