@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-16T10:41:26.880Z",
+  "fetchedAt": "2026-04-17T10:35:29.300Z",
   "error": null,
   "days": {
     "Montag": {
@@ -135,6 +135,36 @@
               "price": "11,90 €",
               "tags": [],
               "allergens": "L,N,A,6",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    "Freitag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Gemüse Creme Suppe (ALL,H,G)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Fischburger mit Sauce Tartare und Pommes (n.Ac,D)",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Mediterraner Gemüseeintopf mit Butter-Bulgur",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,H,A,6",
               "description": null
             }
           ]
