@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-20T05:46:03.585Z",
+  "fetchedAt": "2026-04-20T10:11:55.670Z",
   "error": null,
   "days": {
     "Freitag": {
@@ -150,6 +150,145 @@
               ],
               "allergens": null,
               "description": "Pistachios 💚"
+            }
+          ]
+        }
+      ]
+    },
+    "Montag": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Carrot 🥕 roasted coriander soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Quiche Lorraine",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Leek 🌿 & bacon 🥓 - optional: add sour cream"
+            },
+            {
+              "title": "Tortellini",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Ricotta spinach 💚 filling *Caprese style* with tomatoes 🍅, mozzarella & fresh basil 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Styrian root meat from the Ötscherblick pig",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Leek 🌿, yellow 💛 beets, carrots 🥕, celeriac & potatoes 🥔 - optional: add horseradish"
+            },
+            {
+              "title": "Red lentil and coconut 🥥 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "braised aubergine 🍆, baby spinach 💚 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Lime 🍋‍🟩 Thai Glass Noodle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, cucumbers 🥒, celery, ginger 🫚, coriander 🌿, mint, fresh lime 🍋‍🟩 & peanuts 🥜"
+            },
+            {
+              "title": "Greek Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peppers 🫑 Tricolore 💛🧡💚, Kalamata olives 🫒, cucumbers 🥒, tomatoes 🍅 & feta"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan chia pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Almond milk & rhubarb 🩷 topping"
             }
           ]
         }

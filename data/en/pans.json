@@ -12,7 +12,40 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-20T05:46:04.390Z",
+  "fetchedAt": "2026-04-20T10:11:57.554Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Broccoli cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "O,L,N,G",
+              "description": null
+            },
+            {
+              "title": "Baked chicken schnitzel with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,A,C,O,M",
+              "description": null
+            },
+            {
+              "title": "Creamy asparagus risotto with parmesan and salad",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,N,A,6,0,M",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

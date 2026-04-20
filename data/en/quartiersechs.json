@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-20T05:46:04.390Z",
+  "fetchedAt": "2026-04-20T10:11:58.547Z",
   "error": null,
   "days": {
     "Montag": {
@@ -226,10 +226,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Plum poppy seed mousse",
+              "title": "Plums - poppy seed mousse apple - Calvados cream",
               "price": null,
               "tags": [],
-              "allergens": "F,H",
+              "allergens": "F,G,H",
               "description": null
             }
           ]
@@ -238,12 +238,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Covered pear cake",
+              "title": "Covered pear cake pear strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A",
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -808,7 +808,7 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Hungarian rice meat, red pepper sauce, grana",
+              "title": "Hungarian rice meat, red pepper sauce, Grana",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"

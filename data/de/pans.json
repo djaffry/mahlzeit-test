@@ -12,7 +12,40 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-20T05:46:04.390Z",
+  "fetchedAt": "2026-04-20T10:11:57.554Z",
   "error": null,
-  "days": {}
+  "days": {
+    "Montag": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Brokkoli Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "O,L,N,G",
+              "description": null
+            },
+            {
+              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,A,C,O,M",
+              "description": null
+            },
+            {
+              "title": "Spargel-Risotto cremig mit Parmesan dazu Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "L,N,A,6,0,M",
+              "description": null
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
