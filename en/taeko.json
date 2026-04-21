@@ -1,0 +1,357 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanese",
+    "Chinese"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-21T20:49:23.152Z",
+  "error": null,
+  "days": {
+    "2026-04-20": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Chicken vegetable ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Glass noodle stew",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Chicken vegetable ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Glass noodle stew",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Chicken vegetable ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Glass noodle stew",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Chicken vegetable ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Glass noodle stew",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Chicken vegetable ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Chicken, pickled mustard cabbage, bamboo, bok choi, nori, spring onion, egg"
+            },
+            {
+              "title": "Glass noodle stew",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, glass noodles, Chinese cabbage, king oyster mushroom + rice"
+            },
+            {
+              "title": "Seafood tofu stew",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Shrimp, squid, mussels, tofu, edamame + rice"
+            },
+            {
+              "title": "Sushi plate",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 pcs. Salmon Roll with Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Fried rice with chashu meat and vegetables, 3 nigiri mix, fruit, carrage, ebi tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}

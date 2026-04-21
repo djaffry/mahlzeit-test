@@ -1,0 +1,20 @@
+{
+  "id": "koi",
+  "title": "Koi",
+  "url": "https://www.koi.wien/",
+  "type": "link",
+  "icon": "fish",
+  "cuisine": [
+    "Asian",
+    "Sushi"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2216,
+    "lon": 16.3929
+  },
+  "fetchedAt": "2026-04-21T20:49:26.451Z",
+  "error": null,
+  "days": {}
+}

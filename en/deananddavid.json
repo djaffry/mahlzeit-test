@@ -1,0 +1,151 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salads",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-04-21T20:49:22.708Z",
+  "error": null,
+  "days": {
+    "2026-04-20": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}

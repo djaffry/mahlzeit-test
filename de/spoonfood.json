@@ -1,0 +1,169 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Eintöpfe"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-04-21T20:49:23.325Z",
+  "error": null,
+  "days": {
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse 🥒🥕🫛-Bulgur-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Cremige Gnocchi-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Faschiertem (gemischt), Kohlrabi 🤍, Karotten 🥕 & frischer Petersilie 🌿"
+            },
+            {
+              "title": "Tomaten 🍅-Oliven 🫒-Kritharaki",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "grünen und schwarzen Oliven, Basilikum 🌿 & geschmolzenen Kirschtomaten 🍅"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Carne Guisada – lateinamerikanischer Tex-Mex-Eintopf – vom Ötscherblickschwein",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Bohnen 🫘, Mais 🌽, Tomaten 🍅, Paprika 🫑, Karotten 🥕, Sellerie 🤍 & Reis"
+            },
+            {
+              "title": "Veggie Tandoori-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karfiol 🤍, Melanzani 🍆, Zucchini 🥒, Paprika 🫑, Erbsen 🫛, Kokosmilch 🥥, Reis & Minz 🌿-Joghurt"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Lime 🍋‍🟩-Thai-Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Gurken 🥒, Sellerie, Ingwer 🫚, Koriander 🌿, Minze, frischer Limette 🍋‍🟩 & Erdnüssen 🥜"
+            },
+            {
+              "title": "Griechische Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑 Tricolore 💛🧡💚, Kalamata-Oliven 🫒, Gurken 🥒, Tomaten 🍅 & Feta"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Chia-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandelmilch & Rhabarber 🩷-Topping"
+            },
+            {
+              "title": "Haselnuss-Marillen 🍑-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Giotto"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}

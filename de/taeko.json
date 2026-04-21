@@ -1,0 +1,357 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanisch",
+    "Chinesisch"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-21T20:49:23.152Z",
+  "error": null,
+  "days": {
+    "2026-04-20": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Hähnchen Gemüse Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Glasnudeln Eintopf",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Hähnchen Gemüse Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Glasnudeln Eintopf",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Hähnchen Gemüse Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Glasnudeln Eintopf",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Hähnchen Gemüse Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Glasnudeln Eintopf",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Hähnchen Gemüse Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,F",
+              "description": "Hühnerfleisch,eingelegter Senfkohl,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Glasnudeln Eintopf",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Taro, Glasnudeln, Chinakohl, Kräuterseitling +Reis"
+            },
+            {
+              "title": "Meeresfrüchte Tofu Eintopf",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,R,F",
+              "description": "Garnelen, Tintenfisch, Miesmuscheln, Tofu, Edamame +Reis"
+            },
+            {
+              "title": "Sushi Teller",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,B,D,F",
+              "description": "4 stk. Salmon Roll mit Ebi Tempura, 5 nigiri mix"
+            },
+            {
+              "title": "Gr. Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gebratener Reis mit Chashufleisch und Gemüse , 3 nigiri mix, Obst, Karrage, Ebi Tempura"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-04-21T20:49:25.830Z",
+  "error": null,
+  "days": {
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Cauliflower cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "O,L,N,G",
+              "description": null
+            },
+            {
+              "title": "Moussaka (beef) with salad (6,A,C,o,M,LN)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Ricotta spinach tortellini with tomato sauce and parmesan (.,N,6.A,C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}

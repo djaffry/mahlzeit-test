@@ -1,0 +1,313 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-04-21T20:49:22.230Z",
+  "error": null,
+  "days": {
+    "2026-04-20": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Ofen-Camembert",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Butterkartoffeln, Preiselbeeren"
+            },
+            {
+              "title": "Lachs-Teriyaki",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F,N",
+              "description": "Lauch-Pilzgemüse & Reis, Black Sesame"
+            },
+            {
+              "title": "ChikiChen Burger",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,M",
+              "description": "Rotkraut, Salat & Jungzwiebel, Sriracha-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Ananas-Kokos Trifle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-21": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Steinpilznudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Rucola & getrockenete Tomaten, Flora & Kresse"
+            },
+            {
+              "title": "Rindsragout Stroganoff",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M",
+              "description": "Kartoffelkroketten, Frischer Schnittlauch"
+            },
+            {
+              "title": "Cashew-Nuts Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F,H,R",
+              "description": "Bunte Paprika & Zwiebel, Jasminreis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Peanutbutter-Brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Frühlingsrolle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,L,N",
+              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+            },
+            {
+              "title": "Steirischer Backhendlsalat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G,M",
+              "description": "Erdäpfel-Vogerlsalat, Käferbohnen"
+            },
+            {
+              "title": "Würstel-Gulyas",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Erdäpfel, Zwiebel & Würstel, Kornspitz"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Beeren-Topfencreme",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüse Süß-Sauer",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,N",
+              "description": "Duftreis, Ananas & Limette, Jungzwiebel"
+            },
+            {
+              "title": "Knödelteller",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Grammel- & Wurstknödel, Gabelkraut & Saftl"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "M",
+              "description": "Skin on Wedges, Zwiebelsenf & Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Birnen-Streuselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Grießschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Zwetschkenröster, Staubzucker"
+            },
+            {
+              "title": "Hendl-Laibchen",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Kartoffeln & buntes Gemüse, Sauce Tartare"
+            },
+            {
+              "title": "Rote Rüben-Gnocchi",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Sugo Jardineira, Grana Vegano"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt & Früchte",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-21T20:49:21.468Z"
+    }
+  }
+}
