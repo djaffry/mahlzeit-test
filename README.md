@@ -106,19 +106,19 @@ project_root/
 
 ```mermaid
 graph TB
-  WEB["Restaurant\nWebsites"] -.->|scraped| S
+  WEB["Restaurant<br/>Websites"] -.->|scraped| S
 
   subgraph CI["GitHub Actions"]
-    S["scraper/\n(Node.js)"] -->|menus +\ntranslations| WB["data-YYYY-Www\nbranches"]
-    S -->|globals\n(index, tags)| M["main\ndata/"]
-    R["voting/\n(Node.js)"] -->|voting.json| M
-    AD["assemble-data\n(composite action)"] -->|current + last N| D["dist/\n(Pages artifact)"]
+    S["scraper/<br/>(Node.js)"] -->|"menus +<br/>translations"| WB["data-YYYY-Www<br/>branches"]
+    S -->|"globals<br/>(index, tags)"| M["main<br/>data/"]
+    R["voting/<br/>(Node.js)"] -->|voting.json| M
+    AD["assemble-data<br/>(composite action)"] -->|"current + last N"| D["dist/<br/>(Pages artifact)"]
     WB --> AD
     M --> AD
   end
 
-  D -->|bundled into| GH["GitHub Pages\n(static hosting)"]
-  GH -->|serves| UI["ui/\n(TypeScript SPA\nin browser)"]
+  D -->|bundled into| GH["GitHub Pages<br/>(static hosting)"]
+  GH -->|serves| UI["ui/<br/>(TypeScript SPA<br/>in browser)"]
   UI <-->|WebSocket| NR["Nostr Relays"]
 ```
 
@@ -178,8 +178,8 @@ The scraper uses an **adapter pattern**: each restaurant has its own adapter in 
 graph LR
   subgraph scrape["Scrape pipeline"]
     SR[scrape-runner] -->|discover| AD[adapters/]
-    AD -->|fetchMenu\n(weekday-keyed)| FW[framework]
-    FW -->|convert to\ndate-keyed| SC[scraper]
+    AD -->|"fetchMenu<br/>(weekday-keyed)"| FW[framework]
+    FW -->|"convert to<br/>date-keyed"| SC[scraper]
     SC --> TG[tags]
     SC --> PS[persistence]
   end
@@ -189,9 +189,9 @@ graph LR
     TR -->|batch| TA[translation adapter]
   end
 
-  WEB["Restaurant\nWebsites"] -.->|HTML, PDF, OCR| AD
-  PS -->|menu data\n(date-keyed)| WB["data-YYYY-Www\nbranch (worktree)"]
-  PS -->|index.json,\ntags.json| M["main\ndata/"]
+  WEB["Restaurant<br/>Websites"] -.->|"HTML, PDF, OCR"| AD
+  PS -->|"menu data<br/>(date-keyed)"| WB["data-YYYY-Www<br/>branch (worktree)"]
+  PS -->|"index.json,<br/>tags.json"| M["main<br/>data/"]
   TR -->|read| WB
   TA -->|write| WB
 ```
@@ -257,7 +257,7 @@ graph LR
     AR[auto-refresh] -->|poll + hash diff| F
   end
 
-  F -->|read| MENU["data/\nindex, languages,\n{lang}/{id}.json"]
+  F -->|read| MENU["data/<br/>index, languages,<br/>{lang}/{id}.json"]
   APP -->|read| TJ[data/tags.json]
   VI -->|read| VJ[data/voting.json]
   VI --> NC[nostr-client]
