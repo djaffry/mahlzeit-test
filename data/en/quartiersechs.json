@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-20T10:11:58.547Z",
+  "fetchedAt": "2026-04-21T10:45:21.514Z",
   "error": null,
   "days": {
     "Montag": {
@@ -473,12 +473,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan chocolate mousse, raspberry",
+              "title": "Vegan chocolate mousse, raspberry plum - poppy seed mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G",
+              "allergens": "F,G,H",
               "description": null
             }
           ]
@@ -487,9 +487,11 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Malakoff slices",
+              "title": "Malakoff slices Covered pear cake",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,G,H,O",
               "description": null
             }
@@ -1168,7 +1170,7 @@
               "title": "Walnut plum strudel",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,H",
+              "allergens": "A,F,H",
               "description": null
             }
           ]
