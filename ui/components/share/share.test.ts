@@ -1,4 +1,19 @@
-import { describe, it, expect, beforeEach } from "vitest"
+import { describe, it, expect, beforeEach, vi } from "vitest"
+
+vi.mock("../../utils/date", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../utils/date")>()
+  return {
+    ...actual,
+    getWeekDates: () => [
+      new Date("2026-04-20"),
+      new Date("2026-04-21"),
+      new Date("2026-04-22"),
+      new Date("2026-04-23"),
+      new Date("2026-04-24"),
+    ],
+  }
+})
+
 import { extractRestaurantMeta, extractMenuItem, groupItemsByCategory, getShareSelectionData } from "./share-data"
 
 /* ── extractRestaurantMeta ──────────────────────────────── */
@@ -188,7 +203,7 @@ describe("getShareSelectionData", () => {
     const result = getShareSelectionData(() => timeline)
     expect(result).not.toBeNull()
     expect(result!.days).toHaveLength(1)
-    expect(result!.days[0].day).toBe("Montag")
+    expect(result!.days[0].day).toBe("2026-04-20")
     expect(result!.days[0].sections).toHaveLength(1)
     expect(result!.days[0].sections[0].name).toBe("Bistro X")
     expect(result!.days[0].sections[0].cuisine).toBe("Österreichisch")
@@ -240,8 +255,8 @@ describe("getShareSelectionData", () => {
     const result = getShareSelectionData(() => timeline)
     expect(result).not.toBeNull()
     expect(result!.days).toHaveLength(2)
-    expect(result!.days[0].day).toBe("Montag")
-    expect(result!.days[1].day).toBe("Dienstag")
+    expect(result!.days[0].day).toBe("2026-04-20")
+    expect(result!.days[1].day).toBe("2026-04-21")
     expect(result!.days[0].sections[0].restaurant).toBe("place-a")
     expect(result!.days[1].sections[0].restaurant).toBe("place-b")
   })

@@ -1,8 +1,8 @@
 import "./sidebar-toc.css"
-import { DAYS } from "../../constants"
 import type { Restaurant } from "../../types"
 import { t } from "../../i18n/i18n"
-import { todayDayIndex, isAvailableOnDay, formatDayHeader } from "../../utils/date"
+import { isAvailableOnDay, formatDayHeader, todayIndexInWeek, dateToIso } from "../../utils/date"
+import { todayIso } from "../../utils/today"
 import { getRestaurantIcon } from "../../icons"
 import { escapeHtml, smoothScrollTo } from "../../utils/dom"
 import { sortWithFavorites } from "../favorites/favorites"
@@ -27,11 +27,11 @@ export function createSidebarToc(weekDates: Date[], deps: { expandDay: (index: n
   _state.lastBottom = -1
   _state.dayChildren.clear()
 
-  const todayIdx = todayDayIndex()
+  const todayIdx = todayIndexInWeek(weekDates, todayIso())
 
-  for (let i = 0; i < DAYS.length; i++) {
+  for (let i = 0; i < weekDates.length; i++) {
     const date = weekDates[i]
-    const dayLabel = date ? formatDayHeader(date) : DAYS[i]
+    const dayLabel = formatDayHeader(date)
     const a = document.createElement("a")
     a.href = `#day-${i}`
     a.className = i === todayIdx ? "sidebar-toc-day today" : "sidebar-toc-day"
@@ -72,7 +72,7 @@ export function createSidebarToc(weekDates: Date[], deps: { expandDay: (index: n
   return nav
 }
 
-export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[], dayName: string): void {
+export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[], dateIso: string): void {
   if (!_state.tocEl) return
 
   _state.tocEl.querySelectorAll(`[data-toc-day="${dayIndex}"]`).forEach((el) => el.remove())
@@ -84,8 +84,8 @@ export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[]
   let insertAfter: Element = dayLink
 
   for (const r of sortWithFavorites(restaurants)) {
-    const hasMenu = !!(r.days?.[dayName]?.categories?.length)
-    const isLink = r.type === "link" && isAvailableOnDay(r, dayName)
+    const hasMenu = !!(r.days?.[dateIso]?.categories?.length)
+    const isLink = r.type === "link" && isAvailableOnDay(r, dateIso)
     if (!hasMenu && !isLink) continue
 
     const a = document.createElement("a")
@@ -181,13 +181,13 @@ function setupScrollSpy(): void {
 
 export function updateTocLanguage(weekDates: Date[]): void {
   if (!_state.tocEl) return
-  const todayIdx = todayDayIndex()
+  const todayIdx = todayIndexInWeek(weekDates, todayIso())
 
-  for (let i = 0; i < DAYS.length; i++) {
+  for (let i = 0; i < weekDates.length; i++) {
     const dayLink = _state.tocEl.querySelector(`[data-day-index="${i}"]`) as HTMLElement | null
     if (!dayLink) continue
     const date = weekDates[i]
-    const dayLabel = date ? formatDayHeader(date) : DAYS[i]
+    const dayLabel = formatDayHeader(date)
     if (i === todayIdx) {
       dayLink.innerHTML = `${escapeHtml(dayLabel)} <span class="sidebar-toc-today-badge">${escapeHtml(t("app.today"))}</span>`
     } else {

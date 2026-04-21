@@ -22,6 +22,8 @@ jobs:
       data-changed: ${{ steps.changes.outputs.changed }}
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -77,6 +79,10 @@ jobs:
       - name: Build site
         if: steps.changes.outputs.changed == 'true'
         run: npm run build
+
+      - name: Assemble data for deploy
+        if: steps.changes.outputs.changed == 'true'
+        uses: ./.github/actions/assemble-data
 
       - name: Upload pages artifact
         if: steps.changes.outputs.changed == 'true'

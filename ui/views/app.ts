@@ -1,5 +1,5 @@
 import { config } from "../config"
-import { DAYS, LANG_CHANGE_EVENT } from "../constants"
+import { LANG_CHANGE_EVENT } from "../constants"
 import type { Restaurant } from "../types"
 
 import { fetchMenuData, fetchLanguages } from "../data/fetcher"
@@ -17,8 +17,10 @@ import { loadTagsFromUrl, collectTags } from "../utils/tag-utils"
 import {
   getDataWeekDates,
   getLatestFetchTime,
-  todayDayIndex,
+  dateToIso,
+  isoToWeekdayIndex,
 } from "../utils/date"
+import { todayIso } from "../utils/today"
 import { smoothScrollTo, isDesktop, isOverlayOpen } from "../utils/dom"
 import { initTabBadge, onVoteReceived } from "../utils/tab-badge"
 
@@ -163,7 +165,7 @@ function applyRefresh(newData: Restaurant[]): void {
 
   if (isDesktop()) {
     updateTocLanguage(weekDates)
-    DAYS.forEach((dayName, i) => updateTocRestaurants(i, _restaurants, dayName))
+    weekDates.forEach((date, i) => updateTocRestaurants(i, _restaurants, dateToIso(date)))
     refreshObservedTargets()
   }
 
@@ -184,7 +186,7 @@ function setupBranding(brandIconEl: HTMLElement, brandLinkEl: HTMLElement): void
 
   brandLinkEl.addEventListener("click", (e) => {
     e.preventDefault()
-    const idx = todayDayIndex()
+    const idx = isoToWeekdayIndex(todayIso())
     if (idx >= 0) expandDay(idx)
     else window.scrollTo({ top: 0, behavior: "smooth" })
   })
@@ -248,7 +250,7 @@ function setupDesktopUI(weekDates: Date[]): void {
   if (!isDesktop()) return
   const tocEl = createSidebarToc(weekDates, { expandDay })
   document.body.appendChild(tocEl)
-  DAYS.forEach((dayName, i) => updateTocRestaurants(i, _restaurants, dayName))
+  weekDates.forEach((date, i) => updateTocRestaurants(i, _restaurants, dateToIso(date)))
   refreshObservedTargets()
 }
 

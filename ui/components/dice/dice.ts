@@ -1,7 +1,7 @@
 import "./dice.css"
-import { DAYS } from "../../constants"
 import type { Restaurant } from "../../types"
-import { todayDayIndex, isAvailableOnDay, isDataFromCurrentWeek } from "../../utils/date"
+import { isAvailableOnDay, isDataFromCurrentWeek, isWeekend, isoToWeekdayIndex } from "../../utils/date"
+import { todayIso } from "../../utils/today"
 import { prefersReducedMotion, persistentHighlight } from "../../utils/dom"
 import { haptic } from "../../utils/haptic"
 /* ── Constants ──────────────────────────────────────────── */
@@ -113,8 +113,7 @@ function listenShake(): void {
 
 export function isAvailable(): boolean {
   if (!_state.getAllRestaurants) return false
-  const todayIdx = todayDayIndex()
-  if (todayIdx < 0) return false
+  if (isWeekend(todayIso())) return false
   const menuRestaurants = _state.getAllRestaurants().filter(r => r.type !== "link")
   return isDataFromCurrentWeek(menuRestaurants)
 }
@@ -122,9 +121,9 @@ export function isAvailable(): boolean {
 export function roll(): void {
   if (_state.rolling || !isAvailable()) return
 
-  const todayIdx = todayDayIndex()
   const allRestaurants = _state.getAllRestaurants!()
-  const todayName = DAYS[todayIdx]
+  const today = todayIso()
+  const todayIdx = isoToWeekdayIndex(today)
 
   type Candidate =
     | { type: "item"; restaurantId: string; catIdx: number; itemIdx: number }
@@ -135,7 +134,7 @@ export function roll(): void {
   // Menu items (excluding dessert/soup/side categories)
   for (const r of allRestaurants) {
     if (r.type === "link") continue
-    const menu = r.days?.[todayName]
+    const menu = r.days?.[today]
     if (!menu?.categories?.length) continue
     for (let ci = 0; ci < menu.categories.length; ci++) {
       const cat = menu.categories[ci]
@@ -149,7 +148,7 @@ export function roll(): void {
   // Link restaurants available today
   for (const r of allRestaurants) {
     if (r.type !== "link") continue
-    if (!isAvailableOnDay(r, todayName)) continue
+    if (!isAvailableOnDay(r, today)) continue
     candidates.push({ type: "link", restaurantId: r.id })
   }
 

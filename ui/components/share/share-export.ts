@@ -1,4 +1,4 @@
-import { DAYS } from "../../constants"
+import { getWeekDates, todayIndexInWeek } from "../../utils/date"
 import { t } from "../../i18n/i18n"
 import { exportImage as coreExportImage } from "../../utils/canvas"
 import { getIdentity } from "../../voting/user-identity"
@@ -110,14 +110,14 @@ export function showToast(message: string, canvas?: HTMLCanvasElement | null, te
   setTimeout(dismiss, TOAST_DURATION_MS)
 }
 
-export function buildDeepLink(restaurantIds: string[], dayName: string): string {
+export function buildDeepLink(restaurantIds: string[], dateIso: string): string {
   const base = window.location.origin + window.location.pathname
   const params = new URLSearchParams()
   if (restaurantIds.length === 1) {
     params.set('r', restaurantIds[0])
   }
-  if (dayName) {
-    const idx = DAYS.indexOf(dayName as typeof DAYS[number])
+  if (dateIso) {
+    const idx = todayIndexInWeek(getWeekDates(), dateIso)
     if (idx >= 0) params.set('d', String(idx))
   }
   try {

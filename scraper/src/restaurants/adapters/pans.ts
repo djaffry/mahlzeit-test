@@ -1,6 +1,7 @@
 import { createWorker } from 'tesseract.js';
-import type { FullAdapter, WeekMenu, Weekday, MenuItem, MenuCategory } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, MenuItem, MenuCategory } from '../types.js';
 import { inferTags } from '../tags.js';
+import { todayIso, weekdayOfIsoDate } from '../../week.js';
 
 const BASE_URL = 'https://www.pans.at/wp-content/uploads';
 
@@ -11,15 +12,10 @@ const DUAL_PRICE_RE = /kl\/?Gr:\s*(\d{1,2}[.,]\d{2})\s*\/\s*(\d{1,2}[.,]\d{2})/i
 const DRINK_KEYWORDS = /\b(limo|tee|eistee|honig)\b/i;
 const DISCLAIMER_RE = /keine\s+[ÄAa]nderung|Preise\s+gelten/i;
 
-const DAY_MAP: Record<number, Weekday> = {
-  1: 'Montag', 2: 'Dienstag', 3: 'Mittwoch', 4: 'Donnerstag', 5: 'Freitag',
-};
-
-function buildImageUrl(now: Date): string {
-  const dd = String(now.getDate()).padStart(2, '0');
-  const mm = String(now.getMonth() + 1).padStart(2, '0');
+function buildImageUrl(iso: string): string {
+  const [yyyy, mm, dd] = iso.split('-');
   // URL convention: DDMM.png (e.g. 1803.png for March 18)
-  return `${BASE_URL}/${now.getFullYear()}/${mm}/${dd}${mm}.png`;
+  return `${BASE_URL}/${yyyy}/${mm}/${dd}${mm}.png`;
 }
 
 function formatPrice(raw: string): string {
@@ -125,12 +121,12 @@ function parseMenuText(text: string): MenuCategory[] {
   return categories;
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
-  const now = new Date();
-  const weekday = DAY_MAP[now.getDay()] ?? null;
+async function fetchMenu(): Promise<AdapterWeekMenu> {
+  const today = todayIso();
+  const weekday = weekdayOfIsoDate(today);
   if (!weekday) return {};
 
-  const url = buildImageUrl(now);
+  const url = buildImageUrl(today);
   const res = await fetch(url);
   if (!res.ok) {
     if (res.status === 404) return {};

@@ -10,7 +10,7 @@
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/manifest.json" />
   <!-- CSP: connect-src relay list must match voting/config/relays.json -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UBRi4PPF4Q6t8CHZHKoUNUKBT76/bfp9+X23Qrw8StQ='; style-src 'self' 'unsafe-inline'; connect-src 'self' wss://relay.damus.io wss://nos.lol wss://relay.primal.net wss://relay.snort.social; img-src 'self' data: https://*.tile.openstreetmap.org;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UBRi4PPF4Q6t8CHZHKoUNUKBT76/bfp9+X23Qrw8StQ='; style-src 'self' 'unsafe-inline'; connect-src 'self' wss://relay.damus.io wss://nos.lol wss://relay.primal.net wss://relay.snort.social; img-src 'self' data: https://*.tile.openstreetmap.org; base-uri 'self'; frame-ancestors 'none'; object-src 'none'; form-action 'self';" />
   <script>
     (function() {
       var d = document.documentElement;

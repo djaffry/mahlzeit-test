@@ -1,20 +1,25 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { dirname, join, basename } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import type { Adapter, RestaurantData, WeekMenu, MenuItem } from './types.js';
+import { join, basename } from 'node:path';
+import { JSDOM } from 'jsdom';
+import type { Adapter, RestaurantData, AdapterWeekMenu, DaysByDate, DayMenu, MenuItem } from './types.js';
 import { WEEKDAYS } from './types.js';
 import { log } from '../log.js';
-import { SOURCE_LANGUAGE } from '../config.js';
+import { SOURCE_LANGUAGE, getDataDir, getGlobalsDir } from '../config.js';
+import { dateForWeekdayInIsoWeek, type IsoWeek } from '../week.js';
 
-interface ExistingFile { data: RestaurantData; raw: string }
+function restaurantDir(): string {
+  return join(getDataDir(), SOURCE_LANGUAGE);
+}
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..', '..', '..');
-const DATA_DIR = join(ROOT, 'data');
-const RESTAURANT_DIR = join(DATA_DIR, SOURCE_LANGUAGE);
+// jsdom doesn't run scripts without `runScripts`, so innerHTML here is safe.
+const _htmlParseDoc = new JSDOM('').window.document;
 
 function stripHtml(text: string): string {
-  return text.replace(/<[^>]*>?/g, '').trim();
+  // Fast path for plain text — the common case for most menu fields.
+  if (!text.includes('<')) return text.trim();
+  const el = _htmlParseDoc.createElement('div');
+  el.innerHTML = text;
+  return (el.textContent ?? '').trim();
 }
 
 function sanitizeItem(item: MenuItem): MenuItem {
@@ -27,8 +32,8 @@ function sanitizeItem(item: MenuItem): MenuItem {
   };
 }
 
-export function sanitizeWeekMenu(days: WeekMenu): WeekMenu {
-  const result: WeekMenu = {};
+export function sanitizeWeekMenu(days: AdapterWeekMenu): AdapterWeekMenu {
+  const result: AdapterWeekMenu = {};
   for (const day of WEEKDAYS) {
     const menu = days[day];
     if (!menu) continue;
@@ -42,7 +47,19 @@ export function sanitizeWeekMenu(days: WeekMenu): WeekMenu {
   return result;
 }
 
-export function buildRestaurantData(adapter: Adapter, days: WeekMenu, error: string | null): RestaurantData {
+/** Convert adapter's weekday-keyed output to persistent date-keyed shape. */
+export function convertWeekMenuToDates(menu: AdapterWeekMenu, week: IsoWeek, fetchedAt: string): DaysByDate {
+  const out: DaysByDate = {};
+  for (const day of WEEKDAYS) {
+    const entry = menu[day];
+    if (!entry) continue;
+    const date = dateForWeekdayInIsoWeek(week, day);
+    out[date] = { categories: entry.categories, fetchedAt };
+  }
+  return out;
+}
+
+export function buildRestaurantData(adapter: Adapter, days: DaysByDate, error: string | null): RestaurantData {
   return {
     id: adapter.id,
     title: adapter.title,
@@ -62,21 +79,11 @@ export function buildRestaurantData(adapter: Adapter, days: WeekMenu, error: str
   };
 }
 
-function isSameWeek(dateStr: string): boolean {
-  const date = new Date(dateStr);
-  if (isNaN(date.getTime())) return false;
-  const now = new Date();
-  const monday = new Date(now);
-  monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
-  monday.setHours(0, 0, 0, 0);
-  const nextMonday = new Date(monday);
-  nextMonday.setDate(monday.getDate() + 7);
-  return date >= monday && date < nextMonday;
-}
+interface ExistingFile { data: RestaurantData; raw: string }
 
 async function readExisting(id: string): Promise<ExistingFile | null> {
   try {
-    const raw = await readFile(join(RESTAURANT_DIR, `${id}.json`), 'utf-8');
+    const raw = await readFile(join(restaurantDir(), `${id}.json`), 'utf-8');
     return { data: JSON.parse(raw) as RestaurantData, raw };
   } catch {
     return null;
@@ -84,51 +91,70 @@ async function readExisting(id: string): Promise<ExistingFile | null> {
 }
 
 export async function ensureDataDir(): Promise<void> {
-  await mkdir(RESTAURANT_DIR, { recursive: true });
+  await mkdir(restaurantDir(), { recursive: true });
+}
+
+function dayCategoriesEqual(a: DayMenu, b: DayMenu): boolean {
+  return JSON.stringify(a.categories) === JSON.stringify(b.categories);
+}
+
+/**
+ * Merge incoming days over existing days. For dates whose content is unchanged,
+ * carry the existing day's `fetchedAt` through so the skip-write check can match.
+ * New dates and changed dates use the incoming day's `fetchedAt`.
+ */
+function mergeDays(existing: DaysByDate, incoming: DaysByDate): DaysByDate {
+  const merged: DaysByDate = { ...existing };
+  for (const [date, incomingDay] of Object.entries(incoming)) {
+    const existingDay = existing[date];
+    merged[date] = existingDay && dayCategoriesEqual(existingDay, incomingDay)
+      ? existingDay
+      : incomingDay;
+  }
+  return merged;
 }
 
 export async function saveRestaurant(data: RestaurantData): Promise<void> {
   if (basename(data.id) !== data.id || data.id.includes('..')) {
     throw new Error(`Invalid restaurant ID: ${data.id}`);
   }
-  const filePath = join(RESTAURANT_DIR, `${data.id}.json`);
+  const filePath = join(restaurantDir(), `${data.id}.json`);
   const existing = await readExisting(data.id);
 
-  if (data.error) {
-    if (existing) {
-      log('FAIL', data.id, 'save', `keeping old data (scrape failed: ${data.error})`);
-      return;
-    }
-  } else if (existing) {
-    if (!existing.data.error && isSameWeek(existing.data.fetchedAt)) {
-      data.days = { ...existing.data.days, ...data.days };
-    }
+  if (data.error && existing) {
+    log('FAIL', data.id, 'save', `keeping old data (scrape failed: ${data.error})`);
+    return;
+  }
 
-    if (JSON.stringify({ ...data, fetchedAt: existing.data.fetchedAt }, null, 2) + '\n' === existing.raw) {
+  let effective: RestaurantData = data;
+  if (existing && !data.error) {
+    effective = { ...data, days: mergeDays(existing.data.days, data.days) };
+
+    if (JSON.stringify({ ...effective, fetchedAt: existing.data.fetchedAt }, null, 2) + '\n' === existing.raw) {
       log('IGNORE', data.id, 'save', 'no changes');
       return;
     }
   }
 
-  await writeFile(filePath, JSON.stringify(data, null, 2) + '\n');
-  log('OK', data.id, 'save', basename(filePath));
+  await writeFile(filePath, JSON.stringify(effective, null, 2) + '\n');
+  log(effective.error ? 'FAIL' : 'OK', data.id, 'save', basename(filePath));
 }
 
 export async function saveManifest(restaurantIds: string[]): Promise<void> {
-  const manifestPath = join(DATA_DIR, 'index.json');
+  const manifestPath = join(getGlobalsDir(), 'index.json');
   await writeFile(manifestPath, JSON.stringify(restaurantIds, null, 2) + '\n');
   log('OK', '*', 'save', `index.json with ${restaurantIds.length} restaurant(s)`);
 }
 
 export async function saveTagMetadata(metadata: object): Promise<void> {
-  const filePath = join(DATA_DIR, 'tags.json');
+  const filePath = join(getGlobalsDir(), 'tags.json');
   await writeFile(filePath, JSON.stringify(metadata, null, 2) + '\n');
   log('OK', '*', 'save', 'tags.json');
 }
 
 export async function saveUnknownTags(unknownTags: Record<string, { adapter: string; example: string }>): Promise<void> {
   if (Object.keys(unknownTags).length === 0) return;
-  const filePath = join(DATA_DIR, 'unknown-tags.json');
+  const filePath = join(getGlobalsDir(), 'unknown-tags.json');
 
   let existing: Record<string, { adapter: string; example: string }> = {};
   try {

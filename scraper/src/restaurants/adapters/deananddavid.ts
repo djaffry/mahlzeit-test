@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom';
-import type { FetchableAdapter, WeekMenu, MenuItem, MenuCategory } from '../types.js';
+import type { FetchableAdapter, AdapterWeekMenu, MenuItem, MenuCategory } from '../types.js';
 import { allDays } from '../types.js';
 import { inferTags, resolveTags } from '../tags.js';
 
@@ -55,7 +55,7 @@ function parseSeasonals(doc: Document): MenuCategory | null {
   return items.length > 0 ? { name: 'Seasonals', items } : null;
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const res = await fetch(PAGE_URL);
   if (!res.ok) throw new Error(`Dean & David: HTTP ${res.status}`);
   const html = await res.text();

@@ -1,7 +1,8 @@
 /* ── Voting lifecycle: wires voting card, Nostr client, and user identity ── */
 
 import { config } from "../config"
-import { getWeekDates, todayDayIndex } from "../utils/date"
+import { getWeekDates, dateToIso } from "../utils/date"
+import { todayIso } from "../utils/today"
 import { getIdentity } from "./user-identity"
 import { avatarSvg } from "./avatars"
 import {
@@ -172,7 +173,9 @@ export async function initVoting(getRestaurants: () => Restaurant[]): Promise<vo
     return
   }
 
-  _dates = getWeekDates().map((d) => d.toISOString().slice(0, 10))
+  // local date formatting — Vienna-local Monday must yield "2026-04-20", not its UTC eve.
+  // todayIso() returns Vienna-local; _dates entries must compare-equal to it.
+  _dates = getWeekDates().map(dateToIso)
 
   wireModules()
 
@@ -326,8 +329,8 @@ export function setOnVoteChange(callback: ((changedDate: string | null) => void)
 }
 
 export function getTodayVoteDate(): string | null {
-  const idx = todayDayIndex()
-  return idx >= 0 ? (_dates[idx] ?? null) : null
+  const today = todayIso()
+  return _dates.includes(today) ? today : null
 }
 
 export function destroyVoting(): void {

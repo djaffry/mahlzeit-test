@@ -14,7 +14,6 @@ vi.mock("../../utils/date", () => ({
   formatAvailableDays: () => "Mon-Fri",
 }))
 vi.mock("../../constants", () => ({
-  DAYS: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"],
   BADGES: [{ prop: "edenred", i18n: "badge.edenred", cssVar: "--tag-red" }],
 }))
 vi.mock("../menu-item/menu-item", () => ({
@@ -31,7 +30,7 @@ function makeRestaurant(overrides: Partial<Restaurant> = {}): Restaurant {
 }
 
 function makeMenu(items: { title: string; tags: string[] }[]): DayMenu {
-  return { categories: [{ name: "Main", items: items.map(i => ({ ...i, description: null, price: null, allergens: null })) }] }
+  return { categories: [{ name: "Main", items: items.map(i => ({ ...i, description: null, price: null, allergens: null })) }], fetchedAt: "2026-04-07T10:00:00Z" }
 }
 
 describe("renderRestaurantSection", () => {

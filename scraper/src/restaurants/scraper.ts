@@ -3,9 +3,19 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import type { Adapter, FetchableAdapter, LinkAdapter, RestaurantData } from './types.js';
 import { isFetchable } from './types.js';
-import { ensureDataDir, sanitizeWeekMenu, buildRestaurantData, saveRestaurant, saveManifest, saveTagMetadata, saveUnknownTags } from './persistence.js';
+import {
+  ensureDataDir,
+  sanitizeWeekMenu,
+  convertWeekMenuToDates,
+  buildRestaurantData,
+  saveRestaurant,
+  saveManifest,
+  saveTagMetadata,
+  saveUnknownTags,
+} from './persistence.js';
 import { log } from '../log.js';
 import { getTagMetadata, isKnownTag } from './tags.js';
+import { currentWeek, type IsoWeek } from '../week.js';
 
 type UnknownTagMap = Record<string, { adapter: string; example: string }>;
 
@@ -75,7 +85,7 @@ function delay(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function fetchWithRetry(adapter: FetchableAdapter): Promise<RestaurantData> {
+async function fetchWithRetry(adapter: FetchableAdapter, scrapeStart: string, week: IsoWeek): Promise<RestaurantData> {
   let lastErrorMsg = '';
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
@@ -83,9 +93,11 @@ async function fetchWithRetry(adapter: FetchableAdapter): Promise<RestaurantData
         log('INFO', adapter.id, 'fetch', `retry ${attempt}/${MAX_RETRIES}`);
         await delay(RETRY_DELAY_MS);
       }
-      const days = await withTimeout(adapter.fetchMenu(), SCRAPE_TIMEOUT_MS, adapter.id);
-      log('OK', adapter.id, 'fetch', `${Object.keys(days).length} day(s)`);
-      return buildRestaurantData(adapter, sanitizeWeekMenu(days), null);
+      const weekMenu = await withTimeout(adapter.fetchMenu(), SCRAPE_TIMEOUT_MS, adapter.id);
+      log('OK', adapter.id, 'fetch', `${Object.keys(weekMenu).length} day(s)`);
+      const sanitized = sanitizeWeekMenu(weekMenu);
+      const byDate = convertWeekMenuToDates(sanitized, week, scrapeStart);
+      return buildRestaurantData(adapter, byDate, null);
     } catch (err) {
       lastErrorMsg = extractErrorMessage(err);
       log('FAIL', adapter.id, 'fetch', `attempt ${attempt + 1}: ${lastErrorMsg}`);
@@ -94,11 +106,11 @@ async function fetchWithRetry(adapter: FetchableAdapter): Promise<RestaurantData
   return buildRestaurantData(adapter, {}, lastErrorMsg);
 }
 
-async function scrapeFetchableAdapters(adapters: FetchableAdapter[]): Promise<RestaurantData[]> {
+async function scrapeFetchableAdapters(adapters: FetchableAdapter[], scrapeStart: string, week: IsoWeek): Promise<RestaurantData[]> {
   return Promise.all(
     adapters.map(async (adapter): Promise<RestaurantData> => {
       log('INFO', adapter.id, 'fetch', 'starting');
-      return fetchWithRetry(adapter);
+      return fetchWithRetry(adapter, scrapeStart, week);
     })
   );
 }
@@ -110,8 +122,7 @@ function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
     const items = Object.values(days)
       .flatMap(day => day?.categories ?? [])
       .flatMap(cat => cat.items);
-
-      for (const { title, tags } of items) {
+    for (const { title, tags } of items) {
       for (const tag of tags) {
         if (!isKnownTag(tag) && !found[tag]) {
           found[tag] = { adapter: id, example: title };
@@ -124,6 +135,8 @@ function discoverUnknownTags(results: RestaurantData[]): UnknownTagMap {
 
 export async function scrape(): Promise<void> {
   await ensureDataDir();
+  const scrapeStart = new Date().toISOString();
+  const week = currentWeek();
 
   const adapters = await discoverAdapters();
   const fetchableAdapters = adapters.filter(isFetchable);
@@ -132,7 +145,7 @@ export async function scrape(): Promise<void> {
 
   const restaurantIds: string[] = [];
 
-  const fetchableResults = await scrapeFetchableAdapters(fetchableAdapters);
+  const fetchableResults = await scrapeFetchableAdapters(fetchableAdapters, scrapeStart, week);
   for (const data of fetchableResults) {
     await saveRestaurant(data);
     restaurantIds.push(data.id);

@@ -13,6 +13,7 @@ export interface ShareSection {
 }
 
 export interface ShareDayGroup {
+  /** ISO date (YYYY-MM-DD), or empty string */
   day: string
   sections: ShareSection[]
 }

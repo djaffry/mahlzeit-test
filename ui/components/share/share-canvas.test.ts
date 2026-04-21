@@ -2,18 +2,24 @@ import { describe, it, expect, vi, beforeEach } from "vitest"
 
 /* ── Mocks ──────────────────────────────────────────────── */
 
-vi.mock("../../constants", () => ({
-  DAYS: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"],
-}))
-
 vi.mock("../../i18n/i18n", () => ({
   t: (k: string) => k,
   getLocale: () => "de-AT",
 }))
 
-vi.mock("../../utils/date", () => ({
-  getMondayOfWeek: () => new Date("2026-04-06"),
-}))
+vi.mock("../../utils/date", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../utils/date")>()
+  return {
+    ...actual,
+    getWeekDates: () => [
+      new Date("2026-04-20"),
+      new Date("2026-04-21"),
+      new Date("2026-04-22"),
+      new Date("2026-04-23"),
+      new Date("2026-04-24"),
+    ],
+  }
+})
 
 import { formatDayLabel, formatBadges } from "./share-format"
 import { extractRestaurantMeta, extractMenuItem, groupItemsByCategory, getShareSelectionData } from "./share-data"
@@ -35,15 +41,14 @@ describe("formatBadges", () => {
 })
 
 describe("formatDayLabel", () => {
-  it("returns formatted date string for a valid day", () => {
-    const label = formatDayLabel("Montag")
-    // We can't assert exact locale output, but it should not be the raw day name
-    expect(label).not.toBe("")
-    expect(typeof label).toBe("string")
+  it("returns translation key for a valid ISO date (Monday)", () => {
+    const label = formatDayLabel("2026-04-20")
+    // t() in test context returns the key itself; Monday → "dayShort.Montag"
+    expect(label).toBe("dayShort.Montag")
   })
 
-  it("returns the raw string for an unknown day name", () => {
-    expect(formatDayLabel("Samstag")).toBe("Samstag")
+  it("returns empty string for an empty input", () => {
+    expect(formatDayLabel("")).toBe("")
   })
 })
 
@@ -196,7 +201,7 @@ describe("getShareSelectionData", () => {
     const data = getShareSelectionData(() => timeline)
     expect(data).not.toBeNull()
     expect(data!.days).toHaveLength(1)
-    expect(data!.days[0].day).toBe("Montag")
+    expect(data!.days[0].day).toBe("2026-04-20")
     expect(data!.days[0].sections).toHaveLength(1)
     expect(data!.days[0].sections[0].name).toBe("Testaurant")
     expect(data!.days[0].sections[0].categories[0].items[0].title).toBe("Schnitzel")

@@ -1,10 +1,10 @@
 import "./timeline.css"
-import { DAYS } from "../../constants"
 import type { Restaurant } from "../../types"
 import type { VoteMapEntry } from "../../voting/types"
 import { t } from "../../i18n/i18n"
 import { icons, restaurantIconSpan } from "../../icons"
-import { todayDayIndex, formatDayHeader } from "../../utils/date"
+import { formatDayHeader, dateToIso, todayIndexInWeek } from "../../utils/date"
+import { todayIso } from "../../utils/today"
 import { smoothScrollTo, escapeHtml } from "../../utils/dom"
 import { renderRestaurantSection, renderVoterDots } from "../restaurant-section/restaurant-section"
 import { sortWithFavorites, isFavorite, toggleFavorite } from "../favorites/favorites"
@@ -21,7 +21,7 @@ export interface TimelineOptions {
 
 interface DayState {
   expanded: boolean
-  dayName: string
+  dateIso: string
   date: Date
   restaurants: Restaurant[]
 }
@@ -48,6 +48,9 @@ const _state: {
 
 const MAX_LEADER_PILLS = 3
 
+function computeTodayIdx(): number {
+  return todayIndexInWeek(_state.days.map(d => d.date), todayIso())
+}
 
 function renderLeaderPills(dayIndex: number, precomputed?: Map<string, VoteMapEntry>): string {
   if (!_state.days[dayIndex]) return ""
@@ -82,18 +85,24 @@ export function renderTimeline(el: HTMLElement, opts: TimelineOptions): void {
   _state.getFilters = opts.getFilters
   _state.onVote = opts.onVote
   if (opts.onDayRender) _state.onDayRender = opts.onDayRender
-  const todayIdx = todayDayIndex()
 
-  if (opts.weekDates.length < DAYS.length) {
-    console.warn(`[timeline] expected ${DAYS.length} weekDates, got ${opts.weekDates.length}`)
+  if (opts.weekDates.length !== 5) {
+    console.warn(`[timeline] expected 5 weekDates, got ${opts.weekDates.length}`)
   }
 
-  _state.days = DAYS.map((dayName, i) => ({
-    expanded: _state.days[i]?.expanded ?? (i === todayIdx),
-    dayName,
-    date: opts.weekDates[i] ?? opts.weekDates[0] ?? new Date(),
+  const prevDays = _state.days
+  _state.days = opts.weekDates.map((date, i) => ({
+    expanded: prevDays[i]?.expanded ?? false,
+    dateIso: dateToIso(date),
+    date,
     restaurants: opts.restaurants,
   }))
+
+  const todayIdx = computeTodayIdx()
+  if (todayIdx >= 0 && prevDays.length === 0) {
+    // First render: expand today by default
+    _state.days[todayIdx].expanded = true
+  }
 
   if (!_state.listenerAttached) {
     setupListeners()
@@ -107,7 +116,7 @@ export function renderTimeline(el: HTMLElement, opts: TimelineOptions): void {
     _state.listenerAttached = true
   }
 
-  renderShell()
+  renderShell(todayIdx)
 }
 
 function announceDay(dayIndex: number): void {
@@ -117,9 +126,8 @@ function announceDay(dayIndex: number): void {
   }
 }
 
-function renderShell(): void {
+function renderShell(todayIdx: number = computeTodayIdx()): void {
   if (!_state.el) return
-  const todayIdx = todayDayIndex()
 
   const html = _state.days.map((day, i) => {
     const isPast = todayIdx >= 0 && i < todayIdx
@@ -188,9 +196,9 @@ function renderDay(index: number): void {
 
   const sectionStrings = sorted.map((r, i) => {
     const pinned = isFavorite(r.id)
-    const menu = r.days?.[day.dayName]
+    const menu = r.days?.[day.dateIso]
     const vote = dayVotes.get(r.id) ?? { count: 0, userVoted: false, voters: [] }
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: vote.count, userVoted: vote.userVoted, voters: vote.voters, dayIndex: index, filters, isPinned: pinned })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: vote.count, userVoted: vote.userVoted, voters: vote.voters, dayIndex: index, dateIso: day.dateIso, filters, isPinned: pinned })
     if (html) {
       totalCount++
       if (pinned) { pinnedCount++; lastPinnedIdx = i }
@@ -273,7 +281,7 @@ export function expandDay(index: number, opts?: { scroll?: boolean }): void {
 }
 
 export function collapseAllExceptToday(): void {
-  const todayIdx = todayDayIndex()
+  const todayIdx = computeTodayIdx()
   _state.days.forEach((day, i) => {
     const wasExpanded = day.expanded
     day.expanded = i === todayIdx

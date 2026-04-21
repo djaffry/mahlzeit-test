@@ -1,11 +1,7 @@
 name: Fetch and Deploy Menus
 
-# Fetches data, validates, commits to main, and deploys.
-# Self-contained because GITHUB_TOKEN pushes don't trigger other workflows.
-
 on:
   schedule:
-    # UTC — add 1h for CET (winter), 2h for CEST (summer)
     - cron: '25 8 * * 1'
     - cron: '15 9 * * 1-5'
     - cron: '25 9 * * 1-5'
@@ -24,9 +20,11 @@ jobs:
       contents: write
     timeout-minutes: 10
     outputs:
-      data-changed: ${{ steps.changes.outputs.changed }}
+      data-changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -44,52 +42,94 @@ jobs:
         run: npm run build
         working-directory: scraper
 
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Prepare week-branch worktree
+        id: week
+        run: |
+          set -euo pipefail
+          export TZ="$(jq -r '.timezone' data/config.json)"
+          YEAR=$(date +%G)
+          WEEK=$(date +%V)
+          BRANCH="data-${YEAR}-W${WEEK}"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+          if git fetch --no-tags origin "$BRANCH:refs/remotes/origin/$BRANCH" 2>/dev/null; then
+            git worktree add .week "origin/$BRANCH"
+            ( cd .week && git checkout -B "$BRANCH" )
+          else
+            git worktree add --orphan -b "$BRANCH" .week
+          fi
+          mkdir -p .week/de .week/en
+
       - name: Fetch menu data
-        run: npm run scrape
+        env:
+          PECKISH_DATA_DIR: ${{ github.workspace }}/.week
+          PECKISH_GLOBALS_DIR: ${{ github.workspace }}/data
+        run: node dist/scrape-runner.js
         working-directory: scraper
 
       - name: Translate menu data
         id: translate
         continue-on-error: true
-        run: npm run translate
+        env:
+          PECKISH_DATA_DIR: ${{ github.workspace }}/.week
+          PECKISH_GLOBALS_DIR: ${{ github.workspace }}/data
+        run: node dist/translate-runner.js
         working-directory: scraper
 
       - name: Warn if translation failed
         if: steps.translate.outcome == 'failure'
-        run: echo "::warning::Translation failed. deploying without translations"
+        run: echo "::warning::Translation failed. Deploying without fresh translations."
 
-      - name: Check for data changes
-        id: changes
+      - name: Commit and push week branch
+        id: commit
         run: |
-          if [ -z "$(git status --porcelain data/)" ]; then
+          set -euo pipefail
+          cd .week
+          if [ -z "$(git status --porcelain de en 2>/dev/null || true)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "no week-branch changes"
+            exit 0
+          fi
+          git add de en 2>/dev/null || true
+          git commit -m "chore: update menu data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push --set-upstream origin "${{ steps.week.outputs.branch }}"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push global changes on main (manifest/tags/unknown-tags/translation-cache)
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: update menu globals $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            # voting-room.yml may push to main concurrently; rebase before push to avoid races
+            git pull --rebase
+            git push
           fi
 
       - name: Typecheck
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true'
         run: npm run typecheck
 
       - name: Run tests
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true'
         run: npm test
 
       - name: Build site
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true'
         run: npm run build
 
-      - name: Commit and push menu data
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "chore: update menu data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push
+      - name: Assemble data for deploy
+        if: steps.commit.outputs.changed == 'true'
+        uses: ./.github/actions/assemble-data
 
       - name: Upload pages artifact
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: dist

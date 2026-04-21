@@ -6,10 +6,6 @@ import type { VoteMapEntry } from "../../voting/types"
 
 vi.mock("./timeline.css", () => ({}))
 
-vi.mock("../../constants", () => ({
-  DAYS: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"],
-}))
-
 vi.mock("../../i18n/i18n", () => ({
   t: (k: string) => k,
   getLocale: () => "de-AT",
@@ -20,9 +16,17 @@ vi.mock("../../icons", () => ({
   restaurantIconSpan: (icon?: string) => `<span class="restaurant-icon">${icon ?? "utensils"}</span>`,
 }))
 
-vi.mock("../../utils/date", () => ({
-  todayDayIndex: () => 0,
-  formatDayHeader: (d: Date) => d.toLocaleDateString("de-AT", { weekday: "long", day: "numeric", month: "short" }),
+vi.mock("../../utils/date", () => {
+  const dateToIso = (d: Date) => `${d.getFullYear().toString().padStart(4, '0')}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`
+  return {
+    todayIndexInWeek: (dates: Date[], iso: string) => dates.findIndex(d => dateToIso(d) === iso),
+    formatDayHeader: (d: Date) => d.toLocaleDateString("de-AT", { weekday: "long", day: "numeric", month: "short" }),
+    dateToIso,
+  }
+})
+
+vi.mock("../../utils/today", () => ({
+  todayIso: () => "2026-04-22",
 }))
 
 vi.mock("../../utils/dom", () => ({
@@ -48,15 +52,16 @@ import { renderTimeline, expandDay, collapseAllExceptToday, rerenderExpandedDays
 function makeRestaurant(overrides: Partial<Restaurant> = {}): Restaurant {
   return {
     id: "r1", title: "Testaurant", url: "https://example.com", type: "full",
-    fetchedAt: "2026-04-07T10:00:00Z", error: null, days: {
-      Montag: { categories: [{ name: "Main", items: [] }] },
+    fetchedAt: "2026-04-22T10:00:00Z", error: null, days: {
+      "2026-04-22": { categories: [{ name: "Main", items: [] }], fetchedAt: "2026-04-22T08:00:00Z" },
     },
     ...overrides,
   }
 }
 
+// Week of 2026-04-20 (Mon) .. 2026-04-24 (Fri). Today is 2026-04-22 (Wed, index 2).
 function makeWeekDates(): Date[] {
-  const mon = new Date("2026-04-06")
+  const mon = new Date(2026, 3, 20) // April 20 2026
   return Array.from({ length: 5 }, (_, i) => {
     const d = new Date(mon)
     d.setDate(mon.getDate() + i)
@@ -114,8 +119,9 @@ describe("timeline", () => {
         onVote: vi.fn(),
       })
 
-      const firstSection = el.querySelector(".day-section[data-day-index='0']")
-      expect(firstSection?.classList.contains("expanded")).toBe(true)
+      // Today is 2026-04-22 = index 2 (Wednesday)
+      const todaySection = el.querySelector(".day-section[data-day-index='2']")
+      expect(todaySection?.classList.contains("expanded")).toBe(true)
     })
 
     it("renders restaurant content in expanded day", () => {
@@ -127,7 +133,9 @@ describe("timeline", () => {
         onVote: vi.fn(),
       })
 
-      expect(el.querySelector(".day-content")?.innerHTML).toContain("Schnitzelhaus")
+      // Today (index 2) is expanded — check its content
+      const todayContent = el.querySelector(".day-section[data-day-index='2'] .day-content")
+      expect(todayContent?.innerHTML).toContain("Schnitzelhaus")
     })
 
     it("collapsed days have empty content", () => {
@@ -170,11 +178,12 @@ describe("timeline", () => {
         onVote: vi.fn(),
       })
 
-      const firstHeader = el.querySelector(".day-header[data-day-index='0']") as HTMLElement
-      firstHeader.click()
+      // Today (index 2) is expanded by default — click it to collapse
+      const todayHeader = el.querySelector(".day-header[data-day-index='2']") as HTMLElement
+      todayHeader.click()
 
-      const firstSection = el.querySelector(".day-section[data-day-index='0']")
-      expect(firstSection?.classList.contains("expanded")).toBe(false)
+      const todaySection = el.querySelector(".day-section[data-day-index='2']")
+      expect(todaySection?.classList.contains("expanded")).toBe(false)
     })
   })
 
@@ -188,9 +197,9 @@ describe("timeline", () => {
         onVote: vi.fn(),
       })
 
-      expandDay(2)
+      expandDay(3)
 
-      const section = el.querySelector(".day-section[data-day-index='2']")
+      const section = el.querySelector(".day-section[data-day-index='3']")
       expect(section?.classList.contains("expanded")).toBe(true)
     })
   })
@@ -205,15 +214,16 @@ describe("timeline", () => {
         onVote: vi.fn(),
       })
 
-      // Expand days 1 and 2
+      // Expand days 0 and 1
+      expandDay(0)
       expandDay(1)
-      expandDay(2)
 
       collapseAllExceptToday()
 
-      expect(el.querySelector(".day-section[data-day-index='0']")?.classList.contains("expanded")).toBe(true)
+      // Today is index 2
+      expect(el.querySelector(".day-section[data-day-index='2']")?.classList.contains("expanded")).toBe(true)
+      expect(el.querySelector(".day-section[data-day-index='0']")?.classList.contains("expanded")).toBe(false)
       expect(el.querySelector(".day-section[data-day-index='1']")?.classList.contains("expanded")).toBe(false)
-      expect(el.querySelector(".day-section[data-day-index='2']")?.classList.contains("expanded")).toBe(false)
     })
   })
 
@@ -228,7 +238,8 @@ describe("timeline", () => {
       })
 
       expect(() => rerenderExpandedDays()).not.toThrow()
-      expect(el.querySelector(".day-content")?.innerHTML).toContain("Testaurant")
+      // Today (index 2) is expanded and contains the restaurant
+      expect(el.querySelector(".day-section[data-day-index='2'] .day-content")?.innerHTML).toContain("Testaurant")
     })
   })
 
@@ -243,10 +254,11 @@ describe("timeline", () => {
         onVote,
       })
 
-      const voteBtn = el.querySelector(".vote-btn") as HTMLElement
+      // Today (index 2) is expanded — vote button is visible
+      const voteBtn = el.querySelector(".day-section[data-day-index='2'] .vote-btn") as HTMLElement
       if (voteBtn) {
         voteBtn.click()
-        expect(onVote).toHaveBeenCalledWith("pizza1", 0)
+        expect(onVote).toHaveBeenCalledWith("pizza1", 2)
       }
     })
   })

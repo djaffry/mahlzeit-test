@@ -1,6 +1,6 @@
 import { flashAndScroll } from "../../utils/dom"
-import { todayDayIndex } from "../../utils/date"
-import { DAYS } from "../../constants"
+import { todayIso } from "../../utils/today"
+import { isoToWeekdayIndex } from "../../utils/date"
 
 export function handleDeepLink(deps: { expandDay: (index: number) => void }): void {
   const urlParams = new URLSearchParams(window.location.search)
@@ -8,8 +8,8 @@ export function handleDeepLink(deps: { expandDay: (index: number) => void }): vo
   const deepLinkDay = urlParams.get('d')
 
   if (deepLinkDay != null || deepLinkRestaurant) {
-    const dayIdx = deepLinkDay != null ? Number(deepLinkDay) : todayDayIndex()
-    if (!isNaN(dayIdx) && dayIdx >= 0 && dayIdx < DAYS.length) {
+    const dayIdx = deepLinkDay != null ? Number(deepLinkDay) : isoToWeekdayIndex(todayIso())
+    if (!isNaN(dayIdx) && dayIdx >= 0 && dayIdx < 5) {
       deps.expandDay(dayIdx)
       if (deepLinkRestaurant) {
         requestAnimationFrame(() => {

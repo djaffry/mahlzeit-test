@@ -1,6 +1,7 @@
 import { extractText } from 'unpdf';
-import type { FullAdapter, WeekMenu, Weekday, MenuItem, MenuCategory } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, Weekday, MenuItem, MenuCategory } from '../types.js';
 import { inferTags } from '../tags.js';
+import { currentWeek } from '../../week.js';
 
 const PDF_BASE = 'https://irp.cdn-website.com/fead4102/files/uploaded';
 
@@ -26,17 +27,7 @@ interface ParsedDish {
   price: string | null;
 }
 
-function getISOWeek(date: Date): number {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  return Math.ceil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
-}
-
-function getPdfUrl(): string {
-  const now = new Date();
-  const year = now.getFullYear();
-  const week = getISOWeek(now);
+function getPdfUrl(year: number, week: number): string {
   const even = week % 2 === 0 ? week : week - 1;
   return `${PDF_BASE}/MENU-KARTE+${year}+KW+${even}-${even + 1}.pdf`;
 }
@@ -192,7 +183,7 @@ function parseText(fullText: string) {
   return { week1, week2, tagesteller };
 }
 
-function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
+function buildAdapterWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): AdapterWeekMenu {
   const tagestellerCat: MenuCategory = {
     name: 'Tagesteller',
     items: tagesteller.map(d => ({
@@ -200,7 +191,7 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
     })),
   };
 
-  const result: WeekMenu = {};
+  const result: AdapterWeekMenu = {};
   for (const day of days) {
     const dailyItems: MenuItem[] = [
       { title: 'Tagessuppe', price: null, tags: [], allergens: null, description: null },
@@ -216,8 +207,9 @@ function buildWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): WeekMenu {
   return result;
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
-  const url = getPdfUrl();
+async function fetchMenu(): Promise<AdapterWeekMenu> {
+  const { year, week } = currentWeek();
+  const url = getPdfUrl(year, week);
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Reinthaler PDF: HTTP ${res.status}`);
 
@@ -225,12 +217,11 @@ async function fetchMenu(): Promise<WeekMenu> {
   const { text } = await extractText(new Uint8Array(buffer));
   const fullText = Array.isArray(text) ? text.join('\n') : text;
 
-  const currentWeek = getISOWeek(new Date());
-  const even = currentWeek % 2 === 0 ? currentWeek : currentWeek - 1;
+  const even = week % 2 === 0 ? week : week - 1;
   const { week1, week2, tagesteller } = parseText(fullText);
-  const days = currentWeek === even ? week1 : week2;
+  const days = week === even ? week1 : week2;
 
-  return buildWeekMenu(days, tagesteller);
+  return buildAdapterWeekMenu(days, tagesteller);
 }
 
 const adapter: FullAdapter = {
