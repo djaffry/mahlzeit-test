@@ -1,0 +1,11 @@
+name: Assemble data for deploy
+description: Bakes current-week and archived-week menu data into dist/ for Pages deploys
+runs:
+  using: composite
+  steps:
+    - name: Assemble
+      shell: bash
+      run: |
+        chmod +x ${{ github.action_path }}/assemble.sh
+        REPO_ROOT="${{ github.workspace }}" DIST_DIR="${{ github.workspace }}/dist" \
+          ${{ github.action_path }}/assemble.sh

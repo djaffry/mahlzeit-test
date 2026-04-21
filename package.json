@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "scrape": "pushd scraper && npm run build && npm run scrape",
     "translate": "pushd scraper && npm run build && npm run translate",
+    "dev:setup": "pushd scraper && npm run build && npm run scrape && npm run translate && popd && pushd voting && npm run build && npm run generate && popd",
     "test": "vitest run",
     "verify": "pushd scraper && npm run clean && npm run build && npm run scrape && npm run translate && popd && pushd voting && npm run clean && npm run build && npm run generate && npm run health-check && npx vitest run && popd && vitest run"
   },

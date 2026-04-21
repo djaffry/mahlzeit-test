@@ -24,12 +24,8 @@ vi.mock("../../utils/dom", () => ({
   highlightMatch: (text: string) => text,
 }))
 
-vi.mock("../../utils/date", () => ({
-  todayDayIndex: () => 2, // Wednesday
-}))
-
-vi.mock("../../constants", () => ({
-  DAYS: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"],
+vi.mock("../../utils/today", () => ({
+  todayIso: () => "2026-04-22", // Wednesday
 }))
 
 const mockGetActiveFilters = vi.fn<() => Set<string> | null>()
@@ -62,6 +58,7 @@ function makeRestaurant(id: string, title: string, days: Record<string, { catego
       Object.entries(days).map(([day, menu]) => [
         day,
         {
+          fetchedAt: "2026-04-07T10:00:00Z",
           categories: menu.categories.map(c => ({
             name: c.name,
             items: c.items.map(item => ({
@@ -175,7 +172,7 @@ describe("performSearch – filtering logic", () => {
   it("matches restaurant by name", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Gasthaus Zum Löwen", {
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Löwen")
@@ -185,7 +182,7 @@ describe("performSearch – filtering logic", () => {
   it("matches item by title", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Wiener Schnitzel" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Wiener Schnitzel" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Wiener")
@@ -195,7 +192,7 @@ describe("performSearch – filtering logic", () => {
   it("matches item by description", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Bistro", {
-      Montag: {
+      "2026-04-20": {
         categories: [{
           name: "Hauptspeise",
           items: [{ title: "Tagesgericht", description: "mit Krautsalat und Pommes" }],
@@ -210,7 +207,7 @@ describe("performSearch – filtering logic", () => {
   it("returns no-results message when nothing matches", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "xyznotfound")
@@ -220,7 +217,7 @@ describe("performSearch – filtering logic", () => {
   it("search is case-insensitive", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "SCHNITZEL")
@@ -230,8 +227,8 @@ describe("performSearch – filtering logic", () => {
   it("searches across all days, not just today", async () => {
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Montag: { categories: [{ name: "Hauptspeise", items: [{ title: "Montag Gulasch" }] }] },
-      Freitag: { categories: [{ name: "Hauptspeise", items: [{ title: "Freitag Fisch" }] }] },
+      "2026-04-20": { categories: [{ name: "Hauptspeise", items: [{ title: "Montag Gulasch" }] }] },
+      "2026-04-24": { categories: [{ name: "Hauptspeise", items: [{ title: "Freitag Fisch" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Fisch")
@@ -243,7 +240,7 @@ describe("performSearch – filtering logic", () => {
 
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Mittwoch: {
+      "2026-04-22": {
         categories: [{
           name: "Hauptspeise",
           items: [
@@ -264,7 +261,7 @@ describe("performSearch – filtering logic", () => {
 
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("r1", "Bistro", {
-      Mittwoch: {
+      "2026-04-22": {
         categories: [{
           name: "Hauptspeise",
           items: [
@@ -282,8 +279,8 @@ describe("performSearch – filtering logic", () => {
     const { overlay, input, results } = setupDOM()
     // Only Wednesday (index 2) and Monday (index 0)
     const restaurant = makeRestaurant("r1", "Mensa", {
-      Montag: { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti" }] }] },
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti Carbonara" }] }] },
+      "2026-04-20": { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti Carbonara" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Spaghetti")
@@ -300,7 +297,7 @@ describe("updateSearchRestaurants", () => {
     setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
 
     const newRestaurant = makeRestaurant("r2", "Neues Lokal", {
-      Mittwoch: { categories: [{ name: "Hauptspeise", items: [{ title: "Gulasch" }] }] },
+      "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Gulasch" }] }] },
     })
     updateSearchRestaurants([newRestaurant])
     await triggerInput(input, "Gulasch")
@@ -313,7 +310,7 @@ describe("result click navigation", () => {
     const onNavigate = vi.fn()
     const { overlay, input, results } = setupDOM()
     const restaurant = makeRestaurant("bistro-1", "Bistro", {
-      Dienstag: { categories: [{ name: "Hauptspeise", items: [{ title: "Pizza" }] }] },
+      "2026-04-21": { categories: [{ name: "Hauptspeise", items: [{ title: "Pizza" }] }] },
     })
     setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate, getActiveFilters: mockGetActiveFilters })
 

@@ -1,4 +1,4 @@
-import { DAYS } from "../../constants"
+import { getWeekDates, dateToIso } from "../../utils/date"
 import type { ShareTag, ShareSection, ShareDayGroup, ShareSelectionData } from "./share-types"
 
 export function extractRestaurantMeta(cardElement: HTMLElement): { name: string; cuisine: string; badges: string[] } | null {
@@ -42,10 +42,12 @@ export function getShareSelectionData(getTimeline: () => HTMLElement | null): Sh
   if (!timeline) return null
 
   const days: ShareDayGroup[] = []
+  const weekDates = getWeekDates()
 
   for (const daySection of timeline.querySelectorAll<HTMLElement>('.day-section')) {
     const dayIndex = Number(daySection.dataset.dayIndex ?? -1)
-    const dayName = dayIndex >= 0 && dayIndex < DAYS.length ? DAYS[dayIndex] : ''
+    const dateForIndex = dayIndex >= 0 && dayIndex < weekDates.length ? weekDates[dayIndex] : null
+    const dateIso = dateForIndex ? dateToIso(dateForIndex) : ''
 
     const sections: ShareSection[] = []
     for (const card of daySection.querySelectorAll<HTMLElement>('.restaurant-section')) {
@@ -64,7 +66,7 @@ export function getShareSelectionData(getTimeline: () => HTMLElement | null): Sh
     }
 
     if (sections.length > 0) {
-      days.push({ day: dayName, sections })
+      days.push({ day: dateIso, sections })
     }
   }
 

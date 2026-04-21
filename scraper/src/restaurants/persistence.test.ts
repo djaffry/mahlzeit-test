@@ -1,8 +1,9 @@
-import { describe, it, expect, beforeAll, afterAll } from 'vitest'
-import { readFile, writeFile, mkdtemp, rm } from 'node:fs/promises'
+import { describe, it, expect, beforeAll, afterAll, beforeEach, afterEach } from 'vitest'
+import { readFile, writeFile, mkdtemp, rm, mkdir } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
-import type { RestaurantData } from './types.js'
+import type { RestaurantData, AdapterWeekMenu } from './types.js'
+import { saveRestaurant, convertWeekMenuToDates } from './persistence.js'
 
 function makeData(overrides: Partial<RestaurantData> = {}): RestaurantData {
   return {
@@ -69,7 +70,8 @@ describe('saveRestaurant skip logic', () => {
     const incoming = makeData({
       fetchedAt: '2026-03-27T11:00:00.000Z',
       days: {
-        Montag: {
+        '2026-04-20': {
+          fetchedAt: '2026-03-27T10:00:00.000Z',
           categories: [{
             name: 'Suppe',
             items: [{ title: 'Gulaschsuppe', price: '5,90 €', tags: [], allergens: null, description: null }],
@@ -140,7 +142,8 @@ describe('saveRestaurant skip logic', () => {
 
   it('skips write for full adapters with identical menu', async () => {
     const menu = {
-      Montag: {
+      '2026-04-20': {
+        fetchedAt: '2026-03-27T10:00:00.000Z',
         categories: [{
           name: 'Hauptspeise',
           items: [{ title: 'Schnitzel', price: '11,90 €', tags: ['Schweinefleisch'], allergens: 'A,C,G', description: null }],
@@ -165,3 +168,135 @@ describe('saveRestaurant skip logic', () => {
     expect(wouldSkip(incoming, raw, existing)).toBe(true)
   })
 })
+
+describe('convertWeekMenuToDates', () => {
+  it('maps adapter weekday entries to the dates of the given ISO week and stamps fetchedAt', () => {
+    const menu: AdapterWeekMenu = {
+      Montag: { categories: [{ name: 'Main', items: [] }] },
+      Mittwoch: { categories: [{ name: 'Special', items: [] }] },
+    };
+    const stamp = '2026-04-20T08:25:13.000Z';
+    const out = convertWeekMenuToDates(menu, { year: 2026, week: 17 }, stamp);
+    expect(Object.keys(out).sort()).toEqual(['2026-04-20', '2026-04-22']);
+    expect(out['2026-04-20']).toEqual({ categories: [{ name: 'Main', items: [] }], fetchedAt: stamp });
+    expect(out['2026-04-22']).toEqual({ categories: [{ name: 'Special', items: [] }], fetchedAt: stamp });
+  });
+
+  it('returns an empty record for an empty menu', () => {
+    expect(convertWeekMenuToDates({}, { year: 2026, week: 17 }, '2026-04-20T00:00:00Z')).toEqual({});
+  });
+});
+
+describe('saveRestaurant — date-keyed merge', () => {
+  let dir: string;
+
+  beforeEach(async () => {
+    dir = await mkdtemp(join(tmpdir(), 'peckish-persist-'));
+    process.env.PECKISH_DATA_DIR = dir;
+    await mkdir(join(dir, 'de'), { recursive: true });
+  });
+
+  afterEach(async () => {
+    await rm(dir, { recursive: true, force: true });
+    delete process.env.PECKISH_DATA_DIR;
+  });
+
+  function baseRestaurant(partial: Partial<RestaurantData> = {}): RestaurantData {
+    return {
+      id: 'demo',
+      title: 'Demo',
+      url: 'https://example.test',
+      type: 'full',
+      fetchedAt: '2026-04-21T08:00:00.000Z',
+      error: null,
+      days: {},
+      ...partial,
+    };
+  }
+
+  it('writes a new file if none exists', async () => {
+    const data = baseRestaurant({
+      days: {
+        '2026-04-20': { categories: [{ name: 'Main', items: [] }], fetchedAt: '2026-04-20T08:00:00.000Z' },
+      },
+    });
+    await saveRestaurant(data);
+    const raw = await readFile(join(dir, 'de', 'demo.json'), 'utf-8');
+    const parsed = JSON.parse(raw);
+    expect(Object.keys(parsed.days)).toEqual(['2026-04-20']);
+  });
+
+  it('merges per-date: new dates added, existing dates overwritten, unrelated dates preserved', async () => {
+    await writeFile(join(dir, 'de', 'demo.json'), JSON.stringify(baseRestaurant({
+      fetchedAt: '2026-04-20T08:00:00.000Z',
+      days: {
+        '2026-04-20': { categories: [{ name: 'Main', items: [{ title: 'Mon old', price: null, tags: [], allergens: null, description: null }] }], fetchedAt: '2026-04-20T08:00:00.000Z' },
+        '2026-04-21': { categories: [{ name: 'Main', items: [{ title: 'Tue old', price: null, tags: [], allergens: null, description: null }] }], fetchedAt: '2026-04-20T08:00:00.000Z' },
+      },
+    })) + '\n');
+
+    const incoming = baseRestaurant({
+      fetchedAt: '2026-04-21T08:00:00.000Z',
+      days: {
+        '2026-04-21': { categories: [{ name: 'Main', items: [{ title: 'Tue new', price: null, tags: [], allergens: null, description: null }] }], fetchedAt: '2026-04-21T08:00:00.000Z' },
+        '2026-04-22': { categories: [{ name: 'Main', items: [{ title: 'Wed new', price: null, tags: [], allergens: null, description: null }] }], fetchedAt: '2026-04-21T08:00:00.000Z' },
+      },
+    });
+    await saveRestaurant(incoming);
+
+    const parsed = JSON.parse(await readFile(join(dir, 'de', 'demo.json'), 'utf-8'));
+    expect(Object.keys(parsed.days).sort()).toEqual(['2026-04-20', '2026-04-21', '2026-04-22']);
+    expect(parsed.days['2026-04-20'].categories[0].items[0].title).toBe('Mon old');
+    expect(parsed.days['2026-04-21'].categories[0].items[0].title).toBe('Tue new');
+    expect(parsed.days['2026-04-22'].categories[0].items[0].title).toBe('Wed new');
+  });
+
+  it('on error, preserves existing data unchanged', async () => {
+    await writeFile(join(dir, 'de', 'demo.json'), JSON.stringify(baseRestaurant({
+      days: {
+        '2026-04-20': { categories: [{ name: 'Main', items: [] }], fetchedAt: '2026-04-20T08:00:00.000Z' },
+      },
+    })) + '\n');
+
+    const errorResult = baseRestaurant({ error: 'scrape failed', days: {} });
+    await saveRestaurant(errorResult);
+
+    const parsed = JSON.parse(await readFile(join(dir, 'de', 'demo.json'), 'utf-8'));
+    expect(Object.keys(parsed.days)).toEqual(['2026-04-20']);
+    expect(parsed.error).toBeNull();
+  });
+
+  it('on error with no existing file, writes a stub so the manifest entry has a file', async () => {
+    // A new restaurant that failed on its first scrape still gets a file; otherwise the UI
+    // would 404 on the manifest entry.
+    const errorResult = baseRestaurant({ error: 'scrape failed', days: {} });
+    await saveRestaurant(errorResult);
+
+    const parsed = JSON.parse(await readFile(join(dir, 'de', 'demo.json'), 'utf-8'));
+    expect(parsed.error).toBe('scrape failed');
+    expect(parsed.days).toEqual({});
+  });
+
+  it('skips write when content unchanged, even though per-day fetchedAt differs', async () => {
+    const baseDay = { categories: [{ name: 'Main', items: [{ title: 'Schnitzel', price: null, tags: [], allergens: null, description: null }] }] };
+    // Existing must be serialized exactly the way saveRestaurant will — indented + trailing newline —
+    // otherwise the skip-write comparison will fail trivially.
+    const existing = baseRestaurant({
+      fetchedAt: '2026-04-20T08:00:00.000Z',
+      days: { '2026-04-20': { ...baseDay, fetchedAt: '2026-04-20T08:00:00.000Z' } },
+    });
+    await writeFile(join(dir, 'de', 'demo.json'), JSON.stringify(existing, null, 2) + '\n');
+
+    // Incoming has same content but fresh fetchedAt stamps everywhere.
+    const incoming = baseRestaurant({
+      fetchedAt: '2026-04-21T08:00:00.000Z',
+      days: { '2026-04-20': { ...baseDay, fetchedAt: '2026-04-21T08:00:00.000Z' } },
+    });
+    await saveRestaurant(incoming);
+
+    const parsed = JSON.parse(await readFile(join(dir, 'de', 'demo.json'), 'utf-8'));
+    // Existing day's fetchedAt and outer fetchedAt should be preserved (write was skipped).
+    expect(parsed.days['2026-04-20'].fetchedAt).toBe('2026-04-20T08:00:00.000Z');
+    expect(parsed.fetchedAt).toBe('2026-04-20T08:00:00.000Z');
+  });
+});

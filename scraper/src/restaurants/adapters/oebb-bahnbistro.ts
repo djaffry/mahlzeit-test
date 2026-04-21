@@ -1,4 +1,4 @@
-import type { FullAdapter, WeekMenu, MenuItem } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, MenuItem } from '../types.js';
 import { isWeekday } from '../types.js';
 import { inferTags } from '../tags.js';
 
@@ -47,14 +47,14 @@ function parseDish(dish: BahnbistroDish): { category: string; item: MenuItem } {
   };
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const res = await fetch(API_URL, {
     headers: { Accept: 'application/json' },
   });
   if (!res.ok) throw new Error(`Bahnbistro API returned HTTP ${res.status}`);
   const data: BahnbistroResponse = await res.json();
 
-  const result: WeekMenu = {};
+  const result: AdapterWeekMenu = {};
 
   for (const day of data.days) {
     if (!isWeekday(day.name)) continue;

@@ -1,4 +1,4 @@
-import type { FullAdapter, WeekMenu, Weekday, DayMenu, MenuItem } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, Weekday, DayMenu, MenuItem } from '../types.js';
 import { WEEKDAYS, isWeekday } from '../types.js';
 import { inferTags, resolveTags } from '../tags.js';
 
@@ -81,7 +81,7 @@ function groupByDay(items: WixItem[]): Map<Weekday, WixItemData[]> {
   return byDay;
 }
 
-function buildDayMenu(dayItems: WixItemData[]): DayMenu {
+function buildDayMenu(dayItems: WixItemData[]): Pick<DayMenu, 'categories'> {
   const catMap = new Map<string, MenuItem[]>();
 
   for (const item of dayItems) {
@@ -115,11 +115,11 @@ function buildDayMenu(dayItems: WixItemData[]): DayMenu {
   };
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const items = await fetchWixData();
   const byDay = groupByDay(items);
 
-  const result: WeekMenu = {};
+  const result: AdapterWeekMenu = {};
   for (const day of WEEKDAYS) {
     const dayItems = byDay.get(day)!;
     if (dayItems.length > 0) {

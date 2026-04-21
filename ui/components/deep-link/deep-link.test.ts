@@ -1,12 +1,11 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 
 vi.mock("../../utils/dom", () => ({ flashAndScroll: vi.fn() }))
-vi.mock("../../utils/date", () => ({ todayDayIndex: vi.fn(() => 0) }))
-vi.mock("../../constants", () => ({ DAYS: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"] }))
+vi.mock("../../utils/today", () => ({ todayIso: vi.fn(() => "2026-04-20") })) // Monday = index 0
 
 import { handleDeepLink } from "./deep-link"
 import { flashAndScroll } from "../../utils/dom"
-import { todayDayIndex } from "../../utils/date"
+import { todayIso } from "../../utils/today"
 
 const mockExpandDay = vi.fn()
 
@@ -26,7 +25,7 @@ function setSearch(search: string): void {
 beforeEach(() => {
   mockExpandDay.mockReset()
   vi.mocked(flashAndScroll).mockReset()
-  vi.mocked(todayDayIndex).mockReturnValue(0)
+  vi.mocked(todayIso).mockReturnValue("2026-04-20") // Monday = index 0
   setSearch("")
   window.history.replaceState = vi.fn()
   document.body.innerHTML = ""
@@ -61,7 +60,7 @@ describe("handleDeepLink - d param", () => {
     expect(mockExpandDay).not.toHaveBeenCalled()
   })
 
-  it("ignores day index >= DAYS.length (5)", () => {
+  it("ignores day index >= 5", () => {
     setSearch("?d=5")
     handleDeepLink({ expandDay: mockExpandDay })
     expect(mockExpandDay).not.toHaveBeenCalled()
@@ -82,7 +81,7 @@ describe("handleDeepLink - d param", () => {
 
 describe("handleDeepLink - r param", () => {
   it("expands today's day and scrolls to restaurant element", () => {
-    vi.mocked(todayDayIndex).mockReturnValue(1)
+    vi.mocked(todayIso).mockReturnValue("2026-04-21") // Tuesday = index 1
     setSearch("?r=mano")
     const section = document.createElement("div")
     section.id = "r-1-mano"
@@ -101,7 +100,7 @@ describe("handleDeepLink - r param", () => {
   })
 
   it("does not call flashAndScroll when element not in DOM", () => {
-    vi.mocked(todayDayIndex).mockReturnValue(0)
+    vi.mocked(todayIso).mockReturnValue("2026-04-20") // Monday = index 0
     setSearch("?r=nonexistent")
 
     const origRAF = window.requestAnimationFrame

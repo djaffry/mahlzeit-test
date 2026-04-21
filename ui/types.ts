@@ -1,4 +1,4 @@
-import type { DayName } from "./constants"
+export type GermanWeekday = 'Montag' | 'Dienstag' | 'Mittwoch' | 'Donnerstag' | 'Freitag'
 
 export interface Restaurant {
   id: string
@@ -12,7 +12,7 @@ export interface Restaurant {
   stampCard?: boolean
   outdoor?: boolean
   reservationUrl?: string
-  availableDays?: DayName[]
+  availableDays?: GermanWeekday[]
   fetchedAt: string
   error: string | null
   days: Record<string, DayMenu>
@@ -20,6 +20,7 @@ export interface Restaurant {
 
 export interface DayMenu {
   categories: MenuCategory[]
+  fetchedAt: string
 }
 
 export interface MenuCategory {

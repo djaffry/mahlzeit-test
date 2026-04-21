@@ -17,7 +17,8 @@ const makeRestaurant = (overrides: Partial<Restaurant> = {}): Restaurant => ({
   fetchedAt: "2026-03-20T10:00:00Z",
   error: null,
   days: {
-    Montag: {
+    "2026-04-20": {
+      fetchedAt: "2026-04-20T08:00:00Z",
       categories: [
         {
           name: "Hauptspeise",
@@ -55,7 +56,8 @@ describe("contentHash", () => {
     const r2 = [
       makeRestaurant({
         days: {
-          Montag: {
+          "2026-04-20": {
+            fetchedAt: "2026-04-20T08:00:00Z",
             categories: [
               {
                 name: "Hauptspeise",

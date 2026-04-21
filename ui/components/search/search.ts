@@ -3,8 +3,8 @@ import type { Restaurant } from "../../types"
 import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml, highlightMatch, registerOverlay, unregisterOverlay } from "../../utils/dom"
-import { DAYS } from "../../constants"
-import { todayDayIndex } from "../../utils/date"
+import { todayIso } from "../../utils/today"
+import { isoToWeekdayIndex } from "../../utils/date"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 
 const DEBOUNCE_MS = 150
@@ -95,10 +95,11 @@ export function closeSearch(): void {
 interface Match {
   restaurant: Restaurant
   dayIndex: number
+  isToday: boolean
   items: string[]
 }
 
-function collectMatches(restaurants: Restaurant[], query: string, filters: Set<string> | null, todayIdx: number): Match[] {
+function collectMatches(restaurants: Restaurant[], query: string, filters: Set<string> | null, today: string): Match[] {
   const q = query.toLowerCase()
   const matches: Match[] = []
 
@@ -106,13 +107,19 @@ function collectMatches(restaurants: Restaurant[], query: string, filters: Set<s
     const nameMatch = r.title.toLowerCase().includes(q)
 
     if (r.type === "link") {
-      if (nameMatch) matches.push({ restaurant: r, dayIndex: todayIdx, items: [r.title] })
+      const dayIndex = isoToWeekdayIndex(today)
+      if (dayIndex < 0) continue // weekends: link restaurants have no day to expand into
+      if (nameMatch) matches.push({ restaurant: r, dayIndex, isToday: true, items: [r.title] })
       continue
     }
 
-    for (let di = 0; di < DAYS.length; di++) {
-      const menu = r.days?.[DAYS[di]]
+    for (const isoDate of Object.keys(r.days ?? {}).sort()) {
+      const menu = r.days[isoDate]
       if (!menu) continue
+
+      const di = isoToWeekdayIndex(isoDate)
+      if (di < 0) continue // guard weekend keys (scraper only writes Mon–Fri, but be defensive)
+      const isToday = isoDate === today
 
       const dayItems: string[] = []
       for (const cat of menu.categories) {
@@ -126,9 +133,9 @@ function collectMatches(restaurants: Restaurant[], query: string, filters: Set<s
 
       if (nameMatch && dayItems.length === 0) {
         const preview = menu.categories.flatMap((c) => c.items).slice(0, MAX_PREVIEW_ITEMS).map((i) => i.title)
-        if (preview.length > 0) matches.push({ restaurant: r, dayIndex: di, items: preview })
+        if (preview.length > 0) matches.push({ restaurant: r, dayIndex: di, isToday, items: preview })
       } else if (dayItems.length > 0) {
-        matches.push({ restaurant: r, dayIndex: di, items: dayItems.slice(0, MAX_MATCHED_ITEMS) })
+        matches.push({ restaurant: r, dayIndex: di, isToday, items: dayItems.slice(0, MAX_MATCHED_ITEMS) })
       }
     }
   }
@@ -136,10 +143,10 @@ function collectMatches(restaurants: Restaurant[], query: string, filters: Set<s
   return matches
 }
 
-function sortMatches(matches: Match[], todayIdx: number): Match[] {
+function sortMatches(matches: Match[]): Match[] {
   return matches.sort((a, b) => {
-    if (a.dayIndex === todayIdx && b.dayIndex !== todayIdx) return -1
-    if (b.dayIndex === todayIdx && a.dayIndex !== todayIdx) return 1
+    if (a.isToday && !b.isToday) return -1
+    if (b.isToday && !a.isToday) return 1
     return b.items.length - a.items.length
   })
 }
@@ -167,9 +174,9 @@ function performSearch(query: string): void {
   }
 
   const filters = _state.getActiveFilters()
-  const todayIdx = todayDayIndex()
-  const matches = collectMatches(_state.restaurants, query, filters, todayIdx)
-  sortMatches(matches, todayIdx)
+  const today = todayIso()
+  const matches = collectMatches(_state.restaurants, query, filters, today)
+  sortMatches(matches)
 
   _state.results.innerHTML = renderMatches(matches, query)
     || `<div class="search-result"><div class="search-result-item">${escapeHtml(t("search.noResults") ?? "No results")}</div></div>`

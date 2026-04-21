@@ -7,7 +7,8 @@
     "clean": "rm -rf dist",
     "build": "tsc",
     "scrape": "node dist/scrape-runner.js",
-    "translate": "node dist/translate-runner.js"
+    "translate": "node dist/translate-runner.js",
+    "test": "vitest run"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "4.1.0"
   }
 }

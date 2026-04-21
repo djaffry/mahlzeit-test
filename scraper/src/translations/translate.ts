@@ -7,21 +7,21 @@ async function fileExists(path: string): Promise<boolean> {
 }
 import { loadCache, saveCache, computeContentHash, getCacheKey } from './cache.js'
 import { log } from '../log.js'
-import type { RestaurantData, Weekday } from '../restaurants/types.js'
+import type { RestaurantData } from '../restaurants/types.js'
 
-export async function runTranslation(dataDir: string, config: TranslationConfig): Promise<void> {
+export async function runTranslation(dataDir: string, globalsDir: string, config: TranslationConfig): Promise<void> {
   const { sourceLanguage, targetLanguages, adapter } = config
 
   log('INFO', 'translation', 'start', `source=${sourceLanguage}, targets=[${targetLanguages.join(', ')}], adapter=${adapter.name}`)
 
-  const indexRaw = await readFile(join(dataDir, 'index.json'), 'utf-8')
+  const indexRaw = await readFile(join(globalsDir, 'index.json'), 'utf-8')
   const restaurantIds: string[] = JSON.parse(indexRaw)
 
   const sourceLangDir = join(dataDir, sourceLanguage)
   const languages = [sourceLanguage, ...targetLanguages]
-  await writeFile(join(dataDir, 'languages.json'), JSON.stringify(languages) + '\n', 'utf-8')
+  await writeFile(join(globalsDir, 'languages.json'), JSON.stringify(languages) + '\n', 'utf-8')
 
-  const cache = await loadCache(dataDir)
+  const cache = await loadCache(globalsDir)
   const failures: string[] = []
 
   for (const targetLang of targetLanguages) {
@@ -58,7 +58,7 @@ export async function runTranslation(dataDir: string, config: TranslationConfig)
         }
       }
     }
-    await saveCache(dataDir, cache)
+    await saveCache(globalsDir, cache)
   }
 
   if (failures.length > 0) {
@@ -82,7 +82,7 @@ async function translateRestaurant(
   for (const c of translated.cuisine ?? []) {
     texts.push(c)
   }
-  for (const dayKey of (Object.keys(translated.days) as Weekday[])) {
+  for (const dayKey of Object.keys(translated.days)) {
     const day = translated.days[dayKey]
     if (!day?.categories) continue
     for (const category of day.categories) {
@@ -102,7 +102,7 @@ async function translateRestaurant(
   if (translated.cuisine) {
     translated.cuisine = translated.cuisine.map(c => translationMap.get(c) ?? c)
   }
-  for (const dayKey of (Object.keys(translated.days) as Weekday[])) {
+  for (const dayKey of Object.keys(translated.days)) {
     const day = translated.days[dayKey]
     if (!day?.categories) continue
     for (const category of day.categories) {

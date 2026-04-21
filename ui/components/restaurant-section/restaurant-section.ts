@@ -1,7 +1,7 @@
 import "./restaurant-section.css"
 import "../favorites/favorites.css"
 import type { Restaurant, DayMenu, Voter } from "../../types"
-import { BADGES, DAYS } from "../../constants"
+import { BADGES } from "../../constants"
 import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml } from "../../utils/dom"
@@ -68,16 +68,16 @@ export interface RenderSectionOptions {
   userVoted: boolean
   voters?: Voter[]
   dayIndex?: number
+  dateIso?: string
   filters?: Set<string> | null
   isPinned?: boolean
 }
 
 export function renderRestaurantSection(opts: RenderSectionOptions): string {
-  const { restaurant, dayMenu, voteCount, userVoted, voters = [], dayIndex, filters = null, isPinned = false } = opts
+  const { restaurant, dayMenu, voteCount, userVoted, voters = [], dayIndex, dateIso, filters = null, isPinned = false } = opts
   const sectionId = dayIndex != null ? `r-${dayIndex}-${escapeHtml(restaurant.id)}` : `r-${escapeHtml(restaurant.id)}`
   const iconSvg = restaurantIconSpan(restaurant.icon)
-  const dayName = dayIndex != null ? DAYS[dayIndex] : undefined
-  const available = !dayName || isAvailableOnDay(restaurant, dayName)
+  const available = !dateIso || isAvailableOnDay(restaurant, dateIso)
 
   const websiteLink = restaurant.url
     ? `<a class="restaurant-website-link" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(restaurant.title)}">${icons.externalLink}</a>`

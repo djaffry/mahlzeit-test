@@ -13,6 +13,7 @@ export interface MenuCategory {
 
 export interface DayMenu {
   categories: MenuCategory[];
+  fetchedAt: string; // ISO-8601 timestamp of when this day's data was scraped.
 }
 
 export type Weekday = 'Montag' | 'Dienstag' | 'Mittwoch' | 'Donnerstag' | 'Freitag';
@@ -23,7 +24,11 @@ export function isWeekday(value: string): value is Weekday {
   return (WEEKDAYS as readonly string[]).includes(value);
 }
 
-export type WeekMenu = Partial<Record<Weekday, DayMenu>>;
+/** What adapters return: weekday-keyed, no per-day metadata. */
+export type AdapterWeekMenu = Partial<Record<Weekday, Pick<DayMenu, 'categories'>>>;
+
+/** What persistence writes: date-keyed (YYYY-MM-DD), with per-day `fetchedAt`. */
+export type DaysByDate = Record<string, DayMenu>;
 
 interface BaseAdapter {
   id: string;
@@ -41,7 +46,7 @@ interface BaseAdapter {
 
 export interface FullAdapter extends BaseAdapter {
   type: 'full' | 'specials';
-  fetchMenu: () => Promise<WeekMenu>;
+  fetchMenu: () => Promise<AdapterWeekMenu>;
 }
 
 export interface LinkAdapter extends BaseAdapter {
@@ -55,8 +60,8 @@ export function isFetchable(a: Adapter): a is FetchableAdapter {
   return typeof (a as FetchableAdapter).fetchMenu === 'function';
 }
 
-export function allDays(categories: MenuCategory[]): WeekMenu {
-  const menu: WeekMenu = {};
+export function allDays(categories: MenuCategory[]): AdapterWeekMenu {
+  const menu: AdapterWeekMenu = {};
   for (const day of WEEKDAYS) {
     menu[day] = { categories };
   }
@@ -78,5 +83,5 @@ export interface RestaurantData {
   coordinates?: { lat: number; lon: number };
   fetchedAt: string;
   error: string | null;
-  days: WeekMenu;
+  days: DaysByDate;
 }

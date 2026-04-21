@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom';
-import type { FullAdapter, WeekMenu, Weekday, MenuCategory, MenuItem } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, Weekday, MenuCategory, MenuItem } from '../types.js';
 import { inferTags, resolveTags } from '../tags.js';
 
 const PAGE_URL = 'https://www.spoonfood.at/';
@@ -123,7 +123,7 @@ function parseCategories(section: Element): MenuCategory[] {
   return categories;
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const doc = await fetchDocument();
 
   const section = doc.getElementById('tageskarte');

@@ -2,13 +2,6 @@ export const LANG_CHANGE_EVENT = "peckish:langchange"
 
 export const DESKTOP_MIN_WIDTH = 1025
 
-export const DAYS = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"] as const
-export type DayName = (typeof DAYS)[number]
-
-export const DAY_JS_MAP: Record<number, DayName> = {
-  1: "Montag", 2: "Dienstag", 3: "Mittwoch", 4: "Donnerstag", 5: "Freitag",
-}
-
 export type BadgeProp = "stampCard" | "edenred" | "outdoor" | "reservationUrl"
 
 export const BADGES: { prop: BadgeProp; i18n: string; cssVar: string }[] = [

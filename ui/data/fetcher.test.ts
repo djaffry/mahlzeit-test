@@ -161,3 +161,4 @@ describe('fetchMenuDataQuiet', () => {
     expect(result![1].id).toBe('r2')
   })
 })
+

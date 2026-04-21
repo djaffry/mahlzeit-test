@@ -41,16 +41,19 @@ const MOCK_RESTAURANTS: Restaurant[] = [
 /* ── Mock date to Wednesday of the voting week ───────────── */
 
 vi.mock("../utils/date", () => ({
-  getTodayName: () => "Mittwoch",
-  todayDayIndex: () => 2, // Wednesday = index 2
   getWeekDates: () => [
-    new Date("2026-03-23"),
-    new Date("2026-03-24"),
-    new Date("2026-03-25"),
-    new Date("2026-03-26"),
-    new Date("2026-03-27"),
+    new Date(2026, 2, 23),
+    new Date(2026, 2, 24),
+    new Date(2026, 2, 25),
+    new Date(2026, 2, 26),
+    new Date(2026, 2, 27),
   ],
-  getMondayOfWeek: () => new Date("2026-03-23"),
+  getMondayOfWeek: () => new Date(2026, 2, 23),
+  dateToIso: (d: Date) => `${d.getFullYear().toString().padStart(4, '0')}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`,
+}))
+
+vi.mock("../utils/today", () => ({
+  todayIso: () => "2026-03-25", // Wednesday
 }))
 
 /* ── Import after mocks ──────────────────────────────────── */

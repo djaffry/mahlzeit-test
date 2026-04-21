@@ -1,5 +1,5 @@
 import { extractText } from 'unpdf';
-import type { FullAdapter, WeekMenu, MenuCategory } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, MenuCategory } from '../types.js';
 import { allDays } from '../types.js';
 import { inferTags } from '../tags.js';
 
@@ -100,7 +100,7 @@ async function getPdfUrl(): Promise<string> {
   return match[0];
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const pdfUrl = await getPdfUrl();
 
   const res = await fetch(pdfUrl);

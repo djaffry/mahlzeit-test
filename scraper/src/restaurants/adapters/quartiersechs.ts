@@ -1,4 +1,4 @@
-import type { FullAdapter, WeekMenu, MenuItem } from '../types.js';
+import type { FullAdapter, AdapterWeekMenu, MenuItem } from '../types.js';
 import { isWeekday } from '../types.js';
 import { inferTags, resolveTags } from '../tags.js';
 
@@ -217,7 +217,7 @@ function parseMenuLine(menuLine: EurestMenuLine): { category: string; item: Menu
   return results;
 }
 
-async function fetchMenu(): Promise<WeekMenu> {
+async function fetchMenu(): Promise<AdapterWeekMenu> {
   const res = await fetch(API_URL);
   if (!res.ok) throw new Error(`Quartier Sechs API returned HTTP ${res.status}`);
   const page: WpPage = await res.json();
@@ -229,7 +229,7 @@ async function fetchMenu(): Promise<WeekMenu> {
   const weeklyMenu = menuBlock.wu_mensa_daily_menu?.[0]?.apiWeeklyMenu;
   if (!weeklyMenu) throw new Error('apiWeeklyMenu not found');
 
-  const result: WeekMenu = {};
+  const result: AdapterWeekMenu = {};
 
   for (const weekDay of toArray(weeklyMenu.WeekDays?.WeekDay)) {
     const dayAttr = weekDay['@attributes']?.Day;
