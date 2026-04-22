@@ -1,3 +1,4 @@
+import "./auto-refresh.css"
 import { config } from "../config"
 import { fetchMenuDataQuiet } from "./fetcher"
 import { getCurrentLanguage, getSourceLanguage, t } from "../i18n/i18n"

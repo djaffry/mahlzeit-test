@@ -1,0 +1,25 @@
+/* ── Refresh Toast ──────────────────────────────────────── */
+
+.refresh-toast {
+  position: fixed;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translate(-50%, var(--space-sm));
+  padding: var(--space-sm) var(--space-md);
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out);
+  z-index: 600;
+}
+
+.refresh-toast.visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
