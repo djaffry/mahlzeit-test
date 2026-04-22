@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-21T20:49:23.442Z",
+  "fetchedAt": "2026-04-22T10:43:08.928Z",
   "error": null,
   "days": {
     "2026-04-20": {
@@ -726,10 +726,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Oreo cream, berry ragout",
+              "title": "Oreo cream, berry ragout, vegan chocolate mousse, raspberry",
               "price": null,
-              "tags": [],
-              "allergens": "G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -738,12 +740,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Creamy vegan matcha slices",
+              "title": "Creamy vegan matcha slices Malakoff slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -763,7 +765,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-21T20:49:21.468Z"
+      "fetchedAt": "2026-04-22T10:43:06.687Z"
     },
     "2026-04-23": {
       "categories": [

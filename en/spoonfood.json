@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-21T20:49:23.325Z",
+  "fetchedAt": "2026-04-22T10:43:09.062Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -164,6 +164,148 @@
         }
       ],
       "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Potato 🥔 cream soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Boiled beef",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Rösti & chives 🌿 cream"
+            },
+            {
+              "title": "Potatoes 🥔-Leeks 🌿-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Citrus 🍋 béchamel"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Yellow 💛 Thai chicken curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥, lemongrass 🌿, peppers 🫑, bok choy 🥬, ginger 🫚 & rice"
+            },
+            {
+              "title": "Vegan high protein 💪 lentil stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Root vegetables 🥕 & rice – optional: add sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Lime 🍋‍🟩 Thai Glass Noodle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, cucumbers 🥒, celery, ginger 🫚, coriander 🌿, mint, fresh lime 🍋‍🟩 & peanuts 🥜"
+            },
+            {
+              "title": "Greek Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peppers 🫑 Tricolore 💛🧡💚, Kalamata olives 🫒, cucumbers 🥒, tomatoes 🍅 & feta"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Hazelnut apricot 🍑 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Giotto"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-22T10:43:06.687Z"
     }
   }
 }

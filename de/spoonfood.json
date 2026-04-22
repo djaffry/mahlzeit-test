@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-21T20:49:23.325Z",
+  "fetchedAt": "2026-04-22T10:43:09.062Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -164,6 +164,148 @@
         }
       ],
       "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Cremesuppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Gekochtes Rindfleisch",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Rösti & Schnittlauch 🌿-Rahm"
+            },
+            {
+              "title": "Erdäpfel 🥔-Lauch 🌿-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Zitrus 🍋-Béchamel"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Gelbes 💛 Thai-Hühner-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Zitronengras 🌿, Paprika 🫑, Pak Choi 🥬, Ingwer 🫚 & Reis"
+            },
+            {
+              "title": "Veganer High Protein 💪-Linsen-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕 & Reis – optional: Sauerrahm dazu"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Lime 🍋‍🟩-Thai-Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Gurken 🥒, Sellerie, Ingwer 🫚, Koriander 🌿, Minze, frischer Limette 🍋‍🟩 & Erdnüssen 🥜"
+            },
+            {
+              "title": "Griechische Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑 Tricolore 💛🧡💚, Kalamata-Oliven 🫒, Gurken 🥒, Tomaten 🍅 & Feta"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Haselnuss-Marillen 🍑-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Giotto"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-22T10:43:06.687Z"
     }
   }
 }

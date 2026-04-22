@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-21T20:49:25.830Z",
+  "fetchedAt": "2026-04-22T10:43:10.424Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -47,6 +47,41 @@
         }
       ],
       "fetchedAt": "2026-04-21T20:49:21.468Z"
+    },
+    "2026-04-22": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Süßkartoffel-Kokosmilch (Vegan) Suppe",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "O,L,N",
+              "description": null
+            },
+            {
+              "title": "Puten-Faschiertes Braten mit Spargel Sauce dazu Basmatireis",
+              "price": "11,90 €",
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "6,A,0,L,N",
+              "description": null
+            },
+            {
+              "title": "Penne mit Bärlauch ä la Creme (AC,6,0,LN)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-22T10:43:06.687Z"
     }
   }
 }
