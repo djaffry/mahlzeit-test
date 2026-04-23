@@ -150,6 +150,12 @@ docs
 # Local scrape output. On main, menu data lives on per-week orphan branches
 # (data-YYYY-Www); in dev, `npm run dev:setup` populates these directories
 # directly so Vite can serve them.
+<<<<<<< HEAD
 /data/de/
 /data/en/
 /archive/
+=======
+data/de/
+data/en/
+archive/
+>>>>>>> 7694273 (feat: more data to infer for tags)

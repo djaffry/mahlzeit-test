@@ -48,17 +48,17 @@ type TagPattern = readonly [RegExp, string];
 
 const KEYWORD_PATTERNS: TagPattern[] = [
   [/\bh[üu]hn|chicken\b|hendl\b|henderl\b/i, TAGS.Huhn],
-  [/\bpute|truthahn/i, TAGS.Pute],
-  [/\bente/i, TAGS.Ente],
-  [/\bgefl[üu]gel/i, TAGS.Gefluegel],
+  [/\bpute|truthahn|\bturkey\b/i, TAGS.Pute],
+  [/\bente|\bduck\b/i, TAGS.Ente],
+  [/\bgefl[üu]gel|\bpoultry\b/i, TAGS.Gefluegel],
   [/\bbeef\b|\brind(s|er|fleisch)?|\btafelspitz/i, TAGS.Rindfleisch],
-  [/schwein/i, TAGS.Schweinefleisch],
-  [/\blamm/i, TAGS.Lamm],
-  [/(?<!\w)fleisch(?![\wäöü])/i, TAGS.Fleisch],
-  [/\blachs|\bforelle|\bscholle|\bzander|\bsaibling|\bkarpfen|\bthunfisch/i, TAGS.Fisch],
-  [/\bgarnele|\bshrimp|\bmuschel|\bcalamari|\btintenfisch|\boktopus|\bhummer\b|\bkrabbe/i, TAGS.Meeresfruechte],
+  [/schwein|\bpork|schinken|\bham\b|\bbacon\b|\bspeck\b/i, TAGS.Schweinefleisch],
+  [/\blamm|\blamb\b/i, TAGS.Lamm],
+  [/(?<!\w)fleisch(?![\wäöü])|(?<!\w)meat\b/i, TAGS.Fleisch],
+  [/\blachs|\bsalmon\b|\balici\b|\banchov|\bforelle|\btrout\b|\bscholle|\bzander|\bpike-?perch\b|\bperch\b|\bbarsch|\bsaibling|\bkarpfen|\bcarp\b|\bthunfisch|\btuna\b|\bhake\b|\bsea[-\s]?bass\b|\bfisch|\bfish\b/i, TAGS.Fisch],
+  [/\bgarnele|\bshrimp|\bprawn|\bmuschel|\bmussel|\bcalamari|\btintenfisch|\bsquid\b|\boktopus|\boctopus\b|\bhummer\b|\blobster\b|\bkrabbe|\bcrab\b/i, TAGS.Meeresfruechte],
   [/\bvegan|\btofu\b|\byofu\b|\bobst\b/i, TAGS.Vegan],
-  [/\bvegetarisch/i, TAGS.Vegetarisch],
+  [/\bvegetarisch|\bvegetarian\b/i, TAGS.Vegetarisch],
 ];
 
 const CATEGORY_PATTERNS: TagPattern[] = [

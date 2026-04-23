@@ -48,11 +48,36 @@ describe('inferTags', () => {
     expect(inferTags({ title: 'Lachs mit Gemüse' })).toEqual(['Fisch'])
     expect(inferTags({ title: 'Zanderfilet' })).toEqual(['Fisch'])
     expect(inferTags({ title: 'Thunfisch Salat' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Grilled salmon cubes' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Tuna Salad' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Spaghetti alle alici' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Anchovy pizza' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Baked fish fillet' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Grilled sea bass' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Pike-perch fillet' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Barschfilet' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Fried hake fillet' })).toEqual(['Fisch'])
+    expect(inferTags({ title: 'Fischfilet' })).toEqual(['Fisch'])
   })
 
   it('infers Meeresfrüchte from seafood keywords', () => {
     expect(inferTags({ title: 'Garnelen auf Pasta' })).toEqual(['Meeresfrüchte'])
     expect(inferTags({ title: 'Calamari fritti' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Steamed mussels' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Grilled octopus' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Lobster bisque' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Crab cakes' })).toEqual(['Meeresfrüchte'])
+    expect(inferTags({ title: 'Prawn curry' })).toEqual(['Meeresfrüchte'])
+  })
+
+  it('infers meat tags from English counterparts', () => {
+    expect(inferTags({ title: 'Pork roast' })).toEqual(['Schweinefleisch'])
+    expect(inferTags({ title: 'Country ham pizza' })).toEqual(['Schweinefleisch'])
+    expect(inferTags({ title: 'Bacon cheeseburger' })).toEqual(['Schweinefleisch'])
+    expect(inferTags({ title: 'Schinken Toast' })).toEqual(['Schweinefleisch'])
+    expect(inferTags({ title: 'Turkey teriyaki skewers' })).toEqual(['Pute'])
+    expect(inferTags({ title: 'Duck confit' })).toEqual(['Ente'])
+    expect(inferTags({ title: 'Lamb tagine' })).toEqual(['Lamm'])
   })
 
   it('infers Vegan', () => {
