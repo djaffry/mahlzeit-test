@@ -144,6 +144,9 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
   const badgesAttr = badgeList.length
     ? ` data-badges="${escapeHtml(badgeList.join(","))}"`
     : ""
+  const bottomLinkLabel = restaurant.type === "specials"
+    ? t("card.menuOnWebsiteSpecials")
+    : t("card.menuOnWebsite")
 
   return `
     <section class="restaurant-section" id="${sectionId}" data-restaurant-id="${escapeHtml(restaurant.id)}"${cuisineAttr}${badgesAttr}>
@@ -162,7 +165,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
       </div>
       ${renderBadges(restaurant)}
       ${categoriesHtml}
-      ${renderBottomWebsiteLink(restaurant, t("card.menuOnWebsite"))}
+      ${renderBottomWebsiteLink(restaurant, bottomLinkLabel)}
     </section>`
 }
 

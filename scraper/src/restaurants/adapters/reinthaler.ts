@@ -261,7 +261,7 @@ const adapter: FullAdapter = {
   title: 'Gasthaus Reinthaler',
   icon: 'beer',
   url: 'https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue',
-  type: 'full',
+  type: 'specials',
   cuisine: ['Wirtshaus'],
   reservationUrl: 'https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung',
   coordinates: { lat: 48.21892, lon: 16.39778 },
