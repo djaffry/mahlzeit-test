@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-22T10:43:09.062Z",
+  "fetchedAt": "2026-04-23T10:48:38.009Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -306,6 +306,148 @@
         }
       ],
       "fetchedAt": "2026-04-22T10:43:06.687Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood's Beef Tea (clear beef broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Pasta, vegetables & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Rice meat from Ötscherblick pig",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑 - optional: with sour cream"
+            },
+            {
+              "title": "Krautfleckerl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "fresh parsley 🌿 & small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Louisiana Gumbo Chicken Stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 pointed peppers 🫑, spicy sausage pieces, mushrooms 🍄‍🟫 & rice"
+            },
+            {
+              "title": "Potato 🥔 vegetable tagine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, broccoli 🥦, cauliflower, yellow 💛 & green zucchini 🥒, dried plums 💜, saffron 🧡, cardamom 🤎 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Two kinds of celery 🌿 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Granny Smith apple 🍏, walnut & parmesan dressing"
+            },
+            {
+              "title": "Curry 💛-potatoes 🥔-salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, cucumbers 🥒, tomatoes 🍅 & spring onions 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Kalamansi 🍊 mango 🥭 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     }
   }
 }

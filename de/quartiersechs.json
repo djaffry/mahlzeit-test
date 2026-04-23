@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-22T10:43:08.928Z",
+  "fetchedAt": "2026-04-23T10:48:37.448Z",
   "error": null,
   "days": {
     "2026-04-20": {
@@ -40,7 +40,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -82,7 +82,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -127,7 +127,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -136,7 +136,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -145,7 +145,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -166,7 +166,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "G,M,N,O",
+              "allergens": "A,G,M,N,O",
               "description": null
             }
           ]
@@ -243,7 +243,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
@@ -263,7 +263,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-21T20:49:21.468Z"
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     },
     "2026-04-21": {
       "categories": [
@@ -290,7 +290,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -375,7 +375,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -384,7 +384,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -393,7 +393,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -493,7 +493,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -513,7 +513,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-21T20:49:21.468Z"
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     },
     "2026-04-22": {
       "categories": [
@@ -540,7 +540,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,L",
+              "allergens": "A,C,H,L",
               "description": null
             }
           ]
@@ -568,7 +568,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "G,L",
+              "allergens": "C,G,H,L",
               "description": null
             }
           ]
@@ -627,7 +627,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -636,7 +636,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -645,7 +645,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -666,7 +666,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G,H",
+              "allergens": "A,B,C,D,E,F,G,H,L,M,N,O,P,R",
               "description": null
             }
           ]
@@ -731,7 +731,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -745,7 +745,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -765,7 +765,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-22T10:43:06.687Z"
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     },
     "2026-04-23": {
       "categories": [
@@ -820,7 +820,7 @@
               "tags": [
                 "Schweinefleisch"
               ],
-              "allergens": "C,G",
+              "allergens": "C,G,H",
               "description": null
             }
           ]
@@ -834,7 +834,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -879,7 +879,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -888,7 +888,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -897,7 +897,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -978,12 +978,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Kokosmousse",
+              "title": "Veganes Kokosmousse Oreo Creme, Beerenragout",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,O",
+              "allergens": "F,G,H,O",
               "description": null
             }
           ]
@@ -992,10 +992,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schoko - Erdbeerschnitte",
+              "title": "Schoko - Erdbeerschnitte Cremige vegane Matchaschnitte",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1015,7 +1017,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-21T20:49:21.468Z"
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     },
     "2026-04-24": {
       "categories": [
@@ -1042,7 +1044,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "L",
+              "allergens": "C,H,L",
               "description": null
             }
           ]
@@ -1070,7 +1072,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,G,L,O,R",
+              "allergens": "C,D,G,H,L,O,R",
               "description": null
             }
           ]
@@ -1084,7 +1086,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,H,L",
+              "allergens": "A,C,H,L",
               "description": null
             }
           ]
@@ -1113,7 +1115,7 @@
               "tags": [
                 "Pute"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -1122,7 +1124,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -1131,7 +1133,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,D,F,N,O",
+              "allergens": "A,C,D,F,H,N,O",
               "description": null
             },
             {
@@ -1161,10 +1163,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilch - Heidelbeer Mousse",
+              "title": "Buttermilch - Heidelbeer Mousse Veganes Kokosmousse",
               "price": null,
-              "tags": [],
-              "allergens": "G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,G,H,O",
               "description": null
             }
           ]
@@ -1173,10 +1177,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss - Zwetschkenstrudel",
+              "title": "Walnuss - Zwetschkenstrudel Schoko - Erdbeerschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1196,7 +1200,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-21T20:49:21.468Z"
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     }
   }
 }

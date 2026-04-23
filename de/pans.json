@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-22T10:43:10.424Z",
+  "fetchedAt": "2026-04-23T10:48:39.721Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -82,6 +82,39 @@
         }
       ],
       "fetchedAt": "2026-04-22T10:43:06.687Z"
+    },
+    "2026-04-23": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Spargel Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "O,L,N,A,G",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Pommes und Salat dazu Senf Zwiebel",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,M,O",
+              "description": null
+            },
+            {
+              "title": "Chili Con Sin (Vegan) mit Fladenbrot (A 0,L,N)",
+              "price": "11,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-23T10:48:35.378Z"
     }
   }
 }
