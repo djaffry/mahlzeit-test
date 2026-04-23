@@ -3,7 +3,8 @@ import type { FullAdapter, AdapterWeekMenu, Weekday, MenuItem, MenuCategory } fr
 import { inferTags } from '../tags.js';
 import { currentWeek } from '../../week.js';
 
-const PDF_BASE = 'https://irp.cdn-website.com/fead4102/files/uploaded';
+const MENU_PAGE_URL = 'https://www.gasthaus-reinthaler.at/speisekarte';
+const PDF_URL_RE = /https:\/\/irp\.cdn-website\.com\/[^"'<>\s]*MENU-KARTE\+(\d{4})\+KW\+(\d+)-(\d+)[^"'<>\s]*\.pdf/g;
 
 const DAY_MAP: Record<string, Weekday> = {
   MO: 'Montag', DI: 'Dienstag', MI: 'Mittwoch', DO: 'Donnerstag', FR: 'Freitag',
@@ -27,9 +28,41 @@ interface ParsedDish {
   price: string | null;
 }
 
-function getPdfUrl(year: number, week: number): string {
-  const even = week % 2 === 0 ? week : week - 1;
-  return `${PDF_BASE}/MENU-KARTE+${year}+KW+${even}-${even + 1}.pdf`;
+export interface PdfCandidate { url: string; year: number; startWeek: number; endWeek: number }
+
+export function findPdfCandidates(html: string): PdfCandidate[] {
+  const out: PdfCandidate[] = [];
+  for (const m of html.matchAll(PDF_URL_RE)) {
+    const startWeek = Number(m[2]);
+    const endWeek = Number(m[3]);
+    if (startWeek < 1 || startWeek > 53 || endWeek < startWeek || endWeek > 53) continue;
+    if (out.some(c => c.url === m[0])) continue;
+    out.push({ url: m[0], year: Number(m[1]), startWeek, endWeek });
+  }
+  return out;
+}
+
+export function pickPdfForWeek(candidates: PdfCandidate[], year: number, week: number): PdfCandidate | null {
+  // ISO week year usually matches the year embedded in the filename, but at
+  // Dec/Jan boundaries they can diverge by ±1. Accept an adjacent year when
+  // the week range clearly identifies the PDF.
+  const years = [year, year - 1, year + 1];
+  for (const y of years) {
+    const match = candidates.find(c => c.year === y && week >= c.startWeek && week <= c.endWeek);
+    if (match) return match;
+  }
+  return null;
+}
+
+async function resolvePdfUrl(year: number, week: number): Promise<{ url: string; startWeek: number }> {
+  const res = await fetch(MENU_PAGE_URL);
+  if (!res.ok) throw new Error(`Reinthaler speisekarte: HTTP ${res.status}`);
+  const html = await res.text();
+  const candidates = findPdfCandidates(html);
+  const match = pickPdfForWeek(candidates, year, week);
+  if (match) return { url: match.url, startWeek: match.startWeek };
+  const listed = candidates.map(c => `KW${c.startWeek}-${c.endWeek}/${c.year}`).join(', ') || 'none';
+  throw new Error(`Reinthaler: no PDF for KW${week}/${year} on speisekarte page (listed: ${listed})`);
 }
 
 function formatPrice(raw: string): string {
@@ -209,7 +242,7 @@ function buildAdapterWeekMenu(days: DayBlock[], tagesteller: ParsedDish[]): Adap
 
 async function fetchMenu(): Promise<AdapterWeekMenu> {
   const { year, week } = currentWeek();
-  const url = getPdfUrl(year, week);
+  const { url, startWeek } = await resolvePdfUrl(year, week);
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Reinthaler PDF: HTTP ${res.status}`);
 
@@ -217,9 +250,8 @@ async function fetchMenu(): Promise<AdapterWeekMenu> {
   const { text } = await extractText(new Uint8Array(buffer));
   const fullText = Array.isArray(text) ? text.join('\n') : text;
 
-  const even = week % 2 === 0 ? week : week - 1;
   const { week1, week2, tagesteller } = parseText(fullText);
-  const days = week === even ? week1 : week2;
+  const days = week === startWeek ? week1 : week2;
 
   return buildAdapterWeekMenu(days, tagesteller);
 }

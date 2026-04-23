@@ -47,7 +47,7 @@ function extractErrorMessage(err: unknown): string {
 
 async function discoverAdapters(): Promise<Adapter[]> {
   const files = await readdir(ADAPTERS_DIR);
-  const jsFiles = files.filter(f => f.endsWith('.js') && !f.startsWith('.'));
+  const jsFiles = files.filter(f => f.endsWith('.js') && !f.endsWith('.test.js') && !f.startsWith('.'));
 
   const adapters: Adapter[] = [];
   for (const file of jsFiles) {
