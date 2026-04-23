@@ -383,9 +383,9 @@ a.restaurant-website-link-text:hover > span {
   }
 }
 
-/* Random pick highlight */
 .restaurant-section.highlighted {
   animation: pulse-highlight 600ms ease-out;
+  box-shadow: inset 0 0 0 2px var(--accent);
 }
 
 @keyframes pulse-highlight {
