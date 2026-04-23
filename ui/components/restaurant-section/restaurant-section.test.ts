@@ -108,6 +108,8 @@ describe("renderRestaurantSection", () => {
     { type: "link" as const, dayMenu: undefined, expectedLabel: "card.menuOnWebsite" },
     { type: "full" as const, dayMenu: undefined, expectedLabel: "card.noMenu" },
     { type: "full" as const, dayMenu: "present" as const, expectedLabel: "card.menuOnWebsite" },
+    { type: "specials" as const, dayMenu: undefined, expectedLabel: "card.noMenu" },
+    { type: "specials" as const, dayMenu: "present" as const, expectedLabel: "card.menuOnWebsiteSpecials" },
   ])("renders bottom anchor with target/rel and the $expectedLabel label when type=$type and dayMenu=$dayMenu", ({ type, dayMenu, expectedLabel }) => {
     const r = makeRestaurant({ type, url: "https://example.com/x" })
     const menu = dayMenu === "present" ? makeMenu([{ title: "Dish", tags: [] }]) : undefined
