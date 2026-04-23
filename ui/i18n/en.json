@@ -29,7 +29,7 @@
   "filter.noResults": "No restaurants match your filters.",
   "map.title": "Nearby Restaurants",
   "map.showOnMap": "Show on map",
-  "card.noMenu": "no menu available",
+  "card.noMenu": "no menu available (yet)",
   "card.menuOnWebsite": "Menu on website",
   "badge.edenred": "Edenred",
   "badge.stampCard": "Stamp card",

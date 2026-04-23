@@ -48,37 +48,6 @@
   height: 16px;
 }
 
-.restaurant-website-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  color: var(--fg-secondary);
-  text-decoration: none;
-  transition:
-    background var(--duration-fast) ease,
-    color var(--duration-fast) ease;
-}
-
-.restaurant-website-link:hover {
-  background: var(--bg-subtle);
-  color: var(--fg);
-}
-
-@media (min-width: 720px) {
-  .restaurant-website-link:hover {
-    background: var(--bg);
-  }
-}
-
-.restaurant-website-link svg {
-  width: 16px;
-  height: 16px;
-}
-
 /* ── Restaurant actions / map fly button ───────────────── */
 
 .restaurant-actions {
@@ -319,10 +288,32 @@
   color: var(--fg-muted);
 }
 
-/* Link restaurant card */
-.restaurant-meta-inline {
-  font-size: var(--text-sm);
+/* Bottom website link text (and fallback span when no url) */
+.restaurant-website-link-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: var(--space-xs);
+  font-size: var(--text-xs);
   color: var(--fg-muted);
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
+}
+
+a.restaurant-website-link-text:hover {
+  color: var(--fg);
+}
+
+a.restaurant-website-link-text:hover > span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.restaurant-website-link-text svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  opacity: 0.75;
 }
 
 /* Availability tag (e.g. "Thu") for limited-day restaurants */

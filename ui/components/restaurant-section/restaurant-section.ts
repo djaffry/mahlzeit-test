@@ -80,10 +80,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
   const iconSvg = restaurantIconSpan(restaurant.icon)
   const available = !dateIso || isAvailableOnDay(restaurant, dateIso)
 
-  const websiteLink = restaurant.url
-    ? `<a class="restaurant-website-link" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(restaurant.title)}">${icons.externalLink}</a>`
-    : ""
-
   const hasVotes = voteCount > 0
   const voteClass = [
     "vote-btn",
@@ -117,7 +113,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
     : ""
 
   if (!dayMenu) {
-    const visitLabel = restaurant.type === "link" ? t("card.menuOnWebsite") : t("card.noMenu")
+    const bottomLabel = restaurant.type === "link" ? t("card.menuOnWebsite") : t("card.noMenu")
     const unavailableClass = !available ? " restaurant-unavailable" : ""
 
     return `
@@ -125,7 +121,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
       <div class="restaurant-header-row">
         <div>
           <span class="restaurant-name">${iconSvg}${escapeHtml(restaurant.title)}</span>
-          ${websiteLink}
           ${availabilityTag}
         </div>
         <div class="restaurant-actions">
@@ -135,7 +130,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         </div>
       </div>
       ${renderBadges(restaurant)}
-      <span class="restaurant-meta-inline">${escapeHtml(visitLabel)}</span>
+      ${renderBottomWebsiteLink(restaurant, bottomLabel)}
     </section>`
   }
 
@@ -157,7 +152,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
           <span class="restaurant-name">
             ${iconSvg}${escapeHtml(restaurant.title)}
           </span>
-          ${websiteLink}
           ${availabilityTag}
         </div>
         <div class="restaurant-actions">
@@ -168,5 +162,15 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
       </div>
       ${renderBadges(restaurant)}
       ${categoriesHtml}
+      ${renderBottomWebsiteLink(restaurant, t("card.menuOnWebsite"))}
     </section>`
+}
+
+function renderBottomWebsiteLink(restaurant: Restaurant, label: string): string {
+  const safeLabel = escapeHtml(label)
+  if (restaurant.url) {
+    const ariaLabel = escapeHtml(`${label} – ${restaurant.title}`)
+    return `<a class="restaurant-website-link-text" href="${escapeHtml(restaurant.url)}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}"><span>${safeLabel}</span>${icons.externalLink}</a>`
+  }
+  return `<span class="restaurant-website-link-text">${safeLabel}</span>`
 }

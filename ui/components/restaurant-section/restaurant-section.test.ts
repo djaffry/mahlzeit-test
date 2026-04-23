@@ -96,4 +96,45 @@ describe("renderRestaurantSection", () => {
     const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: false })
     expect(html).toContain('pin-btn')
   })
+
+  it("no longer renders the old header icon link button", () => {
+    const r = makeRestaurant()
+    const menu = makeMenu([{ title: "Dish", tags: [] }])
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    expect(html).not.toContain('class="restaurant-website-link"')
+  })
+
+  it.each([
+    { type: "link" as const, dayMenu: undefined, expectedLabel: "card.menuOnWebsite" },
+    { type: "full" as const, dayMenu: undefined, expectedLabel: "card.noMenu" },
+    { type: "full" as const, dayMenu: "present" as const, expectedLabel: "card.menuOnWebsite" },
+  ])("renders bottom anchor with target/rel and the $expectedLabel label when type=$type and dayMenu=$dayMenu", ({ type, dayMenu, expectedLabel }) => {
+    const r = makeRestaurant({ type, url: "https://example.com/x" })
+    const menu = dayMenu === "present" ? makeMenu([{ title: "Dish", tags: [] }]) : undefined
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    expect(html).toContain('<a class="restaurant-website-link-text" href="https://example.com/x"')
+    expect(html).toContain('target="_blank"')
+    expect(html).toContain('rel="noopener noreferrer"')
+    expect(html).toContain(expectedLabel)
+  })
+
+  it("falls back to a span when restaurant has no url", () => {
+    const r = makeRestaurant({ type: "full", url: "" })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0 })
+    expect(html).toContain('<span class="restaurant-website-link-text">')
+    expect(html).not.toContain('<a class="restaurant-website-link-text"')
+  })
+
+  it("places the bottom website link after the menu categories on menu-showing cards", () => {
+    const r = makeRestaurant({ url: "https://example.com/baz" })
+    const menu = makeMenu([{ title: "Schnitzel", tags: [] }])
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    expect(html.indexOf("restaurant-website-link-text")).toBeGreaterThan(html.indexOf("Schnitzel"))
+  })
+
+  it("includes the restaurant title in the bottom link's aria-label for screen readers", () => {
+    const r = makeRestaurant({ type: "link", title: "Albasha", url: "https://example.com/a" })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0 })
+    expect(html).toContain('aria-label="card.menuOnWebsite – Albasha"')
+  })
 })
