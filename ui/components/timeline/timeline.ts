@@ -99,9 +99,10 @@ export function renderTimeline(el: HTMLElement, opts: TimelineOptions): void {
   }))
 
   const todayIdx = computeTodayIdx()
-  if (todayIdx >= 0 && prevDays.length === 0) {
-    // First render: expand today by default
-    _state.days[todayIdx].expanded = true
+  if (prevDays.length === 0) {
+    // First render: expand today if it's in the week, otherwise Monday.
+    const defaultIdx = todayIdx >= 0 ? todayIdx : 0
+    if (_state.days[defaultIdx]) _state.days[defaultIdx].expanded = true
   }
 
   if (!_state.listenerAttached) {

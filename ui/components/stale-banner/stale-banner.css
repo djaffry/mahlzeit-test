@@ -22,3 +22,48 @@
   flex-shrink: 0;
   opacity: 0.6;
 }
+
+.stale-banner-archive {
+  background: color-mix(in srgb, var(--fg) 6%, var(--bg));
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.stale-banner .archive-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--text-xs);
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--duration-fast) ease;
+}
+
+.stale-banner .archive-back-btn:hover {
+  background: var(--bg-subtle);
+}
+
+.stale-banner .archive-back-btn svg {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+/* Shrink the archive banner on narrow screens so it fits on one row */
+@media (max-width: 480px) {
+  .stale-banner-archive {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-xs);
+    gap: var(--space-xs);
+  }
+  .stale-banner-archive .archive-back-btn {
+    margin-left: var(--space-xs);
+    padding: 2px var(--space-xs);
+  }
+}

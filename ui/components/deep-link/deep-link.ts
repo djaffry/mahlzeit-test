@@ -8,8 +8,9 @@ export function handleDeepLink(deps: { expandDay: (index: number) => void }): vo
   const deepLinkDay = urlParams.get('d')
 
   if (deepLinkDay != null || deepLinkRestaurant) {
-    const dayIdx = deepLinkDay != null ? Number(deepLinkDay) : isoToWeekdayIndex(todayIso())
-    if (!isNaN(dayIdx) && dayIdx >= 0 && dayIdx < 5) {
+    const rawDayIdx = deepLinkDay != null ? Number(deepLinkDay) : isoToWeekdayIndex(todayIso())
+    const dayIdx = !isNaN(rawDayIdx) && rawDayIdx >= 0 ? rawDayIdx : 0
+    if (dayIdx < 5) {
       deps.expandDay(dayIdx)
       if (deepLinkRestaurant) {
         requestAnimationFrame(() => {
@@ -18,7 +19,9 @@ export function handleDeepLink(deps: { expandDay: (index: number) => void }): vo
         })
       }
     }
-    const cleanUrl = window.location.origin + window.location.pathname
-    window.history.replaceState({}, '', cleanUrl)
+    const url = new URL(window.location.href)
+    url.searchParams.delete('r')
+    url.searchParams.delete('d')
+    window.history.replaceState({}, '', url.pathname + url.search)
   }
 }

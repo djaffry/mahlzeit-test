@@ -3,6 +3,7 @@ import { LANG_CHANGE_EVENT } from "../constants"
 import type { Restaurant } from "../types"
 
 import { fetchMenuData, fetchLanguages } from "../data/fetcher"
+import { isArchiveMode, getArchiveWeekDates } from "../archive/archive"
 import {
   initI18n,
   getCurrentLanguage,
@@ -82,6 +83,12 @@ function getMenuRestaurants(): Restaurant[] {
   return _restaurants.filter((r) => r.type !== "link")
 }
 
+// In archive mode the URL is the source of truth — a re-seeded archive branch
+// could otherwise have fetchedAt pointing at the current week.
+function resolveWeekDates(restaurants: Restaurant[]): Date[] {
+  return getArchiveWeekDates() ?? getDataWeekDates(restaurants)
+}
+
 function getActiveFilters(): Set<string> | null {
   return isFilterShowAll() ? null : getEffectiveFilters()
 }
@@ -135,7 +142,7 @@ const toggleVote = createToggleVote({
 
 function rerender(): void {
   const timelineEl = document.getElementById("timeline")!
-  const weekDates = getDataWeekDates(getMenuRestaurants())
+  const weekDates = resolveWeekDates(getMenuRestaurants())
 
   renderTimeline(timelineEl, {
     restaurants: _restaurants,
@@ -159,7 +166,7 @@ function applyRefresh(newData: Restaurant[]): void {
   updateSearchRestaurants(menuRestaurants)
   updateMapRestaurants(_restaurants)
 
-  const weekDates = getDataWeekDates(menuRestaurants)
+  const weekDates = resolveWeekDates(menuRestaurants)
   updateStaleBanner(menuRestaurants)
   rerender()
 
@@ -213,6 +220,7 @@ function showAcceptConsent(): void {
 }
 
 function openVotingRoomsOrConsent(): void {
+  if (isArchiveMode()) return
   if (isVotingActive()) openVotingRoomsPanel()
   else showAcceptConsent()
 }
@@ -293,7 +301,7 @@ export async function initApp(): Promise<void> {
     loadFavorites()
 
     const menuRestaurants = getMenuRestaurants()
-    const weekDates = getDataWeekDates(menuRestaurants)
+    const weekDates = resolveWeekDates(menuRestaurants)
 
     loadFilters(collectTags(menuRestaurants))
     initFilters(rerenderExpandedDays)
@@ -350,7 +358,9 @@ export async function initApp(): Promise<void> {
       }
     }) as EventListener)
 
-    setupVotingUI()
+    if (!isArchiveMode()) {
+      setupVotingUI()
+    }
     setupDesktopUI(weekDates)
 
     diceSetup({ getAllRestaurants: () => _restaurants, expandDay })

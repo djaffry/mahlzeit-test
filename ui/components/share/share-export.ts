@@ -1,8 +1,9 @@
-import { getWeekDates, todayIndexInWeek } from "../../utils/date"
+import { isoToWeekdayIndex } from "../../utils/date"
 import { t } from "../../i18n/i18n"
 import { exportImage as coreExportImage } from "../../utils/canvas"
 import { getIdentity } from "../../voting/user-identity"
 import { getActiveRoomPayload } from "../../voting/init"
+import { getArchiveWeek } from "../../archive/archive"
 import { formatDayLabel } from "./share-format"
 import type { ShareSelectionData, ShareSection } from "./share-types"
 
@@ -113,11 +114,14 @@ export function showToast(message: string, canvas?: HTMLCanvasElement | null, te
 export function buildDeepLink(restaurantIds: string[], dateIso: string): string {
   const base = window.location.origin + window.location.pathname
   const params = new URLSearchParams()
+  const archiveWeek = getArchiveWeek()
+  if (archiveWeek) params.set('week', archiveWeek)
   if (restaurantIds.length === 1) {
     params.set('r', restaurantIds[0])
   }
   if (dateIso) {
-    const idx = todayIndexInWeek(getWeekDates(), dateIso)
+    // isoToWeekdayIndex works for any week — archived or current.
+    const idx = isoToWeekdayIndex(dateIso)
     if (idx >= 0) params.set('d', String(idx))
   }
   try {

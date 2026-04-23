@@ -2,11 +2,17 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest"
 import { contentHash, startAutoRefresh, initContentHash } from "./auto-refresh"
 import { fetchMenuDataQuiet } from "./fetcher"
 import { config } from "../config"
+import { isArchiveMode } from "../archive/archive"
 import type { Restaurant } from "../types"
 
 // auto-refresh imports config and fetcher - mock the fetcher to avoid real network calls
 vi.mock("./fetcher", () => ({
   fetchMenuDataQuiet: vi.fn().mockResolvedValue(null),
+}))
+
+vi.mock("../archive/archive", () => ({
+  isArchiveMode: vi.fn(() => false),
+  getDataBasePath: vi.fn(() => "./data"),
 }))
 
 const makeRestaurant = (overrides: Partial<Restaurant> = {}): Restaurant => ({
@@ -152,6 +158,31 @@ describe("startAutoRefresh", () => {
 
     await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
 
+    expect(applyRefresh).not.toHaveBeenCalled()
+  })
+})
+
+describe("startAutoRefresh in archive mode", () => {
+  beforeEach(() => {
+    vi.useFakeTimers()
+    vi.mocked(fetchMenuDataQuiet).mockClear()
+    vi.mocked(isArchiveMode).mockClear()
+  })
+  afterEach(() => {
+    vi.useRealTimers()
+    vi.mocked(isArchiveMode).mockReturnValue(false)
+  })
+
+  it("does not call fetchMenuDataQuiet when in archive mode", async () => {
+    vi.mocked(isArchiveMode).mockReturnValue(true)
+    const current = [makeRestaurant()]
+    initContentHash(current)
+    const applyRefresh = vi.fn()
+    startAutoRefresh(() => current, () => false, applyRefresh)
+
+    await vi.advanceTimersByTimeAsync(config.autoRefreshInterval)
+
+    expect(fetchMenuDataQuiet).not.toHaveBeenCalled()
     expect(applyRefresh).not.toHaveBeenCalled()
   })
 })

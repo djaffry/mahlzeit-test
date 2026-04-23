@@ -3,6 +3,7 @@ import { icons } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { LANG_CHANGE_EVENT } from "../../constants"
 import { registerOverlay, unregisterOverlay, escapeHtml } from "../../utils/dom"
+import { fetchArchiveWeeks, enterArchive, exitArchive, formatWeekLabel, getArchiveWeek, isArchiveMode } from "../../archive/archive"
 
 export interface MoreMenuCallbacks {
   onSearch: () => void
@@ -23,6 +24,8 @@ let _state: {
 } | null = null
 
 let _openAc: AbortController | null = null
+let _archiveExpanded = false
+let _archiveWeeks: string[] = []
 
 export function setupMoreMenu(
   overlay: HTMLElement,
@@ -50,16 +53,55 @@ export function setupMoreMenu(
   menu.addEventListener("click", handleMenuClick, { signal })
 }
 
+function visibleArchiveWeeks(): string[] {
+  const current = getArchiveWeek()
+  return current ? _archiveWeeks.filter(w => w !== current) : _archiveWeeks
+}
+
+function renderArchiveSubmenu(): string {
+  if (!_archiveExpanded) return ""
+  const weeks = visibleArchiveWeeks()
+  if (weeks.length === 0) return ""
+  const items = weeks.map((week) => {
+    const label = escapeHtml(formatWeekLabel(week))
+    return `<button class="more-menu-item more-menu-sub" data-action="archive-week" data-week="${escapeHtml(week)}">
+      <span class="more-menu-label">${label}</span>
+    </button>`
+  }).join("")
+  return `<div id="archive-submenu">${items}</div>`
+}
+
 function renderMenuContent(): void {
   if (!_state) return
   const diceItem = _state.callbacks.isDiceAvailable()
     ? `<button class="more-menu-item" data-action="dice">${icons.dices} <span class="more-menu-label">${escapeHtml(t("dice.title") ?? "Random pick")}</span> <kbd>D</kbd></button>`
     : ""
+
+  const archiveItem = visibleArchiveWeeks().length > 0
+    ? `<div class="more-menu-separator"></div>
+       <button class="more-menu-item more-menu-has-sub${_archiveExpanded ? " expanded" : ""}" data-action="archive-toggle" aria-expanded="${_archiveExpanded}" aria-controls="archive-submenu">
+         ${icons.history}
+         <span class="more-menu-label">${escapeHtml(t("archive.menuItem") ?? "Archive")}</span>
+         <span class="more-menu-caret">${icons.chevronRight}</span>
+       </button>
+       ${renderArchiveSubmenu()}`
+    : ""
+
+  const votingRoomsItem = isArchiveMode()
+    ? ""
+    : `<button class="more-menu-item" data-action="voting-rooms">${icons.heart} <span class="more-menu-label">${escapeHtml(t("voting.rooms") ?? "Voting rooms")}</span> <kbd>V</kbd></button>`
+
+  const backToCurrentItem = isArchiveMode()
+    ? `<button class="more-menu-item" data-action="archive-back">${icons.arrowLeft} <span class="more-menu-label">${escapeHtml(t("archive.backToCurrentWeek"))}</span></button>`
+    : ""
+
   _state.menu.innerHTML = `
     <button class="more-menu-item" data-action="search">${icons.search} <span class="more-menu-label">${escapeHtml(t("search.title") ?? "Search")}</span> <kbd>/</kbd></button>
     <button class="more-menu-item" data-action="map">${icons.map} <span class="more-menu-label">${escapeHtml(t("map.title") ?? "Map")}</span> <kbd>M</kbd></button>
     ${diceItem}
-    <button class="more-menu-item" data-action="voting-rooms">${icons.heart} <span class="more-menu-label">${escapeHtml(t("voting.rooms") ?? "Voting rooms")}</span> <kbd>V</kbd></button>
+    ${votingRoomsItem}
+    ${backToCurrentItem}
+    ${archiveItem}
     <div class="more-menu-separator"></div>
     <button class="more-menu-item" data-action="theme">${icons.sunMoon} <span class="more-menu-label">${escapeHtml(t("theme.toggle") ?? "Switch theme")}</span> <kbd>T</kbd></button>
     <div class="more-menu-separator"></div>
@@ -71,7 +113,14 @@ function renderMenuContent(): void {
 function openMenu(): void {
   if (!_state) return
 
+  _archiveExpanded = false
   renderMenuContent()
+
+  // First-open triggers the archive-manifest fetch (cached); subsequent opens are instant.
+  fetchArchiveWeeks().then((weeks) => {
+    _archiveWeeks = weeks
+    if (_state && !_state.overlay.hidden) renderMenuContent()
+  })
 
   _state.overlay.hidden = false
   registerOverlay("more-menu")
@@ -86,8 +135,25 @@ function handleMenuClick(e: Event): void {
   if (!btn || !_state) return
 
   const action = btn.dataset.action
-  const cb = _state.callbacks
 
+  if (action === "archive-toggle") {
+    _archiveExpanded = !_archiveExpanded
+    renderMenuContent()
+    return  // stay open
+  }
+
+  if (action === "archive-week") {
+    const week = btn.dataset.week
+    if (week) enterArchive(week)
+    return  // navigation — no close needed
+  }
+
+  if (action === "archive-back") {
+    exitArchive()
+    return  // navigation — no close needed
+  }
+
+  const cb = _state.callbacks
   closeMenu()
 
   switch (action) {
@@ -105,6 +171,7 @@ export function closeMenu(): void {
   if (!_state) return
   _openAc?.abort()
   _openAc = null
+  _archiveExpanded = false
   unregisterOverlay("more-menu")
   _state.overlay.classList.remove("visible")
   _state.overlay.hidden = true
