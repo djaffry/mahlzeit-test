@@ -1,6 +1,7 @@
 import { config } from "../config"
 import { t } from '../i18n/i18n'
 import type { Restaurant } from "../types"
+import { getDataBasePath } from "../archive/archive"
 
 export async function fetchLanguages(): Promise<string[]> {
   try {
@@ -58,29 +59,45 @@ async function fetchSourceMapAt(basePath: string, manifest: string[], sourceLang
   return map
 }
 
-async function fetchMenuDataFrom(basePath: string, lang: string, sourceLang: string, bust = ""): Promise<Restaurant[]> {
-  const manifestRes = await fetch(`${basePath}/index.json${bust}`)
+async function fetchMenuDataFrom(
+  dataBasePath: string,
+  lang: string,
+  sourceLang: string,
+  bust = "",
+): Promise<Restaurant[]> {
+  // Manifest always lives at the globals location — archive weeks don't ship index.json.
+  const manifestRes = await fetch(`${config.dataPath}/index.json${bust}`)
   if (!manifestRes.ok) {
     throw new Error(`${t("error.notFound")} (HTTP ${manifestRes.status})`)
   }
   const manifest: string[] = await manifestRes.json()
 
   if (lang === sourceLang) {
-    return Promise.all(manifest.map(id => fetchRestaurantAt(basePath, id, lang, sourceLang, bust)))
+    const results = await Promise.allSettled(
+      manifest.map(id => fetchRestaurantAt(dataBasePath, id, lang, sourceLang, bust))
+    )
+    return results
+      .filter((r): r is PromiseFulfilledResult<Restaurant> => r.status === "fulfilled")
+      .map(r => r.value)
   }
 
-  const [sourceMap, translated] = await Promise.all([
-    fetchSourceMapAt(basePath, manifest, sourceLang, bust),
-    Promise.all(manifest.map(id => fetchRestaurantAt(basePath, id, lang, sourceLang, bust))),
+  const [sourceMap, results] = await Promise.all([
+    fetchSourceMapAt(dataBasePath, manifest, sourceLang, bust),
+    Promise.allSettled(
+      manifest.map(id => fetchRestaurantAt(dataBasePath, id, lang, sourceLang, bust))
+    ),
   ])
-  return translated.map((data, i) => {
-    const source = sourceMap.get(manifest[i])
-    return source ? backfillMetadata(data, source) : data
-  })
+  return results
+    .map((r, i) => {
+      if (r.status !== "fulfilled") return null
+      const source = sourceMap.get(manifest[i])
+      return source ? backfillMetadata(r.value, source) : r.value
+    })
+    .filter((r): r is Restaurant => r !== null)
 }
 
 export function fetchMenuData(lang: string, sourceLang: string): Promise<Restaurant[]> {
-  return fetchMenuDataFrom(config.dataPath, lang, sourceLang)
+  return fetchMenuDataFrom(getDataBasePath(), lang, sourceLang)
 }
 
 export async function fetchMenuDataQuiet(

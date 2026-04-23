@@ -2,6 +2,7 @@ import "./auto-refresh.css"
 import { config } from "../config"
 import { fetchMenuDataQuiet } from "./fetcher"
 import { getCurrentLanguage, getSourceLanguage, t } from "../i18n/i18n"
+import { isArchiveMode } from "../archive/archive"
 import type { Restaurant } from "../types"
 
 const TOAST_DURATION_MS = 3000
@@ -45,8 +46,9 @@ export function startAutoRefresh(
   isRefreshDeferred: () => boolean,
   applyRefresh: (data: Restaurant[]) => void
 ): void {
-  let pendingData: Restaurant[] | null = null
+  if (isArchiveMode()) return
 
+  let pendingData: Restaurant[] | null = null
   let pendingHash: string | null = null
 
   function applyData(data: Restaurant[], hash: string): void {

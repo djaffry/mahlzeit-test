@@ -95,3 +95,26 @@
     transform: translateY(0);
   }
 }
+
+.more-menu-has-sub .more-menu-caret {
+  margin-left: auto;
+  display: inline-flex;
+  transition: transform var(--duration-fast) ease;
+  color: var(--fg-secondary);
+  opacity: 0.5;
+}
+
+.more-menu-has-sub .more-menu-caret svg {
+  width: 14px;
+  height: 14px;
+}
+
+.more-menu-has-sub.expanded .more-menu-caret {
+  transform: rotate(90deg);
+}
+
+.more-menu-sub {
+  padding-left: calc(var(--space-md) + 26px);
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+}

@@ -51,13 +51,13 @@ describe("handleDeepLink - d param", () => {
   it("cleans URL params after handling", () => {
     setSearch("?d=1")
     handleDeepLink({ expandDay: mockExpandDay })
-    expect(window.history.replaceState).toHaveBeenCalledWith({}, "", "http://localhost/")
+    expect(window.history.replaceState).toHaveBeenCalledWith({}, "", "/")
   })
 
-  it("ignores negative day index", () => {
+  it("falls back to day 0 for negative day index", () => {
     setSearch("?d=-1")
     handleDeepLink({ expandDay: mockExpandDay })
-    expect(mockExpandDay).not.toHaveBeenCalled()
+    expect(mockExpandDay).toHaveBeenCalledWith(0)
   })
 
   it("ignores day index >= 5", () => {
@@ -66,10 +66,10 @@ describe("handleDeepLink - d param", () => {
     expect(mockExpandDay).not.toHaveBeenCalled()
   })
 
-  it("ignores NaN day index", () => {
+  it("falls back to day 0 for NaN day index", () => {
     setSearch("?d=abc")
     handleDeepLink({ expandDay: mockExpandDay })
-    expect(mockExpandDay).not.toHaveBeenCalled()
+    expect(mockExpandDay).toHaveBeenCalledWith(0)
   })
 
   it("still cleans URL when day index is invalid", () => {
@@ -116,7 +116,7 @@ describe("handleDeepLink - r param", () => {
   it("cleans URL params after handling", () => {
     setSearch("?r=mano")
     handleDeepLink({ expandDay: mockExpandDay })
-    expect(window.history.replaceState).toHaveBeenCalledWith({}, "", "http://localhost/")
+    expect(window.history.replaceState).toHaveBeenCalledWith({}, "", "/")
   })
 })
 
@@ -136,5 +136,13 @@ describe("handleDeepLink - d and r params together", () => {
     expect(flashAndScroll).toHaveBeenCalledWith(section)
 
     window.requestAnimationFrame = origRAF
+  })
+})
+
+describe("handleDeepLink - preserves unrelated params", () => {
+  it("preserves ?week= when stripping ?r / ?d", () => {
+    setSearch("?week=2026-W15&d=2&r=mano")
+    handleDeepLink({ expandDay: mockExpandDay })
+    expect(window.history.replaceState).toHaveBeenCalledWith({}, "", "/?week=2026-W15")
   })
 })

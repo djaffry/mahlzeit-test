@@ -56,8 +56,14 @@ vi.mock("../utils/today", () => ({
   todayIso: () => "2026-03-25", // Wednesday
 }))
 
+vi.mock("../archive/archive", () => ({
+  isArchiveMode: vi.fn(() => false),
+  getDataBasePath: vi.fn(() => "./data"),
+}))
+
 /* ── Import after mocks ──────────────────────────────────── */
 
+import { isArchiveMode } from "../archive/archive"
 import {
   initVoting,
   acceptVoting,
@@ -119,6 +125,7 @@ beforeEach(() => {
 afterEach(() => {
   destroyVoting()
   vi.useRealTimers()
+  vi.mocked(isArchiveMode).mockReturnValue(false)
 })
 
 describe("initVoting", () => {
@@ -173,6 +180,21 @@ describe("initVoting", () => {
     await flush()
     const map = getVoteMap(2)
     expect(map.has("dean")).toBe(true)
+  })
+
+  it("does not fetch voting.json or subscribe when in archive mode", async () => {
+    vi.mocked(isArchiveMode).mockReturnValue(true)
+    fakeNow("2026-03-25T12:00:00Z")
+    const fetchSpy = globalThis.fetch as unknown as ReturnType<typeof vi.fn>
+
+    await initVoting(() => MOCK_RESTAURANTS)
+    await flush()
+
+    expect(isVotingActive()).toBe(false)
+    expect(mockSubscribe).not.toHaveBeenCalled()
+    // voting.json fetch must not happen
+    const calls = fetchSpy.mock.calls.map(c => String(c[0]))
+    expect(calls.some(u => u.includes("voting.json"))).toBe(false)
   })
 })
 

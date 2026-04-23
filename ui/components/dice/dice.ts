@@ -4,6 +4,7 @@ import { isAvailableOnDay, isDataFromCurrentWeek, isWeekend, isoToWeekdayIndex }
 import { todayIso } from "../../utils/today"
 import { prefersReducedMotion, persistentHighlight } from "../../utils/dom"
 import { haptic } from "../../utils/haptic"
+import { isArchiveMode } from "../../archive/archive"
 /* ── Constants ──────────────────────────────────────────── */
 
 const DICE_EMOJI = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"]
@@ -59,6 +60,7 @@ export function setup(deps: {
 /* ── Shake Detection ────────────────────────────────────── */
 
 function setupShakeDetection(): void {
+  if (isArchiveMode()) return
   if (!("DeviceMotionEvent" in window)) return
 
   // iOS 13+ requires permission
@@ -112,6 +114,7 @@ function listenShake(): void {
 /* ── Roll ───────────────────────────────────────────────── */
 
 export function isAvailable(): boolean {
+  if (isArchiveMode()) return false
   if (!_state.getAllRestaurants) return false
   if (isWeekend(todayIso())) return false
   const menuRestaurants = _state.getAllRestaurants().filter(r => r.type !== "link")

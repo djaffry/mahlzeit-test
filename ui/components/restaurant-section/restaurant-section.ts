@@ -6,6 +6,7 @@ import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml } from "../../utils/dom"
 import { isAvailableOnDay, formatAvailableDays } from "../../utils/date"
+import { isArchiveMode } from "../../archive/archive"
 import { renderItem } from "../menu-item/menu-item"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 
@@ -102,7 +103,8 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
   const voteAriaLabel = hasVotes
     ? `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}, ${voteCount} ${voteCount === 1 ? "vote" : "votes"}`
     : `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}`
-  const voteBtn = dayIndex != null && available
+  const canVote = dayIndex != null && available && !isArchiveMode()
+  const voteBtn = canVote
     ? `<button class="${voteClass}" data-vote-id="${escapeHtml(restaurant.id)}" aria-label="${voteAriaLabel}">
           <span class="vote-check">${icons.heart}</span>
           ${countStr}

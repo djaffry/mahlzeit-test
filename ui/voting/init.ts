@@ -5,6 +5,7 @@ import { getWeekDates, dateToIso } from "../utils/date"
 import { todayIso } from "../utils/today"
 import { getIdentity } from "./user-identity"
 import { avatarSvg } from "./avatars"
+import { isArchiveMode } from "../archive/archive"
 import {
   destroy as destroyNostrClient,
   buildDTag,
@@ -161,6 +162,9 @@ export async function initVoting(getRestaurants: () => Restaurant[]): Promise<vo
   _reverseHashMap = new Map()
   _dates = []
   resetVoteState()
+
+  if (isArchiveMode()) return
+
   migrateLegacyKeys()
   loadRooms()
   handleRoomUrlParam()
