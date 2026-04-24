@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-23T10:48:38.009Z",
+  "fetchedAt": "2026-04-24T10:45:57.013Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -448,6 +448,145 @@
         }
       ],
       "fetchedAt": "2026-04-23T10:48:35.378Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Potatoes 🥔 spinach 💚 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Baked potatoes",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Bacon 🥓, cheese 🧀, & spring onions 🌿 - optionally add cream"
+            },
+            {
+              "title": "Warm rice pudding casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Plums 💜 & plum roaster"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Chicken tagine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, aubergine 🍆, carrots 🥕, parsnips 🤍, dried fruits & rice"
+            },
+            {
+              "title": "Vegetable madras - in creamy cashew coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Sweet potatoes 🍠, zucchini 🥒, aubergine 🍆, carrots 🥕, broccoli 🥦, chickpeas & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Two kinds of celery 🌿 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Granny Smith apple 🍏, walnut & parmesan dressing"
+            },
+            {
+              "title": "Curry 💛-potatoes 🥔-salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, cucumbers 🥒, tomatoes 🍅 & spring onions 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Kalamansi 🍊 mango 🥭 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-24T10:45:47.578Z"
     }
   }
 }

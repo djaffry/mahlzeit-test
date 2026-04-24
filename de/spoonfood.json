@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-23T10:48:38.009Z",
+  "fetchedAt": "2026-04-24T10:45:57.013Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -448,6 +448,145 @@
         }
       ],
       "fetchedAt": "2026-04-23T10:48:35.378Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Spinat 💚-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Ofenkartoffeln",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Speck 🥓, Käse 🧀, & Frühlingszwiebeln 🌿 – optional Rahm dazu"
+            },
+            {
+              "title": "Warmer Milchreis-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zwetschken 💜 & Zwetschken-Röster"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Hühner-Tajine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Kichererbsen, Melanzani 🍆, Karotten 🥕, Pastinaken 🤍, getrockneten Früchten & Reis"
+            },
+            {
+              "title": "Gemüse-Madras – in cremiger Cashew-Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Süßkartoffeln 🍠, Zucchini 🥒, Melanzani 🍆, Karotten 🥕, Brokkoli 🥦, Kichererbsen & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Zweierlei Sellerie 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Granny Smith-Apfel 🍏, Walnuss & Parmesandressing"
+            },
+            {
+              "title": "Curry 💛-Erdäpfel 🥔-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kichererbsen, Gurken 🥒, Tomaten 🍅 & Jungzwiebel 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Kalamansi 🍊-Mango 🥭-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini-Crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-24T10:45:47.578Z"
     }
   }
 }

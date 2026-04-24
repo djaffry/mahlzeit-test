@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-04-23T10:48:39.721Z",
+  "fetchedAt": "2026-04-24T10:45:52.819Z",
   "error": null,
   "days": {
     "2026-04-21": {
@@ -115,6 +115,48 @@
         }
       ],
       "fetchedAt": "2026-04-23T10:48:35.378Z"
+    },
+    "2026-04-24": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Carrot, sweet potato and coconut milk soup",
+              "price": null,
+              "tags": [],
+              "allergens": "0,L,N",
+              "description": null
+            },
+            {
+              "title": "Salmon fillet fried with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,0,M,C",
+              "description": null
+            },
+            {
+              "title": "Penne with salmon strips and dill à la crème (0,AC,D,G,LN)",
+              "price": "12,50 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "M3: Rösti pockets filled with cream cheese and herbs, served with salad and garlic yogurt",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "O,N,6",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-24T10:45:47.578Z"
     }
   }
 }

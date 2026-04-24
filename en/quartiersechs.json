@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-23T10:48:37.448Z",
+  "fetchedAt": "2026-04-24T10:45:49.453Z",
   "error": null,
   "days": {
     "2026-04-20": {
@@ -815,7 +815,7 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Hungarian rice meat, red pepper sauce, Grana",
+              "title": "Hungarian rice meat, red pepper sauce, grana",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -1149,7 +1149,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Grapefruit, beetroot, orange hummus, spicy Korean sauce, samosa with vegetables",
+              "title": "Grapefruit, beetroot, spicy Korean sauce, samosa with vegetables",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1200,7 +1200,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-23T10:48:35.378Z"
+      "fetchedAt": "2026-04-24T10:45:47.578Z"
     }
   }
 }
