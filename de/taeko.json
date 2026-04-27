@@ -1,0 +1,387 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanisch",
+    "Chinesisch"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-27T09:34:39.548Z",
+  "error": null,
+  "days": {
+    "2026-04-27": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Garnelenbällchen Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Garnelenbällchen,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Tomaten Rindfleisch Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomaten, Rindfleisch, onokipilze und Ei auf Reis"
+            },
+            {
+              "title": "Vegane Ente Roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakameseetang,vegane Ente, Gurken, Salat, sesam"
+            },
+            {
+              "title": "Gebratener Lachs Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Gebratener Eierreis, Gr.Lachs,Brokkoli, Obst, Karrage, Gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Garnelenbällchen Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Garnelenbällchen,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Tomaten Rindfleisch Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomaten, Rindfleisch, onokipilze und Ei auf Reis"
+            },
+            {
+              "title": "Vegane Ente Roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakameseetang,vegane Ente, Gurken, Salat, sesam"
+            },
+            {
+              "title": "Gebratener Lachs Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Gebratener Eierreis, Gr.Lachs,Brokkoli, Obst, Karrage, Gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-29": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Garnelenbällchen Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Garnelenbällchen,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Tomaten Rindfleisch Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomaten, Rindfleisch, onokipilze und Ei auf Reis"
+            },
+            {
+              "title": "Vegane Ente Roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakameseetang,vegane Ente, Gurken, Salat, sesam"
+            },
+            {
+              "title": "Gebratener Lachs Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Gebratener Eierreis, Gr.Lachs,Brokkoli, Obst, Karrage, Gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-30": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Garnelenbällchen Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Garnelenbällchen,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Tomaten Rindfleisch Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomaten, Rindfleisch, onokipilze und Ei auf Reis"
+            },
+            {
+              "title": "Vegane Ente Roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakameseetang,vegane Ente, Gurken, Salat, sesam"
+            },
+            {
+              "title": "Gebratener Lachs Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Gebratener Eierreis, Gr.Lachs,Brokkoli, Obst, Karrage, Gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-05-01": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Garnelenbällchen Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Garnelenbällchen,Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Tomaten Rindfleisch Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomaten, Rindfleisch, onokipilze und Ei auf Reis"
+            },
+            {
+              "title": "Vegane Ente Roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakameseetang,vegane Ente, Gurken, Salat, sesam"
+            },
+            {
+              "title": "Gebratener Lachs Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Gebratener Eierreis, Gr.Lachs,Brokkoli, Obst, Karrage, Gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    }
+  }
+}

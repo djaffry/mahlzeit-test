@@ -1,0 +1,157 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Stews"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-04-27T09:34:39.669Z",
+  "error": null,
+  "days": {
+    "2026-04-27": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Pumpkin 🎃 orange 🍊 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Minced Köfte roast (mixed minced meat) on tomatoes 🍅 bulgur – optional",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "sour cream"
+            },
+            {
+              "title": "Spring 🌸 spaetzle pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Wild garlic 🌿-mountain cheese 🧀-Béchamel – optionally with fried onions & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Paprika chicken",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑 Tricolore 💛🧡💚 & rice"
+            },
+            {
+              "title": "Palak Paneer – Indian spinach 💚 curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu & Rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Colorful zucchini 🥒 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, edamame 🫛, peanut dressing 🥜 & spicy honey 🍯 chili 🌶️ peanuts"
+            },
+            {
+              "title": "Wild garlic 🌿 quinoa salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kohlrabi 🤍, carrots 🥕, tofu & fresh lemon 🍋"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan carrot 🥕 cake",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    }
+  }
+}

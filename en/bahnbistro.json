@@ -1,0 +1,313 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-04-27T09:34:38.288Z",
+  "error": null,
+  "days": {
+    "2026-04-27": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Jalfreczi Vegetable Curry",
+              "price": null,
+              "tags": [],
+              "allergens": "F",
+              "description": "Vegetables & olives, jasmine rice"
+            },
+            {
+              "title": "Roasted turkey fillet",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": "Tagliatelle verde & carrot duo, herb cream sauce"
+            },
+            {
+              "title": "Bernese sausage",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Skin-on fries, ketchup"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Blackberry Swirl & Cookies",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Whole grain pasta",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Lentil Bolognese, Grana Vegano"
+            },
+            {
+              "title": "Cilantro chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,E,F,N,R",
+              "description": "Broccoli & corn rice, roasted sesame"
+            },
+            {
+              "title": "Farmer's Beef Burger",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,M,N",
+              "description": "Beef patty & coleslaw, honey mustard sauce"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Double Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-29": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Mushroom goulash",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Bread dumplings, chives"
+            },
+            {
+              "title": "Cordon bleu Tuscany",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Prosciutto & tomato, French fries"
+            },
+            {
+              "title": "Trout Müllerin",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Parsley potatoes, herb butter"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Biscoff tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-30": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Spinach lasagna",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Spinach leaves & tomatoes, vechamel"
+            },
+            {
+              "title": "Paprika chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C",
+              "description": "Fresh knöpfle, young onions"
+            },
+            {
+              "title": "Mountain farmer's pawn",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Dumplings, roasts & vegetables, mountain cheese & fried eggs"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Bottomless apple pie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-05-01": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "Entrance",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Happy holiday",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wishes you your BahnBistro team Lassallestrasse"
+            },
+            {
+              "title": "State holiday",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    }
+  }
+}

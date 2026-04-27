@@ -1,0 +1,387 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanese",
+    "Chinese"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-04-27T09:34:39.548Z",
+  "error": null,
+  "days": {
+    "2026-04-27": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Shrimp Balls Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Shrimp balls, bamboo, pak choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Tomato Beef Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomatoes, beef, onoki mushrooms and egg on rice"
+            },
+            {
+              "title": "Vegan duck roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakamese etang, vegan duck, cucumber, lettuce, sesame"
+            },
+            {
+              "title": "Roasted Salmon Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Fried egg rice, large salmon, broccoli, fruit, carrage, gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Shrimp Balls Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Shrimp balls, bamboo, pak choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Tomato Beef Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomatoes, beef, onoki mushrooms and egg on rice"
+            },
+            {
+              "title": "Vegan duck roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakamese etang, vegan duck, cucumber, lettuce, sesame"
+            },
+            {
+              "title": "Roasted Salmon Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Fried egg rice, large salmon, broccoli, fruit, carrage, gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-29": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Shrimp Balls Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Shrimp balls, bamboo, pak choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Tomato Beef Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomatoes, beef, onoki mushrooms and egg on rice"
+            },
+            {
+              "title": "Vegan duck roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakamese etang, vegan duck, cucumber, lettuce, sesame"
+            },
+            {
+              "title": "Roasted Salmon Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Fried egg rice, large salmon, broccoli, fruit, carrage, gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-30": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Shrimp Balls Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Shrimp balls, bamboo, pak choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Tomato Beef Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomatoes, beef, onoki mushrooms and egg on rice"
+            },
+            {
+              "title": "Vegan duck roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakamese etang, vegan duck, cucumber, lettuce, sesame"
+            },
+            {
+              "title": "Roasted Salmon Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Fried egg rice, large salmon, broccoli, fruit, carrage, gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-05-01": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Shrimp Balls Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,F",
+              "description": "Shrimp balls, bamboo, pak choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Tomato Beef Don",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "Tomatoes, beef, onoki mushrooms and egg on rice"
+            },
+            {
+              "title": "Vegan duck roll",
+              "price": "12,90 €",
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "A,N,F",
+              "description": "Wakamese etang, vegan duck, cucumber, lettuce, sesame"
+            },
+            {
+              "title": "Roasted Salmon Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Fried egg rice, large salmon, broccoli, fruit, carrage, gyoza"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    }
+  }
+}

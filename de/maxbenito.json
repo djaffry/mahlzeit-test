@@ -1,0 +1,20 @@
+{
+  "id": "maxbenito",
+  "title": "Max & Benito",
+  "url": "https://maxbenito.at/#food",
+  "type": "link",
+  "icon": "bean",
+  "cuisine": [
+    "Burritos"
+  ],
+  "stampCard": true,
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2231,
+    "lon": 16.3926
+  },
+  "fetchedAt": "2026-04-27T09:34:42.843Z",
+  "error": null,
+  "days": {}
+}

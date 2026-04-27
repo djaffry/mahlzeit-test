@@ -1,0 +1,313 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-04-27T09:34:38.288Z",
+  "error": null,
+  "days": {
+    "2026-04-27": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Jalfreczi Vegetable-Curry",
+              "price": null,
+              "tags": [],
+              "allergens": "F",
+              "description": "Gemüse & Oliven, Jasminreis"
+            },
+            {
+              "title": "Putenfilet gebraten",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": "Tagliatelle verde & Karotten-Zweierlei, Kräuterrahmsoße"
+            },
+            {
+              "title": "Berner Würstel",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Skin-on Fries, Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Brombeer-Swirl & Cookies",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Vollkorn-Pasta",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Linsen-Bolognese, Grana Vegano"
+            },
+            {
+              "title": "Koriander-Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,E,F,N,R",
+              "description": "Brokkoli & Maisreis, Gerösteter Sesam"
+            },
+            {
+              "title": "Farmer's Beef-Burger",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,M,N",
+              "description": "Beef-Patty & Coleslaw, Honey-Mustard Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Double-Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-29": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Champignongulasch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Semmelknödel, Schnittlauch"
+            },
+            {
+              "title": "Cordon bleu Toscana",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Prosciutto & Tomate, Pommes frites"
+            },
+            {
+              "title": "Forelle Müllerin",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Petersilkartoffeln, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Biscoff-Tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-30": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatlasagne",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Blattspinat & Tomate, Vechamel"
+            },
+            {
+              "title": "Paprika-Henderl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C",
+              "description": "Frische Knöpfle, Jungzwiebel"
+            },
+            {
+              "title": "Bergbauernpfandl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Knödel, Braten & Gemüse, Bergkäse & Spiegelei"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Bodenloser Apfelkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-05-01": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Einen schönen Feiertag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wünscht Dir dein BahnBistro-Team Lassallestraße"
+            },
+            {
+              "title": "Staatsfeiertag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-27T09:34:37.481Z"
+    }
+  }
+}
