@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-27T09:34:39.514Z",
+  "fetchedAt": "2026-04-28T10:26:35.665Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -70,7 +70,7 @@
               "tags": [
                 "Schweinefleisch"
               ],
-              "allergens": "A,C,H,L,O",
+              "allergens": "A,C,L,O",
               "description": null
             }
           ]
@@ -129,7 +129,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -138,14 +138,14 @@
               "tags": [
                 "Meeresfrüchte"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
               "title": "Carrot-peanut curry with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -194,7 +194,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,H,O",
+              "allergens": "A,F,O",
               "description": null
             }
           ]
@@ -238,7 +238,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-27T09:34:37.481Z"
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     },
     "2026-04-28": {
       "categories": [
@@ -267,7 +267,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -290,10 +290,10 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Baked turkey schnitzel, sesame nut breading, parsley potatoes",
+              "title": "Baked chicken schnitzel, sesame nut breading, parsley potatoes",
               "price": "12,30 €",
               "tags": [
-                "Pute"
+                "Huhn"
               ],
               "allergens": "A,C,G,H,N",
               "description": null
@@ -354,7 +354,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -363,14 +363,14 @@
               "tags": [
                 "Meeresfrüchte"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
               "title": "Carrot-peanut curry with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -392,29 +392,6 @@
                 "Vegetarisch"
               ],
               "allergens": "D,G,O",
-              "description": null
-            }
-          ]
-        },
-        {
-          "name": "Pizza & Co",
-          "items": [
-            {
-              "title": "Pizza, roasted tomatoes, scamorza, herbs, pancetta",
-              "price": "9,90 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
-              "allergens": "A,G",
-              "description": null
-            },
-            {
-              "title": "Pizza Margherita",
-              "price": "9,90 €",
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": "A,G",
               "description": null
             }
           ]
@@ -442,7 +419,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,H,O",
+              "allergens": "A,F,O",
               "description": null
             }
           ]
@@ -451,10 +428,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Tapioca Dessert, Exotic Fruits",
+              "title": "Tapioca dessert, exotic fruits, lemon cream, almonds",
               "price": null,
               "tags": [],
-              "allergens": "O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -463,10 +440,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Snickers cuts",
+              "title": "Snickers slices raspberry cardinal slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,E,F,G,H",
+              "allergens": "A,C,E,F,G,H,L,N,O",
               "description": null
             }
           ]
@@ -486,7 +463,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-27T09:34:37.481Z"
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     },
     "2026-04-29": {
       "categories": [
@@ -515,7 +492,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -557,7 +534,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H",
+              "allergens": null,
               "description": null
             }
           ]
@@ -602,7 +579,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -611,14 +588,14 @@
               "tags": [
                 "Meeresfrüchte"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
               "title": "Carrot-peanut curry with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -691,7 +668,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,H,O",
+              "allergens": "A,F,O",
               "description": null
             }
           ]
@@ -735,7 +712,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-27T09:34:37.481Z"
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     },
     "2026-04-30": {
       "categories": [
@@ -764,7 +741,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C,H,L",
+              "allergens": "L",
               "description": null
             }
           ]
@@ -851,7 +828,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -860,14 +837,14 @@
               "tags": [
                 "Meeresfrüchte"
               ],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
               "title": "Carrot-peanut curry with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,B,C,D,E,F,H,L,M,N,O",
+              "allergens": "A,B,D,E,F,L,M,N,O",
               "description": null
             },
             {
@@ -939,7 +916,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,F,H,O",
+              "allergens": "A,F,O",
               "description": null
             }
           ]
@@ -983,7 +960,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-27T09:34:37.481Z"
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     }
   }
 }

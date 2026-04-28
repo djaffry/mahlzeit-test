@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-04-27T09:34:38.393Z",
+  "fetchedAt": "2026-04-28T10:26:34.402Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -119,7 +119,7 @@
           "items": [
             {
               "title": "Rindsroulade mit Fusillinudeln und Gemüse",
-              "price": "11,90 €",
+              "price": "12,90 €",
               "tags": [
                 "Rindfleisch"
               ],
@@ -159,7 +159,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-27T09:34:37.481Z"
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     },
     "2026-04-29": {
       "categories": [

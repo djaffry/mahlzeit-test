@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-27T09:34:39.669Z",
+  "fetchedAt": "2026-04-28T10:26:35.649Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -152,6 +152,142 @@
         }
       ],
       "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood's Veg-Tea (klare Gemüse-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": "Schöberl, Gemüse 🥕 & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frühlings-Chicken Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tortiglioni, grünem Spargel 🌿 & Brokkoli 🥦"
+            },
+            {
+              "title": "Zitronen 🍋-Zucchini 🥒-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelber 💛 & grüner 💚 Zucchini, Thymian 🌿, Petersilie & Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Speck 🥓-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Semmelknödelwürfeln"
+            },
+            {
+              "title": "Veganes, rotes Thai-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Wokgemüse 🥦🥕, Pak Choi 🥬, Paprika 🫑, Zuckerschoten 🫛, Tofu, Baby-Maiskölbchen 🌽, Thai-Basilikum 🌿 & Reis - optional mit Koriander"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bunte Zucchini 🥒-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Edamame 🫛, Erdnussdressing 🥜 & spicy Honig 🍯-Chili 🌶️-Erdnüssen"
+            },
+            {
+              "title": "Bärlauch 🌿-Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kohlrabi 🤍, Karotten 🥕, Tofu & frischer Zitrone 🍋"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Zwetschken 💜-Kuchen im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-27T09:34:39.669Z",
+  "fetchedAt": "2026-04-28T10:26:35.649Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -152,6 +152,142 @@
         }
       ],
       "fetchedAt": "2026-04-27T09:34:37.481Z"
+    },
+    "2026-04-28": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood's Veg-Tea (clear vegetable broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [],
+              "allergens": null,
+              "description": "Schöberl, vegetables 🥕 & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spring Chicken Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tortiglioni, green asparagus 🌿 & broccoli 🥦"
+            },
+            {
+              "title": "Lemon 🍋 zucchini 🥒 risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 & green 💚 zucchini, thyme 🌿, parsley & parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Bacon 🥓 lentils",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Bread dumpling cubes"
+            },
+            {
+              "title": "Vegan red Thai curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥, wok vegetables 🥦🥕, pak choy 🥬, peppers 🫑, snow peas 🫛, tofu, baby corn 🌽, Thai basil 🌿 & rice - optionally with coriander"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Colorful zucchini 🥒 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, edamame 🫛, peanut dressing 🥜 & spicy honey 🍯 chili 🌶️ peanuts"
+            },
+            {
+              "title": "Wild garlic 🌿 quinoa salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kohlrabi 🤍, carrots 🥕, tofu & fresh lemon 🍋"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan plum 💜 cake in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-28T10:26:33.188Z"
     }
   }
 }
