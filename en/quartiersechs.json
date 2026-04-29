@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-28T10:26:35.665Z",
+  "fetchedAt": "2026-04-29T10:19:58.168Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -557,13 +557,12 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, grilled turkey fillet, Bernese sausage, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes, Italian chicken burger, rocket, buffalo mozzarella, tomato, artichoke cream",
+              "title": "Beef minute steak, grilled chicken fillet, Bernese sausage, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes, Italian chicken burger, rocket, buffalo mozzarella, tomato, basil pesto",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Huhn",
-                "Pute"
+                "Huhn"
               ],
               "allergens": "A,G,L,M",
               "description": null
@@ -611,7 +610,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Colorful leaf lettuce, tuna wrap, honey mustard sauce",
+              "title": "Colorful leaf lettuce, tuna, honey mustard sauce",
               "price": "11,90 €",
               "tags": [
                 "Fisch"
@@ -677,10 +676,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Semolina flammery, fresh berries",
+              "title": "Semolina flammery, fresh berries tapioca dessert, exotic fruits",
               "price": null,
               "tags": [],
-              "allergens": "A,G",
+              "allergens": "A,G,O",
               "description": null
             }
           ]
@@ -689,10 +688,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Poppy seed and pear strudel",
+              "title": "Poppy seed and pear strudel Snickers slices",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,E,F,G,H",
               "description": null
             }
           ]
@@ -712,7 +711,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-28T10:26:33.188Z"
+      "fetchedAt": "2026-04-29T10:19:56.146Z"
     },
     "2026-04-30": {
       "categories": [
@@ -806,13 +805,12 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, grilled turkey fillet, Bernese sausage, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes, Italian chicken burger, rocket, buffalo mozzarella, tomato, artichoke cream",
+              "title": "Beef minute steak, grilled chicken fillet, Bernese sausage, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes, Italian chicken burger, rocket, buffalo mozzarella, tomato, basil pesto",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
                 "Schweinefleisch",
-                "Huhn",
-                "Pute"
+                "Huhn"
               ],
               "allergens": "A,G,L,M",
               "description": null
@@ -960,7 +958,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-28T10:26:33.188Z"
+      "fetchedAt": "2026-04-29T10:19:56.146Z"
     }
   }
 }
