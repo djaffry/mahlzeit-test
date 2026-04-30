@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-04-29T10:19:58.168Z",
+  "fetchedAt": "2026-04-30T10:20:31.104Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -206,7 +206,7 @@
               "title": "Lemon cream, raspberries, almond buttermilk - blueberry mousse",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -238,7 +238,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-28T10:26:33.188Z"
+      "fetchedAt": "2026-04-30T10:20:29.146Z"
     },
     "2026-04-28": {
       "categories": [
@@ -431,7 +431,7 @@
               "title": "Tapioca dessert, exotic fruits, lemon cream, almonds",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,G,H,O",
               "description": null
             }
           ]
@@ -463,7 +463,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-28T10:26:33.188Z"
+      "fetchedAt": "2026-04-30T10:20:29.146Z"
     },
     "2026-04-29": {
       "categories": [
@@ -923,10 +923,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Chocolate-orange mousse",
+              "title": "Chocolate-orange mousse, semolina flammery, fresh berries",
               "price": null,
               "tags": [],
-              "allergens": "F,G,O",
+              "allergens": "A,F,G,O",
               "description": null
             }
           ]
@@ -935,7 +935,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Coffee cuts",
+              "title": "Coffee slices poppy seeds - pear strudel",
               "price": null,
               "tags": [],
               "allergens": "A,C,E,F,G,H,L,N,O",
@@ -958,7 +958,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-04-29T10:19:56.146Z"
+      "fetchedAt": "2026-04-30T10:20:29.146Z"
     }
   }
 }

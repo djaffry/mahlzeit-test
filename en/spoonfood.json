@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-04-29T10:19:58.035Z",
+  "fetchedAt": "2026-04-30T10:20:31.438Z",
   "error": null,
   "days": {
     "2026-04-27": {
@@ -429,6 +429,155 @@
         }
       ],
       "fetchedAt": "2026-04-29T10:19:56.146Z"
+    },
+    "2026-04-30": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Mediterranean tomato soup 🍅",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Ebly pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "braised turmeric 💛 oven chicken & beans 🫛"
+            },
+            {
+              "title": "Gnocchi in creamy spinach 💚 feta sauce",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "melted cherry tomatoes 🍅"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Greek stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Minced beef, zucchini 🥒, aubergine 🍆, peppers 🫑 & rice"
+            },
+            {
+              "title": "Red ❤️ lentil dal - in creamy cashew coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Broccoli 🥦, peppers 🫑 & rice - optionally with pita bread"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Styrian Power 💪 Protein Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Runner beans 🫘, white cabbage 🤍, radishes 🫜, cress 🌿, pumpkin seeds & pumpkin seed oil"
+            },
+            {
+              "title": "Wild garlic 🌿 quinoa salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kohlrabi 🤍, carrots 🥕, tofu & fresh lemon 🍋"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan plum 💜 cake in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Banoffee - banana 🍌 caramel 🤎 cream - in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-04-30T10:20:29.146Z"
     }
   }
 }
