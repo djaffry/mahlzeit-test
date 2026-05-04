@@ -1,0 +1,358 @@
+{
+  "id": "reinthaler",
+  "title": "Gasthaus Reinthaler",
+  "url": "https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue",
+  "type": "specials",
+  "icon": "beer",
+  "cuisine": [
+    "Inn"
+  ],
+  "reservationUrl": "https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung",
+  "coordinates": {
+    "lat": 48.21892,
+    "lon": 16.39778
+  },
+  "fetchedAt": "2026-05-04T09:19:22.297Z",
+  "error": null,
+  "days": {
+    "2026-05-04": {
+      "categories": [
+        {
+          "name": "Daily menu",
+          "items": [
+            {
+              "title": "Soup of the day",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bratwurst",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,M",
+              "description": "with sauerkraut and fried potatoes"
+            }
+          ]
+        },
+        {
+          "name": "Daily plate",
+          "items": [
+            {
+              "title": "Wienerschnitzel (pork)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with mayonnaise salad"
+            },
+            {
+              "title": "You boss",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Farmer's schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Salami schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with salad"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Daily menu",
+          "items": [
+            {
+              "title": "Soup of the day",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Surschnitzel from pork",
+              "price": "10,70 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with mixed salad"
+            }
+          ]
+        },
+        {
+          "name": "Daily plate",
+          "items": [
+            {
+              "title": "Wienerschnitzel (pork)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with mayonnaise salad"
+            },
+            {
+              "title": "You boss",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Farmer's schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Salami schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with salad"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Daily menu",
+          "items": [
+            {
+              "title": "Soup of the day",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Smoked ripple",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "G,M",
+              "description": "with mashed potatoes"
+            }
+          ]
+        },
+        {
+          "name": "Daily plate",
+          "items": [
+            {
+              "title": "Wienerschnitzel (pork)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with mayonnaise salad"
+            },
+            {
+              "title": "You boss",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Farmer's schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Salami schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with salad"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Daily menu",
+          "items": [
+            {
+              "title": "Soup of the day",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Baked blunzenradl",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            }
+          ]
+        },
+        {
+          "name": "Daily plate",
+          "items": [
+            {
+              "title": "Wienerschnitzel (pork)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with mayonnaise salad"
+            },
+            {
+              "title": "You boss",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Farmer's schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Salami schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with salad"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Daily menu",
+          "items": [
+            {
+              "title": "Soup of the day",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Baked cod",
+              "price": "12,80 €",
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Kaiserschmarrn",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with plum roaster"
+            }
+          ]
+        },
+        {
+          "name": "Daily plate",
+          "items": [
+            {
+              "title": "Wienerschnitzel (pork)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "with potato salad"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with mayonnaise salad"
+            },
+            {
+              "title": "You boss",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Farmer's schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "with parsley potatoes"
+            },
+            {
+              "title": "Salami schnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "with salad"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    }
+  }
+}

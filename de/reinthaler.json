@@ -1,0 +1,358 @@
+{
+  "id": "reinthaler",
+  "title": "Gasthaus Reinthaler",
+  "url": "https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue",
+  "type": "specials",
+  "icon": "beer",
+  "cuisine": [
+    "Wirtshaus"
+  ],
+  "reservationUrl": "https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung",
+  "coordinates": {
+    "lat": 48.21892,
+    "lon": 16.39778
+  },
+  "fetchedAt": "2026-05-04T09:19:22.297Z",
+  "error": null,
+  "days": {
+    "2026-05-04": {
+      "categories": [
+        {
+          "name": "Tagesmenü",
+          "items": [
+            {
+              "title": "Tagessuppe",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bratwurst",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,M",
+              "description": "mit sauerkraut und bratkartoffeln"
+            }
+          ]
+        },
+        {
+          "name": "Tagesteller",
+          "items": [
+            {
+              "title": "Wienerschnitzel (Vom schwein)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit mayonnaisesalat"
+            },
+            {
+              "title": "Du chef",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Bauernschnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Salamischnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit salat"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Tagesmenü",
+          "items": [
+            {
+              "title": "Tagessuppe",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Surschnitzel vom schwein",
+              "price": "10,70 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit gemischtem salat"
+            }
+          ]
+        },
+        {
+          "name": "Tagesteller",
+          "items": [
+            {
+              "title": "Wienerschnitzel (Vom schwein)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit mayonnaisesalat"
+            },
+            {
+              "title": "Du chef",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Bauernschnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Salamischnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit salat"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Tagesmenü",
+          "items": [
+            {
+              "title": "Tagessuppe",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Geselchte ripperln",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "G,M",
+              "description": "mit kartoffelpürree"
+            }
+          ]
+        },
+        {
+          "name": "Tagesteller",
+          "items": [
+            {
+              "title": "Wienerschnitzel (Vom schwein)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit mayonnaisesalat"
+            },
+            {
+              "title": "Du chef",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Bauernschnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Salamischnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit salat"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Tagesmenü",
+          "items": [
+            {
+              "title": "Tagessuppe",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gebackene blunzenradl",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit peteresilienkartoffel"
+            }
+          ]
+        },
+        {
+          "name": "Tagesteller",
+          "items": [
+            {
+              "title": "Wienerschnitzel (Vom schwein)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit mayonnaisesalat"
+            },
+            {
+              "title": "Du chef",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Bauernschnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Salamischnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit salat"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Tagesmenü",
+          "items": [
+            {
+              "title": "Tagessuppe",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Kabeljau gebacken",
+              "price": "12,80 €",
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Kaiserschmarrn",
+              "price": "10,70 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit zwetschkenröster"
+            }
+          ]
+        },
+        {
+          "name": "Tagesteller",
+          "items": [
+            {
+              "title": "Wienerschnitzel (Vom schwein)",
+              "price": "12,50 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "mit kartoffelsalat"
+            },
+            {
+              "title": "Cordon bleu",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit mayonnaisesalat"
+            },
+            {
+              "title": "Du chef",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Bauernschnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "mit petersilienkartoffel"
+            },
+            {
+              "title": "Salamischnitzel",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "mit salat"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    }
+  }
+}

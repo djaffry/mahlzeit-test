@@ -1,0 +1,151 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salate",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-05-04T09:19:21.960Z",
+  "error": null,
+  "days": {
+    "2026-05-04": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Protein Chicken Bowl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
+            },
+            {
+              "title": "Korean BBQ Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-04T09:19:20.768Z"
+    }
+  }
+}
