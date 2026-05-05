@@ -5,13 +5,319 @@
   "type": "full",
   "icon": "train",
   "cuisine": [
-    "canteen"
+    "Canteen"
   ],
   "coordinates": {
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-05-04T09:19:25.938Z",
-  "error": "Bahnbistro API returned HTTP 502",
-  "days": {}
+  "fetchedAt": "2026-05-05T10:13:22.457Z",
+  "error": null,
+  "days": {
+    "2026-05-04": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Indian lentil curry",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,N",
+              "description": "Beluga lentils, dip & parsley, flatbread"
+            },
+            {
+              "title": "Chicken fillet piccata",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Pasta & tomato ragout, Grana Padano"
+            },
+            {
+              "title": "Cheeseburger No.5",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M,N",
+              "description": "Beef patty & cheddar, dippers"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Raspberry Swirl",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Tortelloni quinoa spinach",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Lime sauce, antipasti"
+            },
+            {
+              "title": "Beef stew Gulyas style",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C",
+              "description": "Fresh dumplings, chives"
+            },
+            {
+              "title": "Spanish rice",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "L",
+              "description": "Turkey & vegetables, lemon"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Hazelnut brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Chickpea and vegetable ragout",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,O",
+              "description": "Bread dumplings & plant cream, fresh lovage"
+            },
+            {
+              "title": "Baked turkey schnitzel",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "French fries, cranberries"
+            },
+            {
+              "title": "Grilled shrimp skewers",
+              "price": null,
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "B,C,E,G,M",
+              "description": "Spicy cabbage salad & fragrant rice, lime dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chia pudding & mango",
+              "price": null,
+              "tags": [],
+              "allergens": "H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Macaroni Crete",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H",
+              "description": "Zucchini, tomatoes & olives, sheep cheese"
+            },
+            {
+              "title": "Grilled corn-fed chicken fillet",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "L,M",
+              "description": "Rice & bacon, BBQ chili beans"
+            },
+            {
+              "title": "Beef WOK",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F,N,R",
+              "description": "Carrot, zucchini & peppers, eggnoodles"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Poppy seed cake & currants",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Apple stoodle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Vanilla sauce, powdered sugar"
+            },
+            {
+              "title": "Baked salmon fillet",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Leaf spinach & hollandaise, butter potatoes"
+            },
+            {
+              "title": "Fennel and apple salad",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,N",
+              "description": "Marinated fried tofu, basmati rice"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd mousse & strawberries",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    }
+  }
 }

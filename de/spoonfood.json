@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-04T09:19:22.556Z",
+  "fetchedAt": "2026-05-05T10:13:24.123Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -160,6 +160,145 @@
         }
       ],
       "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Französische Zwiebelsuppe 🧅",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Käse-Croutons"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Moussaka",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "gemischtem Faschierten, Melanzani 🍆 & Erdäpfeln 🥔"
+            },
+            {
+              "title": "Cremiges Spinat 💚-Rucola 🌿-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ricotta"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Hühner-Ragout",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, grünem Spargel 🌿 & Reis"
+            },
+            {
+              "title": "Indisches Gemüse 🥒🥕🥦-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tandoori-Tofu & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Gelbe 💛 Linsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Erbsen 🫛 & Avocado 🥑-Erdbeer 🍓-Dressing"
+            },
+            {
+              "title": "Erdäpfel 🥔-Bärlauch 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Radieschen 🫜, Schnittlauch & Senf-Vinaigrette"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭-Joghurt-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pistazien 💚"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
     }
   }
 }

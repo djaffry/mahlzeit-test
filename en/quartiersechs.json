@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-04T09:19:22.322Z",
+  "fetchedAt": "2026-05-05T10:13:23.669Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -442,7 +442,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut - apricot - rice dessert",
+              "title": "Coconut - apricot - rice dessert Vegan strawberry cream",
               "price": null,
               "tags": [
                 "Vegan"
@@ -456,10 +456,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apple strudel",
+              "title": "Apple strudel Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -479,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
     },
     "2026-05-06": {
       "categories": [

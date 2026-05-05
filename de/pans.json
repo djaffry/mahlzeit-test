@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-04T09:19:25.385Z",
+  "fetchedAt": "2026-05-05T10:13:26.675Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-05-04T09:19:20.768Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Frühlingszwiebel Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,G,O,L,A",
+              "description": null
+            },
+            {
+              "title": "Faschierter Braten mit Erdäpfelpüree und Röstzwiebeln",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,C,0",
+              "description": null
+            },
+            {
+              "title": "Spargel-Risotto mit Parmesan und Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "O,M,6,L,N",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
     }
   }
 }

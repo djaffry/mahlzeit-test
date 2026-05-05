@@ -11,7 +11,313 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-05-04T09:19:25.938Z",
-  "error": "Bahnbistro API returned HTTP 502",
-  "days": {}
+  "fetchedAt": "2026-05-05T10:13:22.457Z",
+  "error": null,
+  "days": {
+    "2026-05-04": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Indisches Linsencurry",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,N",
+              "description": "Belugalinsen, Dip & Petersilie, Fladenbrot"
+            },
+            {
+              "title": "Hühnerfilet Piccata",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Pasta & Tomatenragout, Grana Padano"
+            },
+            {
+              "title": "Cheeseburger No.5",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M,N",
+              "description": "Beef Patty & Cheddar, Dippers"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Swirl",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-05": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tortelloni Quinoa-Spinat",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Sauce al limone, Antipasti"
+            },
+            {
+              "title": "Rindragout Gulyas-Art",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C",
+              "description": "Frische Nockerl, Schnittlauch"
+            },
+            {
+              "title": "Spanischer Reis",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "L",
+              "description": "Pute & Gemüse, Zitrone"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Haselnuss-Brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kichererbsen-Gemüseragout",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,O",
+              "description": "Semmelknödel & Plantcream, Frisches Liebstöckel"
+            },
+            {
+              "title": "Putenschnitzerl gebacken",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "Pommes frites, Preiselbeeren"
+            },
+            {
+              "title": "Garnelenspieße vom Grill",
+              "price": null,
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "B,C,E,G,M",
+              "description": "Spicy Kohlsalat & Duftreis, Limetten-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Chia-Pudding & Mango",
+              "price": null,
+              "tags": [],
+              "allergens": "H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Makkaroni Kreta",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H",
+              "description": "Zucchini, Tomate & Oliven, Schafskäse"
+            },
+            {
+              "title": "Maishendlfilet gegrillt",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "L,M",
+              "description": "Reis & Bacon, BBQ-Chili Beans"
+            },
+            {
+              "title": "Beef-WOK",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,F,N,R",
+              "description": "Karotte, Zucchini & Paprika, Eggnoodles"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Mohnkuchen & Ribisel",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Apfelstudel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Vanillesoße, Staubzucker"
+            },
+            {
+              "title": "Überbackenes Lachsfilet",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Blattspinat & Hollandaise, Butterkartoffeln"
+            },
+            {
+              "title": "Fenchel-Apfelsalat",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,N",
+              "description": "Marinierter Tofu gebraten, Basmatireis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfenmousse & Erdbeeren",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-05T10:13:21.838Z"
+    }
+  }
 }
