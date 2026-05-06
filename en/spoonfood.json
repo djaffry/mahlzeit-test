@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-05T10:13:24.123Z",
+  "fetchedAt": "2026-05-06T09:33:33.016Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -299,6 +299,148 @@
         }
       ],
       "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood's Chick-Tea (clear chicken broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tarhonya, vegetables 🥕 & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Chicken Cacciatore",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Baby potatoes 🥔, mushrooms 🍄‍🟫, braised onions 🧅 & fresh rosemary 🌿"
+            },
+            {
+              "title": "Penne Tricolore 💛🧡💚 casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Broccoli 🥦 – gratinated with mozzarella"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Irish beef stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Heirs 🫛, baby carrots 🥕 & rice"
+            },
+            {
+              "title": "Vegan potato 🥔 mushroom 🍄‍🟫 goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Rice – optional with sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Radishes 🫜-Apple 🍏-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "fresh lamb's lettuce 🥬, quinoa & pomegranate 🍎 citrus 🍋 dressing"
+            },
+            {
+              "title": "Potatoes 🥔-Wild garlic 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Radishes 🫜, chives & mustard vinaigrette"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apple 🍎 elderberry 🌿 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "fresh yogurt with oat crumble 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     }
   }
 }

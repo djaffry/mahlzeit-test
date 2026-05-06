@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-05T10:13:26.675Z",
+  "fetchedAt": "2026-05-06T09:33:34.536Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -78,6 +78,39 @@
         }
       ],
       "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Asparagus-truffle cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,G,O,L,A",
+              "description": null
+            },
+            {
+              "title": "Baked turkey schnitzel with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,6,C,0,M",
+              "description": null
+            },
+            {
+              "title": "Penne with basil pesto and parmesan (H,6,AC)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     }
   }
 }

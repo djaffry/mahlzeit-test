@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-05T10:13:24.123Z",
+  "fetchedAt": "2026-05-06T09:33:33.016Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -299,6 +299,148 @@
         }
       ],
       "fetchedAt": "2026-05-05T10:13:21.838Z"
+    },
+    "2026-05-06": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood's Chick-Tea (klare Hühner-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tarhonya, Gemüse 🥕 & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Chicken Cacciatore",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Babykartoffeln 🥔, Champignons 🍄‍🟫, geschmorten Zwiebeln 🧅 & frischem Rosmarin 🌿"
+            },
+            {
+              "title": "Penne Tricolore 💛🧡💚-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Brokkoli 🥦 – mit Mozzarella gratiniert"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Irish Stew vom Rind",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Erben 🫛, Babykarotten 🥕 & Reis"
+            },
+            {
+              "title": "Veganes Erdäpfel 🥔-Pilz 🍄‍🟫-Gulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Reis – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Radieschen 🫜-Apfel 🍏-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischem Feldsalat 🥬, Quinoa & Granatapfel 🍎-Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Erdäpfel 🥔-Bärlauch 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Radieschen 🫜, Schnittlauch & Senf-Vinaigrette"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apfel 🍎-Holunder 🌿-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "frischem Joghurt mit Hafer-Crumble 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     }
   }
 }

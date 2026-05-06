@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-05T10:13:23.669Z",
+  "fetchedAt": "2026-05-06T09:33:32.670Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -459,7 +459,7 @@
               "title": "Apple strudel Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -479,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-05T10:13:21.838Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-06": {
       "categories": [
@@ -676,7 +676,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan chocolate mousse, Amarena cherries",
+              "title": "Vegan chocolate mousse, Amarena cherries, coconut - apricots - rice dessert",
               "price": null,
               "tags": [
                 "Vegan"
@@ -690,10 +690,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Berry crumble cake",
+              "title": "Berry crumble cake apple strudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -713,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-07": {
       "categories": [
@@ -908,12 +908,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Elderberry poppy seed panna cotta, strawberry mirror",
+              "title": "Elderberry poppy seed panna cotta, strawberry mirror mousse au chocolat, Amarena cherry",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -922,7 +922,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Plum pie, rose petal sprinkles",
+              "title": "Plum pie, rose petal crumble berry crumble cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,E,F,G,H,N,O",
@@ -945,7 +945,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-08": {
       "categories": [
@@ -1075,10 +1075,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Buttermilk - Blackberry Mousse",
+              "title": "Buttermilk - Blackberry Mousse Elderberry Poppy Seed Panna Cotta Strawberry Mirror",
               "price": null,
-              "tags": [],
-              "allergens": "G,H,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -1087,12 +1089,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan brownie",
+              "title": "Vegan brownie plum pie, rose petal sprinkles",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -1112,7 +1114,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     }
   }
 }

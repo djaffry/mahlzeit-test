@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-05T10:13:23.669Z",
+  "fetchedAt": "2026-05-06T09:33:32.670Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -459,7 +459,7 @@
               "title": "Apfelstrudel Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -479,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-05T10:13:21.838Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-06": {
       "categories": [
@@ -676,7 +676,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Mousse au Chocolat, Amarenakirschen",
+              "title": "Veganes Mousse au Chocolat, Amarenakirschen Kokos - Marillen - Reisdessert",
               "price": null,
               "tags": [
                 "Vegan"
@@ -690,10 +690,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Beeren-Streusel Kuchen",
+              "title": "Beeren-Streusel Kuchen Apfelstrudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -713,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-07": {
       "categories": [
@@ -908,12 +908,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Holunder Mohn Panna Cotta, Erdbeerspiegel",
+              "title": "Holunder Mohn Panna Cotta, Erdbeerspiegel Mousse au Chocolat, Amarenakirsche",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -922,7 +922,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Zwetschkenpie, Rosenblütenstreusel",
+              "title": "Zwetschkenpie, Rosenblütenstreusel Beeren Streusel Kuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,E,F,G,H,N,O",
@@ -945,7 +945,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     },
     "2026-05-08": {
       "categories": [
@@ -1075,10 +1075,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilch - Brombeer Mousse",
+              "title": "Buttermilch - Brombeer Mousse Holunder Mohn Panna Cotta Erdbeerspiegel",
               "price": null,
-              "tags": [],
-              "allergens": "G,H,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -1087,12 +1089,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brownie",
+              "title": "Veganer Brownie Zwetschkenpie, Rosenblütenstreusel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -1112,7 +1114,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-04T09:19:20.768Z"
+      "fetchedAt": "2026-05-06T09:33:30.334Z"
     }
   }
 }
