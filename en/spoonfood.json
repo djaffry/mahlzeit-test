@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-06T09:33:33.016Z",
+  "fetchedAt": "2026-05-07T09:42:30.815Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -441,6 +441,147 @@
         }
       ],
       "fetchedAt": "2026-05-06T09:33:30.334Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Spinach 💚 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "fresh herbs 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Beef teriyaki pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Wok vegetables 🥒🥕🥦 & ramen noodles"
+            },
+            {
+              "title": "Vegetables 🥕-wild garlic 🌿-lasagna",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Massaman curry 💛 from the Waldviertler Freilanpute - in cashew-coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Peppers 🫑, broccoli 🥦 & rice"
+            },
+            {
+              "title": "Tuscan Bean 🫘 Stew *Ribollita Style*",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Celery 🌿, green olives 🫒, potatoes 🥔, chard 🥬, pointed cabbage, carrots 🥕 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Radishes 🫜-Apple 🍏-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "fresh lamb's lettuce 🥬, quinoa & pomegranate 🍎 citrus 🍋 dressing"
+            },
+            {
+              "title": "Baby spinach 💚-Halloumi 🧀-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas & tahini lemon 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apple 🍎 elderberry 🌿 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "fresh yogurt with oat crumble 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-07T09:42:28.890Z"
     }
   }
 }

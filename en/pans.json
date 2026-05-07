@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-06T09:33:34.536Z",
+  "fetchedAt": "2026-05-07T09:42:33.341Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -111,6 +111,39 @@
         }
       ],
       "fetchedAt": "2026-05-06T09:33:30.334Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Pumpkin cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,G,0,L",
+              "description": null
+            },
+            {
+              "title": "Creamy chicken and pepper slices with basmati rice (.,6,n,0)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Cheese spaetzle with salad (0,M‚c,A.C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-07T09:42:28.890Z"
     }
   }
 }

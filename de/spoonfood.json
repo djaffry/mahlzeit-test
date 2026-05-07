@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-06T09:33:33.016Z",
+  "fetchedAt": "2026-05-07T09:42:30.815Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -441,6 +441,147 @@
         }
       ],
       "fetchedAt": "2026-05-06T09:33:30.334Z"
+    },
+    "2026-05-07": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Spinat 💚-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischen Kräutern 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Beef Teriyaki-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Wokgemüse 🥒🥕🥦 & Ramennuden"
+            },
+            {
+              "title": "Gemüse 🥕-Bärlauch 🌿-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Massaman-Curry 💛 von der Waldviertler Freilanpute – in Cashew-Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Brokkoli 🥦 & Reis"
+            },
+            {
+              "title": "Toskanischer Bohnen 🫘-Eintopf *Ribollita-Style*",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Stangensellerie 🌿, grünen Oliven 🫒, Erdäpfeln 🥔, Mangold 🥬, Spitzkohl, Karotten 🥕 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Radieschen 🫜-Apfel 🍏-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischem Feldsalat 🥬, Quinoa & Granatapfel 🍎-Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Babyspinat 💚-Halloumi 🧀-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kichererbsen & Tahini-Zitronen 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apfel 🍎-Holunder 🌿-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "frischem Joghurt mit Hafer-Crumble 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-07T09:42:28.890Z"
     }
   }
 }
