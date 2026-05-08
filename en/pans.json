@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-07T09:42:33.341Z",
+  "fetchedAt": "2026-05-08T08:26:45.276Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -144,6 +144,48 @@
         }
       ],
       "fetchedAt": "2026-05-07T09:42:28.890Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Carrot-ginger cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "0,L,N,G",
+              "description": null
+            },
+            {
+              "title": "Salmon fillet fried with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,0,M,C",
+              "description": null
+            },
+            {
+              "title": "Vegetarian moussaka with sheep cheese, salad and tzatziki (0,A.C,M,G,LN)",
+              "price": "12,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "M3: Wild garlic spaetzle à la crème (Ac,6c)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-08T08:26:40.288Z"
     }
   }
 }

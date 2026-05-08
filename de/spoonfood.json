@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-07T09:42:30.815Z",
+  "fetchedAt": "2026-05-08T08:26:42.364Z",
   "error": null,
   "days": {
     "2026-05-04": {
@@ -582,6 +582,146 @@
         }
       ],
       "fetchedAt": "2026-05-07T09:42:28.890Z"
+    },
+    "2026-05-08": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Mediterrane Kräuter 🌿-Kokos 🥥-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tagliatelle Quattro Formaggi 🧀",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warmer Kirsch 🍒-Scheiterhaufen",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Schneehaube ❄️ & Vanillesauce 💛"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍-Erdäpfel 🥔-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Bratwurst, frischem Estragon 🌿 & Reis"
+            },
+            {
+              "title": "Indisches Tandoori-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kurkuma 🧡-Tofu, Karfiol 🤍, Zucchini 🥒, Mango 🥭-Chutney & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Radieschen 🫜-Apfel 🍏-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischem Feldsalat 🥬, Quinoa & Granatapfel 🍎-Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Babyspinat 💚-Halloumi 🧀-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kichererbsen & Tahini-Zitronen 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apfel 🍎-Holunder 🌿-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "frischem Joghurt mit Hafer-Crumble 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-08T08:26:40.288Z"
     }
   }
 }
