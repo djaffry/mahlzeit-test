@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-05-11T07:41:16.943Z",
+  "error": null,
+  "days": {
+    "2026-05-11": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Broccoli cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H,L",
+              "description": null
+            },
+            {
+              "title": "Chicken strips breaded with pumpkin seeds on potato leaf salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,6,C,0,M",
+              "description": null
+            },
+            {
+              "title": "Chickpea curry with coconut milk, vegetables and baby spinach with basmati rice",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "4,6",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T07:41:11.881Z"
+    }
+  }
+}

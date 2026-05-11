@@ -1,0 +1,890 @@
+{
+  "id": "quartiersechs",
+  "title": "Quartier Sechs",
+  "url": "https://www.quartiersechs.at/",
+  "type": "full",
+  "icon": "utensils",
+  "cuisine": [
+    "Kantine"
+  ],
+  "edenred": true,
+  "coordinates": {
+    "lat": 48.2218,
+    "lon": 16.3935
+  },
+  "fetchedAt": "2026-05-11T07:41:13.813Z",
+  "error": null,
+  "days": {
+    "2026-05-11": {
+      "categories": [
+        {
+          "name": "Tagessuppe klar",
+          "items": [
+            {
+              "title": "Rindsuppe, Hühnersuppe, klare Gemüsesuppe wahlweise mit Tarhonya, Leberknödel, Gemüsegrießnockerl",
+              "price": null,
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Geflügel"
+              ],
+              "allergens": "A,C,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagessuppe vegan",
+          "items": [
+            {
+              "title": "Spargelcremesuppe",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "ALL TIME FAVOURITE",
+          "items": [
+            {
+              "title": "Kebab Hühnerfleisch direkt vom Spieß, türkischer Reis oder Pommes Frites, Pfefferoni, Salat, Tomate, Zwiebel, Rotkraut, Ayran",
+              "price": "12,30 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Traditionell",
+          "items": [
+            {
+              "title": "Köttbullar, Erdäpfelpüree, Wacholderrahmsauce, Preiselbeeren",
+              "price": "12,30 €",
+              "tags": [
+                "Rindfleisch",
+                "Wild",
+                "Lamm"
+              ],
+              "allergens": "A,C,F,G,L,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Vegetarisch/Vegan",
+          "items": [
+            {
+              "title": "Curry Gemüselaibchen mit Hirse, cremige Rote Bohnen",
+              "price": "12,30 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,L,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pasta Station",
+          "items": [
+            {
+              "title": "Ravioli Spargelfüllung, Kräuter Tagliatelle, Rosmarin Gnocchi, Olivenöl mit Kräutern, Tomaten - Melanzani Sauce, Limetten - Petersil Pesto, Rucola, geröstete Haselnüsse, Cherrytomaten, Grana",
+              "price": "9,90 €",
+              "tags": [
+                "Vegan",
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Classic Grill",
+          "items": [
+            {
+              "title": "Beef Minute Steak, Maishendlbrust, Schweinemedaillons, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen \"Chicken Caesar´s Burger\" Hühnerfilet, Grana, Eissalat, Tomate, Caesar´s Sauce, Rucola",
+              "price": "11,40 €",
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Huhn"
+              ],
+              "allergens": "A,C,D,G,M,N,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Asia Corner",
+          "items": [
+            {
+              "title": "\"Lab Muu\" Scharf-würziges Faschiertes, \"Pla Rad Prik\" Gegrilltes Rotbarschfilet \"Bangkok Art\", Kimchi-Tofu EIntopf, Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Schweinefleisch",
+                "Fisch"
+              ],
+              "allergens": "A,D,E,F,L,N",
+              "description": null
+            },
+            {
+              "title": "Sushi & Maki",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salatecke",
+          "items": [
+            {
+              "title": "\"Healthy Wrap\" Rucola, Apfel, Käferbohnenaufstrich, Tomaten, Stangensellerie, Haselnuss - Petersilpesto, Ziegenkäse",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G,H,L,M,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pizza & Co",
+          "items": [
+            {
+              "title": "Pizza Thunfisch, roter Zwiebel, Oliven, getrocknete Tomaten",
+              "price": "9,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F,G,O",
+              "description": null
+            },
+            {
+              "title": "Pizza Margherita",
+              "price": "9,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Station",
+          "items": [
+            {
+              "title": "Create your own Bowl Frischer Nishikireis, Quinoa schwarz, vegane Saucen",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Topping",
+          "items": [
+            {
+              "title": "Vegetarische Minifrühlingsrollen, Samosa mit Hühnerfleisch",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "A,F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Creme oder Mousse",
+          "items": [
+            {
+              "title": "Honig-Kefir Mousse, Waldbeerkompott Buttermilch - Brombeer Mousse",
+              "price": null,
+              "tags": [],
+              "allergens": "G,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Kuchen und Torten",
+          "items": [
+            {
+              "title": "Vegane Linzerschnitte Veganer Brownie",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,E,F,G,H,L,M,N,O,P",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Obst klein",
+          "items": [
+            {
+              "title": "Obst der Saison",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T07:41:11.881Z"
+    },
+    "2026-05-12": {
+      "categories": [
+        {
+          "name": "Tagessuppe klar",
+          "items": [
+            {
+              "title": "Rindsuppe, Hühnersuppe, klare Gemüsesuppe wahlweise mit Tarhonya, Leberknödel, Gemüsegrießnockerl",
+              "price": null,
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Geflügel"
+              ],
+              "allergens": "A,C,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagessuppe vegan",
+          "items": [
+            {
+              "title": "Knoblauchcremesuppe, Croutons",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "ALL TIME FAVOURITE",
+          "items": [
+            {
+              "title": "Tullnerfelder Solospargel, Petersilien Erdäpfeln, Sauce Hollandaise, Räucherlachs",
+              "price": "12,30 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Traditionell",
+          "items": [
+            {
+              "title": "Gebackenes Hühnerschnitzel, Kürbiskernpanier, Erdäpfelsalat",
+              "price": "12,30 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Vegetarisch/Vegan",
+          "items": [
+            {
+              "title": "Chili sin Carne, Gebäck",
+              "price": "12,30 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pasta Station",
+          "items": [
+            {
+              "title": "Ravioli Spargelfüllung, Kräuter Tagliatelle, Rosmarin Gnocchi, Olivenöl mit Kräutern, Tomaten - Melanzani Sauce, Limetten - Petersil Pesto, Rucola, geröstete Haselnüsse, Cherrytomaten, Grana",
+              "price": "9,90 €",
+              "tags": [
+                "Vegan",
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Classic Grill",
+          "items": [
+            {
+              "title": "Beef Minute Steak, Maishendlbrust, Schweinemedaillons, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen \"Chicken Caesar´s Burger\" Hühnerfilet, Grana, Eissalat, Tomate, Caesar´s Sauce, Rucola",
+              "price": "11,40 €",
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Huhn"
+              ],
+              "allergens": "A,C,D,G,M,N,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Asia Corner",
+          "items": [
+            {
+              "title": "\"Lab Muu\" Scharf-würziges Faschiertes, \"Pla Rad Prik\" Gegrilltes Rotbarschfilet \"Bangkok Art\", Kimchi-Tofu EIntopf, Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Schweinefleisch",
+                "Fisch"
+              ],
+              "allergens": "A,D,E,F,L,N",
+              "description": null
+            },
+            {
+              "title": "Sushi & Maki",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salatecke",
+          "items": [
+            {
+              "title": "Knackiger Blattsalat, Soba Nudeln, Sprossen, Lachsspieß, Yuzu Dressing",
+              "price": "11,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pizza & Co",
+          "items": [
+            {
+              "title": "Pizza Calzone, Schinken, Salami, Mais, Oliven",
+              "price": "9,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,G,L,M",
+              "description": null
+            },
+            {
+              "title": "Pizza Margherita",
+              "price": "9,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Station",
+          "items": [
+            {
+              "title": "Create your own Bowl Frischer Nishikireis, Quinoa schwarz, vegane Saucen",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Topping",
+          "items": [
+            {
+              "title": "Vegetarische Minifrühlingsrollen, Samosa mit Hühnerfleisch",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "A,F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Creme oder Mousse",
+          "items": [
+            {
+              "title": "Mousse au chocolat, Himbeeren",
+              "price": null,
+              "tags": [],
+              "allergens": "F,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Kuchen und Torten",
+          "items": [
+            {
+              "title": "Mohn - Birnenstrudel vegan",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Obst klein",
+          "items": [
+            {
+              "title": "Obst der Saison",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T07:41:11.881Z"
+    },
+    "2026-05-13": {
+      "categories": [
+        {
+          "name": "Tagessuppe klar",
+          "items": [
+            {
+              "title": "Rindsuppe, Hühnersuppe, klare Gemüsesuppe wahlweise mit Tarhonya, Leberknödel, Gemüsegrießnockerl",
+              "price": null,
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Geflügel"
+              ],
+              "allergens": "A,C,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagessuppe vegan",
+          "items": [
+            {
+              "title": "Geröstete Maissuppe",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "ALL TIME FAVOURITE",
+          "items": [
+            {
+              "title": "Tullnerfelder Solospargel, Petersilien Erdäpfeln, Sauce Hollandaise, Räucherlachs",
+              "price": "12,30 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Traditionell",
+          "items": [
+            {
+              "title": "Paprikahuhn, Nockerl",
+              "price": "12,30 €",
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Vegetarisch/Vegan",
+          "items": [
+            {
+              "title": "Linseneintopf, Lauch & Wurzelgemüse, frittierte Süßkartoffelwürfel",
+              "price": "12,30 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pasta Station",
+          "items": [
+            {
+              "title": "Ravioli Spargelfüllung, Kräuter Tagliatelle, Rosmarin Gnocchi, Olivenöl mit Kräutern, Tomaten - Melanzani Sauce, Limetten - Petersil Pesto, Rucola, geröstete Haselnüsse, Cherrytomaten, Grana",
+              "price": "9,90 €",
+              "tags": [
+                "Vegan",
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Classic Grill",
+          "items": [
+            {
+              "title": "Beef Minute Steak, Maishendlbrust, Schweinemedaillons, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen \"Chicken Caesar´s Burger\" Hühnerfilet, Grana, Eissalat, Tomate, Caesar´s Sauce, Rucola",
+              "price": "11,40 €",
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Huhn"
+              ],
+              "allergens": "A,C,D,G,M,N,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Asia Corner",
+          "items": [
+            {
+              "title": "\"Lab Muu\" Scharf-würziges Faschiertes, \"Pla Rad Prik\" Gegrilltes Rotbarschfilet \"Bangkok Art\", Kimchi-Tofu EIntopf, Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Schweinefleisch",
+                "Fisch"
+              ],
+              "allergens": "A,D,E,F,L,N",
+              "description": null
+            },
+            {
+              "title": "Sushi & Maki",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salatecke",
+          "items": [
+            {
+              "title": "Steirischer Rindfleischsalat, Kernöl",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pizza & Co",
+          "items": [
+            {
+              "title": "Pizza, Rucola, Prosciutto, Büffelmozzarella",
+              "price": "9,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,G,O",
+              "description": null
+            },
+            {
+              "title": "Pizza Margherita",
+              "price": "9,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Station",
+          "items": [
+            {
+              "title": "Create your own Bowl Frischer Nishikireis, Quinoa schwarz, vegane Saucen",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Bowl Topping",
+          "items": [
+            {
+              "title": "Vegetarische Minifrühlingsrollen, Samosa mit Hühnerfleisch",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "A,F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Creme oder Mousse",
+          "items": [
+            {
+              "title": "Himbeer Panna Cotta",
+              "price": null,
+              "tags": [],
+              "allergens": "G,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Kuchen und Torten",
+          "items": [
+            {
+              "title": "Ribiselkuchen mit Streusel",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,H,N,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Obst klein",
+          "items": [
+            {
+              "title": "Obst der Saison",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T07:41:11.881Z"
+    },
+    "2026-05-15": {
+      "categories": [
+        {
+          "name": "Tagessuppe klar",
+          "items": [
+            {
+              "title": "Rindsuppe, Hühnersuppe, klare Gemüsesuppe wahlweise mit Tarhonya, Leberknödel, Gemüsegrießnockerl",
+              "price": null,
+              "tags": [
+                "Rindfleisch",
+                "Schweinefleisch",
+                "Geflügel"
+              ],
+              "allergens": "A,C,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Tagessuppe vegan",
+          "items": [
+            {
+              "title": "Petersilwurzel - Kren Suppe, Sprossen",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "L,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "ALL TIME FAVOURITE",
+          "items": [
+            {
+              "title": "Tullnerfelder Solospargel, Petersilien Erdäpfeln, Sauce Hollandaise, Räucherlachs",
+              "price": "12,30 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Traditionell",
+          "items": [
+            {
+              "title": "Gebackenes Kabeljau, Petersilien Erdäpfeln, Sauce Tartare",
+              "price": "12,30 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise Vegetarisch/Vegan",
+          "items": [
+            {
+              "title": "Gebratene Kürbiskernpolenta, Rote Rüben Gemüse, Soja Joghurt Dip",
+              "price": "12,30 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,L,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Pasta Station",
+          "items": [
+            {
+              "title": "Ravioli Spargelfüllung, Kräuter Tagliatelle, Rosmarin Gnocchi, Olivenöl mit Kräutern, Tomaten - Melanzani Sauce, Limetten - Petersil Pesto, Rucola, geröstete Haselnüsse, Cherrytomaten, Grana",
+              "price": "9,90 €",
+              "tags": [
+                "Vegan",
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Asia Corner",
+          "items": [
+            {
+              "title": "\"Lab Muu\" Scharf-würziges Faschiertes, \"Pla Rad Prik\" Gegrilltes Rotbarschfilet \"Bangkok Art\", Kimchi-Tofu EIntopf, Wokgemüse, Jasminreis",
+              "price": "10,90 €",
+              "tags": [
+                "Schweinefleisch",
+                "Fisch"
+              ],
+              "allergens": "A,D,E,F,L,N",
+              "description": null
+            },
+            {
+              "title": "Sushi & Maki",
+              "price": "10,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Salatecke",
+          "items": [
+            {
+              "title": "Quinoasalat, Cashewkerne, Curry-Dattel Falafel",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,H,M,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Creme oder Mousse",
+          "items": [
+            {
+              "title": "Brombeer Mousse",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G,H",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Kuchen und Torten",
+          "items": [
+            {
+              "title": "Topfen - Obersschnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,O",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Obst klein",
+          "items": [
+            {
+              "title": "Obst der Saison",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T07:41:11.881Z"
+    }
+  }
+}
