@@ -11,7 +11,300 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-05-11T07:41:17.501Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-05-11T10:41:40.612Z",
+  "error": null,
+  "days": {
+    "2026-05-11": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kisir-Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H,N",
+              "description": "Kisir, Falafel & Hummus, Minze & Mandeln"
+            },
+            {
+              "title": "Cremige Schinkenfleckerl",
+              "price": null,
+              "tags": [
+                "Pute",
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Putenschinken, Obers & Käse, Frischer Schnittlauch"
+            },
+            {
+              "title": "Bifteki",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G",
+              "description": "Tomatenreis & Tzatziki, Frische Petersilie"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillenkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T10:41:39.833Z"
+    },
+    "2026-05-12": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüselasagne",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Buntes Gemüse & Vechamel, Grana Vegano"
+            },
+            {
+              "title": "Zander serbisch",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Petersilkartoffeln, Kräuterbutter"
+            },
+            {
+              "title": "THAI Peanut-Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,E,F",
+              "description": "Erbsenschoten & Maiskölbchen, Basmatireis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Schokomousse & Kirschen",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T10:41:39.833Z"
+    },
+    "2026-05-13": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Lemongrass-Chili Tofu",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,H",
+              "description": "Cashewreis & Limette, Jungzwiebel"
+            },
+            {
+              "title": "Kürbiskernschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Erdäpfelsalat & Kernöl-Dip, Zitrone"
+            },
+            {
+              "title": "Bratwurst vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "M",
+              "description": "Pusztasalat & SkinOn-Wedges, Zwiebelsenf"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Blueberry-Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T10:41:39.833Z"
+    },
+    "2026-05-14": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Einen schönen Feiertag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wünscht Dir dein BahnBistro-Team Lassallestraße"
+            },
+            {
+              "title": "Christi Himmelfahrt",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T10:41:39.833Z"
+    },
+    "2026-05-15": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Fenstertag - geschlossen",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Sind ab Montag wieder für Euch da…"
+            },
+            {
+              "title": "Main2",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-11T10:41:39.833Z"
+    }
+  }
 }
