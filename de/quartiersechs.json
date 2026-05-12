@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-11T10:41:41.895Z",
+  "fetchedAt": "2026-05-12T09:47:34.053Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -448,10 +448,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Mousse au chocolat, Himbeeren",
+              "title": "Mousse au chocolat, Himbeeren Honig-Kefir Mousse, Waldbeerkompott",
               "price": null,
               "tags": [],
-              "allergens": "F,G",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -460,12 +460,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Mohn - Birnenstrudel vegan",
+              "title": "Mohn - Birnenstrudel vegan Vegane Linzerschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G",
+              "allergens": "A,C,E,F,G,H,L,M,N,O,P",
               "description": null
             }
           ]
@@ -485,7 +485,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-11T07:41:11.881Z"
+      "fetchedAt": "2026-05-12T09:47:31.879Z"
     },
     "2026-05-13": {
       "categories": [

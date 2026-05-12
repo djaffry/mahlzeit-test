@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-11T07:41:16.943Z",
+  "fetchedAt": "2026-05-12T09:47:37.050Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -47,6 +47,39 @@
         }
       ],
       "fetchedAt": "2026-05-11T07:41:11.881Z"
+    },
+    "2026-05-12": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Leek cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,N,L,O",
+              "description": null
+            },
+            {
+              "title": "Lasagna Bolognese (beef) with salad (A,6,Cc,o,M,L,N)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gnocchi with Gorgonzola sauce (.,N,6,0)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-12T09:47:31.879Z"
     }
   }
 }

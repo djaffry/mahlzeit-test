@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-11T07:41:14.207Z",
+  "fetchedAt": "2026-05-12T09:47:33.967Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -156,6 +156,145 @@
         }
       ],
       "fetchedAt": "2026-05-11T07:41:11.881Z"
+    },
+    "2026-05-12": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood's Veg-Tea (clear vegetable broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Fries & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spätzle - in wild garlic 🌿-bacon 🥓 sauce - optionally add chives 🌿",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Vegetable 🥒🥕🌿 couscous",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "grilled pepper 🫑 & wild garlic 🌿 dip"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Beer casserole made from Ötscherblick pig",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, pearl onions 🧅 & spirals"
+            },
+            {
+              "title": "Carrots 🥕 beetle beans 🫘 miso stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu, mushrooms 🍄‍🟫, peas 🫛 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Beluga Lentil Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Edamame 🫛, mango 🥭, oranges 🍊, baby spinach 💚 & lime 🍋‍🟩 ginger 🫚 dressing"
+            },
+            {
+              "title": "Colorful quinoa salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Radishes 🫜, cucumbers 🥒, peppers 🫑, pomegranate seeds 🍎 & citrus 🍋 mustard dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Black 🖤 & White 🤍 chocolate mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-12T09:47:31.879Z"
     }
   }
 }
