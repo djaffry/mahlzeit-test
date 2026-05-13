@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-12T09:47:34.053Z",
+  "fetchedAt": "2026-05-13T09:50:27.278Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -681,10 +681,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Raspberry Panna Cotta",
+              "title": "Raspberry Panna Cotta Mousse au Chocolat, raspberries",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -693,12 +693,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Currant cake with streusel",
+              "title": "Currant cake with poppy seed crumble - vegan pear strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,E,F,H,N,O",
+              "allergens": "A,E,F,G,H,N,O",
               "description": null
             }
           ]
@@ -718,7 +718,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-11T07:41:11.881Z"
+      "fetchedAt": "2026-05-13T09:50:25.298Z"
     },
     "2026-05-15": {
       "categories": [
