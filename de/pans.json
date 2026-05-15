@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-12T09:47:37.050Z",
+  "fetchedAt": "2026-05-15T09:51:45.397Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -80,6 +80,39 @@
         }
       ],
       "fetchedAt": "2026-05-12T09:47:31.879Z"
+    },
+    "2026-05-15": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Gemüse Creme Suppe (AG,LH)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Lachs gebraten mit Kartoffeln-Lauchsauce und Salat",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Röstitaschen gefüllt mit Kräuter-Frischkäse dazu Salat und Knoblauchjoghurt (m‚6,0)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-15T09:51:39.842Z"
     }
   }
 }

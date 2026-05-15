@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-12T09:47:37.050Z",
+  "fetchedAt": "2026-05-15T09:51:45.397Z",
   "error": null,
   "days": {
     "2026-05-11": {
@@ -80,6 +80,39 @@
         }
       ],
       "fetchedAt": "2026-05-12T09:47:31.879Z"
+    },
+    "2026-05-15": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Vegetable cream soup (AG,LH)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Salmon fried with potato leek sauce and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Rösti pockets filled with herb cream cheese with salad and garlic yoghurt (m‚6.0)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-15T09:51:39.842Z"
     }
   }
 }
