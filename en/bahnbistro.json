@@ -1,0 +1,323 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-05-18T11:11:35.670Z",
+  "error": null,
+  "days": {
+    "2026-05-18": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Beetroot Gröstl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Beetroot, cabbage & dumplings, fresh horseradish"
+            },
+            {
+              "title": "Polpetti",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Spaghetti & tomato ragout, Grana Padano"
+            },
+            {
+              "title": "Fish Burger No.1",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Baked fish, salad & cucumber, remoulade sauce"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Coconut Pineapple Trifle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-19": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Pinzgauer Kässpätzle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Spaetzle & Bierkas, fried onions"
+            },
+            {
+              "title": "Spiced salmon",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Grilled vegetables & herb fraiche, chives"
+            },
+            {
+              "title": "Red Pepper Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "D",
+              "description": "Peppers, beans & basil, fragrant rice"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chocolate donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-20": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "THAI Summer Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Tempura vegetables & melon, curry cous cous & toppings"
+            },
+            {
+              "title": "Turkey Cordon Bleu",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": "French fries, lemon"
+            },
+            {
+              "title": "Tortelloni carne",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F,G",
+              "description": "Ham cream sauce, sun-dried tomatoes"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Tiramisu",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-21": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Pasta Primavera",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Asparagus, peas & mushrooms, Grana Vegano"
+            },
+            {
+              "title": "Chicken fillet Madras",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,H,L",
+              "description": "Yoghurt, lemon & ginger, pilaf rice"
+            },
+            {
+              "title": "Grilled loin fillets",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Mexican vegetables & wedges, herb butter"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Cinnamon bun cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-22": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Curd cheese pancakes",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Vanilla sauce & raspberries, whipped cream"
+            },
+            {
+              "title": "Baked plaice",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,F,G,M",
+              "description": "Parsley potatoes, tartar sauce & lemon"
+            },
+            {
+              "title": "Tofu Kung Pao",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,N,O",
+              "description": "Carrot, peppers & peanuts, jasmine rice"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Strawberry mousse & cookies",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G,O",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    }
+  }
+}

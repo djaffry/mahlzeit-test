@@ -1,0 +1,377 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanese",
+    "Chinese"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-05-18T11:11:36.839Z",
+  "error": null,
+  "days": {
+    "2026-05-18": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Squid Mustard Cabbage Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Pickled mustard cabbage, squid, bamboo, bok choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Salmon udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Salmon, seasonal vegetables, udon noodles"
+            },
+            {
+              "title": "King Mushroom Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, king oyster mushroom, cucumber, carrot"
+            },
+            {
+              "title": "Fried rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Rice with pineapple and shrimp, 3 nigiri mix, agedashi tofu with bonito flakes, fruit, carrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-19": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Squid Mustard Cabbage Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Pickled mustard cabbage, squid, bamboo, bok choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Salmon udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Salmon, seasonal vegetables, udon noodles"
+            },
+            {
+              "title": "King Mushroom Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, king oyster mushroom, cucumber, carrot"
+            },
+            {
+              "title": "Fried rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Rice with pineapple and shrimp, 3 nigiri mix, agedashi tofu with bonito flakes, fruit, carrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-20": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Squid Mustard Cabbage Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Pickled mustard cabbage, squid, bamboo, bok choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Salmon udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Salmon, seasonal vegetables, udon noodles"
+            },
+            {
+              "title": "King Mushroom Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, king oyster mushroom, cucumber, carrot"
+            },
+            {
+              "title": "Fried rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Rice with pineapple and shrimp, 3 nigiri mix, agedashi tofu with bonito flakes, fruit, carrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-21": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Squid Mustard Cabbage Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Pickled mustard cabbage, squid, bamboo, bok choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Salmon udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Salmon, seasonal vegetables, udon noodles"
+            },
+            {
+              "title": "King Mushroom Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, king oyster mushroom, cucumber, carrot"
+            },
+            {
+              "title": "Fried rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Rice with pineapple and shrimp, 3 nigiri mix, agedashi tofu with bonito flakes, fruit, carrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-22": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yasai miso ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi, shittake, tofu, bean sprouts"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "pork roll with soy leaves, pakchoi, nori, shiittake, egg"
+            },
+            {
+              "title": "Squid Mustard Cabbage Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Pickled mustard cabbage, squid, bamboo, bok choy, nori, spring onion, egg"
+            },
+            {
+              "title": "Asparagus with chicken",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Asparagus, chicken cubes, king oyster mushrooms, carrots, black pepper + rice"
+            },
+            {
+              "title": "Salmon udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Salmon, seasonal vegetables, udon noodles"
+            },
+            {
+              "title": "King Mushroom Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, king oyster mushroom, cucumber, carrot"
+            },
+            {
+              "title": "Fried rice bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Rice with pineapple and shrimp, 3 nigiri mix, agedashi tofu with bonito flakes, fruit, carrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-18T11:11:34.702Z"
+    }
+  }
+}
