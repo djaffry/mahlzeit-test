@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-18T11:11:37.049Z",
+  "fetchedAt": "2026-05-19T10:40:47.702Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -127,7 +127,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -136,14 +136,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
               "title": "Samosa mit Gemüse mit Jasminreis, Wokgemüse",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -259,7 +259,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     },
     "2026-05-19": {
       "categories": [
@@ -296,7 +296,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsfilet vom Grill, Spargelgemüse, Cremige Polenta",
+              "title": "Schweinsfilet vom Grill, Spargelgemüse, Polenta",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -373,7 +373,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -382,14 +382,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
               "title": "Samosa mit Gemüse mit Jasminreis, Wokgemüse",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -468,10 +468,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding, Cranberries",
+              "title": "Grießpudding, Cranberries Buttermilch Panna Cotta, marinierte Orangen",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -480,9 +480,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Milch Schoko Schnitte",
+              "title": "Milch Schoko Schnitte Punschschnitte vegan",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G,O",
               "description": null
             }
@@ -503,7 +505,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     },
     "2026-05-20": {
       "categories": [
@@ -540,7 +542,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsfilet vom Grill, Spargelgemüse, Cremige Polenta",
+              "title": "Schweinsfilet vom Grill, Spargelgemüse, Polenta",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -617,7 +619,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -626,14 +628,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
               "title": "Samosa mit Gemüse mit Jasminreis, Wokgemüse",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -749,7 +751,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     },
     "2026-05-21": {
       "categories": [
@@ -786,7 +788,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsfilet vom Grill, Spargelgemüse, Cremige Polenta",
+              "title": "Schweinsfilet vom Grill, Spargelgemüse, Polenta",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -863,7 +865,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -872,14 +874,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
               "title": "Samosa mit Gemüse mit Jasminreis, Wokgemüse",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -996,7 +998,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     },
     "2026-05-22": {
       "categories": [
@@ -1033,7 +1035,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsfilet vom Grill, Spargelgemüse, Cremige Polenta",
+              "title": "Schweinsfilet vom Grill, Spargelgemüse, Polenta",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -1092,7 +1094,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -1101,14 +1103,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
               "title": "Samosa mit Gemüse mit Jasminreis, Wokgemüse",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "D,F,L,M,N",
+              "allergens": "A,D,F,G,L,M,N",
               "description": null
             },
             {
@@ -1175,7 +1177,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-18T11:11:40.507Z",
+  "fetchedAt": "2026-05-19T10:40:50.796Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-05-18T11:11:34.702Z"
+    },
+    "2026-05-19": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Cauliflower cream soup (A.G,N,LO)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Minced roast with potato puree and fried onions (A.6,Cc,o,L,N)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Penne Arrabiata with Parmesan (LN,6,A.C)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     }
   }
 }

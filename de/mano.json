@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-05-18T11:11:35.693Z",
+  "fetchedAt": "2026-05-19T10:40:46.811Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -136,7 +136,7 @@
               "description": null
             },
             {
-              "title": "Kürbis-Erdäpfellaibchen mit violettem-Spargel   , Salat vom Buffet",
+              "title": "Kürbis-Erdäpfellaibchen mit Spargel   , Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -159,7 +159,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-19T10:40:45.640Z"
     },
     "2026-05-20": {
       "categories": [
