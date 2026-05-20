@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-19T10:40:50.796Z",
+  "fetchedAt": "2026-05-20T10:28:31.982Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -78,6 +78,41 @@
         }
       ],
       "fetchedAt": "2026-05-19T10:40:45.640Z"
+    },
+    "2026-05-20": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Brokkoli Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,N,L,O",
+              "description": null
+            },
+            {
+              "title": "Hühnerschnitzel gebacken mit Erdäpfelsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,6,C,0,M",
+              "description": null
+            },
+            {
+              "title": "Bio Grünkern-Tofu-Zucchini-Laibchen mit Kräuter-Joghurt dazu Salat (0,M‚6,A.C)",
+              "price": "11,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-20T10:28:27.007Z"
     }
   }
 }

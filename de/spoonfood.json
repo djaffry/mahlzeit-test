@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-19T10:40:47.906Z",
+  "fetchedAt": "2026-05-20T10:28:29.019Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -295,6 +295,146 @@
         }
       ],
       "fetchedAt": "2026-05-19T10:40:45.640Z"
+    },
+    "2026-05-20": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Sellerie 🌿-Apfel 🍏-Cremesuppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Lauch 🌿-Speck 🥓-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Emmentaler 🧀 gratiniert"
+            },
+            {
+              "title": "Buntes Ofengemüse – Zucchini 🥒, Paprika 🫑, Karotten 🥕, geschmorte rote Zwiebeln 🧅, Fenchel 🌿 & Erdäpfeln 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kräuter 🌿-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Rindsgulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Pastinaken 🤍, Erbsen 🫛 & Hörnchen – optional mit Sauerrahm"
+            },
+            {
+              "title": "Thai Gemüse-Curry - in grüner Mandel-Kokos 🥥-Spinat 💚-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Melanzani 🍆, Karotten 🥕, Brokkoli 🥦, Erdäpfeln 🥔 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Asiatische Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wokgemüse 🥦🥕🥒, Wakame 🌿, Sushi-Ingwer 🫚, Erdnüssen 🥜 & Sesam-Dressing"
+            },
+            {
+              "title": "Frühlings 🌸-Weichweizen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "grünem Spargel 🌿, Radieschen 🫜, Karotten 🥕 & Bärlauch 🌿-Joghurt-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Erdbeer 🍓-Joghurt-Ricotta-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-20T10:28:27.007Z"
     }
   }
 }

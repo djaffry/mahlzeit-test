@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-19T10:40:47.702Z",
+  "fetchedAt": "2026-05-20T10:28:28.444Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -714,10 +714,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Ricotta - Limettenmousse",
+              "title": "Ricotta - Limettenmousse Grießpudding, Cranberries",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -726,12 +726,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brombeerstreuselkuchen",
+              "title": "Veganer Brombeerstreuselkuchen Milch Schoko Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -751,7 +751,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-19T10:40:45.640Z"
+      "fetchedAt": "2026-05-20T10:28:27.007Z"
     },
     "2026-05-21": {
       "categories": [

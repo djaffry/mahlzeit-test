@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-19T10:40:47.906Z",
+  "fetchedAt": "2026-05-20T10:28:29.019Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -295,6 +295,146 @@
         }
       ],
       "fetchedAt": "2026-05-19T10:40:45.640Z"
+    },
+    "2026-05-20": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Celery 🌿 apple 🍏 cream soup - optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Potatoes 🥔-leeks 🌿-bacon 🥓-gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Emmentaler 🧀 gratinated"
+            },
+            {
+              "title": "Colorful oven vegetables - zucchini 🥒, peppers 🫑, carrots 🥕, braised red onions 🧅, fennel 🌿 & potatoes 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Herb 🌿 dip"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Beef goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, parsnips 🤍, peas 🫛 & croissants - optionally with sour cream"
+            },
+            {
+              "title": "Thai vegetable curry - in green almond coconut 🥥 spinach 💚 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Melanzani 🍆, carrots 🥕, broccoli 🥦, potatoes 🥔 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Asian glass noodle salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wok vegetables 🥦🥕🥒, wakame 🌿, sushi ginger 🫚, peanuts 🥜 & sesame dressing"
+            },
+            {
+              "title": "Spring 🌸 Soft Wheat Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "green asparagus 🌿, radishes 🫜, carrots 🥕 & wild garlic 🌿 yogurt dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Strawberry 🍓 yogurt ricotta mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-20T10:28:27.007Z"
     }
   }
 }
