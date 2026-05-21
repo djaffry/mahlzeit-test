@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-20T10:28:28.444Z",
+  "fetchedAt": "2026-05-21T10:45:44.560Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -961,12 +961,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Erdnusscreme",
+              "title": "Vegane Erdnusscreme Ricotta - Limettenmousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "E",
+              "allergens": "E,G,O",
               "description": null
             }
           ]
@@ -975,10 +975,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Orangenmousse Schnitte",
+              "title": "Orangenmousse Schnitte Veganer Brombeerstreuselkuchen",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -998,7 +1000,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-19T10:40:45.640Z"
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     },
     "2026-05-22": {
       "categories": [
@@ -1140,10 +1142,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grüntee Mousse",
+              "title": "Grüntee Mousse Vegane Erdnusscreme",
               "price": null,
-              "tags": [],
-              "allergens": "A,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,G,O",
               "description": null
             }
           ]
@@ -1152,12 +1156,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Gedeckter Birnenkuchen",
+              "title": "Gedeckter Birnenkuchen Orangenmousse Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,G",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1177,7 +1181,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-19T10:40:45.640Z"
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     }
   }
 }

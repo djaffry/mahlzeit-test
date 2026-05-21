@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-20T10:28:31.982Z",
+  "fetchedAt": "2026-05-21T10:45:48.832Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -113,6 +113,41 @@
         }
       ],
       "fetchedAt": "2026-05-20T10:28:27.007Z"
+    },
+    "2026-05-21": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Sweet potato and coconut milk (vegan) soup",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "N,L,O",
+              "description": null
+            },
+            {
+              "title": "Lasagna Bolognese (beef) with mozzarella and salad",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,6,C,0,M,L,N",
+              "description": null
+            },
+            {
+              "title": "Penne with wild garlic and sheep cheese ala cream (LN,6,A,C)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     }
   }
 }

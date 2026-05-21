@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-05-19T10:40:46.811Z",
+  "fetchedAt": "2026-05-21T10:45:43.245Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -262,7 +262,7 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Pink veal steak in pepper sauce with potato gratin, bacon foliage",
+              "title": "Pink veal steak in pepper sauce with potatoes gratin, beans",
               "price": "12,90 €",
               "tags": [
                 "Fleisch"
@@ -280,7 +280,7 @@
               "description": null
             },
             {
-              "title": "Forest mushroom stoganoff with croissant noodles, salad from the buffet",
+              "title": "Forest mushroom stroganoff with croissant noodles, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -294,7 +294,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Homemade curd cheese",
+              "title": "Homemade pistachio snail",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     },
     "2026-05-22": {
       "categories": [

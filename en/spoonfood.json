@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-20T10:28:29.019Z",
+  "fetchedAt": "2026-05-21T10:45:45.709Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -326,7 +326,7 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Celery 🌿 apple 🍏 cream soup - optional",
+              "title": "Celery 🌿 apple 🍏 cream soup – optional",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -435,6 +435,148 @@
         }
       ],
       "fetchedAt": "2026-05-20T10:28:27.007Z"
+    },
+    "2026-05-21": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Yellow 💛 zucchini 🥒 watercress 🌿 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Herbal 🌿 almond chicken on saffron 🧡 raisin rice",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Colorful 💛🧡💚 cabbage patches – optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Hungarian red lentil goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Kolbasz (Hungarian pepper 🫑 salami), bacon 🥓, potatoes 🥔, fresh parsley 🌿 & rice"
+            },
+            {
+              "title": "Indian sweet potato 🍠 tikka masala - in cashew coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Baby spinach 💚 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental vegetable salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peas 🫛, carrots 🥕, corn 🌽, salsify 🤍, roasted harissa 🧡 chickpeas & tahini marinade"
+            },
+            {
+              "title": "Vegan Asian early cabbage 🌿 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Smoked tofu & radishes 🫜"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Strawberry 🍓 yogurt ricotta mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     }
   }
 }

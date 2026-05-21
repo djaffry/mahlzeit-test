@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-05-19T10:40:46.811Z",
+  "fetchedAt": "2026-05-21T10:45:43.245Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -262,7 +262,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Rosa Kalbssteak in Pfeffersauce mit Erdäpfelgratin ,Speckfisolen",
+              "title": "Rosa Kalbssteak in Pfeffersauce mit Erdäpfelgratin ,Fisolen",
               "price": "12,90 €",
               "tags": [
                 "Fleisch"
@@ -280,7 +280,7 @@
               "description": null
             },
             {
-              "title": "Waldpilz-Stoganoff mit Hörnchennudeln    ,Salat vom Buffet",
+              "title": "Waldpilz-Stroganoff mit Hörnchennudeln    ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -294,7 +294,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Hausgemachte  Topfengolatsche",
+              "title": "Hausgemachte  Pistazienschnecke",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-18T11:11:34.702Z"
+      "fetchedAt": "2026-05-21T10:45:42.388Z"
     },
     "2026-05-22": {
       "categories": [
