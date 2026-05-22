@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-21T10:45:48.832Z",
+  "fetchedAt": "2026-05-22T10:28:13.954Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -148,6 +148,46 @@
         }
       ],
       "fetchedAt": "2026-05-21T10:45:42.388Z"
+    },
+    "2026-05-22": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Vegetable cream soup (N,LO,A.G)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Salmon fillet fried with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Oriental salad bowl with stuffed grape leaves, sheep's cheese, hummus, olives",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Flatbread (m‚0.6)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-22T10:28:07.222Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-21T10:45:45.709Z",
+  "fetchedAt": "2026-05-22T10:28:09.691Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -577,6 +577,147 @@
         }
       ],
       "fetchedAt": "2026-05-21T10:45:42.388Z"
+    },
+    "2026-05-22": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Vegetable 🥒🥕🥦-Coconut 🥥-Cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Baked ham patties",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "roasted ham 🥓 & small side salad 🥗"
+            },
+            {
+              "title": "Clafoutis - warm French casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Cherries 🍒 & chocolate 🍫 sauce"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Chicken tagine in ginger 🫚 honey 🍯 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Turmeric 🧡, zucchini 🥒, cauliflower 🤍, dried fruits 🍑 & rice"
+            },
+            {
+              "title": "Sicilian braised vegetables",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Baby carrots 🥕, olives 🫒, zucchini 🥒, aubergine 🍆 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental vegetable salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peas 🫛, carrots 🥕, corn 🌽, salsify 🤍, roasted harissa 🧡 chickpeas & tahini marinade"
+            },
+            {
+              "title": "Vegan Asian early cabbage 🌿 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Smoked tofu & radishes 🫜"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Strawberry 🍓 yogurt ricotta mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-22T10:28:07.222Z"
     }
   }
 }

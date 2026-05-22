@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-21T10:45:44.560Z",
+  "fetchedAt": "2026-05-22T10:28:09.708Z",
   "error": null,
   "days": {
     "2026-05-18": {
@@ -55,7 +55,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "G,O",
+              "allergens": "A,G,L,M,N,O",
               "description": null
             }
           ]
@@ -259,7 +259,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-19T10:40:45.640Z"
+      "fetchedAt": "2026-05-22T10:28:07.222Z"
     },
     "2026-05-19": {
       "categories": [
