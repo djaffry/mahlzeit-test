@@ -1,0 +1,162 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Eintöpfe"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-05-25T11:15:57.165Z",
+  "error": null,
+  "days": {
+    "2026-05-29": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse 🥒🥕🥦-Kokos 🥥-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Überbackene Schinkenfleckerl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "geröstetem Schinken 🥓 & kleinem Beilagensalat 🥗"
+            },
+            {
+              "title": "Clafoutis - warmer, französischer Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Kirschen 🍒 & Schoko 🍫-Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Hühner-Tajine in Ingwer 🫚-Honig 🍯-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Kurkuma 🧡, Zucchini 🥒, Karfiol 🤍, getrockneten Früchten 🍑 & Reis"
+            },
+            {
+              "title": "Sizilianisches Schmorgemüse",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Babykarotten 🥕, Oliven 🫒, Zucchini 🥒, Melanzani 🍆 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Gemüse-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erbsen 🫛, Karotten 🥕, Mais 🌽, Schwarzwurzeln 🤍, gerösteten Harissa 🧡-Kichererbsen & Tahini-Marinade"
+            },
+            {
+              "title": "Vegane Asia-Frühkraut 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Räuchertofu & Radieschen 🫜"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Erdbeer 🍓-Joghurt-Ricotta-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-05-25T11:15:55.171Z",
+  "error": null,
+  "days": {
+    "2026-05-25": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "Entrance",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Happy holiday",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wishes you your BahnBistro team Lassallestrasse"
+            },
+            {
+              "title": "Whit Monday",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-26": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Pasta all'varrabiata",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,G,H",
+              "description": "Tomato & Chili, *Veggie or Vegan*"
+            },
+            {
+              "title": "Onion beef ragout",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Cucumber & fried onions, fresh dumplings"
+            },
+            {
+              "title": "Crunchy chicken burgers",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Chicken, Cheddar & Salad, BB-Big Sauce"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd currant cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-27": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Mushrooms a la creme",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L",
+              "description": "Bread dumplings, fresh chives"
+            },
+            {
+              "title": "Baked chicken schnitzel",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C",
+              "description": "Rice & cranberries, lemon"
+            },
+            {
+              "title": "Spicy Tuna Buddha Bowl",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, corn & red cabbage, toppings & Sriracha mayo"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Vanilla cream & blackberries",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-28": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Creamed spinach",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Roasted potatoes & fried eggs, plant cream"
+            },
+            {
+              "title": "Old Viennese rice meat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Juice & sour cream, fresh chives"
+            },
+            {
+              "title": "Kebab plate",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G",
+              "description": "Chicken, vegetables & yoghurt, French fries"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "OREO brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-29": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Yeast dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Butter & poppy seeds, powdered sugar"
+            },
+            {
+              "title": "Baked pollack",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Potato salad & lemon, remoulade sauce"
+            },
+            {
+              "title": "THAI vegetable lentil curry",
+              "price": null,
+              "tags": [],
+              "allergens": "F,L,N",
+              "description": "Basmati rice & dip, roasted sesame"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Apple Swirl",
+              "price": null,
+              "tags": [],
+              "allergens": "G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    }
+  }
+}

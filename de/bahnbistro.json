@@ -1,0 +1,311 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-05-25T11:15:55.171Z",
+  "error": null,
+  "days": {
+    "2026-05-25": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Einen schönen Feiertag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wünscht Dir dein BahnBistro-Team Lassallestraße"
+            },
+            {
+              "title": "Pfingstmontag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-26": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pasta all' varrabiata",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,G,H",
+              "description": "Tomate & Chili, *Veggie oder Vegan*"
+            },
+            {
+              "title": "Zwiebelrindsragout",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Gurkerl & Röstzwiebel, Frische Nockerl"
+            },
+            {
+              "title": "Crunchy-Chicken Burger",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "Huhn, Cheddar & Salat, BB-Big Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfen-Ribiselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-27": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pilze a la Creme",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L",
+              "description": "Semmelknödel, Frischer Schnittlauch"
+            },
+            {
+              "title": "Hühnerschnitzerl gebacken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C",
+              "description": "Reis & Preiselbeeren, Zitrone"
+            },
+            {
+              "title": "Spicy Tuna-Buddha Bowl",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, Mais & Rotkraut, Toppings & Sriracha-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Vanillecreme & Brombeeren",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-28": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Cremespinat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Rösterdäpfel & Spiegelei, Plantcream"
+            },
+            {
+              "title": "Alt-Wiener Reisfleisch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Saftl & Sauerrahm, Frischer Schnittlauch"
+            },
+            {
+              "title": "Kebapteller",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G",
+              "description": "Huhn, Gemüse & Yoghurt, Pommes frites"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "OREO-Brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-29": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Germknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Butter & Mohn, Staubzucker"
+            },
+            {
+              "title": "Seelachs gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Erdäpfelsalat & Zitrone, Sauce Remoulade"
+            },
+            {
+              "title": "THAI Gemüse-Linsencurry",
+              "price": null,
+              "tags": [],
+              "allergens": "F,L,N",
+              "description": "Basmatireis & Dip, Sesam geröstet"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Apfel-Swirl",
+              "price": null,
+              "tags": [],
+              "allergens": "G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-25T11:15:54.262Z"
+    }
+  }
+}

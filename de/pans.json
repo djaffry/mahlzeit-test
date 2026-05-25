@@ -1,0 +1,18 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "Bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-05-25T11:15:56.723Z",
+  "error": null,
+  "days": {}
+}
