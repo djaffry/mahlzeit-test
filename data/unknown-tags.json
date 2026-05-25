@@ -3,6 +3,10 @@
     "Wild": {
       "adapter": "quartiersechs",
       "example": "Köttbullar, Erdäpfelpüree, Wacholderrahmsauce, Preiselbeeren"
+    },
+    "Kalbfleisch": {
+      "adapter": "quartiersechs",
+      "example": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse"
     }
   }
 }
