@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-25T11:15:57.165Z",
+  "fetchedAt": "2026-05-27T11:00:23.653Z",
   "error": null,
   "days": {
     "2026-05-29": {
@@ -157,6 +157,144 @@
         }
       ],
       "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-27": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Spargel 🌿-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frühlings 🌼-Gemüse-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Karotten 🥕, Champignons 🍄‍🟫, Paprika 🫑, Lauch 🌿, Schupfnudeln, Hühnerbruststücken & Kräuter 🌿-Dip"
+            },
+            {
+              "title": "Buntes Ofengemüse auf Kurkuma 🧡-Couscous – optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Sauerrahm | Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Thai-Beef-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Babymais 🌽, Paprika 🫑, Chinakohl, Kokosmilch 🥥 & Reis - optional mit Erdnüssen 🥜"
+            },
+            {
+              "title": "Mediterrane Gemüse 🥒🥕🌿-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Semmelknödeln"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "grünem Apfel 🍏, Ofenpastinaken & Radieschen 🫜"
+            },
+            {
+              "title": "Gelbe 💛 Linsen-Kurkuma-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Brokkoli 🥦, Paprika 🫑, Gurken 🥒, getrockneten Marillen 🍑& Blutorangen 🍊-Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanille 💛-Topfen-Joghurt",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "sizilianischer Zitrone 🍋, Beeren 🍓 & Hafer-Crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     }
   }
 }

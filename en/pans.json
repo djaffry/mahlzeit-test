@@ -12,7 +12,39 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-25T11:15:56.723Z",
+  "fetchedAt": "2026-05-27T11:00:26.182Z",
   "error": null,
-  "days": {}
+  "days": {
+    "2026-05-27": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Leek cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G,A",
+              "description": null
+            },
+            {
+              "title": "Minced roast with mashed potatoes and fried onions",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,6,0",
+              "description": null
+            },
+            {
+              "title": "Salad bowl with runner beans, sheep's cheese, falafel and flatbread (m, 0.6, A)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
+    }
+  }
 }

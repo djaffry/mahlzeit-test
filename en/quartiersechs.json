@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-25T11:16:00.418Z",
+  "fetchedAt": "2026-05-27T11:00:23.736Z",
   "error": null,
   "days": {
     "2026-05-26": {
@@ -161,7 +161,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Colorful leaf salad plate, lukewarm goat cheese with honey & herbs, citrus dressing",
+              "title": "Colorful leaf salad plate, lukewarm goat cheese with herbs",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -227,12 +227,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut - apricot - rice dessert",
+              "title": "Coconut - apricot - rice dessert green tea mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,G,O",
               "description": null
             }
           ]
@@ -241,9 +241,11 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Black Forest cherry slices",
+              "title": "Black Forest Cherry Slices Covered Pear Cake",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -264,7 +266,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     },
     "2026-05-27": {
       "categories": [
@@ -477,9 +479,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Cappuccino mousse",
+              "title": "Cappuccino mousse coconut - apricot - rice dessert",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "C,F,G",
               "description": null
             }
@@ -489,12 +493,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan apricot crumble cake",
+              "title": "Vegan apricot crumble cake Black Forest cherry slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -514,7 +518,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     },
     "2026-05-28": {
       "categories": [

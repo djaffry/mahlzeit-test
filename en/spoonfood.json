@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-25T11:15:57.165Z",
+  "fetchedAt": "2026-05-27T11:00:23.653Z",
   "error": null,
   "days": {
     "2026-05-29": {
@@ -157,6 +157,144 @@
         }
       ],
       "fetchedAt": "2026-05-25T11:15:54.262Z"
+    },
+    "2026-05-27": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Asparagus 🌿 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spring 🌼 vegetable pan",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Carrots 🥕, mushrooms 🍄‍🟫, peppers 🫑, leeks 🌿, Schupfnudeln, chicken breast pieces & herbs 🌿 dip"
+            },
+            {
+              "title": "Colorful oven-baked vegetables on turmeric 🧡 couscous – optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "sour cream | Coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Thai beef curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Pak choy 🥬, baby corn 🌽, peppers 🫑, Chinese cabbage, coconut milk 🥥 & rice - optionally with peanuts 🥜"
+            },
+            {
+              "title": "Mediterranean vegetables 🥒🥕🌿-lentils",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Bread dumplings"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Quinoa Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "green apple 🍏, oven parsnips & radishes 🫜"
+            },
+            {
+              "title": "Yellow 💛 Lentil Turmeric Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Broccoli 🥦, peppers 🫑, cucumbers 🥒, dried apricots 🍑 & blood oranges 🍊 citrus 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanilla 💛 curd yogurt",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Sicilian lemon 🍋, berries 🍓 & oat crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-25T11:16:00.418Z",
+  "fetchedAt": "2026-05-27T11:00:23.736Z",
   "error": null,
   "days": {
     "2026-05-26": {
@@ -161,7 +161,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Bunter Blattsalatteller, lauwarmer Ziegenkäse mit Honig & Kräutern, Citrus Dressing",
+              "title": "Bunter Blattsalatteller, lauwarmer Ziegenkäse mit Kräutern",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -227,12 +227,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Marillen - Reisdessert",
+              "title": "Kokos - Marillen - Reisdessert Grüntee Mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,G,O",
               "description": null
             }
           ]
@@ -241,9 +241,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schwarzwälder Kirsch Schnitte",
+              "title": "Schwarzwälder Kirsch Schnitte Gedeckter Birnenkuchen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -264,7 +266,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     },
     "2026-05-27": {
       "categories": [
@@ -477,9 +479,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Cappuccino Mousse",
+              "title": "Cappuccino Mousse Kokos - Marillen - Reisdessert",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "C,F,G",
               "description": null
             }
@@ -489,12 +493,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Marillenstreuselkuchen",
+              "title": "Veganer Marillenstreuselkuchen Schwarzwälder Kirsch Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -514,7 +518,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-27T11:00:21.335Z"
     },
     "2026-05-28": {
       "categories": [
