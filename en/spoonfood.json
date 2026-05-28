@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-27T11:00:23.653Z",
+  "fetchedAt": "2026-05-28T11:01:05.172Z",
   "error": null,
   "days": {
     "2026-05-29": {
@@ -295,6 +295,143 @@
         }
       ],
       "fetchedAt": "2026-05-27T11:00:21.335Z"
+    },
+    "2026-05-28": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Udon miso noodle soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Spring onions 🌿, sprouts 🌱, celery stalks, mushrooms 🍄‍🟫 & peppers 🫑"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frittata",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chorizo, olives 🫒, tomatoes 🍅 & fresh herbs 🌿 - optionally with sour cream"
+            },
+            {
+              "title": "Gnocchi in almond broccoli 🥦 sheep cheese sauce",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Arugula 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Paprika 🫑-Hendl",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Paprika Tricolore 💛🧡💚 & Tarhonya"
+            },
+            {
+              "title": "Potato 🥔 tofu curry - in tomato 🍅 coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Caprese Farfalle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "colorful cherry tomatoes 🍅, mozzarella & fresh basil 🌿"
+            },
+            {
+              "title": "Winemaker Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "black beans 🫘, chicory 🥬, radishes 🫜, seedless grapes 🍇 & red wine dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Malakoff 💛 cake in a mug",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-28T11:01:02.155Z"
     }
   }
 }

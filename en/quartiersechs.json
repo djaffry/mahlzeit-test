@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-27T11:00:23.736Z",
+  "fetchedAt": "2026-05-28T11:01:03.970Z",
   "error": null,
   "days": {
     "2026-05-26": {
@@ -729,12 +729,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Semolina pudding, raspberries",
+              "title": "Semolina pudding, raspberry cappuccino mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -743,9 +743,11 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Sacher cuts",
+              "title": "Sacherschnitte vegan apricot crumble cake",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -766,7 +768,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-28T11:01:02.155Z"
     },
     "2026-05-29": {
       "categories": [

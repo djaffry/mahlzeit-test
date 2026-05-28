@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-05-27T11:00:22.920Z",
+  "fetchedAt": "2026-05-28T11:01:02.910Z",
   "error": null,
   "days": {
     "2026-05-25": {
@@ -295,7 +295,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Hausgemachte  Pistazienschnecke",
+              "title": "Hausgemachte  Zimtschnecke",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -304,7 +304,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-27T11:00:21.335Z"
+      "fetchedAt": "2026-05-28T11:01:02.155Z"
     },
     "2026-05-29": {
       "categories": [

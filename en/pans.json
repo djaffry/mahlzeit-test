@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-05-27T11:00:26.182Z",
+  "fetchedAt": "2026-05-28T11:01:07.801Z",
   "error": null,
   "days": {
     "2026-05-27": {
@@ -45,6 +45,39 @@
         }
       ],
       "fetchedAt": "2026-05-27T11:00:21.335Z"
+    },
+    "2026-05-28": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Carrot cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,0,G",
+              "description": null
+            },
+            {
+              "title": "Marinated turkey fillet on salad with mango dressing (.,M,‚o)",
+              "price": "11,90 €",
+              "tags": [
+                "Pute"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Broccoli-mozzarella loaves baked with salad and herb yoghurt (m‚0.6.A,C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-05-28T11:01:02.155Z"
     }
   }
 }
