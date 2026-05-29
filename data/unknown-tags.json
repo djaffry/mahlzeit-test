@@ -7,6 +7,10 @@
     "Kalbfleisch": {
       "adapter": "quartiersechs",
       "example": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse"
+    },
+    "Alkoholfrei": {
+      "adapter": "quartiersechs",
+      "example": "Überbackene Gemüse Cannelloni, Tomaten-Zucchinisauce"
     }
   }
 }
