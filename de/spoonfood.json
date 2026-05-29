@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-28T11:01:05.172Z",
+  "fetchedAt": "2026-05-29T10:52:30.427Z",
   "error": null,
   "days": {
     "2026-05-29": {
@@ -47,7 +47,7 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Gemüse 🥒🥕🥦-Kokos 🥥-Cremesuppe",
+              "title": "Tomaten 🍅-Paprika 🫑-Kokos 🥥-Suppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -62,22 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Überbackene Schinkenfleckerl",
+              "title": "Blunz'ngröst'l",
               "price": "7,90 / 10,90",
               "tags": [
-                "Schweinefleisch"
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "geröstetem Schinken 🥓 & kleinem Beilagensalat 🥗"
+              "description": "Krautsalat 🥗 & Kren 🫚"
             },
             {
-              "title": "Clafoutis - warmer, französischer Auflauf",
+              "title": "Warmer Kipferl 🥐-Auflauf",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Kirschen 🍒 & Schoko 🍫-Sauce"
+              "description": "Heidelbeeren 🫐, Vanille 💛, Mandeln & Apfelmus 🍎"
             }
           ]
         },
@@ -85,25 +85,25 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Hühner-Tajine in Ingwer 🫚-Honig 🍯-Sauce",
+              "title": "Speck 🥓-Linsen",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei",
-                "Huhn"
+                "Schweinefleisch"
               ],
               "allergens": null,
-              "description": "Kurkuma 🧡, Zucchini 🥒, Karfiol 🤍, getrockneten Früchten 🍑 & Reis"
+              "description": "Wurzelgemüse 🥕 & Reis - optional mit Sauerrahm"
             },
             {
-              "title": "Sizilianisches Schmorgemüse",
+              "title": "Rote Linsen-Curry",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Babykarotten 🥕, Oliven 🫒, Zucchini 🥒, Melanzani 🍆 & Reis"
+              "description": "Brokkoli 🥦, Karotten 🥕, Limetten 🍋‍🟩- und Bockshornkleeblättern 🌿, Kokosmilch 🥥 & Reis - optional mit Koriander 🌿"
             }
           ]
         },
@@ -111,23 +111,23 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Orientalische Gemüse-Salad Bowl",
+              "title": "Caprese-Farfalle-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "bunten Kirschtomaten 🍅, Mozzarella & frischem Basilikum 🌿"
+            },
+            {
+              "title": "Winzer Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Erbsen 🫛, Karotten 🥕, Mais 🌽, Schwarzwurzeln 🤍, gerösteten Harissa 🧡-Kichererbsen & Tahini-Marinade"
-            },
-            {
-              "title": "Vegane Asia-Frühkraut 🌿-Salad Bowl",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": "Räuchertofu & Radieschen 🫜"
+              "description": "schwarzen Bohnen 🫘, Chicorée 🥬, Radieschen 🫜, kernlosen Trauben 🍇 & Rotwein-Dressing"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -144,11 +144,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Erdbeer 🍓-Joghurt-Ricotta-Mousse",
+              "title": "Malakoff 💛-Torte im Becher",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -156,7 +155,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     },
     "2026-05-27": {
       "categories": [

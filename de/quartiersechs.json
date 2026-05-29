@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-05-28T11:01:03.970Z",
+  "fetchedAt": "2026-05-29T10:52:29.612Z",
   "error": null,
   "days": {
     "2026-05-26": {
@@ -54,8 +54,7 @@
               "title": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse",
               "price": "12,30 €",
               "tags": [
-                "Kalbfleisch",
-                "Vegan"
+                "Kalbfleisch"
               ],
               "allergens": "A,C,G,L,O",
               "description": null
@@ -85,7 +84,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,G",
+              "allergens": "A",
               "description": null
             }
           ]
@@ -164,7 +163,7 @@
               "title": "Bunter Blattsalatteller, lauwarmer Ziegenkäse mit Kräutern",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": "G,L,M,O",
               "description": null
@@ -218,7 +217,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,B,F,G,H,O",
+              "allergens": "A,B,F,H,O",
               "description": null
             }
           ]
@@ -229,9 +228,7 @@
             {
               "title": "Kokos - Marillen - Reisdessert Grüntee Mousse",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": "A,G,O",
               "description": null
             }
@@ -243,9 +240,7 @@
             {
               "title": "Schwarzwälder Kirsch Schnitte Gedeckter Birnenkuchen",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -266,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-27T11:00:21.335Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     },
     "2026-05-27": {
       "categories": [
@@ -307,8 +302,7 @@
               "title": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse",
               "price": "12,30 €",
               "tags": [
-                "Kalbfleisch",
-                "Vegan"
+                "Kalbfleisch"
               ],
               "allergens": "A,C,G,L,O",
               "description": null
@@ -336,6 +330,7 @@
               "title": "Überbackene Gemüse Cannelloni, Tomaten-Zucchinisauce",
               "price": "12,30 €",
               "tags": [
+                "Alkoholfrei",
                 "Vegan"
               ],
               "allergens": "A,G",
@@ -470,7 +465,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,B,F,G,H,O",
+              "allergens": "A,B,F,H,O",
               "description": null
             }
           ]
@@ -481,9 +476,7 @@
             {
               "title": "Cappuccino Mousse Kokos - Marillen - Reisdessert",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": "C,F,G",
               "description": null
             }
@@ -518,7 +511,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-27T11:00:21.335Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     },
     "2026-05-28": {
       "categories": [
@@ -559,8 +552,7 @@
               "title": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse",
               "price": "12,30 €",
               "tags": [
-                "Kalbfleisch",
-                "Vegan"
+                "Kalbfleisch"
               ],
               "allergens": "A,C,G,L,O",
               "description": null
@@ -590,7 +582,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H,L,M,O",
+              "allergens": "A,F,H,L,M,O",
               "description": null
             }
           ]
@@ -720,7 +712,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,B,F,G,H,O",
+              "allergens": "A,B,F,H,O",
               "description": null
             }
           ]
@@ -731,9 +723,7 @@
             {
               "title": "Grießpudding, Himbeeren Cappuccino Mousse",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": "A,C,F,G,H",
               "description": null
             }
@@ -768,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-28T11:01:02.155Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     },
     "2026-05-29": {
       "categories": [
@@ -809,8 +799,7 @@
               "title": "Kalbsbutterschnitzel, Naturjus, Erdäpfelpüree, Röstzwiebel, Marktgemüse",
               "price": "12,30 €",
               "tags": [
-                "Kalbfleisch",
-                "Vegan"
+                "Kalbfleisch"
               ],
               "allergens": "A,C,G,L,O",
               "description": null
@@ -928,10 +917,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Amarettocreme",
+              "title": "Amarettocreme Grießpudding, Himbeeren",
               "price": null,
               "tags": [],
-              "allergens": "G,H",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -940,10 +929,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Bananen Schnitte",
+              "title": "Bananen Schnitte Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -963,7 +952,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     }
   }
 }

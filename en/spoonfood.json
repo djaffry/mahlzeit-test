@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-05-28T11:01:05.172Z",
+  "fetchedAt": "2026-05-29T10:52:30.427Z",
   "error": null,
   "days": {
     "2026-05-29": {
@@ -47,7 +47,7 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Vegetable 🥒🥕🥦-Coconut 🥥-Cream soup",
+              "title": "Tomato 🍅 pepper 🫑 coconut 🥥 soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -62,22 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Baked ham patties",
+              "title": "Blunz'nröst'l",
               "price": "7,90 / 10,90",
               "tags": [
-                "Schweinefleisch"
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "roasted ham 🥓 & small side salad 🥗"
+              "description": "Coleslaw 🥗 & horseradish 🫚"
             },
             {
-              "title": "Clafoutis - warm French casserole",
+              "title": "Warm Kipferl 🥐 casserole",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Cherries 🍒 & chocolate 🍫 sauce"
+              "description": "Blueberries 🫐, vanilla 💛, almonds & applesauce 🍎"
             }
           ]
         },
@@ -85,25 +85,25 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Chicken tagine in ginger 🫚 honey 🍯 sauce",
+              "title": "Bacon 🥓 lentils",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei",
-                "Huhn"
+                "Schweinefleisch"
               ],
               "allergens": null,
-              "description": "Turmeric 🧡, zucchini 🥒, cauliflower 🤍, dried fruits 🍑 & rice"
+              "description": "Root vegetables 🥕 & rice - optionally with sour cream"
             },
             {
-              "title": "Sicilian braised vegetables",
+              "title": "Red lentil curry",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Baby carrots 🥕, olives 🫒, zucchini 🥒, aubergine 🍆 & rice"
+              "description": "Broccoli 🥦, carrots 🥕, lime 🍋‍🟩 and fenugreek leaves 🌿, coconut milk 🥥 & rice - optionally with coriander 🌿"
             }
           ]
         },
@@ -111,23 +111,23 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Oriental vegetable salad bowl",
+              "title": "Caprese Farfalle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "colorful cherry tomatoes 🍅, mozzarella & fresh basil 🌿"
+            },
+            {
+              "title": "Winemaker Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Peas 🫛, carrots 🥕, corn 🌽, salsify 🤍, roasted harissa 🧡 chickpeas & tahini marinade"
-            },
-            {
-              "title": "Vegan Asian early cabbage 🌿 salad bowl",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": "Smoked tofu & radishes 🫜"
+              "description": "black beans 🫘, chicory 🥬, radishes 🫜, seedless grapes 🍇 & red wine dressing"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
@@ -144,11 +144,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Strawberry 🍓 yogurt ricotta mousse",
+              "title": "Malakoff 💛 cake in a mug",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -156,7 +155,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T11:15:54.262Z"
+      "fetchedAt": "2026-05-29T10:52:27.916Z"
     },
     "2026-05-27": {
       "categories": [
