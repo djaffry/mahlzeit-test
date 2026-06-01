@@ -1,0 +1,309 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-06-01T12:45:30.453Z",
+  "error": null,
+  "days": {
+    "2026-06-01": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Spinach dumplings",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Ratatouille & rocket, yofu dip"
+            },
+            {
+              "title": "Pasta Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Minced & Vegetables, Grana Padano"
+            },
+            {
+              "title": "Grilled chicken skewer",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "C,M",
+              "description": "Wedges & colorful vegetables, curry honey dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Strawberry trifle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-02": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Crispy Thai Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Spring rolls & cabbage salad, fragrant rice & toppings"
+            },
+            {
+              "title": "Baked Surschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "French fries, lemon"
+            },
+            {
+              "title": "Teppanyaki beef",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,E,F,N,R",
+              "description": "Sprouts & Mushrooms, Eggnoodles"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Hazelnut brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-03": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Vegetable ravioli",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H,N",
+              "description": "Tomato sesame pesto, fried cauliflower"
+            },
+            {
+              "title": "Grilled salmon slices",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,L",
+              "description": "Gorgonzola broccoli sauce, Fusili tricolore"
+            },
+            {
+              "title": "Chicken Mansaf",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,G,H",
+              "description": "Cous Cous & Vegetables, Grilled Chicken"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd cream & cherries",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-04": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "Entrance",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Happy holiday",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wishes you your BahnBistro team Lassallestrasse"
+            },
+            {
+              "title": "Corpus Christi",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-05": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "Entrance",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Window day - closed",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Will be back for you from Monday..."
+            },
+            {
+              "title": "Main2",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    }
+  }
+}

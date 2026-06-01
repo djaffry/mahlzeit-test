@@ -1,0 +1,309 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-06-01T12:45:30.453Z",
+  "error": null,
+  "days": {
+    "2026-06-01": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatknödel",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "Ratatouille & Rucola, Yofu-Dip"
+            },
+            {
+              "title": "Pasta Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Faschiertes & Gemüse, Grana Padano"
+            },
+            {
+              "title": "Geflügelspieß vom Grill",
+              "price": null,
+              "tags": [
+                "Geflügel"
+              ],
+              "allergens": "C,M",
+              "description": "Wedges & buntes Gemüse, Curry-Honig Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeer-Trifle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-02": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Crispy-Thai Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Frühlingsrollen & Kohlsalat, Duftreis & Toppings"
+            },
+            {
+              "title": "Surschnitzerl gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Pommes frites, Zitrone"
+            },
+            {
+              "title": "Teppanyaki-Beef",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,E,F,N,R",
+              "description": "Sprossen & Pilze, Eggnoodles"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Haselnuss-Brownie",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-03": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüse-Ravioli",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H,N",
+              "description": "Tomaten-Sesampesto, Frittierter Karfiol"
+            },
+            {
+              "title": "Lachsschnitte gegrillt",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,L",
+              "description": "Gorgonzola-Brokkolisoße, Fusili tricolore"
+            },
+            {
+              "title": "Chicken Mansaf",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,G,H",
+              "description": "Cous Cous & Gemüse, Grilled Chicken"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfencreme & Kirschen",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-04": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Einen schönen Feiertag",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "wünscht Dir dein BahnBistro-Team Lassallestraße"
+            },
+            {
+              "title": "Fronleichnam",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-05": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Entree",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Fenstertag - geschlossen",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Sind ab Montag wieder für Euch da…"
+            },
+            {
+              "title": "Main2",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Main3",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Dessert",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-01T12:45:29.671Z"
+    }
+  }
+}
