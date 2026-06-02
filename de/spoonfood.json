@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-01T12:45:31.663Z",
+  "fetchedAt": "2026-06-02T11:23:57.376Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -158,6 +158,145 @@
         }
       ],
       "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-02": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood’s Chick-Tea (Hühner-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Schöberl & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni Bolognese 🍝",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "gemischtem Faschierten, Wurzelgemüse 🥕 & Parmesan"
+            },
+            {
+              "title": "Spargel 🌿-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "weißem 🤍 & grünem 💚 Spargel, Kohlrabi & Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Stifado vom Rind",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Perlzwieberln 🧅, Karotten 🥕, Lauch 🌿 & Reis"
+            },
+            {
+              "title": "Chana Masala - Kichererbsen-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Brokkoli 🥦, Erdäpfeln 🥔 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Belugalinsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wurst 🥓, Paprika 🫑, Gurkerl 🥒 & Radieschen 🫜"
+            },
+            {
+              "title": "Bulgur-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Gurken 🥒, Petersilie 🌿, Minze & frischer Zitrone 🍋"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Chia-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥 & Mango 🥭"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     }
   }
 }

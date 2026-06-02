@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-01T12:45:31.883Z",
+  "fetchedAt": "2026-06-02T11:23:57.688Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Kebab chicken straight from the skewer, Turkish rice or French fries, pepperoni, lettuce, tomato, onion, red cabbage, ayran",
@@ -294,7 +294,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Spare ribs, BBQ sauce, wedges, cole slaw salad",
@@ -472,10 +472,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Hazelnut mousse, roasted sour cherries",
+              "title": "Hazelnut mousse, sour cherry roasted coconut - soy yogurt granola with sesame, dates & cranberries, pineapple",
               "price": null,
               "tags": [],
-              "allergens": "F,H",
+              "allergens": "A,F,H,N,O",
               "description": null
             }
           ]
@@ -484,10 +484,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Baked cheesecake",
+              "title": "Baked cheesecake lemon cake",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -507,7 +507,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-03": {
       "categories": [
@@ -542,7 +542,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Spare ribs, BBQ sauce, wedges, cole slaw salad",
@@ -790,7 +790,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Spare ribs, BBQ sauce, wedges, cole slaw salad",

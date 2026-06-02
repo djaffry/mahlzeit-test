@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-01T12:45:34.458Z",
+  "fetchedAt": "2026-06-02T11:24:00.497Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-02": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Porcini mushroom and potato soup",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L,G,A,O",
+              "description": null
+            },
+            {
+              "title": "Cevapcici with fries and salad with mustard onion",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,M,O,N",
+              "description": null
+            },
+            {
+              "title": "Pasta with dried tomato basil pesto and parmesan",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,N,G,A,C,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     }
   }
 }

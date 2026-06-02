@@ -14,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-06-01T12:45:31.007Z",
+  "fetchedAt": "2026-06-02T11:23:57.199Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -23,25 +23,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-02": {
       "categories": [
@@ -49,25 +49,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-03": {
       "categories": [
@@ -75,25 +75,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-04": {
       "categories": [
@@ -101,25 +101,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-05": {
       "categories": [
@@ -127,25 +127,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, frisch gegrilltem Hähnchen-Filet und Brokkoli, Edamame, Gurke, marinierten Zwiebeln, Crunchy Kichererbsen und Limette. Dazu empfehlen wir unsere Teriyaki Sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "mit warmem Jasmin-Duftreis und Salat, Birne, knackiger Karotte, Kimchi, Frühlingszwiebel und Sesam. Dazu empfehlen wir unsere Bulgogi Sauce."
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     }
   }
 }

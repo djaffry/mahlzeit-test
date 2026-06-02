@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-01T12:45:31.883Z",
+  "fetchedAt": "2026-06-02T11:23:57.688Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -472,10 +472,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Haselnussmousse, Weichselröster",
+              "title": "Haselnussmousse, Weichselröster Kokos - Sojajoghurt Granola mit Sesam, Datteln & Cranberries, Ananas",
               "price": null,
               "tags": [],
-              "allergens": "F,H",
+              "allergens": "A,F,H,N,O",
               "description": null
             }
           ]
@@ -484,10 +484,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Gebackener Käsekuchen",
+              "title": "Gebackener Käsekuchen Zitronenkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -507,7 +507,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-03": {
       "categories": [

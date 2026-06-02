@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-01T12:45:34.458Z",
+  "fetchedAt": "2026-06-02T11:24:00.497Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-06-01T12:45:29.671Z"
+    },
+    "2026-06-02": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Steinpilz-Erdäpfel Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L,G,A,O",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Pommes und Salat dazu Senf Zwiebel",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,M,O,N",
+              "description": null
+            },
+            {
+              "title": "Pasta mit getrockneten Tomaten-Basilikumpesto dazu Parmesan",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "L,N,G,A,C,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     }
   }
 }

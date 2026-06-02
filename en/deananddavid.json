@@ -14,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-06-01T12:45:31.007Z",
+  "fetchedAt": "2026-06-02T11:23:57.199Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -23,25 +23,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-02": {
       "categories": [
@@ -49,25 +49,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-03": {
       "categories": [
@@ -75,25 +75,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-04": {
       "categories": [
@@ -101,25 +101,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     },
     "2026-06-05": {
       "categories": [
@@ -127,25 +127,25 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Protein Chicken Bowl",
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, fresh grilled chicken fillet and broccoli, edamame, cucumber, marinated onions, crunchy chickpeas and lime. We recommend our teriyaki sauce."
-            },
-            {
-              "title": "Korean BBQ Bowl",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": "with warm jasmine fragrant rice and salad, pear, crunchy carrot, kimchi, spring onion and sesame. We recommend our bulgogi sauce."
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-02T11:23:55.851Z"
     }
   }
 }
