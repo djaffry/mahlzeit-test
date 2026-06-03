@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-02T11:24:00.497Z",
+  "fetchedAt": "2026-06-03T12:01:40.553Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -78,6 +78,39 @@
         }
       ],
       "fetchedAt": "2026-06-02T11:23:55.851Z"
+    },
+    "2026-06-03": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Leek cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Fried chicken fillet with basil cream sauce and basmati rice (A.G,LH)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Baked Emmental cheese with cranberries and tartare sauce",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "0,6,A,C",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-03T12:01:36.182Z"
     }
   }
 }

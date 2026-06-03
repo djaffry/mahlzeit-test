@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-02T11:23:57.688Z",
+  "fetchedAt": "2026-06-03T12:01:41.532Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -720,10 +720,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Apfel - Zimt Creme",
+              "title": "Apfel - Zimt Creme Haselnussmousse, Weichselröster",
               "price": null,
               "tags": [],
-              "allergens": "C,G,O",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -732,10 +732,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss- Zwetschkenstrudel",
+              "title": "Walnuss- Zwetschkenstrudel Gebackener Käsekuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -755,7 +755,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-03T12:01:36.182Z"
     },
     "2026-06-05": {
       "categories": [

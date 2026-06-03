@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-02T11:23:57.376Z",
+  "fetchedAt": "2026-06-03T12:01:39.252Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -297,6 +297,147 @@
         }
       ],
       "fetchedAt": "2026-06-02T11:23:55.851Z"
+    },
+    "2026-06-03": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Getrüffelte Karfiolsuppe 🤍",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Hühner-Gyros-Schupfnudel-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Lauch 🌿 & Tzatziki 🥒"
+            },
+            {
+              "title": "Erdäpfel 🥔-Pilz 🍄‍🟫-Gröstl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Sellerie 🌿, Lauch, Fisolen 🫛 & frischer Petersilie 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Spalterbsen 🫛-Erdäpfel 🥔-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Debrezinern, Frankfurtern & Reis"
+            },
+            {
+              "title": "Gemüse-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Stangensellerie 🌿, Salbei, Fenchel, Wurzelgemüse 🥕, Spinat 💚 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Belugalinsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wurst 🥓, Paprika 🫑, Gurkerl 🥒 & Radieschen 🫜"
+            },
+            {
+              "title": "Bulgur-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Gurken 🥒, Petersilie 🌿, Minze & frischer Zitrone 🍋"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "San Sebastian Cheesecake 🧀",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-03T12:01:36.182Z"
     }
   }
 }

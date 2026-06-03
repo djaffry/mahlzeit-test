@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-02T11:24:00.497Z",
+  "fetchedAt": "2026-06-03T12:01:40.553Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -78,6 +78,39 @@
         }
       ],
       "fetchedAt": "2026-06-02T11:23:55.851Z"
+    },
+    "2026-06-03": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Lauch Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Hühnerfilet gebraten mit Basilikum-Oberssauce dazu Basmatireis (A.G,LH)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gebackener Emmentaler mit Preiselbeeren und Sauce Tartare",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "0,6,A,C",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-03T12:01:36.182Z"
     }
   }
 }
