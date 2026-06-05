@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-03T12:01:41.532Z",
+  "fetchedAt": "2026-06-05T10:53:00.368Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -885,7 +885,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Roasted mushrooms, seasoning - brown rice, avocado, blueberries, radicchio, kefir dressing",
+              "title": "Seasoning - brown rice, avocado, blueberries, radicchio, kefir dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -899,10 +899,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut \"milk\" rice, blueberries",
+              "title": "Coconut \"milk\" rice, blueberry apple - cinnamon cream",
               "price": null,
               "tags": [],
-              "allergens": "H",
+              "allergens": "C,G,H,O",
               "description": null
             }
           ]
@@ -911,10 +911,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Esterhazy sections",
+              "title": "Esterhazy slices walnut plum strudel",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -934,7 +934,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }

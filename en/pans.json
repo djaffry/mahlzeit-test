@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-03T12:01:40.553Z",
+  "fetchedAt": "2026-06-05T10:53:03.075Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -111,6 +111,39 @@
         }
       ],
       "fetchedAt": "2026-06-03T12:01:36.182Z"
+    },
+    "2026-06-05": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Broccoli cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Salmon fillet fried with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Rösti pockets filled with cream cheese and herbs, served with salad and garlic yogurt",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "0,6,M",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }

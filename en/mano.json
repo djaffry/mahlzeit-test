@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-06-01T12:45:30.545Z",
+  "fetchedAt": "2026-06-05T10:52:59.571Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -32,7 +32,7 @@
               "description": null
             },
             {
-              "title": "Chanterelle cream soup",
+              "title": "Carrot ginger cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -46,30 +46,30 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Indian turkey fillet \"Korma\" with mango, spicy rice",
+              "title": "Beef lasagna with Grana Padano and Pomodoro sauce",
               "price": "11,90 €",
               "tags": [
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Baked zander fillet on Nicoise salad",
+              "title": "Chili shrimp skewers on avocado mango melon salad",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,C,G,D",
+              "allergens": "B",
               "description": null
             },
             {
-              "title": "Potato goulash with tofu and pastries, salad from the buffet",
+              "title": "Thai curry vegetables with lime rice, salad from the buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": null,
               "description": null
             }
           ]
@@ -78,7 +78,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Kaiserschmarrn with apricot roaster",
+              "title": "Strawberry curd dumplings",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-02": {
       "categories": [
@@ -95,7 +95,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Broccoli cream soup",
+              "title": "Cold leek and potato cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -118,16 +118,16 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Chicken gyro platter with iceberg lettuce and pita bread",
+              "title": "Turkey fillet rice meat with mushrooms, pickles",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Pute"
               ],
-              "allergens": "A,C,G",
+              "allergens": null,
               "description": null
             },
             {
-              "title": "Moqueca /Brazilian fish stew / with basmati rice",
+              "title": "Baked corn plaice fillet on potato and young onion salad",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -136,7 +136,7 @@
               "description": null
             },
             {
-              "title": "Vegetable strudel on asparagus in chervil sauce, salad from the buffet",
+              "title": "Broccoli and millet patties with yogurt and cucumber salad, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -150,7 +150,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Chocolate pudding with raspberries",
+              "title": "Chocolate mousse slices",
               "price": "3,90 €",
               "tags": [],
               "allergens": "G",
@@ -159,7 +159,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-03": {
       "categories": [
@@ -167,7 +167,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Truffled potato cream soup",
+              "title": "Cream of pea soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -190,7 +190,7 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Baked fried chicken, in buttermilk breading, parsley potatoes, cranberries",
+              "title": "Crispy Kentucky chicken fillet strips on pan-fried potatoes",
               "price": "11,90",
               "tags": [
                 "Huhn"
@@ -199,7 +199,7 @@
               "description": null
             },
             {
-              "title": "Salmon fillet steak in thyme butter on Greek salad",
+              "title": "St. Peter's fish fillet with pumpkin crust on butter broccoli",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -208,12 +208,12 @@
               "description": null
             },
             {
-              "title": "Falafel duet on hummus, citrus oil, salad from the buffet",
+              "title": "Carinthian cheese noodles in sage butter, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -222,16 +222,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Coconut brownie",
+              "title": "Cherry strudel",
               "price": "3,90 €",
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-04": {
       "categories": [
@@ -239,7 +239,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Tomato mango cream soup",
+              "title": "Cream of spring onion soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -248,7 +248,7 @@
               "description": null
             },
             {
-              "title": "Beef soup with herb blini",
+              "title": "Beef soup with vermicelli",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -262,16 +262,16 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Angus cheeseburger in brioche, fries, coleslaw",
+              "title": "Veal butter schnitzel on mashed potatoes, buttered peas",
               "price": "12,90 €",
               "tags": [
                 "Fleisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "A,C,G,O,L",
               "description": null
             },
             {
-              "title": "Red salmon fillet steak on Tom Kha vegetable ragout",
+              "title": "Moroccan salmon fillet steak on chickpea ragout",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -280,12 +280,12 @@
               "description": null
             },
             {
-              "title": "Mujadara Arabic rice pan, salad from the buffet",
+              "title": "Baked cauliflower florets with tartare sauce, salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-05": {
       "categories": [
@@ -311,7 +311,7 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Baked plaice fillet with parsley potatoes, cucumber salad",
+              "title": "Baked fish fillet with parsley potatoes, cucumber salad",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -320,12 +320,12 @@
               "description": null
             },
             {
-              "title": "Classic asparagus with parsley potatoes",
+              "title": "Vegetable strudel with yogurt dip",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "G",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -343,7 +343,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }

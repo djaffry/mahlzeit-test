@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-03T12:01:39.252Z",
+  "fetchedAt": "2026-06-05T10:53:00.840Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -438,6 +438,135 @@
         }
       ],
       "fetchedAt": "2026-06-03T12:01:36.182Z"
+    },
+    "2026-06-05": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse 🥒🥕🥦-Linsen-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kurkuma 🧡"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Pfeffer-Rahm-Geschnetzeltes vom Ötscherblickschwein",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Champignons 🍄‍🟫 & Spätzle"
+            },
+            {
+              "title": "Süße, warme Topfenpalatschinken 💛-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "roter Beeren 🍓-Grütze"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Curry von der Waldviertler Freilandpute – in Cashew-Tomaten 🍅-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Romanesco 🥦, Karotten 🥕 & Reis"
+            },
+            {
+              "title": "Chili sin Carne",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Sonnenblumengranulat 🌻 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Ebly-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅 & grünem Spargel 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Schoko 🍫-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Giotto 💛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-06-01T12:45:30.545Z",
+  "fetchedAt": "2026-06-05T10:52:59.571Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -32,7 +32,7 @@
               "description": null
             },
             {
-              "title": "Eierschwammerlcremesuppe",
+              "title": "Karotten-Ingwercremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -46,30 +46,30 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Indisches Putenfilet \"Korma \" mit Mango ,Pikanter Reis",
+              "title": "Rindfleischlasagne mit Grana Padano und Pomodorosauce",
               "price": "11,90 €",
               "tags": [
-                "Pute"
+                "Rindfleisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Gebackenes Zanderfilet auf Nicoise-Salat",
+              "title": "Chili-Garnelen-Spieße auf Avocado-Mango-Melone-Salat",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,C,G,D",
+              "allergens": "B",
               "description": null
             },
             {
-              "title": "Erdäpfelgulasch mit Tofu und Gebäck   , Salat Vom Buffet",
+              "title": "Thai-Currygemüse mit Limettenreis    , Salat Vom Buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": null,
               "description": null
             }
           ]
@@ -78,7 +78,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Kaiserschmarrn mit Marillenröster",
+              "title": "Erdbeer-Topfenknödel",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-02": {
       "categories": [
@@ -95,7 +95,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Brokkolicremesuppe",
+              "title": "Kalte Lauch-Erdäpfelcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -118,16 +118,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Chicken-Gyrosteller mit Eisbergsalat und Pitabrot",
+              "title": "Reisfleisch von Putefilet mit Champignons , Essiggurken",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Pute"
               ],
-              "allergens": "A,C,G",
+              "allergens": null,
               "description": null
             },
             {
-              "title": "Moqueca /brasilianischer Fischeintopf / mit Basmatireis",
+              "title": "Gebackenes Maischollefilet auf Erdäpfel-Jungzwiebel Salat",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -136,7 +136,7 @@
               "description": null
             },
             {
-              "title": "Gemüsestrudel auf Spargel in Kerbelsauce   , Salat vom Buffet",
+              "title": "Brokkoli-Hirse-Laibchen mit Joghurt-Gurkensalat    , Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -150,7 +150,7 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Schokopuding mit Himbeer",
+              "title": "Schoko-Mousseschnitte",
               "price": "3,90 €",
               "tags": [],
               "allergens": "G",
@@ -159,7 +159,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-03": {
       "categories": [
@@ -167,7 +167,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Getrüffelte Kartoffelcremesuppe",
+              "title": "Erbsencremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -190,7 +190,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Ausgelöste Backhendl , in Buttermilchpanade , Petersilerdäpfel  ,Preiselbeeren",
+              "title": "Knuspriges Kentucky-Hühnerfiletstreifen auf Pfannenerdäpfel-Gemüse",
               "price": "11,90",
               "tags": [
                 "Huhn"
@@ -199,7 +199,7 @@
               "description": null
             },
             {
-              "title": "Lachsfiletsteak in Thymianbutter auf griechischem Salat",
+              "title": "St.Petersfischfilet mit Kürbiskruste auf Butterbrokkoli",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -208,12 +208,12 @@
               "description": null
             },
             {
-              "title": "Falafel-Duett auf Hummus ,Zitrusöl ,  Salat von Büffet",
+              "title": "Kärntner Kasnudeln in Salbeibutter  ,  Salat von Büffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -222,16 +222,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Kokosbrownie",
+              "title": "Kirschstrudel",
               "price": "3,90 €",
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-04": {
       "categories": [
@@ -239,7 +239,7 @@
           "name": "Suppe",
           "items": [
             {
-              "title": "Tomaten-Mangocremesuppe",
+              "title": "Jungzwiebelncremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -248,7 +248,7 @@
               "description": null
             },
             {
-              "title": "Rindsuppe mit Kräuterblini",
+              "title": "Rindsuppe mit Fadennudeln",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -262,16 +262,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Angus-Cheeseburger in Brioche ,Pommes ,Coleslaw",
+              "title": "Kalbsbutterschnitzel auf Erdäpfelpüree , Buttererbsen",
               "price": "12,90 €",
               "tags": [
                 "Fleisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "A,C,G,O,L",
               "description": null
             },
             {
-              "title": "Rote Lachsfiletsteak auf Tom-Kha-Gemüseragout",
+              "title": "Marokkanisches Lachsfiletsteak auf Kichererbsenragout",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -280,12 +280,12 @@
               "description": null
             },
             {
-              "title": "Mujadara-arabische-Reispfanne   ,Salat vom Buffet",
+              "title": "Gebackene Karfiolröschen mit Sauce Tartare   ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     },
     "2026-06-05": {
       "categories": [
@@ -311,7 +311,7 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Gebackene Schollenfilet mit Petersielerdäpfel ,Gurkensalat",
+              "title": "Gebackene Fischfilet  mit Petersielerdäpfel ,Gurkensalat",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -320,12 +320,12 @@
               "description": null
             },
             {
-              "title": "Spargel-klassisch mit Petersielerdäpfel",
+              "title": "Gemüsestrudel mit Joghurtdip",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "G",
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -343,7 +343,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }

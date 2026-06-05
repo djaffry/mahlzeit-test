@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-03T12:01:41.532Z",
+  "fetchedAt": "2026-06-05T10:53:00.368Z",
   "error": null,
   "days": {
     "2026-06-01": {
@@ -885,7 +885,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Geröstete Pilze, Gewürz - Naturreis, Avocado, Heidelbeeren, Radicchio, Kefir Dressing",
+              "title": "Gewürz - Naturreis, Avocado, Heidelbeeren, Radicchio, Kefir Dressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -899,10 +899,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos\"milch\"reis, Heidelbeeren",
+              "title": "Kokos\"milch\"reis, Heidelbeeren Apfel - Zimt Creme",
               "price": null,
               "tags": [],
-              "allergens": "H",
+              "allergens": "C,G,H,O",
               "description": null
             }
           ]
@@ -911,10 +911,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Esterhazyschnitte",
+              "title": "Esterhazyschnitte Walnuss- Zwetschkenstrudel",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -934,7 +934,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-01T12:45:29.671Z"
+      "fetchedAt": "2026-06-05T10:52:58.778Z"
     }
   }
 }
