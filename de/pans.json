@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "Bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-08T12:05:14.585Z",
+  "error": null,
+  "days": {
+    "2026-06-08": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Karfiol Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,0,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Hühnerstreifen gebacken auf Erdäpfel-Blattsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Farfalle mit Champignonsauce (A,6,C,LN)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-08T12:05:09.865Z"
+    }
+  }
+}

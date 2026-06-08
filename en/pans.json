@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-08T12:05:14.585Z",
+  "error": null,
+  "days": {
+    "2026-06-08": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Cauliflower cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,0,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Chicken strips baked on potato leaf salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Farfalle with mushroom sauce (A,6,C,LN)",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-08T12:05:09.865Z"
+    }
+  }
+}
