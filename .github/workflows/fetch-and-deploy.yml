@@ -2,8 +2,8 @@ name: Fetch and Deploy Menus
 
 on:
   schedule:
-    - cron: '01 7 * * 1-5'
-    - cron: '21 7 * * 1-5'
+    - cron: '01 4 * * 1-5'
+    - cron: '21 4 * * 1-5'
   workflow_dispatch:
 
 concurrency:
