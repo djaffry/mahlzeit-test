@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-08T12:05:14.585Z",
+  "fetchedAt": "2026-06-09T07:42:16.043Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-06-08T12:05:09.865Z"
+    },
+    "2026-06-09": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Pumpkin cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,0,L,G",
+              "description": null
+            },
+            {
+              "title": "Minced patties with mashed potatoes and fried onions",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,6,0,L,N",
+              "description": null
+            },
+            {
+              "title": "Baked sheep's cheese on leaf lettuce with red lentil puree",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,C,O,M",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-09T07:42:11.671Z"
     }
   }
 }
