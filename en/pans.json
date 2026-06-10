@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-09T07:42:16.043Z",
+  "fetchedAt": "2026-06-10T08:03:09.615Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -78,6 +78,39 @@
         }
       ],
       "fetchedAt": "2026-06-09T07:42:11.671Z"
+    },
+    "2026-06-10": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Mushroom cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,0,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Wiener Schnitzel (pork) baked with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Cheese spaetzle with salad",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,C,O,M",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-10T08:03:05.166Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-08T12:05:12.952Z",
+  "fetchedAt": "2026-06-10T08:03:07.570Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -153,6 +153,146 @@
         }
       ],
       "fetchedAt": "2026-06-08T12:05:09.865Z"
+    },
+    "2026-06-10": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Carrot 🥕 orange 🍊 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Chicken & Parmesan"
+            },
+            {
+              "title": "Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Braised aubergine 🍆, baby blood chard 🥬 & parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Styrian root meat from the Ötscherblick pig",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Root vegetables 🥕 & potatoes 🥔 – optionally with horseradish"
+            },
+            {
+              "title": "Chickpea curry 💛",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Sugar snap peas 🫛 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Crisp kohlrabi 🤍 radishes 🫜 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, heirloom carrots (purple 💜 carrots), pears 🍐, sunflower seeds & citrus 🍋 dressing"
+            },
+            {
+              "title": "Wheat-vegetable 🥒🥕🌿 rainbow bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 wax beans, red & yellow 💛 tomatoes 🍅 & crunchy iceberg lettuce 🥬"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Hazelnut curd 💛 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-10T08:03:05.166Z"
     }
   }
 }

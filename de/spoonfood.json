@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-08T12:05:12.952Z",
+  "fetchedAt": "2026-06-10T08:03:07.570Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -153,6 +153,146 @@
         }
       ],
       "fetchedAt": "2026-06-08T12:05:09.865Z"
+    },
+    "2026-06-10": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Karotten 🥕-Orangen 🍊-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Hühnerfleisch & Parmesan"
+            },
+            {
+              "title": "Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "geschmorter Melanzani 🍆, Baby-Blutmangold 🥬 & Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Steirisches Wurzelfleisch vom Ötscherblickschwein",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕 & Erdäpfeln 🥔 – optional mit Kren"
+            },
+            {
+              "title": "Kichererbsen-Curry 💛",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zuckerschoten 🫛 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Knackige Kohlrabi 🤍-Radieschen 🫜-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Urkarotten (lila 💜 Karotten), Birnen 🍐, Sonnenblumenkernen & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Weizen-Gemüse 🥒🥕🌿-Regenbogen-Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "gelben 💛 Wachsbohnen, roten & gelben 💛 Tomaten 🍅 & knackigem Eisbergsalat 🥬"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Haselnuss-Topfen 💛-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-10T08:03:05.166Z"
     }
   }
 }

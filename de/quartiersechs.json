@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-08T12:05:11.948Z",
+  "fetchedAt": "2026-06-10T08:03:07.255Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -970,7 +970,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Bananen-Karamell Pudding Beerentiramisu im Glas",
+              "title": "Bananen-Karamell Pudding Toskanisches Beerentrifle",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,O",
@@ -1007,7 +1007,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-08T12:05:09.865Z"
+      "fetchedAt": "2026-06-10T08:03:05.166Z"
     },
     "2026-06-12": {
       "categories": [
