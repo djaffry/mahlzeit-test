@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-10T08:03:07.570Z",
+  "fetchedAt": "2026-06-11T08:39:31.192Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -293,6 +293,153 @@
         }
       ],
       "fetchedAt": "2026-06-10T08:03:05.166Z"
+    },
+    "2026-06-11": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Zucchini 🥒-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kernöl"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Faschierter Braten",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Erdäpfelpüree 🥔 & Röstzwiebeln 🧅"
+            },
+            {
+              "title": "Gemüse 🥒🥕🌿-Biryani",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Räuchertofu, Rosinen & Mandeln"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Bunter Fisolen 🫛-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelben 💛 & grünen Fisolen, Borlotti-Bohnen 🫘, Speck 🥓, Dille 🌿, Erdäpfeln 🥔 & Reis"
+            },
+            {
+              "title": "Gemüse-Madras - in cremiger Mandel-Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, Süßkartoffeln 🍠, Brokkoli 🥦, Karotten 🥕, Karfiol 🤍 & Reis – optional mit Mango 🥭-Chutney"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Heurigen-Erdäpfel 🥔-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "knackigem Romanasalat 🥬, gekochten Eiern 🍳, Fisolen 🫛 & leichtem Sauerrahm-Schnittlauch 🌿-Dressing"
+            },
+            {
+              "title": "Weizen-Gemüse 🥒🥕🌿-Regenbogen-Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "gelben 💛 Wachsbohnen, roten & gelben 💛 Tomaten 🍅 & knackigem Eisbergsalat 🥬"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Haselnuss-Topfen 💛-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bananenschnitte 🍌",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-11T08:39:28.198Z"
     }
   }
 }

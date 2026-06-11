@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-10T08:03:07.570Z",
+  "fetchedAt": "2026-06-11T08:39:31.192Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -293,6 +293,153 @@
         }
       ],
       "fetchedAt": "2026-06-10T08:03:05.166Z"
+    },
+    "2026-06-11": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Zucchini 🥒 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Seed oil"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Minced roast",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Potato puree 🥔 & fried onions 🧅"
+            },
+            {
+              "title": "Vegetable 🥒🥕🌿 biryani",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Smoked tofu, raisins & almonds"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Colorful Fisolen 🫛 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 & green beans, borlotti beans 🫘, bacon 🥓, dill 🌿, potatoes 🥔 & rice"
+            },
+            {
+              "title": "Vegetable madras - in creamy almond coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, sweet potatoes 🍠, broccoli 🥦, carrots 🥕, cauliflower 🤍 & rice - optionally with mango 🥭 chutney"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Heurigen potatoes 🥔 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "crunchy romaine lettuce 🥬, boiled eggs 🍳, beans 🫛 & light sour cream chives 🌿 dressing"
+            },
+            {
+              "title": "Wheat-vegetable 🥒🥕🌿 rainbow bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 wax beans, red & yellow 💛 tomatoes 🍅 & crunchy iceberg lettuce 🥬"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Hazelnut curd 💛 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Banana slices 🍌",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-11T08:39:28.198Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-10T08:03:09.615Z",
+  "fetchedAt": "2026-06-11T08:39:32.639Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -111,6 +111,39 @@
         }
       ],
       "fetchedAt": "2026-06-10T08:03:05.166Z"
+    },
+    "2026-06-11": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Spring onion cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,0,L,G,A",
+              "description": null
+            },
+            {
+              "title": "Chicken cheese burger with curry sauce and fries",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,O,M",
+              "description": null
+            },
+            {
+              "title": "Thyme cream lentils with root vegetables and napkin dumplings (A.6,c,LN)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-11T08:39:28.198Z"
     }
   }
 }

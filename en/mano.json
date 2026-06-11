@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-06-08T12:05:10.807Z",
+  "fetchedAt": "2026-06-11T08:39:29.103Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -294,7 +294,7 @@
           "name": "dessert",
           "items": [
             {
-              "title": "Homemade cinnamon roll",
+              "title": "Homemade curd cheese",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-08T12:05:09.865Z"
+      "fetchedAt": "2026-06-11T08:39:28.198Z"
     },
     "2026-06-12": {
       "categories": [
