@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-11T08:39:31.192Z",
+  "fetchedAt": "2026-06-12T08:19:50.496Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -440,6 +440,146 @@
         }
       ],
       "fetchedAt": "2026-06-11T08:39:28.198Z"
+    },
+    "2026-06-12": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Weiße Spargel 🌿-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tiroler Gröstl vom Ötscherblickschwein",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, Semmelknödeln, Ei 🍳, Speck 🥓 & Zwiebeln 🧅"
+            },
+            {
+              "title": "Warmer Topfen 💛-Grieß-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Marillen 🍑-Röster"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Kalbsrahmgulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Nockerln"
+            },
+            {
+              "title": "Caponata – Sizilianisches Schmorgemüse",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Paprika 🫑, Kapern, Oliven 🫒, Zucchini 🥒, Melanzani 🍆 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Heurigen-Erdäpfel 🥔-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "knackigem Romanasalat 🥬, gekochten Eiern 🍳, Fisolen 🫛 & leichtem Sauerrahm-Schnittlauch 🌿-Dressing"
+            },
+            {
+              "title": "Knackige Kohlrabi 🤍-Radieschen 🫜-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Urkarotten (lila 💜 Karotten), Birnen 🍐, Sonnenblumenkernen & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bananenschnitte 🍌",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-12T08:19:47.879Z"
     }
   }
 }

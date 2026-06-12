@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-11T08:39:31.192Z",
+  "fetchedAt": "2026-06-12T08:19:50.496Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -440,6 +440,146 @@
         }
       ],
       "fetchedAt": "2026-06-11T08:39:28.198Z"
+    },
+    "2026-06-12": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "White asparagus 🌿 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tyrolean Gröstl from Ötscherblick pig",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, bread dumplings, egg 🍳, bacon 🥓 & onions 🧅"
+            },
+            {
+              "title": "Warm curd 💛 semolina casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Apricot 🍑 roaster"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Cream of veal goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "dumplings"
+            },
+            {
+              "title": "Caponata – Sicilian braised vegetables",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, peppers 🫑, capers, olives 🫒, zucchini 🥒, aubergine 🍆 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Heurigen potatoes 🥔 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "crunchy romaine lettuce 🥬, boiled eggs 🍳, beans 🫛 & light sour cream chives 🌿 dressing"
+            },
+            {
+              "title": "Crisp kohlrabi 🤍 radishes 🫜 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, heirloom carrots (purple 💜 carrots), pears 🍐, sunflower seeds & citrus 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Banana slices 🍌",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-12T08:19:47.879Z"
     }
   }
 }

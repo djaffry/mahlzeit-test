@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-11T08:39:32.639Z",
+  "fetchedAt": "2026-06-12T08:19:52.497Z",
   "error": null,
   "days": {
     "2026-06-08": {
@@ -144,6 +144,39 @@
         }
       ],
       "fetchedAt": "2026-06-11T08:39:28.198Z"
+    },
+    "2026-06-12": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Frittatensuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,C,G,A",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gebraten mit Petersilienerdäpfel und Salat",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Solospargel mit Kräutersauce dazu Petersilienerdäpfel",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,6,0,L,N",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-12T08:19:47.879Z"
     }
   }
 }
