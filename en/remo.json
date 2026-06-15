@@ -1,0 +1,18 @@
+{
+  "id": "remo",
+  "title": "Remo",
+  "url": "https://remopizza.at/#Speisekarte",
+  "type": "specials",
+  "icon": "pizza",
+  "cuisine": [
+    "Neapolitan pizza"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2254,
+    "lon": 16.3948
+  },
+  "fetchedAt": "2026-06-15T09:56:27.922Z",
+  "error": "fetch failed → ",
+  "days": {}
+}

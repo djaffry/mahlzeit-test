@@ -1,0 +1,315 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-06-15T09:56:22.610Z",
+  "error": null,
+  "days": {
+    "2026-06-15": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Ratatouille, Frische Petersilie"
+            },
+            {
+              "title": "Lachs-Teriyaki",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F,N",
+              "description": "Spicy Brokkoli & Duftreis, Black Sesame"
+            },
+            {
+              "title": "Berner Würstel vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Pommes frites, Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeer-Sahnekuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-16": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Steinpilznudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Getrocknete Tomaten, Flora & Schnittlauch"
+            },
+            {
+              "title": "Rindsragout Stroganoff",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M",
+              "description": "Kartoffelkroketten, Frischer Schnittlauch"
+            },
+            {
+              "title": "Yellow Curry-Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "D",
+              "description": "Erbsen & Kartoffeln, Duftreis"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Blueberry -Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-17": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Frühlingsrolle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,L,N",
+              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+            },
+            {
+              "title": "Kürbiskernschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M",
+              "description": "Erdäpfel-Gurkensalat, Zitrone"
+            },
+            {
+              "title": "Cremige Schinkenfleckerl",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Schinken, Obers & Käse, Frischer Schnittlauch"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillenpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-18": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatlasagne",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Blattspinat & Tomaten, Sauce Vechamel"
+            },
+            {
+              "title": "Puten-Wurstknödel",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "Gabelkraut & Saftl, Frische Petersilie"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "M",
+              "description": "Skin on Wedges, Zwiebelsenf"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marmorkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-19": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Grießschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Zwetschkenröster, Staubzucker"
+            },
+            {
+              "title": "Faschiertes Laibchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Erdäpfelpüree, Röstzwiebel"
+            },
+            {
+              "title": "Rote Rüben-Gnocchi",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Sugo Jardineira, Grana Vegano"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfenknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    }
+  }
+}

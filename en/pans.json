@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-15T09:56:27.145Z",
+  "error": null,
+  "days": {
+    "2026-06-15": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Asparagus cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G,A",
+              "description": null
+            },
+            {
+              "title": "Baked chicken schnitzel with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Penne Arrabiata with Parmesan (AG,c,LN)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-15T09:56:21.805Z"
+    }
+  }
+}
