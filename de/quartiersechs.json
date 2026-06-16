@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-15T09:56:24.005Z",
+  "fetchedAt": "2026-06-16T09:21:52.323Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -482,7 +482,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "New York Cheese Cake Birnenstrudel",
+              "title": "New York Cheesecake Birnenstrudel",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G",
@@ -505,7 +505,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-15T09:56:21.805Z"
+      "fetchedAt": "2026-06-16T09:21:49.294Z"
     },
     "2026-06-17": {
       "categories": [

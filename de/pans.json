@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-15T09:56:27.145Z",
+  "fetchedAt": "2026-06-16T09:21:55.211Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -47,6 +47,39 @@
         }
       ],
       "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-16": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Brokkoli Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G",
+              "description": null
+            },
+            {
+              "title": "Lasagne Bolognese (Rind) mit Mozzarella dazu Salat",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,6,0,M,L,N",
+              "description": null
+            },
+            {
+              "title": "Quinoa-Salat Bowl mit getrocknetem Tomatenpesto dazu Schafskäse (c,0,Mm)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-16T09:21:49.294Z"
     }
   }
 }

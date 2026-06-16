@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-15T09:56:24.632Z",
+  "fetchedAt": "2026-06-16T09:21:52.853Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -154,6 +154,145 @@
         }
       ],
       "fetchedAt": "2026-06-15T09:56:21.805Z"
+    },
+    "2026-06-16": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Mediterrane Tomaten 🍅-Gemüse-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokos 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tafelspitz - vom Kalb",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Semmelkren, Wurzelgemüse 🥕 & Schnittlauch 🌿-Rahmsauce"
+            },
+            {
+              "title": "Mac'n'Cheese 🧀",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "grünem Spargel 🌿, Rosenkohl 🥬 & Erbsen 🫛 - mit Cheddar gratiniert"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Lemon 🍋-Chili-Pepper-Tajine von Waldviertler Freilandpute",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "getrockneten Pflaumen 💜, Zucchini 🥒, Melanzani 🍆, Karotten 🥕 & Reis"
+            },
+            {
+              "title": "Kichererbsen-Gemüse-Dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Karotten 🥕, Karfiol 🤍 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Berglinsen-Bauern-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Feta, gelben 💛 Tomaten 🍅, Paprika 🫑, Oliven 🫒 & frischer Petersilie 🌿"
+            },
+            {
+              "title": "Sweet-Chili-Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Sojabohnen 🫛, Wakame 🌿, Paprika 🫑, Erdnüssen 🥜, Bambussprossen & Sesam"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Banoffe – Banane 🍌 & Karamell 🤎 – im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-16T09:21:49.294Z"
     }
   }
 }
