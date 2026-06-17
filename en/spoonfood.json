@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-16T09:21:52.853Z",
+  "fetchedAt": "2026-06-17T08:56:32.666Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -293,6 +293,144 @@
         }
       ],
       "fetchedAt": "2026-06-16T09:21:49.294Z"
+    },
+    "2026-06-17": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Sweet potato 🍠 coconut 🥥 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ginger 🫚"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Asian noodle pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Chicken, tamarind, Chinese cabbage 🥬 & carrots 🥕"
+            },
+            {
+              "title": "Vegetable strudel",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿 cream sauce & small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Old Viennese beef goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "dumplings"
+            },
+            {
+              "title": "Potatoes 🥔-Paradeiser 🍅-Curry - in cashew-coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cauliflower 🤍, tofu & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Quinoa Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, tomatoes 🍅, fresh mint 🌿, parsley, pomegranate 🍎 seeds & citrus fruits 🍋 dressing"
+            },
+            {
+              "title": "Sweet Chili Glass Noodle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Soybeans 🫛, wakame 🌿, peppers 🫑, peanuts 🥜, bamboo shoots & sesame"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Banoffe – banana 🍌 & caramel 🤎 – in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-17T08:56:30.157Z"
     }
   }
 }
