@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-16T09:21:55.211Z",
+  "fetchedAt": "2026-06-17T09:16:17.032Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -80,6 +80,39 @@
         }
       ],
       "fetchedAt": "2026-06-16T09:21:49.294Z"
+    },
+    "2026-06-17": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Karfiol Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G",
+              "description": null
+            },
+            {
+              "title": "Rindfleisch-Risotto mit Parmesan dazu Salat (c,o,M,LN)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Panzanella Salat mit Weintrauben,Zuckermelone,Schafskäse und Croutons (c,0,M‚A,C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-17T09:16:11.794Z"
     }
   }
 }
