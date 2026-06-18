@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-17T08:56:32.666Z",
+  "fetchedAt": "2026-06-18T08:40:06.826Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -431,6 +431,149 @@
         }
       ],
       "fetchedAt": "2026-06-17T08:56:30.157Z"
+    },
+    "2026-06-18": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Rote Linsensuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kreuzkümmel 🤎 & frischer Limette 🍋‍🟩"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Huhn Cacciatore",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, rote & lila 💜 Karotten 🥕, Paprika 🫑, Zucchini 🥒 & Oregano 🌿"
+            },
+            {
+              "title": "Zucchini 🥒-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "getrockneten Tomaten 🍅, Oliven 🫒 & frischer Dille 🌿 - optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "High Protein 💪-Linsen-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "gemischtem Faschierten, Karotten 🥕, Paprika 🫑 & Reis"
+            },
+            {
+              "title": "Grünes 💚 Thai-Zitronengras 🌿-Curry - bissi spicy 🌶️",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Pak Choi 🥬, Brokkoli 🥦, Erbsen 🫛, Zucchini 🥒 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Quinoa-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Tomaten 🍅, frischer Minze 🌿, Petersilie, Granatapfel 🍎-Kernen & Zitrusfrüchte 🍋-Dressing"
+            },
+            {
+              "title": "Indische Waldorf-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Curry 💛-Kokos 🥥-Mayo, Mango 🥭, schwarzem 🖤 Reis, Nuss-Mix 🥜 & Sellerie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Nutella 🤎-Torte",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Haselnüssen"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-18T08:40:04.941Z"
     }
   }
 }

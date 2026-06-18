@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-17T08:56:32.666Z",
+  "fetchedAt": "2026-06-18T08:40:06.826Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -431,6 +431,149 @@
         }
       ],
       "fetchedAt": "2026-06-17T08:56:30.157Z"
+    },
+    "2026-06-18": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Red lentil soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cumin 🤎 & fresh lime 🍋‍🟩"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Chicken Cacciatore",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, red & purple 💜 carrots 🥕, peppers 🫑, zucchini 🥒 & oregano 🌿"
+            },
+            {
+              "title": "Zucchini 🥒 risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "dried tomatoes 🍅, olives 🫒 & fresh dill 🌿 - optionally with Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "High protein 💪 lentil stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "mixed minced meat, carrots 🥕, peppers 🫑 & rice"
+            },
+            {
+              "title": "Green 💚 Thai lemongrass 🌿 curry - a bit spicy 🌶️",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥, bok choy 🥬, broccoli 🥦, peas 🫛, zucchini 🥒 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Quinoa Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, tomatoes 🍅, fresh mint 🌿, parsley, pomegranate 🍎 seeds & citrus fruits 🍋 dressing"
+            },
+            {
+              "title": "Indian Waldorf Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Curry 💛-coconut 🥥-mayo, mango 🥭, black 🖤 rice, nut mix 🥜 & celery 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Nutella 🤎 cake",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "hazelnuts"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-18T08:40:04.941Z"
     }
   }
 }

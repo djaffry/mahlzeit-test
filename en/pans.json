@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-17T09:16:17.032Z",
+  "fetchedAt": "2026-06-18T08:40:09.715Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -113,6 +113,39 @@
         }
       ],
       "fetchedAt": "2026-06-17T09:16:11.794Z"
+    },
+    "2026-06-18": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Gazpacho soup",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Crispy chicken on potato leaf salad (c,o,M‚A.C)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Egg dumplings with salad (c,0o,M,A,C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-18T08:40:04.941Z"
     }
   }
 }
