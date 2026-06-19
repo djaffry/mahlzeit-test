@@ -32,9 +32,7 @@ export async function exportImage(canvas: HTMLCanvasElement, name: string, deepL
   if (navigator.clipboard?.write && typeof ClipboardItem !== 'undefined') {
     try {
       const blob = await canvasToBlob(canvas)
-      const items: Record<string, Blob> = { 'image/png': blob }
-      if (deepLink) items['text/plain'] = new Blob([deepLink], { type: 'text/plain' })
-      await navigator.clipboard.write([new ClipboardItem(items)])
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
       return "clipboard"
     } catch { /* fall through */ }
 
@@ -42,7 +40,6 @@ export async function exportImage(canvas: HTMLCanvasElement, name: string, deepL
       await navigator.clipboard.write([new ClipboardItem({
         'image/png': new Promise<Blob>((resolve, reject) => canvas.toBlob(b => b ? resolve(b) : reject(new Error("toBlob failed")), 'image/png')),
       })])
-      if (deepLink) await navigator.clipboard.writeText(deepLink).catch(() => {})
       return "clipboard"
     } catch { /* fall through */ }
   }

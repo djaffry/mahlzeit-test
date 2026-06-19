@@ -25,6 +25,8 @@ let _state: {
   unregisterShortcuts: (() => void)[]
 } | null = null
 
+let _busy = false
+
 /* ── Public API ───────────────────────────────────────── */
 
 export function setup(deps: {
@@ -76,7 +78,6 @@ function handleClick(event: Event): void {
   if (target.closest('.share-panel-text'))  { shareSelectionAsText(); return }
   if (target.closest('.share-panel-clear')) { clearSelection(); return }
 
-  // Menu item selection toggle (ignore clicks on links/buttons inside items)
   const menuItem = target.closest('.menu-item') as HTMLElement | null
   if (menuItem && !target.closest('a, button')) {
     menuItem.classList.toggle('selected')
@@ -88,38 +89,52 @@ function handleClick(event: Event): void {
   }
 }
 
-async function shareSelectionAsPicture(): Promise<void> {
+/** Wraps a share action with a busy guard and always clears the selection when done. */
+async function withBusyGuard(action: (data: ShareSelectionData) => Promise<void>): Promise<void> {
+  if (_busy) return
   const data = _state?.getSelectionData()
   if (!data) return
-  const canvas = await renderShareImage(data)
-  const sections = allSections(data)
-  const filename = sections.length === 1 ? sections[0].restaurant : t('share.filename')
-  const restaurantIds = sections.map(s => s.restaurant)
-  const deepLink = buildDeepLink(restaurantIds, data.days[0]?.day ?? '')
-  await exportImage(canvas, filename, deepLink)
-  clearSelection()
+  _busy = true
+  try {
+    await action(data)
+  } finally {
+    _busy = false
+    clearSelection()
+  }
 }
 
-async function shareSelectionAsText(): Promise<void> {
-  const data = _state?.getSelectionData()
-  if (!data) return
-  const text = formatAsText(data)
-  try {
-    await navigator.clipboard.writeText(text)
-    showToast(t('share.copied'), null, text)
-  } catch {
+function shareSelectionAsPicture(): Promise<void> {
+  return withBusyGuard(async (data) => {
+    const canvas = await renderShareImage(data)
+    const sections = allSections(data)
+    const filename = sections.length === 1 ? sections[0].restaurant : t('share.filename')
+    const restaurantIds = sections.map(s => s.restaurant)
+    const deepLink = buildDeepLink(restaurantIds, data.days[0]?.day ?? '')
+    await exportImage(canvas, filename, deepLink)
+  })
+}
+
+function shareSelectionAsText(): Promise<void> {
+  return withBusyGuard(async (data) => {
+    const text = formatAsText(data)
+
+    try {
+      await navigator.clipboard.writeText(text)
+      showToast(t('share.copied'), null, text)
+      return
+    } catch { /* clipboard failed, try Web Share API */ }
+
     if (navigator.share) {
       try {
         await navigator.share({ text })
-        clearSelection()
         return
       } catch (error) {
-        if ((error as Error).name === 'AbortError') { clearSelection(); return }
+        if ((error as Error).name === 'AbortError') return
       }
     }
+
     showToast(t('share.copyFailed'))
-  }
-  clearSelection()
+  })
 }
 
 export function clearSelection(): void {
@@ -130,13 +145,10 @@ export function clearSelection(): void {
 }
 
 function syncCardSelectedState(card: HTMLElement): void {
-  const allItems = card.querySelectorAll('.menu-item:not(.hidden)')
-  let selected = 0
-  for (const el of allItems) {
-    if (el.classList.contains('selected')) selected++
-  }
+  const all = card.querySelectorAll('.menu-item:not(.hidden)')
+  const selected = card.querySelectorAll('.menu-item.selected:not(.hidden)').length
   card.classList.toggle('share-any', selected > 0)
-  card.classList.toggle('share-all', allItems.length > 0 && selected === allItems.length)
+  card.classList.toggle('share-all', all.length > 0 && selected === all.length)
 }
 
 /* ── Floating share panel ────────────────────────────── */
@@ -182,8 +194,7 @@ function renderRestaurantSummary(data: ShareSelectionData): string {
     if (dayRows) html += dayHeader + dayRows
   }
 
-  const totalSections = allSections(data).length
-  const overflow = totalSections - rendered
+  const overflow = allSections(data).length - rendered
   if (overflow > 0) html += `<div class="share-panel-overflow">+${overflow}</div>`
 
   return html
@@ -193,8 +204,7 @@ function updateSelectionBar(): void {
   if (!_state) return
   const data = _state.getSelectionData()
   const sections = data ? allSections(data) : []
-  let totalSelected = 0
-  for (const s of sections) totalSelected += sectionItemCount(s)
+  const totalSelected = sections.reduce((n, s) => n + sectionItemCount(s), 0)
 
   const visible = totalSelected > 0
   _state.selectionBar.classList.toggle('visible', visible)
@@ -216,8 +226,7 @@ export function isActive(): boolean {
 function emitPanelToggle(visible: boolean): void {
   if (visible && _state) {
     requestAnimationFrame(() => {
-      const height = _state?.selectionBar.offsetHeight ?? 0
-      document.dispatchEvent(new CustomEvent(SHARE_PANEL_EVENT, { detail: { visible: true, height } }))
+      document.dispatchEvent(new CustomEvent(SHARE_PANEL_EVENT, { detail: { visible: true, height: _state?.selectionBar.offsetHeight ?? 0 } }))
     })
   } else {
     document.dispatchEvent(new CustomEvent(SHARE_PANEL_EVENT, { detail: { visible: false, height: 0 } }))
