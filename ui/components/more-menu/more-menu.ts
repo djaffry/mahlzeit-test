@@ -10,7 +10,6 @@ export interface MoreMenuCallbacks {
   onMap: () => void
   onDice: () => void
   isDiceAvailable: () => boolean
-  onVotingRooms: () => void
   onTheme: () => void
   onFeedback: () => void
   onShortcuts: () => void
@@ -87,10 +86,6 @@ function renderMenuContent(): void {
        ${renderArchiveSubmenu()}`
     : ""
 
-  const votingRoomsItem = isArchiveMode()
-    ? ""
-    : `<button class="more-menu-item" data-action="voting-rooms">${icons.heart} <span class="more-menu-label">${escapeHtml(t("voting.rooms") ?? "Voting rooms")}</span> <kbd>V</kbd></button>`
-
   const backToCurrentItem = isArchiveMode()
     ? `<button class="more-menu-item" data-action="archive-back">${icons.arrowLeft} <span class="more-menu-label">${escapeHtml(t("archive.backToCurrentWeek"))}</span></button>`
     : ""
@@ -99,7 +94,6 @@ function renderMenuContent(): void {
     <button class="more-menu-item" data-action="search">${icons.search} <span class="more-menu-label">${escapeHtml(t("search.title") ?? "Search")}</span> <kbd>/</kbd></button>
     <button class="more-menu-item" data-action="map">${icons.map} <span class="more-menu-label">${escapeHtml(t("map.title") ?? "Map")}</span> <kbd>M</kbd></button>
     ${diceItem}
-    ${votingRoomsItem}
     ${backToCurrentItem}
     ${archiveItem}
     <div class="more-menu-separator"></div>
@@ -160,7 +154,6 @@ function handleMenuClick(e: Event): void {
     case "search": cb.onSearch(); break
     case "map": cb.onMap(); break
     case "dice": cb.onDice(); break
-    case "voting-rooms": cb.onVotingRooms(); break
     case "theme": cb.onTheme(); break
     case "feedback": cb.onFeedback(); break
     case "shortcuts": cb.onShortcuts(); break

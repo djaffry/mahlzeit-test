@@ -13,7 +13,6 @@ import { setupKeyboard } from "./keyboard"
 const mockExpandDay = vi.fn()
 const mockOpenFilterSelector = vi.fn()
 const mockCycleTheme = vi.fn()
-const mockOpenVotingRoomsPanel = vi.fn()
 const mockShowShortcutsModal = vi.fn()
 const mockSwitchLanguage = vi.fn()
 const mockCollapseAllExceptToday = vi.fn()
@@ -35,7 +34,6 @@ describe("setupKeyboard", () => {
       expandDay: mockExpandDay,
       openFilterSelector: mockOpenFilterSelector,
       cycleTheme: mockCycleTheme,
-      openVotingRoomsPanel: mockOpenVotingRoomsPanel,
       showShortcutsModal: mockShowShortcutsModal,
       switchLanguage: mockSwitchLanguage,
       collapseAllExceptToday: mockCollapseAllExceptToday,

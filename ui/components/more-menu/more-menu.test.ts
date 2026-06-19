@@ -48,7 +48,6 @@ function makeCallbacks(overrides: Partial<MoreMenuCallbacks> = {}): MoreMenuCall
     onMap: vi.fn(),
     onDice: vi.fn(),
     isDiceAvailable: vi.fn().mockReturnValue(true),
-    onVotingRooms: vi.fn(),
     onTheme: vi.fn(),
     onFeedback: vi.fn(),
     onShortcuts: vi.fn(),
@@ -218,15 +217,6 @@ describe("menu item click callbacks", () => {
     openMenu(overlay, trigger)
     clickAction(menu, "dice")
     expect(callbacks.onDice).toHaveBeenCalledOnce()
-  })
-
-  it("voting-rooms action calls onVotingRooms callback", () => {
-    const { overlay, menu, trigger } = makeDOM()
-    const callbacks = makeCallbacks()
-    setupMoreMenu(overlay, menu, trigger, callbacks)
-    openMenu(overlay, trigger)
-    clickAction(menu, "voting-rooms")
-    expect(callbacks.onVotingRooms).toHaveBeenCalledOnce()
   })
 
   it("theme action calls onTheme callback", () => {

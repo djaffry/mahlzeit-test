@@ -96,67 +96,6 @@
   background: var(--bg);
 }
 
-/* ── Leader pills ───────────────────────────────────── */
-
-.leader-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  padding: 2px 7px 2px 4px;
-  border-radius: 10px;
-  font-size: var(--text-xs, 0.75rem);
-  color: var(--fg-muted);
-  white-space: nowrap;
-  flex-shrink: 1;
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--bg-subtle);
-}
-
-.leader-pill-1st {
-  color: var(--fg);
-  border-color: var(--border);
-}
-
-.leader-pill-1st .leader-pill-ord {
-  color: var(--tag-yellow);
-}
-
-.leader-pill-crown {
-  display: inline-flex;
-  flex-shrink: 0;
-}
-
-.leader-pill-crown svg {
-  width: 10px;
-  height: 10px;
-  color: var(--tag-yellow);
-}
-
-.leader-pill-ord {
-  font-size: 0.65rem;
-  font-weight: 700;
-  flex-shrink: 0;
-  color: var(--fg-muted);
-}
-
-.leader-pill-icon {
-  display: inline-flex;
-  flex-shrink: 0;
-}
-
-.leader-pill-icon svg {
-  width: 10px;
-  height: 10px;
-}
-
-.leader-pill-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .day-section.past .day-header-label {
   color: var(--fg-muted);
 }
@@ -172,13 +111,6 @@
 
 .day-section:not(.expanded) .day-content {
   height: 0;
-}
-
-/* Mobile: only show 1st-place pill */
-@media (max-width: 1024px) {
-  .leader-pill:not(.leader-pill-1st) {
-    display: none;
-  }
 }
 
 /* Two-column layout from tablet up */

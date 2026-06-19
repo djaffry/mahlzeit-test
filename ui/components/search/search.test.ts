@@ -24,9 +24,10 @@ vi.mock("../../utils/dom", () => ({
   highlightMatch: (text: string) => text,
 }))
 
-vi.mock("../../utils/today", () => ({
-  todayIso: () => "2026-04-22", // Wednesday
-}))
+vi.mock("../../app-config", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../app-config")>()
+  return { ...actual, todayIso: () => "2026-04-22" } // Wednesday
+})
 
 const mockGetActiveFilters = vi.fn<() => Set<string> | null>()
 

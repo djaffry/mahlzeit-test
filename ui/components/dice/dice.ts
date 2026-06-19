@@ -1,7 +1,7 @@
 import "./dice.css"
 import type { Restaurant } from "../../types"
 import { isAvailableOnDay, isDataFromCurrentWeek, isWeekend, isoToWeekdayIndex } from "../../utils/date"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 import { prefersReducedMotion, persistentHighlight } from "../../utils/dom"
 import { haptic } from "../../utils/haptic"
 import { isArchiveMode } from "../../archive/archive"

@@ -36,13 +36,6 @@ export interface MenuItem {
   allergens: string | null
 }
 
-export interface Voter {
-  color: string
-  label: string
-  iconSvg: string
-  isSelf: boolean
-}
-
 export interface TagHierarchy {
   tags: string[]
   hierarchy: Record<string, string[]>

@@ -1,11 +1,14 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 
 vi.mock("../../utils/dom", () => ({ flashAndScroll: vi.fn() }))
-vi.mock("../../utils/today", () => ({ todayIso: vi.fn(() => "2026-04-20") })) // Monday = index 0
+vi.mock("../../app-config", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../app-config")>()
+  return { ...actual, todayIso: vi.fn(() => "2026-04-20") } // Monday = index 0
+})
 
 import { handleDeepLink } from "./deep-link"
 import { flashAndScroll } from "../../utils/dom"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 
 const mockExpandDay = vi.fn()
 

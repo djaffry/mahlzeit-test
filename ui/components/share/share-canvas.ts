@@ -1,9 +1,6 @@
-import { FONT_STACK, COLOR_MOCHA, COLOR_LATTE } from "../../utils/canvas"
+import { FONT_STACK, COLOR_MOCHA, COLOR_LATTE } from "./canvas"
 import { svgToImage } from "../../utils/dom"
-import { getIdentity } from "../../voting/user-identity"
-import { avatarToImage } from "../../voting/avatars"
 import { getEffectiveTheme } from "../theme-toggle/theme-toggle"
-import type { Avatar } from "../../voting/types"
 import type { ShareSelectionData, ShareSection, ShareDayGroup } from "./share-types"
 import { formatDayLabel, formatBadges } from "./share-format"
 
@@ -50,16 +47,7 @@ export async function renderShareImage(data: ShareSelectionData): Promise<HTMLCa
 
   ctx.fillStyle = COLOR.bg
   ctx.fillRect(0, 0, CANVAS_WIDTH, height)
-  const { avatarDraw } = layoutCanvas(ctx, data, true)
-
-  if (avatarDraw) {
-    const { avatar, x, y, size } = avatarDraw
-    const iconSize = Math.round(size * 0.6)
-    try {
-      const img = await avatarToImage(avatar, iconSize * 2)
-      ctx.drawImage(img, x - iconSize / 2, y - iconSize / 2, iconSize, iconSize)
-    } catch { /* icon render failed, circle is still visible */ }
-  }
+  layoutCanvas(ctx, data, true)
 
   return canvas
 }
@@ -72,12 +60,8 @@ function applyTheme(): void {
   logoImage = isLatte ? logoImageLight : logoImageDark
 }
 
-type AvatarDraw = { avatar: Avatar; x: number; y: number; size: number }
-
-function drawHeader(ctx: CanvasRenderingContext2D, draw: boolean, y: number): { y: number; avatarDraw: AvatarDraw | null } {
+function drawHeader(ctx: CanvasRenderingContext2D, draw: boolean, y: number): { y: number } {
   const x = PADDING
-  const rightX = CANVAS_WIDTH - PADDING
-  let avatarDraw: AvatarDraw | null = null
 
   const identX = x + LOGO_SIZE + 14
   if (draw && logoImage) ctx.drawImage(logoImage, x, y + 2, LOGO_SIZE, LOGO_SIZE)
@@ -88,29 +72,7 @@ function drawHeader(ctx: CanvasRenderingContext2D, draw: boolean, y: number): { 
   setFont(ctx, '400 13px')
   if (draw) { ctx.fillStyle = COLOR.muted; ctx.fillText(headerSubtitle, identX, y + 36) }
 
-  const identity = getIdentity()
-  if (identity) {
-    const avatarSize = 28
-    setFont(ctx, '500 11px')
-    const label = ellipsize(ctx, identity.avatar.label, 100)
-    const labelWidth = ctx.measureText(label).width
-    const groupW = Math.max(avatarSize, labelWidth)
-    const avatarCx = rightX - groupW / 2
-    const avatarCy = y + 12
-
-    if (draw) {
-      ctx.beginPath()
-      ctx.arc(avatarCx, avatarCy, avatarSize / 2, 0, Math.PI * 2)
-      ctx.fillStyle = identity.avatar.color
-      ctx.fill()
-      avatarDraw = { avatar: identity.avatar, x: avatarCx, y: avatarCy, size: avatarSize }
-
-      ctx.fillStyle = COLOR.muted
-      ctx.fillText(label, avatarCx - labelWidth / 2, avatarCy + avatarSize / 2 + 13)
-    }
-  }
-
-  return { y: y + 52, avatarDraw }
+  return { y: y + 52 }
 }
 
 function drawMenuItem(
@@ -250,7 +212,7 @@ function drawDayGroup(
   return { y }
 }
 
-function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, draw: boolean): { height: number; avatarDraw: AvatarDraw | null } {
+function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, draw: boolean): { height: number } {
   let y = PADDING
 
   const header = drawHeader(ctx, draw, y)
@@ -260,7 +222,7 @@ function layoutCanvas(ctx: CanvasRenderingContext2D, data: ShareSelectionData, d
     ;({ y } = drawDayGroup(ctx, dayGroup, draw, y))
   }
 
-  return { height: y + PADDING, avatarDraw: header.avatarDraw }
+  return { height: y + PADDING }
 }
 
 function createLogoImage(
@@ -305,15 +267,6 @@ function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number)
   }
   if (currentLine) lines.push(currentLine)
   return lines
-}
-
-function ellipsize(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string {
-  if (ctx.measureText(text).width <= maxWidth) return text
-  for (let i = text.length - 1; i > 0; i--) {
-    const truncated = text.slice(0, i) + '…'
-    if (ctx.measureText(truncated).width <= maxWidth) return truncated
-  }
-  return '…'
 }
 
 function roundRectPath(

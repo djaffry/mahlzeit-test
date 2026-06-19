@@ -45,10 +45,8 @@ import {
   Link,
   LogOut,
   Copy,
-  Heart,
   History,
   ArrowLeft,
-  Disc3,
   TreePine,
   Pin,
 } from "lucide"
@@ -111,7 +109,6 @@ export const icons = {
   bean: svg(Bean, 16),
   crown: svg(Crown, 16),
   "tree-pine": svg(TreePine, 16),
-  heart: svg(Heart, 16),
   history: svg(History, 18),
   arrowLeft: svg(ArrowLeft, 14),
   checkSmall: svg(Check, 12, 2.5),
@@ -122,7 +119,6 @@ export const icons = {
   link: svg(Link, 14),
   logOut: svg(LogOut, 14),
   copy: svg(Copy, 14),
-  disc3: svg(Disc3, 14),
   pin: svg(Pin, 16),
 } as const
 

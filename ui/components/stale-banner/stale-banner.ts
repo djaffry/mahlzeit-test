@@ -3,7 +3,7 @@ import { escapeHtml } from "../../utils/dom"
 import { t } from "../../i18n/i18n"
 import { icons } from "../../icons"
 import { isDataFromCurrentWeek, isWeekend } from "../../utils/date"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 import { getArchiveWeek, exitArchive, formatWeekLabel, isArchiveMode } from "../../archive/archive"
 import type { Restaurant } from "../../types"
 

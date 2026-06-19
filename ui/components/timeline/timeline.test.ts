@@ -1,6 +1,5 @@
 import { describe, it, expect, vi, beforeEach, beforeAll } from "vitest"
 import type { Restaurant } from "../../types"
-import type { VoteMapEntry } from "../../voting/types"
 
 /* ── Mocks ──────────────────────────────────────────────── */
 
@@ -12,7 +11,7 @@ vi.mock("../../i18n/i18n", () => ({
 }))
 
 vi.mock("../../icons", () => ({
-  icons: { chevronRight: "<svg>▶</svg>", crown: "<svg>♛</svg>" },
+  icons: { chevronRight: "<svg>▶</svg>" },
   restaurantIconSpan: (icon?: string) => `<span class="restaurant-icon">${icon ?? "utensils"}</span>`,
 }))
 
@@ -25,9 +24,10 @@ vi.mock("../../utils/date", () => {
   }
 })
 
-vi.mock("../../utils/today", () => ({
-  todayIso: () => "2026-04-22",
-}))
+vi.mock("../../app-config", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../app-config")>()
+  return { ...actual, todayIso: () => "2026-04-22" }
+})
 
 vi.mock("../../utils/dom", () => ({
   smoothScrollTo: vi.fn(),
@@ -35,17 +35,11 @@ vi.mock("../../utils/dom", () => ({
 }))
 
 vi.mock("../restaurant-section/restaurant-section", () => ({
-  renderRestaurantSection: (opts: { restaurant: Restaurant; voteCount: number; userVoted: boolean; dayIndex: number }) => {
-    const votedClass = opts.userVoted ? " voted" : ""
-    const activeClass = opts.voteCount > 0 ? " vote-active" : ""
-    const countStr = opts.voteCount > 0 ? `<span class="vote-count">${opts.voteCount}</span>` : ""
-    return `<section class="restaurant-section"><button class="vote-btn${votedClass}${activeClass}" data-vote-id="${opts.restaurant.id}"><span class="vote-check">♥</span>${countStr}</button>${opts.restaurant.title}</section>`
-  },
-  renderVoterDots: (voters: unknown[]) =>
-    voters.length ? `<span class="voter-dots">${voters.length}</span>` : "",
+  renderRestaurantSection: (opts: { restaurant: Restaurant; dayIndex: number }) =>
+    `<section class="restaurant-section" data-restaurant-id="${opts.restaurant.id}">${opts.restaurant.title}</section>`,
 }))
 
-import { renderTimeline, expandDay, collapseAllExceptToday, rerenderExpandedDays, updateVotes } from "./timeline"
+import { renderTimeline, expandDay, collapseAllExceptToday, rerenderExpandedDays } from "./timeline"
 
 /* ── Helpers ────────────────────────────────────────────── */
 
@@ -69,18 +63,6 @@ function makeWeekDates(): Date[] {
   })
 }
 
-function emptyVotes(): Map<string, VoteMapEntry> {
-  return new Map()
-}
-
-function makeVotes(entries: Record<string, Partial<VoteMapEntry>>): Map<string, VoteMapEntry> {
-  const map = new Map<string, VoteMapEntry>()
-  for (const [id, partial] of Object.entries(entries)) {
-    map.set(id, { count: 0, userVoted: false, voters: [], ...partial })
-  }
-  return map
-}
-
 /* ── Tests ──────────────────────────────────────────────── */
 
 // Use a single stable element so the module-level event listener stays attached
@@ -101,9 +83,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       const sections = el.querySelectorAll(".day-section")
@@ -114,9 +94,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       // Today is 2026-04-22 = index 2 (Wednesday)
@@ -128,9 +106,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant({ title: "Schnitzelhaus" })],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       // Today (index 2) is expanded — check its content
@@ -142,9 +118,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       const secondDayContent = el.querySelector(".day-section[data-day-index='1'] .day-content")
@@ -157,9 +131,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       const secondHeader = el.querySelector(".day-header[data-day-index='1']") as HTMLElement
@@ -173,9 +145,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       // Today (index 2) is expanded by default — click it to collapse
@@ -192,9 +162,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       expandDay(3)
@@ -209,9 +177,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       // Expand days 0 and 1
@@ -232,9 +198,7 @@ describe("timeline", () => {
       renderTimeline(el, {
         restaurants: [makeRestaurant()],
         weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
         getFilters: () => null,
-        onVote: vi.fn(),
       })
 
       expect(() => rerenderExpandedDays()).not.toThrow()
@@ -243,84 +207,4 @@ describe("timeline", () => {
     })
   })
 
-  describe("vote delegation", () => {
-    it("calls onVote when vote button is clicked", () => {
-      const onVote = vi.fn()
-      renderTimeline(el, {
-        restaurants: [makeRestaurant({ id: "pizza1" })],
-        weekDates: makeWeekDates(),
-        getVotes: () => emptyVotes(),
-        getFilters: () => null,
-        onVote,
-      })
-
-      // Today (index 2) is expanded — vote button is visible
-      const voteBtn = el.querySelector(".day-section[data-day-index='2'] .vote-btn") as HTMLElement
-      if (voteBtn) {
-        voteBtn.click()
-        expect(onVote).toHaveBeenCalledWith("pizza1", 2)
-      }
-    })
-  })
-
-  describe("updateVotes", () => {
-    it("updates vote counts in the DOM", () => {
-      let votes = emptyVotes()
-      renderTimeline(el, {
-        restaurants: [makeRestaurant({ id: "r1" })],
-        weekDates: makeWeekDates(),
-        getVotes: () => votes,
-        getFilters: () => null,
-        onVote: vi.fn(),
-      })
-
-      // Now update with a vote
-      votes = makeVotes({ r1: { count: 3, userVoted: true, voters: [] } })
-      updateVotes()
-
-      const voteBtn = el.querySelector(".vote-btn[data-vote-id='r1']")
-      expect(voteBtn?.classList.contains("voted")).toBe(true)
-      expect(voteBtn?.querySelector(".vote-count")?.textContent).toBe("3")
-    })
-
-    it("removes vote count when votes drop to zero", () => {
-      let votes = makeVotes({ r1: { count: 2 } })
-      renderTimeline(el, {
-        restaurants: [makeRestaurant({ id: "r1" })],
-        weekDates: makeWeekDates(),
-        getVotes: () => votes,
-        getFilters: () => null,
-        onVote: vi.fn(),
-      })
-
-      votes = makeVotes({ r1: { count: 0 } })
-      updateVotes()
-
-      const voteBtn = el.querySelector(".vote-btn[data-vote-id='r1']")
-      expect(voteBtn?.querySelector(".vote-count")).toBeNull()
-    })
-  })
-
-  describe("leader pills", () => {
-    it("shows leader pills on collapsed days with votes", () => {
-      renderTimeline(el, {
-        restaurants: [
-          makeRestaurant({ id: "r1", title: "Pizza Place", icon: "pizza" }),
-          makeRestaurant({ id: "r2", title: "Burger Joint", icon: "burger" }),
-        ],
-        weekDates: makeWeekDates(),
-        getVotes: (dayIndex: number) =>
-          dayIndex === 1
-            ? makeVotes({ r1: { count: 5 }, r2: { count: 2 } })
-            : emptyVotes(),
-        getFilters: () => null,
-        onVote: vi.fn(),
-      })
-
-      // Day 1 is collapsed - should show leader pills in the count area
-      const countEl = el.querySelector(".day-section[data-day-index='1'] .day-header-count")
-      expect(countEl?.innerHTML).toContain("leader-pill")
-      expect(countEl?.innerHTML).toContain("Pizza Place")
-    })
-  })
 })

@@ -3,7 +3,7 @@ import type { Restaurant } from "../../types"
 import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml, highlightMatch, registerOverlay, unregisterOverlay } from "../../utils/dom"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 import { isoToWeekdayIndex } from "../../utils/date"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 

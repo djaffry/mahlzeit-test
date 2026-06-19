@@ -1,9 +1,5 @@
 import { describe, it, expect, afterEach, vi } from "vitest"
 
-vi.mock("../../voting/init", () => ({
-  getActiveRoomPayload: () => null,
-}))
-
 import { buildDeepLink } from "./share-export"
 
 const originalLocation = window.location

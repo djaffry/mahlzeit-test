@@ -3,7 +3,7 @@ import { LANG_CHANGE_EVENT } from "../constants"
 import type { Restaurant } from "../types"
 
 import { fetchMenuData, fetchLanguages } from "../data/fetcher"
-import { isArchiveMode, getArchiveWeekDates } from "../archive/archive"
+import { getArchiveWeekDates } from "../archive/archive"
 import {
   initI18n,
   getCurrentLanguage,
@@ -21,31 +21,17 @@ import {
   dateToIso,
   isoToWeekdayIndex,
 } from "../utils/date"
-import { todayIso } from "../utils/today"
+import { todayIso } from "../app-config"
 import { smoothScrollTo, isDesktop, isOverlayOpen } from "../utils/dom"
-import { initTabBadge, onVoteReceived } from "../utils/tab-badge"
 
-import {
-  initVoting,
-  acceptVoting,
-  isVotingActive,
-  getVoteMap,
-  setOnVoteChange,
-  getJoinResult,
-  getActiveRoom,
-  getTodayVoteDate,
-} from "../voting/init"
-import { markSaved, hasPending } from "../voting/vote-indicator"
 import { icons } from "../icons"
 import { closeAllOverlays } from "../components/overlay/overlay"
-import { showConsentOverlay, isConsentSeen, markConsentSeen } from "../voting/consent"
 import { showShortcutsModal } from "../components/shortcuts-modal/shortcuts-modal"
 import { updateStaleBanner } from "../components/stale-banner/stale-banner"
 import { renderFooter } from "../components/footer/footer"
 import { setupHeaderScroll } from "../components/header-scroll/header-scroll"
 import { handleDeepLink } from "../components/deep-link/deep-link"
-import { showAvatarBadge } from "../components/avatar-badge/avatar-badge"
-import { renderTimeline, expandDay, collapseAllExceptToday, rerenderExpandedDays, updateVotes } from "../components/timeline/timeline"
+import { renderTimeline, expandDay, collapseAllExceptToday, rerenderExpandedDays } from "../components/timeline/timeline"
 import { setupMoreMenu, closeMenu } from "../components/more-menu/more-menu"
 import {
   loadFilters,
@@ -66,14 +52,12 @@ import { createSidebarToc, updateTocRestaurants, updateTocLanguage, refreshObser
 import { setupMapPanel, toggleMapPanel, closeMapPanel, updateMapRestaurants, isMapPanelOpen, flyToRestaurant } from "../components/map-panel/map-panel"
 import { setup as setupShare, isActive as isShareActive, SHARE_PANEL_EVENT } from "../components/share/share"
 import { getShareSelectionData } from "../components/share/share-data"
-import { openVotingRoomsPanel } from "../components/voting-rooms-panel/voting-rooms-panel"
 import { setup as diceSetup, roll as diceRoll, isAvailable as isDiceAvailable } from "../components/dice/dice"
 
 import { setupKeyboard } from "./keyboard"
 import { registerSearchKeyboard } from "../components/search/search.keyboard"
 import { registerMapKeyboard } from "../components/map-panel/map-panel.keyboard"
 import { registerDiceKeyboard } from "../components/dice/dice.keyboard"
-import { createToggleVote } from "./voting-flow"
 
 /* ── State ───────────────────────────────────────────────── */
 
@@ -99,7 +83,6 @@ function onDayRender(): void {
 
 function updateTitle(): void {
   document.title = `${config.title} - ${config.subtitle}`
-  initTabBadge(document.title)
 }
 
 function applyLanguageUI(): void {
@@ -130,14 +113,6 @@ function updateAriaLabels(): void {
   if (input) input.placeholder = t("search.placeholder")
 }
 
-/* ── Voting ──────────────────────────────────────────────── */
-
-const toggleVote = createToggleVote({
-  rerender,
-  updateVotes,
-  openVotingRoomsPanel,
-})
-
 /* ── Render ──────────────────────────────────────────────── */
 
 function rerender(): void {
@@ -147,9 +122,7 @@ function rerender(): void {
   renderTimeline(timelineEl, {
     restaurants: _restaurants,
     weekDates,
-    getVotes: getVoteMap,
     getFilters: getActiveFilters,
-    onVote: toggleVote,
     onDayRender,
   })
 }
@@ -213,45 +186,6 @@ function setupFilterTrigger(): void {
     filterTrigger.innerHTML = icons.filter
     filterTrigger.addEventListener("click", () => openFilterSelector())
   }
-}
-
-function showAcceptConsent(): void {
-  showConsentOverlay({ onAccept: acceptVoting })
-}
-
-function openVotingRoomsOrConsent(): void {
-  if (isArchiveMode()) return
-  if (isVotingActive()) openVotingRoomsPanel()
-  else showAcceptConsent()
-}
-
-function setupVotingUI(): void {
-  setOnVoteChange((changedDate) => {
-    const hadPending = hasPending()
-    updateVotes()
-    showAvatarBadge()
-    if (hadPending) markSaved()
-
-    if (changedDate !== null) {
-      const isForToday = changedDate === getTodayVoteDate()
-      onVoteReceived(isForToday, hadPending)
-    }
-  })
-  document.getElementById("avatar-badge")?.addEventListener("click", openVotingRoomsOrConsent)
-  document.addEventListener(LANG_CHANGE_EVENT, showAvatarBadge)
-  initVoting(() => _restaurants).then(() => {
-    showAvatarBadge()
-    const joinResult = getJoinResult()
-    if (joinResult && isVotingActive()) {
-      openVotingRoomsPanel({ banner: joinResult })
-    } else if (!isVotingActive() && (joinResult || !isConsentSeen())) {
-      markConsentSeen()
-      showAcceptConsent()
-    }
-  }).catch((err) => {
-    console.warn("[voting] init failed:", err)
-    showAvatarBadge()
-  })
 }
 
 function setupDesktopUI(weekDates: Date[]): void {
@@ -330,7 +264,6 @@ export async function initApp(): Promise<void> {
         onMap: toggleMapPanel,
         onDice: diceRoll,
         isDiceAvailable,
-        onVotingRooms: openVotingRoomsOrConsent,
         onTheme: cycleTheme,
         onFeedback: () => window.open("https://github.com/djaffry/mahlzeit-test/issues/new/choose", "_blank"),
         onShortcuts: showShortcutsModal,
@@ -358,9 +291,6 @@ export async function initApp(): Promise<void> {
       }
     }) as EventListener)
 
-    if (!isArchiveMode()) {
-      setupVotingUI()
-    }
     setupDesktopUI(weekDates)
 
     diceSetup({ getAllRestaurants: () => _restaurants, expandDay })
@@ -374,7 +304,6 @@ export async function initApp(): Promise<void> {
       expandDay,
       collapseAllExceptToday,
       openFilterSelector,
-      openVotingRoomsPanel: openVotingRoomsOrConsent,
       cycleTheme,
       showShortcutsModal,
       switchLanguage,

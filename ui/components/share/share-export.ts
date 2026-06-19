@@ -1,8 +1,6 @@
 import { isoToWeekdayIndex } from "../../utils/date"
 import { t } from "../../i18n/i18n"
-import { exportImage as coreExportImage } from "../../utils/canvas"
-import { getIdentity } from "../../voting/user-identity"
-import { getActiveRoomPayload } from "../../voting/init"
+import { exportImage as coreExportImage } from "./canvas"
 import { getArchiveWeek } from "../../archive/archive"
 import { formatDayLabel } from "./share-format"
 import type { ShareSelectionData, ShareSection } from "./share-types"
@@ -45,12 +43,6 @@ export function formatAsText(data: ShareSelectionData): string {
   const sections = allSections(data)
   const restaurantIds = sections.map(s => s.restaurant)
   lines.push(buildDeepLink(restaurantIds, data.days[0]?.day ?? ''))
-
-  const identity = getIdentity()
-  if (identity) {
-    lines.push('')
-    lines.push('- ' + identity.avatar.label)
-  }
 
   return lines.join('\n')
 }
@@ -124,10 +116,6 @@ export function buildDeepLink(restaurantIds: string[], dateIso: string): string 
     const idx = isoToWeekdayIndex(dateIso)
     if (idx >= 0) params.set('d', String(idx))
   }
-  try {
-    const roomPayload = getActiveRoomPayload()
-    if (roomPayload) params.set('room', roomPayload)
-  } catch { /* no active room */ }
   const qs = params.toString()
   return qs ? `${base}?${qs}` : base
 }

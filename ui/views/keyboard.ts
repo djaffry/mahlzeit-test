@@ -5,7 +5,6 @@ export interface KeyboardDeps {
   expandDay: (index: number) => void
   collapseAllExceptToday: () => void
   openFilterSelector: () => void
-  openVotingRoomsPanel: () => void
   cycleTheme: () => void
   showShortcutsModal: () => void
   switchLanguage: () => void
@@ -44,7 +43,6 @@ export function setupKeyboard(deps: KeyboardDeps): void {
   })
 
   registerShortcut({ key: "f", handler: () => deps.openFilterSelector(), label: "Filters" })
-  registerShortcut({ key: "v", handler: () => deps.openVotingRoomsPanel(), label: "Voting rooms" })
   registerShortcut({ key: "t", handler: () => deps.cycleTheme(), label: "Theme" })
 
   // Escape without overlay: collapse to today

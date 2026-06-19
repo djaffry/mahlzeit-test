@@ -1,12 +1,11 @@
 import "./restaurant-section.css"
 import "../favorites/favorites.css"
-import type { Restaurant, DayMenu, Voter } from "../../types"
+import type { Restaurant, DayMenu } from "../../types"
 import { BADGES } from "../../constants"
 import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml } from "../../utils/dom"
 import { isAvailableOnDay, formatAvailableDays } from "../../utils/date"
-import { isArchiveMode } from "../../archive/archive"
 import { renderItem } from "../menu-item/menu-item"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 
@@ -46,28 +45,9 @@ function renderCategories(menu: DayMenu, filters: Set<string> | null): string {
     .join("")
 }
 
-const MAX_VOTER_DOTS = 5
-
-export function renderVoterDots(voters: Voter[]): string {
-  if (voters.length === 0) return ""
-  const visible = voters.slice(0, MAX_VOTER_DOTS)
-  const overflow = voters.length - visible.length
-  const dots = visible
-    .map((v) => {
-      const selfClass = v.isSelf ? " voter-dot-self" : ""
-      return `<span class="voter-dot${selfClass}" style="--voter-color:${escapeHtml(v.color)}" title="${escapeHtml(v.label)}">${v.iconSvg}</span>`
-    })
-    .join("")
-  const overflowStr = overflow > 0 ? `<span class="voter-dot-overflow">+${overflow}</span>` : ""
-  return `<span class="voter-dots">${dots}${overflowStr}</span>`
-}
-
 export interface RenderSectionOptions {
   restaurant: Restaurant
   dayMenu: DayMenu | undefined
-  voteCount: number
-  userVoted: boolean
-  voters?: Voter[]
   dayIndex?: number
   dateIso?: string
   filters?: Set<string> | null
@@ -75,19 +55,11 @@ export interface RenderSectionOptions {
 }
 
 export function renderRestaurantSection(opts: RenderSectionOptions): string {
-  const { restaurant, dayMenu, voteCount, userVoted, voters = [], dayIndex, dateIso, filters = null, isPinned = false } = opts
+  const { restaurant, dayMenu, dayIndex, dateIso, filters = null, isPinned = false } = opts
   const sectionId = dayIndex != null ? `r-${dayIndex}-${escapeHtml(restaurant.id)}` : `r-${escapeHtml(restaurant.id)}`
   const iconSvg = restaurantIconSpan(restaurant.icon)
   const available = !dateIso || isAvailableOnDay(restaurant, dateIso)
 
-  const hasVotes = voteCount > 0
-  const voteClass = [
-    "vote-btn",
-    userVoted ? "voted" : "",
-    hasVotes ? "vote-active" : "",
-  ].filter(Boolean).join(" ")
-  const countStr = hasVotes ? `<span class="vote-count">${voteCount}</span>` : ""
-  const voterDotsStr = renderVoterDots(voters)
   const mapBtn = restaurant.coordinates
     ? `<button class="icon-btn map-fly-btn" data-fly-id="${escapeHtml(restaurant.id)}" aria-label="${escapeHtml(t("map.showOnMap"))}" title="${escapeHtml(t("map.showOnMap"))}">${icons.mapPin}</button>`
     : ""
@@ -96,17 +68,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
     ? `${escapeHtml(t("favorites.unpin"))} ${escapeHtml(restaurant.title)}`
     : `${escapeHtml(t("favorites.pin"))} ${escapeHtml(restaurant.title)}`
   const pinBtn = `<button class="${pinClass}" data-pin-id="${escapeHtml(restaurant.id)}" aria-label="${pinAriaLabel}">${icons.pin}</button>`
-  const voteAriaLabel = hasVotes
-    ? `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}, ${voteCount} ${voteCount === 1 ? "vote" : "votes"}`
-    : `${escapeHtml(t("voting.voteFor"))} ${escapeHtml(restaurant.title)}`
-  const canVote = dayIndex != null && available && !isArchiveMode()
-  const voteBtn = canVote
-    ? `<button class="${voteClass}" data-vote-id="${escapeHtml(restaurant.id)}" aria-label="${voteAriaLabel}">
-          <span class="vote-check">${icons.heart}</span>
-          ${countStr}
-          ${voterDotsStr}
-        </button>`
-    : ""
 
   const availabilityTag = restaurant.availableDays?.length
     ? `<span class="availability-tag">${escapeHtml(formatAvailableDays(restaurant.availableDays))}</span>`
@@ -126,7 +87,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         <div class="restaurant-actions">
           ${mapBtn}
           ${pinBtn}
-          ${voteBtn}
         </div>
       </div>
       ${renderBadges(restaurant)}
@@ -160,7 +120,6 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         <div class="restaurant-actions">
           ${mapBtn}
           ${pinBtn}
-          ${voteBtn}
         </div>
       </div>
       ${renderBadges(restaurant)}

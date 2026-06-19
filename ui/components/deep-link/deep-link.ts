@@ -1,5 +1,5 @@
 import { flashAndScroll } from "../../utils/dom"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 import { isoToWeekdayIndex } from "../../utils/date"
 
 export function handleDeepLink(deps: { expandDay: (index: number) => void }): void {

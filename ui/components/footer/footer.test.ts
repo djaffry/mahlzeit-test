@@ -7,9 +7,6 @@ vi.mock("../../i18n/i18n", () => ({
   t: (key: string, params?: Record<string, string>) =>
     params ? `${key}:${Object.values(params).join(",")}` : key,
 }))
-vi.mock("../../icons", () => ({
-  icons: { disc3: '<svg class="disc3"/>' },
-}))
 vi.mock("../../utils/date", () => ({
   formatDateTime: (d: Date) => d.toISOString(),
 }))
@@ -17,12 +14,10 @@ vi.mock("../../utils/date", () => ({
 import { renderFooter } from "./footer"
 
 describe("renderFooter", () => {
-  it("renders loaded time and party toggle button", () => {
+  it("renders loaded time", () => {
     const el = document.createElement("div")
     renderFooter(null, el)
     expect(el.innerHTML).toContain("footer.loaded")
-    expect(el.querySelector(".party-toggle")).not.toBeNull()
-    expect(el.querySelector("#party-toggle")).not.toBeNull()
   })
 
   it("renders fetch time when provided", () => {

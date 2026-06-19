@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { todayIso } from './today';
-import { appConfig } from '../app-config';
+import { todayIso, appConfig } from '../app-config';
 
 describe('todayIso', () => {
   // Assertions below are written for the committed Europe/Vienna config.

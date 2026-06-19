@@ -1,10 +1,10 @@
 import { describe, it, expect, vi } from "vitest"
-import type { Restaurant, DayMenu, Voter } from "../../types"
+import type { Restaurant, DayMenu } from "../../types"
 
 vi.mock("./restaurant-section.css", () => ({}))
 vi.mock("../favorites/favorites.css", () => ({}))
 vi.mock("../../icons", () => ({
-  icons: { externalLink: "<svg>ext</svg>", mapPin: "<svg>pin</svg>", heart: "<svg>heart</svg>", pin: "<svg>thumbtack</svg>" },
+  icons: { externalLink: "<svg>ext</svg>", mapPin: "<svg>pin</svg>", pin: "<svg>thumbtack</svg>" },
   restaurantIconSpan: (icon?: string) => `<span class="restaurant-icon">${icon ?? "utensils"}</span>`,
 }))
 vi.mock("../../i18n/i18n", () => ({ t: (k: string) => k }))
@@ -40,7 +40,7 @@ describe("renderRestaurantSection", () => {
       { title: "Schnitzel", tags: ["meat"] },
       { title: "Salad", tags: ["vegan"] },
     ])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, voters: [], dayIndex: 0, filters: null })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, filters: null })
     expect(html).toContain("Schnitzel")
     expect(html).toContain("Salad")
   })
@@ -51,7 +51,7 @@ describe("renderRestaurantSection", () => {
       { title: "Schnitzel", tags: ["meat"] },
       { title: "Salad", tags: ["vegan"] },
     ])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, voters: [], dayIndex: 0, filters: new Set(["vegan"]) })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, filters: new Set(["vegan"]) })
     expect(html).not.toContain("Schnitzel")
     expect(html).toContain("Salad")
   })
@@ -62,7 +62,7 @@ describe("renderRestaurantSection", () => {
       { title: "Daily Special", tags: [] },
       { title: "Steak", tags: ["meat"] },
     ])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, voters: [], dayIndex: 0, filters: new Set(["vegan"]) })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, filters: new Set(["vegan"]) })
     expect(html).toContain("Daily Special")
     expect(html).not.toContain("Steak")
   })
@@ -72,14 +72,14 @@ describe("renderRestaurantSection", () => {
     const menu = makeMenu([
       { title: "Steak", tags: ["meat"] },
     ])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, voters: [], dayIndex: 0, filters: new Set(["vegan"]) })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, filters: new Set(["vegan"]) })
     expect(html).toBe("")
   })
 
   it("renders pin button when isPinned is false", () => {
     const r = makeRestaurant()
     const menu = makeMenu([{ title: "Dish", tags: [] }])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: false })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, isPinned: false })
     expect(html).toContain('class="pin-btn"')
     expect(html).not.toContain('pin-btn pinned')
   })
@@ -87,20 +87,20 @@ describe("renderRestaurantSection", () => {
   it("renders pin button with pinned class when isPinned is true", () => {
     const r = makeRestaurant()
     const menu = makeMenu([{ title: "Dish", tags: [] }])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: true })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0, isPinned: true })
     expect(html).toContain('pin-btn pinned')
   })
 
   it("renders pin button on link cards too", () => {
     const r = makeRestaurant({ type: "link" })
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0, isPinned: false })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, dayIndex: 0, isPinned: false })
     expect(html).toContain('pin-btn')
   })
 
   it("no longer renders the old header icon link button", () => {
     const r = makeRestaurant()
     const menu = makeMenu([{ title: "Dish", tags: [] }])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0 })
     expect(html).not.toContain('class="restaurant-website-link"')
   })
 
@@ -113,7 +113,7 @@ describe("renderRestaurantSection", () => {
   ])("renders bottom anchor with target/rel and the $expectedLabel label when type=$type and dayMenu=$dayMenu", ({ type, dayMenu, expectedLabel }) => {
     const r = makeRestaurant({ type, url: "https://example.com/x" })
     const menu = dayMenu === "present" ? makeMenu([{ title: "Dish", tags: [] }]) : undefined
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0 })
     expect(html).toContain('<a class="restaurant-website-link-text" href="https://example.com/x"')
     expect(html).toContain('target="_blank"')
     expect(html).toContain('rel="noopener noreferrer"')
@@ -122,7 +122,7 @@ describe("renderRestaurantSection", () => {
 
   it("falls back to a span when restaurant has no url", () => {
     const r = makeRestaurant({ type: "full", url: "" })
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0 })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, dayIndex: 0 })
     expect(html).toContain('<span class="restaurant-website-link-text">')
     expect(html).not.toContain('<a class="restaurant-website-link-text"')
   })
@@ -130,13 +130,13 @@ describe("renderRestaurantSection", () => {
   it("places the bottom website link after the menu categories on menu-showing cards", () => {
     const r = makeRestaurant({ url: "https://example.com/baz" })
     const menu = makeMenu([{ title: "Schnitzel", tags: [] }])
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, voteCount: 0, userVoted: false, dayIndex: 0 })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: 0 })
     expect(html.indexOf("restaurant-website-link-text")).toBeGreaterThan(html.indexOf("Schnitzel"))
   })
 
   it("includes the restaurant title in the bottom link's aria-label for screen readers", () => {
     const r = makeRestaurant({ type: "link", title: "Albasha", url: "https://example.com/a" })
-    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, voteCount: 0, userVoted: false, dayIndex: 0 })
+    const html = renderRestaurantSection({ restaurant: r, dayMenu: undefined, dayIndex: 0 })
     expect(html).toContain('aria-label="card.menuOnWebsite – Albasha"')
   })
 })

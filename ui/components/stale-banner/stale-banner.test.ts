@@ -7,9 +7,10 @@ vi.mock("../../utils/date", async (importOriginal) => {
     isDataFromCurrentWeek: vi.fn(() => true),
   }
 })
-vi.mock("../../utils/today", () => ({
-  todayIso: vi.fn(() => "2026-04-22"), // Wednesday (weekday)
-}))
+vi.mock("../../app-config", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("../../app-config")>()
+  return { ...actual, todayIso: vi.fn(() => "2026-04-22") } // Wednesday (weekday)
+})
 vi.mock("../../i18n/i18n", () => ({ t: (k: string) => k }))
 vi.mock("../../icons", () => ({ icons: { bird: "<svg>bird</svg>" } }))
 vi.mock("../../utils/dom", () => ({ escapeHtml: (s: string) => s }))
@@ -17,7 +18,7 @@ vi.mock("./stale-banner.css", () => ({}))
 
 import { updateStaleBanner } from "./stale-banner"
 import { isDataFromCurrentWeek } from "../../utils/date"
-import { todayIso } from "../../utils/today"
+import { todayIso } from "../../app-config"
 
 beforeEach(() => {
   document.body.innerHTML = `<div id="timeline"></div>`
