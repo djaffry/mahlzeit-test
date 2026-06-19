@@ -105,6 +105,71 @@
     opacity: 0.5;
   }
 
+  /* ── Pins-only toggle ─────────────────────────────────── */
+
+  .toc-pins-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--fg-secondary);
+    cursor: pointer;
+    margin-left: auto;
+    margin-bottom: var(--space-xs);
+    transition: background var(--duration-fast) ease,
+                color var(--duration-fast) ease,
+                border-color var(--duration-fast) ease;
+  }
+
+  .toc-pins-toggle:hover {
+    background: var(--bg-subtle);
+    color: var(--fg);
+  }
+
+  .toc-pins-toggle.active {
+    background: var(--tag-yellow);
+    color: #000;
+    border-color: var(--tag-yellow);
+  }
+
+  .toc-pins-toggle.active:hover {
+    opacity: 0.85;
+  }
+
+  .toc-pins-toggle svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* ── Pinned entry indicator ───────────────────────────── */
+
+  .toc-pinned {
+    color: var(--fg);
+  }
+
+  /* ── Pinned / unpinned divider ────────────────────────── */
+
+  .toc-pinned-divider {
+    display: block;
+    height: 1px;
+    background: var(--border);
+    margin: var(--space-xs) var(--space-sm);
+  }
+
+  /* ── Pins-only mode ───────────────────────────────────── */
+
+  .toc-pins-only a:not(.sidebar-toc-day):not(.toc-pinned) {
+    display: none !important;
+  }
+
+  .toc-pins-only .toc-pinned-divider {
+    display: none;
+  }
+
   .main-content {
     flex: 1;
     min-width: 0;

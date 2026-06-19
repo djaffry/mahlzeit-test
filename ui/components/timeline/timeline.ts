@@ -8,6 +8,7 @@ import { smoothScrollTo, escapeHtml } from "../../utils/dom"
 import { renderRestaurantSection } from "../restaurant-section/restaurant-section"
 import { sortWithFavorites, isFavorite, toggleFavorite } from "../favorites/favorites"
 import { haptic } from "../../utils/haptic"
+import { FAVORITES_CHANGE_EVENT } from "../../constants"
 
 export interface TimelineOptions {
   restaurants: Restaurant[]
@@ -195,6 +196,7 @@ function setupListeners(): void {
         haptic()
         toggleFavorite(restaurantId)
         rerenderExpandedDays()
+        document.dispatchEvent(new CustomEvent(FAVORITES_CHANGE_EVENT))
       }
       return
     }

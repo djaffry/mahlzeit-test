@@ -4,8 +4,12 @@ import { t } from "../../i18n/i18n"
 import { isAvailableOnDay, formatDayHeader, todayIndexInWeek, dateToIso } from "../../utils/date"
 import { todayIso } from "../../app-config"
 import { getRestaurantIcon } from "../../icons"
+import { icons } from "../../icons"
 import { escapeHtml, smoothScrollTo } from "../../utils/dom"
 import { sortWithFavorites } from "../favorites/favorites"
+import { isFavorite, hasFavorites } from "../favorites/favorites"
+
+const PINS_ONLY_KEY = "peckish:toc-pins-only"
 
 const _state = {
   expandDay: (() => {}) as (index: number) => void,
@@ -15,17 +19,61 @@ const _state = {
   lastTop: -1,
   lastBottom: -1,
   dayChildren: new Map<number, HTMLElement[]>(),
+  pinsOnly: false,
+  toggleBtn: null as HTMLButtonElement | null,
+}
+
+function loadPinsOnly(): boolean {
+  try {
+    return localStorage.getItem(PINS_ONLY_KEY) === "1"
+  } catch {
+    return false
+  }
+}
+
+function savePinsOnly(value: boolean): void {
+  try {
+    localStorage.setItem(PINS_ONLY_KEY, value ? "1" : "0")
+  } catch { /* ignore */ }
+}
+
+function updateToggleButton(): void {
+  if (!_state.toggleBtn) return
+  const label = _state.pinsOnly ? t("toc.showAll") : t("toc.pinsOnly")
+  _state.toggleBtn.title = label
+  _state.toggleBtn.setAttribute("aria-label", label)
+  _state.toggleBtn.classList.toggle("active", _state.pinsOnly)
+  // Show toggle only when there are favorites
+  _state.toggleBtn.style.display = hasFavorites() ? "" : "none"
 }
 
 export function createSidebarToc(weekDates: Date[], deps: { expandDay: (index: number) => void }): HTMLElement {
   _state.expandDay = deps.expandDay
+  _state.pinsOnly = loadPinsOnly()
   const nav = document.createElement("nav")
   nav.className = "sidebar-toc"
+  if (_state.pinsOnly) nav.classList.add("toc-pins-only")
   nav.id = "sidebar-toc"
   _state.tocEl = nav
   _state.lastTop = -1
   _state.lastBottom = -1
   _state.dayChildren.clear()
+
+  // Pins-only toggle button
+  const toggleBtn = document.createElement("button")
+  toggleBtn.className = "toc-pins-toggle"
+  toggleBtn.type = "button"
+  toggleBtn.innerHTML = icons.pinSmall
+  _state.toggleBtn = toggleBtn
+  updateToggleButton()
+  toggleBtn.addEventListener("click", () => {
+    _state.pinsOnly = !_state.pinsOnly
+    savePinsOnly(_state.pinsOnly)
+    nav.classList.toggle("toc-pins-only", _state.pinsOnly)
+    updateToggleButton()
+    updateViewportHighlight()
+  })
+  nav.appendChild(toggleBtn)
 
   const todayIdx = todayIndexInWeek(weekDates, todayIso())
 
@@ -82,25 +130,45 @@ export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[]
 
   const children: HTMLElement[] = []
   let insertAfter: Element = dayLink
+  let lastPinnedEl: Element | null = null
+  let pinnedCount = 0
+  let totalCount = 0
 
   for (const r of sortWithFavorites(restaurants)) {
     const hasMenu = !!(r.days?.[dateIso]?.categories?.length)
     const isLink = r.type === "link" && isAvailableOnDay(r, dateIso)
-    if (!hasMenu && !isLink) continue
+    const pinned = isFavorite(r.id)
+    if (!hasMenu && !isLink && !pinned) continue
+
+    totalCount++
+    if (pinned) pinnedCount++
 
     const a = document.createElement("a")
     a.href = `#r-${dayIndex}-${r.id}`
     a.dataset.tocDay = String(dayIndex)
     if (isLink && !hasMenu) a.className = "sidebar-toc-link-restaurant"
+    if (pinned) a.classList.add("toc-pinned")
     const iconName = r.icon ?? ""
     const iconSvg = getRestaurantIcon(iconName)
     a.innerHTML = `<span class="toc-restaurant-icon" data-icon="${escapeHtml(iconName)}">${iconSvg}</span>${escapeHtml(r.title)}`
     insertAfter.after(a)
     insertAfter = a
     children.push(a)
+    if (pinned) lastPinnedEl = a
+  }
+
+  // Insert a divider between pinned and unpinned entries
+  if (pinnedCount > 0 && pinnedCount < totalCount && lastPinnedEl) {
+    const divider = document.createElement("span")
+    divider.className = "toc-pinned-divider"
+    divider.dataset.tocDay = String(dayIndex)
+    lastPinnedEl.after(divider)
   }
 
   _state.dayChildren.set(dayIndex, children)
+
+  // Update toggle visibility (favorites may have changed)
+  updateToggleButton()
 }
 
 function updateViewportHighlight(): void {

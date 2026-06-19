@@ -80,5 +80,7 @@
   "tag.Fisch": "Fisch",
   "favorites.pin": "Anpinnen",
   "favorites.unpin": "Loslösen",
-  "favorites.others": "Weitere"
+  "favorites.others": "Weitere",
+  "toc.pinsOnly": "Nur Pins",
+  "toc.showAll": "Alle anzeigen"
 }

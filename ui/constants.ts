@@ -1,4 +1,5 @@
 export const LANG_CHANGE_EVENT = "peckish:langchange"
+export const FAVORITES_CHANGE_EVENT = "peckish:favchange"
 
 export const DESKTOP_MIN_WIDTH = 1025
 

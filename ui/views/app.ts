@@ -1,5 +1,5 @@
 import { config } from "../config"
-import { LANG_CHANGE_EVENT } from "../constants"
+import { LANG_CHANGE_EVENT, FAVORITES_CHANGE_EVENT } from "../constants"
 import type { Restaurant } from "../types"
 
 import { fetchMenuData, fetchLanguages } from "../data/fetcher"
@@ -292,6 +292,13 @@ export async function initApp(): Promise<void> {
     }) as EventListener)
 
     setupDesktopUI(weekDates)
+
+    document.addEventListener(FAVORITES_CHANGE_EVENT, () => {
+      if (isDesktop()) {
+        const wd = resolveWeekDates(getMenuRestaurants())
+        wd.forEach((date, i) => updateTocRestaurants(i, _restaurants, dateToIso(date)))
+      }
+    })
 
     diceSetup({ getAllRestaurants: () => _restaurants, expandDay })
     setupHeaderScroll()

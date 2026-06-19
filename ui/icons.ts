@@ -120,6 +120,7 @@ export const icons = {
   logOut: svg(LogOut, 14),
   copy: svg(Copy, 14),
   pin: svg(Pin, 16),
+  pinSmall: svg(Pin, 12),
 } as const
 
 export function getRestaurantIcon(name: string): string {
