@@ -79,8 +79,58 @@ export function formatAvailableDays(days: readonly string[]): string {
 export function isDataFromCurrentWeek(restaurants: { fetchedAt: string }[]): boolean {
   const fetchDate = getLatestFetchDate(restaurants);
   if (!fetchDate || isNaN(fetchDate.getTime())) return false;
+  const [monday, nextMonday] = currentWeekBounds();
+  return fetchDate >= monday && fetchDate < nextMonday;
+}
+
+function currentWeekBounds(): [Date, Date] {
   const monday = getMondayOfWeek(new Date());
   const nextMonday = new Date(monday);
   nextMonday.setDate(monday.getDate() + 7);
-  return fetchDate >= monday && fetchDate < nextMonday;
+  return [monday, nextMonday];
 }
+
+function isInCurrentWeek(iso: string): boolean {
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return false;
+  const [monday, nextMonday] = currentWeekBounds();
+  return d >= monday && d < nextMonday;
+}
+
+/**
+ * Determines if a restaurant's data is "fresh" (i.e. has been scraped this ISO week).
+ *
+ * The scraper only updates `fetchedAt` when content changes. A restaurant scraped
+ * Monday whose menu hasn't changed still has Monday's `fetchedAt` — but it's still
+ * fresh because the CI checked it. The rule: fetchedAt within the current week = fresh.
+ */
+export function isRestaurantFresh(restaurant: { fetchedAt: string; days?: Record<string, { fetchedAt: string }> }): boolean {
+  if (isInCurrentWeek(restaurant.fetchedAt)) return true;
+  if (restaurant.days) {
+    for (const day of Object.values(restaurant.days)) {
+      if (day?.fetchedAt && isInCurrentWeek(day.fetchedAt)) return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Returns the most recent fetchedAt across the restaurant and its days.
+ */
+export function getRestaurantLastUpdated(restaurant: { fetchedAt: string; days?: Record<string, { fetchedAt: string }> }): Date | null {
+  let latest = restaurant.fetchedAt ? new Date(restaurant.fetchedAt) : null;
+  if (latest && isNaN(latest.getTime())) latest = null;
+
+  if (restaurant.days) {
+    for (const day of Object.values(restaurant.days)) {
+      if (!day?.fetchedAt) continue;
+      const d = new Date(day.fetchedAt);
+      if (!isNaN(d.getTime()) && (!latest || d > latest)) {
+        latest = d;
+      }
+    }
+  }
+
+  return latest;
+}
+

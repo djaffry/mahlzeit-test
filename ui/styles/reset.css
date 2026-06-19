@@ -14,7 +14,7 @@ html {
 
 body {
   min-height: 100dvh;
-  padding-top: 48px; /* header height */
+  padding-top: var(--header-height); /* header height */
 }
 
 a { color: var(--fg); text-decoration: none; }

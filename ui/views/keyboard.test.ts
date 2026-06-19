@@ -19,6 +19,7 @@ const mockCollapseAllExceptToday = vi.fn()
 const mockCloseSearch = vi.fn()
 const mockCloseMenu = vi.fn()
 const mockCloseAllOverlays = vi.fn()
+const mockTogglePinsOnly = vi.fn()
 
 function fireKey(key: string, opts: Partial<KeyboardEventInit> = {}): void {
   document.dispatchEvent(new KeyboardEvent("keydown", { key, bubbles: true, ...opts }))
@@ -40,6 +41,7 @@ describe("setupKeyboard", () => {
       closeSearch: mockCloseSearch,
       closeMenu: mockCloseMenu,
       closeAllOverlays: mockCloseAllOverlays,
+      togglePinsOnly: mockTogglePinsOnly,
     })
   })
 

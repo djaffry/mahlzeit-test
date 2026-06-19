@@ -5,7 +5,8 @@ import { BADGES } from "../../constants"
 import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml } from "../../utils/dom"
-import { isAvailableOnDay, formatAvailableDays } from "../../utils/date"
+import { isAvailableOnDay, formatAvailableDays, isRestaurantFresh, getRestaurantLastUpdated } from "../../utils/date"
+import { isArchiveMode } from "../../archive/archive"
 import { renderItem } from "../menu-item/menu-item"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 
@@ -27,6 +28,15 @@ function renderBadges(restaurant: Restaurant): string {
   return parts.length
     ? `<div class="restaurant-meta">${parts.join(" · ")}</div>`
     : ""
+}
+
+function renderFreshness(restaurant: Restaurant): string {
+  if (isArchiveMode()) return ""
+  if (isRestaurantFresh(restaurant)) return ""
+  const lastUpdated = getRestaurantLastUpdated(restaurant)
+  if (!lastUpdated) return ""
+  const timeStr = lastUpdated.toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })
+  return `<div class="restaurant-freshness">${escapeHtml(t("freshness.lastUpdated", { time: timeStr }))}</div>`
 }
 
 function renderCategories(menu: DayMenu, filters: Set<string> | null): string {
@@ -90,7 +100,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
         </div>
       </div>
       ${renderBadges(restaurant)}
-      ${renderBottomWebsiteLink(restaurant, bottomLabel)}
+      <div class="restaurant-footer">${renderBottomWebsiteLink(restaurant, bottomLabel)}${renderFreshness(restaurant)}</div>
     </section>`
   }
 
@@ -124,7 +134,7 @@ export function renderRestaurantSection(opts: RenderSectionOptions): string {
       </div>
       ${renderBadges(restaurant)}
       ${categoriesHtml}
-      ${renderBottomWebsiteLink(restaurant, bottomLinkLabel)}
+      <div class="restaurant-footer">${renderBottomWebsiteLink(restaurant, bottomLinkLabel)}${renderFreshness(restaurant)}</div>
     </section>`
 }
 

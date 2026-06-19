@@ -4,12 +4,9 @@ import { t } from "../../i18n/i18n"
 import { isAvailableOnDay, formatDayHeader, todayIndexInWeek, dateToIso } from "../../utils/date"
 import { todayIso } from "../../app-config"
 import { getRestaurantIcon } from "../../icons"
-import { icons } from "../../icons"
 import { escapeHtml, smoothScrollTo } from "../../utils/dom"
-import { sortWithFavorites } from "../favorites/favorites"
-import { isFavorite, hasFavorites } from "../favorites/favorites"
-
-const PINS_ONLY_KEY = "peckish:toc-pins-only"
+import { sortWithFavorites, isFavorite } from "../favorites/favorites"
+import { isPinsOnly, VIEW_MODE_CHANGE_EVENT } from "../favorites/view-mode"
 
 const _state = {
   expandDay: (() => {}) as (index: number) => void,
@@ -19,61 +16,24 @@ const _state = {
   lastTop: -1,
   lastBottom: -1,
   dayChildren: new Map<number, HTMLElement[]>(),
-  pinsOnly: false,
-  toggleBtn: null as HTMLButtonElement | null,
-}
-
-function loadPinsOnly(): boolean {
-  try {
-    return localStorage.getItem(PINS_ONLY_KEY) === "1"
-  } catch {
-    return false
-  }
-}
-
-function savePinsOnly(value: boolean): void {
-  try {
-    localStorage.setItem(PINS_ONLY_KEY, value ? "1" : "0")
-  } catch { /* ignore */ }
-}
-
-function updateToggleButton(): void {
-  if (!_state.toggleBtn) return
-  const label = _state.pinsOnly ? t("toc.showAll") : t("toc.pinsOnly")
-  _state.toggleBtn.title = label
-  _state.toggleBtn.setAttribute("aria-label", label)
-  _state.toggleBtn.classList.toggle("active", _state.pinsOnly)
-  // Show toggle only when there are favorites
-  _state.toggleBtn.style.display = hasFavorites() ? "" : "none"
 }
 
 export function createSidebarToc(weekDates: Date[], deps: { expandDay: (index: number) => void }): HTMLElement {
   _state.expandDay = deps.expandDay
-  _state.pinsOnly = loadPinsOnly()
   const nav = document.createElement("nav")
   nav.className = "sidebar-toc"
-  if (_state.pinsOnly) nav.classList.add("toc-pins-only")
+  if (isPinsOnly()) nav.classList.add("toc-pins-only")
   nav.id = "sidebar-toc"
   _state.tocEl = nav
   _state.lastTop = -1
   _state.lastBottom = -1
   _state.dayChildren.clear()
 
-  // Pins-only toggle button
-  const toggleBtn = document.createElement("button")
-  toggleBtn.className = "toc-pins-toggle"
-  toggleBtn.type = "button"
-  toggleBtn.innerHTML = icons.pinSmall
-  _state.toggleBtn = toggleBtn
-  updateToggleButton()
-  toggleBtn.addEventListener("click", () => {
-    _state.pinsOnly = !_state.pinsOnly
-    savePinsOnly(_state.pinsOnly)
-    nav.classList.toggle("toc-pins-only", _state.pinsOnly)
-    updateToggleButton()
+  // Listen for view-mode changes (from header button or keyboard)
+  document.addEventListener(VIEW_MODE_CHANGE_EVENT, () => {
+    nav.classList.toggle("toc-pins-only", isPinsOnly())
     updateViewportHighlight()
   })
-  nav.appendChild(toggleBtn)
 
   const todayIdx = todayIndexInWeek(weekDates, todayIso())
 
@@ -166,9 +126,6 @@ export function updateTocRestaurants(dayIndex: number, restaurants: Restaurant[]
   }
 
   _state.dayChildren.set(dayIndex, children)
-
-  // Update toggle visibility (favorites may have changed)
-  updateToggleButton()
 }
 
 function updateViewportHighlight(): void {

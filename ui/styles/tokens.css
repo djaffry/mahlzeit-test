@@ -18,6 +18,9 @@
   --tag-teal: #2a8a7a;
   --tag-lavender: #7a6bc4;
 
+  /* Layout */
+  --header-height: 48px;
+
   /* Spacing */
   --space-xs: 4px;
   --space-sm: 8px;

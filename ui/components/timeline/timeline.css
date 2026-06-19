@@ -91,7 +91,7 @@
 
 .day-section.expanded .day-header {
   position: sticky;
-  top: 48px;
+  top: var(--header-height);
   z-index: 8;
   background: var(--bg);
 }
@@ -133,5 +133,14 @@
   .day-restaurants {
     columns: 3;
   }
+}
+
+/* ── Pins-only empty state ──────────────────────────── */
+
+.pins-empty-state {
+  padding: var(--space-lg) 0;
+  color: var(--fg-muted);
+  font-size: var(--text-sm);
+  text-align: center;
 }
 

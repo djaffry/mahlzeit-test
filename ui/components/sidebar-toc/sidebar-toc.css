@@ -7,9 +7,9 @@
 
   .sidebar-toc {
     position: sticky;
-    top: 48px;
+    top: var(--header-height);
     width: 200px;
-    height: calc(100dvh - 48px);
+    height: calc(100dvh - var(--header-height));
     overflow-y: auto;
     padding: var(--space-sm) var(--space-sm);
     border-right: 1px solid var(--border);

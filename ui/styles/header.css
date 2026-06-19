@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
+  height: var(--header-height);
   padding: 0 var(--space-md);
   background: var(--bg);
   border-bottom: 1px solid transparent;
@@ -99,3 +99,14 @@
   font-weight: 600;
   letter-spacing: 0.05em;
 }
+
+/* Pins toggle active state */
+#pins-toggle.pins-active {
+  color: var(--tag-yellow);
+}
+
+#pins-toggle.pins-active svg {
+  fill: currentColor;
+}
+
+

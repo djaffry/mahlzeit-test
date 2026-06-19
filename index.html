@@ -42,6 +42,7 @@
     </a>
     <div class="header-actions">
       <button class="icon-btn desktop-only" id="reload-trigger" aria-label="Reload"></button>
+      <button class="icon-btn" id="pins-toggle" aria-label="Pins only"></button>
       <button class="icon-btn" id="filter-trigger" aria-label="Filters"></button>
       <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Language"></button>
       <button class="icon-btn" id="more-menu-trigger" aria-label="Menu"></button>
@@ -57,7 +58,10 @@
   <!-- Search overlay -->
   <div class="search-overlay" id="search-overlay" hidden>
     <div class="search-container">
-      <input class="search-input" id="search-input" type="search" autocomplete="off" />
+      <div class="search-input-row">
+        <input class="search-input" id="search-input" type="search" autocomplete="off" />
+        <button class="icon-btn search-close-btn" id="search-close" aria-label="Close search"></button>
+      </div>
       <div class="search-results" id="search-results"></div>
     </div>
   </div>

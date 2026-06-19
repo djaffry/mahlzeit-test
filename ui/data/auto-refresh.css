@@ -15,8 +15,14 @@
   pointer-events: none;
   transition:
     opacity var(--duration-normal) var(--ease-out),
-    transform var(--duration-normal) var(--ease-out);
+    transform var(--duration-normal) var(--ease-out),
+    bottom var(--duration-normal) var(--ease-out);
   z-index: 600;
+}
+
+/* When the share panel is visible, push the toast above it */
+.share-panel.visible ~ .refresh-toast {
+  bottom: calc(var(--space-md) + 120px);
 }
 
 .refresh-toast.visible {

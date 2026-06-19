@@ -89,6 +89,7 @@
     transform: translateY(100%);
     max-height: 80vh;
     overflow-y: auto;
+    padding-bottom: calc(var(--space-sm) + env(safe-area-inset-bottom, 0px));
   }
 
   .more-menu-overlay.visible .more-menu {

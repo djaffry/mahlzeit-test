@@ -7,6 +7,7 @@ import { todayIso } from "../../app-config"
 import { smoothScrollTo, escapeHtml } from "../../utils/dom"
 import { renderRestaurantSection } from "../restaurant-section/restaurant-section"
 import { sortWithFavorites, isFavorite, toggleFavorite } from "../favorites/favorites"
+import { isPinsOnly } from "../favorites/view-mode"
 import { haptic } from "../../utils/haptic"
 import { FAVORITES_CHANGE_EVENT } from "../../constants"
 
@@ -104,7 +105,7 @@ function renderShell(todayIdx: number = computeTodayIdx()): void {
 
     return `
       <div class="day-section${expandedClass}${pastClass}" id="day-${i}" data-day-index="${i}">
-        <div class="day-header" data-day-index="${i}">
+        <div class="day-header" data-day-index="${i}" role="button" tabindex="0" aria-expanded="${day.expanded}">
           <div class="day-header-left">
             <span class="day-header-chevron">${icons.chevronRight}</span>
             <span class="day-header-label">${escapeHtml(formatDayHeader(day.date))}</span>
@@ -145,11 +146,19 @@ function renderDay(index: number): void {
   }
   const filters = _state.getFilters()
   const sorted = sortWithFavorites(day.restaurants)
+  const viewFiltered = isPinsOnly() ? sorted.filter(r => isFavorite(r.id)) : sorted
+
+  if (isPinsOnly() && viewFiltered.length === 0) {
+    contentEl.innerHTML = `<div class="day-restaurants"><div class="pins-empty-state">${escapeHtml(t("favorites.emptyPins"))}</div></div>`
+    _state.onDayRender?.()
+    return
+  }
+
   let pinnedCount = 0
   let totalCount = 0
   let lastPinnedIdx = -1
 
-  const sectionStrings = sorted.map((r, i) => {
+  const sectionStrings = viewFiltered.map((r, i) => {
     const pinned = isFavorite(r.id)
     const menu = r.days?.[day.dateIso]
     const html = renderRestaurantSection({ restaurant: r, dayMenu: menu, dayIndex: index, dateIso: day.dateIso, filters, isPinned: pinned })
@@ -160,7 +169,7 @@ function renderDay(index: number): void {
     return html
   })
 
-  if (pinnedCount > 0 && pinnedCount < totalCount) {
+  if (pinnedCount > 0 && pinnedCount < totalCount && !isPinsOnly()) {
     sectionStrings.splice(lastPinnedIdx + 1, 0, `<div class="pinned-divider">${escapeHtml(t("favorites.others"))}</div>`)
   }
 
@@ -169,23 +178,36 @@ function renderDay(index: number): void {
   _state.onDayRender?.()
 }
 
+function toggleDayHeader(dayHeader: HTMLElement): void {
+  const idx = Number(dayHeader.dataset.dayIndex)
+  if (isNaN(idx) || !_state.days[idx]) return
+  const wasExpanded = _state.days[idx].expanded
+  _state.days[idx].expanded = !wasExpanded
+  const daySection = _state.el?.querySelector(`.day-section[data-day-index="${idx}"]`)
+  daySection?.classList.toggle("expanded", !wasExpanded)
+  dayHeader.setAttribute("aria-expanded", String(!wasExpanded))
+  renderDay(idx)
+  if (!wasExpanded) announceDay(idx)
+}
+
 function setupListeners(): void {
   if (!_state.el) return
+
+  _state.el.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return
+    const dayHeader = (e.target as HTMLElement).closest(".day-header") as HTMLElement | null
+    if (dayHeader) {
+      e.preventDefault()
+      toggleDayHeader(dayHeader)
+    }
+  })
 
   _state.el.addEventListener("click", (e) => {
     const target = e.target as HTMLElement
 
     const dayHeader = target.closest(".day-header") as HTMLElement | null
     if (dayHeader) {
-      const idx = Number(dayHeader.dataset.dayIndex)
-      if (!isNaN(idx) && _state.days[idx]) {
-        const wasExpanded = _state.days[idx].expanded
-        _state.days[idx].expanded = !wasExpanded
-        const daySection = _state.el?.querySelector(`.day-section[data-day-index="${idx}"]`)
-        daySection?.classList.toggle("expanded", !wasExpanded)
-        renderDay(idx)
-        if (!wasExpanded) announceDay(idx)
-      }
+      toggleDayHeader(dayHeader)
       return
     }
 
@@ -200,12 +222,6 @@ function setupListeners(): void {
       }
       return
     }
-
-    const menuItem = target.closest(".menu-item") as HTMLElement | null
-    if (menuItem) {
-      menuItem.classList.toggle("expanded")
-      return
-    }
   })
 }
 
@@ -215,6 +231,8 @@ export function expandDay(index: number, opts?: { scroll?: boolean }): void {
     _state.days[index].expanded = true
     const daySection = _state.el?.querySelector(`.day-section[data-day-index="${index}"]`)
     daySection?.classList.add("expanded")
+    const dayHeader = daySection?.querySelector(".day-header") as HTMLElement | null
+    dayHeader?.setAttribute("aria-expanded", "true")
     renderDay(index)
     announceDay(index)
   }
@@ -232,6 +250,8 @@ export function collapseAllExceptToday(): void {
     if (wasExpanded !== day.expanded) {
       const daySection = _state.el?.querySelector(`.day-section[data-day-index="${i}"]`)
       daySection?.classList.toggle("expanded", day.expanded)
+      const dayHeader = daySection?.querySelector(".day-header") as HTMLElement | null
+      dayHeader?.setAttribute("aria-expanded", String(day.expanded))
       renderDay(i)
     }
   })

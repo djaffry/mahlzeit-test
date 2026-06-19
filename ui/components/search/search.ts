@@ -4,7 +4,7 @@ import { icons, restaurantIconSpan } from "../../icons"
 import { t } from "../../i18n/i18n"
 import { escapeHtml, highlightMatch, registerOverlay, unregisterOverlay } from "../../utils/dom"
 import { todayIso } from "../../app-config"
-import { isoToWeekdayIndex } from "../../utils/date"
+import { isoToWeekdayIndex, formatDayHeader } from "../../utils/date"
 import { itemMatchesFilters } from "../filter-bar/filter-bar"
 
 const DEBOUNCE_MS = 150
@@ -17,6 +17,7 @@ let _state: {
   input: HTMLInputElement
   results: HTMLElement
   restaurants: Restaurant[]
+  weekDates: Date[]
   onNavigate: (restaurantId: string, dayIndex: number) => void
   getActiveFilters: () => Set<string> | null
   ac: AbortController
@@ -28,6 +29,7 @@ export interface SearchOptions {
   results: HTMLElement
   trigger?: HTMLElement
   restaurants: Restaurant[]
+  weekDates: Date[]
   onNavigate: (restaurantId: string, dayIndex: number) => void
   getActiveFilters: () => Set<string> | null
 }
@@ -40,6 +42,7 @@ export function setupSearch(opts: SearchOptions): void {
     input: opts.input,
     results: opts.results,
     restaurants: opts.restaurants,
+    weekDates: opts.weekDates,
     onNavigate: opts.onNavigate,
     getActiveFilters: opts.getActiveFilters,
     ac: new AbortController(),
@@ -50,6 +53,12 @@ export function setupSearch(opts: SearchOptions): void {
   if (opts.trigger) {
     opts.trigger.innerHTML = icons.search
     opts.trigger.addEventListener("click", openSearch, { signal })
+  }
+
+  const closeBtn = opts.overlay.querySelector("#search-close") as HTMLElement | null
+  if (closeBtn) {
+    closeBtn.innerHTML = icons.x
+    closeBtn.addEventListener("click", closeSearch, { signal })
   }
 
   let timer: ReturnType<typeof setTimeout>
@@ -159,9 +168,14 @@ function renderMatches(matches: Match[], query: string): string {
     }).join("")
 
     const icon = restaurantIconSpan(m.restaurant.icon, "search-result-icon")
+    const dayLabel = m.isToday
+      ? `<span class="search-result-day search-result-day--today">${escapeHtml(t("app.today"))}</span>`
+      : _state?.weekDates[m.dayIndex]
+        ? `<span class="search-result-day">${escapeHtml(formatDayHeader(_state.weekDates[m.dayIndex]))}</span>`
+        : ""
     return `
       <div class="search-result" data-restaurant-id="${escapeHtml(m.restaurant.id)}" data-day-index="${m.dayIndex}">
-        <div class="search-result-restaurant">${icon}${highlightMatch(m.restaurant.title, q)}</div>
+        <div class="search-result-restaurant">${icon}${highlightMatch(m.restaurant.title, q)}${dayLabel}</div>
         ${items}
       </div>`
   }).join("")
@@ -182,6 +196,9 @@ function performSearch(query: string): void {
     || `<div class="search-result"><div class="search-result-item">${escapeHtml(t("search.noResults") ?? "No results")}</div></div>`
 }
 
-export function updateSearchRestaurants(restaurants: Restaurant[]): void {
-  if (_state) _state.restaurants = restaurants
+export function updateSearchRestaurants(restaurants: Restaurant[], weekDates?: Date[]): void {
+  if (_state) {
+    _state.restaurants = restaurants
+    if (weekDates) _state.weekDates = weekDates
+  }
 }

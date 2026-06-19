@@ -6,7 +6,7 @@ export function renderErrorState(message: string): string {
   return `
     <div class="empty-state">
       <div class="empty-state-title">${escapeHtml(message)}</div>
-      <button class="consent-accept" data-action="reload">${escapeHtml(t("error.retry") ?? "Retry")}</button>
+      <button class="retry-btn" data-action="reload">${escapeHtml(t("error.retry") ?? "Retry")}</button>
     </div>`
 }
 

@@ -44,6 +44,7 @@ import {
 import { setupSearch, openSearch, updateSearchRestaurants, closeSearch } from "../components/search/search"
 import { cycleTheme } from "../components/theme-toggle/theme-toggle"
 import { loadFavorites } from "../components/favorites/favorites"
+import { loadViewMode, isPinsOnly, togglePinsOnly, VIEW_MODE_CHANGE_EVENT } from "../components/favorites/view-mode"
 import {
   renderLoadingState,
   renderErrorState,
@@ -188,6 +189,19 @@ function setupFilterTrigger(): void {
   }
 }
 
+function setupPinsToggle(): void {
+  const pinsToggle = document.getElementById("pins-toggle")
+  if (pinsToggle) {
+    pinsToggle.innerHTML = icons.pin
+    pinsToggle.classList.toggle("pins-active", isPinsOnly())
+    pinsToggle.addEventListener("click", () => togglePinsOnly())
+  }
+  document.addEventListener(VIEW_MODE_CHANGE_EVENT, () => {
+    pinsToggle?.classList.toggle("pins-active", isPinsOnly())
+    rerenderExpandedDays()
+  })
+}
+
 function setupDesktopUI(weekDates: Date[]): void {
   if (!isDesktop()) return
   const tocEl = createSidebarToc(weekDates, { expandDay })
@@ -223,6 +237,7 @@ export async function initApp(): Promise<void> {
 
   setupLanguageToggle()
   setupFilterTrigger()
+  setupPinsToggle()
 
   try {
     const [, allRestaurants] = await Promise.all([
@@ -233,6 +248,7 @@ export async function initApp(): Promise<void> {
     _restaurants = allRestaurants
     initContentHash(allRestaurants)
     loadFavorites()
+    loadViewMode()
 
     const menuRestaurants = getMenuRestaurants()
     const weekDates = resolveWeekDates(menuRestaurants)
@@ -245,6 +261,7 @@ export async function initApp(): Promise<void> {
       input: document.getElementById("search-input") as HTMLInputElement,
       results: document.getElementById("search-results")!,
       restaurants: menuRestaurants,
+      weekDates,
       onNavigate: (restaurantId, dayIndex) => {
         expandDay(dayIndex)
         requestAnimationFrame(() => {
@@ -283,11 +300,28 @@ export async function initApp(): Promise<void> {
       onClear: () => rerender(),
     })
 
+    let _sharePanelVisible = false
     document.addEventListener(SHARE_PANEL_EVENT, ((e: CustomEvent<{ visible: boolean; height: number }>) => {
       if (e.detail.visible) {
         timelineEl.style.paddingBottom = e.detail.height + "px"
+        if (!_sharePanelVisible) {
+          _sharePanelVisible = true
+          // Ensure the last selected item stays visible above the share bar
+          requestAnimationFrame(() => {
+            const items = timelineEl.querySelectorAll('.menu-item.selected')
+            const lastItem = items[items.length - 1] as HTMLElement | null
+            if (lastItem) {
+              const rect = lastItem.getBoundingClientRect()
+              const visibleBottom = window.innerHeight - e.detail.height
+              if (rect.bottom > visibleBottom) {
+                window.scrollBy({ top: rect.bottom - visibleBottom + 8, behavior: "smooth" })
+              }
+            }
+          })
+        }
       } else {
         timelineEl.style.paddingBottom = ""
+        _sharePanelVisible = false
       }
     }) as EventListener)
 
@@ -317,6 +351,7 @@ export async function initApp(): Promise<void> {
       closeSearch,
       closeMenu,
       closeAllOverlays,
+      togglePinsOnly,
     })
 
     setupGlobalListeners()

@@ -202,6 +202,7 @@ function createMarkers(L: typeof L_NS): void {
     if (r.availableDays?.length) popupParts.push(`<em>${escapeHtml(formatAvailableDays(r.availableDays))}</em>`)
     const badges = BADGES.filter((b) => r[b.prop]).map((b) => escapeHtml(t(b.i18n)))
     if (badges.length) popupParts.push(badges.join(" · "))
+    popupParts.push(`<button class="map-popup-go" data-id="${escapeHtml(r.id)}">${escapeHtml(t("map.goToMenu"))}</button>`)
 
     const divIcon = L.divIcon({
       className: "map-marker",
@@ -215,13 +216,21 @@ function createMarkers(L: typeof L_NS): void {
       .addTo(_state.map!)
       .bindPopup(popupParts.join("<br>"))
     _state.markers.set(r.id, marker)
-
-    marker.on("click", () => {
-      closeMapPanel()
-      const el = document.querySelector(`[data-restaurant-id="${CSS.escape(r.id)}"]`) as HTMLElement | null
-      if (el) flashAndScroll(el)
-    })
   }
+
+  // Delegated click handler for "Go to menu" buttons inside popups
+  const container = _state.panel?.querySelector("#peckish-map") as HTMLElement
+  container?.addEventListener("click", (e) => {
+    const goBtn = (e.target as HTMLElement).closest(".map-popup-go") as HTMLElement | null
+    if (goBtn) {
+      const id = goBtn.dataset.id
+      if (id) {
+        closeMapPanel()
+        const el = document.querySelector(`[data-restaurant-id="${CSS.escape(id)}"]`) as HTMLElement | null
+        if (el) flashAndScroll(el)
+      }
+    }
+  })
 }
 
 function initTileLayer(): void {

@@ -41,6 +41,7 @@
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: var(--space-xs) var(--space-sm);
+  min-height: 36px;
   transition: border-color var(--duration-fast) ease, background var(--duration-fast) ease, transform var(--duration-fast) ease;
 }
 
@@ -56,6 +57,7 @@
   padding: var(--space-xs) 12px;
   border: 1px solid var(--border);
   border-radius: 20px;
+  min-height: 36px;
   transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
 }
 

@@ -12,6 +12,7 @@
   "shortcuts.days": "Zum Wochentag springen (1 = Mo, 2 = Di, …, 5 = Fr)",
   "shortcuts.randomPick": "Zufälliges Restaurant wählen",
   "shortcuts.filters": "Filter öffnen",
+  "shortcuts.pinsOnly": "Nur-Pins-Ansicht umschalten",
   "shortcuts.language": "Sprache wechseln",
   "shortcuts.map": "Karte öffnen",
   "shortcuts.theme": "Theme wechseln",
@@ -28,6 +29,7 @@
   "filter.noResults": "Keine Restaurants entsprechen deinen Filtern.",
   "map.title": "Restaurants in der Nähe",
   "map.showOnMap": "Auf Karte anzeigen",
+  "map.goToMenu": "Zum Menü",
   "card.noMenu": "(Noch) kein Menü verfügbar",
   "card.menuOnWebsite": "Menü auf der Website",
   "card.menuOnWebsiteSpecials": "Nur Tagesangebote, ganze Karte auf der Website",
@@ -81,6 +83,8 @@
   "favorites.pin": "Anpinnen",
   "favorites.unpin": "Loslösen",
   "favorites.others": "Weitere",
+  "favorites.emptyPins": "Pinne Restaurants an, um sie hier zu sehen",
+  "freshness.lastUpdated": "Aktualisiert {{time}}",
   "toc.pinsOnly": "Nur Pins",
   "toc.showAll": "Alle anzeigen"
 }

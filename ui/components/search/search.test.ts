@@ -106,13 +106,13 @@ describe("setupSearch", () => {
 
   it("initializes without throwing", () => {
     const { overlay, input, results } = setupDOM()
-    expect(() => setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })).not.toThrow()
+    expect(() => setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })).not.toThrow()
   })
 
   it("sets trigger innerHTML when trigger is provided", () => {
     const { overlay, input, results } = setupDOM()
     const trigger = makeElement("button")
-    setupSearch({ overlay, input, results, trigger, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, trigger, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     expect(trigger.innerHTML).toContain("search")
   })
 })
@@ -125,7 +125,7 @@ describe("openSearch / closeSearch", () => {
 
   it("openSearch shows the overlay and registers it", () => {
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     openSearch()
     expect(overlay.hidden).toBe(false)
     expect(mockRegisterOverlay).toHaveBeenCalledWith("search")
@@ -133,7 +133,7 @@ describe("openSearch / closeSearch", () => {
 
   it("closeSearch hides the overlay and unregisters it", () => {
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     openSearch()
     closeSearch()
     expect(overlay.hidden).toBe(true)
@@ -142,7 +142,7 @@ describe("openSearch / closeSearch", () => {
 
   it("closeSearch clears the input value", () => {
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     input.value = "pizza"
     closeSearch()
     expect(input.value).toBe("")
@@ -150,7 +150,7 @@ describe("openSearch / closeSearch", () => {
 
   it("closeSearch empties the results container", () => {
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     results.innerHTML = "<div>something</div>"
     closeSearch()
     expect(results.innerHTML).toBe("")
@@ -164,7 +164,7 @@ describe("performSearch – filtering logic", () => {
 
   it("empty query clears results", async () => {
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     results.innerHTML = "<div>old result</div>"
     await triggerInput(input, "")
     expect(results.innerHTML).toBe("")
@@ -175,7 +175,7 @@ describe("performSearch – filtering logic", () => {
     const restaurant = makeRestaurant("r1", "Gasthaus Zum Löwen", {
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Löwen")
     expect(results.innerHTML).toContain("Gasthaus Zum Löwen")
   })
@@ -185,7 +185,7 @@ describe("performSearch – filtering logic", () => {
     const restaurant = makeRestaurant("r1", "Mensa", {
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Wiener Schnitzel" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Wiener")
     expect(results.innerHTML).toContain("Wiener Schnitzel")
   })
@@ -200,7 +200,7 @@ describe("performSearch – filtering logic", () => {
         }],
       },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Krautsalat")
     expect(results.innerHTML).toContain("Tagesgericht")
   })
@@ -210,7 +210,7 @@ describe("performSearch – filtering logic", () => {
     const restaurant = makeRestaurant("r1", "Mensa", {
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "xyznotfound")
     expect(results.innerHTML).toContain("search.noResults")
   })
@@ -220,7 +220,7 @@ describe("performSearch – filtering logic", () => {
     const restaurant = makeRestaurant("r1", "Mensa", {
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "SCHNITZEL")
     expect(results.innerHTML).toContain("Mensa")
   })
@@ -231,7 +231,7 @@ describe("performSearch – filtering logic", () => {
       "2026-04-20": { categories: [{ name: "Hauptspeise", items: [{ title: "Montag Gulasch" }] }] },
       "2026-04-24": { categories: [{ name: "Hauptspeise", items: [{ title: "Freitag Fisch" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Fisch")
     expect(results.innerHTML).toContain("Freitag Fisch")
   })
@@ -251,7 +251,7 @@ describe("performSearch – filtering logic", () => {
         }],
       },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "burger")
     expect(results.innerHTML).toContain("Veganer Burger")
     // Schnitzel doesn't match the query anyway here, but let's verify filter works
@@ -271,7 +271,7 @@ describe("performSearch – filtering logic", () => {
         }],
       },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Tagesgericht")
     expect(results.innerHTML).toContain("Tagesgericht")
   })
@@ -283,7 +283,7 @@ describe("performSearch – filtering logic", () => {
       "2026-04-20": { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti" }] }] },
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Spaghetti Carbonara" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
     await triggerInput(input, "Spaghetti")
     const firstResult = results.querySelector("[data-restaurant-id]") as HTMLElement | null
     // Wednesday match (dayIndex=2, today) should appear first
@@ -295,7 +295,7 @@ describe("updateSearchRestaurants", () => {
   it("updates the restaurant list used for searching", async () => {
     mockGetActiveFilters.mockReturnValue(null)
     const { overlay, input, results } = setupDOM()
-    setupSearch({ overlay, input, results, restaurants: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [], weekDates: [], onNavigate: vi.fn(), getActiveFilters: mockGetActiveFilters })
 
     const newRestaurant = makeRestaurant("r2", "Neues Lokal", {
       "2026-04-22": { categories: [{ name: "Hauptspeise", items: [{ title: "Gulasch" }] }] },
@@ -313,7 +313,7 @@ describe("result click navigation", () => {
     const restaurant = makeRestaurant("bistro-1", "Bistro", {
       "2026-04-21": { categories: [{ name: "Hauptspeise", items: [{ title: "Pizza" }] }] },
     })
-    setupSearch({ overlay, input, results, restaurants: [restaurant], onNavigate, getActiveFilters: mockGetActiveFilters })
+    setupSearch({ overlay, input, results, restaurants: [restaurant], weekDates: [], onNavigate, getActiveFilters: mockGetActiveFilters })
 
     // Inject a fake result directly
     results.innerHTML = `<div class="search-result" data-restaurant-id="bistro-1" data-day-index="1"><div>Pizza</div></div>`

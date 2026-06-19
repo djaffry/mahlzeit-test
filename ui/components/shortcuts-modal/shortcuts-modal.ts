@@ -20,6 +20,7 @@ export function showShortcutsModal(): void {
           ["1 – 5", t("shortcuts.days")],
           ["D", t("shortcuts.randomPick")],
           ["F", t("shortcuts.filters")],
+          ["G", t("shortcuts.pinsOnly")],
           ["L", t("shortcuts.language")],
           ["M", t("shortcuts.map")],
           ["T", t("shortcuts.theme")],

@@ -11,6 +11,7 @@ export interface KeyboardDeps {
   closeSearch: () => void
   closeMenu: () => void
   closeAllOverlays: () => void
+  togglePinsOnly: () => void
 }
 
 export function setupKeyboard(deps: KeyboardDeps): void {
@@ -43,6 +44,7 @@ export function setupKeyboard(deps: KeyboardDeps): void {
   })
 
   registerShortcut({ key: "f", handler: () => deps.openFilterSelector(), label: "Filters" })
+  registerShortcut({ key: "g", handler: () => deps.togglePinsOnly(), label: "Pins only" })
   registerShortcut({ key: "t", handler: () => deps.cycleTheme(), label: "Theme" })
 
   // Escape without overlay: collapse to today
