@@ -41,25 +41,25 @@ beforeEach(() => {
 
 describe("loadFilters", () => {
   it("activates all tags when no localStorage entry exists", () => {
-    loadFilters(["Vegan", "Glutenfrei", "Laktosefrei"])
+    loadFilters(["Vegan", "Fleisch"])
     expect(isFilterShowAll()).toBe(true)
-    expect(getEffectiveFilters()).toEqual(new Set(["Vegan", "Glutenfrei", "Laktosefrei"]))
+    expect(getEffectiveFilters()).toEqual(new Set(["Vegan", "Fleisch"]))
   })
 
   it("restores previously active filters from localStorage", () => {
-    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Glutenfrei"] })
-    loadFilters(["Vegan", "Glutenfrei"])
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
     expect(getEffectiveFilters()).toEqual(new Set(["Vegan"]))
     expect(isFilterShowAll()).toBe(false)
   })
 
   it("auto-activates new tags not in known set", () => {
-    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Glutenfrei"] })
-    loadFilters(["Vegan", "Glutenfrei", "Bio"])
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch", "Bio"])
     const effective = getEffectiveFilters()
     expect(effective.has("Vegan")).toBe(true)
     expect(effective.has("Bio")).toBe(true)
-    expect(effective.has("Glutenfrei")).toBe(false)
+    expect(effective.has("Fleisch")).toBe(false)
   })
 
   it("ignores stored active filters not in available tags", () => {
@@ -71,12 +71,12 @@ describe("loadFilters", () => {
 
 describe("saveFilters", () => {
   it("persists current active filters to localStorage", () => {
-    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Glutenfrei"] })
-    loadFilters(["Vegan", "Glutenfrei"])
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
     saveFilters()
     const stored = JSON.parse(localStorage.getItem("dietary-filters")!)
     expect(stored.active).toEqual(["Vegan"])
-    expect(stored.known).toEqual(["Vegan", "Glutenfrei"])
+    expect(stored.known).toEqual(["Vegan", "Fleisch"])
   })
 
   it("invalidates effective caches", () => {
@@ -92,7 +92,7 @@ describe("saveFilters", () => {
 
 describe("getEffectiveFilters", () => {
   it("returns cached set on repeated calls", () => {
-    loadFilters(["Vegan", "Glutenfrei"])
+    loadFilters(["Vegan", "Fleisch"])
     const a = getEffectiveFilters()
     const b = getEffectiveFilters()
     expect(a).toBe(b) // same reference = cached
@@ -107,21 +107,42 @@ describe("itemMatchesFilters", () => {
   })
 
   it("returns true when item has a matching tag", () => {
-    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Glutenfrei"] })
-    loadFilters(["Vegan", "Glutenfrei"])
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
     expect(itemMatchesFilters({ tags: ["Vegan"] })).toBe(true)
   })
 
   it("returns false when item has no matching tags", () => {
-    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Glutenfrei"] })
-    loadFilters(["Vegan", "Glutenfrei"])
-    expect(itemMatchesFilters({ tags: ["Glutenfrei"] })).toBe(false)
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
+    expect(itemMatchesFilters({ tags: ["Fleisch"] })).toBe(false)
   })
 
   it("accepts a pre-computed effective set", () => {
-    loadFilters(["Vegan", "Glutenfrei"])
+    loadFilters(["Vegan", "Fleisch"])
     const custom = new Set(["OnlyThis"])
     expect(itemMatchesFilters({ tags: ["OnlyThis"] }, custom)).toBe(true)
     expect(itemMatchesFilters({ tags: ["Vegan"] }, custom)).toBe(false)
+  })
+
+  it("always shows items with only informative tags (Glutenfrei)", () => {
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
+    expect(itemMatchesFilters({ tags: ["Glutenfrei"] })).toBe(true)
+  })
+
+  it("always shows items with only informative tags (Laktosefrei)", () => {
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
+    expect(itemMatchesFilters({ tags: ["Laktosefrei"] })).toBe(true)
+  })
+
+  it("filters normally when item has informative + filterable tags", () => {
+    setupLocalStorage({ active: ["Vegan"], known: ["Vegan", "Fleisch"] })
+    loadFilters(["Vegan", "Fleisch"])
+    // Has Glutenfrei (informative) + Vegan (active) → shown
+    expect(itemMatchesFilters({ tags: ["Glutenfrei", "Vegan"] })).toBe(true)
+    // Has Glutenfrei (informative) + Fleisch (not active) → hidden
+    expect(itemMatchesFilters({ tags: ["Glutenfrei", "Fleisch"] })).toBe(false)
   })
 })

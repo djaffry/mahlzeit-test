@@ -1,4 +1,4 @@
-import { TAG_COLORS } from "../constants"
+import { TAG_COLORS, INFORMATIVE_TAGS } from "../constants"
 import type { TagHierarchy, Restaurant } from "../types"
 
 let _hierarchy: Record<string, string[]> = {}
@@ -67,7 +67,9 @@ export function collectTags(restaurants: Restaurant[]): string[] {
     for (const parent of Object.keys(_hierarchy)) tags.add(parent)
   }
   const presetOrder = new Map(Object.keys(TAG_COLORS).map((k, i) => [k, i]))
-  return [...tags].sort((a, b) => {
+  return [...tags]
+    .filter((tag) => !INFORMATIVE_TAGS.has(tag))
+    .sort((a, b) => {
     const ai = presetOrder.get(a.toLowerCase()) ?? -1
     const bi = presetOrder.get(b.toLowerCase()) ?? -1
     if (ai !== -1 && bi !== -1) return ai - bi

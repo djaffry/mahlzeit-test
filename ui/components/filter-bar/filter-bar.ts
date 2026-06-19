@@ -5,6 +5,7 @@ import { escapeHtml } from "../../utils/dom"
 import { t } from "../../i18n/i18n"
 import { icons } from "../../icons"
 import { openOverlay } from "../overlay/overlay"
+import { INFORMATIVE_TAGS } from "../../constants"
 
 /* ── State ──────────────────────────────────────────────── */
 
@@ -66,7 +67,7 @@ export function getEffectiveFilters(): Set<string> {
 }
 
 export function itemMatchesFilters(item: { tags?: string[] }, effective?: Set<string>): boolean {
-  const tags = item.tags ?? []
+  const tags = (item.tags ?? []).filter((tag) => !INFORMATIVE_TAGS.has(tag))
   if (tags.length === 0) return true
   const filters = effective ?? getEffectiveFilters()
   return tags.some((tag) => filters.has(tag))

@@ -12,6 +12,9 @@ export const BADGES: { prop: BadgeProp; i18n: string; cssVar: string }[] = [
   { prop: "reservationUrl", i18n: "badge.reservationRequired", cssVar: "--tag-peach" },
 ]
 
+/** Tags that are displayed on menu items but excluded from the filter system. */
+export const INFORMATIVE_TAGS = new Set(["Glutenfrei", "Laktosefrei"])
+
 export const TAG_COLORS: Record<string, string> = {
   vegan: "--tag-green",
   vegetarian: "--tag-green",

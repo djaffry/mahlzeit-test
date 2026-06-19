@@ -3,13 +3,15 @@ import { getTagColor } from "../../utils/tag-utils"
 import { t } from "../../i18n/i18n"
 import { escapeHtml } from "../../utils/dom"
 import { icons } from "../../icons"
+import { INFORMATIVE_TAGS } from "../../constants"
 
 function renderTagPills(tags: string[]): string {
   if (!tags.length) return ""
   const pills = tags.map((tag) => {
     const cssVar = getTagColor(tag)
     const label = t(`tag.${tag}`) ?? tag
-    return `<span class="tag-pill" style="--tag-color:var(${cssVar})">${escapeHtml(label)}</span>`
+    const infoClass = INFORMATIVE_TAGS.has(tag) ? " tag-pill--info" : ""
+    return `<span class="tag-pill${infoClass}" style="--tag-color:var(${cssVar})">${escapeHtml(label)}</span>`
   }).join("")
   return `<span class="menu-item-tags">${pills}</span>`
 }

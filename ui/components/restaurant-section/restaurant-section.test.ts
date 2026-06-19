@@ -15,6 +15,7 @@ vi.mock("../../utils/date", () => ({
 }))
 vi.mock("../../constants", () => ({
   BADGES: [{ prop: "edenred", i18n: "badge.edenred", cssVar: "--tag-red" }],
+  INFORMATIVE_TAGS: new Set(["Glutenfrei", "Laktosefrei"]),
 }))
 vi.mock("../menu-item/menu-item", () => ({
   renderItem: (item: { title: string }) => `<div class="menu-item">${item.title}</div>`,
