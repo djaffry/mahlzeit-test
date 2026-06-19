@@ -1,12 +1,15 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 
-/* ── Mock tag-utils (no hierarchy loaded) ──────────────── */
+/* ── Mock tag-utils (controllable) ─────────────────────── */
+
+const mockIsLoaded = vi.fn(() => false)
+const mockExpandFilters = vi.fn((s: Set<string>) => new Set(s))
 
 vi.mock("../../utils/tag-utils", () => ({
   getTagColor: () => "--fg-muted",
-  expandFilters: (s: Set<string>) => new Set(s),
+  expandFilters: (s: Set<string>) => mockExpandFilters(s),
   getDescendants: (tag: string) => new Set([tag]),
-  isLoaded: () => false,
+  isLoaded: () => mockIsLoaded(),
 }))
 
 vi.mock("../../utils/haptic", () => ({ haptic: vi.fn() }))
@@ -37,6 +40,9 @@ function setupLocalStorage(data?: { active: string[]; known: string[] }): void {
 
 beforeEach(() => {
   localStorage.clear()
+  vi.clearAllMocks()
+  mockIsLoaded.mockReturnValue(false)
+  mockExpandFilters.mockImplementation((s: Set<string>) => new Set(s))
 })
 
 describe("loadFilters", () => {
@@ -96,6 +102,30 @@ describe("getEffectiveFilters", () => {
     const a = getEffectiveFilters()
     const b = getEffectiveFilters()
     expect(a).toBe(b) // same reference = cached
+  })
+
+  it("uses hierarchy expansion when tags are loaded", () => {
+    mockIsLoaded.mockReturnValue(true)
+    mockExpandFilters.mockImplementation(() => new Set(["Fleisch", "Schweinefleisch", "Rindfleisch"]))
+
+    loadFilters(["Fleisch", "Schweinefleisch", "Rindfleisch"])
+    const result = getEffectiveFilters()
+    expect(result.has("Schweinefleisch")).toBe(true)
+    expect(result.has("Rindfleisch")).toBe(true)
+  })
+
+  it("removes explicitly deselected children from hierarchy expansion", () => {
+    mockIsLoaded.mockReturnValue(true)
+    mockExpandFilters.mockImplementation(() => new Set(["Fleisch", "Schweinefleisch", "Rindfleisch"]))
+
+    setupLocalStorage({
+      active: ["Fleisch", "Schweinefleisch"],
+      known: ["Fleisch", "Schweinefleisch", "Rindfleisch"],
+    })
+    loadFilters(["Fleisch", "Schweinefleisch", "Rindfleisch"])
+    const result = getEffectiveFilters()
+    expect(result.has("Rindfleisch")).toBe(false)
+    expect(result.has("Schweinefleisch")).toBe(true)
   })
 })
 

@@ -9,6 +9,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/manifest.json" />
+  <!-- CSP: the sha256 hash below covers the inline <script> that applies the stored theme
+       on page load (the script block immediately after this meta tag). If you edit that script,
+       recalculate the hash:  echo -n '<script content>' | openssl dgst -sha256 -binary | openssl base64 -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UBRi4PPF4Q6t8CHZHKoUNUKBT76/bfp9+X23Qrw8StQ='; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; base-uri 'self'; frame-ancestors 'none'; object-src 'none'; form-action 'self';" />
   <script>
     (function() {

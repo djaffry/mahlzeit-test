@@ -12,7 +12,20 @@ let _refreshToast: HTMLElement | null = null
 let _refreshToastTimer: ReturnType<typeof setTimeout> | null = null
 
 export function contentHash(restaurants: Restaurant[]): string {
-  const strip = (rs: Restaurant[]) => rs.map(({ fetchedAt, ...rest }) => rest)
+  const stripDays = (days: Restaurant["days"]): unknown => {
+    const result: Record<string, unknown> = {}
+    for (const [date, day] of Object.entries(days)) {
+      if (!day) continue
+      const { fetchedAt: _, ...rest } = day
+      result[date] = rest
+    }
+    return result
+  }
+  const strip = (rs: Restaurant[]) =>
+    rs.map(({ fetchedAt, days, ...rest }) => ({
+      ...rest,
+      days: stripDays(days),
+    }))
   return JSON.stringify(strip(restaurants))
 }
 

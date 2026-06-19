@@ -46,9 +46,34 @@ export function expandFilters(activeFilters: Set<string>): Set<string> {
   return expanded
 }
 
+/**
+ * Walk the hierarchy upward to find an ancestor whose lowercase name
+ * appears in TAG_COLORS. Returns null if no ancestor has a colour entry.
+ */
+function findAncestorColor(tag: string, visited = new Set<string>()): string | null {
+  if (visited.has(tag)) return null
+  visited.add(tag)
+  for (const [parent, children] of Object.entries(_hierarchy)) {
+    if (children.includes(tag)) {
+      const color = TAG_COLORS[parent.toLowerCase()]
+      if (color) return color
+      return findAncestorColor(parent, visited)
+    }
+  }
+  return null
+}
+
 export function getTagColor(tag: string): string {
   const lower = tag.toLowerCase()
-  return TAG_COLORS[lower] ?? "--fg-muted"
+  if (TAG_COLORS[lower]) return TAG_COLORS[lower]
+
+  // When the hierarchy is loaded, inherit colour from the nearest ancestor.
+  if (_loaded) {
+    const inherited = findAncestorColor(tag)
+    if (inherited) return inherited
+  }
+
+  return "--fg-muted"
 }
 
 export function collectTags(restaurants: Restaurant[]): string[] {
@@ -77,4 +102,10 @@ export function collectTags(restaurants: Restaurant[]): string[] {
     if (bi !== -1) return 1
     return a.localeCompare(b)
   })
+}
+
+/** Test-only: resets module-private state between test cases. */
+export function _resetForTesting(): void {
+  _hierarchy = {}
+  _loaded = false
 }

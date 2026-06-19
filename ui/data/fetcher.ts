@@ -59,11 +59,19 @@ async function fetchSourceMapAt(basePath: string, manifest: string[], sourceLang
   return map
 }
 
-async function fetchMenuDataFrom(
+/**
+ * Core fetch logic shared by `fetchMenuData` and `fetchMenuDataQuiet`.
+ *
+ * @param onFetchFail  Called when an individual restaurant fetch fails.
+ *                     Return a fallback `Restaurant` to keep it in the result,
+ *                     or `null` to drop it. Omit to always drop failures.
+ */
+async function fetchMenuDataCore(
   dataBasePath: string,
   lang: string,
   sourceLang: string,
-  bust = "",
+  bust: string,
+  onFetchFail?: (id: string) => Restaurant | null,
 ): Promise<Restaurant[]> {
   // Manifest always lives at the globals location — archive weeks don't ship index.json.
   const manifestRes = await fetch(`${config.dataPath}/index.json${bust}`)
@@ -77,8 +85,8 @@ async function fetchMenuDataFrom(
       manifest.map(id => fetchRestaurantAt(dataBasePath, id, lang, sourceLang, bust))
     )
     return results
-      .filter((r): r is PromiseFulfilledResult<Restaurant> => r.status === "fulfilled")
-      .map(r => r.value)
+      .map((r, i) => r.status === "fulfilled" ? r.value : onFetchFail?.(manifest[i]) ?? null)
+      .filter((r): r is Restaurant => r !== null)
   }
 
   const [sourceMap, results] = await Promise.all([
@@ -89,15 +97,18 @@ async function fetchMenuDataFrom(
   ])
   return results
     .map((r, i) => {
-      if (r.status !== "fulfilled") return null
+      const isFresh = r.status === "fulfilled"
+      const data = isFresh ? r.value : onFetchFail?.(manifest[i]) ?? null
+      if (!data) return null
       const source = sourceMap.get(manifest[i])
-      return source ? backfillMetadata(r.value, source) : r.value
+      // Clone fallback data before mutation — fresh fetches are already unique objects.
+      return source ? backfillMetadata(isFresh ? data : { ...data }, source) : data
     })
     .filter((r): r is Restaurant => r !== null)
 }
 
 export function fetchMenuData(lang: string, sourceLang: string): Promise<Restaurant[]> {
-  return fetchMenuDataFrom(getDataBasePath(), lang, sourceLang)
+  return fetchMenuDataCore(getDataBasePath(), lang, sourceLang, "")
 }
 
 export async function fetchMenuDataQuiet(
@@ -107,33 +118,8 @@ export async function fetchMenuDataQuiet(
 ): Promise<Restaurant[] | null> {
   try {
     const bust = `?_=${Date.now()}`
-    const manifestRes = await fetch(`${config.dataPath}/index.json${bust}`)
-    if (!manifestRes.ok) return null
-    const manifest: string[] = await manifestRes.json()
-
-    let restaurants: Restaurant[]
-    if (lang === sourceLang) {
-      const results = await Promise.allSettled(
-        manifest.map(id => fetchRestaurantAt(config.dataPath, id, lang, sourceLang, bust))
-      )
-      restaurants = results
-        .map((r, i) => r.status === "fulfilled" ? r.value : currentRestaurants.find(o => o.id === manifest[i]) || null)
-        .filter((r): r is Restaurant => r !== null)
-    } else {
-      const [sourceMap, results] = await Promise.all([
-        fetchSourceMapAt(config.dataPath, manifest, sourceLang, bust),
-        Promise.allSettled(manifest.map(id => fetchRestaurantAt(config.dataPath, id, lang, sourceLang, bust))),
-      ])
-      restaurants = results
-        .map((r, i) => {
-          const data = r.status === "fulfilled" ? r.value : currentRestaurants.find(o => o.id === manifest[i]) || null
-          if (!data) return null
-          const source = sourceMap.get(manifest[i])
-          return source ? backfillMetadata({ ...data }, source) : data
-        })
-        .filter((r): r is Restaurant => r !== null)
-    }
-
+    const fallback = (id: string) => currentRestaurants.find(o => o.id === id) ?? null
+    const restaurants = await fetchMenuDataCore(config.dataPath, lang, sourceLang, bust, fallback)
     return restaurants.length > 0 ? restaurants : null
   } catch {
     return null

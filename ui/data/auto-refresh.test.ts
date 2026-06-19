@@ -57,6 +57,26 @@ describe("contentHash", () => {
     expect(contentHash(r1)).toBe(contentHash(r2))
   })
 
+  it("ignores per-day fetchedAt differences — same menu with different day timestamps yields same hash", () => {
+    const r1 = [makeRestaurant({
+      days: {
+        "2026-04-20": {
+          fetchedAt: "2026-04-20T08:00:00Z",
+          categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel", description: null, price: "12,90 €", tags: ["Fleisch"], allergens: "A" }] }],
+        },
+      },
+    })]
+    const r2 = [makeRestaurant({
+      days: {
+        "2026-04-20": {
+          fetchedAt: "2026-04-20T12:00:00Z",
+          categories: [{ name: "Hauptspeise", items: [{ title: "Schnitzel", description: null, price: "12,90 €", tags: ["Fleisch"], allergens: "A" }] }],
+        },
+      },
+    })]
+    expect(contentHash(r1)).toBe(contentHash(r2))
+  })
+
   it("produces different hash when day menu items change", () => {
     const r1 = [makeRestaurant()]
     const r2 = [

@@ -182,3 +182,32 @@ describe("enterArchive / exitArchive", () => {
     expect(assign).toHaveBeenCalledWith("/")
   })
 })
+
+/**
+ * mondayOfIsoWeek parity: these test vectors mirror the ones in
+ * scraper/src/week.test.ts (datesOfIsoWeek). Both implementations must
+ * agree on the Monday of any given ISO week.
+ * If you change the algorithm on either side, update both test files.
+ */
+describe("getArchiveWeekDates – cross-boundary parity with scraper/week.ts", () => {
+  it("2026-W17 → Monday April 20", () => {
+    stubLocation("?week=2026-W17")
+    const dates = getArchiveWeekDates()!
+    expect(dates[0].getFullYear()).toBe(2026)
+    expect(dates[0].getMonth()).toBe(3) // April
+    expect(dates[0].getDate()).toBe(20)
+    expect(dates[4].getDate()).toBe(24)
+  })
+
+  it("2026-W01 → Monday December 29 2025 (year-boundary)", () => {
+    stubLocation("?week=2026-W01")
+    const dates = getArchiveWeekDates()!
+    expect(dates[0].getFullYear()).toBe(2025)
+    expect(dates[0].getMonth()).toBe(11) // December
+    expect(dates[0].getDate()).toBe(29)
+    expect(dates[4].getFullYear()).toBe(2026)
+    expect(dates[4].getMonth()).toBe(0) // January
+    expect(dates[4].getDate()).toBe(2)
+  })
+})
+

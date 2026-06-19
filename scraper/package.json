@@ -14,7 +14,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "jsdom": "^25.0.0",
+    "jsdom": "^29.0.0",
     "tesseract.js": "^5.0.0",
     "unpdf": "^1.4.0"
   },
