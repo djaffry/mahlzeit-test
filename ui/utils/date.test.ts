@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import {
   getMondayOfWeek,
   getWeekDates,
+  dateToIso,
   formatDayHeader,
   isAvailableOnDay,
   weekdayOfIsoDate,
@@ -11,14 +12,14 @@ import {
 describe('getMondayOfWeek', () => {
   it('returns the Monday of the week containing the given date', () => {
     const wed = new Date(2026, 3, 22); // April 22, 2026 (Wednesday)
-    expect(getMondayOfWeek(wed).toISOString().slice(0, 10)).toBe('2026-04-20');
+    expect(dateToIso(getMondayOfWeek(wed))).toBe('2026-04-20');
   });
 });
 
 describe('getWeekDates', () => {
   it('returns 5 consecutive dates Mon–Fri', () => {
     const dates = getWeekDates(new Date(2026, 3, 22));
-    expect(dates.map(d => d.toISOString().slice(0, 10))).toEqual([
+    expect(dates.map(d => dateToIso(d))).toEqual([
       '2026-04-20', '2026-04-21', '2026-04-22', '2026-04-23', '2026-04-24',
     ]);
   });

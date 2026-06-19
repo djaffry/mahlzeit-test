@@ -237,6 +237,7 @@ export async function initApp(): Promise<void> {
 
   setupLanguageToggle()
   setupFilterTrigger()
+  loadViewMode()
   setupPinsToggle()
 
   try {
@@ -248,7 +249,6 @@ export async function initApp(): Promise<void> {
     _restaurants = allRestaurants
     initContentHash(allRestaurants)
     loadFavorites()
-    loadViewMode()
 
     const menuRestaurants = getMenuRestaurants()
     const weekDates = resolveWeekDates(menuRestaurants)
