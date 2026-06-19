@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-06-15T09:56:22.602Z",
+  "fetchedAt": "2026-06-19T09:02:39.125Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -263,7 +263,7 @@
           "items": [
             {
               "title": "Gefüllte Paprika (Schwein) mit Buttererdäpfeln,Tomatensauce",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Schweinefleisch"
               ],
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-15T09:56:21.805Z"
+      "fetchedAt": "2026-06-19T09:02:38.524Z"
     },
     "2026-06-19": {
       "categories": [

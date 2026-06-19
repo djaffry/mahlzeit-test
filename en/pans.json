@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-18T08:40:09.715Z",
+  "fetchedAt": "2026-06-19T09:02:43.155Z",
   "error": null,
   "days": {
     "2026-06-15": {
@@ -146,6 +146,39 @@
         }
       ],
       "fetchedAt": "2026-06-18T08:40:04.941Z"
+    },
+    "2026-06-19": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Red lentil soup (N,LO)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Salmon fillet fried with parsley potatoes and salad (c,0,M‚D)",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Baked Melanzani roulades filled with sheep's cheese with flatbread, tzatziki (c,ac)",
+              "price": "12,50 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-19T09:02:38.524Z"
     }
   }
 }
