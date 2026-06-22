@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-22T08:34:49.682Z",
+  "error": null,
+  "days": {
+    "2026-06-22": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Carrot coconut milk soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O",
+              "description": null
+            },
+            {
+              "title": "Chicken strips baked on potato leaf salad (c,0,M‚A.C)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Penne with basil tomato pesto and parmesan",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "C,A,C,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    }
+  }
+}

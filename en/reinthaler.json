@@ -1,0 +1,18 @@
+{
+  "id": "reinthaler",
+  "title": "Gasthaus Reinthaler",
+  "url": "https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue",
+  "type": "specials",
+  "icon": "beer",
+  "cuisine": [
+    "Inn"
+  ],
+  "reservationUrl": "https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung",
+  "coordinates": {
+    "lat": 48.21892,
+    "lon": 16.39778
+  },
+  "fetchedAt": "2026-06-22T08:34:50.718Z",
+  "error": "Reinthaler: no PDF for KW26/2026 on speisekarte page (listed: none)",
+  "days": {}
+}

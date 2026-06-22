@@ -1,0 +1,377 @@
+{
+  "id": "taeko",
+  "title": "Taeko Ramen Bar",
+  "url": "https://www.taeko.at/mittagsmen%C3%BC",
+  "type": "specials",
+  "icon": "soup",
+  "cuisine": [
+    "Ramen",
+    "Japanisch",
+    "Chinesisch"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2169,
+    "lon": 16.3881
+  },
+  "fetchedAt": "2026-06-22T08:34:47.490Z",
+  "error": null,
+  "days": {
+    "2026-06-22": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Tintenfisch Senfkohl Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Eingelegter Senfkohl,Tintenfisch, Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Lachs Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Lachs, Saisongemüse, Udonnudeln"
+            },
+            {
+              "title": "Kräuterseitling Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, Kräuterseitling, Gurken, Karotte"
+            },
+            {
+              "title": "Gebratener Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Reis mit Ananas und Garnelen, 3 nigiri mix, Agedashitofu mit Bonitoflocken, Obst, Karrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    },
+    "2026-06-23": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Tintenfisch Senfkohl Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Eingelegter Senfkohl,Tintenfisch, Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Lachs Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Lachs, Saisongemüse, Udonnudeln"
+            },
+            {
+              "title": "Kräuterseitling Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, Kräuterseitling, Gurken, Karotte"
+            },
+            {
+              "title": "Gebratener Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Reis mit Ananas und Garnelen, 3 nigiri mix, Agedashitofu mit Bonitoflocken, Obst, Karrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    },
+    "2026-06-24": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Tintenfisch Senfkohl Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Eingelegter Senfkohl,Tintenfisch, Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Lachs Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Lachs, Saisongemüse, Udonnudeln"
+            },
+            {
+              "title": "Kräuterseitling Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, Kräuterseitling, Gurken, Karotte"
+            },
+            {
+              "title": "Gebratener Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Reis mit Ananas und Garnelen, 3 nigiri mix, Agedashitofu mit Bonitoflocken, Obst, Karrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    },
+    "2026-06-25": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Tintenfisch Senfkohl Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Eingelegter Senfkohl,Tintenfisch, Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Lachs Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Lachs, Saisongemüse, Udonnudeln"
+            },
+            {
+              "title": "Kräuterseitling Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, Kräuterseitling, Gurken, Karotte"
+            },
+            {
+              "title": "Gebratener Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Reis mit Ananas und Garnelen, 3 nigiri mix, Agedashitofu mit Bonitoflocken, Obst, Karrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    },
+    "2026-06-26": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Yasai miso Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,F",
+              "description": "pakchoi,shittake,tofu,sojasprossen"
+            },
+            {
+              "title": "Taeko Shoyu Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F",
+              "description": "porkroll mit sojablätter,pakchoi,nori,shiittake,ei"
+            },
+            {
+              "title": "Tintenfisch Senfkohl Ramen",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,C,R,F",
+              "description": "Eingelegter Senfkohl,Tintenfisch, Bambus, Pakchoi, Nori, Frühlingszwiebel, Ei"
+            },
+            {
+              "title": "Spargel mit Hühnerfleisch",
+              "price": "12,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F",
+              "description": "Spargel, Hühnerfleischwürfel,kräuterseitling, Karotten, Schwarzpfeffer +Reis"
+            },
+            {
+              "title": "Lachs Udon",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,F",
+              "description": "Lachs, Saisongemüse, Udonnudeln"
+            },
+            {
+              "title": "Kräuterseitling Avocado Roll",
+              "price": "12,90 €",
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Avocado, Kräuterseitling, Gurken, Karotte"
+            },
+            {
+              "title": "Gebratener Reis Bento",
+              "price": "12,90 €",
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,D,F",
+              "description": "Gr. Reis mit Ananas und Garnelen, 3 nigiri mix, Agedashitofu mit Bonitoflocken, Obst, Karrage"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Eintöpfe"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-06-22T08:34:47.931Z",
+  "error": null,
+  "days": {
+    "2026-06-22": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Tomaten 🍅-Oliven 🫒-Kalamansi 🍊-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Hühnergeschnetzeltes",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Spätzle, Waldpilzen 🍄‍🟫, Champignons & Eierschwammerln – optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Spinat 💚-Zucchini 🥒-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "leichter Ricotta-Béchamelsauce"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "High Protein 💪-Eintopf vom Ötscherblickschwein, Borlotti-Bohnen 🫘, schwarzen 🖤 Bohnen, gelben 💛 & grünen Fisolen 🫛, Erdäpfeln 🥔, Speck 🥓 & Reis",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Aloo Broccoli 🥦 Rasedar - Indisches Erdäpfel 🥔-Brokkoli 🥦-Curry in Tomatensauce 🍅",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ingwer 🫚, Kurkuma 🧡, Kreuzkümmel 🤎 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Spicy Chinakohl 🥬-Salad Bowl *Kimchi-Style*",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Soja-Teriyaki"
+            },
+            {
+              "title": "Röstkarfiol 🤍-Kichererbsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tahini-Joghurt & grünem Paprika 🫑"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Erdbeer 🍓-Tiramisu im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-22T08:34:45.570Z"
+    }
+  }
+}
