@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-22T08:34:47.353Z",
+  "fetchedAt": "2026-06-23T07:42:57.603Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -447,12 +447,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan chocolate mousse, raspberry",
+              "title": "Vegan mousse au chocolat, raspberry filled duet from Profiteroles",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -461,10 +461,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Curd cheese strudel",
+              "title": "Curd cheese strudel vegan apricot crumble cake",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -484,7 +486,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-24": {
       "categories": [
@@ -680,10 +682,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Lemon Creme Brulee",
+              "title": "Lemon Creme Brulee Vegan mousse au chocolat, raspberry",
               "price": null,
-              "tags": [],
-              "allergens": "C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "C,F,G,O",
               "description": null
             }
           ]
@@ -692,12 +696,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan banana cake, nut granola",
+              "title": "Vegan banana cake, nut granola curd strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -717,7 +721,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-25": {
       "categories": [
@@ -916,12 +920,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan Aperol mousse, orange flits",
+              "title": "Vegan aperol mousse, orange flits and lemon creme brulee",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "C,G",
               "description": null
             }
           ]
@@ -930,10 +934,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Coffee cuts",
+              "title": "Coffee slices, vegan banana cake, nut granola",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G,H,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -953,7 +959,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-26": {
       "categories": [
@@ -1084,9 +1090,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Lotus cream with caramel cookies",
+              "title": "Lotus cream with caramel cookies. Vegan aperol mousse with orange fluff",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F,G",
               "description": null
             }
@@ -1096,12 +1104,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan currant cake",
+              "title": "Vegan currant cake coffee slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1121,7 +1129,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     }
   }
 }

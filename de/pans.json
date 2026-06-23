@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-22T08:34:49.682Z",
+  "fetchedAt": "2026-06-23T07:43:00.141Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-06-22T08:34:45.570Z"
+    },
+    "2026-06-23": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Brokkoli Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G,A",
+              "description": null
+            },
+            {
+              "title": "Faschierter Braten mit Erdäpfelpüree und Röstzwiebeln",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,O,L,N,A,C",
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Avocado,Schafskäse und Hummus dazu Fladenbrot",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,0,M,A",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     }
   }
 }

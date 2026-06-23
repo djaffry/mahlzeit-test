@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-22T08:34:47.353Z",
+  "fetchedAt": "2026-06-23T07:42:57.603Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -447,12 +447,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Mousse au chocolat, Himbeere",
+              "title": "Veganes Mousse au chocolat, Himbeere Gefülltes Duett von Profiteroles",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -461,10 +461,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Topfenstrudel",
+              "title": "Topfenstrudel Veganer Marillenstreuselkuchen",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -484,7 +486,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-24": {
       "categories": [
@@ -680,10 +682,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Zitronen Creme Brulee",
+              "title": "Zitronen Creme Brulee Veganes Mousse au chocolat, Himbeere",
               "price": null,
-              "tags": [],
-              "allergens": "C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "C,F,G,O",
               "description": null
             }
           ]
@@ -692,12 +696,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Bananenkuchen, Nuss Granola",
+              "title": "Veganer Bananenkuchen, Nuss Granola Topfenstrudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -717,7 +721,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-25": {
       "categories": [
@@ -916,12 +920,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Aperolmousse, Orangenfliets",
+              "title": "Veganes Aperolmousse, Orangenfliets Zitronen Creme Brulee",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "C,G",
               "description": null
             }
           ]
@@ -930,10 +934,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Kaffeeschnitte",
+              "title": "Kaffeeschnitte Veganer Bananenkuchen, Nuss Granola",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G,H,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -953,7 +959,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     },
     "2026-06-26": {
       "categories": [
@@ -1084,9 +1090,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Lotus Creme mit Karamellkeksen",
+              "title": "Lotus Creme mit Karamellkeksen Veganes Aperolmousse mit Orangenfliets",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,F,G",
               "description": null
             }
@@ -1096,12 +1104,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Ribiselkuchen",
+              "title": "Veganer Ribiselkuchen Kaffeeschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1121,7 +1129,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T08:34:45.570Z"
+      "fetchedAt": "2026-06-23T07:42:54.731Z"
     }
   }
 }
