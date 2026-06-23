@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-23T07:42:57.603Z",
+  "fetchedAt": "2026-06-23T08:34:37.849Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -344,7 +344,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Jalapenos, Röstzwiebel, Tomatensalsa",
+              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Lauch, Paprika, Chimichurri",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -486,7 +486,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-23T07:42:54.731Z"
+      "fetchedAt": "2026-06-23T08:34:35.688Z"
     },
     "2026-06-24": {
       "categories": [
@@ -581,7 +581,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Jalapenos, Röstzwiebel, Tomatensalsa",
+              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Lauch, Paprika, Chimichurri",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -721,7 +721,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-23T07:42:54.731Z"
+      "fetchedAt": "2026-06-23T08:34:35.688Z"
     },
     "2026-06-25": {
       "categories": [
@@ -817,7 +817,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Jalapenos, Röstzwiebel, Tomatensalsa",
+              "title": "Beef Minute Steak, Landhendlbrust, Leberkäse, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Loaded Fries\", Pulled Beef, Cheddarsauce, Lauch, Paprika, Chimichurri",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -959,7 +959,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-23T07:42:54.731Z"
+      "fetchedAt": "2026-06-23T08:34:35.688Z"
     },
     "2026-06-26": {
       "categories": [
