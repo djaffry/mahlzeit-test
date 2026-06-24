@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-23T07:43:00.141Z",
+  "fetchedAt": "2026-06-24T07:35:26.318Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -78,6 +78,37 @@
         }
       ],
       "fetchedAt": "2026-06-23T07:42:54.731Z"
+    },
+    "2026-06-24": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Pumpkin cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,6",
+              "description": null
+            },
+            {
+              "title": "Surschnitzel baked with potato salad (c,o,M,‚A.C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Salad bowl with mozzarella, tomatoes, sugar melon and basil pesto with flatbread (c‚o,M‚A)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-24T07:35:21.195Z"
     }
   }
 }

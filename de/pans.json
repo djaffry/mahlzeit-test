@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-23T07:43:00.141Z",
+  "fetchedAt": "2026-06-24T07:35:26.318Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -78,6 +78,37 @@
         }
       ],
       "fetchedAt": "2026-06-23T07:42:54.731Z"
+    },
+    "2026-06-24": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Kürbis Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,6",
+              "description": null
+            },
+            {
+              "title": "Surschnitzel gebacken mit Erdäpfelsalat (c,o,M,‚A.C)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Salat Bowl mit Mozzarella, Tomaten,Zuckermelone und Basilikumpesto dazu Fladenbrot (c‚o,M‚A)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-24T07:35:21.195Z"
     }
   }
 }
