@@ -5,13 +5,313 @@
   "type": "full",
   "icon": "train",
   "cuisine": [
-    "canteen"
+    "Canteen"
   ],
   "coordinates": {
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-06-22T08:34:51.043Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-06-25T07:37:39.630Z",
+  "error": null,
+  "days": {
+    "2026-06-22": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Baked cauliflower",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Remoulade sauce, lemon"
+            },
+            {
+              "title": "Roasted turkey fillet",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Fusili tricolore & colorful vegetables, herb cream sauce"
+            },
+            {
+              "title": "Grilled bratwurst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Roasted potatoes, coleslaw"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Double Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-23": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Spinach pancakes",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Butter potatoes, yoghurt dip"
+            },
+            {
+              "title": "Lasagna Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Minced meat & vegetables, béchamel & cheese"
+            },
+            {
+              "title": "Grilled chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,M",
+              "description": "Rice & bacon foliage, BBQ sauce"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Strawberry fruit dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-24": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Mushroom goulash",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Bread dumplings, chives"
+            },
+            {
+              "title": "Cordon Bleu Tuscany",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Prosciutto & tomato, French fries"
+            },
+            {
+              "title": "Grilled shrimp skewers",
+              "price": null,
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,E,F,G,M,N",
+              "description": "Spicy wakame & fragrant rice, lime dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Sugar donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-25": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Whole grain pasta",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Lentil Bolognese, Grana Vegano"
+            },
+            {
+              "title": "Putszta schnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Rice & letcho, fresh chives"
+            },
+            {
+              "title": "Grilled trout",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Parsley potatoes, herb butter"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Raspberry coconut cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-26": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Poppy seed noodles",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Applesauce, powdered sugar"
+            },
+            {
+              "title": "Half grilled chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,M",
+              "description": "Potato salad, fresh parsley"
+            },
+            {
+              "title": "Grilled halloumi",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Tzatziki & antipasti, focaccia"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd pancakes",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    }
+  }
 }

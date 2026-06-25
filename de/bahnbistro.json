@@ -11,7 +11,307 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-06-22T08:34:51.043Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-06-25T07:37:39.630Z",
+  "error": null,
+  "days": {
+    "2026-06-22": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gebackener Karfiol",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Sauce Remoulade, Zitrone"
+            },
+            {
+              "title": "Putenfilet gebraten",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Fusili tricolore & buntes Gemüse, Kräuterrahmsoße"
+            },
+            {
+              "title": "Bratwurst vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Rösterdäpfel, Krautsalat"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Double-Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-23": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatpalatschinken",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Butterkartoffeln, Yoghurt-Dip"
+            },
+            {
+              "title": "Lasagne Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Faschiertes & Gemüse, Bechamel & Käse"
+            },
+            {
+              "title": "Grilled Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,M",
+              "description": "Reis & Speckfisolen, BBQ-Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeerfruchtknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-24": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Champignongulasch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Semmelknödel, Schnittlauch"
+            },
+            {
+              "title": "Cordon Bleu Toscana",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Prosciutto & Tomate, Pommes frites"
+            },
+            {
+              "title": "Garnelenspieße vom Grill",
+              "price": null,
+              "tags": [
+                "Meeresfrüchte"
+              ],
+              "allergens": "A,B,C,E,F,G,M,N",
+              "description": "Spicy Wakame & Duftreis, Limetten-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Zucker-Donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-25": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Vollkorn-Pasta",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Linsen-Bolognese, Grana Vegano"
+            },
+            {
+              "title": "Putszta-Schnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Reis & Letscho, Frischer Schnittlauch"
+            },
+            {
+              "title": "Forelle vom Grill",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Petersilkartoffeln, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Kokoskuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-26": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Mohnnudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Apfelmus, Staubzucker"
+            },
+            {
+              "title": "Halbes Grillhendl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,M",
+              "description": "Erdäpfelsalat, Frische Petersilie"
+            },
+            {
+              "title": "Gegrillter Halloumi",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Tzatziki & Antipasti, Focaccia"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfenpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
+    }
+  }
 }

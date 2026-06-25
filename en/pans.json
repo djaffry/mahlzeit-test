@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-24T07:35:26.318Z",
+  "fetchedAt": "2026-06-25T07:37:44.259Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -109,6 +109,39 @@
         }
       ],
       "fetchedAt": "2026-06-24T07:35:21.195Z"
+    },
+    "2026-06-25": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Cauliflower cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G,A",
+              "description": null
+            },
+            {
+              "title": "Chicken minced meat on a skewer on salad and croutons (o,m, A)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spaetzle in paprika cream sauce (6,c,LN,A)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-25T07:37:39.035Z"
     }
   }
 }
