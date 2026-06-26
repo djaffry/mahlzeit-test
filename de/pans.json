@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-25T07:37:44.259Z",
+  "fetchedAt": "2026-06-26T07:44:50.575Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -142,6 +142,39 @@
         }
       ],
       "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-26": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Gemüse Cremesuppe",
+              "price": null,
+              "tags": [],
+              "allergens": "N,L,O,G,A",
+              "description": null
+            },
+            {
+              "title": "Lachsfilet gebraten mit Petersilienerdäpfel und Salat",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "0,M,6,D",
+              "description": null
+            },
+            {
+              "title": "Zigaretten-Börek mit Tzatziki dazu Salatgarnitur (c,c,o,M‚A)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-26T07:44:45.482Z"
     }
   }
 }

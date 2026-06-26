@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-23T08:34:37.849Z",
+  "fetchedAt": "2026-06-26T07:44:47.201Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -998,10 +998,10 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Gekochtes Rindfleisch, Cremespinat, Rösterdäpfel",
+              "title": "Schweinsfilet im Speckmantel, Cremespinat, Rösterdäpfel",
               "price": "12,30 €",
               "tags": [
-                "Rindfleisch"
+                "Schweinefleisch"
               ],
               "allergens": "A,C,F,G,L,M,O",
               "description": null
@@ -1129,7 +1129,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-23T07:42:54.731Z"
+      "fetchedAt": "2026-06-26T07:44:45.482Z"
     }
   }
 }
