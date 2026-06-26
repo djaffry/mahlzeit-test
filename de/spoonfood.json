@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-06-25T07:37:40.447Z",
+  "fetchedAt": "2026-06-26T08:34:43.849Z",
   "error": null,
   "days": {
     "2026-06-22": {
@@ -569,6 +569,146 @@
         }
       ],
       "fetchedAt": "2026-06-25T07:37:39.035Z"
+    },
+    "2026-06-26": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍-Erdäpfel 🥔-Trüffel-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortilla 🌮-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Chili con Carne 🫘 (gemischtes Faschiertes) gefüllt & knusprigen Tortillachips – optional mit Sauerrahm"
+            },
+            {
+              "title": "Warmer Reis 🍚-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Äpfeln 🍎"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Mediterraner Schmorgemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Ofen-Huhn, Tomaten 🍅, Zucchini 🥒, Melanzani 🍆 & Reis"
+            },
+            {
+              "title": "Rote ❤️ Linsen-Dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Spinat 💚 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Kurkuma 🧡-Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Tomaten 🍅, Mandeln, Harissa-Süßkartoffeln 🍠, getrockneten Pflaumen 💜, frischer Petersilie 🌿 & Grapefruit 🍊"
+            },
+            {
+              "title": "Weißer Quinoa-Tabouleh",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kumquats 🍊, Cherrytomaten 🍅, frischer Petersilie 🌿, Mungo-Bohnen & Radicchio 🩷"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Marillen 🍑-Trifle",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-26T08:34:40.794Z"
     }
   }
 }
