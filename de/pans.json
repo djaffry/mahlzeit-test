@@ -1,0 +1,59 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "Bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-29T08:34:57.121Z",
+  "error": null,
+  "days": {
+    "2026-06-29": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Rote Linsen Püree Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,0",
+              "description": null
+            },
+            {
+              "title": "Hühnerstreifen gebacken auf Erdäpfel-Blattsalat (A.6,c,m‚0)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Orientalischer Vorspeisenteller mit Tzatziki, Ezme, Hummus, Schafskäse, Oliven und",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Fladenbrot",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,G,N",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    }
+  }
+}

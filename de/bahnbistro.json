@@ -1,0 +1,319 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-06-29T08:34:52.432Z",
+  "error": null,
+  "days": {
+    "2026-06-29": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Indisches Linsencurry",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,N",
+              "description": "Belugalinsen, Dip & Petersilie, Fladenbrot"
+            },
+            {
+              "title": "Hühnerfilet Piccata",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Pasta & Tomatenragout, Grana Padano"
+            },
+            {
+              "title": "Blunzn-Gröstl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,M",
+              "description": "Erdäpfel & Blutwurst, Frischer Kren"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Zitronenblechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    },
+    "2026-06-30": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tortelli Büffel-Mozzarella",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G,H",
+              "description": "Sauce al limone & Pesto, Gegrillte Paprika"
+            },
+            {
+              "title": "Rindragout Gulyas-Art",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C",
+              "description": "Frische Nockerl, Petersilie"
+            },
+            {
+              "title": "Spanischer Reis",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "L",
+              "description": "Putenbrust & Gemüse, Petersilie & Orange"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Nougatknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    },
+    "2026-07-01": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinat-Käsestrudel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Kartoffeln & Tzatziki, Getrocknete Tomaten"
+            },
+            {
+              "title": "Putenschnitzerl gebacken",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "Reis & Preiselbeeren, Zitrone"
+            },
+            {
+              "title": "Hausgmachte Tirolerknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Krautsalat & Saftl, Frischer Schnittlauch"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Vanillekrapfen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    },
+    "2026-07-02": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pasta Kreta",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H",
+              "description": "Zucchini, Tomate & Oliven, Schafskäse"
+            },
+            {
+              "title": "Paprika-Henderl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Hörnchen & Sauerrahm, Frischer Schnittlauch"
+            },
+            {
+              "title": "Rindfleisch-Dattel Laibchen",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,H",
+              "description": "Orangen-Cous Cous, Pistazien & Yoghurt"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Apfelpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    },
+    "2026-07-03": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gebackene Apfelradl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Vanillesoße, Zimt-Zucker"
+            },
+            {
+              "title": "Überbackenes Lachsfilet",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Blattspinat & Hollandaise, Butterkartoffeln"
+            },
+            {
+              "title": "Gefülltes Fladenbrot",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,G,N",
+              "description": "Hummus & Grillgemüse, Yofu-Kresse Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Donauwelle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    }
+  }
+}

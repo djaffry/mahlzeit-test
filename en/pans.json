@@ -1,0 +1,59 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-06-29T08:34:57.121Z",
+  "error": null,
+  "days": {
+    "2026-06-29": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Red lentil puree soup",
+              "price": null,
+              "tags": [],
+              "allergens": "L,H,0",
+              "description": null
+            },
+            {
+              "title": "Chicken strips baked on potato leaf salad (A.6,c,m‚0)",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Oriental starter plate with tzatziki, ezme, hummus, sheep cheese, olives and",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Flatbread",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,G,N",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-06-29T08:34:51.649Z"
+    }
+  }
+}
