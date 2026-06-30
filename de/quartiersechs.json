@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-29T08:34:54.108Z",
+  "fetchedAt": "2026-06-30T07:47:56.170Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -78,7 +78,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Ofenerdäpfel gefüllt mit Chilibohnen, Gurken- Sojadip",
+              "title": "Ofenerdäpfel, Chilibohnen, Gurken- Sojadip",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -209,12 +209,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Weichselcreme",
+              "title": "Vegane Weichselcreme Lotus Creme mit Karamellkeksen",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -246,7 +246,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-06-30T07:47:54.101Z"
     },
     "2026-06-30": {
       "categories": [
@@ -440,9 +440,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Melonensalat mit Minzsirup",
+              "title": "Melonensalat mit Minzsirup Vegane Weichselcreme",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -452,10 +454,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Apfelstreuselschnitte",
+              "title": "Apfelstreuselschnitte Pistazien - Esterhazyschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -475,7 +477,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-06-30T07:47:54.101Z"
     },
     "2026-07-01": {
       "categories": [

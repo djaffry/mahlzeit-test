@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-29T08:34:54.108Z",
+  "fetchedAt": "2026-06-30T07:47:56.170Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -78,7 +78,7 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Oven potatoes filled with chili beans, cucumber soy dip",
+              "title": "Oven potatoes, chili beans, cucumber soy dip",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -209,12 +209,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan sour cream",
+              "title": "Vegan sour cream lotus cream with caramel cookies",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,F,G",
               "description": null
             }
           ]
@@ -246,7 +246,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-06-30T07:47:54.101Z"
     },
     "2026-06-30": {
       "categories": [
@@ -440,9 +440,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Melon salad with mint syrup",
+              "title": "Melon salad with mint syrup Vegan sour cream",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -452,10 +454,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apple crumble slices",
+              "title": "Apple crumble slices, pistachios - Esterhazy slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -475,7 +477,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-06-30T07:47:54.101Z"
     },
     "2026-07-01": {
       "categories": [
