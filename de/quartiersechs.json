@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-06-30T07:47:56.170Z",
+  "fetchedAt": "2026-07-01T08:06:37.363Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -673,7 +673,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Marillentiramisu",
+              "title": "Marillentiramisu Melonensalat, Minzsirup",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G",
@@ -685,10 +685,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Bananen Schnitte",
+              "title": "Bananen Schnitte Apfelstreuselschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -708,7 +708,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-07-01T08:06:35.857Z"
     },
     "2026-07-02": {
       "categories": [
