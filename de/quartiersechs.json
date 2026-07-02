@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-01T08:06:37.363Z",
+  "fetchedAt": "2026-07-02T07:25:37.612Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -905,12 +905,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Himbeercreme",
+              "title": "Vegane Himbeercreme Marillentiramisu",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -919,10 +919,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Topfen - Obersschnitte",
+              "title": "Topfen - Obersschnitte Bananen Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -942,7 +942,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-07-02T07:25:34.925Z"
     },
     "2026-07-03": {
       "categories": [

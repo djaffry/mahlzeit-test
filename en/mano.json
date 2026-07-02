@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-07-01T08:06:36.505Z",
+  "fetchedAt": "2026-07-02T07:25:36.844Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -167,7 +167,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Chanterelle cream soup",
+              "title": "Tomato and mango cream soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -231,7 +231,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-07-02T07:25:34.925Z"
     },
     "2026-07-02": {
       "categories": [
