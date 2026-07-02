@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-06-29T08:34:57.121Z",
+  "fetchedAt": "2026-07-02T07:47:59.571Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -54,6 +54,39 @@
         }
       ],
       "fetchedAt": "2026-06-29T08:34:51.649Z"
+    },
+    "2026-07-02": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Porcini Mushroom Potato Soup (A.G,LH)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Potato Datschi filled with minced beef with garlic yoghurt and salad (AMm‚o,‚6)",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Goat cheese bowl with peaches and grape leaves and flatbread",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,6,M,0",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-02T07:47:54.759Z"
     }
   }
 }
