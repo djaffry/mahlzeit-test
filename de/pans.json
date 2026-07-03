@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-02T07:47:59.571Z",
+  "fetchedAt": "2026-07-03T07:43:19.284Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -87,6 +87,39 @@
         }
       ],
       "fetchedAt": "2026-07-02T07:47:54.759Z"
+    },
+    "2026-07-03": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Brokkoli-Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H,L",
+              "description": null
+            },
+            {
+              "title": "Gebratenes Lachsfilet mit Petersilerdäpfel",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Rucola Risotto mit Parmesan und Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,M,O",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-03T07:43:14.680Z"
     }
   }
 }

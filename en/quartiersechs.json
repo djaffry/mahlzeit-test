@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-02T07:25:37.612Z",
+  "fetchedAt": "2026-07-03T07:43:16.971Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -1069,9 +1069,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Peach yogurt cream",
+              "title": "Peach Yoghurt Cream Vegan Raspberry Cream",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "G,O",
               "description": null
             }
@@ -1081,12 +1083,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan punch cuts",
+              "title": "Punch cuts vegan curd cheese - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1106,7 +1108,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-29T08:34:51.649Z"
+      "fetchedAt": "2026-07-03T07:43:14.680Z"
     }
   }
 }
