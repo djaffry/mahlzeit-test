@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-02T07:47:56.828Z",
+  "fetchedAt": "2026-07-03T08:34:55.030Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -575,6 +575,144 @@
         }
       ],
       "fetchedAt": "2026-07-02T07:47:54.759Z"
+    },
+    "2026-07-03": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Champignons 🍄‍🟫-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Leberkäse",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Rahmgemüse"
+            },
+            {
+              "title": "Vegane Mohnnudeln",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Apfelmus 🍏"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Schmorgulasch aus dem Ofen (vom Rind)",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Erdäpfeln 🥔, Fisolen 🫛, Zwieberln 🧅 & Reis"
+            },
+            {
+              "title": "Süßkartoffel 🍠-Erdnuss 🥜-Tikka Masala",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Steirische Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Käferbohnen 🫘, Kalbfleisch, Paprika 🫑 & Kürbiskernöl"
+            },
+            {
+              "title": "Couscous-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Tomaten 🍅, frischer Petersilie 🌿 & Granatapfelkernen 🍎"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Erdbeer 🍓-Kokos 🥥-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-03T08:34:52.694Z"
     }
   }
 }

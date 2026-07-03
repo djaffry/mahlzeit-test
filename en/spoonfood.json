@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-02T07:47:56.828Z",
+  "fetchedAt": "2026-07-03T08:34:55.030Z",
   "error": null,
   "days": {
     "2026-06-29": {
@@ -575,6 +575,144 @@
         }
       ],
       "fetchedAt": "2026-07-02T07:47:54.759Z"
+    },
+    "2026-07-03": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Sweet potato 🍠 mushroom 🍄‍🟫 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "🔥 Low carb 🔥 liver cheese",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Creamed vegetables"
+            },
+            {
+              "title": "Vegan poppy seed noodles",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Applesauce 🍏"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Braised goulash from the oven (beef)",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, potatoes 🥔, beans 🫛, onions 🧅 & rice"
+            },
+            {
+              "title": "Sweet potato 🍠-peanut 🥜-tikka masala",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Styrian Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Runner beans 🫘, veal, peppers 🫑 & pumpkin seed oil"
+            },
+            {
+              "title": "Couscous Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, tomatoes 🍅, fresh parsley 🌿 & pomegranate seeds 🍎"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "🔥 Low carb 🔥-strawberry 🍓-coconut 🥥-panna cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-03T08:34:52.694Z"
     }
   }
 }
