@@ -1,0 +1,20 @@
+{
+  "id": "noodleking",
+  "title": "Noodle King",
+  "url": "https://www.noodleking.at/menus",
+  "type": "link",
+  "icon": "crown",
+  "cuisine": [
+    "Asian",
+    "Noodles"
+  ],
+  "stampCard": true,
+  "edenred": true,
+  "coordinates": {
+    "lat": 48.2262,
+    "lon": 16.3929
+  },
+  "fetchedAt": "2026-07-06T08:15:01.245Z",
+  "error": null,
+  "days": {}
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-07-06T08:15:00.072Z",
+  "error": null,
+  "days": {
+    "2026-07-06": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Oriental lentil soup",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L",
+              "description": null
+            },
+            {
+              "title": "Baked chicken schnitzel with potato salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Falafel bowl with hummus, sheep cheese and flatbread",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,F,H,M,0",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-06T08:14:55.327Z"
+    }
+  }
+}
