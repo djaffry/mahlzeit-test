@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-06T08:15:00.072Z",
+  "fetchedAt": "2026-07-07T07:33:03.236Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -47,6 +47,39 @@
         }
       ],
       "fetchedAt": "2026-07-06T08:14:55.327Z"
+    },
+    "2026-07-07": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Yellow zucchini cream soup (AG,H,L)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef meat lasagne with mozzarella and salad",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,6,0,M",
+              "description": null
+            },
+            {
+              "title": "Baked Emmental cheese with tartare sauce and cranberries",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,6,0",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     }
   }
 }

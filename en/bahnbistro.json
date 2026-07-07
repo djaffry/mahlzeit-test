@@ -5,13 +5,309 @@
   "type": "full",
   "icon": "train",
   "cuisine": [
-    "canteen"
+    "Canteen"
   ],
   "coordinates": {
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-07-06T08:15:00.936Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-07-07T07:32:59.629Z",
+  "error": null,
+  "days": {
+    "2026-07-06": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Tortelloni quinoa spinach",
+              "price": null,
+              "tags": [],
+              "allergens": "A,N",
+              "description": "Tomato sesame pesto, fried cauliflower"
+            },
+            {
+              "title": "Meatballs",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Mashed potatoes & peas, cream sauce & cranberries"
+            },
+            {
+              "title": "Pasta Tonno",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G",
+              "description": "Tuna sugo & olives, parmesan"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Raspberry top cuts",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-07": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Baked Emmental cheese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Parsley potatoes, tartare sauce"
+            },
+            {
+              "title": "Onion beef schnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Cucumber & fried onions, fresh dumplings"
+            },
+            {
+              "title": "Grilled currywurst",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Signature curry sauce, skin-on wedges"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Blueberry muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-08": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Vegetable lasagne",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Colorful vegetables & vechamel, Grana Vegano"
+            },
+            {
+              "title": "Pumpkin seed schnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "French fries, pumpkin seed oil dip & lemon"
+            },
+            {
+              "title": "Grilled salmon slices",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D",
+              "description": "Mediterranean pasta salad, balsamic ice cream"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Tiramisu slices",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-09": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Tempura vegetables",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Sweet potatoes & spicy broccoli, sweet chili dip"
+            },
+            {
+              "title": "Bifteki",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G",
+              "description": "Tomato rice & tzatziki, fresh parsley"
+            },
+            {
+              "title": "Buffalo wings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Dippers & coleslaw, ranch dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Cherry dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-10": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Nut noodles",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Plum roaster, powdered sugar"
+            },
+            {
+              "title": "Baked plaice",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Potato salad, tartar sauce"
+            },
+            {
+              "title": "Marinated tofu",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,H,N",
+              "description": "Cashew rice & wakame, sweet chili dip"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chocolate donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    }
+  }
 }

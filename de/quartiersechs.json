@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-06T08:14:58.126Z",
+  "fetchedAt": "2026-07-07T07:33:01.231Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -93,7 +93,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -247,7 +247,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T08:14:55.327Z"
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     },
     "2026-07-07": {
       "categories": [
@@ -327,7 +327,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -444,12 +444,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Panna Cotta, Mangospiegel",
+              "title": "Vegane Panna Cotta, Mangospiegel Weißes Schokolade - Pistazien Mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "C,F,G,H",
               "description": null
             }
           ]
@@ -458,7 +458,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Zitronenkuchen",
+              "title": "Zitronenkuchen Sacherschnitte",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G",
@@ -481,7 +481,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T08:14:55.327Z"
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     },
     "2026-07-08": {
       "categories": [
@@ -561,7 +561,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -714,7 +714,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T08:14:55.327Z"
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     },
     "2026-07-09": {
       "categories": [
@@ -794,7 +794,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -946,7 +946,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T08:14:55.327Z"
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     },
     "2026-07-10": {
       "categories": [
@@ -1026,7 +1026,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1125,7 +1125,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T08:14:55.327Z"
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
     }
   }
 }

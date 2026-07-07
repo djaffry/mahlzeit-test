@@ -11,7 +11,303 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-07-06T08:15:00.936Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-07-07T07:32:59.629Z",
+  "error": null,
+  "days": {
+    "2026-07-06": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tortelloni Quinoa-Spinat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,N",
+              "description": "Tomaten-Sesampesto, Frittierter Karfiol"
+            },
+            {
+              "title": "Fleischbällchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Kartoffelpüree & Erbsen, Rahmsoße & Preiselbeeren"
+            },
+            {
+              "title": "Pasta Tonno",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G",
+              "description": "Thunfischsugo & Oliven, Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Obersschnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-07": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gebackener Emmentaler",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Petersilkartofferl, Sauce Tartare"
+            },
+            {
+              "title": "Zwiebelrindschnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Gurkerl & Röstzwiebel, Frische Nockerl"
+            },
+            {
+              "title": "Currywurst vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Signature Currysauce, Skin-on Wedges"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Blueberry-Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-08": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüselasagne",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Buntes Gemüse & Vechamel, Grana Vegano"
+            },
+            {
+              "title": "Kürbiskernschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Pommes frites, Kernöl-Dip & Zitrone"
+            },
+            {
+              "title": "Gegrillte Lachsschnitte",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D",
+              "description": "Mediterraner Nudelsalat, Balsamico Glace"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Tiramisuschnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-09": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tempura-Gemüse",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Süßkartoffeln & Spicy Brokkoli, Sweet Chili-Dip"
+            },
+            {
+              "title": "Bifteki",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G",
+              "description": "Tomatenreis & Tzatziki, Frische Petersilie"
+            },
+            {
+              "title": "Buffalo Wings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Dippers & Coleslaw, Ranch-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kirschenknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-10": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Nußnudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Zwetschkenröster, Staubzucker"
+            },
+            {
+              "title": "Scholle gebacken",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Erdäpfelsalat, Sauce Remoulade"
+            },
+            {
+              "title": "Marinierter Tofu",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,H,N",
+              "description": "Cashewreis & Wakame, Sweet Chili-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Schoko-Donut",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T07:32:58.913Z"
+    }
+  }
 }
