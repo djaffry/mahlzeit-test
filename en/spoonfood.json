@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-06T08:14:58.250Z",
+  "fetchedAt": "2026-07-07T09:34:48.607Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -153,6 +153,147 @@
         }
       ],
       "fetchedAt": "2026-07-06T08:14:55.327Z"
+    },
+    "2026-07-07": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Roasted cauliflower 🤍 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el Hanout 🤎"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Lemon 🍋-chicken on herbs 🪴-lemon couscous",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Fennel 🌿, sweet potatoes 🍠 & leeks"
+            },
+            {
+              "title": "Tortellini",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Spinach 💚 & Tomato 🍅 Ricotta Sauce"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Green peas 🫛 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Debrezinern, potatoes 🥔, carrots 🥕 & rice"
+            },
+            {
+              "title": "Ratatouille 🥒🍅🍆",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Baby potatoes 🥔, olives 🫒 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Curry 💛-Rice 🍚-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "black 🖤 rice, pineapple 🍍, chickpeas & peppers 🫑 - optionally with cashews"
+            },
+            {
+              "title": "Greek Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, peppers 🫑, tomatoes 🍅, olives 🫒 & feta"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭 mousse",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Passion fruit 🧡 coulis"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-07T09:34:45.977Z"
     }
   }
 }
