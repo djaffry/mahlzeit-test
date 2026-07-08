@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-07T07:33:03.236Z",
+  "fetchedAt": "2026-07-08T08:34:54.059Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -80,6 +80,37 @@
         }
       ],
       "fetchedAt": "2026-07-07T07:32:58.913Z"
+    },
+    "2026-07-08": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Karotten-Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "G,H,L",
+              "description": null
+            },
+            {
+              "title": "Cevapcici mit Pommes-Zwiebelsenf dazu Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,O,M",
+              "description": null
+            },
+            {
+              "title": "Kichererbsen-Curry mit Gemüse und Basmatireis",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "C,H,L",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-08T08:34:49.789Z"
     }
   }
 }
