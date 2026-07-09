@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-07T09:34:48.607Z",
+  "fetchedAt": "2026-07-09T07:32:50.123Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -294,6 +294,147 @@
         }
       ],
       "fetchedAt": "2026-07-07T09:34:45.977Z"
+    },
+    "2026-07-08": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Linsensuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kreuzkümmel 🤎"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni alla Puttanesca",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Oliven 🫒, getrockneten Tomaten 🍅, Thunfisch 🐟 & Kapern"
+            },
+            {
+              "title": "Bunte Sommergemüse-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, Paprika 🫑, Melanzani 🍆, Babykartoffeln 🥔, Süßkartoffeln 🍠 & Kräuter 🌿-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Andalusischer Bauern-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Chorizo, Mais 🌽, Kichererbsen 🤭, Karotten 🥕, Tomaten 🍅 & Reis"
+            },
+            {
+              "title": "Rote ❤️ Linsen-Dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Ingwer 🫚, Kokos 🥥 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Karotten 🥕-Stangensellerie 🌿-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gerösteter Brokkoli 🥦, Äpfeln 🍏, Quinoa & geschmorte Choggia-Rübe 🫜 | Curry 💛-Reis 🍚-Salad Bowl mit schwarzem 🖤 Reis, Ananas 🍍, Kichererbsen & Paprika 🫑 - optional mit Cashewkernen"
+            },
+            {
+              "title": "Couscous-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Ofen-Melanzani 🍆 & Granatapfel 🍎 | Griechische Salad Bowl mit Gurken 🥒, Paprika 🫑, Tomaten 🍅, Oliven 🫒 & Feta"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Passionsfrucht 🧡-Coulis"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     }
   }
 }

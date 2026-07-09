@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-08T06:23:28.088Z",
+  "fetchedAt": "2026-07-09T07:32:50.514Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -533,7 +533,7 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Rinder-Kofta-Bällchen, Chili-Limetten-Reis",
+              "title": "Rinder-Köfte, Chili-Limetten-Reis",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -627,13 +627,12 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Putenschinken, Gorgonzola, getrocknete Tomaten, Pesto",
+              "title": "Pizza Cardinale, Beinschinken, Mais, Pfefferoni",
               "price": "9,90 €",
               "tags": [
-                "Schweinefleisch",
-                "Pute"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,O",
+              "allergens": "A,G",
               "description": null
             },
             {
@@ -714,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-08T06:23:26.005Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     },
     "2026-07-09": {
       "categories": [
@@ -860,12 +859,13 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Cardinale, Beinschinken, Mais, Pfefferoni",
+              "title": "Pizza, Putenschinken, Gorgonzola, getrocknete Tomaten, Pesto",
               "price": "9,90 €",
               "tags": [
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Pute"
               ],
-              "allergens": "A,G",
+              "allergens": "A,C,G,O",
               "description": null
             },
             {
@@ -911,10 +911,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Aperolmousse, Orangenfilet",
+              "title": "Aperolmousse, Orangenfilet Waldheidelbeer Mousse, Blütenhonig",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -923,7 +923,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Pecannuss - Cranberry Brownie",
+              "title": "Pecannuss - Cranberry Brownie Apfelstreuselkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,H",
@@ -946,7 +946,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-07T07:32:58.913Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     },
     "2026-07-10": {
       "categories": [
@@ -1090,9 +1090,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Apfel - Calvados Creme",
+              "title": "Apfel - Calvados Creme Veganes Aperolmousse, Orangenfliets",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "G",
               "description": null
             }
@@ -1102,10 +1104,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Birnenstrudel",
+              "title": "Birnenstrudel Pecannuss-Cranberry Brownie",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1125,7 +1127,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-07T07:32:58.913Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-08T06:23:28.088Z",
+  "fetchedAt": "2026-07-09T07:32:50.514Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -533,7 +533,7 @@
           "name": "Main course traditional",
           "items": [
             {
-              "title": "Beef kofta balls, chili lime rice",
+              "title": "Beef koftas, chili-lime rice",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -627,13 +627,12 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza turkey ham, gorgonzola, sun-dried tomatoes, pesto",
+              "title": "Pizza Cardinale, ham, corn, pepperoni",
               "price": "9,90 €",
               "tags": [
-                "Schweinefleisch",
-                "Pute"
+                "Schweinefleisch"
               ],
-              "allergens": "A,C,G,O",
+              "allergens": "A,G",
               "description": null
             },
             {
@@ -714,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-08T06:23:26.005Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     },
     "2026-07-09": {
       "categories": [
@@ -860,12 +859,13 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Cardinale, ham, corn, pepperoni",
+              "title": "Pizza, turkey ham, gorgonzola, sun-dried tomatoes, pesto",
               "price": "9,90 €",
               "tags": [
-                "Schweinefleisch"
+                "Schweinefleisch",
+                "Pute"
               ],
-              "allergens": "A,G",
+              "allergens": "A,C,G,O",
               "description": null
             },
             {
@@ -911,10 +911,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Aperol mousse, orange fillet",
+              "title": "Aperol mousse, orange fillet, wild blueberry mousse, blossom honey",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -923,7 +923,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Pecan-Cranberry Brownie",
+              "title": "Pecan - Cranberry Brownie Apple Crumble Cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,H",
@@ -946,7 +946,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-07T07:32:58.913Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     },
     "2026-07-10": {
       "categories": [
@@ -1090,9 +1090,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Apple - Calvados cream",
+              "title": "Apple - Calvados Cream Vegan Aperol Mousse, Orange Flies",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "G",
               "description": null
             }
@@ -1102,10 +1104,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Pear strudel",
+              "title": "Pear Strudel Pecan Cranberry Brownie",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1125,7 +1127,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-07T07:32:58.913Z"
+      "fetchedAt": "2026-07-09T07:32:47.974Z"
     }
   }
 }
