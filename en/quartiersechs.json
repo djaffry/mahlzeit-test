@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-09T07:32:50.514Z",
+  "fetchedAt": "2026-07-10T07:56:19.810Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -779,12 +779,12 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Creamy dill foliage, roasted potatoes",
+              "title": "Roasted potatoes creamy salsify",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
               ],
-              "allergens": "G,L",
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -845,12 +845,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "\"Caprese Wrap\" rocket, mozzarella, strawberries, pine nuts, tomatoes, basil pesto, grana",
+              "title": "\"Vital Bowl\" - red lentils, broccoli, cucumber, tangerines, iceberg lettuce, goji berries, blueberries - balsamic dressing, roasted cauliflower",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,F,G,H,O",
+              "allergens": "O",
               "description": null
             }
           ]
@@ -946,7 +946,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-09T07:32:47.974Z"
+      "fetchedAt": "2026-07-10T07:56:17.882Z"
     },
     "2026-07-10": {
       "categories": [
@@ -1062,12 +1062,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Red lentils, broccoli, cucumber, iceberg lettuce, figs, goji berries, oven-roasted cauliflower, blueberry balsamic dressing",
+              "title": "\"Caprese Wrap\" rocket, mozzarella, strawberries, pine nuts, tomatoes, basil pesto, grana",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1127,7 +1127,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-09T07:32:47.974Z"
+      "fetchedAt": "2026-07-10T07:56:17.882Z"
     }
   }
 }

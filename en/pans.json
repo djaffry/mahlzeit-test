@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-08T08:34:54.059Z",
+  "fetchedAt": "2026-07-10T07:56:23.581Z",
   "error": null,
   "days": {
     "2026-07-06": {
@@ -111,6 +111,39 @@
         }
       ],
       "fetchedAt": "2026-07-08T08:34:49.789Z"
+    },
+    "2026-07-10": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Minestrone soup (AF,H,L)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Fried salmon with parsley potatoes and salad",
+              "price": "14,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "O,0,M,C",
+              "description": null
+            },
+            {
+              "title": "Gnocchi with basil-dried tomato pesto and parmesan",
+              "price": "11,50 €",
+              "tags": [],
+              "allergens": "A,F,6,C,M",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-10T07:56:17.882Z"
     }
   }
 }
