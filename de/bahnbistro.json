@@ -1,0 +1,319 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-07-13T07:44:54.678Z",
+  "error": null,
+  "days": {
+    "2026-07-13": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pinzgauer Kässpätzle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Spätzle & Bierkas, Röstzwiebel"
+            },
+            {
+              "title": "Putenfilet gebraten",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,F,G,O",
+              "description": "Kroketten & Prinzessbohnen, Pfeffersoße"
+            },
+            {
+              "title": "Tortelloni Carne",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,F,G",
+              "description": "Schinken-Oberssoße, Getrocknete Tomaten"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Stracciatellakuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    },
+    "2026-07-14": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kartoffel-Chili",
+              "price": null,
+              "tags": [],
+              "allergens": "A,L",
+              "description": "Bohnen & Mais, Bauernbrot"
+            },
+            {
+              "title": "Gewürz-Lachs",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Reis & buntes Gemüse, Kräuter-Fraiche"
+            },
+            {
+              "title": "Hühnerspieß vom Grill",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,M",
+              "description": "Skin-on Fries & Gemüse, Curry-Honig Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Sacherschnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    },
+    "2026-07-15": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Pasta all' varrabiata",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,G,H",
+              "description": "Tomate & Chili, *Veggie oder Vegan*"
+            },
+            {
+              "title": "Backhendlsalat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G",
+              "description": "Erdäpfelsalat & Käferbohnen, Joghurt-Dip"
+            },
+            {
+              "title": "Surbraten",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Gabelkarut & Semmeknödel, Saftl"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Apfelpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    },
+    "2026-07-16": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Crispy-Thai Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,N",
+              "description": "Frühlingsrollen & Spicy Krautsalat, Duftreis"
+            },
+            {
+              "title": "Pasta con Pollo",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Huhn & Brokkoli, Grana Padano"
+            },
+            {
+              "title": "Karreefilets vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Mexicogemüse & Wedges, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Mohn-Streuselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    },
+    "2026-07-17": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Topfenpalatschinken",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Vanillesauce & Himbeeren, Schlagobers"
+            },
+            {
+              "title": "Fischfilet Müllerin",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Petersilkartoffeln, Sauce Tartare & Zitrone"
+            },
+            {
+              "title": "Krautfleckerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Frisches Kraut & Zwiebel, *Süß oder Sauer*"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt & Mango",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-07-13T07:45:00.077Z",
+  "error": null,
+  "days": {
+    "2026-07-13": {
+      "categories": [
+        {
+          "name": "Lunch menu",
+          "items": [
+            {
+              "title": "Vegetable cream soup",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H,L",
+              "description": null
+            },
+            {
+              "title": "Chicken strips baked on potato leaf salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,6,M,0",
+              "description": null
+            },
+            {
+              "title": "Porcini mushroom risotto with parmesan and salad (c,H,L,M‚0)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-13T07:44:53.872Z"
+    }
+  }
+}
