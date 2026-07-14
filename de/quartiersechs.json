@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-13T07:44:56.280Z",
+  "fetchedAt": "2026-07-14T06:30:20.933Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -475,12 +475,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Mousse au chocolat, Himbeere",
+              "title": "Veganes Mousse au chocolat, Himbeere Zwetschken-Mohnmousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,G,O",
+              "allergens": "F,G,H,O",
               "description": null
             }
           ]
@@ -489,7 +489,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Malakoffschnitte",
+              "title": "Malakoffschnitte Gedeckter Birnenkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,G,H,O",
@@ -512,7 +512,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-13T07:44:53.872Z"
+      "fetchedAt": "2026-07-14T06:30:18.115Z"
     },
     "2026-07-15": {
       "categories": [
