@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-13T07:45:00.077Z",
+  "fetchedAt": "2026-07-14T08:34:54.955Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -47,6 +47,37 @@
         }
       ],
       "fetchedAt": "2026-07-13T07:44:53.872Z"
+    },
+    "2026-07-14": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Kürbis-Creme Suppe (AG,H,L)",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Texanisches Chilli con Carne mit Fladenbrot (ALH)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Brokkoli-Mozzarella-Laibchen mit Knoblauch-Joghurt und Salat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,6,M,0",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-14T08:34:50.057Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-14T06:30:20.764Z",
+  "fetchedAt": "2026-07-14T08:34:52.080Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -155,6 +155,145 @@
         }
       ],
       "fetchedAt": "2026-07-14T06:30:18.115Z"
+    },
+    "2026-07-14": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Potatoes 🥔-vegetables 🥒🥕🥦-cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Turmeric 🧡"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Greek baked potato",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "dried tomatoes 🍅, olives 🫒, peppers 🫑, bacon 🥓, feta & herbs 🌿 yoghurt"
+            },
+            {
+              "title": "Tortellini (with cheese 🧀 filling) al Pomodoro 🍅",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Baked mozzarella"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Fabada - Spanish stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "white 🤍 beans 🫘, chorizo, ribs, bacon 🥓 & rice"
+            },
+            {
+              "title": "Oriental vegetable tagine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Fennel 🌿, carrots 🥕, aubergine 🍆 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Pasta Caprese Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Cherry tomatoes 🍅, mozzarella 🧀 & basil 🌿"
+            },
+            {
+              "title": "Swiss sausage salad",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cheese 🧀, peppers 🫑 & cucumbers 🥒"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Peach 🍑 panna cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Vanilla 💛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-14T08:34:50.057Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-14T06:30:20.764Z",
+  "fetchedAt": "2026-07-14T08:34:52.080Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -155,6 +155,145 @@
         }
       ],
       "fetchedAt": "2026-07-14T06:30:18.115Z"
+    },
+    "2026-07-14": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Gemüse 🥒🥕🥦-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kurkuma 🧡"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Griechische Ofen-Kartoffel",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "getrockneten Tomaten 🍅, Oliven 🫒, Paprika 🫑, Speck 🥓, Feta & Kräuter 🌿-Joghurt"
+            },
+            {
+              "title": "Tortellini (mit Käse 🧀-Füllung) al Pomodoro 🍅",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Mozzarella überbacken"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Fabada - Spanischer Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "weißen 🤍 Bohnen 🫘, Chorizo, Ripperln, Speck 🥓 & Reis"
+            },
+            {
+              "title": "Orientalische Gemüse-Tajine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Fenchel 🌿, Karotten 🥕, Melanzani 🍆 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Pasta-Caprese Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Kirschtomaten 🍅, Mozzarella 🧀 & Basilikum 🌿"
+            },
+            {
+              "title": "Schweizer Wurstsalat",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Käse 🧀, Paprika 🫑 & Gurkerln 🥒"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Pfirsich 🍑-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Vanille 💛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-14T08:34:50.057Z"
     }
   }
 }
