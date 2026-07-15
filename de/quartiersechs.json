@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-14T06:30:20.933Z",
+  "fetchedAt": "2026-07-15T06:32:48.143Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -726,10 +726,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Creme Brulee, Marillen",
+              "title": "Creme Brulee, Marillen Mousse au Chocolat, Amarenakirsche",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "C,F,G,O",
               "description": null
             }
           ]
@@ -738,10 +738,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Bananen Schnitte",
+              "title": "Bananen Schnitte Malakoffschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -761,7 +761,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-13T07:44:53.872Z"
+      "fetchedAt": "2026-07-15T06:32:46.671Z"
     },
     "2026-07-16": {
       "categories": [
