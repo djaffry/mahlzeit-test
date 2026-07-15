@@ -12,7 +12,7 @@
     "lat": 48.2242,
     "lon": 16.3969
   },
-  "fetchedAt": "2026-07-14T08:34:54.955Z",
+  "fetchedAt": "2026-07-15T08:34:39.442Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -78,6 +78,37 @@
         }
       ],
       "fetchedAt": "2026-07-14T08:34:50.057Z"
+    },
+    "2026-07-15": {
+      "categories": [
+        {
+          "name": "Mittagsmenü",
+          "items": [
+            {
+              "title": "Jungzwiebel-Creme Suppe",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,H,L",
+              "description": null
+            },
+            {
+              "title": "Surschnitzel gebacken mit Erdäpfelsalat",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": "A,C,6,M,0",
+              "description": null
+            },
+            {
+              "title": "Spinatspätzle mit Gorgonzola-Sauce (A,C,6,LH)",
+              "price": "11,90 €",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-15T08:34:34.235Z"
     }
   }
 }
