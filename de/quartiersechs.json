@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-15T06:32:48.143Z",
+  "fetchedAt": "2026-07-16T06:36:43.426Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -578,7 +578,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Erdäpfel-Karotten Laibchen, Beluga Linsen, Kräuter - Sojaskyr Dip",
+              "title": "Erdäpfel-Karotten Laibchen, Beluga Linsen, Sojaskyr Dip",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -761,7 +761,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-15T06:32:46.671Z"
+      "fetchedAt": "2026-07-16T06:36:40.908Z"
     },
     "2026-07-16": {
       "categories": [
@@ -975,12 +975,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Kokosmousse",
+              "title": "Veganes Kokosmousse Creme Brulee, Marillen",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,O",
+              "allergens": "C,F,G,O",
               "description": null
             }
           ]
@@ -989,7 +989,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schoko - Erdbeerschnitte",
+              "title": "Schoko - Erdbeerschnitte Bananen Schnitte",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,O",
@@ -1012,7 +1012,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-13T07:44:53.872Z"
+      "fetchedAt": "2026-07-16T06:36:40.908Z"
     },
     "2026-07-17": {
       "categories": [

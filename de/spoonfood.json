@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-14T08:34:52.080Z",
+  "fetchedAt": "2026-07-16T06:36:42.681Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -294,6 +294,145 @@
         }
       ],
       "fetchedAt": "2026-07-14T08:34:50.057Z"
+    },
+    "2026-07-15": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Bohnen 🫘-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kurkuma 🧡 & frischer Zitrone 🍋 – optional mit Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "BBQ-Chicken Drumsticks 🥁",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Brat-Pfefferoni, Maiskolben 🌽 & kleinem Beilagensalat 🥗"
+            },
+            {
+              "title": "Makkaroni Primavera 💚",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, Erbsen 🫛, Thymian 🌿, Babykarotten 🥕 & Lauch - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Speck 🥓-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Semmelknödelwürfeln"
+            },
+            {
+              "title": "Karfiol 🤍-Romanesco 🥦-Spinat 💚-Madras",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erbsen 🫛 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Pasta-Caprese Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Kirschtomaten 🍅, Mozzarella 🧀 & Basilikum 🌿"
+            },
+            {
+              "title": "Schweizer Wurstsalat",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Käse 🧀, Paprika 🫑 & Gurkerln 🥒"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Pfirsich 🍑-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Vanille 💛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-16T06:36:40.908Z"
     }
   }
 }
