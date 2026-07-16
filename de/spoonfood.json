@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-16T06:36:42.681Z",
+  "fetchedAt": "2026-07-16T08:34:54.159Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -433,6 +433,149 @@
         }
       ],
       "fetchedAt": "2026-07-16T06:36:40.908Z"
+    },
+    "2026-07-16": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Champignons 🍄‍🟫-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischer Petersilie 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Indonesische Reis-Pfanne *Nasi Goreng-Style*",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "geschmortem Fleisch vom Ötscherblickschwein, Pilzen 🍄‍🟫, Mais 🌽, Sojabohnen & Paprika 🫑"
+            },
+            {
+              "title": "Eiernockerl 🍳",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿 & kleinem Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Stifado vom Rind",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Babykarotten 🥕, Perlzwieberln 🧅 & Reis | Nudeln"
+            },
+            {
+              "title": "Kichererbsen-Curry - in fruchtiger Tomaten 🍅-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelber 💛 Zucchini 🥒, Karotten 🥕 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Melonen 🍉-Feta 🧀-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, frischer Minze 🌿 & Petersilie"
+            },
+            {
+              "title": "Purple 💜-Quinoa-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Heidelbeeren 🫐, Tomaten 🍅, Gurken 🥒, frischer Petersilie 🌿 & Granatapfel 🍎-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganer Kokos 🥥-Milchreis",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mango 🥭"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-16T08:34:52.075Z"
     }
   }
 }

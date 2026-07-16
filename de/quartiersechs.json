@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-16T06:36:43.426Z",
+  "fetchedAt": "2026-07-16T08:34:54.295Z",
   "error": null,
   "days": {
     "2026-07-13": {
@@ -852,22 +852,6 @@
           ]
         },
         {
-          "name": "Classic Grill",
-          "items": [
-            {
-              "title": "Beef Minute Steak, Landhendlbrust, Spare Ribs, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Crunchy Chick'n Burger\" Brioche Bun, Rucola, Tomate, Cheddar, BBQ Sauce",
-              "price": "11,40 €",
-              "tags": [
-                "Rindfleisch",
-                "Geflügel",
-                "Schweinefleisch"
-              ],
-              "allergens": "A,G,L,M",
-              "description": null
-            }
-          ]
-        },
-        {
           "name": "Asia Corner",
           "items": [
             {
@@ -1012,7 +996,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-16T06:36:40.908Z"
+      "fetchedAt": "2026-07-16T08:34:52.075Z"
     },
     "2026-07-17": {
       "categories": [
