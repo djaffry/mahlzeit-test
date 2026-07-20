@@ -1,0 +1,314 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-07-20T07:36:59.208Z",
+  "error": null,
+  "days": {
+    "2026-07-20": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinat-Käseknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Rahmsoße, Frischer Kren"
+            },
+            {
+              "title": "Chicken Teriyaki",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F,N",
+              "description": "Jasminreis & zweierlei Karotten, Gerösteter Sesam"
+            },
+            {
+              "title": "Käsekrainer vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Potatoe Wedges, Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfenblechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-21": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Chickichen Fingers",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Duftreis & Zitrone, Preiselbeeren"
+            },
+            {
+              "title": "Gebratenes Zanderfilet",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G,M",
+              "description": "Balsamico-Linsen, Butterkartofferl"
+            },
+            {
+              "title": "Knödelteller",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Grammel & Wurst, Gabelkraut & Saftl"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillen-Krapfen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-22": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Erdäpfelnudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Getrocknete Tomaten, Flora & Schnittlauch"
+            },
+            {
+              "title": "Surschnitzerl gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Pommes frites, Ketchup & Zitrone"
+            },
+            {
+              "title": "Spicy Tuna-Buddha Bowl",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, Mais & Rotkraut, Toppings & Sriracha-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kirsch-Schokokuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-23": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Frühlingsrolle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,L,N",
+              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+            },
+            {
+              "title": "Cremige Schinkenfleckerl",
+              "price": null,
+              "tags": [
+                "Pute",
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Putenschinken, Obers & Käse, Frischer Schnittlauch"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Skin-on Fries, Ajvar & Yoghurt"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Nuß-Toffeekuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-24": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kaiserschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Apfelmus, Staubzucker"
+            },
+            {
+              "title": "Alaska-Seelachs gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Erdäpfelsalat & Sauce Tartare, Zitrone"
+            },
+            {
+              "title": "Rote Rüben-Gnocchi",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Sugo Jardineira, Grana Vegano"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Rahm-Früchtchen",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    }
+  }
+}

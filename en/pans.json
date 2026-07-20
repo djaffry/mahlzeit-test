@@ -1,0 +1,18 @@
+{
+  "id": "pans",
+  "title": "pAn's",
+  "url": "https://www.pans.at/tagesmenue/",
+  "type": "specials",
+  "icon": "chef-hat",
+  "cuisine": [
+    "bistro"
+  ],
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2242,
+    "lon": 16.3969
+  },
+  "fetchedAt": "2026-07-20T07:37:05.248Z",
+  "error": "fetch failed → certificate has expired",
+  "days": {}
+}

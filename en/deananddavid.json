@@ -1,0 +1,151 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salads",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-07-20T07:36:59.875Z",
+  "error": null,
+  "days": {
+    "2026-07-20": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-21": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-22": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-23": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-24": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab bowl with planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    }
+  }
+}

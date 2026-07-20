@@ -1,0 +1,314 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-07-20T07:36:59.208Z",
+  "error": null,
+  "days": {
+    "2026-07-20": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Spinach cheese dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Cream sauce, fresh horseradish"
+            },
+            {
+              "title": "Chicken Teriyaki",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F,N",
+              "description": "Jasmine rice & two types of carrots, roasted sesame"
+            },
+            {
+              "title": "Cheese Krainer from the grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Potato wedges, ketchup"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd sheet cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-21": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Chickichen Fingers",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Fragrant rice & lemon, cranberries"
+            },
+            {
+              "title": "Fried pike perch fillet",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G,M",
+              "description": "Balsamic lentils, buttered potatoes"
+            },
+            {
+              "title": "dumpling plate",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Grammel & Sausage, Forkweed & Juice"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Apricot fritters",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-22": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Carinthian potato noodles",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Dried tomatoes, flora & chives"
+            },
+            {
+              "title": "Baked Surschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "French fries, ketchup & lemon"
+            },
+            {
+              "title": "Spicy Tuna Buddha Bowl",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, corn & red cabbage, toppings & Sriracha mayo"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Cherry chocolate cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-23": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Spring roll",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,L,N",
+              "description": "Vegetable egg rice & wakame, sweet chili dip"
+            },
+            {
+              "title": "Creamy ham patties",
+              "price": null,
+              "tags": [
+                "Pute",
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Turkey ham, cream & cheese, fresh chives"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Skin-on Fries, Ajvar & Yoghurt"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Nut toffee cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    },
+    "2026-07-24": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Kaiserschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Applesauce, powdered sugar"
+            },
+            {
+              "title": "Baked Alaska Pollock",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,G,M",
+              "description": "Potato salad & tartare sauce, lemon"
+            },
+            {
+              "title": "Beetroot gnocchi",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Sugo Jardineira, Grana Vegano"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Creamy fruits",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-20T07:36:58.342Z"
+    }
+  }
+}
