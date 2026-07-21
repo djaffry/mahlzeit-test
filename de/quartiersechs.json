@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-20T07:37:00.626Z",
+  "fetchedAt": "2026-07-21T08:34:28.111Z",
   "error": null,
   "days": {
     "2026-07-20": {
@@ -474,10 +474,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Tapioka Dessert, Exotische Früchte",
+              "title": "Tapioka Dessert, Exotische Früchte Mocca Mousse",
               "price": null,
               "tags": [],
-              "allergens": "O",
+              "allergens": "A,F,G,O",
               "description": null
             }
           ]
@@ -486,10 +486,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Snickers Schnitte",
+              "title": "Snickers Schnitte Himbeer Kardinalschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,E,F,G",
+              "allergens": "A,C,E,F,G,H,O",
               "description": null
             }
           ]
@@ -509,7 +509,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-20T07:36:58.342Z"
+      "fetchedAt": "2026-07-21T08:34:26.503Z"
     },
     "2026-07-22": {
       "categories": [

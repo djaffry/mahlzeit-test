@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-20T08:35:00.209Z",
+  "fetchedAt": "2026-07-21T08:34:27.924Z",
   "error": null,
   "days": {
     "2026-07-24": {
@@ -297,6 +297,145 @@
         }
       ],
       "fetchedAt": "2026-07-20T08:34:57.589Z"
+    },
+    "2026-07-21": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Red ❤️ lentil zucchini 🥒 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Zoodles alla Carbonara",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pancetta bacon 🥓 - with a small side salad 🥗"
+            },
+            {
+              "title": "Tortiglioni Primavera 💚 – in a light ricotta lemon 🍋 sauce",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, peas 🫛, baby carrots 🥕 & thyme 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Asian shredded beef",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Wok vegetables 🌿🥕🥦 & rice"
+            },
+            {
+              "title": "Coconut 🥥-split peas 🫛-dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Melanzani 🍆, zucchini 🥒, peppers 🫑, ginger 🫚, turmeric 🧡 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Glass noodle salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Mung beans 🫛, wok vegetables, wakame 🌿, grated carrots 🥕 & ponzu sesame dressing"
+            },
+            {
+              "title": "Beluga Lentil Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Corn 🌽, cucumber 🥒, basil 🌿, pepper 🫑, chioggia beet 🫜 & sour milk citrus 🍋 herb 🌿 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Espresso ☕️-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cocoa bean"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-21T08:34:26.503Z"
     }
   }
 }
