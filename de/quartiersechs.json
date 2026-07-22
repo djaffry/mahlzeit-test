@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-22T06:45:51.266Z",
+  "fetchedAt": "2026-07-22T08:34:55.006Z",
   "error": null,
   "days": {
     "2026-07-20": {
@@ -590,7 +590,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Erbsen-Zitrone-Ziegenkäse, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
+              "title": "Conchiglie, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -657,7 +657,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Bunter Blattsalat, Thunfisch, Honig-Senf Sauce",
+              "title": "Bunter Blattsalat, Thunfisch",
               "price": "11,90 €",
               "tags": [
                 "Fisch"
@@ -758,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-22T06:45:48.779Z"
+      "fetchedAt": "2026-07-22T08:34:52.971Z"
     },
     "2026-07-23": {
       "categories": [

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-22T06:45:51.266Z",
+  "fetchedAt": "2026-07-22T08:34:55.006Z",
   "error": null,
   "days": {
     "2026-07-20": {
@@ -590,7 +590,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with peas-lemon-goat cheese, carrot tagliatelle, gnocchi with poppy seeds, rocket - honey pesto, tomato-basil sauce, mushrooms, almonds, cherry tomatoes, Grana",
+              "title": "Conchiglie, carrot tagliatelle, gnocchi with poppy seeds, rocket - honey pesto, tomato-basil sauce, mushrooms, almonds, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -657,7 +657,7 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Colorful leaf lettuce, tuna, honey mustard sauce",
+              "title": "Colorful leaf lettuce, tuna",
               "price": "11,90 €",
               "tags": [
                 "Fisch"
@@ -758,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-22T06:45:48.779Z"
+      "fetchedAt": "2026-07-22T08:34:52.971Z"
     },
     "2026-07-23": {
       "categories": [
