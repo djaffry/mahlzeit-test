@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-21T08:34:28.111Z",
+  "fetchedAt": "2026-07-22T06:45:51.266Z",
   "error": null,
   "days": {
     "2026-07-20": {
@@ -723,10 +723,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießflammerie, frische Beeren",
+              "title": "Grießflammerie, frische Beeren Tapioka Dessert, Exotische Früchte",
               "price": null,
               "tags": [],
-              "allergens": "A,G",
+              "allergens": "A,G,O",
               "description": null
             }
           ]
@@ -735,10 +735,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Mohn- Birnenstrudel",
+              "title": "Mohn- Birnenstrudel Snickers Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,E,F,G",
               "description": null
             }
           ]
@@ -758,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-20T07:36:58.342Z"
+      "fetchedAt": "2026-07-22T06:45:48.779Z"
     },
     "2026-07-23": {
       "categories": [
@@ -971,10 +971,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Schokolade- Orangenmousse",
+              "title": "Schokolade- Orangenmousse Grießflammerie, Frische Beeren",
               "price": null,
               "tags": [],
-              "allergens": "F,G,O",
+              "allergens": "A,F,G,O",
               "description": null
             }
           ]
@@ -983,10 +983,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Kaffeeschnitte",
+              "title": "Kaffeeschnitte Mohn - Birnenstrudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1006,7 +1006,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-20T07:36:58.342Z"
+      "fetchedAt": "2026-07-22T06:45:48.779Z"
     },
     "2026-07-24": {
       "categories": [
@@ -1150,12 +1150,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Kokosmousse",
+              "title": "Veganes Kokosmousse Schokolade- Orangenmousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "F,O",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -1164,10 +1164,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schwarzwälder Kirschschnitte",
+              "title": "Schwarzwälder Kirschschnitte Kaffeeschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1187,7 +1187,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-20T07:36:58.342Z"
+      "fetchedAt": "2026-07-22T06:45:48.779Z"
     }
   }
 }
