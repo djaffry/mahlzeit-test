@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-23T06:42:57.477Z",
+  "fetchedAt": "2026-07-23T08:34:34.414Z",
   "error": null,
   "days": {
     "2026-07-24": {
@@ -585,6 +585,150 @@
         }
       ],
       "fetchedAt": "2026-07-23T06:42:55.879Z"
+    },
+    "2026-07-23": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Klare Mangold 🥬-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Hühner-Gemüse-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, getrockneten Tomaten 🍅, Kichererbsen & Ras el-Hanout 🤎"
+            },
+            {
+              "title": "Erdäpfel 🥔-Spinat 💚-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Georgischer Schmor-Eintopf - vom Höllerschmid Rind",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Erdäpfeln 🥔 & Reis"
+            },
+            {
+              "title": "Gemüse-Senf 💛-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕, Zucchini 🥒, Mangold 🥬 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Tomaten 🍅, Paprika 🫑, Minze 🌿, Petersilie, Kreuzkümmel 🤎 & frischem Limetten 🍋‍🟩-Granatapfel 🍎-Dressing"
+            },
+            {
+              "title": "Rote Rüben 🫜-Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Harissa 🧡-Ofen-Brokkoli 🥦 & gerösteten Sonnenblumen 🌻-Kernen"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "🔥 Low Carb 🔥-Himbeer 🍓-Cheesecake",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandelboden im Becher"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-23T08:34:32.053Z"
     }
   }
 }
