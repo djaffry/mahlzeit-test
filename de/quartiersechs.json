@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-22T08:34:55.006Z",
+  "fetchedAt": "2026-07-23T06:42:58.071Z",
   "error": null,
   "days": {
     "2026-07-20": {
@@ -811,7 +811,7 @@
           "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Chicken Tikka Masala Indisch, Gewürzreis, Koriander",
+              "title": "Chicken Tikka Masala Indisch, Gewürzreis",
               "price": "12,30 €",
               "tags": [
                 "Huhn"
@@ -839,7 +839,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Erbsen-Zitrone-Ziegenkäse, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
+              "title": "Conchiglie, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1006,7 +1006,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-22T06:45:48.779Z"
+      "fetchedAt": "2026-07-23T06:42:55.879Z"
     },
     "2026-07-24": {
       "categories": [
@@ -1085,7 +1085,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Erbsen-Zitrone-Ziegenkäse, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
+              "title": "Conchiglie, Karotten Tagliatelle, Gnocchi mit Mohn, Rucola - Honig Pesto, Tomaten-Basilikum Sauce, Champignon, Mandeln, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1187,7 +1187,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-22T06:45:48.779Z"
+      "fetchedAt": "2026-07-23T06:42:55.879Z"
     }
   }
 }
