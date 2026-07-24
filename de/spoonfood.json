@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-23T08:34:34.414Z",
+  "fetchedAt": "2026-07-24T08:34:54.763Z",
   "error": null,
   "days": {
     "2026-07-24": {
@@ -47,7 +47,7 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Karotten 🥕-Tomaten 🍅-Kalamansi 🍊-Cremesuppe",
+              "title": "Süßkartoffel 🍠-Zucchini 🥒-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -62,22 +62,23 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Haschéehörnchen vom Höllerschmid-Rind",
+              "title": "🔥 Low Carb 🔥-Melanzani 🍆-Parmigiana",
               "price": "7,90 / 10,90",
               "tags": [
-                "Rindfleisch"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Wurzelgemüse 🥕 & frischer Petersilie 🌿 – optional mit Sauerrahm"
+              "description": null
             },
             {
-              "title": "Warmer Marillen 🍑-Rhabarber 🩷-Topfen-Grieß-Auflauf",
+              "title": "Warmer Marillen 🍑-Brioche-Auflauf",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Vanillesauce 💛"
+              "description": "Marillen 🧡-Röster"
             }
           ]
         },
@@ -85,24 +86,24 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Creamy Pulled Chicken-Pot",
+              "title": "Geschnetzeltes vom Huhn",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Huhn"
               ],
               "allergens": null,
-              "description": "Kohlrabi 🤍, Brokkoli 🥦, Erdäpfeln 🥔 & Reis"
+              "description": "Champignons 🍄‍🟫 & Reis – optional mit Schnittlauch 🌿"
             },
             {
-              "title": "Rote ❤️ Linsen-Dal",
+              "title": "Erdäpfel 🥔-Eintopf",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kokosmilch 🥥, Ingwer 🫚, Kurkuma 🧡, Brokkoli 🥦, Zucchini 🥒, Süßkartoffeln 🍠 & Reis"
+              "description": "lila 💜 Erdäpfeln, Karotten 🥕 & Reis"
             }
           ]
         },
@@ -110,24 +111,23 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Melonen 🍉-Feta 🧀-Salad Bowl",
+              "title": "Orientalische Bulgur-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, frischer Minze 🌿 & Petersilie"
+              "description": "Gurken 🥒, Tomaten 🍅, Paprika 🫑, Minze 🌿, Petersilie, Kreuzkümmel 🤎 & frischem Limetten 🍋‍🟩-Granatapfel 🍎-Dressing"
             },
             {
-              "title": "Purple 💜-Quinoa-Tabouleh-Salad Bowl",
+              "title": "Rote Rüben 🫜-Quinoa-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Heidelbeeren 🫐, Tomaten 🍅, Gurken 🥒, frischer Petersilie 🌿 & Granatapfel 🍎-Dressing"
+              "description": "Harissa 🧡-Ofen-Brokkoli 🥦 & gerösteten Sonnenblumen 🌻-Kernen"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -144,18 +144,19 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vegane Biscoff 🍪-Creme",
+              "title": "🔥 Low Carb 🔥-Schokoladen 🍫-Frischkäse-Creme",
               "price": "3,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Soja"
+              "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-07-20T07:36:58.342Z"
+      "fetchedAt": "2026-07-24T08:34:52.586Z"
     },
     "2026-07-20": {
       "categories": [
