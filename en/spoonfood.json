@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-27T07:57:27.507Z",
+  "fetchedAt": "2026-07-27T08:35:05.153Z",
   "error": null,
   "days": {
     "2026-07-31": {
@@ -62,14 +62,11 @@
           "name": "Specials",
           "items": [
             {
-              "title": "🔥 Low carb 🔥-Melanzani 🍆-Parmigiana",
+              "title": "Tortellini alla Panna",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
-              ],
+              "tags": [],
               "allergens": null,
-              "description": null
+              "description": "Bacon 🥓"
             },
             {
               "title": "Warm apricot 🍑 brioche casserole",
@@ -156,7 +153,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-27T08:35:03.212Z"
     }
   }
 }

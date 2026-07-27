@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-27T07:57:27.526Z",
+  "fetchedAt": "2026-07-27T08:35:05.392Z",
   "error": null,
   "days": {
     "2026-07-27": {
@@ -210,12 +210,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan strawberry cream",
+              "title": "Vegan strawberry cream Vegan coconut mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,O",
               "description": null
             }
           ]
@@ -224,7 +224,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Sacher cuts",
+              "title": "Sacherschnitte Black Forest cherry slices",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G",
@@ -247,7 +247,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-27T08:35:03.212Z"
     },
     "2026-07-28": {
       "categories": [
