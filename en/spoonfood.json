@@ -1,0 +1,162 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Stews"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-07-27T07:57:27.507Z",
+  "error": null,
+  "days": {
+    "2026-07-31": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Sweet potato 🍠 zucchini 🥒 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "🔥 Low carb 🔥-Melanzani 🍆-Parmigiana",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warm apricot 🍑 brioche casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Apricot 🧡 roaster"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Shredded chicken",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Mushrooms 🍄‍🟫 & rice - optionally with chives 🌿"
+            },
+            {
+              "title": "Potato 🥔 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "purple 💜 potatoes, carrots 🥕 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental Bulgur Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, tomatoes 🍅, peppers 🫑, mint 🌿, parsley, cumin 🤎 & fresh lime 🍋‍🟩 pomegranate 🍎 dressing"
+            },
+            {
+              "title": "Beetroot 🫜 Quinoa Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Harissa 🧡 oven broccoli 🥦 & roasted sunflower 🌻 seeds"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "🔥 Low carb 🔥 chocolate 🍫 cream cheese cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-27T07:57:25.917Z"
+    }
+  }
+}
