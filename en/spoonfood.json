@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-28T06:45:50.111Z",
+  "fetchedAt": "2026-07-28T08:34:38.003Z",
   "error": null,
   "days": {
     "2026-07-31": {
@@ -293,6 +293,145 @@
         }
       ],
       "fetchedAt": "2026-07-28T06:45:48.106Z"
+    },
+    "2026-07-28": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "French onion 🧅 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Herb 🌿 croutons"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Rice meat - from the Ötscherblick pig",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Broccoli 🥦 & peas 🫛 - optionally with sour cream"
+            },
+            {
+              "title": "Kas 🧀-Nockerl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Fried onions 🧅"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Paprika 🫑-Hendl",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Paprika Tricolore 💛🧡💚, Leek 🌿 & Tarnhonya"
+            },
+            {
+              "title": "Red lentil coconut 🥥 dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, spinach 💚, zucchini 🥒 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Italian Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Bread 🍞, tomatoes 🍅, red cabbage 💜, mozzarella balls, peppers 🫑, thyme 🌿 & balsamic dressing"
+            },
+            {
+              "title": "High Protein - Colorful Beans 🫘 Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "white 🤍 beans, kidney beans 🫘, cucumbers 🥒, peppers 🫑 & citrus 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Curd apricot 🍑 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-28T08:34:35.684Z"
     }
   }
 }
