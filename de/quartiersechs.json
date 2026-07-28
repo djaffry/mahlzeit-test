@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-27T08:35:05.392Z",
+  "fetchedAt": "2026-07-28T06:45:50.218Z",
   "error": null,
   "days": {
     "2026-07-27": {
@@ -442,9 +442,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Marillen - Reisdessert",
+              "title": "Kokos - Marillen - Reisdessert Vegane Erdbeercreme",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -454,10 +456,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Apfelstrudel",
+              "title": "Apfelstrudel Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -477,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-29": {
       "categories": [
@@ -674,7 +676,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganes Mousse au Chocolat, Amarenakirschen",
+              "title": "Veganes Mousse au Chocolat, Amarenakirschen Kokos - Marillen - Reisdessert",
               "price": null,
               "tags": [
                 "Vegan"
@@ -688,10 +690,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Beeren-Streusel Kuchen",
+              "title": "Beeren-Streusel Kuchen Apfelstrudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -711,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-30": {
       "categories": [
@@ -909,10 +911,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Holunder Mohn Panna Cotta, Erdbeerspiegel",
+              "title": "Holunder Mohn Panna Cotta, Erdbeerspiegel Veganes Mousse au Chocolat, Amarenakirschen",
               "price": null,
-              "tags": [],
-              "allergens": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -921,7 +925,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Waldheidelbeerschnitte Schneehaube",
+              "title": "Waldheidelbeerschnitte Schneehaube Brombeer Streuselkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,G",
@@ -944,7 +948,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-31": {
       "categories": [
@@ -1074,7 +1078,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilch - Brombeer Mousse",
+              "title": "Buttermilch - Brombeer Mousse Holunder Mohn Panna Cotta, Erdbeerspiegel",
               "price": null,
               "tags": [],
               "allergens": "G,O",
@@ -1086,12 +1090,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brownie",
+              "title": "Veganer Brownie Waldheidelbeerschnitte, Schneehaube",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1111,7 +1115,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     }
   }
 }

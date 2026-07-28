@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-27T08:35:05.392Z",
+  "fetchedAt": "2026-07-28T06:45:50.218Z",
   "error": null,
   "days": {
     "2026-07-27": {
@@ -442,9 +442,11 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut - apricot - rice dessert",
+              "title": "Coconut - apricot - rice dessert Vegan strawberry cream",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -454,10 +456,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apple strudel",
+              "title": "Apple strudel Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -477,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-29": {
       "categories": [
@@ -674,7 +676,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan chocolate mousse, Amarena cherries",
+              "title": "Vegan chocolate mousse, Amarena cherries, coconut - apricots - rice dessert",
               "price": null,
               "tags": [
                 "Vegan"
@@ -688,10 +690,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Berry crumble cake",
+              "title": "Berry crumble cake apple strudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -711,7 +713,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-30": {
       "categories": [
@@ -909,10 +911,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Elderberry poppy seed panna cotta, strawberry mirror",
+              "title": "Elderberry poppy seed panna cotta, strawberry mirror, vegan chocolate mousse, Amarena cherries",
               "price": null,
-              "tags": [],
-              "allergens": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -921,7 +925,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Wild blueberry slices snow cap",
+              "title": "Wild blueberry slices, snow cap, blackberry crumble cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,G",
@@ -944,7 +948,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     },
     "2026-07-31": {
       "categories": [
@@ -1074,7 +1078,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Buttermilk - Blackberry Mousse",
+              "title": "Buttermilk - blackberry mousse, elderberry poppy seed panna cotta, strawberry mirror",
               "price": null,
               "tags": [],
               "allergens": "G,O",
@@ -1086,12 +1090,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan brownie",
+              "title": "Vegan brownie wild blueberry slices, snow cap",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1111,7 +1115,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-28T06:45:48.106Z"
     }
   }
 }
