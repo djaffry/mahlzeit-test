@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-29T07:09:09.206Z",
+  "fetchedAt": "2026-07-29T08:34:49.090Z",
   "error": null,
   "days": {
     "2026-07-31": {
@@ -433,6 +433,146 @@
         }
       ],
       "fetchedAt": "2026-07-29T07:09:07.802Z"
+    },
+    "2026-07-29": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erbsen 🫛-Minz 🌿-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Lemon 🍋-Chicken auf Kräuter 🌿-Zitronen 🍋-Couscous",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "geschmorten Zwiebeln 🧅 & Tahini-Joghurt-Dip"
+            },
+            {
+              "title": "Tortiglioni alla Norma",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Melanzani 🍆, Ricotta, Lauch 💚 & frischem Basilikum 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Bulgogi-Beef",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Pak Choi 🥬, Chinakohl, Paprika 🫑 & Reis"
+            },
+            {
+              "title": "Orientalische Gemüse-Tajine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Fenchel 🌿, Karotten 🥕, Zucchini 🥒, getrocknete Marillen 🍑 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Italienische Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Brot 🍞, Tomaten 🍅, Rotkraut 💜, Mozzarellabällchen, Paprika 🫑, Thymian 🌿 & Balsamico-Dressing"
+            },
+            {
+              "title": "High Protein - Bunte Bohnen 🫘-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "weißen 🤍 Bohnen, Kidneybohnen 🫘, Gurken 🥒, Paprika 🫑 & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Topfen-Marillen 🍑-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-29T08:34:47.215Z"
     }
   }
 }
