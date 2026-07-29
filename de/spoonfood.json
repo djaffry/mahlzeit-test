@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-28T08:34:38.003Z",
+  "fetchedAt": "2026-07-29T07:09:09.206Z",
   "error": null,
   "days": {
     "2026-07-31": {
@@ -342,6 +342,7 @@
               "title": "Reisfleisch - vom Ötscherblickschwein",
               "price": "7,90 / 10,90",
               "tags": [
+                "Laktosefrei",
                 "Glutenfrei",
                 "Schweinefleisch"
               ],
@@ -431,7 +432,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-28T08:34:35.684Z"
+      "fetchedAt": "2026-07-29T07:09:07.802Z"
     }
   }
 }

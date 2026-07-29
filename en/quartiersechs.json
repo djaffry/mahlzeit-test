@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-07-28T06:45:50.218Z",
+  "fetchedAt": "2026-07-29T07:09:09.220Z",
   "error": null,
   "days": {
     "2026-07-27": {
@@ -393,7 +393,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, salami Milano, goat cheese, roasted peppers",
+              "title": "Pizza, salami Nduja, goat cheese, roasted peppers",
               "price": "9,90 €",
               "tags": [],
               "allergens": "A,G,M",
@@ -479,7 +479,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-28T06:45:48.106Z"
+      "fetchedAt": "2026-07-29T07:09:07.802Z"
     },
     "2026-07-29": {
       "categories": [
