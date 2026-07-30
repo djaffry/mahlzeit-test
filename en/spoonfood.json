@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-07-29T08:34:49.090Z",
+  "fetchedAt": "2026-07-30T08:34:54.359Z",
   "error": null,
   "days": {
     "2026-07-31": {
@@ -347,7 +347,7 @@
                 "Schweinefleisch"
               ],
               "allergens": null,
-              "description": "Broccoli 🥦 & peas 🫛 – optionally with sour cream"
+              "description": "Broccoli 🥦 & peas 🫛 - optionally with sour cream"
             },
             {
               "title": "Kas 🧀-Nockerl",
@@ -573,6 +573,148 @@
         }
       ],
       "fetchedAt": "2026-07-29T08:34:47.215Z"
+    },
+    "2026-07-30": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Oriental lentil soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cumin 🤎 & fresh lime 🍋‍🟩"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Creamy ham 🥓 in cheese 🧀 cream sauce - optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "fresh parsley 🌿"
+            },
+            {
+              "title": "Potatoes 🥔 broccoli 🥦 casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mountain cheese 🧀 & Gouda baked"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Yellow 💛 Thai chicken curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Mango 🥭, broccoli 🥦 & rice"
+            },
+            {
+              "title": "Massaman curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peppers 🫑, bok choy 🥬, baby spinach 💚, zucchini 🥒, celery 🌿, sweet potatoes 🍠 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Vineyard salad",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chicory 🥬, grapes 🍇 & roasted walnuts - optionally with feta"
+            },
+            {
+              "title": "Couscous Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, cucumbers 🥒, spring onions, mint 🌿, cranberries 🍓 & fresh lime 🍋‍🟩 ginger 🫚 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mango 🥭 chia coconut 🥥 pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-07-30T08:34:52.315Z"
     }
   }
 }
