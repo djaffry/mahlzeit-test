@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-07-27T07:57:26.563Z",
+  "fetchedAt": "2026-07-31T07:19:04.879Z",
   "error": null,
   "days": {
     "2026-07-27": {
@@ -263,7 +263,7 @@
           "items": [
             {
               "title": "Chicken tortilla with dollar chips, iceberg lettuce, yogurt dip",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Huhn"
               ],
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-27T07:57:25.917Z"
+      "fetchedAt": "2026-07-31T07:19:04.300Z"
     },
     "2026-07-31": {
       "categories": [
