@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-03T07:53:06.768Z",
+  "fetchedAt": "2026-08-03T08:35:03.064Z",
   "error": null,
   "days": {
     "2026-08-03": {
@@ -184,7 +184,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -212,7 +212,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Honey-kefir mousse, wild berry compote",
+              "title": "Honey-kefir mousse, wild berry compote, buttermilk - blackberry mousse",
               "price": null,
               "tags": [],
               "allergens": "G,O",
@@ -224,7 +224,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan Linzer slices",
+              "title": "Vegan Linzerschnitte Vegan Brownie",
               "price": null,
               "tags": [
                 "Vegan"
@@ -249,7 +249,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-03T08:35:01.165Z"
     },
     "2026-08-04": {
       "categories": [
@@ -419,7 +419,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -653,7 +653,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"

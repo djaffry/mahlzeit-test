@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-03T07:53:06.768Z",
+  "fetchedAt": "2026-08-03T08:35:03.064Z",
   "error": null,
   "days": {
     "2026-08-03": {
@@ -212,7 +212,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Honig-Kefir Mousse, Waldbeerkompott",
+              "title": "Honig-Kefir Mousse, Waldbeerkompott Buttermilch - Brombeer Mousse",
               "price": null,
               "tags": [],
               "allergens": "G,O",
@@ -224,7 +224,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Vegane Linzerschnitte",
+              "title": "Vegane Linzerschnitte Veganer Brownie",
               "price": null,
               "tags": [
                 "Vegan"
@@ -249,7 +249,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-03T08:35:01.165Z"
     },
     "2026-08-04": {
       "categories": [
