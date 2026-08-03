@@ -1,0 +1,321 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Canteen"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-08-03T07:53:05.223Z",
+  "error": null,
+  "days": {
+    "2026-08-03": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Oven Camembert",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Butter potatoes, cranberries"
+            },
+            {
+              "title": "Cilantro chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,E,F,N,R",
+              "description": "Broccoli & corn rice, roasted sesame"
+            },
+            {
+              "title": "Cheeseburger No.6",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M,N",
+              "description": "Beef Patty & Cheddar, Potato Dippers"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Lemon sheet cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-03T07:53:04.464Z"
+    },
+    "2026-08-04": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Broccoli cheese patties",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G,L",
+              "description": "Jasmine rice, herb dip"
+            },
+            {
+              "title": "Grilled salmon steak",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Rösti & Tzatziki, antipasti"
+            },
+            {
+              "title": "Yellow chicken curry",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,D",
+              "description": "Peas & potatoes, eggnoodles"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Blueberry muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-03T07:53:04.464Z"
+    },
+    "2026-08-05": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Bohemian cabbage pan",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L",
+              "description": "Fresh cabbage & plant cream, bread dumplings"
+            },
+            {
+              "title": "Baked fried chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,M",
+              "description": "Potato and cucumber salad, lemon"
+            },
+            {
+              "title": "Jägerschnitzel",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C",
+              "description": "Mushrooms, bacon & roasted onions, fresh dumplings"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Danube wave",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-03T07:53:04.464Z"
+    },
+    "2026-08-06": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Tortelloni ricotta spinach",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Tomato ragout & basil, Grana Padano"
+            },
+            {
+              "title": "Original chili con carne",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M,N",
+              "description": "Beef, corn & beans, flatbread"
+            },
+            {
+              "title": "Turkey sausage dumplings",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C",
+              "description": "Forkweed, fresh chives"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chocolate cream cake",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-03T07:53:04.464Z"
+    },
+    "2026-08-07": {
+      "categories": [
+        {
+          "name": "Appetizer",
+          "items": [
+            {
+              "title": "fruit",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Nougat dumplings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,H",
+              "description": "Cherry ragout & whipped cream, powdered sugar"
+            },
+            {
+              "title": "Fish & Chips",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Fried fish & fries, mushy peas & tartar sauce"
+            },
+            {
+              "title": "Selchschopf",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Lentils & bread dumplings, parsley"
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Creamy fruits",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-03T07:53:04.464Z"
+    }
+  }
+}
