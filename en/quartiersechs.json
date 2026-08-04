@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-03T08:35:03.064Z",
+  "fetchedAt": "2026-08-04T06:45:45.514Z",
   "error": null,
   "days": {
     "2026-08-03": {
@@ -184,7 +184,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -419,7 +419,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -447,10 +447,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Chocolate mousse, raspberries",
+              "title": "Chocolate mousse, raspberry honey kefir mousse, wild berry compote",
               "price": null,
               "tags": [],
-              "allergens": "F,G",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -459,10 +459,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apricot cake",
+              "title": "Apricot cake Vegan Linzer slices",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -482,7 +484,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-04T06:45:43.339Z"
     },
     "2026-08-05": {
       "categories": [
@@ -653,7 +655,7 @@
           "name": "Bowl station",
           "items": [
             {
-              "title": "Create your own Bowl Fresh Nishiki rice, black quinoa, vegan sauces",
+              "title": "Create your own bowl Fresh nishiki rice, black quinoa, vegan sauces",
               "price": null,
               "tags": [
                 "Vegan"
@@ -681,10 +683,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Raspberry Panna Cotta",
+              "title": "Raspberry Panna Cotta Mousse au chocolat",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -693,10 +695,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Currant cake with streusel",
+              "title": "Currant cake with plum cake crumble",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -716,7 +718,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-04T06:45:43.339Z"
     },
     "2026-08-06": {
       "categories": [
@@ -914,10 +916,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut blueberry rice dessert",
+              "title": "Coconut-blueberry-rice dessert raspberry-coconut panna cotta",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G,O",
               "description": null
             }
           ]
@@ -926,10 +928,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Mango slices",
+              "title": "Mango slices currant cake with crumbles",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -949,7 +951,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-04T06:45:43.339Z"
     },
     "2026-08-07": {
       "categories": [
@@ -1081,7 +1083,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Blackberry mousse",
+              "title": "Blackberry mousse coconut - apricot - rice dessert",
               "price": null,
               "tags": [],
               "allergens": "A,F,G,H",
@@ -1093,10 +1095,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Curd cheese - top cuts",
+              "title": "Curd - top slices mango slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1116,7 +1118,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-04T06:45:43.339Z"
     }
   }
 }
