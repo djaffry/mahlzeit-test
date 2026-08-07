@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-03T07:53:05.743Z",
+  "fetchedAt": "2026-08-07T08:34:58.920Z",
   "error": null,
   "days": {
     "2026-08-03": {
@@ -95,7 +95,7 @@
           "name": "Soup",
           "items": [
             {
-              "title": "Porcini mushroom cream soup",
+              "title": "Cream of porcini mushroom soup",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -311,10 +311,10 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Creamy beef goulash with spaetzle and pickles",
+              "title": "Cream of veal goulash with mushrooms and pickles",
               "price": "11,90 €",
               "tags": [
-                "Rindfleisch"
+                "Fleisch"
               ],
               "allergens": "A,C,G,O",
               "description": null
@@ -343,7 +343,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-03T07:53:04.464Z"
+      "fetchedAt": "2026-08-07T08:34:58.074Z"
     }
   }
 }
