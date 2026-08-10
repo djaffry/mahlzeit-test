@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-10T05:49:57.888Z",
+  "fetchedAt": "2026-08-10T08:35:03.249Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -140,6 +140,147 @@
         }
       ],
       "fetchedAt": "2026-08-10T05:49:53.820Z"
+    },
+    "2026-08-10": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍 horseradish 🫚 soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Curry 💛 rice pan from the Waldviertler free-range turkey",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Peas 🫛, pak choy 🥬 & peppers 🫑"
+            },
+            {
+              "title": "Ravioli",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Ricotta and spinach filling 💚 - in tomato sauce 🍅 - optionally with Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Greek stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Minced beef, peppers 🫑, aubergine 🍆 & rice - optionally with feta"
+            },
+            {
+              "title": "Summery ☀️ coconut 🥥 vegetable stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 & green zucchini 🥒, aubergine 🍆, peppers 🫑 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Styrian runner beans 🫘-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "oven-roasted peppers 🫑, tomatoes 🍅 & pumpkin seeds 🎃"
+            },
+            {
+              "title": "Waldorf Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Celery 🤍, celery sticks 🌿, red & green grapes 🍇, apples 🍎 & walnuts"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanilla 💛 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Oat crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     }
   }
 }

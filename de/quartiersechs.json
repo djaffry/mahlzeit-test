@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-10T05:49:56.149Z",
+  "fetchedAt": "2026-08-10T08:35:02.552Z",
   "error": null,
   "days": {
     "2026-08-10": {
@@ -223,10 +223,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilch Panna Cotta, marinierte Orangen",
+              "title": "Buttermilch Panna Cotta, marinierte Orangen Brombeer Mousse",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "A,F,G,H,O",
               "description": null
             }
           ]
@@ -235,12 +235,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Punschschnitte vegan",
+              "title": "Punschschnitte vegan Topfen - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-11": {
       "categories": [
@@ -469,10 +469,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding, Cranberries",
+              "title": "Grießpudding, Cranberries Buttermilch Panna Cotta, marinierte Orangen",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -481,9 +481,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Milch Schoko Schnitte",
+              "title": "Milch Schoko Schnitte Punschschnitte vegan",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G,O",
               "description": null
             }
@@ -504,7 +506,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-12": {
       "categories": [
@@ -713,10 +715,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Ricotta - Limettenmousse",
+              "title": "Ricotta - Limettenmousse Grießpudding, Cranberries",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -725,12 +727,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brombeerstreuselkuchen",
+              "title": "Veganer Brombeerstreuselkuchen Milch Schoko Schnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -750,7 +752,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-13": {
       "categories": [
@@ -960,12 +962,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Erdnusscreme",
+              "title": "Vegane Erdnusscreme Ricotta - Limettenmousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "E",
+              "allergens": "E,G,O",
               "description": null
             }
           ]
@@ -974,10 +976,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Orangenmousse Schnitte",
+              "title": "Orangenmousse Schnitte Veganer Brombeerstreuselkuchen",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -997,7 +1001,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-14": {
       "categories": [
@@ -1139,10 +1143,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Joghurt - Maracuja Mousse",
+              "title": "Joghurt - Maracuja Mousse Vegane Erdnusscreme",
               "price": null,
-              "tags": [],
-              "allergens": "F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "E,F,G,O",
               "description": null
             }
           ]
@@ -1151,10 +1157,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Gedeckter Birnenkuchen",
+              "title": "Gedeckter Birnenkuchen Orangenmousse Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1174,7 +1180,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     }
   }
 }

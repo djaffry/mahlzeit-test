@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-10T05:49:56.149Z",
+  "fetchedAt": "2026-08-10T08:35:02.552Z",
   "error": null,
   "days": {
     "2026-08-10": {
@@ -223,10 +223,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Buttermilk panna cotta, marinated oranges",
+              "title": "Buttermilk panna cotta, marinated orange blackberry mousse",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "A,F,G,H,O",
               "description": null
             }
           ]
@@ -235,12 +235,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan punch cuts",
+              "title": "Punch cuts vegan curd cheese - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-11": {
       "categories": [
@@ -469,10 +469,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Semolina pudding, cranberries",
+              "title": "Semolina pudding, cranberries buttermilk panna cotta, marinated oranges",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -481,9 +481,11 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Milk chocolate slices",
+              "title": "Milk chocolate slices punch slices vegan",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G,O",
               "description": null
             }
@@ -504,7 +506,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-12": {
       "categories": [
@@ -713,10 +715,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Ricotta - lime mousse",
+              "title": "Ricotta - lime mousse, semolina pudding, cranberries",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "A,G,H,O",
               "description": null
             }
           ]
@@ -725,12 +727,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan blackberry crumble cake",
+              "title": "Vegan blackberry crumble cake milk chocolate slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -750,7 +752,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-13": {
       "categories": [
@@ -960,12 +962,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan peanut cream",
+              "title": "Vegan peanut cream ricotta - lime mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "E",
+              "allergens": "E,G,O",
               "description": null
             }
           ]
@@ -974,10 +976,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Orange mousse slices",
+              "title": "Orange mousse slices vegan blackberry crumble cake",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -997,7 +1001,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     },
     "2026-08-14": {
       "categories": [
@@ -1139,10 +1143,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Yoghurt - passion fruit mousse",
+              "title": "Yogurt - Passion Fruit Mousse Vegan Peanut Cream",
               "price": null,
-              "tags": [],
-              "allergens": "F,G,O",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "E,F,G,O",
               "description": null
             }
           ]
@@ -1151,10 +1157,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Covered pear cake",
+              "title": "Covered pear cake with orange mousse slices",
               "price": null,
               "tags": [],
-              "allergens": "A",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -1174,7 +1180,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     }
   }
 }

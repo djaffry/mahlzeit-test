@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-10T05:49:57.888Z",
+  "fetchedAt": "2026-08-10T08:35:03.249Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -140,6 +140,147 @@
         }
       ],
       "fetchedAt": "2026-08-10T05:49:53.820Z"
+    },
+    "2026-08-10": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍-Kren 🫚-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Curry 💛-Reis-Pfanne von der Waldviertler Freilandpute",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Erbsen 🫛, Pak Choi 🥬 & Paprika 🫑"
+            },
+            {
+              "title": "Ravioli",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Ricotta-Spinat-Fülle 💚 – in Tomatensauce 🍅 – optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Griechischer Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Rinderfaschiertem, Paprika 🫑, Melanzani 🍆 & Reis – optional mit Feta"
+            },
+            {
+              "title": "Sommerlicher ☀️ Kokos 🥥-Gemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelber 💛 & grüner Zucchini 🥒, Melanzani 🍆, Paprika 🫑 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Steirische Käferbohnen 🫘-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "im Ofen gerösteter Paprika 🫑, Tomaten 🍅 & Kürbiskernen 🎃"
+            },
+            {
+              "title": "Waldorf-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Sellerie 🤍, Selleriestangen 🌿, roten & grünen Trauben 🍇, Äpfeln 🍎 & Walnüssen"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanille 💛-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Hafer-Crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-10T08:34:59.797Z"
     }
   }
 }
