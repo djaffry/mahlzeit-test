@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-10T08:35:03.249Z",
+  "fetchedAt": "2026-08-11T05:31:27.929Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -196,7 +196,7 @@
               "description": "Erbsen 🫛, Pak Choi 🥬 & Paprika 🫑"
             },
             {
-              "title": "Ravioli",
+              "title": "Tortellini",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
@@ -269,7 +269,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vanille 💛-Creme",
+              "title": "Vanille 💛-Bananen 🍌-Creme",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -280,7 +280,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     }
   }
 }

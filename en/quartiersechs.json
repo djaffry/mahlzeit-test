@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-10T08:35:02.552Z",
+  "fetchedAt": "2026-08-11T05:31:24.435Z",
   "error": null,
   "days": {
     "2026-08-10": {
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     },
     "2026-08-11": {
       "categories": [
@@ -302,7 +302,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,G,L,O",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -506,7 +506,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     },
     "2026-08-12": {
       "categories": [
@@ -548,7 +548,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,G,L,O",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -752,7 +752,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     },
     "2026-08-13": {
       "categories": [
@@ -794,7 +794,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,G,L,O",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -1001,7 +1001,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     },
     "2026-08-14": {
       "categories": [
@@ -1043,7 +1043,7 @@
               "tags": [
                 "Geflügel"
               ],
-              "allergens": "A,C,G,L,O",
+              "allergens": "A,L",
               "description": null
             }
           ]
@@ -1180,7 +1180,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T08:34:59.797Z"
+      "fetchedAt": "2026-08-11T05:31:21.967Z"
     }
   }
 }
