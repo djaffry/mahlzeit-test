@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-12T05:49:46.907Z",
+  "fetchedAt": "2026-08-12T08:35:00.830Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -421,6 +421,147 @@
         }
       ],
       "fetchedAt": "2026-08-12T05:49:44.924Z"
+    },
+    "2026-08-12": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Paprika 🫑 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cumin 🤎 & coriander seeds"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Fried chicken (raised) on potatoes 🥔, carrots 🥕, braised red onions 🧅, spring onions 🌿, mushrooms 🍄‍🟫 & rosemary",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Zuchini 🥒 lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 & green zucchini 🥒 and summery citrus 🍋 béchamel - optionally with parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Beef ragout",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Mushrooms 🍄‍🟫, baby carrots 🥕, peppers 🫑, kohlrabi 🤍 & rice - optionally with chives 🌿"
+            },
+            {
+              "title": "Thai lime 🍋‍🟩 curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Smoked tofu, wok vegetables 🌿🥕🥦 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Glass noodle salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wakame 🌿, peanuts 🥜, wok vegetables 🌿🥕🥦 & sesame dressing"
+            },
+            {
+              "title": "Bulgur Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Beef tomatoes 🍅, cucumbers 🥒, cranberries 🍓 & fresh parsley 🌿 | Waldorf salad bowl with celery 🤍, celery sticks 🌿, red & green grapes 🍇, apples 🍎 & walnuts"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanilla 💛 banana 🍌 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Oat crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-12T08:34:57.929Z"
     }
   }
 }

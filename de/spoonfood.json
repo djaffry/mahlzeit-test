@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-12T05:49:46.907Z",
+  "fetchedAt": "2026-08-12T08:35:00.830Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -421,6 +421,147 @@
         }
       ],
       "fetchedAt": "2026-08-12T05:49:44.924Z"
+    },
+    "2026-08-12": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Paprika 🫑-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kreuzkümmel 🤎 & Koriandersamen"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Brathuhn (ausgelöst) auf Erdäpfeln 🥔, Karotten 🥕, geschmorten, roten Zwiebeln 🧅, Jungzwiebeln 🌿, Pilzen 🍄‍🟫 & Rosmarin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Zuchini 🥒-Lasagne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "gelber 💛 & grüner Zucchini 🥒 und sommerlicher Zitrus 🍋-Béchamel – optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Rindsragout",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Champignons 🍄‍🟫, Babykarotten 🥕, Paprika 🫑, Kohlrabi 🤍 & Reis – optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Thai-Limetten 🍋‍🟩-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Räucher-Tofu, Wokgemüse 🌿🥕🥦 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wakame 🌿, Erdnüssen 🥜, Wokgemüse 🌿🥕🥦 & Sesam-Dressing"
+            },
+            {
+              "title": "Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Fleischtomaten 🍅, Gurken 🥒, Cranberries 🍓 & frischer Petersilie 🌿 | Waldorf-Salad Bowl mit Sellerie 🤍, Selleriestangen 🌿, roten & grünen Trauben 🍇, Äpfeln 🍎 & Walnüssen"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanille 💛-Bananen 🍌-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Hafer-Crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-12T08:34:57.929Z"
     }
   }
 }
