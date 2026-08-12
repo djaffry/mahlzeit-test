@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-11T05:31:27.929Z",
+  "fetchedAt": "2026-08-12T05:49:46.907Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -281,6 +281,146 @@
         }
       ],
       "fetchedAt": "2026-08-11T05:31:21.967Z"
+    },
+    "2026-08-11": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood’s Veg-Tea (klare Gemüse-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Grießnockerln & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tomaten 🍅-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "geschmolzenen Kirschtomaten 🍅, Pancetta-Speck 🥓, schwarzen 🖤 & grünen Oliven 🫒 & Parmesan"
+            },
+            {
+              "title": "Erdäpfel 🥔-Spinat 💚-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Feta & kleinem Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Geschmorter Hühner-Gemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Melanzani 🍆, Fenchel 🌿, Karotten 🥕 & Reis"
+            },
+            {
+              "title": "Spinat 💚-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "geräuchertem Ofen-Tofu & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Steirische Käferbohnen 🫘-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "im Ofen gerösteter Paprika 🫑, Tomaten 🍅 & Kürbiskernen 🎃"
+            },
+            {
+              "title": "Waldorf-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Sellerie 🤍, Selleriestangen 🌿, roten & grünen Trauben 🍇, Äpfeln 🍎 & Walnüssen"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanille 💛-Bananen 🍌-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Hafer-Crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-12T05:49:44.924Z"
     }
   }
 }

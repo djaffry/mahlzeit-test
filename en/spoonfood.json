@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-11T05:31:27.929Z",
+  "fetchedAt": "2026-08-12T05:49:46.907Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -217,7 +217,7 @@
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Minced beef, peppers 🫑, aubergine 🍆 & rice - optionally with feta"
+              "description": "Beef minced meat, peppers 🫑, aubergine 🍆 & rice - optionally with feta"
             },
             {
               "title": "Summery ☀️ coconut 🥥 vegetable stew",
@@ -281,6 +281,146 @@
         }
       ],
       "fetchedAt": "2026-08-11T05:31:21.967Z"
+    },
+    "2026-08-11": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood’s Veg-Tea (clear vegetable broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Semolina dumplings & chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tomato 🍅 risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "melted cherry tomatoes 🍅, pancetta bacon 🥓, black 🖤 & green olives 🫒 & parmesan"
+            },
+            {
+              "title": "Potatoes 🥔-spinach 💚-gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Feta & small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Braised chicken and vegetable stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Melanzani 🍆, fennel 🌿, carrots 🥕 & rice"
+            },
+            {
+              "title": "Spinach 💚 curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "smoked oven tofu & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Styrian runner beans 🫘-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "oven-roasted peppers 🫑, tomatoes 🍅 & pumpkin seeds 🎃"
+            },
+            {
+              "title": "Waldorf Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Celery 🤍, celery sticks 🌿, red & green grapes 🍇, apples 🍎 & walnuts"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vanilla 💛 banana 🍌 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Oat crumble"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-12T05:49:44.924Z"
     }
   }
 }
