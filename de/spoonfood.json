@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-12T08:35:00.830Z",
+  "fetchedAt": "2026-08-13T08:34:36.811Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -562,6 +562,146 @@
         }
       ],
       "fetchedAt": "2026-08-12T08:34:57.929Z"
+    },
+    "2026-08-13": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Thai Gemüse 🥒🥕🥦-Kokos-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zitronengras 🌿 & frischer Limette 🍋‍🟩"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Schupfnudel-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "geschmortem Zwiebelfleisch 🧅 vom Ötscherblickschwein & Paprika 🫑"
+            },
+            {
+              "title": "Risoni-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "geschmorter Ofen-Paprika 🫑, Tomaten 🍅, Lauch 🌿 & Wurzelgemüse 🥕"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Chicken-Curry *Tandoori 🧡-Style*",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Romanesco 🥦, Chinakohl 🥬 & Reis"
+            },
+            {
+              "title": "Rote Rüben 🫜-Eintopf *Borschtsch-Style*",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Erdäpfeln 🥔, Berglinsen, Weißkraut & Reis – optional mit Petersilie 🌿 - optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Glasnudel-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Wakame 🌿, Erdnüssen 🥜, Wokgemüse 🌿🥕🥦 & Sesam-Dressing"
+            },
+            {
+              "title": "Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Fleischtomaten 🍅, Gurken 🥒, Cranberries 🍓 & frischer Petersilie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Chia-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandarinen 🍊 & Hafermilch 🥛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-13T08:34:34.431Z"
     }
   }
 }
