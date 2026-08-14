@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-14T05:50:02.842Z",
+  "fetchedAt": "2026-08-14T08:35:01.781Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -47,14 +47,14 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Karfiol 🤍-Curry 🧡-Cremesuppe",
+              "title": "Paprika 🫑-Tomaten 🍅-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
-                "Vegan",
+                "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": null
+              "description": "Basilikum 🌿"
             }
           ]
         },
@@ -62,20 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Moussaka",
+              "title": "Hascheehörnchen",
               "price": "7,90 / 10,90",
-              "tags": [],
+              "tags": [
+                "Laktosefrei"
+              ],
               "allergens": null,
-              "description": "gemischtem Faschierten - & kleinem Beilagensalat 🥗"
+              "description": "gem. Faschierten vom Höllerschmid, Majoran & frischer Petersilie 🌿 - optional mit Sauerrahm"
             },
             {
-              "title": "Warme Nussnudeln",
+              "title": "Warmer Kirsch 🍒-Scheiterhaufen",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Marillen 🍑-Röster"
+              "description": "Schneehaube 🌨️ & Vanillesauce 💛"
             }
           ]
         },
@@ -83,24 +85,24 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Orientalischer Linsen-Eintopf",
+              "title": "Chili con Carne 🫘🌽🫑 (mit gemischtem Faschierten)",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Faschiertem (gemischt), Süßkartoffeln 🍠, gelben 💛 Fisolen 🫛 & Reis"
+              "description": "Reis – optional mit Sauerrahm"
             },
             {
-              "title": "Mungobohnen-Dal",
+              "title": "Kichererbsen-Curry - in cremiger Tomaten 🍅-Kokos 🥥-Sauce",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Süßkartoffeln 🍠, Melanzani 🍆 & Reis"
+              "description": "Romanesco 🥦 & Reis"
             }
           ]
         },
@@ -108,24 +110,13 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Griechische Salad Bowl",
+              "title": "Bulgur-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "weißen 🤍 Bohnen 🫘, Gurken 🥒, Tomaten 🍅, Basilikum 🌿 & Oregano"
-            },
-            {
-              "title": "Karotten 🥕-Kichererbsen-Salad Bowl",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "Gurken 🥒 & Orangen 🍊-Zitrus 🍋-Dressing"
+              "description": "Fleischtomaten 🍅, Gurken 🥒, Cranberries 🍓 & frischer Petersilie 🌿"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -137,9 +128,24 @@
               "description": null
             }
           ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Chia-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandarinen 🍊 & Hafermilch 🥛"
+            }
+          ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-14T08:34:59.947Z"
     },
     "2026-08-10": {
       "categories": [
