@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-13T08:34:36.811Z",
+  "fetchedAt": "2026-08-14T05:50:02.842Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -217,7 +217,7 @@
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Beef minced meat, peppers 🫑, aubergine 🍆 & rice - optionally with feta"
+              "description": "Minced beef, peppers 🫑, aubergine 🍆 & rice - optionally with feta"
             },
             {
               "title": "Summery ☀️ coconut 🥥 vegetable stew",
@@ -649,7 +649,7 @@
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Carrots 🥕, potatoes 🥔, mountain lentils, white cabbage & rice - optionally with parsley 🌿 - optionally with sour cream"
+              "description": "Carrots 🥕, potatoes 🥔, mountain lentils, white cabbage, parsley 🌿 & rice - optionally with sour cream"
             }
           ]
         },
@@ -701,7 +701,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-13T08:34:34.431Z"
+      "fetchedAt": "2026-08-14T05:50:00.779Z"
     }
   }
 }

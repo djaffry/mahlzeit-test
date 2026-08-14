@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-13T08:34:36.811Z",
+  "fetchedAt": "2026-08-14T05:50:02.842Z",
   "error": null,
   "days": {
     "2026-08-14": {
@@ -649,7 +649,7 @@
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Karotten 🥕, Erdäpfeln 🥔, Berglinsen, Weißkraut & Reis – optional mit Petersilie 🌿 - optional mit Sauerrahm"
+              "description": "Karotten 🥕, Erdäpfeln 🥔, Berglinsen, Weißkraut, Petersilie 🌿 & Reis – optional mit Sauerrahm"
             }
           ]
         },
@@ -701,7 +701,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-13T08:34:34.431Z"
+      "fetchedAt": "2026-08-14T05:50:00.779Z"
     }
   }
 }

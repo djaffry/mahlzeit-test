@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-10T05:49:54.711Z",
+  "fetchedAt": "2026-08-14T05:50:01.449Z",
   "error": null,
   "days": {
     "2026-08-10": {
@@ -262,10 +262,10 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Cevapcici (sham) with ajvar, tzatziki and wedges",
+              "title": "Cevapcici (pork) with ajvar, tzatziki and wedges",
               "price": "11,90 €",
               "tags": [
-                "Fleisch"
+                "Schweinefleisch"
               ],
               "allergens": "A,C,G",
               "description": null
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-10T05:49:53.820Z"
+      "fetchedAt": "2026-08-14T05:50:00.779Z"
     },
     "2026-08-14": {
       "categories": [
