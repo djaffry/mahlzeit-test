@@ -11,7 +11,307 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-08-17T05:02:33.683Z",
-  "error": "Cannot read properties of null (reading 'days')",
-  "days": {}
+  "fetchedAt": "2026-08-17T08:35:09.925Z",
+  "error": null,
+  "days": {
+    "2026-08-17": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Ratatouille, Frische Petersilie"
+            },
+            {
+              "title": "Puten-Reisfleisch",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Saftl & Sauerrahm, Schnittlauch"
+            },
+            {
+              "title": "Bratwurst vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "M",
+              "description": "Rösterdäpfel & Krautsalat, Estragonsenf"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Nuss-Karamellkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T08:35:09.179Z"
+    },
+    "2026-08-18": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüseschnitzerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,M",
+              "description": "Orangen-Tomatenbulgur, Sauce Tartare"
+            },
+            {
+              "title": "Lasagne Bolognese",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,L",
+              "description": "Faschiertes & Gemüse, Bechamel & Käse"
+            },
+            {
+              "title": "Forelle Müllerin",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Petersilkartoffeln, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeerfruchtknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T08:35:09.179Z"
+    },
+    "2026-08-19": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Champignongulasch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Semmelknödel & Plantcream, Schnittlauch"
+            },
+            {
+              "title": "Cordon Bleu Toscana",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Prosciutto & Tomate, Pommes frites"
+            },
+            {
+              "title": "Hühnerfilet gebraten",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,M",
+              "description": "Reis & Speckfisolen, BBQ-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Double-Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T08:35:09.179Z"
+    },
+    "2026-08-20": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Vollkorn-Pasta",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Linsen-Sugo, Grana Vegano"
+            },
+            {
+              "title": "Rindsragout Stroganoff",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M",
+              "description": "Kartoffelkroketten, Frischer Schnittlauch"
+            },
+            {
+              "title": "Putenspieß vom Grill",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Curryreis & Letscho, Rahm-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Kokoskuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T08:35:09.179Z"
+    },
+    "2026-08-21": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Mohnnudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Apfelmus, Staubzucker"
+            },
+            {
+              "title": "Halbes Grillhendl",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,M",
+              "description": "Erdäpfelsalat, Frische Petersilie"
+            },
+            {
+              "title": "Gegrillter Halloumi",
+              "price": null,
+              "tags": [],
+              "allergens": "A,G",
+              "description": "Tzatziki & Antipasti, Focaccia"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Rahm-Früchtchen",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T08:35:09.179Z"
+    }
+  }
 }
