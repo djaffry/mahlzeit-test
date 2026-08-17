@@ -1,0 +1,349 @@
+{
+  "id": "mano",
+  "title": "Mano Café & Bistro",
+  "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
+  "type": "full",
+  "icon": "coffee",
+  "cuisine": [
+    "Café",
+    "Bistro"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2211,
+    "lon": 16.3926
+  },
+  "fetchedAt": "2026-08-17T05:02:29.054Z",
+  "error": null,
+  "days": {
+    "2026-08-17": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Rindsuppe mit Fadennudeln",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            },
+            {
+              "title": "Getrüffelte-Kohlrabicremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "1/2Grillhendl in Bratensaft auf Rosmarinerdäpfel ,Gurkensalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spanische Nudel-Paella (Fisch,Garnelen,Muscheln,Tintenfisch)",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,G,D,B,E",
+              "description": null
+            },
+            {
+              "title": "Karfiol-Käse-Laibchen auf Kichererbsensalat    ,Salat vom Buffet",
+              "price": "11,9O €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "C",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-18": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Gartenkressecremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Leberknödel",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Esterhazy Rindsbraten mit Gemüsejulienne ,Erdäpfel-Rösti",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,O,L,M",
+              "description": null
+            },
+            {
+              "title": "Rosa Thunfischsteak auf Wokgemüse ,Quinoa , Limetten",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D",
+              "description": null
+            },
+            {
+              "title": "Gnocchi in Waldpilzsauce mit Büffelmozzarella     , Salat vom Buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt-Minze-Grüner-Apfelmousse",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-19": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Jungzwiebelncremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Frittaten",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Korean Sticky Chicken auf Sesamreis ,Sojasprossen ,Pak Choi",
+              "price": "11,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Gegrilltes Zanderfiletsteak auf Tomaten-Mango-Salat,Coucous",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G",
+              "description": null
+            },
+            {
+              "title": "Vegetarische Gefüllte Paprika  in Tomatensauce   ,  Salat von Büffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfen-Obersschnitte",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-20": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Tom Kha Gemüsecremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Karotten-Julienne",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Polpette (Schwein )auf Spaghetti Bolognese ,Grana Padano",
+              "price": "11,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Lachsfiletsteak in Kräuterpesto auf griechischem Salat",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": null
+            },
+            {
+              "title": "Gemüse-Quesadilla mit Cheddarkäse   ,Salat vom Buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Pastel de Nata",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-21": {
+      "categories": [
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Hühnerschnitzel mit Erdäpfel-Vogerlsalat",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Gemüse-Champignon Lasagne ,Salatbecher",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Tages Dessert",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H,E",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    }
+  }
+}

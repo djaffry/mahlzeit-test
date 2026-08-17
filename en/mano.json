@@ -1,0 +1,349 @@
+{
+  "id": "mano",
+  "title": "Mano Café & Bistro",
+  "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
+  "type": "full",
+  "icon": "coffee",
+  "cuisine": [
+    "Cafe",
+    "bistro"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2211,
+    "lon": 16.3926
+  },
+  "fetchedAt": "2026-08-17T05:02:29.054Z",
+  "error": null,
+  "days": {
+    "2026-08-17": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Beef soup with vermicelli",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            },
+            {
+              "title": "Truffled kohlrabi cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "1/2 grilled chicken in gravy on rosemary potatoes, cucumber salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Spanish pasta paella (fish, shrimp, mussels, squid)",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,G,D,B,E",
+              "description": null
+            },
+            {
+              "title": "Cauliflower cheese loaves on chickpea salad, salad from the buffet",
+              "price": "11,9O €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "C",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-18": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Garden cress cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with liver dumplings",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Esterhazy roast beef with vegetable julienne, potato rösti",
+              "price": "12,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,O,L,M",
+              "description": null
+            },
+            {
+              "title": "Pink tuna steak on wok vegetables, quinoa, lime",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D",
+              "description": null
+            },
+            {
+              "title": "Gnocchi in wild mushroom sauce with buffalo mozzarella, salad from the buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Yoghurt-mint-green apple mousse",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-19": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Cream of spring onion soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with fries",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Korean Sticky Chicken on sesame rice, bean sprouts, pak choy",
+              "price": "11,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Grilled zander fillet steak on tomato and mango salad, coucous",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G",
+              "description": null
+            },
+            {
+              "title": "Vegetarian stuffed peppers in tomato sauce, salad from buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Curd top cuts",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-20": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Tom Kha vegetable cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with carrot julienne",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Polpette (pork) on spaghetti Bolognese, Grana Padano",
+              "price": "11,90 €",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Salmon fillet steak in herb pesto on Greek salad",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": null
+            },
+            {
+              "title": "Vegetable quesadilla with cheddar cheese, salad from the buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Pastel de Nata",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    },
+    "2026-08-21": {
+      "categories": [
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Chicken schnitzel with potato and bird salad",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Vegetable-mushroom lasagne, salad cups",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Dessert of the day",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H,E",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    }
+  }
+}

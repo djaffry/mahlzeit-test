@@ -1,0 +1,18 @@
+{
+  "id": "reinthaler",
+  "title": "Gasthaus Reinthaler",
+  "url": "https://www.gasthaus-reinthaler.at/speisekarte#mittagsmenue",
+  "type": "specials",
+  "icon": "beer",
+  "cuisine": [
+    "Wirtshaus"
+  ],
+  "reservationUrl": "https://www.gasthaus-reinthaler.at/kontakt#Online-Reservierung",
+  "coordinates": {
+    "lat": 48.21892,
+    "lon": 16.39778
+  },
+  "fetchedAt": "2026-08-17T05:02:34.129Z",
+  "error": "fetch failed → Client network socket disconnected before secure TLS connection was established",
+  "days": {}
+}

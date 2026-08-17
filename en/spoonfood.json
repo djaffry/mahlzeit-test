@@ -1,0 +1,151 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Stews"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-08-17T05:02:30.293Z",
+  "error": null,
+  "days": {
+    "2026-08-21": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Pepper 🫑 tomato 🍅 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Basil 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Hash cones",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "minced meat from Höllerschmid, marjoram & fresh parsley 🌿 - optionally with sour cream"
+            },
+            {
+              "title": "Warm cherry 🍒 pyre",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Snow cap 🌨️ & vanilla sauce 💛"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Chili con Carne 🫘🌽🫑 (with mixed minced meat)",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Rice – optional with sour cream"
+            },
+            {
+              "title": "Chickpea curry - in creamy tomato 🍅-coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Romanesco 🥦 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Bulgur Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Beef tomatoes 🍅, cucumbers 🥒, cranberries 🍓 & fresh parsley 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Chia pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tangerines 🍊 & oat milk 🥛"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-17T05:02:28.084Z"
+    }
+  }
+}
