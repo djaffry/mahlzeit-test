@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-18T04:56:00.156Z",
+  "fetchedAt": "2026-08-18T08:34:33.044Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -473,9 +473,11 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Marillen - Reisdessert",
+              "title": "Kokos - Marillen - Reisdessert Vegane Panna Cotta, Mangospiegel",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -485,10 +487,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Schwarzwälder Kirsch Schnitte",
+              "title": "Schwarzwälder Kirsch Schnitte Haselnuss - Orangenschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -508,7 +510,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T08:34:30.437Z"
     },
     "2026-08-19": {
       "categories": [
@@ -719,7 +721,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Cappuccino Mousse",
+              "title": "Cappuccino Mousse Kokos - Marillen - Reisdessert",
               "price": null,
               "tags": [],
               "allergens": "C,F,G",
@@ -731,12 +733,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Marillenstreuselkuchen",
+              "title": "Veganer Marillenstreuselkuchen Schwarzwälder Kirschschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -756,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T08:34:30.437Z"
     },
     "2026-08-20": {
       "categories": [
@@ -965,10 +967,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding, Himbeeren",
+              "title": "Grießpudding, Himbeeren Cappuccino Mousse",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -977,10 +979,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Sacherschnitte",
+              "title": "Sacherschnitte Veganer Marillenstreuselkuchen",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1000,7 +1004,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T08:34:30.437Z"
     },
     "2026-08-21": {
       "categories": [
@@ -1159,10 +1163,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Amarettocreme",
+              "title": "Amarettocreme Grießpudding, Himbeeren",
               "price": null,
               "tags": [],
-              "allergens": "G,H",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -1171,10 +1175,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Bananen Schnitte",
+              "title": "Bananen Schnitte Sacherschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1194,7 +1198,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T08:34:30.437Z"
     }
   }
 }
