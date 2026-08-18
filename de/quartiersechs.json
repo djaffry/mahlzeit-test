@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-17T05:02:30.671Z",
+  "fetchedAt": "2026-08-18T04:56:00.156Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -173,7 +173,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, Rucola, Prosciutto, Büffelmozzarella",
+              "title": "Pizza, Rucola, Prosciutto, Mozzarella",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -224,12 +224,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Panna Cotta, Mangospiegel",
+              "title": "Vegane Panna Cotta, Mangospiegel Joghurt-Maracuja Mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -238,7 +238,7 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Haselnuss - Orangenschnitte",
+              "title": "Haselnuss - Orangenschnitte Gedeckter Birnenkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,G,H,O",
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T04:55:57.603Z"
     },
     "2026-08-18": {
       "categories": [

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-17T05:02:30.671Z",
+  "fetchedAt": "2026-08-18T04:56:00.156Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -173,7 +173,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, rocket, prosciutto, buffalo mozzarella",
+              "title": "Pizza, rocket, prosciutto, mozzarella",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -224,12 +224,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan panna cotta, mango mirror",
+              "title": "Vegan panna cotta, mango mirror yoghurt-passion fruit mousse",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": null,
+              "allergens": "F,G,O",
               "description": null
             }
           ]
@@ -238,7 +238,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Hazelnut - orange slices",
+              "title": "Hazelnut - orange slices Covered pear cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,G,H,O",
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T04:55:57.603Z"
     },
     "2026-08-18": {
       "categories": [

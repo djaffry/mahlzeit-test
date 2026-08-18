@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-17T05:02:29.054Z",
+  "fetchedAt": "2026-08-18T04:55:58.591Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -69,7 +69,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "C",
+              "allergens": "C,G",
               "description": null
             }
           ]
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T05:02:28.084Z"
+      "fetchedAt": "2026-08-18T04:55:57.603Z"
     },
     "2026-08-18": {
       "categories": [
