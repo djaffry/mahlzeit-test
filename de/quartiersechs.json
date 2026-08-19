@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-18T08:34:33.044Z",
+  "fetchedAt": "2026-08-19T08:35:04.212Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -590,7 +590,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika, Salbei Gnocchi, Fussili Rosso, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
+              "title": "Ravioli mit Salami, Salbei Gnocchi, Fussili, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -758,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     },
     "2026-08-20": {
       "categories": [
@@ -838,7 +838,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika, Salbei Gnocchi, Fussili Rosso, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
+              "title": "Ravioli mit Salami, Salbei Gnocchi, Fussili, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1004,7 +1004,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     },
     "2026-08-21": {
       "categories": [
@@ -1084,7 +1084,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli mit Scamorza & Röstpaprika, Salbei Gnocchi, Fussili Rosso, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
+              "title": "Ravioli mit Salami, Salbei Gnocchi, Fussili, Olivenöl mit Kräutern, Limonensauce, Basilikumpesto, Artischockenherzen, Pinienkerne, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1198,7 +1198,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     }
   }
 }

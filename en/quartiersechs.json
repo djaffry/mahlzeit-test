@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-18T08:34:33.044Z",
+  "fetchedAt": "2026-08-19T08:35:04.212Z",
   "error": null,
   "days": {
     "2026-08-17": {
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Caraway roast, natural jus, bread dumplings, sauerkraut",
@@ -296,7 +296,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Caraway roast, natural jus, bread dumplings, sauerkraut",
@@ -545,7 +545,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Caraway roast, natural jus, bread dumplings, sauerkraut",
@@ -590,7 +590,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with scamorza & roasted peppers, sage gnocchi, Fussili Rosso, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
+              "title": "Ravioli with salami, sage gnocchi, fussili, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -758,7 +758,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     },
     "2026-08-20": {
       "categories": [
@@ -793,7 +793,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Caraway roast, natural jus, bread dumplings, sauerkraut",
@@ -838,7 +838,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with scamorza & roasted peppers, sage gnocchi, Fussili Rosso, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
+              "title": "Ravioli with salami, sage gnocchi, fussili, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1004,7 +1004,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     },
     "2026-08-21": {
       "categories": [
@@ -1039,7 +1039,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Caraway roast, natural jus, bread dumplings, sauerkraut",
@@ -1084,7 +1084,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Ravioli with scamorza & roasted peppers, sage gnocchi, Fussili Rosso, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
+              "title": "Ravioli with salami, sage gnocchi, fussili, olive oil with herbs, lime sauce, basil pesto, artichoke hearts, pine nuts, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1198,7 +1198,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-18T08:34:30.437Z"
+      "fetchedAt": "2026-08-19T08:35:02.684Z"
     }
   }
 }
