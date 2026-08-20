@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-18T08:34:32.971Z",
+  "fetchedAt": "2026-08-20T04:58:03.507Z",
   "error": null,
   "days": {
     "2026-08-21": {
@@ -426,6 +426,147 @@
         }
       ],
       "fetchedAt": "2026-08-18T08:34:30.437Z"
+    },
+    "2026-08-19": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kichererbsen-Süßkartoffel 🍠-Kokos 🥥-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Griechische Hühner-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Schupfnudeln, gelber 💛 & roter ❤️ Paprika 🫑, geschmorten roten Zwiebeln 🧅, Kirschtomaten 🍅 & Tzatziki 🥒"
+            },
+            {
+              "title": "Kürbis 🎃-Zucchini 🥒-Gröstl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, gerösteten Kürbiskernen, Karotten 🥕 & Kürbiskern-Sauerrahm-Dip - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Bulgogi-Beef-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Chinakohl 🥬, Mungobohnen 🌿, gelben 💛 Karotten 🥕, Shiitake-Pilzen 🍄‍🟫, Erbsen 🫛 & Reis"
+            },
+            {
+              "title": "Steirischer Käferbohnen 🫘-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Kürbis 🎃 & Reis – optional mit Saurrahm | Kürbiskernöl"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Mediterrane Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wurst, Kirschtomaten 🍅, Feldgurke 🥒, Kalamata-Oliven 🫒 & Basilikum 🌿"
+            },
+            {
+              "title": "Karotten 🥕-Kichererbsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kardamom 🤎, Gurken 🥒 & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Rhabarber 🩷-Frischkäse-Topfen-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Nüssen 🥜 & Smarties 💛🧡💚"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-20T04:58:01.538Z"
     }
   }
 }

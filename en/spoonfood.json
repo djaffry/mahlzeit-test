@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-18T08:34:32.971Z",
+  "fetchedAt": "2026-08-20T04:58:03.507Z",
   "error": null,
   "days": {
     "2026-08-21": {
@@ -426,6 +426,147 @@
         }
       ],
       "fetchedAt": "2026-08-18T08:34:30.437Z"
+    },
+    "2026-08-19": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Chickpea sweet potato 🍠 coconut 🥥 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Greek Chicken Stir Fry",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Schupfnudeln, yellow 💛 & red ❤️ peppers 🫑, braised red onions 🧅, cherry tomatoes 🍅 & tzatziki 🥒"
+            },
+            {
+              "title": "Pumpkin 🎃-Zucchini 🥒-Gröstl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, roasted pumpkin seeds, carrots 🥕 & pumpkin seed sour cream dip - plus a small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Bulgogi beef stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Chinese cabbage 🥬, mung beans 🌿, yellow 💛 carrots 🥕, shiitake mushrooms 🍄‍🟫, peas 🫛 & rice"
+            },
+            {
+              "title": "Styrian runner beans 🫘 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Pumpkin 🎃 & rice – optional with sour cream | Pumpkin seed oil"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Mediterranean Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Sausage, cherry tomatoes 🍅, field cucumber 🥒, Kalamata olives 🫒 & basil 🌿"
+            },
+            {
+              "title": "Carrot 🥕 Chickpea Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cardamom 🤎, cucumber 🥒 & citrus 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Rhubarb 🩷 cream cheese curd cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Nuts 🥜 & Smarties 💛🧡💚"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-20T04:58:01.538Z"
     }
   }
 }
