@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-24T05:05:50.937Z",
+  "fetchedAt": "2026-08-24T08:35:04.349Z",
   "error": null,
   "days": {
     "2026-08-28": {
@@ -155,6 +155,144 @@
         }
       ],
       "fetchedAt": "2026-08-24T05:05:49.400Z"
+    },
+    "2026-08-24": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood’s Beef-Tea (klare Rinder-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Fleischstrudel & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Lasagne Bolognese 🍝",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Ebly-Gemüsepfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Brokkoli 🥦 & Erbsen 🫛 – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Marokkanische Hühner-Tajine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Süßkartoffeln 🍠, Paprika 🫑, getrockneten Marillen 🍑 & Reis"
+            },
+            {
+              "title": "Rote Linsen-Dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, Melanzani 🍆, Tomaten 🍅, Ingwer 🫚 & Reis - optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Buchweizen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & Bärlauch 🌿-Pesto-Dressing"
+            },
+            {
+              "title": "Thai Mais 🌽-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Erdnüssen 🥜, Karotten 🥕, gelber 💛 und roter ❤️ Paprika 🫑, Tomaten 🍅, Jungzwiebeln & frischem Basilikum 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Passionsfruchtspiegel 🧡"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     }
   }
 }

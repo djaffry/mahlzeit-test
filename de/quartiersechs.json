@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-24T05:05:51.599Z",
+  "fetchedAt": "2026-08-24T08:35:03.844Z",
   "error": null,
   "days": {
     "2026-08-24": {
@@ -175,7 +175,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pide, Champignonragout, Feta, frischer Oregano, Ayran",
+              "title": "Pizza, Champignonragout, Feta, frischer Oregano, Ayran",
               "price": "9,90 €",
               "tags": [],
               "allergens": "A,G,O",
@@ -224,10 +224,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Sojajoghurt Granola mit Sesam, Datteln & Cranberries, Ananas",
+              "title": "Kokos - Sojajoghurt Granola mit Sesam, Datteln & Cranberries, Ananas Amarettocreme",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H,N,O",
+              "allergens": "A,F,G,H,N,O",
               "description": null
             }
           ]
@@ -236,10 +236,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Oreoschnitte",
+              "title": "Oreoschnitte Bananen Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -259,7 +259,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     },
     "2026-08-25": {
       "categories": [
@@ -472,10 +472,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Haselnussmousse, Weichselröster",
+              "title": "Haselnussmousse, Weichselröster Kokos - Sojajoghurt Granola mit Sesam, Datteln & Cranberries, Ananas",
               "price": null,
               "tags": [],
-              "allergens": "F,H",
+              "allergens": "A,F,H,N,O",
               "description": null
             }
           ]
@@ -484,10 +484,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Omas Käsekuchen",
+              "title": "Omas Käsekuchen Oreoschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,F,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -507,7 +507,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     },
     "2026-08-26": {
       "categories": [
@@ -720,10 +720,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Mango-Tiramisu im Glas",
+              "title": "Mango-Tiramisu im Glas Haselnussmousse, Weichselröster",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -732,10 +732,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss- Zwetschkenstrudel",
+              "title": "Walnuss - Zwetschkenstrudel Omas Käsekuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
@@ -755,7 +755,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     },
     "2026-08-27": {
       "categories": [
@@ -969,12 +969,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Veganer Tapioka Pudding, Bananen, Erdnüsse",
+              "title": "Veganer Tapioka Pudding, Bananen, Erdnüsse Mango-Tiramisu im Glas",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "E,O",
+              "allergens": "A,C,E,F,G,O",
               "description": null
             }
           ]
@@ -983,10 +983,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Malakoffschnitte",
+              "title": "Malakoffschnitte Walnuss - Zwetschkenstrudel",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1006,7 +1006,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     },
     "2026-08-28": {
       "categories": [
@@ -1150,10 +1150,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokosreis, Heidelbeeren",
+              "title": "Kokosreis, Heidelbeeren Veganer Tapioka Pudding, Bananen, Erdnüsse",
               "price": null,
-              "tags": [],
-              "allergens": "H",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "E,H,O",
               "description": null
             }
           ]
@@ -1162,10 +1164,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Esterhazyschnitte",
+              "title": "Esterhazyschnitte Malakoffschnitte",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,H,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -1185,7 +1187,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-24T08:35:02.292Z"
     }
   }
 }
