@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-24T05:05:50.065Z",
+  "fetchedAt": "2026-08-25T08:34:30.291Z",
   "error": null,
   "days": {
     "2026-08-24": {
@@ -119,7 +119,7 @@
           "items": [
             {
               "title": "Brasilianisches Xin Xin (Putenfilet , Erdnüsse)Basmatireis",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Pute"
               ],
@@ -159,7 +159,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-25T08:34:29.430Z"
     },
     "2026-08-26": {
       "categories": [
