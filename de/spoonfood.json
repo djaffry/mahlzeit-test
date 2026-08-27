@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-26T08:35:07.103Z",
+  "fetchedAt": "2026-08-27T15:20:11.643Z",
   "error": null,
   "days": {
     "2026-08-28": {
@@ -584,6 +584,156 @@
         }
       ],
       "fetchedAt": "2026-08-26T08:35:03.001Z"
+    },
+    "2026-08-27": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Orientalische Hühner-Einmachsuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tahini"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frittata",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "buntem Sommergemüse 🥒🥕🌿 & geröstetem Putenschinken 🥓"
+            },
+            {
+              "title": "Eier 🥚-Nockerl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Specklinsen 🥓",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Semmelknödelwürfeln"
+            },
+            {
+              "title": "Gemüse-Madras",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, Erdäpfeln 🥔, Paprika 🫑, Melanzani 🍆, Brokkoli 🥦, Champignons 🍄‍🟫, Romanesco 💚 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Quinoa-Orangen 🍊-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "roter ❤️ Paprika 🫑, Karotten 🥕, Gurken 🥒 & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Coleslaw-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Belugalinsen, Rotkohl 🥬, Karotten 🥕 & Äpfeln 🍏"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Passionsfruchtspiegel 🧡"
+            },
+            {
+              "title": "Malakoff 💛-Dessert im Glas",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-27T15:20:09.398Z"
     }
   }
 }

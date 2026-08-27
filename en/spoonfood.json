@@ -6,7 +6,7 @@
   "icon": "leaf",
   "cuisine": [
     "Bowls",
-    "Eintöpfe"
+    "Stews"
   ],
   "edenred": true,
   "outdoor": true,
@@ -14,47 +14,47 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-26T08:35:07.103Z",
+  "fetchedAt": "2026-08-27T15:20:11.643Z",
   "error": null,
   "days": {
     "2026-08-28": {
       "categories": [
         {
-          "name": "Eintopf-Menü",
+          "name": "One pot meal",
           "items": [
             {
-              "title": "Eintopf-Menü",
+              "title": "One pot meal",
               "price": "EUR 11,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+              "description": "Small soup/colorful mixed salad & large stew"
             }
           ]
         },
         {
-          "name": "Special-Menü",
+          "name": "Special menu",
           "items": [
             {
-              "title": "Special-Menü",
+              "title": "Special menu",
               "price": "EUR 12,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+              "description": "Small soup/colorful mixed salad & large special"
             }
           ]
         },
         {
-          "name": "Suppen",
+          "name": "Soups",
           "items": [
             {
-              "title": "Mediterrane Gemüsesuppe 🥒🍅🌿",
+              "title": "Mediterranean vegetable soup 🥒🍅🌿",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kokosmilch 🥥"
+              "description": "Coconut milk 🥥"
             }
           ]
         },
@@ -62,74 +62,74 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Risoni-Gemüse-Pfanne",
+              "title": "Risoni and vegetable pan",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Paprika 🫑, Kirschtomaten 🍅 & geschmorten, roten Zwiebeln 🧅 - optional mit Tzatziki 🥒"
+              "description": "Peppers 🫑, cherry tomatoes 🍅 & braised red onions 🧅 - optionally with tzatziki 🥒"
             },
             {
-              "title": "Warmer Milchrahmstrudel-Auflauf",
+              "title": "Warm milk cream strudel casserole",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Vanillesauce 💛"
+              "description": "Vanilla sauce 💛"
             }
           ]
         },
         {
-          "name": "Eintöpfe",
+          "name": "Stews",
           "items": [
             {
-              "title": "Linsen",
+              "title": "Lenses",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Selchschopf 🥓 & Reis"
+              "description": "Selchschopf 🥓 & rice"
             },
             {
-              "title": "Fisolen 🫛-Gartengemüse-Eintopf",
+              "title": "Fisolen 🫛 garden vegetable stew",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "gelben 💛 Zucchini 🥒, Karotten 🥕, Kurkuma 🧡 & Reis – optional mit Schnittlauch 🌿"
+              "description": "yellow 💛 zucchini 🥒, carrots 🥕, turmeric 🧡 & rice - optionally with chives 🌿"
             }
           ]
         },
         {
-          "name": "Salate",
+          "name": "Salads",
           "items": [
             {
-              "title": "Griechischer Bauernsalat",
+              "title": "Greek farmer's salad",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, Tomaten 🍅, Oliven 🫒, Feta & Oregano 🌿"
+              "description": "Cucumbers 🥒, tomatoes 🍅, olives 🫒, feta & oregano 🌿"
             },
             {
-              "title": "Orientalische Couscous-Salad Bowl",
+              "title": "Oriental couscous salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, Tomaten 🍅, Granatapfelkernen 🍎 & Frühlingszwiebeln 🌿"
+              "description": "Cucumbers 🥒, tomatoes 🍅, pomegranate seeds 🍎 & spring onions 🌿"
             },
             {
-              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegetarisch"
@@ -143,7 +143,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vagner Schoko 🍫-Kuchen",
+              "title": "Vagner chocolate 🍫 cake",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -159,40 +159,40 @@
     "2026-08-24": {
       "categories": [
         {
-          "name": "Eintopf-Menü",
+          "name": "One pot meal",
           "items": [
             {
-              "title": "Eintopf-Menü",
+              "title": "One pot meal",
               "price": "EUR 11,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+              "description": "Small soup/colorful mixed salad & large stew"
             }
           ]
         },
         {
-          "name": "Special-Menü",
+          "name": "Special menu",
           "items": [
             {
-              "title": "Special-Menü",
+              "title": "Special menu",
               "price": "EUR 12,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+              "description": "Small soup/colorful mixed salad & large special"
             }
           ]
         },
         {
-          "name": "Suppen",
+          "name": "Soups",
           "items": [
             {
-              "title": "SpoonFood’s Beef-Tea (klare Rinder-Kraftbrühe 💪)",
+              "title": "SpoonFood’s Beef Tea (clear beef broth 💪)",
               "price": "4,20 / 6,20",
               "tags": [
                 "Rindfleisch"
               ],
               "allergens": null,
-              "description": "Fleischstrudel & Schnittlauch 🌿"
+              "description": "Meat strudel & chives 🌿"
             }
           ]
         },
@@ -200,28 +200,28 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Lasagne Bolognese 🍝",
+              "title": "Lasagna Bolognese 🍝",
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
               "description": null
             },
             {
-              "title": "Ebly-Gemüsepfanne",
+              "title": "Ebly vegetable pan",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Karotten 🥕, Brokkoli 🥦 & Erbsen 🫛 – optional mit Sauerrahm"
+              "description": "Carrots 🥕, broccoli 🥦 & peas 🫛 - optionally with sour cream"
             }
           ]
         },
         {
-          "name": "Eintöpfe",
+          "name": "Stews",
           "items": [
             {
-              "title": "Marokkanische Hühner-Tajine",
+              "title": "Moroccan chicken tagine",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
@@ -229,44 +229,44 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "Süßkartoffeln 🍠, Paprika 🫑, getrockneten Marillen 🍑 & Reis"
+              "description": "Sweet potatoes 🍠, peppers 🫑, dried apricots 🍑 & rice"
             },
             {
-              "title": "Rote Linsen-Dal",
+              "title": "Red lentil dal",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Zucchini 🥒, Melanzani 🍆, Tomaten 🍅, Ingwer 🫚 & Reis - optional mit Koriander 🌿"
+              "description": "Zucchini 🥒, aubergine 🍆, tomatoes 🍅, ginger 🫚 & rice - optionally with coriander 🌿"
             }
           ]
         },
         {
-          "name": "Salate",
+          "name": "Salads",
           "items": [
             {
-              "title": "Buchweizen-Salad Bowl",
+              "title": "Buckwheat Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & Bärlauch 🌿-Pesto-Dressing"
+              "description": "Tomatoes 🍅, cucumbers 🥒, mozzarella balls & wild garlic 🌿 pesto dressing"
             },
             {
-              "title": "Thai Mais 🌽-Salad Bowl",
+              "title": "Thai corn 🌽 salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Erdnüssen 🥜, Karotten 🥕, gelber 💛 und roter ❤️ Paprika 🫑, Tomaten 🍅, Jungzwiebeln & frischem Basilikum 🌿"
+              "description": "Peanuts 🥜, carrots 🥕, yellow 💛 and red ❤️ peppers 🫑, tomatoes 🍅, spring onions & fresh basil 🌿"
             },
             {
-              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegetarisch"
@@ -280,14 +280,14 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Panna Cotta",
+              "title": "Panna cotta",
               "price": "3,90",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Passionsfruchtspiegel 🧡"
+              "description": "Passion fruit mirror 🧡"
             }
           ]
         }
@@ -297,41 +297,41 @@
     "2026-08-25": {
       "categories": [
         {
-          "name": "Eintopf-Menü",
+          "name": "One pot meal",
           "items": [
             {
-              "title": "Eintopf-Menü",
+              "title": "One pot meal",
               "price": "EUR 11,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+              "description": "Small soup/colorful mixed salad & large stew"
             }
           ]
         },
         {
-          "name": "Special-Menü",
+          "name": "Special menu",
           "items": [
             {
-              "title": "Special-Menü",
+              "title": "Special menu",
               "price": "EUR 12,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+              "description": "Small soup/colorful mixed salad & large special"
             }
           ]
         },
         {
-          "name": "Suppen",
+          "name": "Soups",
           "items": [
             {
-              "title": "Sommerliche ☀️ Minestrone 🍅",
+              "title": "Summery ☀️ Minestrone 🍅",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Wurzelgemüse 🥕 & Lauch 🌿 - optional mit Pasta"
+              "description": "Root vegetables 🥕 & leeks 🌿 - optionally with pasta"
             }
           ]
         },
@@ -339,14 +339,14 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Lemon 🍋 Chicken - auf geschmorten, roten Zwiebeln 🧅 & Zitronenscheiben",
+              "title": "Lemon 🍋 Chicken - on braised red onions 🧅 & lemon slices",
               "price": "7,90 / 10,90",
               "tags": [
                 "Laktosefrei",
                 "Huhn"
               ],
               "allergens": null,
-              "description": "Reis"
+              "description": "Rice"
             },
             {
               "title": "Gnocchi Quattro Formaggi 🧀 - optional",
@@ -360,10 +360,10 @@
           ]
         },
         {
-          "name": "Eintöpfe",
+          "name": "Stews",
           "items": [
             {
-              "title": "Szegediner Krautfleisch - vom Rind",
+              "title": "Szeged cabbage meat - from beef",
               "price": "6,90 / 9,90",
               "tags": [
                 "Laktosefrei",
@@ -371,44 +371,44 @@
                 "Rindfleisch"
               ],
               "allergens": null,
-              "description": "Erdäpfeln 🥔 & Reis – optional mit Sauerrahm"
+              "description": "Potatoes 🥔 & rice – optionally with sour cream"
             },
             {
-              "title": "Rotes ❤️ Thai-Limetten 🍋‍🟩-Gemüse-Curry",
+              "title": "Red ❤️ Thai lime 🍋‍🟩 vegetable curry",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kokosmilch 🥥, Paprika 🫑, Zucchini 🥒, Zuckerschoten 🫛, Brokkoli 🥦, Tofu & Reis – optional mit Koriander 🌿"
+              "description": "Coconut milk 🥥, peppers 🫑, zucchini 🥒, sugar snap peas 🫛, broccoli 🥦, tofu & rice - optionally with coriander 🌿"
             }
           ]
         },
         {
-          "name": "Salate",
+          "name": "Salads",
           "items": [
             {
-              "title": "Buchweizen-Salad Bowl",
+              "title": "Buckwheat Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & Bärlauch 🌿-Pesto-Dressing"
+              "description": "Tomatoes 🍅, cucumbers 🥒, mozzarella balls & wild garlic 🌿 pesto dressing"
             },
             {
-              "title": "Thai Mais 🌽-Salad Bowl",
+              "title": "Thai corn 🌽 salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Erdnüssen 🥜, Karotten 🥕, gelber 💛 und roter ❤️ Paprika 🫑, Tomaten 🍅, Jungzwiebeln & frischem Basilikum 🌿"
+              "description": "Peanuts 🥜, carrots 🥕, yellow 💛 and red ❤️ peppers 🫑, tomatoes 🍅, spring onions & fresh basil 🌿"
             },
             {
-              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegetarisch"
@@ -422,14 +422,14 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Panna Cotta",
+              "title": "Panna cotta",
               "price": "3,90",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Passionsfruchtspiegel 🧡"
+              "description": "Passion fruit mirror 🧡"
             }
           ]
         }
@@ -439,41 +439,41 @@
     "2026-08-26": {
       "categories": [
         {
-          "name": "Eintopf-Menü",
+          "name": "One pot meal",
           "items": [
             {
-              "title": "Eintopf-Menü",
+              "title": "One pot meal",
               "price": "EUR 11,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+              "description": "Small soup/colorful mixed salad & large stew"
             }
           ]
         },
         {
-          "name": "Special-Menü",
+          "name": "Special menu",
           "items": [
             {
-              "title": "Special-Menü",
+              "title": "Special menu",
               "price": "EUR 12,90",
               "tags": [],
               "allergens": null,
-              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+              "description": "Small soup/colorful mixed salad & large special"
             }
           ]
         },
         {
-          "name": "Suppen",
+          "name": "Soups",
           "items": [
             {
-              "title": "Erdäpfel 🥔-Knoblauch 🧄-Cremesuppe",
+              "title": "Potato 🥔 garlic 🧄 cream soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kräuter 🌿-Croutons"
+              "description": "Herb 🌿 croutons"
             }
           ]
         },
@@ -481,11 +481,11 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Spätzlepfanne",
+              "title": "Spätzle pan",
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
-              "description": "Rahmgeschnetzeltem vom Huhn & Champignons 🍄‍🟫 - optional mit Schnittlauch 🌿"
+              "description": "Creamed chicken & mushrooms 🍄‍🟫 - optionally with chives 🌿"
             },
             {
               "title": "Risotto",
@@ -495,15 +495,15 @@
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gorgonzola 🧀, Birnen 🍐, Walnüssen & Parmesan"
+              "description": "Gorgonzola 🧀, pears 🍐, walnuts & parmesan"
             }
           ]
         },
         {
-          "name": "Eintöpfe",
+          "name": "Stews",
           "items": [
             {
-              "title": "Okraschoten 🫛-Eintopf vom Ötscherblickschwein",
+              "title": "Okra 🫛 stew from Ötscherblick pig",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
@@ -511,44 +511,44 @@
                 "Schweinefleisch"
               ],
               "allergens": null,
-              "description": "Karotten 🥕, Süßkartoffeln 🍠, Tomaten 🍅 & Reis"
+              "description": "Carrots 🥕, sweet potatoes 🍠, tomatoes 🍅 & rice"
             },
             {
-              "title": "Bunter Bohnen 🫘-Eintopf *Ribollita-Style*",
+              "title": "Colorful beans 🫘 stew *Ribollita style*",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Karotten 🥕, Stangensellerie 🌿, Spitzkohl 🥬, Mangold, grünen Oliven 🫒 & Reis - optional mit frischem Basilikum 🌿"
+              "description": "Carrots 🥕, celery 🌿, pointed cabbage 🥬, chard, green olives 🫒 & rice - optionally with fresh basil 🌿"
             }
           ]
         },
         {
-          "name": "Salate",
+          "name": "Salads",
           "items": [
             {
-              "title": "Buchweizen-Salad Bowl",
+              "title": "Buckwheat Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Tomaten 🍅, Gurken 🥒, Mozzarellabällchen & Bärlauch 🌿-Pesto-Dressing"
+              "description": "Tomatoes 🍅, cucumbers 🥒, mozzarella balls & wild garlic 🌿 pesto dressing"
             },
             {
-              "title": "Thai Mais 🌽-Salad Bowl",
+              "title": "Thai corn 🌽 salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Erdnüssen 🥜, Karotten 🥕, gelber 💛 und roter ❤️ Paprika 🫑, Tomaten 🍅, Jungzwiebeln & frischem Basilikum 🌿"
+              "description": "Peanuts 🥜, carrots 🥕, yellow 💛 and red ❤️ peppers 🫑, tomatoes 🍅, spring onions & fresh basil 🌿"
             },
             {
-              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegetarisch"
@@ -562,17 +562,17 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Panna Cotta",
+              "title": "Panna cotta",
               "price": "3,90",
               "tags": [
                 "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Passionsfruchtspiegel 🧡"
+              "description": "Passion fruit mirror 🧡"
             },
             {
-              "title": "Malakoff 💛-Dessert im Glas",
+              "title": "Malakoff 💛 dessert in a glass",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -584,6 +584,156 @@
         }
       ],
       "fetchedAt": "2026-08-26T08:35:03.001Z"
+    },
+    "2026-08-27": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Oriental chicken preserve soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tahini"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Frittata",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "colorful summer vegetables 🥒🥕🌿 & roasted turkey ham 🥓"
+            },
+            {
+              "title": "Eggs 🥚 dumplings",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Bacon lentils 🥓",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Bread dumpling cubes"
+            },
+            {
+              "title": "Vegetable madras",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, potatoes 🥔, peppers 🫑, aubergine 🍆, broccoli 🥦, mushrooms 🍄‍🟫, Romanesco 💚 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Quinoa orange 🍊 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "red ❤️ pepper 🫑, carrot 🥕, cucumber 🥒 & citrus 🍋 dressing"
+            },
+            {
+              "title": "Coleslaw Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Beluga lentils, red cabbage 🥬, carrots 🥕 & apples 🍏"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Panna cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Passion fruit mirror 🧡"
+            },
+            {
+              "title": "Malakoff 💛 dessert in a glass",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-27T15:20:09.398Z"
     }
   }
 }
