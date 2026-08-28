@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-27T15:20:11.643Z",
+  "fetchedAt": "2026-08-28T16:43:39.088Z",
   "error": null,
   "days": {
     "2026-08-28": {
@@ -47,14 +47,14 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Mediterrane Gemüsesuppe 🥒🍅🌿",
+              "title": "Geräucherter Paprika 🫑-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kokosmilch 🥥"
+              "description": null
             }
           ]
         },
@@ -62,22 +62,23 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Risoni-Gemüse-Pfanne",
+              "title": "Buntes Ofengemüse - gelbe 💛 & grüne Zucchini 🥒, Fenchel 🌿 & Paprika 🫑",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegetarisch"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Paprika 🫑, Kirschtomaten 🍅 & geschmorten, roten Zwiebeln 🧅 - optional mit Tzatziki 🥒"
+              "description": "Kräuter 🌿-Dip - dazu ein kleiner Beilagensalat 🥗"
             },
             {
-              "title": "Warmer Milchrahmstrudel-Auflauf",
+              "title": "Warme Mohnnudeln",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Vanillesauce 💛"
+              "description": "Zwetschkenröster 💜"
             }
           ]
         },
@@ -85,24 +86,24 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Linsen",
+              "title": "Erdäpfel 🥔-Gulasch",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Selchschopf 🥓 & Reis"
+              "description": "Pilzen 🍄‍🟫, Lauch 🌿, Frankfurtern & Reis"
             },
             {
-              "title": "Fisolen 🫛-Gartengemüse-Eintopf",
+              "title": "Dille 🌿-Rahmfisolen 🫛",
               "price": "6,90 / 9,90",
               "tags": [
-                "Vegan",
+                "Vegetarisch",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "gelben 💛 Zucchini 🥒, Karotten 🥕, Kurkuma 🧡 & Reis – optional mit Schnittlauch 🌿"
+              "description": "Erdäpfeln 🥔 & Reis"
             }
           ]
         },
@@ -110,23 +111,24 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Griechischer Bauernsalat",
+              "title": "Quinoa-Orangen 🍊-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegetarisch",
+                "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, Tomaten 🍅, Oliven 🫒, Feta & Oregano 🌿"
+              "description": "roter ❤️ Paprika 🫑, Karotten 🥕, Gurken 🥒 & Zitrus 🍋-Dressing"
             },
             {
-              "title": "Orientalische Couscous-Salad Bowl",
+              "title": "Coleslaw-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gurken 🥒, Tomaten 🍅, Granatapfelkernen 🍎 & Frühlingszwiebeln 🌿"
+              "description": "Belugalinsen, Rotkohl 🥬, Karotten 🥕 & Äpfeln 🍏"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -143,7 +145,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Vagner Schoko 🍫-Kuchen",
+              "title": "Malakoff 💛-Dessert im Glas",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -154,7 +156,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-28T16:43:35.886Z"
     },
     "2026-08-24": {
       "categories": [
