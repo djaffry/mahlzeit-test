@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-25T08:34:30.291Z",
+  "fetchedAt": "2026-08-28T08:35:06.372Z",
   "error": null,
   "days": {
     "2026-08-24": {
@@ -311,21 +311,30 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Hühnerschnitzel mit Erdäpfel-Vogerlsalat",
+              "title": "",
               "price": "11,90 €",
               "tags": [
-                "Huhn"
+                "Fleisch"
               ],
               "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Gemüse-Champignon Lasagne ,Salatbecher",
+              "title": "Gebackener Fischfilet auf Petersilerdäpfel",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,G,D",
+              "description": null
+            },
+            {
+              "title": "Kürbisgnocchi mit Hirtenkäse ,Salatbecher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
@@ -343,7 +352,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T05:05:49.400Z"
+      "fetchedAt": "2026-08-28T08:35:04.664Z"
     }
   }
 }

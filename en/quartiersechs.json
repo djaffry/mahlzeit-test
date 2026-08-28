@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-24T08:35:03.844Z",
+  "fetchedAt": "2026-08-28T08:35:07.598Z",
   "error": null,
   "days": {
     "2026-08-24": {
@@ -1084,7 +1084,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli Waldpilzfülle, Strozzapretti, Oliven Gnocchi, extra-vergine Olivenöl mit Kräutern, Sc. Bolognese - Rind, Mediterranes Kräuter - Orangen Pesto, geröstete Haselnüsse, Fleischtomaten, Grana",
+              "title": "Salami & Cheddar Ravioli, Strozzapretti, Oliven Gnocchi, extra-vergine Olivenöl mit Kräutern, Sc. Bolognese - Rind, Mediterranes Kräuter - Orangen Pesto, geröstete Haselnüsse, Fleischtomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Rindfleisch",
@@ -1108,10 +1108,10 @@
               "description": null
             },
             {
-              "title": "Garnelen-Curry mit Wokgemüse, Jasminreis",
+              "title": "Zander in Currysauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
-                "Meeresfrüchte"
+                "Fisch"
               ],
               "allergens": "A,B,C,D,F,H,L,M,N,O",
               "description": null
@@ -1187,7 +1187,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-24T08:35:02.292Z"
+      "fetchedAt": "2026-08-28T08:35:04.664Z"
     }
   }
 }
