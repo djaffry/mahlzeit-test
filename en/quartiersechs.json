@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-31T08:35:06.218Z",
+  "fetchedAt": "2026-08-31T10:57:41.181Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -224,10 +224,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "White chocolate mousse, strawberry sauce",
+              "title": "White chocolate mousse, strawberry sauce, coconut rice pudding, blueberries",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,O",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -236,12 +236,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan peach cake",
+              "title": "Vegan peach cake Esterhazy slices",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-01": {
       "categories": [
@@ -474,10 +474,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Semolina pudding, apple compote",
+              "title": "Semolina pudding, apple compote, white chocolate mousse, strawberry sauce",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -486,9 +486,11 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Apricot curd strudel",
+              "title": "Apricot curd strudel Vegan peach cake",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -509,7 +511,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-02": {
       "categories": [
@@ -721,10 +723,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Tuscan berry trifle",
+              "title": "Tuscan berry trifle semolina pudding, apple compote",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -733,12 +735,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan brownie",
+              "title": "Vegan brownie apricot curd strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -758,7 +760,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-03": {
       "categories": [
@@ -972,10 +974,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Banana caramel pudding",
+              "title": "Banana caramel pudding berry tiramisu in a glass",
               "price": null,
               "tags": [],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -984,10 +986,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Blackberry crumble cake",
+              "title": "Blackberry Streusel Cake Vegan Brownie",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1007,7 +1011,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-04": {
       "categories": [
@@ -1149,10 +1153,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Creme brulee",
+              "title": "Creme Bruleé banana caramel pudding",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1161,10 +1165,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Walnut plum strudel",
+              "title": "Walnut plum strudel blackberry crumble cake",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1184,7 +1188,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     }
   }
 }

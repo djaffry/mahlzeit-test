@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-31T08:35:06.218Z",
+  "fetchedAt": "2026-08-31T10:57:41.181Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -224,10 +224,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Weißes Schokolademousse, Erdbeersauce",
+              "title": "Weißes Schokolademousse, Erdbeersauce Kokosmilchreis, Heidelbeeren",
               "price": null,
               "tags": [],
-              "allergens": "C,F,G,O",
+              "allergens": "C,F,G,H,O",
               "description": null
             }
           ]
@@ -236,12 +236,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Pfirsichkuchen",
+              "title": "Veganer Pfirsichkuchen Esterhazyschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-01": {
       "categories": [
@@ -474,10 +474,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding, Apfelkompott",
+              "title": "Grießpudding, Apfelkompott Weißes Schokoladenmousse, Erdbeersauce",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -486,9 +486,11 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Marillen-Topfen Strudel",
+              "title": "Marillen-Topfen Strudel Veganer Pfirsichkuchen",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": "A,C,F,G",
               "description": null
             }
@@ -509,7 +511,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-02": {
       "categories": [
@@ -721,10 +723,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Toskanisches Beerentrifle",
+              "title": "Toskanisches Beerentrifle Grießpudding, Apfelkompott",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G,O",
+              "allergens": "A,C,F,G,H,O",
               "description": null
             }
           ]
@@ -733,12 +735,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Veganer Brownie",
+              "title": "Veganer Brownie Marillen-Topfen Strudel",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -758,7 +760,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-03": {
       "categories": [
@@ -972,10 +974,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Bananen-Karamell Pudding",
+              "title": "Bananen-Karamell Pudding Beerentiramisu im Glas",
               "price": null,
               "tags": [],
-              "allergens": "A,F",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -984,10 +986,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Brombeer Streuselkuchen",
+              "title": "Brombeer Streuselkuchen Veganer Brownie",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1007,7 +1011,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     },
     "2026-09-04": {
       "categories": [
@@ -1149,10 +1153,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Creme Bruleé",
+              "title": "Creme Bruleé Bananen-Karamellpudding",
               "price": null,
               "tags": [],
-              "allergens": "C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1161,10 +1165,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnuss- Zwetschkenstrudel",
+              "title": "Walnuss- Zwetschkenstrudel Brombeer Streuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -1184,7 +1188,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-08-31T10:57:39.037Z"
     }
   }
 }
