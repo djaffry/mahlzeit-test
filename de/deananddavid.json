@@ -1,0 +1,151 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salate",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-08-31T08:35:05.432Z",
+  "error": null,
+  "days": {
+    "2026-08-31": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-01": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-02": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-03": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-04": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Kebab Bowl mit planted.kebab",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Chicken Oriental Salad",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "mit Mango, knackigen Weintrauben, ital. Hartkäse und Mandeln. Dazu empfehlen wir unser Apfel-Holunder-Dressing."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    }
+  }
+}

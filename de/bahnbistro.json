@@ -1,0 +1,315 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-08-31T08:35:04.660Z",
+  "error": null,
+  "days": {
+    "2026-08-31": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tortelloni Quinoa-Spinat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,N",
+              "description": "Tomaten-Sesampesto, Frittierter Karfiol"
+            },
+            {
+              "title": "Fleischbällchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Kartoffelpüree & Erbsen, Rahmsoße & Preiselbeeren"
+            },
+            {
+              "title": "Pasta Tonno",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G",
+              "description": "Thunfischsugo & Oliven, Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Topfenblechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-01": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gebackener Emmentaler",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Petersilkartofferl, Sauce Tartare"
+            },
+            {
+              "title": "Zwiebelrindschnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,M,O",
+              "description": "Gurkerl & Röstzwiebel, Frische Spätzle"
+            },
+            {
+              "title": "Currywurst vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Signature Currysauce, Skin-on Wedges"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kirsch-Schokokuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-02": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüselasagne",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Buntes Gemüse & Vechamel, Grana Vegano"
+            },
+            {
+              "title": "Hühner-Cordon Bleu",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Pommes frites, Zitrone"
+            },
+            {
+              "title": "Gegrillte Lachsschnitte",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D",
+              "description": "Mediterraner Nudelsalat, Balsamico Glace"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillen-Krapfen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-03": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Tempura-Gemüse",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Süßkartoffeln & Spicy Brokkoli, Sweet Chili-Dip"
+            },
+            {
+              "title": "Bifteki",
+              "price": null,
+              "tags": [],
+              "allergens": "C,G",
+              "description": "Tomatenreis & Tzatziki, Frische Petersilie"
+            },
+            {
+              "title": "Buffalo Wings",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Dippers & Coleslaw, Ranch-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Sacherschnitte",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-04": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Nußnudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A,H",
+              "description": "Zwetschkenröster, Staubzucker"
+            },
+            {
+              "title": "Scholle gebacken",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Erdäpfelsalat, Sauce Remoulade"
+            },
+            {
+              "title": "Marinierter Tofu",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,E,F,H,N",
+              "description": "Cashewreis & Wakame, Sweet Chili-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Rahm-Früchtchen",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-08-31T08:35:04.094Z"
+    }
+  }
+}
