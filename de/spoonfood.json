@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-08-31T08:35:05.963Z",
+  "fetchedAt": "2026-09-01T09:29:10.402Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -155,6 +155,156 @@
         }
       ],
       "fetchedAt": "2026-08-31T08:35:04.094Z"
+    },
+    "2026-09-01": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Dill 🌿-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Reispfanne vom Rind",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Pilzen 🍄‍🟫, Paprika 🫑 & Babykarotten 🥕"
+            },
+            {
+              "title": "Greens 💚 Mac’n’Cheese",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Brokkoli 🥦"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Steckrüben 🫜-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelben 💛 Rüben, Karotten 🥕, Selchfleisch, Speck 🥓 & Reis – optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Tomaten 🍅-Melanzani 🍆-Korma – in Cashew-Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Süßkartoffeln 🍠 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Couscous-Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Gurken 🥒, frischer Petersilie 🌿, Minze, Frühlingszwiebeln & Zitrus 🍋-Dressing"
+            },
+            {
+              "title": "Rote Rüben 🫜-Kichererbsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Stangensellerie 🌿, Karotten 🥕, frischer Petersilie 🌿 & Tahini-Zitronen 🍋-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Marillen 🍑-Palatschinken-Traum",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Vanille 💛, Mascarpone & Knusperstreuseln"
+            },
+            {
+              "title": "Espresso light ☕️-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "weißer Schokolade 🍫"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-01T09:29:07.540Z"
     }
   }
 }
