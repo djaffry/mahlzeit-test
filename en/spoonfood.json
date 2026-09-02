@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-01T09:29:10.402Z",
+  "fetchedAt": "2026-09-02T08:34:49.257Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -305,6 +305,155 @@
         }
       ],
       "fetchedAt": "2026-09-01T09:29:07.540Z"
+    },
+    "2026-09-02": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Vegetable 🥒🥕🥦 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Colorful 💛🧡💚 Krautfleckerl 🥬 pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "caramelized onions 🧅 & bacon 🥓"
+            },
+            {
+              "title": "Tortiglioni in pumpkin 🎃 ricotta sauce – optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Pumpkin 🎃 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Minced meat (mixed), peppers 🫑, carrots 🥕 & rice"
+            },
+            {
+              "title": "Sweet potato 🍠-peanut 🥜 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, tomatoes 🍅, peas 🫛 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Couscous Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Tomato 🍅, cucumber 🥒, fresh parsley 🌿, mint, spring onion & citrus 🍋 dressing"
+            },
+            {
+              "title": "Beetroot 🫜 Chickpea Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Celery 🌿, carrots 🥕, fresh parsley 🌿 & tahini lemon 🍋 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apricot 🍑 pancake dream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Vanilla 💛, mascarpone & crunchy sprinkles"
+            },
+            {
+              "title": "Espresso light ☕️-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "white chocolate 🍫"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     }
   }
 }

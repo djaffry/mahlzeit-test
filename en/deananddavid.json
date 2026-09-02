@@ -14,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-08-31T08:35:05.432Z",
+  "fetchedAt": "2026-09-02T08:34:48.167Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -23,25 +23,27 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Kebab bowl with planted.kebab",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Chicken Oriental Salad",
+              "title": "Chicken Pumpkin Bowl",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+              "description": null
+            },
+            {
+              "title": "Vegan pumpkin curry",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     },
     "2026-09-01": {
       "categories": [
@@ -49,25 +51,27 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Kebab bowl with planted.kebab",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Chicken Oriental Salad",
+              "title": "Chicken Pumpkin Bowl",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+              "description": null
+            },
+            {
+              "title": "Vegan pumpkin curry",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     },
     "2026-09-02": {
       "categories": [
@@ -75,25 +79,27 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Kebab bowl with planted.kebab",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Chicken Oriental Salad",
+              "title": "Chicken Pumpkin Bowl",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+              "description": null
+            },
+            {
+              "title": "Vegan pumpkin curry",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     },
     "2026-09-03": {
       "categories": [
@@ -101,25 +107,27 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Kebab bowl with planted.kebab",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Chicken Oriental Salad",
+              "title": "Chicken Pumpkin Bowl",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+              "description": null
+            },
+            {
+              "title": "Vegan pumpkin curry",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     },
     "2026-09-04": {
       "categories": [
@@ -127,25 +135,27 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Kebab bowl with planted.kebab",
-              "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
-            },
-            {
-              "title": "Chicken Oriental Salad",
+              "title": "Chicken Pumpkin Bowl",
               "price": null,
               "tags": [
                 "Huhn"
               ],
               "allergens": null,
-              "description": "with mango, crunchy grapes, Italian hard cheese and almonds. We recommend our apple and elderberry dressing."
+              "description": null
+            },
+            {
+              "title": "Vegan pumpkin curry",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     }
   }
 }

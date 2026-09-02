@@ -11,7 +11,7 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-08-31T08:35:04.660Z",
+  "fetchedAt": "2026-09-02T08:34:47.534Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -150,13 +150,11 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Vegetable lasagne",
+              "title": "Pinzgauer Kässpätzle",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": "A,H",
-              "description": "Colorful vegetables & vechamel, Grana Vegano"
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Spaetzle & Bierkas, fried onions"
             },
             {
               "title": "Chicken Cordon Bleu",
@@ -191,7 +189,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-02T08:34:46.695Z"
     },
     "2026-09-03": {
       "categories": [
