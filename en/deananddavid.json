@@ -14,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-09-02T08:34:48.167Z",
+  "fetchedAt": "2026-09-03T08:35:27.465Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -23,7 +23,7 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Chicken Pumpkin Bowl",
+              "title": "Pumpkin Spice Bowl with Chicken",
               "price": null,
               "tags": [
                 "Huhn"
@@ -32,18 +32,16 @@
               "description": null
             },
             {
-              "title": "Vegan pumpkin curry",
+              "title": "Pumpkin spice curry",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": null,
               "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-02T08:34:46.695Z"
+      "fetchedAt": "2026-09-03T08:35:25.716Z"
     },
     "2026-09-01": {
       "categories": [
@@ -51,7 +49,7 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Chicken Pumpkin Bowl",
+              "title": "Pumpkin Spice Bowl with Chicken",
               "price": null,
               "tags": [
                 "Huhn"
@@ -60,18 +58,16 @@
               "description": null
             },
             {
-              "title": "Vegan pumpkin curry",
+              "title": "Pumpkin spice curry",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": null,
               "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-02T08:34:46.695Z"
+      "fetchedAt": "2026-09-03T08:35:25.716Z"
     },
     "2026-09-02": {
       "categories": [
@@ -79,7 +75,7 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Chicken Pumpkin Bowl",
+              "title": "Pumpkin Spice Bowl with Chicken",
               "price": null,
               "tags": [
                 "Huhn"
@@ -88,18 +84,16 @@
               "description": null
             },
             {
-              "title": "Vegan pumpkin curry",
+              "title": "Pumpkin spice curry",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": null,
               "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-02T08:34:46.695Z"
+      "fetchedAt": "2026-09-03T08:35:25.716Z"
     },
     "2026-09-03": {
       "categories": [
@@ -107,7 +101,7 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Chicken Pumpkin Bowl",
+              "title": "Pumpkin Spice Bowl with Chicken",
               "price": null,
               "tags": [
                 "Huhn"
@@ -116,18 +110,16 @@
               "description": null
             },
             {
-              "title": "Vegan pumpkin curry",
+              "title": "Pumpkin spice curry",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": null,
               "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-02T08:34:46.695Z"
+      "fetchedAt": "2026-09-03T08:35:25.716Z"
     },
     "2026-09-04": {
       "categories": [
@@ -135,7 +127,7 @@
           "name": "Seasonals",
           "items": [
             {
-              "title": "Chicken Pumpkin Bowl",
+              "title": "Pumpkin Spice Bowl with Chicken",
               "price": null,
               "tags": [
                 "Huhn"
@@ -144,18 +136,16 @@
               "description": null
             },
             {
-              "title": "Vegan pumpkin curry",
+              "title": "Pumpkin spice curry",
               "price": null,
-              "tags": [
-                "Vegan"
-              ],
+              "tags": [],
               "allergens": null,
               "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-02T08:34:46.695Z"
+      "fetchedAt": "2026-09-03T08:35:25.716Z"
     }
   }
 }
