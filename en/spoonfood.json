@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-03T08:35:28.293Z",
+  "fetchedAt": "2026-09-04T08:41:25.222Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -593,6 +593,147 @@
         }
       ],
       "fetchedAt": "2026-09-03T08:35:25.716Z"
+    },
+    "2026-09-04": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Spinach 💚 cream soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Potatoes 🥔-Leeks 🌿-Gratin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "caramelized onions 🧅 - optionally with sour cream"
+            },
+            {
+              "title": "Warm rice pudding casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Rhubarb 🩷 & vanilla sauce 💛"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Pulled Chicken Korma",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Cauliflower 🤍, broccoli 🥦 & rice"
+            },
+            {
+              "title": "High protein beans 🫘 beans",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kidney beans, white 🤍 beans, chickpeas, potatoes 🥔, carrots 🥕, celery 🌿, smoked tofu & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Runner Beans 🫘 Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Oven pumpkin 🎃, leek 🌿, pumpkin seeds & pumpkin seed oil"
+            },
+            {
+              "title": "Red cabbage 🩷-Oranges 🍊-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "red beets 🫜, carrots 🥕 & pomegranate seeds 🍎"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Tiramisu 🤎 in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     }
   }
 }

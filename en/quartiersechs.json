@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-08-31T10:57:41.181Z",
+  "fetchedAt": "2026-09-04T08:41:25.093Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Fried catfish fillet, pea pods - carrot vegetables, celery puree",
@@ -215,7 +215,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,L,N,O",
+              "allergens": "A,C,F,G,L,N,O",
               "description": null
             }
           ]
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T10:57:39.037Z"
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     },
     "2026-09-01": {
       "categories": [
@@ -295,7 +295,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Fried catfish fillet, pea pods - carrot vegetables, celery puree",
@@ -465,7 +465,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,L,N,O",
+              "allergens": "A,C,F,G,L,N,O",
               "description": null
             }
           ]
@@ -511,7 +511,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T10:57:39.037Z"
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     },
     "2026-09-02": {
       "categories": [
@@ -545,7 +545,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Fried catfish fillet, pea pods - carrot vegetables, celery puree",
@@ -714,7 +714,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,L,N,O",
+              "allergens": "A,C,F,G,L,N,O",
               "description": null
             }
           ]
@@ -760,7 +760,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T10:57:39.037Z"
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     },
     "2026-09-03": {
       "categories": [
@@ -794,7 +794,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Fried catfish fillet, pea pods - carrot vegetables, celery puree",
@@ -965,7 +965,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,L,N,O",
+              "allergens": "A,C,F,G,L,N,O",
               "description": null
             }
           ]
@@ -1011,7 +1011,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T10:57:39.037Z"
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     },
     "2026-09-04": {
       "categories": [
@@ -1045,7 +1045,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Fried catfish fillet, pea pods - carrot vegetables, celery puree",

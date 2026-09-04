@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-08-31T08:35:04.708Z",
+  "fetchedAt": "2026-09-04T08:41:24.204Z",
   "error": null,
   "days": {
     "2026-08-31": {
@@ -263,7 +263,7 @@
           "items": [
             {
               "title": "Chicken gyros plate, fried potatoes, salad, pita",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Huhn"
               ],
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T08:35:04.094Z"
+      "fetchedAt": "2026-09-04T08:41:22.459Z"
     },
     "2026-09-04": {
       "categories": [
