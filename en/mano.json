@@ -1,0 +1,355 @@
+{
+  "id": "mano",
+  "title": "Mano Café & Bistro",
+  "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
+  "type": "full",
+  "icon": "coffee",
+  "cuisine": [
+    "Café",
+    "Bistro"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2211,
+    "lon": 16.3926
+  },
+  "fetchedAt": "2026-09-07T08:35:05.472Z",
+  "error": null,
+  "days": {
+    "2026-09-07": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Rindsuppe mit Grießnockerl",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            },
+            {
+              "title": "Erdäpfelcremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Karibisches Maishuhnfilet mit Mango und Curryreis",
+              "price": "11,90 €",
+              "tags": [
+                "Fleisch"
+              ],
+              "allergens": "F",
+              "description": null
+            },
+            {
+              "title": "Zanderfilet in Kräuterbutter auf frischem Letscho , Petersilbulgur",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,G,D",
+              "description": null
+            },
+            {
+              "title": "Indisches Karfiolcurry mit Reis  ,Salat vom Buffet",
+              "price": "11,9O €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Rhabarberknödel in Walnussbrösel",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-08": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Basilikumcremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Leberknödel",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Rindfleischlasagne  mit Steinpilzsauce ,Rucola",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Fisch & Chips (Seelachsfilet )mit Sauce Tartare",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D",
+              "description": null
+            },
+            {
+              "title": "Süßkartoffel-Schafskäse Gratin      , Salat vom Buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillen-Joghurt-Mousse",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-09": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Erbsencremesuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Frittaten",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kentucky-Hühnerfiletstreifen  auf Karottenreis ,Coleslaw -Salat",
+              "price": "11,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Chili Garnelen auf Tabule-Mango-Minze Salat",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,G,D",
+              "description": null
+            },
+            {
+              "title": "Erdäpfel-Kürbis-Laibchen auf Salatbett   ,  Salat von Büffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Punchwürfel",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-10": {
+      "categories": [
+        {
+          "name": "Suppe",
+          "items": [
+            {
+              "title": "Champignonsuppe",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rindsuppe mit Fadennudeln",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Rindsbifteki mit getrüffelten Braterdäpfel , Schopfska Salat",
+              "price": "11,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Lachsfiletsteak Teriyaki auf Pfannengemüse  , Limetten",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,F,N",
+              "description": null
+            },
+            {
+              "title": "Asiatischer Gemüsereis mit Sojasprossen ,Salat vom Buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "F,N",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Vanilecremeschnitte",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-11": {
+      "categories": [
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "BBQ   Spare Ribs mit Wedges",
+              "price": "11,90 €",
+              "tags": [
+                "Fleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Gebacken Champignons mit Wedges ,Salatbecher",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Tages Dessert",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H,E",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    }
+  }
+}

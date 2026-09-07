@@ -1,0 +1,151 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salate",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-09-07T08:35:05.464Z",
+  "error": null,
+  "days": {
+    "2026-09-07": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-08": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-09": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-10": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-11": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    }
+  }
+}

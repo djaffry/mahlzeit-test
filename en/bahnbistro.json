@@ -1,0 +1,313 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-09-07T08:35:04.826Z",
+  "error": null,
+  "days": {
+    "2026-09-07": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Krautfleckerl",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Frisches Kraut & Zwiebel, *Süß oder Sauer*"
+            },
+            {
+              "title": "Putenfilet gebraten",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,F,G,O",
+              "description": "Kroketten & Prinzessbohnen, Pfeffersoße"
+            },
+            {
+              "title": "Fish-Burger No.2",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,C,D,G,M",
+              "description": "Backfisch & Toppings, Sauce Remoulade"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Himbeer-Stracciatellakuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-08": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Crispy-Thai Bowl",
+              "price": null,
+              "tags": [],
+              "allergens": "A,E,F,N",
+              "description": "Frühlingsrollen & Duftreis, Spicy Krautsalat"
+            },
+            {
+              "title": "Weißes Scherzel",
+              "price": null,
+              "tags": [],
+              "allergens": "G,L",
+              "description": "Rahmgemüse, Röstkartoffeln"
+            },
+            {
+              "title": "Hühnerspieß vom Grill",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "C,M",
+              "description": "Skin-on Fries & buntes Gemüse, Curry-Honig Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Double-Choc Muffin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-09": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gemüse-Ravioli",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F",
+              "description": "Tomatenragout, Frittierter Karfiol"
+            },
+            {
+              "title": "Backhendlsalat",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,G",
+              "description": "Erdäpfelsalat & Käferbohnen, Joghurt-Dip"
+            },
+            {
+              "title": "Surbraten",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Gabelkraut & Saftl, Semmelknödel"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Zitronen-Blechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-10": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kartoffel-Chili",
+              "price": null,
+              "tags": [],
+              "allergens": "A,L",
+              "description": "Bohne, Karotte & Mais, Kärntner Bauernbrot"
+            },
+            {
+              "title": "Pasta con Pollo",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": "Huhn, Tomate & Brokkoli, Grana Padano"
+            },
+            {
+              "title": "Karreefilets vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Reis & Mexicogemüse, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Mohn-Streuselkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    },
+    "2026-09-11": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Topfenpalatschinken",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Vanillesauce & Himbeeren, Schlagobers"
+            },
+            {
+              "title": "Faschiertes Laibchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Erdäpfelpüree & Gemüse, Röstzwiebel"
+            },
+            {
+              "title": "Pilze a la Creme",
+              "price": null,
+              "tags": [],
+              "allergens": "A,L",
+              "description": "Schupfnudeln, Frischer Schnittlauch"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt & Mango",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-07T08:35:04.094Z"
+    }
+  }
+}
