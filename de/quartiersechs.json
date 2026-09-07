@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-07T08:35:06.577Z",
+  "fetchedAt": "2026-09-07T09:28:21.155Z",
   "error": null,
   "days": {
     "2026-09-07": {
@@ -79,7 +79,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Vegane Grüne Paella, Räuchertofu, Bratpaprika",
+              "title": "Vegane Grüne Paella, Räuchertofu, Antipasti Gemüse",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -161,7 +161,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "\"Salade Nicoise\" Thunfisch, Gemüse, Oliven, roter Zwiebel, Rotweinessig",
+              "title": "\"Salade Nicoise\" Thunfisch, Gemüse, Oliven, roter Zwiebel",
               "price": "11,90 €",
               "tags": [
                 "Fisch"
@@ -261,7 +261,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-07T09:28:18.312Z"
     },
     "2026-09-08": {
       "categories": [
