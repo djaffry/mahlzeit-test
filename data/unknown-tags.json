@@ -2,7 +2,7 @@
   "tags": {
     "Wild": {
       "adapter": "quartiersechs",
-      "example": "Salat, gegrillter Feta, Wassermelone"
+      "example": "Beef Minute Steak, Landhendlbrust, Türkischer Rind- Lammfleischspieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Hawaiian Island Burger\", Hühnerfilet, Ananas, Zwiebel, Salat, Tomate, Guacamole"
     },
     "Kalbfleisch": {
       "adapter": "quartiersechs",
@@ -11,6 +11,10 @@
     "Alkoholfrei": {
       "adapter": "quartiersechs",
       "example": "Faschierte Laibchen vom Rind, Naturjus, Erdäpfelpüree, Marktgemüse, Röstzwiebel"
+    },
+    "Sweet Kiss": {
+      "adapter": "mano",
+      "example": "Rhabarberknödel in Walnussbrösel"
     }
   }
 }
