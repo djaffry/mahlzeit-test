@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-07T09:28:21.929Z",
+  "fetchedAt": "2026-09-08T08:34:59.790Z",
   "error": null,
   "days": {
     "2026-09-11": {
@@ -294,6 +294,145 @@
         }
       ],
       "fetchedAt": "2026-09-07T09:28:18.312Z"
+    },
+    "2026-09-08": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "SpoonFood's Veg-Tea (vegetable broth 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Vegetables 🥕 & fries"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Moussaka",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "mixed minced meat, potatoes 🥔 & aubergine 🍆"
+            },
+            {
+              "title": "Chanterelle 🍄‍🟫 risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Louisiana Chicken & Sausage Gumbo",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Chicken, smoked sausage, celery 🌿, peppers 🫑 & rice"
+            },
+            {
+              "title": "Detox vegetable stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Turmeric 🧡, fennel 🌿, zucchini 🥒, peas 🫛, carrots 🥕 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Chickpea Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Celery 🌿, broccoli 🥦, carrots 🥕, fresh parsley 🌿 & citrus 🍋 dressing"
+            },
+            {
+              "title": "Beluga lentil and beetroot 🫜 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pear 🍐 & horseradish 🫚 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "San Sebastian cheesecake 💛",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-08T08:34:57.741Z"
     }
   }
 }
