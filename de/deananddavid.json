@@ -14,7 +14,7 @@
     "lat": 48.2223,
     "lon": 16.3944
   },
-  "fetchedAt": "2026-09-07T08:35:05.464Z",
+  "fetchedAt": "2026-09-09T08:35:01.808Z",
   "error": null,
   "days": {
     "2026-09-07": {
@@ -37,11 +37,25 @@
               "tags": [],
               "allergens": null,
               "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-09T08:35:00.206Z"
     },
     "2026-09-08": {
       "categories": [
@@ -63,11 +77,25 @@
               "tags": [],
               "allergens": null,
               "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-09T08:35:00.206Z"
     },
     "2026-09-09": {
       "categories": [
@@ -89,11 +117,25 @@
               "tags": [],
               "allergens": null,
               "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-09T08:35:00.206Z"
     },
     "2026-09-10": {
       "categories": [
@@ -115,11 +157,25 @@
               "tags": [],
               "allergens": null,
               "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-09T08:35:00.206Z"
     },
     "2026-09-11": {
       "categories": [
@@ -141,11 +197,25 @@
               "tags": [],
               "allergens": null,
               "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
             }
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-09T08:35:00.206Z"
     }
   }
 }
