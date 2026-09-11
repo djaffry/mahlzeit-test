@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-09-07T08:35:05.472Z",
+  "fetchedAt": "2026-09-11T08:35:12.446Z",
   "error": null,
   "days": {
     "2026-09-07": {
@@ -317,16 +317,16 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "BBQ   Spare Ribs mit Wedges",
+              "title": "Tafelspitz mit Creme Spinat ,Rösterdäpfel",
               "price": "11,90 €",
               "tags": [
-                "Fleisch"
+                "Rindfleisch"
               ],
-              "allergens": null,
+              "allergens": "G",
               "description": null
             },
             {
-              "title": "Gebacken Champignons mit Wedges ,Salatbecher",
+              "title": "Karfiol-Käse Laibchen auf Salat Bett ,Salatbecher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -349,7 +349,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-11T08:35:10.790Z"
     }
   }
 }

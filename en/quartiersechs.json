@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-07T09:28:21.155Z",
+  "fetchedAt": "2026-09-11T08:35:13.632Z",
   "error": null,
   "days": {
     "2026-09-07": {
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "Kebab chicken straight from the skewer, Turkish rice or French fries, pepperoni, lettuce, tomato, onion, red cabbage, ayran",
@@ -296,7 +296,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "3 types of dumplings, spinach, beetroot, Graukas dumplings, creamy pumpkin vegetables, fried onions",
@@ -540,7 +540,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "3 types of dumplings, spinach, beetroot, Graukas dumplings, creamy pumpkin vegetables, fried onions",
@@ -786,7 +786,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "3 types of dumplings, spinach, beetroot, Graukas dumplings, creamy pumpkin vegetables, fried onions",
@@ -911,7 +911,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, prosciutto, buffalo mozzarella, rocket",
+              "title": "Pizza, raw ham, buffalo mozzarella, rocket",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -999,7 +999,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-11T08:35:10.790Z"
     },
     "2026-09-11": {
       "categories": [
@@ -1034,7 +1034,7 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVORITE",
           "items": [
             {
               "title": "3 types of dumplings, spinach, beetroot, Graukas dumplings, creamy pumpkin vegetables, fried onions",

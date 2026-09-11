@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-10T08:35:37.121Z",
+  "fetchedAt": "2026-09-11T08:35:13.148Z",
   "error": null,
   "days": {
     "2026-09-11": {
@@ -47,14 +47,14 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Spinat 💚-Cremesuppe – optional",
+              "title": "Süßkartoffel 🍠-Kokos 🥥-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Schnittlauch 🌿"
+              "description": null
             }
           ]
         },
@@ -62,23 +62,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Erdäpfel 🥔-Lauch 🌿-Gratin",
+              "title": "Spinat 💚-Spätzle – in Käse 🧀-Sauce",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "geröstetem Schinken 🥓 & Champignons 🍄‍🟫"
+            },
+            {
+              "title": "Scheiterhaufen",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "karamellisierten Zwiebeln 🧅 – optional mit Sauerrahm"
-            },
-            {
-              "title": "Warmer Milchreis-Auflauf",
-              "price": "7,90 / 10,90",
-              "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "Rhabarber 🩷 & Vanillesauce 💛"
+              "description": "Schneehaube 🌨️, Marillen 🍑 & Vanillesauce 💛"
             }
           ]
         },
@@ -86,24 +83,25 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Pulled Chicken Korma",
+              "title": "Bauern-Eintopf vom Höllerschmid Almochsen & vom Ötscherblickschwein, Erdäpfeln 🥔, Karotten 🥕, Okraschoten 🫛, Kraut 🥬 & Reis",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
-                "Huhn"
+                "Laktosefrei",
+                "Schweinefleisch"
               ],
               "allergens": null,
-              "description": "Karfiol 🤍, Brokkoli 🥦 & Reis"
+              "description": null
             },
             {
-              "title": "High Protein-Bohnen 🫘-Bohnen",
+              "title": "Ratatouille",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Kidneybohnen, weißen 🤍 Bohnen, Kichererbsen, Erdäpfeln 🥔, Karotten 🥕, Stangensellerie 🌿, Räuchertofu & Reis – optional mit Koriander 🌿"
+              "description": "Zucchini 🥒, Melanzani 🍆, Oliven 🫒, Paprika 🫑, Tomaten 🍅 & Reis"
             }
           ]
         },
@@ -111,24 +109,23 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Käferbohnen 🫘-Salad Bowl",
+              "title": "Quinoa-Edamame 🫛-Karotten 🥕-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Ofenkürbis 🎃, Lauch 🌿, Kürbiskernen & Kürbiskernöl"
+              "description": "Zitrus 🍋-Dressing"
             },
             {
-              "title": "Rotkraut 🩷-Orangen 🍊-Salad Bowl",
+              "title": "Bunte Farfalle-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
-              "description": "roten Rüben 🫜, Karotten 🥕 & Granatapfelkernen 🍎"
+              "description": "Pesto 🌿, getrockneten Tomaten 🍅 & Mozzarella"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -145,7 +142,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Tiramisu 🤎 im Becher",
+              "title": "Biscoff 🍪-Topfen 💛-Creme",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -156,7 +153,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-07T08:35:04.094Z"
+      "fetchedAt": "2026-09-11T08:35:10.790Z"
     },
     "2026-09-07": {
       "categories": [
