@@ -1,0 +1,221 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salate",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-09-14T08:35:16.217Z",
+  "error": null,
+  "days": {
+    "2026-09-14": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-14T08:35:14.562Z"
+    },
+    "2026-09-15": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-14T08:35:14.562Z"
+    },
+    "2026-09-16": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-14T08:35:14.562Z"
+    },
+    "2026-09-17": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-14T08:35:14.562Z"
+    },
+    "2026-09-18": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl mit Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Spice Curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "mit Jasmin-Duftreis, frischem Gemüse, gegrilltem Kürbis, frischem Koriander, Kernmix, Sesam, Pumpkin Spice und Mango Kokos Sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "Eine würzige Chai-Basis trifft auf eine hausgemachte Matcha-Basis und wird mit aufgeschäumter Milch vereint. So entsteht ein ausgewogenes Heißgetränk mit cremiger Textur, das die herb-aromatische Note des Matchas mit der wärmenden Würze von Pumpkin Spice verbindet."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-14T08:35:14.562Z"
+    }
+  }
+}
