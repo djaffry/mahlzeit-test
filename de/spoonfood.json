@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-16T08:35:07.596Z",
+  "fetchedAt": "2026-09-16T09:22:19.212Z",
   "error": null,
   "days": {
     "2026-09-14": {
@@ -359,7 +359,7 @@
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Parmesan"
+              "description": "Parmesan - dazu ein kleiner Beilagensalat 🥗"
             }
           ]
         },
@@ -448,7 +448,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-16T08:35:05.914Z"
+      "fetchedAt": "2026-09-16T09:22:16.244Z"
     }
   }
 }
