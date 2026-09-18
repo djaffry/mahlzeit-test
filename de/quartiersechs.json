@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-15T09:29:43.529Z",
+  "fetchedAt": "2026-09-18T09:04:03.900Z",
   "error": null,
   "days": {
     "2026-09-14": {
@@ -1075,7 +1075,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Eisberg, Rucola, Römersalat, Ziegenkäse, Granatapfel, Walnussöl, Nuss Dressing",
+              "title": "Eisberg, Rucola, Römersalat, Ziegenkäse",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1128,7 +1128,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-14T08:35:14.562Z"
+      "fetchedAt": "2026-09-18T09:04:01.528Z"
     }
   }
 }
