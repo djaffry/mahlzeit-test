@@ -6,7 +6,7 @@
   "icon": "leaf",
   "cuisine": [
     "Bowls",
-    "Stews"
+    "Eintöpfe"
   ],
   "edenred": true,
   "outdoor": true,
@@ -14,40 +14,40 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-21T08:35:15.005Z",
+  "fetchedAt": "2026-09-22T09:22:09.988Z",
   "error": null,
   "days": {
     "2026-09-21": {
       "categories": [
         {
-          "name": "One pot meal",
+          "name": "Eintopf-Menü",
           "items": [
             {
-              "title": "One pot meal",
+              "title": "Eintopf-Menü",
               "price": "EUR 11,90",
               "tags": [],
               "allergens": null,
-              "description": "Small soup/colorful mixed salad & large stew"
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
             }
           ]
         },
         {
-          "name": "Special menu",
+          "name": "Special-Menü",
           "items": [
             {
-              "title": "Special menu",
+              "title": "Special-Menü",
               "price": "EUR 12,90",
               "tags": [],
               "allergens": null,
-              "description": "Small soup/colorful mixed salad & large special"
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
             }
           ]
         },
         {
-          "name": "Soups",
+          "name": "Suppen",
           "items": [
             {
-              "title": "Garlic 🧄 cream soup",
+              "title": "Knoblauch 🧄-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -62,65 +62,65 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Tortelloni (with beef filling) all'Arrabbiata 🍅",
+              "title": "Tortelloni (mit Rindfleischfülle) all'Arrabbiata 🍅",
               "price": "7,90 / 10,90",
               "tags": [
                 "Rindfleisch"
               ],
               "allergens": null,
-              "description": "Bacon 🥓 & rocket 🌿 - optionally with Parmesan"
+              "description": "Speck 🥓 & Rucola 🌿 - optional mit Parmesan"
             },
             {
-              "title": "Börek casserole",
+              "title": "Börek-Auflauf",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Potatoes 🥔, spinach 💚 & feta - optional sour cream dip"
+              "description": "Erdäpfeln 🥔, Spinat 💚 & Feta - optional Sauerrahm-Dip dazu"
             }
           ]
         },
         {
-          "name": "Stews",
+          "name": "Eintöpfe",
           "items": [
             {
-              "title": "Vegetable stew *Caponata style*",
+              "title": "Gemüse-Eintopf *Caponata-Style*",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Tomatoes 🍅, aubergine 🍆, spicy salami, capers, olives 🫒 & rice"
+              "description": "Tomaten 🍅, Melanzani 🍆 ,würziger Salami, Kapern, Oliven 🫒 & Reis"
             },
             {
-              "title": "Pumpkin 🎃 goulash",
+              "title": "Kürbis 🎃-Gulasch",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Rice"
+              "description": "Reis"
             }
           ]
         },
         {
-          "name": "Salads",
+          "name": "Salate",
           "items": [
             {
-              "title": "Chickpea Salad Bowl",
+              "title": "Kichererbsen-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Paprika 🫑, avocado 🥑, celery sticks 🌿, fresh lemon 🍋 & sesame"
+              "description": "Paprika 🫑, Avocado 🥑, Selleriestangen 🌿, frischer Zitrone 🍋 & Sesam"
             },
             {
-              "title": "Beluga lentil salad bowl with roasted cauliflower 🤍, fresh parsley 🌿 & lemon 🍋 cashew dressing",
+              "title": "Belugalinsen-Salad Bowl geröstetem Karfiol 🤍, frischer Petersilie 🌿 & Zitronen 🍋-Cashew-Dressing",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan",
@@ -130,7 +130,7 @@
               "description": null
             },
             {
-              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegetarisch"
@@ -144,7 +144,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Tangerine 🍊 tiramisu",
+              "title": "Mandarinen 🍊-Tiramisu",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -156,6 +156,144 @@
         }
       ],
       "fetchedAt": "2026-09-21T08:35:12.270Z"
+    },
+    "2026-09-22": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Karotten 🥕-Orangen 🍊-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni Bolognese 🍝 - optional",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Parmesan"
+            },
+            {
+              "title": "Spinat 💚-Gnocchi",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "frischer Zitrone 🍋 & Parmesan - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Asiatisches Rindergeschnetzeltes",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Wokgemüse 🥦🥕🌿 & Reis - optional mit Koriander 🌿"
+            },
+            {
+              "title": "Süßkartoffel 🍠-Erdnuss 🥜-Eintopf - in Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kochbanane 🍌, Spinat 💚, Romanesco 🥦 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Kichererbsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Avocado 🥑, Selleriestangen 🌿, frischer Zitrone 🍋 & Sesam"
+            },
+            {
+              "title": "Belugalinsen-Salad Bowl geröstetem Karfiol 🤍, frischer Petersilie 🌿 & Zitronen 🍋-Cashew-Dressing",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mandarinen 🍊-Tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-22T09:22:06.497Z"
     }
   }
 }
