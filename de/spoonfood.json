@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-22T09:22:09.988Z",
+  "fetchedAt": "2026-09-23T08:35:07.797Z",
   "error": null,
   "days": {
     "2026-09-21": {
@@ -294,6 +294,146 @@
         }
       ],
       "fetchedAt": "2026-09-22T09:22:06.497Z"
+    },
+    "2026-09-23": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Linsen-Süßkartoffel 🍠-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Huhn Cacciatore (mit Rotwein verfeinert)",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Paprika 🫑, Zucchini 🥒, Babykartoffeln 🥔, Karotten 🥕 & Reis"
+            },
+            {
+              "title": "Erdäpfel 🥔-Kohlsprossen 🥬-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Käse 🧀 gratiniert - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Irish Beef Stew vom Höllerschmid-Rind",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Guiness 🍻, Sellerie 🤍, Karotten 🥕 & Hörnchen - optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Miso-Gemüse-Pot",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "BBQ-Tofu, Chinakohl 🥬, Zucchini 🥒, Melanzani 🍆, Babykarotten 🥕, Brokkoli 🥦 & Reis - optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Couscous-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Kichererbsen, Grillkäse 🧀, Cranberries 🍓, Tomaten 🍅-Pesto & frischer Limette 🍋‍🟩"
+            },
+            {
+              "title": "Quinoa-Radicchio 🩷-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurke 🥒, Stangensellerie 🌿 & Mandelmus-Balsamico-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mandarinen 🍊-Tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-23T08:35:04.807Z"
     }
   }
 }
