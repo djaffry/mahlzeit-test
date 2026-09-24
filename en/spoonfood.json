@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-23T09:22:53.665Z",
+  "fetchedAt": "2026-09-24T08:34:50.787Z",
   "error": null,
   "days": {
     "2026-09-21": {
@@ -434,6 +434,146 @@
         }
       ],
       "fetchedAt": "2026-09-23T09:22:51.379Z"
+    },
+    "2026-09-24": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Tomato 🍅 coconut 🥥 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pumpkin 🎃, sage 🌿, roasted turkey ham 🥓 & parmesan"
+            },
+            {
+              "title": "Vegetable strudel carrots 🥕, yellow 💛 beets, sugar snap peas 🫛, broccoli 🥦, cauliflower 🤍, herb 🌿 cream & small side salad 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Autumnal 🍁 potatoes 🥔 kohlrabi 🤍 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "spicy bratwurst, oregano, thyme 🌿 & rice"
+            },
+            {
+              "title": "Chickpea curry in tomato 🍅 coconut sauce 🥥",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Spinach 💚 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Couscous Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Cucumbers 🥒, chickpeas, grilled cheese 🧀, cranberries 🍓, tomatoes 🍅 pesto & fresh lime 🍋‍🟩"
+            },
+            {
+              "title": "Quinoa Radicchio 🩷 Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cucumber 🥒, celery 🌿 & almond butter balsamic dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Vegan chocolate mousse 🍫",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cherry 🍒"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-24T08:34:49.301Z"
     }
   }
 }

@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-23T09:22:53.665Z",
+  "fetchedAt": "2026-09-24T08:34:50.787Z",
   "error": null,
   "days": {
     "2026-09-21": {
@@ -434,6 +434,146 @@
         }
       ],
       "fetchedAt": "2026-09-23T09:22:51.379Z"
+    },
+    "2026-09-24": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Tomaten 🍅-Kokos 🥥-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kürbis 🎃, Salbei 🌿, geröstetem Putenschinken 🥓 & Parmesan"
+            },
+            {
+              "title": "Gemüsestrudel Karotten 🥕, gelbe 💛 Rüben, Zuckerschoten 🫛, Brokkoli 🥦, Karfiol 🤍, Kräuter 🌿-Rahm & kleinem Beilagensalat 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Herbstlicher 🍁 Erdäpfel 🥔-Kohlrabi 🤍-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "würziger Bratwurst, Oregano, Thymian 🌿 & Reis"
+            },
+            {
+              "title": "Kichererbsen-Curry in Tomaten 🍅-Kokossauce 🥥",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Spinat 💚 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Couscous-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, Kichererbsen, Grillkäse 🧀, Cranberries 🍓, Tomaten 🍅-Pesto & frischer Limette 🍋‍🟩"
+            },
+            {
+              "title": "Quinoa-Radicchio 🩷-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurke 🥒, Stangensellerie 🌿 & Mandelmus-Balsamico-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Veganes Schokomousse 🍫",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kirsche 🍒"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-24T08:34:49.301Z"
     }
   }
 }
