@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-09-21T08:35:13.090Z",
+  "fetchedAt": "2026-09-25T09:40:43.201Z",
   "error": null,
   "days": {
     "2026-09-21": {
@@ -318,7 +318,7 @@
           "items": [
             {
               "title": "Venison ragout with roasted potatoes",
-              "price": "11,90 €",
+              "price": "12,90 €",
               "tags": [
                 "Fleisch"
               ],
@@ -349,7 +349,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-21T08:35:12.270Z"
+      "fetchedAt": "2026-09-25T09:40:42.764Z"
     }
   }
 }
