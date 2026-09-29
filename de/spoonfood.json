@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-28T08:35:13.748Z",
+  "fetchedAt": "2026-09-29T08:35:05.520Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -155,6 +155,153 @@
         }
       ],
       "fetchedAt": "2026-09-28T08:35:11.898Z"
+    },
+    "2026-09-29": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kürbis 🎃-Haselnuss-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            },
+            {
+              "title": "SpoonFood's Chick-Tea (klare Hühner-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Frittaten & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Schupfnudeln",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Champignons 🍄‍🟫 & Kalbsgeschnetzeltem – optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Krautfleckerl",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕 – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Beef Tandoori",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Paprika 🫑, Chinakohl 🥬, Brokkoli 🥦 & Reis – optional mit Koriander 🌿"
+            },
+            {
+              "title": "Chili sin Carne",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kidneybohnen 🫘, Paprika 🫑, Mais 🌽, Soja & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Erdäpfel 🥔-Kichererbsen-Curry 💛-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, getrockneten Tomaten 🍅 & frischer Petersilie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apfelkuchen 🍎 im Glas",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Schokomousse 🍫",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Pistazien 💚"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-29T08:35:03.434Z"
     }
   }
 }
