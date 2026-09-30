@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-29T08:35:05.520Z",
+  "fetchedAt": "2026-09-30T08:35:18.221Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -302,6 +302,152 @@
         }
       ],
       "fetchedAt": "2026-09-29T08:35:03.434Z"
+    },
+    "2026-09-30": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Sellerie 🤍-Cremesuppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            },
+            {
+              "title": "Asiatische Misosuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Lauch 🌿, Wokgemüse 🥕, Shiitake-Pilze 🍄‍🟫 & Sojasprossen 🌱"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Perlgraupen-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Speck 🥓, Pastinaken 🤍 & gelber 💛 Zucchini 🥒"
+            },
+            {
+              "title": "Gemüselasagne 🌿🥕🥒",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Tikka Masala von der Waldviertler Freilandpute",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥, Paprika 🫑, Brokkoli 🥦 & Reis"
+            },
+            {
+              "title": "Marokkanischer Kichererbsen-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Paprika 🫑, Melanzani 🍆, Zuckerschoten 🫛 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Erdäpfel 🥔-Kichererbsen-Curry 💛-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Gurken 🥒, getrockneten Tomaten 🍅 & frischer Petersilie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Apfelkuchen 🍎 im Glas",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Schokomousse 🍫",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Pistazien 💚"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-09-30T08:35:15.792Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-28T08:35:14.391Z",
+  "fetchedAt": "2026-09-30T08:35:18.309Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -200,7 +200,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F",
               "description": null
             }
           ]
@@ -246,7 +246,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-09-30T08:35:15.792Z"
     },
     "2026-09-29": {
       "categories": [
@@ -433,7 +433,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F",
               "description": null
             }
           ]
@@ -481,7 +481,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-09-30T08:35:15.792Z"
     },
     "2026-09-30": {
       "categories": [
@@ -669,7 +669,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F",
               "description": null
             }
           ]
@@ -715,7 +715,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-09-30T08:35:15.792Z"
     },
     "2026-10-01": {
       "categories": [
@@ -902,7 +902,7 @@
               "tags": [
                 "Huhn"
               ],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F",
               "description": null
             }
           ]
@@ -923,7 +923,7 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Pecan - Cranberry Brownie Apple Crumble Cake",
+              "title": "Pecan-Date Brownie Apple Crumble Cake",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,H",
@@ -946,7 +946,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-09-30T08:35:15.792Z"
     },
     "2026-10-02": {
       "categories": [
