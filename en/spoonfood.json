@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-09-30T08:35:18.221Z",
+  "fetchedAt": "2026-09-30T10:34:29.731Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -361,7 +361,7 @@
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
-              "description": "Bacon 🥓, parsnips 🤍 & yellow 💛 zucchini 🥒"
+              "description": "Bacon 🥓, parsnips 🤍 & yellow 💛 zucchini 🥒 - optionally with herb 🌿 dip"
             },
             {
               "title": "Vegetable lasagne 🌿🥕🥒",
@@ -447,7 +447,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T08:35:15.792Z"
+      "fetchedAt": "2026-09-30T10:34:27.361Z"
     }
   }
 }

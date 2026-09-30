@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-30T08:35:18.309Z",
+  "fetchedAt": "2026-09-30T10:34:29.903Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -626,16 +626,6 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Putenschinken, Gorgonzola, getrocknete Tomaten, Pesto",
-              "price": "9,90 €",
-              "tags": [
-                "Schweinefleisch",
-                "Pute"
-              ],
-              "allergens": "A,C,G,O",
-              "description": null
-            },
-            {
               "title": "Pizza Margherita",
               "price": "9,90 €",
               "tags": [
@@ -715,7 +705,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T08:35:15.792Z"
+      "fetchedAt": "2026-09-30T10:34:27.361Z"
     },
     "2026-10-01": {
       "categories": [
@@ -860,15 +850,6 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Cardinale, Beinschinken, Mais, Pfefferoni",
-              "price": "9,90 €",
-              "tags": [
-                "Schweinefleisch"
-              ],
-              "allergens": "A,G",
-              "description": null
-            },
-            {
               "title": "Pizza Margherita",
               "price": "9,90 €",
               "tags": [
@@ -946,7 +927,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T08:35:15.792Z"
+      "fetchedAt": "2026-09-30T10:34:27.361Z"
     },
     "2026-10-02": {
       "categories": [
