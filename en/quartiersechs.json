@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-30T10:34:29.903Z",
+  "fetchedAt": "2026-10-01T08:35:11.411Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -673,7 +673,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "G,O",
+              "allergens": "G",
               "description": null
             }
           ]
@@ -705,7 +705,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T10:34:27.361Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     },
     "2026-10-01": {
       "categories": [
@@ -784,7 +784,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Rotondo with broccoli and pine nut filling, truffle linguini, gnocchi, olive oil with herbs, white wine sauce, pesto rosso, zucchini, baby chard, cherry tomatoes, Grana",
+              "title": "Rotondo with broccoli and pine nut filling, tagliatelle, gnocchi, olive oil with herbs, white wine sauce, pesto rosso, zucchini, baby chard, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -895,7 +895,7 @@
               "title": "Aperol mousse, orange fillet, wild blueberry mousse, blossom honey",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "G",
               "description": null
             }
           ]
@@ -927,7 +927,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T10:34:27.361Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     },
     "2026-10-02": {
       "categories": [
@@ -1006,7 +1006,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Rotondo with broccoli and pine nut filling, truffle linguini, gnocchi, olive oil with herbs, white wine sauce, pesto rosso, zucchini, baby chard, cherry tomatoes, Grana",
+              "title": "Rotondo with broccoli and pine nut filling, tagliatelle, gnocchi, olive oil with herbs, white wine sauce, pesto rosso, zucchini, baby chard, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1105,7 +1105,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     }
   }
 }

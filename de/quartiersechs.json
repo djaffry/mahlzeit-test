@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-09-30T10:34:29.903Z",
+  "fetchedAt": "2026-10-01T08:35:11.411Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -673,7 +673,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "G,O",
+              "allergens": "G",
               "description": null
             }
           ]
@@ -705,7 +705,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T10:34:27.361Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     },
     "2026-10-01": {
       "categories": [
@@ -784,7 +784,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Tagliatelle, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -895,7 +895,7 @@
               "title": "Aperolmousse, Orangenfilet Waldheidelbeer Mousse, Blütenhonig",
               "price": null,
               "tags": [],
-              "allergens": "G,O",
+              "allergens": "G",
               "description": null
             }
           ]
@@ -927,7 +927,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T10:34:27.361Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     },
     "2026-10-02": {
       "categories": [
@@ -1006,7 +1006,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Rotondo mit Broccoli-Pinienkernfülle, Trüffel Linguini, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
+              "title": "Rotondo mit Broccoli-Pinienkernfülle, Tagliatelle, Gnocchi, Olivenöl mit Kräutern, Weissweinsauce, Pesto Rosso, Zucchini, Babymangold, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1105,7 +1105,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-28T08:35:11.898Z"
+      "fetchedAt": "2026-10-01T08:35:09.140Z"
     }
   }
 }
