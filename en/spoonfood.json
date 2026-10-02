@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-01T08:35:11.251Z",
+  "fetchedAt": "2026-10-02T08:35:16.318Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -593,6 +593,132 @@
         }
       ],
       "fetchedAt": "2026-10-01T08:35:09.140Z"
+    },
+    "2026-10-02": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Tomato 🍅 chickpea soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Harissa"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Shepherd’s Pie 🥧 (with mixed minced meat)",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warm brioche casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Almond flakes & apricots 🍑 roaster"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Turnip 🤍 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, chorizo, baby carrots 🥕 & rice - optionally with chives 🌿"
+            },
+            {
+              "title": "Jaipur vegetable 🥒🥕🥦 curry - in cashew coconut sauce 🥥",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chickpeas, tofu, zucchini 🥒, fennel 🌿, cauliflower 🤍 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Couscous Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Oven pumpkin 🎃, red cabbage 🩷, cucumbers 🥒, fresh parsley 🌿 & roasted pumpkin seeds"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Curd chocolate 🍫 cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Crunch 🍪 & coconut flakes 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-02T08:35:13.376Z"
     }
   }
 }

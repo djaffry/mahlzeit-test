@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-01T08:35:11.251Z",
+  "fetchedAt": "2026-10-02T08:35:16.318Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -593,6 +593,132 @@
         }
       ],
       "fetchedAt": "2026-10-01T08:35:09.140Z"
+    },
+    "2026-10-02": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Tomaten 🍅-Kichererbsen-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Harissa"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Sheperd’s Pie 🥧 (mit gemischtem Faschierten)",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Warmer Brioche-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Mandelblättchen & Marillen 🍑-Röster"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Steckrüben 🤍-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, Chorizo, Babykarotten 🥕 & Reis – optional mit Schnittlauch 🌿"
+            },
+            {
+              "title": "Jaipur-Gemüse 🥒🥕🥦-Curry – in Cashew-Kokossauce 🥥",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kichererbsen, Tofu, Zucchini 🥒, Fenchel 🌿, Karfiol 🤍 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Couscous-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Ofen-Kürbis 🎃, Rotkraut 🩷, Gurken 🥒, frischer Petersilie 🌿 & gerösteten Kürbiskernen"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Topfen-Schoko 🍫-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Crunch 🍪 & Kokosflocken 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-02T08:35:13.376Z"
     }
   }
 }

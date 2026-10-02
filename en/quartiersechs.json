@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-01T08:35:11.411Z",
+  "fetchedAt": "2026-10-02T08:35:18.294Z",
   "error": null,
   "days": {
     "2026-09-28": {
@@ -1042,10 +1042,10 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Red lentils, broccoli, cucumber, tangerines, iceberg lettuce, goji berries, blueberries - balsamic dressing, roasted cauliflower",
+              "title": "Red lentils, broccoli, cucumber, fruit, iceberg lettuce, goji berries, blueberries - balsamic dressing, roasted cauliflower",
               "price": "11,90 €",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": "O",
               "description": null
@@ -1105,7 +1105,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-01T08:35:09.140Z"
+      "fetchedAt": "2026-10-02T08:35:13.376Z"
     }
   }
 }
