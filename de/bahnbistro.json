@@ -1,0 +1,315 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-10-05T08:35:09.490Z",
+  "error": null,
+  "days": {
+    "2026-10-05": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Gebackenes Gemüse",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,M",
+              "description": "Petersilkartoffeln, Sauce Tartare"
+            },
+            {
+              "title": "Puten-Rahmschnitzerl",
+              "price": null,
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": "Nockerl & buntes Gemüse, Frischer Schnittlauch"
+            },
+            {
+              "title": "Cheeseburger No.6",
+              "price": null,
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M,N",
+              "description": "Beef Patty & Cheddar, Potatoe Dippers"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kirschen-Blechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-06": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kärntner Steinpilznudeln",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Getrocknete Tomaten, Flora & Schnittlauch"
+            },
+            {
+              "title": "Gegrilltes Lachssteak",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": "Rösti & Tzatziki, Antipasti"
+            },
+            {
+              "title": "Chicken Wings",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G,M",
+              "description": "SkinOn Fries & Coleslaw, Blue Cheese-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Vanillekrapfen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-07": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Spinatpalatschinken",
+              "price": null,
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Greek Yoghurt & Feta, Butterkartoffeln"
+            },
+            {
+              "title": "Kürbiskernschnitzel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Reis & Preiselbeeren, Zitrone"
+            },
+            {
+              "title": "Hühnerfilet gegrillt",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G",
+              "description": "Mexicogemüse & Wedges, Kräuterbutter"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillenpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-08": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Shakshuka mit Kichererbsen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,N",
+              "description": "Hummus & Petersilie, Fladenbrot"
+            },
+            {
+              "title": "Polpetti",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,F,G",
+              "description": "Spaghetti & Tomatenragout, Parmesan-Chips"
+            },
+            {
+              "title": "Berner Würstel vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G,M",
+              "description": "Pommes frites, Senf & Ketchup"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeer-Sahnekuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-09": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Topfenknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Himbeerragout, Staubzucker"
+            },
+            {
+              "title": "Seelachs gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,D,M",
+              "description": "Erdäpfelsalat, Zitrone"
+            },
+            {
+              "title": "Kürbis-Risotto",
+              "price": null,
+              "tags": [],
+              "allergens": "H,L",
+              "description": "Kohlsprossen & Pinienkerne, Kürbiskernöl"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Joghurt & Früchte",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    }
+  }
+}

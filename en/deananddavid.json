@@ -1,0 +1,221 @@
+{
+  "id": "deananddavid",
+  "title": "Dean & David",
+  "url": "https://deananddavid.com/austria-campus-wien/",
+  "type": "specials",
+  "icon": "salad",
+  "cuisine": [
+    "Salads",
+    "Bowls"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2223,
+    "lon": 16.3944
+  },
+  "fetchedAt": "2026-10-05T08:35:10.229Z",
+  "error": null,
+  "days": {
+    "2026-10-05": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl with Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin spice curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "A spicy chai base meets a homemade matcha base and is combined with steamed milk. The result is a balanced hot drink with a creamy texture that combines the bitter, aromatic note of matcha with the warming spice of pumpkin spice."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-06": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl with Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin spice curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "A spicy chai base meets a homemade matcha base and is combined with steamed milk. The result is a balanced hot drink with a creamy texture that combines the bitter, aromatic note of matcha with the warming spice of pumpkin spice."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-07": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl with Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin spice curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "A spicy chai base meets a homemade matcha base and is combined with steamed milk. The result is a balanced hot drink with a creamy texture that combines the bitter, aromatic note of matcha with the warming spice of pumpkin spice."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-08": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl with Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin spice curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "A spicy chai base meets a homemade matcha base and is combined with steamed milk. The result is a balanced hot drink with a creamy texture that combines the bitter, aromatic note of matcha with the warming spice of pumpkin spice."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-09": {
+      "categories": [
+        {
+          "name": "Seasonals",
+          "items": [
+            {
+              "title": "Pumpkin Spice Bowl with Chicken",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin spice curry",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "with jasmine fragrant rice, fresh vegetables, grilled pumpkin, fresh coriander, seed mix, sesame, pumpkin spice and mango coconut sauce."
+            },
+            {
+              "title": "Pumpkin Spice Chai Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin Chai Matcha Latte",
+              "price": null,
+              "tags": [],
+              "allergens": null,
+              "description": "A spicy chai base meets a homemade matcha base and is combined with steamed milk. The result is a balanced hot drink with a creamy texture that combines the bitter, aromatic note of matcha with the warming spice of pumpkin spice."
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-05T08:35:08.581Z"
+    }
+  }
+}
