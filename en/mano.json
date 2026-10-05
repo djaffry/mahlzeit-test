@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-05T08:35:10.472Z",
+  "fetchedAt": "2026-10-05T11:38:47.110Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -46,7 +46,7 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Tandoori corn chicken fillet on spicy rice, broccoli",
+              "title": "Tandoori corn chicken fillet on spicy rice, vegetables",
               "price": "11,90 €",
               "tags": [
                 "Fleisch"
@@ -89,7 +89,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-05T08:35:08.581Z"
+      "fetchedAt": "2026-10-05T11:38:46.262Z"
     },
     "2026-10-06": {
       "categories": [
