@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-05T08:35:12.110Z",
+  "fetchedAt": "2026-10-06T11:22:00.634Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -155,6 +155,144 @@
         }
       ],
       "fetchedAt": "2026-10-05T08:35:08.581Z"
+    },
+    "2026-10-06": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "croutons"
+            },
+            {
+              "title": "Jerusalem artichoke 🫚 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Crème Fraîche - optionally with chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortiglioni Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Chicken - optionally with Parmesan - with a small side salad 🥗"
+            },
+            {
+              "title": "millet pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pumpkin 🎃, spinach 💚 & feta - optionally with sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Bacon 🥓 lentils",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Root vegetables, bread dumpling cubes – optionally with fresh parsley"
+            },
+            {
+              "title": "Vegan sweet potato 🍠-peanut 🥜-pointed pepper 🫑-curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Waldorf Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Apples 🍎, celery 🤍, celery 🌿, grapes 🍇 & nuts 🥜"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Espresso ☕️-Amaretto Ricotta Cream",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-06T11:21:57.564Z"
     }
   }
 }
