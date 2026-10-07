@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-06T11:22:00.634Z",
+  "fetchedAt": "2026-10-07T08:35:08.778Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -293,6 +293,142 @@
         }
       ],
       "fetchedAt": "2026-10-06T11:21:57.564Z"
+    },
+    "2026-10-07": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood's Beef-Tea (klare Rinder-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Lebernockerln & Schnittlauch 🌿"
+            },
+            {
+              "title": "Brokkoli 🥦-Cremesuppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortelloni alla Panna",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "geröstetem Beinschinken 🥓 & Parmesan"
+            },
+            {
+              "title": "Herbstliches 🍁 Ofengemüse",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kürbis 🎃, Kohlsprossen 🥬, Zucchini 🥒, Tomaten 🍅, Paprika 🫑, Chioggia-Rüben 🫜, Champignons 🍄‍🟫, Rosmarin 🌿 & kleinem Beilagensalat 🥗 - optional mit Kräuter 🌿-Dip"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Hühnerbällchen-Gemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Hühnerfaschiertem vom Steirerhuhn, Lauch 🌿, Karotten 🥕, Erdäpfeln 🥔, Thymian 🌿 & Reis"
+            },
+            {
+              "title": "Butternuss-Kürbis 🎃-Gulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, Paprika 🫑, Tomaten 🍅 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Belugalinsen-Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "getrockneten Tomaten 🍅, Gurken 🥒, Oliven 🫒, Petersilie 🌿, Kreuzkümmel 🤎 & Granatapfelkernen 🍎"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Espresso ☕️-Amaretto-Ricotta-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-07T08:35:06.839Z"
     }
   }
 }

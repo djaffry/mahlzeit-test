@@ -5,23 +5,23 @@
   "type": "full",
   "icon": "utensils",
   "cuisine": [
-    "Canteen"
+    "Kantine"
   ],
   "edenred": true,
   "coordinates": {
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-05T08:35:11.398Z",
+  "fetchedAt": "2026-10-07T08:35:09.031Z",
   "error": null,
   "days": {
     "2026-10-05": {
       "categories": [
         {
-          "name": "Soup of the day clear",
+          "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Beef soup, chicken soup, vegetable soup optionally with semolina dumplings, fries, liver dumplings",
+              "title": "Rindsuppe, Hühnersuppe, Gemüsesuppe wahlweise mit Grießnockerl, Frittaten, Leberknödel",
               "price": null,
               "tags": [
                 "Rindfleisch",
@@ -34,10 +34,10 @@
           ]
         },
         {
-          "name": "Vegan soup of the day",
+          "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Hokkaido dill cream soup",
+              "title": "Hokkaido-Dillcremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
@@ -48,10 +48,10 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Kebab chicken straight from the skewer, Turkish rice or French fries, pepperoni, lettuce, tomato, onion, red cabbage, ayran",
+              "title": "Kebab Hühnerfleisch direkt vom Spieß, türkischer Reis oder Pommes Frites, Pfefferoni, Salat, Tomate, Zwiebel, Rotkraut, Ayran",
               "price": "12,30 €",
               "tags": [
                 "Huhn"
@@ -62,10 +62,10 @@
           ]
         },
         {
-          "name": "Main course traditional",
+          "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Bohemian roast beef, potato dumplings",
+              "title": "Böhmischer Rindsbraten, Erdäpfelknödel",
               "price": "12,30 €",
               "tags": [
                 "Rindfleisch"
@@ -76,10 +76,10 @@
           ]
         },
         {
-          "name": "Main course vegetarian/vegan",
+          "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Hokkaido pumpkin curry, coconut rice",
+              "title": "Hokkaidokürbis - Curry, Kokos Reis",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -90,10 +90,10 @@
           ]
         },
         {
-          "name": "Pasta station",
+          "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli prosciutto & sage, pumpkin gnocchi, lemon linguini, olive oil with herbs, mushroom sauce, hazelnut - rocket pesto, grilled peppers, olives, cherry tomatoes, Grana",
+              "title": "Ravioli Prosciutto & Salbei, Kürbis Gnocchi, Zitronen Linguini, Olivenöl mit Kräutern, Champignonsauce, Haselnuss - Rucola Pesto, gegrillter Paprika, Oliven, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -107,7 +107,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Country Chicken Breast, Spare Ribs, French Fries, Cole Slaw, BBQ Sauce, Cocktail Sauce, Daily Side Dishes, \"Crunchy Chick'n Burger\" Brioche Bun, Rocket, Tomato, Cheddar, BBQ Sauce",
+              "title": "Beef Minute Steak, Landhendlbrust, Spare Ribs, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Crunchy Chick'n Burger\" Brioche Bun, Rucola, Tomate, Cheddar, BBQ Sauce",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -123,7 +123,7 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "\"Phat Kraphao Gai\" Spicy chicken, green beans, Thai basil with wok vegetables, jasmine rice",
+              "title": "\"Phat Kraphao Gai\" Scharfes Huhn, grüne Bohnen, Thai Basilikum mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Huhn"
@@ -132,7 +132,7 @@
               "description": null
             },
             {
-              "title": "\"Chen Pla\" plaice fillet, tempura batter, shii-take mushroom sauce with wok vegetables, jasmine rice",
+              "title": "\"Chen Pla\" Schollenfilet, Tempurateig, Shii-Take Pilzsauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Fisch"
@@ -141,7 +141,7 @@
               "description": null
             },
             {
-              "title": "Crispy fried tofu with wok vegetables, jasmine rice",
+              "title": "Knusprig frittierter Tofu mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Vegan"
@@ -150,7 +150,7 @@
               "description": null
             },
             {
-              "title": "Sushi & maki",
+              "title": "Sushi & Maki",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -159,10 +159,10 @@
           ]
         },
         {
-          "name": "salad corner",
+          "name": "Salatecke",
           "items": [
             {
-              "title": "Colorful leaf salad, grilled pumpkin, falafel, sesame yogurt dressing",
+              "title": "Bunter Blattsalat, gegrillter Kürbis, Falafel, Sesam- Joghurtdressing",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -176,7 +176,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza carbonara, bacon, egg",
+              "title": "Pizza Carbonara, Speck, Ei",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -196,10 +196,10 @@
           ]
         },
         {
-          "name": "Bowl station",
+          "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, couscous, vegan sauces",
+              "title": "Create your own Bowl Frischer Nishikireis, Couscous, vegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -210,10 +210,10 @@
           ]
         },
         {
-          "name": "Bowl topping",
+          "name": "Bowl Topping",
           "items": [
             {
-              "title": "Yakitori chicken skewers, vegetarian mini spring rolls",
+              "title": "Yakitori Hühnerspieß, Vegetarische Minifrühlingsrollen",
               "price": null,
               "tags": [
                 "Huhn"
@@ -224,10 +224,10 @@
           ]
         },
         {
-          "name": "Cream or mousse",
+          "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Plum poppy seed mousse coffee creme brulée",
+              "title": "Zwetschken - Mohnmousse Kaffee Creme Brulée",
               "price": null,
               "tags": [],
               "allergens": "C,F,G,H",
@@ -236,10 +236,10 @@
           ]
         },
         {
-          "name": "Cakes and tarts",
+          "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Covered pear cake pear strudel",
+              "title": "Gedeckter Birnenkuchen Birnenstrudel",
               "price": null,
               "tags": [],
               "allergens": "A,F,G",
@@ -248,10 +248,10 @@
           ]
         },
         {
-          "name": "Fruit small",
+          "name": "Obst klein",
           "items": [
             {
-              "title": "Seasonal fruit",
+              "title": "Obst der Saison",
               "price": null,
               "tags": [
                 "Vegan"
@@ -267,10 +267,10 @@
     "2026-10-06": {
       "categories": [
         {
-          "name": "Soup of the day clear",
+          "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Beef soup, chicken soup, vegetable soup optionally with semolina dumplings, fries, liver dumplings",
+              "title": "Rindsuppe, Hühnersuppe, Gemüsesuppe wahlweise mit Grießnockerl, Frittaten, Leberknödel",
               "price": null,
               "tags": [
                 "Rindfleisch",
@@ -283,10 +283,10 @@
           ]
         },
         {
-          "name": "Vegan soup of the day",
+          "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Broccoli cream soup",
+              "title": "Broccolicremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
@@ -297,10 +297,10 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Grilled salmon fillet, pumpkin ginger puree, dill gnocchi, leaf spinach",
+              "title": "Gegrilltes Lachsfilet, Kürbis - Ingwer Pürée, Dill Gnocchi, Blattspinat",
               "price": "12,30 €",
               "tags": [
                 "Fisch"
@@ -311,10 +311,10 @@
           ]
         },
         {
-          "name": "Main course traditional",
+          "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Baked chicken schnitzel, pumpkin seed breadcrumbs, parsley potatoes",
+              "title": "Gebackenes Hühnerschnitzel, Kürbiskernpanier, Petersilien Erdäpfeln",
               "price": "12,30 €",
               "tags": [
                 "Huhn"
@@ -325,10 +325,10 @@
           ]
         },
         {
-          "name": "Main course vegetarian/vegan",
+          "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Tempeh \"Paprika-Hendl-Style\", water sparrows",
+              "title": "Tempeh \"Paprika-Hendl-Style\", Wasserspatzen",
               "price": "12,30 €",
               "tags": [
                 "Huhn"
@@ -339,10 +339,10 @@
           ]
         },
         {
-          "name": "Pasta station",
+          "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli prosciutto & sage, pumpkin gnocchi, lemon linguini, olive oil with herbs, mushroom sauce, hazelnut - rocket pesto, grilled peppers, olives, cherry tomatoes, Grana",
+              "title": "Ravioli Prosciutto & Salbei, Kürbis Gnocchi, Zitronen Linguini, Olivenöl mit Kräutern, Champignonsauce, Haselnuss - Rucola Pesto, gegrillter Paprika, Oliven, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -356,7 +356,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Country Chicken Breast, Spare Ribs, French Fries, Cole Slaw, BBQ Sauce, Cocktail Sauce, Daily Side Dishes, \"Crunchy Chick'n Burger\" Brioche Bun, Rocket, Tomato, Cheddar, BBQ Sauce",
+              "title": "Beef Minute Steak, Landhendlbrust, Spare Ribs, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Crunchy Chick'n Burger\" Brioche Bun, Rucola, Tomate, Cheddar, BBQ Sauce",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -372,7 +372,7 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "\"Phat Kraphao Gai\" Spicy chicken, green beans, Thai basil with wok vegetables, jasmine rice",
+              "title": "\"Phat Kraphao Gai\" Scharfes Huhn, grüne Bohnen, Thai Basilikum mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Huhn"
@@ -381,7 +381,7 @@
               "description": null
             },
             {
-              "title": "\"Chen Pla\" plaice fillet, tempura batter, shii-take mushroom sauce with wok vegetables, jasmine rice",
+              "title": "\"Chen Pla\" Schollenfilet, Tempurateig, Shii-Take Pilzsauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Fisch"
@@ -390,7 +390,7 @@
               "description": null
             },
             {
-              "title": "Crispy fried tofu with wok vegetables, jasmine rice",
+              "title": "Knusprig frittierter Tofu mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Vegan"
@@ -399,7 +399,7 @@
               "description": null
             },
             {
-              "title": "Sushi & maki",
+              "title": "Sushi & Maki",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -408,10 +408,10 @@
           ]
         },
         {
-          "name": "salad corner",
+          "name": "Salatecke",
           "items": [
             {
-              "title": "Leaf lettuce, roasted sunflower seeds, grilled chicken strips, honey mustard dressing",
+              "title": "Blattsalat, geröstete Sonnenblumenkerne, gegrillte Hühnerstreifen, Honig-Senf Dressing",
               "price": "11,90 €",
               "tags": [
                 "Huhn"
@@ -425,7 +425,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, ham, corn",
+              "title": "Pizza, Beinschinken, Mais",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -445,10 +445,10 @@
           ]
         },
         {
-          "name": "Bowl station",
+          "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, couscous, vegan sauces",
+              "title": "Create your own Bowl Frischer Nishikireis, Couscous, vegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -459,10 +459,10 @@
           ]
         },
         {
-          "name": "Bowl topping",
+          "name": "Bowl Topping",
           "items": [
             {
-              "title": "Yakitori chicken skewers, vegetarian mini spring rolls",
+              "title": "Yakitori Hühnerspieß, Vegetarische Minifrühlingsrollen",
               "price": null,
               "tags": [
                 "Huhn"
@@ -473,10 +473,10 @@
           ]
         },
         {
-          "name": "Cream or mousse",
+          "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegan mousse au chocolat, raspberry plums - poppy seed mousse",
+              "title": "Veganes Mousse au chocolat, Himbeere Zwetschken - Mohnmousse",
               "price": null,
               "tags": [
                 "Vegan"
@@ -487,10 +487,10 @@
           ]
         },
         {
-          "name": "Cakes and tarts",
+          "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Malakoff slices Covered pear cake",
+              "title": "Malakoffschnitte Gedeckter Birnenkuchen",
               "price": null,
               "tags": [],
               "allergens": "A,C,G,H",
@@ -499,10 +499,10 @@
           ]
         },
         {
-          "name": "Fruit small",
+          "name": "Obst klein",
           "items": [
             {
-              "title": "Seasonal fruit",
+              "title": "Obst der Saison",
               "price": null,
               "tags": [
                 "Vegan"
@@ -518,10 +518,10 @@
     "2026-10-07": {
       "categories": [
         {
-          "name": "Soup of the day clear",
+          "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Beef soup, chicken soup, vegetable soup optionally with semolina dumplings, fries, liver dumplings",
+              "title": "Rindsuppe, Hühnersuppe, Gemüsesuppe wahlweise mit Grießnockerl, Frittaten, Leberknödel",
               "price": null,
               "tags": [
                 "Rindfleisch",
@@ -534,10 +534,10 @@
           ]
         },
         {
-          "name": "Vegan soup of the day",
+          "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Pumpkin cream soup",
+              "title": "Kürbiscremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
@@ -548,10 +548,10 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Grilled salmon fillet, pumpkin ginger puree, dill gnocchi, leaf spinach",
+              "title": "Gegrilltes Lachsfilet, Kürbis - Ingwer Pürée, Dill Gnocchi, Blattspinat",
               "price": "12,30 €",
               "tags": [
                 "Fisch"
@@ -562,10 +562,10 @@
           ]
         },
         {
-          "name": "Main course traditional",
+          "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Grilled chicken breast, lime rice, tomato avocado salsa, chipotle mayo",
+              "title": "Gegrillte Hühnerbrust, Limetten-Reis, Tomaten- Avocado Salsa, Chipotle- Mayo",
               "price": "12,30 €",
               "tags": [
                 "Huhn"
@@ -576,10 +576,10 @@
           ]
         },
         {
-          "name": "Main course vegetarian/vegan",
+          "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Potato-carrot patties, beluga lentils, soy sauce dip",
+              "title": "Erdäpfel-Karotten Laibchen, Beluga Linsen, Sojaskyr Dip",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -590,10 +590,10 @@
           ]
         },
         {
-          "name": "Pasta station",
+          "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli prosciutto & sage, pumpkin gnocchi, lemon linguini, olive oil with herbs, mushroom sauce, hazelnut - rocket pesto, grilled peppers, olives, cherry tomatoes, Grana",
+              "title": "Ravioli Prosciutto & Salbei, Kürbis Gnocchi, Zitronen Linguini, Olivenöl mit Kräutern, Champignonsauce, Haselnuss - Rucola Pesto, gegrillter Paprika, Oliven, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -607,7 +607,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Country Chicken Breast, Spare Ribs, French Fries, Cole Slaw, BBQ Sauce, Cocktail Sauce, Daily Side Dishes, \"Crunchy Chick'n Burger\" Brioche Bun, Rocket, Tomato, Cheddar, BBQ Sauce",
+              "title": "Beef Minute Steak, Landhendlbrust, Spare Ribs, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Crunchy Chick'n Burger\" Brioche Bun, Rucola, Tomate, Cheddar, BBQ Sauce",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -623,7 +623,7 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "\"Phat Kraphao Gai\" Spicy chicken, green beans, Thai basil with wok vegetables, jasmine rice",
+              "title": "\"Phat Kraphao Gai\" Scharfes Huhn, grüne Bohnen, Thai Basilikum mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Huhn"
@@ -632,7 +632,7 @@
               "description": null
             },
             {
-              "title": "\"Chen Pla\" plaice fillet, tempura batter, shii-take mushroom sauce with wok vegetables, jasmine rice",
+              "title": "\"Chen Pla\" Schollenfilet, Tempurateig, Shii-Take Pilzsauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Fisch"
@@ -641,7 +641,7 @@
               "description": null
             },
             {
-              "title": "Crispy fried tofu with wok vegetables, jasmine rice",
+              "title": "Knusprig frittierter Tofu mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Vegan"
@@ -650,7 +650,7 @@
               "description": null
             },
             {
-              "title": "Sushi & maki",
+              "title": "Sushi & Maki",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -659,10 +659,10 @@
           ]
         },
         {
-          "name": "salad corner",
+          "name": "Salatecke",
           "items": [
             {
-              "title": "Leaf lettuce, rocket, coconut shrimp, mango dressing",
+              "title": "Blattsalat, Rucola, Kokos Garnele, Mangodressing",
               "price": "11,90 €",
               "tags": [
                 "Meeresfrüchte"
@@ -676,7 +676,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza prosciutto, grana, rocket",
+              "title": "Pizza Prosciutto, Grana, Rucola",
               "price": "9,90 €",
               "tags": [],
               "allergens": "A,C,G",
@@ -694,10 +694,10 @@
           ]
         },
         {
-          "name": "Bowl station",
+          "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, couscous, vegan sauces",
+              "title": "Create your own Bowl Frischer Nishikireis, Couscous, vegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -708,10 +708,10 @@
           ]
         },
         {
-          "name": "Bowl topping",
+          "name": "Bowl Topping",
           "items": [
             {
-              "title": "Yakitori chicken skewers, vegetarian mini spring rolls",
+              "title": "Yakitori Hühnerspieß, Vegetarische Minifrühlingsrollen",
               "price": null,
               "tags": [
                 "Huhn"
@@ -722,10 +722,10 @@
           ]
         },
         {
-          "name": "Cream or mousse",
+          "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Creme Brulee, Pumpkin Vegan Chocolate Mousse, Raspberry",
+              "title": "Creme Brulee, Kürbis Veganes Mousse au Chocolat, Amarenakirsche",
               "price": null,
               "tags": [
                 "Vegan"
@@ -736,10 +736,10 @@
           ]
         },
         {
-          "name": "Cakes and tarts",
+          "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Banana slices Malakoff slices",
+              "title": "Bananen Schnitte Malakoffschnitte",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,H",
@@ -748,10 +748,10 @@
           ]
         },
         {
-          "name": "Fruit small",
+          "name": "Obst klein",
           "items": [
             {
-              "title": "Seasonal fruit",
+              "title": "Obst der Saison",
               "price": null,
               "tags": [
                 "Vegan"
@@ -762,15 +762,15 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-05T08:35:08.581Z"
+      "fetchedAt": "2026-10-07T08:35:06.839Z"
     },
     "2026-10-08": {
       "categories": [
         {
-          "name": "Soup of the day clear",
+          "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Beef soup, chicken soup, vegetable soup optionally with semolina dumplings, fries, liver dumplings",
+              "title": "Rindsuppe, Hühnersuppe, Gemüsesuppe wahlweise mit Grießnockerl, Frittaten, Leberknödel",
               "price": null,
               "tags": [
                 "Rindfleisch",
@@ -783,10 +783,10 @@
           ]
         },
         {
-          "name": "Vegan soup of the day",
+          "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Carrots - coconut soup, pineapple pieces, mushrooms",
+              "title": "Karotten - Kokossüppchen, Ananasstücke, Pilze",
               "price": null,
               "tags": [
                 "Vegan"
@@ -797,10 +797,10 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Grilled salmon fillet, pumpkin ginger puree, dill gnocchi, leaf spinach",
+              "title": "Gegrilltes Lachsfilet, Kürbis - Ingwer Pürée, Dill Gnocchi, Blattspinat",
               "price": "12,30 €",
               "tags": [
                 "Fisch"
@@ -811,10 +811,10 @@
           ]
         },
         {
-          "name": "Main course traditional",
+          "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Bernese sausage, French fries, onion mustard",
+              "title": "Berner Würstel, Pommes Frites, Zwiebelsenf",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -825,10 +825,10 @@
           ]
         },
         {
-          "name": "Main course vegetarian/vegan",
+          "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Red lentils - spinach dal, fried sweet potato cubes",
+              "title": "Rote Linsen - Spinat Dal, frittierte Süßkartoffelwürfel",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -839,10 +839,10 @@
           ]
         },
         {
-          "name": "Pasta station",
+          "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli prosciutto & sage, pumpkin gnocchi, lemon linguini, olive oil with herbs, mushroom sauce, hazelnut - rocket pesto, grilled peppers, olives, cherry tomatoes, Grana",
+              "title": "Ravioli Prosciutto & Salbei, Kürbis Gnocchi, Zitronen Linguini, Olivenöl mit Kräutern, Champignonsauce, Haselnuss - Rucola Pesto, gegrillter Paprika, Oliven, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -856,7 +856,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Country Chicken Breast, Spare Ribs, French Fries, Cole Slaw, BBQ Sauce, Cocktail Sauce, Daily Side Dishes, \"Crunchy Chick'n Burger\" Brioche Bun, Rocket, Tomato, Cheddar, BBQ Sauce",
+              "title": "Beef Minute Steak, Landhendlbrust, Spare Ribs, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Crunchy Chick'n Burger\" Brioche Bun, Rucola, Tomate, Cheddar, BBQ Sauce",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -872,7 +872,7 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "\"Phat Kraphao Gai\" Spicy chicken, green beans, Thai basil with wok vegetables, jasmine rice",
+              "title": "\"Phat Kraphao Gai\" Scharfes Huhn, grüne Bohnen, Thai Basilikum mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Huhn"
@@ -881,7 +881,7 @@
               "description": null
             },
             {
-              "title": "\"Chen Pla\" plaice fillet, tempura batter, shii-take mushroom sauce with wok vegetables, jasmine rice",
+              "title": "\"Chen Pla\" Schollenfilet, Tempurateig, Shii-Take Pilzsauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Fisch"
@@ -890,7 +890,7 @@
               "description": null
             },
             {
-              "title": "Crispy fried tofu with wok vegetables, jasmine rice",
+              "title": "Knusprig frittierter Tofu mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Vegan"
@@ -899,7 +899,7 @@
               "description": null
             },
             {
-              "title": "Sushi & maki",
+              "title": "Sushi & Maki",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -908,10 +908,10 @@
           ]
         },
         {
-          "name": "salad corner",
+          "name": "Salatecke",
           "items": [
             {
-              "title": "Autumn salad, pumpkin wedges, feta, nuts",
+              "title": "Herbstsalat, Kürbisspalten, Feta, Nüsse",
               "price": "11,90 €",
               "tags": [
                 "Geflügel"
@@ -925,7 +925,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, salami, corn",
+              "title": "Pizza, Salami, Mais",
               "price": "9,90 €",
               "tags": [],
               "allergens": "A,G,M",
@@ -943,10 +943,10 @@
           ]
         },
         {
-          "name": "Bowl station",
+          "name": "Bowl Station",
           "items": [
             {
-              "title": "Create your own bowl Fresh nishiki rice, couscous, vegan sauces",
+              "title": "Create your own Bowl Frischer Nishikireis, Couscous, vegane Saucen",
               "price": null,
               "tags": [
                 "Vegan"
@@ -957,10 +957,10 @@
           ]
         },
         {
-          "name": "Bowl topping",
+          "name": "Bowl Topping",
           "items": [
             {
-              "title": "Yakitori chicken skewers, vegetarian mini spring rolls",
+              "title": "Yakitori Hühnerspieß, Vegetarische Minifrühlingsrollen",
               "price": null,
               "tags": [
                 "Huhn"
@@ -971,10 +971,10 @@
           ]
         },
         {
-          "name": "Cream or mousse",
+          "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegan coconut mousse creme brulée, pumpkin",
+              "title": "Veganes Kokosmousse Creme Brulée, Kürbis",
               "price": null,
               "tags": [
                 "Vegan"
@@ -985,10 +985,10 @@
           ]
         },
         {
-          "name": "Cakes and tarts",
+          "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Chocolate strawberry slices banana slices",
+              "title": "Schoko - Erdbeerschnitte Bananen Schnitte",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G",
@@ -997,10 +997,10 @@
           ]
         },
         {
-          "name": "Fruit small",
+          "name": "Obst klein",
           "items": [
             {
-              "title": "Seasonal fruit",
+              "title": "Obst der Saison",
               "price": null,
               "tags": [
                 "Vegan"
@@ -1016,10 +1016,10 @@
     "2026-10-09": {
       "categories": [
         {
-          "name": "Soup of the day clear",
+          "name": "Tagessuppe klar",
           "items": [
             {
-              "title": "Beef soup, chicken soup, vegetable soup optionally with semolina dumplings, fries, liver dumplings",
+              "title": "Rindsuppe, Hühnersuppe, Gemüsesuppe wahlweise mit Grießnockerl, Frittaten, Leberknödel",
               "price": null,
               "tags": [
                 "Rindfleisch",
@@ -1032,10 +1032,10 @@
           ]
         },
         {
-          "name": "Vegan soup of the day",
+          "name": "Tagessuppe vegan",
           "items": [
             {
-              "title": "Garlic cream soup",
+              "title": "Knoblauchcremesuppe",
               "price": null,
               "tags": [
                 "Vegan"
@@ -1046,10 +1046,10 @@
           ]
         },
         {
-          "name": "ALL-TIME FAVORITE",
+          "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Grilled salmon fillet, pumpkin ginger puree, dill gnocchi, leaf spinach",
+              "title": "Gegrilltes Lachsfilet, Kürbis - Ingwer Pürée, Dill Gnocchi, Blattspinat",
               "price": "12,30 €",
               "tags": [
                 "Fisch"
@@ -1060,10 +1060,10 @@
           ]
         },
         {
-          "name": "Main course traditional",
+          "name": "Hauptspeise Traditionell",
           "items": [
             {
-              "title": "Baked curd pancakes, vanilla sauce",
+              "title": "Überbackene Topfenpalatschinken, Vanillesauce",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -1074,10 +1074,10 @@
           ]
         },
         {
-          "name": "Main course vegetarian/vegan",
+          "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Fried rice, vegetable tempura, umami sesame peanut mayonnaise",
+              "title": "Gebratener Reis, Gemüse Tempura, Umami- Sesam- Erdnuss- Mayonnaise",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -1088,10 +1088,10 @@
           ]
         },
         {
-          "name": "Pasta station",
+          "name": "Pasta Station",
           "items": [
             {
-              "title": "Ravioli prosciutto & sage, pumpkin gnocchi, lemon linguini, olive oil with herbs, mushroom sauce, hazelnut - rocket pesto, grilled peppers, olives, cherry tomatoes, Grana",
+              "title": "Ravioli Prosciutto & Salbei, Kürbis Gnocchi, Zitronen Linguini, Olivenöl mit Kräutern, Champignonsauce, Haselnuss - Rucola Pesto, gegrillter Paprika, Oliven, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1105,7 +1105,7 @@
           "name": "Asia Corner",
           "items": [
             {
-              "title": "\"Phat Kraphao Gai\" Spicy chicken, green beans, Thai basil with wok vegetables, jasmine rice",
+              "title": "\"Phat Kraphao Gai\" Scharfes Huhn, grüne Bohnen, Thai Basilikum mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Huhn"
@@ -1114,7 +1114,7 @@
               "description": null
             },
             {
-              "title": "\"Chen Pla\" plaice fillet, tempura batter, shii-take mushroom sauce with wok vegetables, jasmine rice",
+              "title": "\"Chen Pla\" Schollenfilet, Tempurateig, Shii-Take Pilzsauce mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Fisch"
@@ -1123,7 +1123,7 @@
               "description": null
             },
             {
-              "title": "Crispy fried tofu with wok vegetables, jasmine rice",
+              "title": "Knusprig frittierter Tofu mit Wokgemüse, Jasminreis",
               "price": "10,90 €",
               "tags": [
                 "Vegan"
@@ -1132,7 +1132,7 @@
               "description": null
             },
             {
-              "title": "Sushi & maki",
+              "title": "Sushi & Maki",
               "price": "10,90 €",
               "tags": [],
               "allergens": null,
@@ -1141,10 +1141,10 @@
           ]
         },
         {
-          "name": "salad corner",
+          "name": "Salatecke",
           "items": [
             {
-              "title": "Grapefruit, beetroot, spicy Korean sauce, samosa with vegetables",
+              "title": "Grapefruit, rote Rübe, Spicy Korean Sauce, Samosa mit Gemüse",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1155,10 +1155,10 @@
           ]
         },
         {
-          "name": "Cream or mousse",
+          "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilk - Blueberry Mousse Vegan coconut mousse",
+              "title": "Buttermilch - Heidelbeer Mousse Veganes Kokosmousse",
               "price": null,
               "tags": [
                 "Vegan"
@@ -1169,10 +1169,10 @@
           ]
         },
         {
-          "name": "Cakes and tarts",
+          "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Walnut - plum strudel chocolate - strawberry slices",
+              "title": "Walnuss - Zwetschkenstrudel Schoko - Erdbeerschnitte",
               "price": null,
               "tags": [],
               "allergens": "A,C,F,G,H",
@@ -1181,10 +1181,10 @@
           ]
         },
         {
-          "name": "Fruit small",
+          "name": "Obst klein",
           "items": [
             {
-              "title": "Seasonal fruit",
+              "title": "Obst der Saison",
               "price": null,
               "tags": [
                 "Vegan"

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-05T08:35:11.398Z",
+  "fetchedAt": "2026-10-07T08:35:09.031Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -725,7 +725,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Creme Brulee, Kürbis Veganes Mousse au Chocolat, Himbeere",
+              "title": "Creme Brulee, Kürbis Veganes Mousse au Chocolat, Amarenakirsche",
               "price": null,
               "tags": [
                 "Vegan"
@@ -762,7 +762,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-05T08:35:08.581Z"
+      "fetchedAt": "2026-10-07T08:35:06.839Z"
     },
     "2026-10-08": {
       "categories": [
