@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-07T08:35:08.778Z",
+  "fetchedAt": "2026-10-08T08:35:14.798Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -429,6 +429,146 @@
         }
       ],
       "fetchedAt": "2026-10-07T08:35:06.839Z"
+    },
+    "2026-10-08": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Orangen 🍊-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zimt 🤎"
+            },
+            {
+              "title": "Gemüse 🥒🍠🥦-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kokosmilch 🥥"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Toskanisches Ofenhuhn auf buntem Gemüse (Erdäpfeln 🥔, Paprika 🫑, gelbe 💛 Zucchini 🥒, Kirschtomaten 🍅)",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Rosmarin & Thymian 🌿"
+            },
+            {
+              "title": "Rote Rüben 🫜-Gnocchi",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Feta & Rucola 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Kürbis 🎃-Chili con Carne",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Rinderfaschiertem, Bohnen 🫘, Mais 🌽, Paprika 🫑 & Reis – optional mit Sauerrahm"
+            },
+            {
+              "title": "Veganes Rote Linsen-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Minze 🌿, Zuckerschoten 🫛, Paprika 🫑 & Reis - optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Belugalinsen-Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "getrockneten Tomaten 🍅, Gurken 🥒, Oliven 🫒, Petersilie 🌿, Kreuzkümmel 🤎 & Granatapfelkernen 🍎"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bienenstich 🐝-Torte im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-08T08:35:11.989Z"
     }
   }
 }
