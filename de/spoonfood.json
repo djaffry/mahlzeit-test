@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-08T08:35:14.798Z",
+  "fetchedAt": "2026-10-09T11:23:56.994Z",
   "error": null,
   "days": {
     "2026-10-05": {
@@ -569,6 +569,135 @@
         }
       ],
       "fetchedAt": "2026-10-08T08:35:11.989Z"
+    },
+    "2026-10-09": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Schwarzwurzel-Parmesan 🧀-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Warmer Topfen 💛-Grieß-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Zwetschken 💜, Mandeln & Vanillesauce"
+            },
+            {
+              "title": "Haschéehörnchen (gemischtes Faschiertes)",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕 – optional mit Rahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Mexikanischer Bohnen 🫘-Eintopf vom Rind und Ötscherblickschwein",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Mais 🌽, Paprika 🫑 & Reis"
+            },
+            {
+              "title": "Veganes Gemüse-Protein 💪-Madras",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Paprika 🫑, Kichererbsen, Linsen, Tofu, Brokkoli 🥦, Karfiol 🤍 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Belugalinsen-Bulgur-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "getrockneten Tomaten 🍅, Gurken 🥒, Oliven 🫒, Petersilie 🌿, Kreuzkümmel 🤎 & Granatapfelkernen 🍎"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bienenstich 🐝-Torte im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-09T11:23:53.306Z"
     }
   }
 }
