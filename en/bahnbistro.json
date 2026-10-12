@@ -11,7 +11,7 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-10-12T08:35:07.656Z",
+  "fetchedAt": "2026-10-12T12:11:34.896Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -20,9 +20,11 @@
           "name": "Appetizer",
           "items": [
             {
-              "title": "Entrance",
+              "title": "fruit",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -32,25 +34,27 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Main1",
+              "title": "Spinach dumplings",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F",
+              "description": "Ratatouille, fresh parsley"
             },
             {
-              "title": "Main2",
+              "title": "Turkey rice meat",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Juice & sour cream, chives"
             },
             {
-              "title": "Main3",
+              "title": "Grilled bratwurst",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "M",
+              "description": "Roasted potatoes & coleslaw, tarragon mustard"
             }
           ]
         },
@@ -58,16 +62,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "dessert",
+              "title": "Nut caramel cake",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-13": {
       "categories": [
@@ -75,9 +79,11 @@
           "name": "Appetizer",
           "items": [
             {
-              "title": "Entrance",
+              "title": "fruit",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -87,25 +93,27 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Main1",
+              "title": "Vegetable schnitzel",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F,M",
+              "description": "Orange-tomato bulgur, tartare sauce"
             },
             {
-              "title": "Main2",
+              "title": "Lasagna Bolognese",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,C,G,L",
+              "description": "Minced meat & vegetables, béchamel & cheese"
             },
             {
-              "title": "Main3",
+              "title": "Trout Müllerin",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Parsley potatoes, herb butter"
             }
           ]
         },
@@ -113,16 +121,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "dessert",
+              "title": "Strawberry fruit dumplings",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-14": {
       "categories": [
@@ -130,9 +138,11 @@
           "name": "Appetizer",
           "items": [
             {
-              "title": "Entrance",
+              "title": "fruit",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -142,25 +152,27 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Main1",
+              "title": "Mushroom goulash",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F",
+              "description": "Bread dumplings & plant cream, chives"
             },
             {
-              "title": "Main2",
+              "title": "Cordon Bleu Tuscany",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,C,G",
+              "description": "Prosciutto & tomato, French fries"
             },
             {
-              "title": "Main3",
+              "title": "Fried chicken fillet",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,M",
+              "description": "Rice & bacon foliage, BBQ dip"
             }
           ]
         },
@@ -168,16 +180,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "dessert",
+              "title": "Double Choc Muffin",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-15": {
       "categories": [
@@ -185,9 +197,11 @@
           "name": "Appetizer",
           "items": [
             {
-              "title": "Entrance",
+              "title": "fruit",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -197,25 +211,31 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Main1",
+              "title": "Whole grain pasta",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Lentil sugo, Grana Vegano"
             },
             {
-              "title": "Main2",
+              "title": "Beef ragout stroganoff",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M",
+              "description": "Potato croquettes, fresh chives"
             },
             {
-              "title": "Main3",
+              "title": "Grilled turkey skewer",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Curry rice & letcho, cream dip"
             }
           ]
         },
@@ -223,16 +243,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "dessert",
+              "title": "Raspberry coconut cake",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-16": {
       "categories": [
@@ -240,9 +260,11 @@
           "name": "Appetizer",
           "items": [
             {
-              "title": "Entrance",
+              "title": "fruit",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -252,25 +274,27 @@
           "name": "Main course",
           "items": [
             {
-              "title": "Main1",
+              "title": "Poppy seed noodles",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A",
+              "description": "Applesauce, powdered sugar"
             },
             {
-              "title": "Main2",
+              "title": "Half grilled chicken",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,M",
+              "description": "Potato salad, fresh parsley"
             },
             {
-              "title": "Main3",
+              "title": "Grilled halloumi",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,G",
+              "description": "Tzatziki & antipasti, focaccia"
             }
           ]
         },
@@ -278,16 +302,16 @@
           "name": "dessert",
           "items": [
             {
-              "title": "dessert",
+              "title": "Creamy fruits",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     }
   }
 }

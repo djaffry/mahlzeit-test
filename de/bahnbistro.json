@@ -11,7 +11,7 @@
     "lat": 48.2215,
     "lon": 16.3952
   },
-  "fetchedAt": "2026-10-12T08:35:07.656Z",
+  "fetchedAt": "2026-10-12T12:11:34.896Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -20,9 +20,11 @@
           "name": "Vorspeise",
           "items": [
             {
-              "title": "Entree",
+              "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -32,25 +34,27 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Main1",
+              "title": "Spinatknödel",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F",
+              "description": "Ratatouille, Frische Petersilie"
             },
             {
-              "title": "Main2",
+              "title": "Puten-Reisfleisch",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Saftl & Sauerrahm, Schnittlauch"
             },
             {
-              "title": "Main3",
+              "title": "Bratwurst vom Grill",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "M",
+              "description": "Rösterdäpfel & Krautsalat, Estragonsenf"
             }
           ]
         },
@@ -58,16 +62,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Dessert",
+              "title": "Nuss-Karamellkuchen",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G,H",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-13": {
       "categories": [
@@ -75,9 +79,11 @@
           "name": "Vorspeise",
           "items": [
             {
-              "title": "Entree",
+              "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -87,25 +93,27 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Main1",
+              "title": "Gemüseschnitzerl",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F,M",
+              "description": "Orangen-Tomatenbulgur, Sauce Tartare"
             },
             {
-              "title": "Main2",
+              "title": "Lasagne Bolognese",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,C,G,L",
+              "description": "Faschiertes & Gemüse, Bechamel & Käse"
             },
             {
-              "title": "Main3",
+              "title": "Forelle Müllerin",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "A,D,G",
+              "description": "Petersilkartoffeln, Kräuterbutter"
             }
           ]
         },
@@ -113,16 +121,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Dessert",
+              "title": "Erdbeerfruchtknödel",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-14": {
       "categories": [
@@ -130,9 +138,11 @@
           "name": "Vorspeise",
           "items": [
             {
-              "title": "Entree",
+              "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -142,25 +152,27 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Main1",
+              "title": "Champignongulasch",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,F",
+              "description": "Semmelknödel & Plantcream, Schnittlauch"
             },
             {
-              "title": "Main2",
+              "title": "Cordon Bleu Toscana",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,C,G",
+              "description": "Prosciutto & Tomate, Pommes frites"
             },
             {
-              "title": "Main3",
+              "title": "Hühnerfilet gebraten",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "L,M",
+              "description": "Reis & Speckfisolen, BBQ-Dip"
             }
           ]
         },
@@ -168,16 +180,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Dessert",
+              "title": "Double-Choc Muffin",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-15": {
       "categories": [
@@ -185,9 +197,11 @@
           "name": "Vorspeise",
           "items": [
             {
-              "title": "Entree",
+              "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -197,25 +211,31 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Main1",
+              "title": "Vollkorn-Pasta",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H,L",
+              "description": "Linsen-Sugo, Grana Vegano"
             },
             {
-              "title": "Main2",
+              "title": "Rindsragout Stroganoff",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,G,M",
+              "description": "Kartoffelkroketten, Frischer Schnittlauch"
             },
             {
-              "title": "Main3",
+              "title": "Putenspieß vom Grill",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,G",
+              "description": "Curryreis & Letscho, Rahm-Dip"
             }
           ]
         },
@@ -223,16 +243,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Dessert",
+              "title": "Himbeer-Kokoskuchen",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "A,C,G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     },
     "2026-10-16": {
       "categories": [
@@ -240,9 +260,11 @@
           "name": "Vorspeise",
           "items": [
             {
-              "title": "Entree",
+              "title": "Obst",
               "price": null,
-              "tags": [],
+              "tags": [
+                "Vegan"
+              ],
               "allergens": null,
               "description": null
             }
@@ -252,25 +274,27 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Main1",
+              "title": "Mohnnudeln",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A",
+              "description": "Apfelmus, Staubzucker"
             },
             {
-              "title": "Main2",
+              "title": "Halbes Grillhendl",
               "price": null,
-              "tags": [],
-              "allergens": null,
-              "description": null
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "G,M",
+              "description": "Erdäpfelsalat, Frische Petersilie"
             },
             {
-              "title": "Main3",
+              "title": "Gegrillter Halloumi",
               "price": null,
               "tags": [],
-              "allergens": null,
-              "description": null
+              "allergens": "A,G",
+              "description": "Tzatziki & Antipasti, Focaccia"
             }
           ]
         },
@@ -278,16 +302,16 @@
           "name": "Dessert",
           "items": [
             {
-              "title": "Dessert",
+              "title": "Rahm-Früchtchen",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     }
   }
 }

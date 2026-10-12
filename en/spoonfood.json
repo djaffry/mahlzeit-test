@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-12T08:35:08.491Z",
+  "fetchedAt": "2026-10-12T12:11:38.050Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -55,6 +55,16 @@
               ],
               "allergens": null,
               "description": "Cumin 🤎"
+            },
+            {
+              "title": "Potato cream soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives"
             }
           ]
         },
@@ -145,7 +155,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-12T12:11:34.258Z"
     }
   }
 }
