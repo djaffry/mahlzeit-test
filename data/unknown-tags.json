@@ -2,7 +2,7 @@
   "tags": {
     "Wild": {
       "adapter": "quartiersechs",
-      "example": "Beef Minute Steak, Landhendlbrust, Türkischer Rind- Lammfleischspieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen, \"Hawaiian Island Burger\", Hühnerfilet, Ananas, Zwiebel, Salat, Tomate, Guacamole"
+      "example": "Wildragout, Preiselbeeren, gebratene Schupfnudeln"
     },
     "Kalbfleisch": {
       "adapter": "quartiersechs",
@@ -10,11 +10,11 @@
     },
     "Alkoholfrei": {
       "adapter": "quartiersechs",
-      "example": "\"Imam Bayildi\" Gefüllte geschmorte Melanzani, Bulgur Pilaf, Limonensauce"
+      "example": "Spaghetti, Soja-Bolognese, Oliven, Basilikum"
     },
     "Sweet Kiss": {
       "adapter": "mano",
-      "example": "Topfen Pie"
+      "example": "Marillenschnitte"
     }
   }
 }
