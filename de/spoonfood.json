@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-12T12:11:38.050Z",
+  "fetchedAt": "2026-10-13T08:35:11.770Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -156,6 +156,153 @@
         }
       ],
       "fetchedAt": "2026-10-12T12:11:34.258Z"
+    },
+    "2026-10-13": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Misosuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Rettich, Wokgemüse 🥕 & Shiitake-Pilzen 🍄‍🟫"
+            },
+            {
+              "title": "Paprika 🫑-Honig 🍯-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spätzle-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Rindergeschnetzeltem à la Stroganoff mit Dille 🌿, Gurkerl 🥒, Wurzelgemüse 🥕 & Champignons 🍄‍🟫 – optional mit Sauerrahm"
+            },
+            {
+              "title": "Filo-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Frischkäse, Spinat 💚, Brokkoli 🥦 & Parmesan – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Kürbis 🎃-Puten-Ragout von der Waldviertler Freiland-Pute",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Pute"
+              ],
+              "allergens": null,
+              "description": "Erbsen 🫛, Tomaten 🍅, Champignons 🍄‍🟫 & Reis"
+            },
+            {
+              "title": "Gemüse-Erdäpfel 🥔-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Steckrüben 🤍, Zucchini 🥒, Stangensellerie 🌿, Liebstöckl & Reis gf"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Rote Rüben 🫜-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "knackigem Brokkoli 🥦, gebratenen Kräuterseitlingen 🍄‍🟫 & gerösteten Sonnenblumenkernen 🌻"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒 | Krautsalat 🥬",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Maroni 🌰-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            },
+            {
+              "title": "Veganer Karottenkuchen 🥕",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-13T08:35:09.792Z"
     }
   }
 }

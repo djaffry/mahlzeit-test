@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-12T12:11:38.050Z",
+  "fetchedAt": "2026-10-13T08:35:11.770Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -156,6 +156,153 @@
         }
       ],
       "fetchedAt": "2026-10-12T12:11:34.258Z"
+    },
+    "2026-10-13": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Miso soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Radish, wok vegetables 🥕 & shiitake mushrooms 🍄‍🟫"
+            },
+            {
+              "title": "Paprika 🫑 honey 🍯 soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Spaetzle pan",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Beef slices à la Stroganoff with dill 🌿, cucumber 🥒, root vegetables 🥕 & mushrooms 🍄‍🟫 - optionally with sour cream"
+            },
+            {
+              "title": "Filo casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Cream cheese, spinach 💚, broccoli 🥦 & parmesan - optionally with sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Pumpkin 🎃 turkey ragout from the Waldviertler free-range turkey",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Pute"
+              ],
+              "allergens": null,
+              "description": "Peas 🫛, tomatoes 🍅, mushrooms 🍄‍🟫 & rice"
+            },
+            {
+              "title": "Vegetable-potato 🥔 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, turnips 🤍, zucchini 🥒, celery 🌿, lovage & rice if necessary"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Beetroot 🫜 Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "crunchy broccoli 🥦, fried king oyster mushrooms 🍄‍🟫 & roasted sunflower seeds 🌻"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒 | Coleslaw 🥬",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Chestnut 🌰 mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            },
+            {
+              "title": "Vegan carrot cake 🥕",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-13T08:35:09.792Z"
     }
   }
 }

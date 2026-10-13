@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-12T08:35:07.545Z",
+  "fetchedAt": "2026-10-13T08:35:10.542Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -121,7 +121,7 @@
           "items": [
             {
               "title": "Saftiger Schweinsbraten mit Sauerkraut und Braterdäpfeln",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Schweinefleisch"
               ],
@@ -163,7 +163,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-13T08:35:09.792Z"
     },
     "2026-10-14": {
       "categories": [
