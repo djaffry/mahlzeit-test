@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-12T08:35:08.510Z",
+  "fetchedAt": "2026-10-13T11:56:19.641Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -407,7 +407,7 @@
           "name": "Salatecke",
           "items": [
             {
-              "title": "Bunter Blattsalat, Räucherlachsstreifen, Krengervais, Beeren",
+              "title": "Bunter Blattsalat, Räucherlachsstreifen, Krengervais",
               "price": "11,90 €",
               "tags": [
                 "Fisch"
@@ -507,7 +507,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-13T11:56:16.928Z"
     },
     "2026-10-14": {
       "categories": [
