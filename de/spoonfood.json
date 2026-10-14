@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-13T08:35:11.770Z",
+  "fetchedAt": "2026-10-14T08:35:10.778Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -303,6 +303,166 @@
         }
       ],
       "fetchedAt": "2026-10-13T08:35:09.792Z"
+    },
+    "2026-10-14": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse 🥒🥕🌿-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Mexikanische Bohnen 🫘-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Jambalaya",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Huhn, Chorizo, Paprika 🫑 & Himalaya-Basmatireis"
+            },
+            {
+              "title": "Käse 🧀-Spätzle",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Röstzwiebeln 🧅 & Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Dille 🌿-Rahmfisolen 🫛",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Erdäpfeln 🥔, Debrezinern & Reis"
+            },
+            {
+              "title": "Kichererbsen-Tajine",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini, 🥒 Melanzani 🍆, Paprika 🫑, rosa 🩷 Pfeffer & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Thai Style Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischer Limette 🍋‍🟩, Rotkraut 🩷, Weißkraut 🤍, Gurke 🥒, Chinakohl 🥬 & Cashews"
+            },
+            {
+              "title": "Rote Rüben 🫜-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "knackigem Brokkoli 🥦, gebratenen Kräuterseitlingen 🍄‍🟫 & gerösteten Sonnenblumenkernen 🌻"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒 | Krautsalat 🥬",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Maroni 🌰-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            },
+            {
+              "title": "Chokladkladdkaka 🍫 – Schwedischer Schokoladenkuchen",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-14T08:35:09.407Z"
     }
   }
 }

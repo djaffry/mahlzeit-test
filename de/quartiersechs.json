@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-13T11:56:19.641Z",
+  "fetchedAt": "2026-10-14T08:35:11.611Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -544,7 +544,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsstelze, Erdäpfelknödel, warmer Krautsalat",
+              "title": "Surstelze vom Schwein, Erdäpfelknödel, warmer Krautsalat",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -753,7 +753,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-14T08:35:09.407Z"
     },
     "2026-10-15": {
       "categories": [
@@ -790,7 +790,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsstelze, Erdäpfelknödel, warmer Krautsalat",
+              "title": "Surstelze vom Schwein, Erdäpfelknödel, warmer Krautsalat",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -999,7 +999,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-14T08:35:09.407Z"
     },
     "2026-10-16": {
       "categories": [
@@ -1036,7 +1036,7 @@
           "name": "ALL TIME FAVOURITE",
           "items": [
             {
-              "title": "Schweinsstelze, Erdäpfelknödel, warmer Krautsalat",
+              "title": "Surstelze vom Schwein, Erdäpfelknödel, warmer Krautsalat",
               "price": "12,30 €",
               "tags": [
                 "Schweinefleisch"
@@ -1178,7 +1178,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-14T08:35:09.407Z"
     }
   }
 }
