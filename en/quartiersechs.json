@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-14T08:35:11.611Z",
+  "fetchedAt": "2026-10-14T09:35:56.985Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -667,7 +667,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza, ham, dried tomatoes, baby mozzarella",
+              "title": "Pizza, ham, sun-dried tomatoes",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -753,7 +753,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-14T08:35:09.407Z"
+      "fetchedAt": "2026-10-14T09:35:55.002Z"
     },
     "2026-10-15": {
       "categories": [

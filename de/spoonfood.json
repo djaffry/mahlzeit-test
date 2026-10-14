@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-14T08:35:10.778Z",
+  "fetchedAt": "2026-10-14T09:35:57.422Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -375,7 +375,7 @@
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Röstzwiebeln 🧅 & Schnittlauch 🌿"
+              "description": "Röstzwiebeln 🧅 & Schnittlauch 🌿 - dazu ein kleiner Beilagensalat 🥗"
             }
           ]
         },
@@ -442,15 +442,6 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Maroni 🌰-Mousse",
-              "price": "3,90",
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": null,
-              "description": "Amarettini 🍪"
-            },
-            {
               "title": "Chokladkladdkaka 🍫 – Schwedischer Schokoladenkuchen",
               "price": "3,90",
               "tags": [
@@ -462,7 +453,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-14T08:35:09.407Z"
+      "fetchedAt": "2026-10-14T09:35:55.002Z"
     }
   }
 }
