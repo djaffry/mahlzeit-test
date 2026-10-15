@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-15T08:35:08.256Z",
+  "fetchedAt": "2026-10-15T09:13:43.121Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -567,17 +567,7 @@
               "description": "frischer Limette 🍋‍🟩, Rotkraut 🩷, Weißkraut 🤍, Gurke 🥒, Chinakohl 🥬 & Cashews"
             },
             {
-              "title": "Rote Rüben 🫜-Salad Bowl",
-              "price": "6,10 / 8,10",
-              "tags": [
-                "Vegan",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "knackigem Brokkoli 🥦, gebratenen Kräuterseitlingen 🍄‍🟫 & gerösteten Sonnenblumenkernen 🌻"
-            },
-            {
-              "title": "Bunter gemischter Salat 🥬 🍅 🥒 | Krautsalat 🥬",
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
@@ -600,20 +590,11 @@
               ],
               "allergens": null,
               "description": "Ricotta"
-            },
-            {
-              "title": "Chokladkladdkaka 🍫 – Schwedischer Schokoladenkuchen",
-              "price": "3,90",
-              "tags": [
-                "Vegetarisch"
-              ],
-              "allergens": null,
-              "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-15T08:35:05.662Z"
+      "fetchedAt": "2026-10-15T09:13:41.069Z"
     }
   }
 }
