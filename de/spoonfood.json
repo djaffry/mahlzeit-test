@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-14T09:35:57.422Z",
+  "fetchedAt": "2026-10-15T08:35:08.256Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -454,6 +454,166 @@
         }
       ],
       "fetchedAt": "2026-10-14T09:35:55.002Z"
+    },
+    "2026-10-15": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kichererbsen-Harissa 🧡-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Steckrüben 🤍-Zucchini 🥒-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Selchfleisch in Pilz 🍄‍🟫-Rahmsauce",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Semmelknödelwürfeln"
+            },
+            {
+              "title": "Vegane Gemüse 🥒🥕🌿-Ravioli in Tomaten 🍅-Sauce",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Rindsgulasch vom Höllerschmid-Ochs’n",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Kohlrabi 🤍, Karotten 🥕, Fisolen 🫛 & Reis"
+            },
+            {
+              "title": "Hokkaido-Kürbis 🎃-Erdäpfel 🥔-Gulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Thai Style Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischer Limette 🍋‍🟩, Rotkraut 🩷, Weißkraut 🤍, Gurke 🥒, Chinakohl 🥬 & Cashews"
+            },
+            {
+              "title": "Rote Rüben 🫜-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "knackigem Brokkoli 🥦, gebratenen Kräuterseitlingen 🍄‍🟫 & gerösteten Sonnenblumenkernen 🌻"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒 | Krautsalat 🥬",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bananen 🍌-Stracciatella 🍫-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ricotta"
+            },
+            {
+              "title": "Chokladkladdkaka 🍫 – Schwedischer Schokoladenkuchen",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-15T08:35:05.662Z"
     }
   }
 }
