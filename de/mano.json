@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-14T08:35:10.387Z",
+  "fetchedAt": "2026-10-16T09:06:24.422Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -317,19 +317,20 @@
           "name": "Hauptspeise",
           "items": [
             {
-              "title": "Zanderfiletsteak in Thymianbutter ,Petersielerdäpfel",
-              "price": "12,90 €",
+              "title": "Hühner-Enchiladas mit Wedges",
+              "price": "11,90 €",
               "tags": [
-                "Fisch"
+                "Fisch",
+                "Huhn"
               ],
-              "allergens": "G,D",
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Gebackene-Gemüsemix auf Salatbett ,Salatbecher",
+              "title": "Käsespätzle mit Bergkäse und Salatbecher",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": "A,C,G",
               "description": null
@@ -349,7 +350,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-16T09:06:22.930Z"
     }
   }
 }

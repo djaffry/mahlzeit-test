@@ -5,8 +5,8 @@
   "type": "full",
   "icon": "coffee",
   "cuisine": [
-    "Cafe",
-    "bistro"
+    "Café",
+    "Bistro"
   ],
   "edenred": true,
   "outdoor": true,
@@ -14,16 +14,16 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-14T08:35:10.387Z",
+  "fetchedAt": "2026-10-16T09:06:24.422Z",
   "error": null,
   "days": {
     "2026-10-12": {
       "categories": [
         {
-          "name": "Soup",
+          "name": "Suppe",
           "items": [
             {
-              "title": "Beef soup with semolina dumplings",
+              "title": "Rindsuppe mit Grießnockerl",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -32,7 +32,7 @@
               "description": null
             },
             {
-              "title": "Mango pumpkin cream soup",
+              "title": "Mango-Kürbiscremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -43,10 +43,10 @@
           ]
         },
         {
-          "name": "Main course",
+          "name": "Hauptspeise",
           "items": [
             {
-              "title": "Caribbean chicken fillet steak with almond curry rice",
+              "title": "Karibisches Hühnerfiletsteak mit Mandel-Curryreis",
               "price": "11,90 €",
               "tags": [
                 "Huhn"
@@ -55,7 +55,7 @@
               "description": null
             },
             {
-              "title": "Zander fillet steak in thyme butter on ratatouille, rösti",
+              "title": "Zanderfiletsteak in Thymianbutter auf Ratatouille ,Rösti",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -64,7 +64,7 @@
               "description": null
             },
             {
-              "title": "Roasted wholemeal dumplings with egg, salad from the buffet",
+              "title": "Geröstete Vollkornknödel mit Ei   ,Salat vom Buffet",
               "price": "11,9O €",
               "tags": [
                 "Vegetarisch"
@@ -75,10 +75,10 @@
           ]
         },
         {
-          "name": "dessert",
+          "name": "Dessert",
           "items": [
             {
-              "title": "Apricot slices",
+              "title": "Marillenschnitte",
               "price": "3,90 €",
               "tags": [
                 "Sweet Kiss"
@@ -94,10 +94,10 @@
     "2026-10-13": {
       "categories": [
         {
-          "name": "Soup",
+          "name": "Suppe",
           "items": [
             {
-              "title": "Truffled kohlrabi cream soup",
+              "title": "Getrüffelte Kohlrabicremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -106,7 +106,7 @@
               "description": null
             },
             {
-              "title": "Beef soup with liver dumplings",
+              "title": "Rindsuppe mit Leberknödel",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -117,10 +117,10 @@
           ]
         },
         {
-          "name": "Main course",
+          "name": "Hauptspeise",
           "items": [
             {
-              "title": "Juicy roast pork with sauerkraut and roasted potatoes",
+              "title": "Saftiger Schweinsbraten mit Sauerkraut und Braterdäpfeln",
               "price": "11,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -129,7 +129,7 @@
               "description": null
             },
             {
-              "title": "Korean sticky cod fillet on wok vegetables, bean sprouts",
+              "title": "Korean Sticky Kabeljaufilet auf Wokgemüse ,Sojasprossen",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -138,7 +138,7 @@
               "description": null
             },
             {
-              "title": "Green Thai vegetable curry with pumpkin salad from the buffet",
+              "title": "Grünes Thai-Gemüsecurry mit Kürbis Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegan"
@@ -149,10 +149,10 @@
           ]
         },
         {
-          "name": "dessert",
+          "name": "Dessert",
           "items": [
             {
-              "title": "Curd pancakes",
+              "title": "Topfenschmarren",
               "price": "3,90 €",
               "tags": [
                 "Sweet Kiss"
@@ -168,10 +168,10 @@
     "2026-10-14": {
       "categories": [
         {
-          "name": "Soup",
+          "name": "Suppe",
           "items": [
             {
-              "title": "Coconut cauliflower cream soup",
+              "title": "Kokos-Karfiolcremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -180,7 +180,7 @@
               "description": null
             },
             {
-              "title": "Beef soup with fries",
+              "title": "Rindsuppe mit Frittaten",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -191,10 +191,10 @@
           ]
         },
         {
-          "name": "Main course",
+          "name": "Hauptspeise",
           "items": [
             {
-              "title": "Pumpkin seed turkey fillet strips on cucumber salad, rocket rice",
+              "title": "Kürbiskern Putenfiletstreifen auf Gurkensalat, Rucolareis",
               "price": "11,90",
               "tags": [
                 "Pute"
@@ -203,7 +203,7 @@
               "description": null
             },
             {
-              "title": "Chili prawns on Tagiatelle Aglio-Olio, grilled tomatoes",
+              "title": "Chili Garnelen auf Tagiatelle Aglio-Olio ,Grilltomaten",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -212,7 +212,7 @@
               "description": null
             },
             {
-              "title": "Mushroom vegetable strudel, yoghurt dip, salad from the buffet",
+              "title": "Champignon-Gemüsestrudel ,Joghurt Dip   ,  Salat von Büffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -223,10 +223,10 @@
           ]
         },
         {
-          "name": "dessert",
+          "name": "Dessert",
           "items": [
             {
-              "title": "Chestnut slices",
+              "title": "Maronischnitte",
               "price": "3,90 €",
               "tags": [
                 "Sweet Kiss"
@@ -242,10 +242,10 @@
     "2026-10-15": {
       "categories": [
         {
-          "name": "Soup",
+          "name": "Suppe",
           "items": [
             {
-              "title": "Cream of onion soup",
+              "title": "Zwiebelncremesuppe",
               "price": "3,90 €",
               "tags": [
                 "Vegan"
@@ -254,7 +254,7 @@
               "description": null
             },
             {
-              "title": "Beef soup with boiled beef carrots",
+              "title": "Rindsuppe mit Tafelspitz-Karotten",
               "price": "3,90 €",
               "tags": [
                 "Rindfleisch"
@@ -265,10 +265,10 @@
           ]
         },
         {
-          "name": "Main course",
+          "name": "Hauptspeise",
           "items": [
             {
-              "title": "Chicken gyros plate, salad, fries, pita bread",
+              "title": "Hühnergyros-Teller , Salat , Pommes ,Pitabrot",
               "price": "11,90 €",
               "tags": [
                 "Huhn"
@@ -277,7 +277,7 @@
               "description": null
             },
             {
-              "title": "Salmon fillet steak in passion fruit sauce with basmati rice",
+              "title": "Lachsfiletsteak in Maracujasauce mit Basmatireis",
               "price": "12,90 €",
               "tags": [
                 "Fisch"
@@ -286,7 +286,7 @@
               "description": null
             },
             {
-              "title": "Pumpkin and vegetable tortilla with cheese sauce, salad from the buffet",
+              "title": "Kürbis-Gemüse-Tortilla mit Käsesauce   ,Salat vom Buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -297,10 +297,10 @@
           ]
         },
         {
-          "name": "dessert",
+          "name": "Dessert",
           "items": [
             {
-              "title": "Homemade Biscoff cream snail",
+              "title": "Hausgemachte Biscoff-Cremeschnecke",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H",
@@ -314,22 +314,23 @@
     "2026-10-16": {
       "categories": [
         {
-          "name": "Main course",
+          "name": "Hauptspeise",
           "items": [
             {
-              "title": "Zander fillet steak in thyme butter, parsley potatoes",
-              "price": "12,90 €",
+              "title": "Hühner-Enchiladas mit Wedges",
+              "price": "11,90 €",
               "tags": [
-                "Fisch"
+                "Fisch",
+                "Huhn"
               ],
-              "allergens": "G,D",
+              "allergens": "A,C,G",
               "description": null
             },
             {
-              "title": "Baked vegetable mix on a bed of lettuce, salad cups",
+              "title": "Käsespätzle mit Bergkäse und Salatbecher",
               "price": "11,90 €",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": "A,C,G",
               "description": null
@@ -337,10 +338,10 @@
           ]
         },
         {
-          "name": "dessert",
+          "name": "Dessert",
           "items": [
             {
-              "title": "Dessert of the day",
+              "title": "Tages Dessert",
               "price": "3,90 €",
               "tags": [],
               "allergens": "A,C,G,H,E",
@@ -349,7 +350,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T08:35:06.955Z"
+      "fetchedAt": "2026-10-16T09:06:22.930Z"
     }
   }
 }
