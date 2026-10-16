@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-15T09:13:43.121Z",
+  "fetchedAt": "2026-10-16T08:35:13.864Z",
   "error": null,
   "days": {
     "2026-10-12": {
@@ -595,6 +595,139 @@
         }
       ],
       "fetchedAt": "2026-10-15T09:13:41.069Z"
+    },
+    "2026-10-16": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Orangen 🍊-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Pilz 🍄‍🟫-Speck 🥓-Risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            },
+            {
+              "title": "Warmer, süßer Topfen 💛-Palatschinken-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Rumrosinen & Vanillesauce 💛"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Gemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Melanzani 🍆, Oliven 🫒, Zucchini 🥒, Chorizo, Salami & Reis"
+            },
+            {
+              "title": "Mexikanischer-Bohnen 🫘-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Soja-Bolognese, Mais 🌽, Paprika 🫑 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Thai Style Quinoa-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischer Limette 🍋‍🟩, Rotkraut 🩷, Weißkraut 🤍, Gurke 🥒, Chinakohl 🥬 & Cashews"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bananen 🍌-Stracciatella 🍫-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ricotta"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-16T08:35:12.019Z"
     }
   }
 }
