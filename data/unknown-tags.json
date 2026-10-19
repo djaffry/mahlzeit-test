@@ -2,7 +2,7 @@
   "tags": {
     "Wild": {
       "adapter": "quartiersechs",
-      "example": "Wildragout, Preiselbeeren, gebratene Schupfnudeln"
+      "example": "Salat, gegrillter Feta, Kürbis"
     },
     "Kalbfleisch": {
       "adapter": "quartiersechs",
@@ -14,7 +14,7 @@
     },
     "Sweet Kiss": {
       "adapter": "mano",
-      "example": "Marillenschnitte"
+      "example": "Marmor-Nuttelakuchen"
     }
   }
 }
