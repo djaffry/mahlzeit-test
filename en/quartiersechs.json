@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-19T08:35:10.482Z",
+  "fetchedAt": "2026-10-19T10:03:20.660Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -159,7 +159,7 @@
           "name": "Pizza & Co",
           "items": [
             {
-              "title": "Pizza Capricciosa, ham, mushrooms, anchovies, artichokes",
+              "title": "Pizza Capricciosa, ham hock, anchovies",
               "price": "9,90 €",
               "tags": [
                 "Schweinefleisch"
@@ -247,7 +247,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-19T08:35:08.628Z"
+      "fetchedAt": "2026-10-19T10:03:18.176Z"
     },
     "2026-10-20": {
       "categories": [

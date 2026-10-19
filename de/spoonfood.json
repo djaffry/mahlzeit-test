@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-19T08:35:10.718Z",
+  "fetchedAt": "2026-10-19T10:03:21.082Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -84,7 +84,7 @@
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Kürbis 🎃, Rotkraut 🩷, gelbe 💛 Rüben, Spinat 💚 & Lauch 🌿 – optional mit Parmesan"
+              "description": "Kürbis 🎃, Rotkraut 🩷, gelbe 💛 Rüben, Spinat 💚 & Lauch 🌿 – optional mit Parmesan - dazu ein kleiner Beilagensalat 🥗"
             }
           ]
         },
@@ -153,7 +153,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-19T08:35:08.628Z"
+      "fetchedAt": "2026-10-19T10:03:18.176Z"
     }
   }
 }
