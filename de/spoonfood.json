@@ -1,0 +1,159 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Eintöpfe"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-10-19T08:35:10.718Z",
+  "error": null,
+  "days": {
+    "2026-10-19": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood’s Veg-Tea (klare Gemüse-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Eier 🍳-Schöberl & Schnittlauch 🌿"
+            },
+            {
+              "title": "Erbsen 🫛-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "frischer Zitrone 🍋"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Griechische Schupfnudel-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Gyros-Schweinsgeschnetzeltem vom Ötscherblickschwein, geschmorten roten Zwiebeln 🧅, Paprika 🫑 & Tzatziki 🥒"
+            },
+            {
+              "title": "Herbstgemüse 🍁-Quiche",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Kürbis 🎃, Rotkraut 🩷, gelbe 💛 Rüben, Spinat 💚 & Lauch 🌿 – optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Rotes ❤️Thai-Chicken-Curry - in Cashew-Kokos 🥥-Sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Brokkoli 🥦, Wirsing 🥬 & Reis – optional mit Koriander 🌿"
+            },
+            {
+              "title": "Balsamico-Linsen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕, Karfiol 🤍 & Reis – optional mit Schnitttlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Bulgur-Tabouleh-Salad Bowl *Marrakesch Style*",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Datteln, gegrillter Paprika 🫑, Gurken 🥒, Tomaten 🍅, Petersilie 🌿, frischer Zitrone 🍋 & Ras el-Hanout"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "San Sebastian Cheesecake 💛",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    }
+  }
+}

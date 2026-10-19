@@ -1,0 +1,355 @@
+{
+  "id": "mano",
+  "title": "Mano Café & Bistro",
+  "url": "https://www.kissthecook.at/mano-cafe-und-bistro",
+  "type": "full",
+  "icon": "coffee",
+  "cuisine": [
+    "Cafe",
+    "bistro"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2211,
+    "lon": 16.3926
+  },
+  "fetchedAt": "2026-10-19T08:35:15.641Z",
+  "error": null,
+  "days": {
+    "2026-10-19": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Beef soup with liver dumplings",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            },
+            {
+              "title": "Potato and porcini mushroom cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Orange duck, chestnut red cabbage and croquettes",
+              "price": "11,90 €",
+              "tags": [
+                "Fleisch"
+              ],
+              "allergens": "A,C,G,O,L",
+              "description": null
+            },
+            {
+              "title": "Trout fillet in garlic butter, parsley potatoes, beetroot",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "G,D",
+              "description": null
+            },
+            {
+              "title": "Ginger-coconut-lime vegetable ragout, jasmine rice, salad from the buffet",
+              "price": "11,9O €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Marble Nutela Cake",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    },
+    "2026-10-20": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Sweet potato cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with semolina dumplings",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Chicken fillet paprika ash with egg spaetzle, sour cream",
+              "price": "11,90 €",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Tuna fillet steak teriyaki on wok vegetables, bean sprouts",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,N,F",
+              "description": null
+            },
+            {
+              "title": "Zucchini cheese vegetable patties, salad from the buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "G,C",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Chocolate mousse with cherries",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    },
+    "2026-10-21": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Lentil cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with fries",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "A,C,G,L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Kentucky turkey fillet strips on herb wedges, spicy sauce",
+              "price": "11,90",
+              "tags": [
+                "Pute"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            },
+            {
+              "title": "Shrimp in a potato net on avocado-mango-papaya salad",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,B",
+              "description": null
+            },
+            {
+              "title": "Carinthian potato noodles in brown butter, salad from the buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Walnut slices",
+              "price": "3,90 €",
+              "tags": [
+                "Sweet Kiss"
+              ],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    },
+    "2026-10-22": {
+      "categories": [
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "title": "Tomato cream soup",
+              "price": "3,90 €",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Beef soup with carrot celery strips",
+              "price": "3,90 €",
+              "tags": [
+                "Rindfleisch"
+              ],
+              "allergens": "L",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Cooked boiled veal with spinach cream and roasted potatoes",
+              "price": "11,90 €",
+              "tags": [
+                "Fleisch"
+              ],
+              "allergens": "C,G",
+              "description": null
+            },
+            {
+              "title": "Tandoori salmon fillet steak on grilled cauliflower, grilled tomatoes",
+              "price": "12,90 €",
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "D,G",
+              "description": null
+            },
+            {
+              "title": "Creamy spinach with pan-fried potatoes and fried eggs, salad from the buffet",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "G,C",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Homemade strawberry snail",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    },
+    "2026-10-23": {
+      "categories": [
+        {
+          "name": "Main course",
+          "items": [
+            {
+              "title": "Onions roast with fried potatoes and grilled vegetables",
+              "price": "12,90 €",
+              "tags": [
+                "Fleisch"
+              ],
+              "allergens": "G",
+              "description": null
+            },
+            {
+              "title": "Vegetable lasagna with parmesan, salad cup",
+              "price": "11,90 €",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "dessert",
+          "items": [
+            {
+              "title": "Dessert of the day",
+              "price": "3,90 €",
+              "tags": [],
+              "allergens": "A,C,G,H,E",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-19T08:35:08.628Z"
+    }
+  }
+}
