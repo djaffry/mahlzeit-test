@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-19T10:03:21.082Z",
+  "fetchedAt": "2026-10-20T08:35:09.901Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -154,6 +154,148 @@
         }
       ],
       "fetchedAt": "2026-10-19T10:03:18.176Z"
+    },
+    "2026-10-20": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Oriental lentil soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Garam masala 🧡, cumin 🤎 & fresh lemon 🍋"
+            },
+            {
+              "title": "Cauliflower 🤍 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el-Hanout 🧡 – optionally with chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Pumpkin 🎃-potatoes 🥔-gratin mushrooms 🍄‍🟫, chanterelles 🍄‍🟫, roasted turkey ham 🥓, roasted pumpkin seeds & herbs 🌿-dip - with a small side salad 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Pute",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Mac'n'Cheese 🧀 - with a small side salad 🥗",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "High protein beans 🫘 cassoulet",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "white 🤍 beans, kidney beans 🫘, runner beans, peppers 🫑, cabbage 🥬, carrots 🥕, bacon 🥓 & rice"
+            },
+            {
+              "title": "Dum Aloo *Indian curry* in cashew coconut 🥥 sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Turnips 🥕, potatoes 🥔, broccoli 🥦, spinach 💚 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Bulgur Tabbouleh Salad Bowl *Marrakech Style*",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Dates, grilled peppers 🫑, cucumbers 🥒, tomatoes 🍅, parsley 🌿, fresh lemon 🍋 & Ras el-Hanout"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "San Sebastian Cheesecake 💛",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-20T08:35:07.711Z"
     }
   }
 }
