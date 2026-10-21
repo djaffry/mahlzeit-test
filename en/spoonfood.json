@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-21T08:35:22.678Z",
+  "fetchedAt": "2026-10-21T09:26:23.248Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -359,7 +359,7 @@
                 "Huhn"
               ],
               "allergens": null,
-              "description": "Carrots 🥕 – optionally with fresh parsley 🌿"
+              "description": "Carrots 🥕"
             },
             {
               "title": "Spinach 💚 spaetzle in cheese 🧀 sauce – optional",
@@ -437,7 +437,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-21T08:35:19.904Z"
+      "fetchedAt": "2026-10-21T09:26:19.767Z"
     }
   }
 }
