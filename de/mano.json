@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-19T08:35:15.641Z",
+  "fetchedAt": "2026-10-22T08:35:10.402Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -269,7 +269,7 @@
           "items": [
             {
               "title": "Gekochter Kalbstafelspitz mit Spinatcreme ,Rösterdäpfeln",
-              "price": "11,90 €",
+              "price": "12,90 €",
               "tags": [
                 "Fleisch"
               ],
@@ -309,7 +309,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-19T08:35:08.628Z"
+      "fetchedAt": "2026-10-22T08:35:09.829Z"
     },
     "2026-10-23": {
       "categories": [

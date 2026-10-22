@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-21T09:26:23.248Z",
+  "fetchedAt": "2026-10-22T08:35:11.352Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -438,6 +438,158 @@
         }
       ],
       "fetchedAt": "2026-10-21T09:26:19.767Z"
+    },
+    "2026-10-22": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Kohlrabi 🤍-Kräuter 🌿-Suppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch"
+            },
+            {
+              "title": "Kürbis 🎃-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Hirschragout",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Wurzelgemüse 🥕 & Knöpfli"
+            },
+            {
+              "title": "Gnocchi Quattro Formaggi 🧀 - optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Wiener Rindsgulasch aus dem Schmortopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Wurzelwerk 🥕 & Reis"
+            },
+            {
+              "title": "Erdäpfel 🥔-Pilz 🍄‍🟫-Gulasch",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Reis - optional mit Sauerrahm | Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Herbstliche 🍁 Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chinakohl 🥬, Tomaten 🍅, Trauben 🍇 & Zwetschken 💜"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Maroni 🌰-Mascarpone-Creme",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kakao 🤎 & Rum"
+            },
+            {
+              "title": "Bienenstich 🐝-Torte - im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Crumble 🍪-Boden"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-22T08:35:09.829Z"
     }
   }
 }
