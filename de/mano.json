@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-22T08:35:10.402Z",
+  "fetchedAt": "2026-10-23T08:35:16.328Z",
   "error": null,
   "days": {
     "2026-10-19": {
@@ -326,7 +326,7 @@
               "description": null
             },
             {
-              "title": "Gemüse-Lasagne mit Parmesan ,Salatbecher",
+              "title": "Zucchini-Gemüse-Quiche mit Käse ,Salat Becher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -349,7 +349,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-19T08:35:08.628Z"
+      "fetchedAt": "2026-10-23T08:35:14.635Z"
     }
   }
 }
