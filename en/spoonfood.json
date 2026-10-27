@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-27T09:35:17.147Z",
+  "fetchedAt": "2026-10-27T09:53:53.177Z",
   "error": null,
   "days": {
     "2026-10-30": {
@@ -186,6 +186,16 @@
               ],
               "allergens": null,
               "description": "Meat strudel & chives 🌿"
+            },
+            {
+              "title": "Tomato 🍅 pepper 🫑 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Thyme 🌿 & oregano"
             }
           ]
         },
@@ -278,7 +288,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-27T09:35:14.895Z"
+      "fetchedAt": "2026-10-27T09:53:48.806Z"
     }
   }
 }
