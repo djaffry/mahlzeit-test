@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-26T09:35:14.313Z",
+  "fetchedAt": "2026-10-27T09:35:18.447Z",
   "error": null,
   "days": {
     "2026-10-27": {
@@ -209,7 +209,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Mousse au chocolat, Himbeeren",
+              "title": "Mousse au chocolat, Himbeeren Brombeer - Buttermilch Mousse",
               "price": null,
               "tags": [],
               "allergens": "F,G",
@@ -221,10 +221,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Zwetschken- Streuselkuchen",
+              "title": "Zwetschkenkuchen Schokobrownie",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -244,7 +244,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-28": {
       "categories": [
@@ -443,10 +443,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Himbeer Panna Cotta",
+              "title": "Himbeer Panna Cotta Mousse au Chocolat, Himbeeren",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "F,G",
               "description": null
             }
           ]
@@ -455,10 +455,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Ribiselkuchen mit Streusel",
+              "title": "Ribiselkuchen mit Streusel Zwetschkenkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -478,7 +478,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-29": {
       "categories": [
@@ -676,10 +676,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Kokos - Heidelbeer- Reisdessert",
+              "title": "Kokos - Heidelbeer- Reisdessert Himbeer Panna Cotta",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G",
               "description": null
             }
           ]
@@ -688,10 +688,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Mango Schnitte",
+              "title": "Mango Schnitte Ribisel-Streuselkuchen",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -711,7 +711,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-30": {
       "categories": [
@@ -856,7 +856,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Brombeer Mousse",
+              "title": "Brombeer Mousse Kokos - Heidelbeer - Reisdessert",
               "price": null,
               "tags": [],
               "allergens": "A,F,G,H",
@@ -868,10 +868,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Topfen - Obersschnitte",
+              "title": "Topfen - Obersschnitte Mango Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -891,7 +891,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     }
   }
 }

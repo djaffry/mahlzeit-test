@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-10-26T09:35:14.313Z",
+  "fetchedAt": "2026-10-27T09:35:18.447Z",
   "error": null,
   "days": {
     "2026-10-27": {
@@ -209,7 +209,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Chocolate mousse, raspberries",
+              "title": "Chocolate mousse, raspberry blackberry buttermilk mousse",
               "price": null,
               "tags": [],
               "allergens": "F,G",
@@ -221,10 +221,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Plum crumble cake",
+              "title": "Plum cake chocolate brownie",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -244,7 +244,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-28": {
       "categories": [
@@ -443,10 +443,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Raspberry Panna Cotta",
+              "title": "Raspberry Panna Cotta Mousse au Chocolat, raspberries",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "F,G",
               "description": null
             }
           ]
@@ -455,10 +455,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Currant cake with streusel",
+              "title": "Currant cake with plum cake crumble",
               "price": null,
               "tags": [],
-              "allergens": "A,F,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -478,7 +478,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-29": {
       "categories": [
@@ -676,10 +676,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Coconut blueberry rice dessert",
+              "title": "Coconut blueberry rice dessert raspberry panna cotta",
               "price": null,
               "tags": [],
-              "allergens": null,
+              "allergens": "G",
               "description": null
             }
           ]
@@ -688,10 +688,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Mango slices",
+              "title": "Mango slices currant crumble cake",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -711,7 +711,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     },
     "2026-10-30": {
       "categories": [
@@ -856,7 +856,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Blackberry mousse",
+              "title": "Blackberry mousse coconut - blueberry - rice dessert",
               "price": null,
               "tags": [],
               "allergens": "A,F,G,H",
@@ -868,10 +868,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Curd cheese - top cuts",
+              "title": "Curd - top slices mango slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -891,7 +891,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-27T09:35:14.895Z"
     }
   }
 }
