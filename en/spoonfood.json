@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-27T09:53:53.177Z",
+  "fetchedAt": "2026-10-28T09:35:15.845Z",
   "error": null,
   "days": {
     "2026-10-30": {
@@ -289,6 +289,148 @@
         }
       ],
       "fetchedAt": "2026-10-27T09:53:48.806Z"
+    },
+    "2026-10-28": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Potato 🥔 leek 🌿 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Carrot 🥕 ginger 🫚 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Cooked beef shoulder pork on creamed vegetables",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Rindfleisch"
+              ],
+              "allergens": null,
+              "description": "Potatoes 🥔, kohlrabi 🤍, beans 🫛, carrots 🥕 & pumpkin 🎃"
+            },
+            {
+              "title": "Crispy Loaded Smashed Potatoes 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Corn 🌽, leek 🌿, cheddar 🧀 & tandoori sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Italian bean 🫘 stew *Salsiccia style*",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "white 🤍 giant beans, cabbage 🥬, carrots 🥕, thyme 🌿, rosemary & rice"
+            },
+            {
+              "title": "Beetroot 🫜 potatoes 🥔 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Horseradish 🫚, dill 🌿 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Couscous-beetroot 🫜-fisole 🫛-salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "fresh parsley 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Almond chocolate 🍫 mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Plum 💜 mirror"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-28T09:35:13.781Z"
     }
   }
 }
