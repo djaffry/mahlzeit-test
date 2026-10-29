@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-28T09:35:15.845Z",
+  "fetchedAt": "2026-10-29T09:35:14.552Z",
   "error": null,
   "days": {
     "2026-10-30": {
@@ -431,6 +431,147 @@
         }
       ],
       "fetchedAt": "2026-10-28T09:35:13.781Z"
+    },
+    "2026-10-29": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Gemüse 🥒🥕🌿-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Rote Rüben 🫜-Dill 🌿-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Coq au vin",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Pilzen 🍄‍🟫, Erdäpfeln 🥔 & Karotten 🥕"
+            },
+            {
+              "title": "Eiernockerl 🍳",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿 & kleinem Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Süßkartoffel 🍠-Lauch 🌿-Ragout von der Waldviertler Freilandpute",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Erbsen 🫛 & Reis"
+            },
+            {
+              "title": "Orientalischer Gemüse-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Riesenbohnen 🫘, Karotten 🥕, Melanzani 🍆, Zucchini 🥒, gerösteten Fenchelsamen & Koriandersamen, Ras el-Hanout 🤎, Kardamom 🧡 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Couscous-Rote Rüben 🫜-Fisolen 🫛-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "frischer Petersilie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Mandel-Schoko 🍫-Mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Zwetschken 💜-Spiegel"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-10-29T09:35:12.820Z"
     }
   }
 }
