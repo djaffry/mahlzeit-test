@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-29T09:35:14.552Z",
+  "fetchedAt": "2026-10-30T09:35:17.546Z",
   "error": null,
   "days": {
     "2026-10-30": {
@@ -47,14 +47,14 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Colorful vegetable 🥒🥔🍄‍🟫 cream soup",
+              "title": "Fennel 🌿 cream soup - optional",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": null
+              "description": "Chives"
             }
           ]
         },
@@ -62,22 +62,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Tortilla lasagna",
+              "title": "Creamy smoked meat 🥓 oven pan",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": null,
-              "description": "Soy - baked with cheese 🧀 - with a small side salad 🥗"
+              "description": "Mushrooms 🍄‍🟫 & dumplings"
             },
             {
-              "title": "Warm brioche 🥐 casserole",
+              "title": "Warm cherry 🍒 poppy seed noodles",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Plum roaster 💜"
+              "description": null
             }
           ]
         },
@@ -85,25 +83,23 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Styrian root meat from the Ötscherblick pig",
+              "title": "Dille 🌿 cream fisols 🫛 stew",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei",
-                "Schweinefleisch"
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "yellow 💛 & red beets 🥕, leeks 🌿 & rice"
+              "description": "Debrezinern & rice"
             },
             {
-              "title": "Thai vegetable curry",
+              "title": "Potatoes 🥔 pumpkin 🎃 goulash",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Pak choi 🥬, carrots 🥕, zucchini 🥒, aubergine 🍆, shiitake mushrooms 🍄‍🟫, radish, coconut milk 🥥 & rice - optionally with coriander 🌿"
+              "description": "Rice - optional with sour cream"
             }
           ]
         },
@@ -111,14 +107,13 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Autumnal 🍁 Salad Bowl",
+              "title": "Couscous-beetroot 🫜-fisole 🫛-salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Chinese cabbage 🥬, tomatoes 🍅, grapes 🍇 & plums 💜"
+              "description": "fresh parsley 🌿"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
@@ -136,18 +131,18 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Bee sting 🐝 cake - in a cup",
+              "title": "Curd fruit cream",
               "price": "3,90",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Crumble 🍪 base"
+              "description": "Plums 💜, apricots 🍑 & oat crumble 🍪"
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-30T09:35:15.232Z"
     },
     "2026-10-27": {
       "categories": [

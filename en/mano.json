@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-26T09:35:12.955Z",
+  "fetchedAt": "2026-10-30T09:35:16.191Z",
   "error": null,
   "days": {
     "2026-10-26": {
@@ -138,7 +138,7 @@
               "description": null
             },
             {
-              "title": "Creamy porcini mushroom sauce with napkin dumplings, salad from the buffet",
+              "title": "Creamy porcini mushroom sauce with napkin dumplings and salad from the buffet",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -326,7 +326,7 @@
               "description": null
             },
             {
-              "title": "Carinthian Kasnudeln in brown butter, salad cup",
+              "title": "Porcini mushroom ravioli in brown butter, parmezan, salad cup",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -349,7 +349,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-30T09:35:15.232Z"
     }
   }
 }

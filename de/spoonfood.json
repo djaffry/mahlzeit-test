@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-10-29T09:35:14.552Z",
+  "fetchedAt": "2026-10-30T09:35:17.546Z",
   "error": null,
   "days": {
     "2026-10-30": {
@@ -47,14 +47,14 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Bunte Gemüse 🥒🥔🍄‍🟫-Cremesuppe",
+              "title": "Fenchel 🌿-Cremesuppe - optional",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": null
+              "description": "Schnittlauch"
             }
           ]
         },
@@ -62,22 +62,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Tortilla-Lasagne",
+              "title": "Cremige Selchfleisch 🥓-Ofen-Pfanne",
               "price": "7,90 / 10,90",
-              "tags": [
-                "Vegetarisch"
-              ],
+              "tags": [],
               "allergens": null,
-              "description": "Soja - mit Käse 🧀 überbacken - dazu ein kleiner Beilagensalat 🥗"
+              "description": "Champignons 🍄‍🟫 & Knödeln"
             },
             {
-              "title": "Warmer Brioche 🥐-Auflauf",
+              "title": "Warme Kirsch 🍒-Mohnnudeln",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Zwetschkenröster 💜"
+              "description": null
             }
           ]
         },
@@ -85,25 +83,23 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Steirisches Wurzelfleisch vom Ötscherblickschwein",
+              "title": "Dille 🌿-Rahmfisolen 🫛-Eintopf",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei",
-                "Schweinefleisch"
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "gelben 💛 & roten Rüben 🥕, Lauch 🌿 & Reis"
+              "description": "Debrezinern & Reis"
             },
             {
-              "title": "Thai-Gemüse-Curry",
+              "title": "Erdäpfel 🥔-Kürbis 🎃-Gulasch",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Pak Choi 🥬, Karotten 🥕, Zucchini 🥒, Melanzani 🍆, Shiitake-Pilzen 🍄‍🟫, Rettich, Kokosmilch 🥥 & Reis – optional mit Koriander 🌿"
+              "description": "Reis - optional mit Sauerrahm"
             }
           ]
         },
@@ -111,14 +107,13 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Herbstliche 🍁 Salad Bowl",
+              "title": "Couscous-Rote Rüben 🫜-Fisolen 🫛-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
-                "Vegan",
-                "Glutenfrei"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Chinakohl 🥬, Tomaten 🍅, Trauben 🍇 & Zwetschken 💜"
+              "description": "frischer Petersilie 🌿"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -136,18 +131,18 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Bienenstich 🐝-Torte - im Becher",
+              "title": "Topfen-Obst-Creme",
               "price": "3,90",
               "tags": [
-                "Vegetarisch"
+                "Vegan"
               ],
               "allergens": null,
-              "description": "Crumble 🍪-Boden"
+              "description": "Zwetschken 💜, Marille 🍑 & Hafer-Crumble 🍪"
             }
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-30T09:35:15.232Z"
     },
     "2026-10-27": {
       "categories": [

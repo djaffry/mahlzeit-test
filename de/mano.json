@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-10-26T09:35:12.955Z",
+  "fetchedAt": "2026-10-30T09:35:16.191Z",
   "error": null,
   "days": {
     "2026-10-26": {
@@ -326,7 +326,7 @@
               "description": null
             },
             {
-              "title": "Kärntner Kasnudeln in braunem Butter,Salatbecher",
+              "title": "Steinpilz Ravioli in braunem Butter, Parmezan ,Salatbecher",
               "price": "11,90 €",
               "tags": [
                 "Vegetarisch"
@@ -349,7 +349,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-26T09:35:12.030Z"
+      "fetchedAt": "2026-10-30T09:35:15.232Z"
     }
   }
 }
