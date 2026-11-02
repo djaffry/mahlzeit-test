@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-02T09:35:25.249Z",
+  "fetchedAt": "2026-11-02T12:38:44.240Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -223,10 +223,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Buttermilch Panna Cotta, marinierte Orangen",
+              "title": "Buttermilch Panna Cotta, marinierte Orangen Brombeer Mousse",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
@@ -235,12 +235,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Punschschnitte vegan",
+              "title": "Punschschnitte vegan Topfen - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-02T12:38:42.117Z"
     },
     "2026-11-03": {
       "categories": [

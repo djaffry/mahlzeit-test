@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-02T09:35:25.249Z",
+  "fetchedAt": "2026-11-02T12:38:44.240Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -223,10 +223,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Buttermilk panna cotta, marinated oranges",
+              "title": "Buttermilk panna cotta, marinated orange blackberry mousse",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,F,G,H",
               "description": null
             }
           ]
@@ -235,12 +235,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Vegan punch cuts",
+              "title": "Punch cuts vegan curd cheese - Obersschnitte",
               "price": null,
               "tags": [
                 "Vegan"
               ],
-              "allergens": "A,F,O",
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -260,7 +260,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-02T12:38:42.117Z"
     },
     "2026-11-03": {
       "categories": [
@@ -813,7 +813,7 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Vegetable lasagne, tomato sauce",
+              "title": "Vegetable lasagna, tomato sauce",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
