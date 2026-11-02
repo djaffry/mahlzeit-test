@@ -10,11 +10,11 @@
     },
     "Alkoholfrei": {
       "adapter": "quartiersechs",
-      "example": "Spaghetti, Soja-Bolognese, Oliven, Basilikum"
+      "example": "Fenchel - Apfelcremesuppe"
     },
     "Sweet Kiss": {
       "adapter": "mano",
-      "example": "Marmor-Nuttelakuchen"
+      "example": "Dinkel-Zwetschkenkuchen"
     }
   }
 }
