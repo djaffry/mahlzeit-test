@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-02T12:38:44.240Z",
+  "fetchedAt": "2026-11-03T09:35:19.896Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -353,7 +353,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Chili Cheese Fries",
+              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Loaded Fries, Roastbeef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -469,10 +469,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Grießpudding, Cranberries",
+              "title": "Grießpudding, Cranberries Buttermilch Panna Cotta, marinierte Orangen",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -481,10 +481,12 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Milch Schoko Schnitte",
+              "title": "Milch Schoko Schnitte Punschschnitte vegan",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -504,7 +506,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-04": {
       "categories": [
@@ -597,7 +599,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Chili Cheese Fries",
+              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Loaded Fries, Roastbeef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -713,10 +715,10 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Ricotta - Limettenmousse",
+              "title": "Ricotta - Limettenmousse Grießpudding, Cranberries",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -725,10 +727,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Oreoschnitte",
+              "title": "Oreoschnitte Milch Schoko Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -748,7 +750,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-05": {
       "categories": [
@@ -841,7 +843,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Chili Cheese Fries",
+              "title": "Beef Minute Steak, Gegrillte Landhendlbrust, Schweine Schaschlik Spieß, Pommes Frites, Cole Slaw, BBQ Sauce, Cocktail Sauce, Tagesbeilagen Loaded Fries, Roastbeef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -958,7 +960,7 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Vegane Erdnusscreme",
+              "title": "Vegane Erdnusscreme Ricotta - Limettenmousse",
               "price": null,
               "tags": [
                 "Vegan"
@@ -972,10 +974,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Orangenmousse Schnitte",
+              "title": "Orangenmousse Schnitte Oreoschnitte",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -995,7 +997,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-06": {
       "categories": [
@@ -1137,10 +1139,12 @@
           "name": "Creme oder Mousse",
           "items": [
             {
-              "title": "Joghurt - Maracuja Mousse",
+              "title": "Joghurt - Maracuja Mousse Vegane Erdnusscreme",
               "price": null,
-              "tags": [],
-              "allergens": "F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "E,F,G",
               "description": null
             }
           ]
@@ -1149,10 +1153,10 @@
           "name": "Kuchen und Torten",
           "items": [
             {
-              "title": "Gedeckter Birnenkuchen",
+              "title": "Gedeckter Birnenkuchen Orangenmousse Schnitte",
               "price": null,
               "tags": [],
-              "allergens": "A",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1172,7 +1176,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     }
   }
 }

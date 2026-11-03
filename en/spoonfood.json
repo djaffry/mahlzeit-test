@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-02T09:35:24.436Z",
+  "fetchedAt": "2026-11-03T09:35:20.006Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -156,6 +156,148 @@
         }
       ],
       "fetchedAt": "2026-11-02T09:35:22.312Z"
+    },
+    "2026-11-03": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Oriental lentil soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Cumin 🤎"
+            },
+            {
+              "title": "Celery 🌿 pear 🍐 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Oriental Kapsa from the Waldviertler free-range turkey",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Zucchini 🥒, peppers 🫑 & raisins"
+            },
+            {
+              "title": "Italian risoni pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Spinach 💚, roasted sunflower seeds 🌻 & feta"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Kharcho - Georgian stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Braised beef - in walnut sauce with kohlrabi, 🤍 carrots 🥕 & rice"
+            },
+            {
+              "title": "Jerusalem artichoke 🫚 mushroom 🍄‍🟫 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Thyme 🌿, carrots 🥕, potatoes 🥔 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental potatoes 🥔 chickpea salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, cucumbers 🥒, fried fennel 🌿, curry 🧡 & Ras el-Hanout 🤎"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Pumpkin 🎃-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "pumpkin seeds"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     }
   }
 }

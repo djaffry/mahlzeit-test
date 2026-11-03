@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-02T12:38:44.240Z",
+  "fetchedAt": "2026-11-03T09:35:19.896Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -353,7 +353,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dish chili cheese fries",
+              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes loaded fries, roast beef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -469,10 +469,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Semolina pudding, cranberries",
+              "title": "Semolina pudding, cranberries buttermilk panna cotta, marinated oranges",
               "price": null,
               "tags": [],
-              "allergens": "A,H",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -481,10 +481,12 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Milk chocolate slices",
+              "title": "Milk chocolate slices punch slices vegan",
               "price": null,
-              "tags": [],
-              "allergens": "A,C,F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,C,F,G,O",
               "description": null
             }
           ]
@@ -504,7 +506,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-04": {
       "categories": [
@@ -597,7 +599,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dish chili cheese fries",
+              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes loaded fries, roast beef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -713,10 +715,10 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Ricotta - lime mousse",
+              "title": "Ricotta - lime mousse, semolina pudding, cranberries",
               "price": null,
               "tags": [],
-              "allergens": "G",
+              "allergens": "A,G,H",
               "description": null
             }
           ]
@@ -725,10 +727,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Oreo slices",
+              "title": "Oreo slices milk chocolate slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,G,H",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -748,7 +750,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-05": {
       "categories": [
@@ -841,7 +843,7 @@
           "name": "Classic Grill",
           "items": [
             {
-              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dish chili cheese fries",
+              "title": "Beef minute steak, grilled country chicken breast, pork shish kebab skewer, French fries, cole slaw, BBQ sauce, cocktail sauce, daily side dishes loaded fries, roast beef",
               "price": "11,40 €",
               "tags": [
                 "Rindfleisch",
@@ -958,7 +960,7 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Vegan peanut cream",
+              "title": "Vegan peanut cream ricotta - lime mousse",
               "price": null,
               "tags": [
                 "Vegan"
@@ -972,10 +974,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Orange mousse slices",
+              "title": "Orange mousse slices Oreo slices",
               "price": null,
               "tags": [],
-              "allergens": "A,C,F,G",
+              "allergens": "A,C,F,G,H",
               "description": null
             }
           ]
@@ -995,7 +997,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     },
     "2026-11-06": {
       "categories": [
@@ -1137,10 +1139,12 @@
           "name": "Cream or mousse",
           "items": [
             {
-              "title": "Yoghurt - passion fruit mousse",
+              "title": "Yogurt - Passion Fruit Mousse Vegan Peanut Cream",
               "price": null,
-              "tags": [],
-              "allergens": "F,G",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "E,F,G",
               "description": null
             }
           ]
@@ -1149,10 +1153,10 @@
           "name": "Cakes and tarts",
           "items": [
             {
-              "title": "Covered pear cake",
+              "title": "Covered pear cake with orange mousse slices",
               "price": null,
               "tags": [],
-              "allergens": "A",
+              "allergens": "A,C,F,G",
               "description": null
             }
           ]
@@ -1172,7 +1176,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T09:35:17.703Z"
     }
   }
 }
