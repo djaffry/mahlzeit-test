@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-11-02T09:35:23.430Z",
+  "fetchedAt": "2026-11-03T12:04:26.346Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -121,7 +121,7 @@
           "items": [
             {
               "title": "Maishuhnfilet Stroganoff mit Champignons ,Rucolareis",
-              "price": "12,90 €",
+              "price": "11,90 €",
               "tags": [
                 "Fleisch"
               ],
@@ -163,7 +163,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-02T09:35:22.312Z"
+      "fetchedAt": "2026-11-03T12:04:25.410Z"
     },
     "2026-11-04": {
       "categories": [

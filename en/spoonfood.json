@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-03T09:35:20.006Z",
+  "fetchedAt": "2026-11-03T12:04:27.605Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -243,7 +243,7 @@
                 "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Braised beef - in walnut sauce with kohlrabi, 🤍 carrots 🥕 & rice"
+              "description": "braised beef - in walnut sauce with cauliflower, 🤍 carrots 🥕 & rice"
             },
             {
               "title": "Jerusalem artichoke 🫚 mushroom 🍄‍🟫 stew",
@@ -297,7 +297,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-03T09:35:17.703Z"
+      "fetchedAt": "2026-11-03T12:04:25.410Z"
     }
   }
 }
