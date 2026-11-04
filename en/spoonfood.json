@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-03T12:04:27.605Z",
+  "fetchedAt": "2026-11-04T09:35:28.650Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -298,6 +298,155 @@
         }
       ],
       "fetchedAt": "2026-11-03T12:04:25.410Z"
+    },
+    "2026-11-04": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Miso soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Vegetables 🥦🥕🥒, wakame 🌿 & shiitake mushrooms"
+            },
+            {
+              "title": "Jerusalem artichoke 🫚 coconut 🥥 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Rigatoni Chicken Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Parmesan 🧀"
+            },
+            {
+              "title": "Autumnal 🍁 dumpling pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Red cabbage 🩷, goat cheese 🧀, thyme 🌿 & chestnuts 🌰 - optionally with Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Turkish lentil stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Turkey crackers 🥓, root vegetables 🥕 & rice"
+            },
+            {
+              "title": "Chickpea and tahini stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Carrots 🥕, zucchini 🥒, mango 🥭, sweet potatoes 🍠 & rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental potatoes 🥔 chickpea salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomatoes 🍅, cucumbers 🥒, fried fennel 🌿, curry 🧡 & Ras el-Hanout 🤎"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Baked apple 🍎 tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Pumpkin 🎃-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "pumpkin seeds"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-04T09:35:27.147Z"
     }
   }
 }

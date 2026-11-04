@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-03T12:04:27.605Z",
+  "fetchedAt": "2026-11-04T09:35:28.650Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -298,6 +298,155 @@
         }
       ],
       "fetchedAt": "2026-11-03T12:04:25.410Z"
+    },
+    "2026-11-04": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Misosuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Gemüse 🥦🥕🥒, Wakame 🌿 & Shiitake-Pilzen"
+            },
+            {
+              "title": "Topinambur 🫚-Kokos 🥥-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Rigatoni Chicken Alfredo",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Parmesan 🧀"
+            },
+            {
+              "title": "Herbstliche 🍁 Nockerlpfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Rotkraut 🩷, Ziegenkäse 🧀, Thymian 🌿 & Maroni 🌰 – optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Türkischer Linsen-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Puten-Knackern 🥓, Wurzelgemüse 🥕 & Reis"
+            },
+            {
+              "title": "Kichererbsen-Tahini-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Karotten 🥕, Zucchini 🥒, Mango 🥭, Süßkartoffeln 🍠 & Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Erdäpfel 🥔-Kichererbsen-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tomaten 🍅, Gurken 🥒, gebratenem Fenchel 🌿, Curry 🧡 & Ras el-Hanout 🤎"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Bratapfel 🍎-Tiramisu",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Kürbis 🎃-Panna Cotta",
+              "price": "3,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Kürbiskernen"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-04T09:35:27.147Z"
     }
   }
 }
