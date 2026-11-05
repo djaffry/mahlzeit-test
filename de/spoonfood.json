@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-05T09:35:19.318Z",
+  "fetchedAt": "2026-11-05T12:32:22.996Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -583,20 +583,11 @@
               ],
               "allergens": null,
               "description": null
-            },
-            {
-              "title": "Kürbis 🎃-Panna Cotta",
-              "price": "3,90",
-              "tags": [
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "Kürbiskernen"
             }
           ]
         }
       ],
-      "fetchedAt": "2026-11-05T09:35:16.803Z"
+      "fetchedAt": "2026-11-05T12:32:20.212Z"
     }
   }
 }
