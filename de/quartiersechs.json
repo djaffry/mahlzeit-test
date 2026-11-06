@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-03T09:35:19.896Z",
+  "fetchedAt": "2026-11-06T12:15:00.637Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -1060,7 +1060,7 @@
           "name": "Hauptspeise Vegetarisch/Vegan",
           "items": [
             {
-              "title": "Gefüllte Zucchini mit Tempeh, Karottensauce",
+              "title": "Gefüllte Zucchini mit Tempeh, Karottensauce, Chilikartoffeln",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -1074,7 +1074,7 @@
           "name": "Pasta Station",
           "items": [
             {
-              "title": "Triangolo Rote Rüben - Zitronenfülle, Petersil Gnocchi, Conchiglie, extra-vergine Olivenöl mit Kräutern, Krensauce, Haselnuss- Rucola Pesto, Babyspinat, Zucchini, Cherrytomaten, Grana",
+              "title": "Ravioli Ziegenkäse - Paprikafülle, Petersil Gnocchi, Conchiglie, extra-vergine Olivenöl mit Kräutern, Krensauce, Haselnuss- Rucola Pesto, Babyspinat, Zucchini, Cherrytomaten, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1176,7 +1176,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-03T09:35:17.703Z"
+      "fetchedAt": "2026-11-06T12:14:58.011Z"
     }
   }
 }

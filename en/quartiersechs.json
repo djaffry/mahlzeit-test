@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-03T09:35:19.896Z",
+  "fetchedAt": "2026-11-06T12:15:00.637Z",
   "error": null,
   "days": {
     "2026-11-02": {
@@ -1060,7 +1060,7 @@
           "name": "Main course vegetarian/vegan",
           "items": [
             {
-              "title": "Stuffed zucchini with tempeh, carrot sauce",
+              "title": "Stuffed zucchini with tempeh, carrot sauce, chili potatoes",
               "price": "12,30 €",
               "tags": [
                 "Vegan"
@@ -1074,7 +1074,7 @@
           "name": "Pasta station",
           "items": [
             {
-              "title": "Triangolo beetroot - lemon filling, parsley gnocchi, conchiglie, extra-virgin olive oil with herbs, horseradish sauce, hazelnut-rucola pesto, baby spinach, zucchini, cherry tomatoes, Grana",
+              "title": "Ravioli goat cheese - pepper filling, parsley gnocchi, conchiglie, extra-virgin olive oil with herbs, horseradish sauce, hazelnut-rocket pesto, baby spinach, zucchini, cherry tomatoes, Grana",
               "price": "9,90 €",
               "tags": [
                 "Vegetarisch"
@@ -1176,7 +1176,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-03T09:35:17.703Z"
+      "fetchedAt": "2026-11-06T12:14:58.011Z"
     }
   }
 }
