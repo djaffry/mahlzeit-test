@@ -1,0 +1,314 @@
+{
+  "id": "bahnbistro",
+  "title": "OEBB Bahnbistro",
+  "url": "https://bahnbistro.digiattack.net",
+  "type": "full",
+  "icon": "train",
+  "cuisine": [
+    "Kantine"
+  ],
+  "coordinates": {
+    "lat": 48.2215,
+    "lon": 16.3952
+  },
+  "fetchedAt": "2026-11-09T09:35:28.604Z",
+  "error": null,
+  "days": {
+    "2026-11-09": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "NoMeat-Gulasch",
+              "price": null,
+              "tags": [],
+              "allergens": "A,F,L,M,N,O",
+              "description": "Gemüse, Ajvar & Sojasoße, Fladenbrot"
+            },
+            {
+              "title": "Chicken Teriyaki",
+              "price": null,
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": "A,F,N",
+              "description": "Jasminreis & zweierlei Karotten, Gerösteter Sesam"
+            },
+            {
+              "title": "Käsekrainer vom Grill",
+              "price": null,
+              "tags": [],
+              "allergens": "G,M",
+              "description": "Potatoe Wedges, Estragonsenf"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Erdbeer-Sahnekuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-09T09:35:27.712Z"
+    },
+    "2026-11-10": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Chickichen Fingers",
+              "price": null,
+              "tags": [],
+              "allergens": "A",
+              "description": "Duftreis & Kartoffelsalat, Zitrone"
+            },
+            {
+              "title": "Cremige Schinkenfleckerl",
+              "price": null,
+              "tags": [
+                "Pute",
+                "Schweinefleisch"
+              ],
+              "allergens": "A,C,G",
+              "description": "Putenschinken, Obers & Käse, Frischer Schnittlauch"
+            },
+            {
+              "title": "Knödelteller",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Grammel & Wurst, Warmer Krautsalat"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Vanillekrapfen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-09T09:35:27.712Z"
+    },
+    "2026-11-11": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kürbis-Gnocchi",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": "A,H",
+              "description": "Sugo Jardineira, Grana Vegano"
+            },
+            {
+              "title": "Surschnitzerl gebacken",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C",
+              "description": "Pommes frites, Ketchup & Zitrone"
+            },
+            {
+              "title": "Spicy Tuna-Buddha Bowl",
+              "price": null,
+              "tags": [
+                "Fisch"
+              ],
+              "allergens": "C,D,F,M,N",
+              "description": "Edamame, Mais & Rotkraut, Toppings & Sriracha-Mayo"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Marillenpalatschinke",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-09T09:35:27.712Z"
+    },
+    "2026-11-12": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Frühlingsrolle",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,E,F,L,N",
+              "description": "Gemüse-Eierreis & Wakame, Sweet-Chili Dip"
+            },
+            {
+              "title": "Entenkeule gebraten",
+              "price": null,
+              "tags": [
+                "Ente"
+              ],
+              "allergens": "O",
+              "description": "Rotkraut & Erdäpfelknödel, Preiselbeeren"
+            },
+            {
+              "title": "Cevapcici",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": "Skin-on Fries, Ajvar & Yoghurt"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Kirschen-Blechkuchen",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G,H",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-09T09:35:27.712Z"
+    },
+    "2026-11-13": {
+      "categories": [
+        {
+          "name": "Vorspeise",
+          "items": [
+            {
+              "title": "Obst",
+              "price": null,
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Hauptspeise",
+          "items": [
+            {
+              "title": "Kaiserschmarren",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Apfelmus, Staubzucker"
+            },
+            {
+              "title": "Seelachsfilet Müllerin",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,D,F,G,M",
+              "description": "Petersilkartoffeln, Sauce Tartare & Zitrone"
+            },
+            {
+              "title": "Spinat-Käseknödel",
+              "price": null,
+              "tags": [],
+              "allergens": "A,C,G",
+              "description": "Rahmsoße, Frischer Kren"
+            }
+          ]
+        },
+        {
+          "name": "Dessert",
+          "items": [
+            {
+              "title": "Rahm-Früchtchen",
+              "price": null,
+              "tags": [],
+              "allergens": "G",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-09T09:35:27.712Z"
+    }
+  }
+}
