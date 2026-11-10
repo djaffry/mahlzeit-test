@@ -14,7 +14,7 @@
     "lat": 48.2211,
     "lon": 16.3926
   },
-  "fetchedAt": "2026-11-09T09:35:29.390Z",
+  "fetchedAt": "2026-11-10T09:35:17.330Z",
   "error": null,
   "days": {
     "2026-11-09": {
@@ -125,7 +125,7 @@
               "tags": [
                 "Fleisch"
               ],
-              "allergens": "N,F,E,H",
+              "allergens": "E,H",
               "description": null
             },
             {
@@ -134,7 +134,7 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "D,A,C,G",
+              "allergens": "D,F,N",
               "description": null
             },
             {
@@ -143,7 +143,7 @@
               "tags": [
                 "Vegetarisch"
               ],
-              "allergens": "A,C,G",
+              "allergens": "C",
               "description": null
             }
           ]
@@ -157,13 +157,13 @@
               "tags": [
                 "Sweet Kiss"
               ],
-              "allergens": "G",
+              "allergens": "G,H",
               "description": null
             }
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-10T09:35:16.734Z"
     },
     "2026-11-11": {
       "categories": [
