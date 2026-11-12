@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-12T09:35:40.183Z",
+  "fetchedAt": "2026-11-12T12:56:56.627Z",
   "error": null,
   "days": {
     "2026-11-13": {
@@ -580,6 +580,143 @@
         }
       ],
       "fetchedAt": "2026-11-12T09:35:37.668Z"
+    },
+    "2026-11-12": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Sweet potato 🍠 ginger 🫚 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Coconut milk 🥥"
+            },
+            {
+              "title": "Truffled cauliflower 🤍 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el Hanout 🧡"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Quiche",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Leek 🌿, yellow 💛 & green zucchini 🥒, & roasted turkey ham 🥓 - optionally with sour cream"
+            },
+            {
+              "title": "Indonesian fried noodle pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Wok vegetables 🥦🥕🥬 & sambal manis"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Potato 🥔 goulash",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Debrezinern & rice – optionally with sour cream"
+            },
+            {
+              "title": "Ful Medames - Egyptian Bean 🫘 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "colorful bean mix (kidney beans 🫘, white 🤍 & black 🖤 beans), marinated fresh tomatoes 🍅 in lemon juice 🍋 & olive oil 🫒 - with rice"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Bulgur carrot 🥕 tabbouleh salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "fresh lemon 🍋, mint 🌿, cherry tomatoes 🍅 & cucumber 🥒"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Plum cake 💜",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-12T12:56:54.031Z"
     }
   }
 }
