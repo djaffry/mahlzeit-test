@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-11T09:35:27.335Z",
+  "fetchedAt": "2026-11-12T09:35:40.183Z",
   "error": null,
   "days": {
     "2026-11-13": {
@@ -464,24 +464,24 @@
           "name": "Soups",
           "items": [
             {
-              "title": "Potato 🥔 vegetable cream soup",
-              "price": "4,20 / 6,20",
-              "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "Tandoori 🧡 & Dille 🌿"
-            },
-            {
-              "title": "Chickpea spinach 💚 soup – optional",
+              "title": "Sweet potato 🍠 ginger 🫚 cream soup",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Chives 🌿"
+              "description": "Coconut milk 🥥"
+            },
+            {
+              "title": "Truffled cauliflower 🤍 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el Hanout 🧡"
             }
           ]
         },
@@ -489,20 +489,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Sliced Styrian chicken *gyros style* in Metaxa sauce",
+              "title": "Quiche",
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
-              "description": "Schupfnudeln & Paprika Tricolore 🫑 - with a small side salad 🥗"
+              "description": "Leek 🌿, yellow 💛 & green zucchini 🥒, & roasted turkey ham 🥓 - optionally with sour cream"
             },
             {
-              "title": "Baked oven cauliflower 🤍",
+              "title": "Indonesian fried noodle pan",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Ras el-Hanout on turmeric 🧡 couscous with tandoori 🧡 herb 🌿 dip"
+              "description": "Wok vegetables 🥦🥕🥬 & sambal manis"
             }
           ]
         },
@@ -510,24 +510,23 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Potatoes 🥔-stewed cabbage 🥬-stew",
+              "title": "Potato 🥔 goulash",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "mixed minced meat, white cabbage 🤍, tomatoes 🍅 & rice"
+              "description": "Debrezinern & rice – optionally with sour cream"
             },
             {
-              "title": "Jaipur vegetable curry – in cashew coconut 🥥 sauce",
+              "title": "Ful Medames - Egyptian Bean 🫘 stew",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Sweet potatoes 🍠, cauliflower 🤍, carrots 🥕, leeks 💚, broccoli 🥦 & rice - optionally with coriander 🌿"
+              "description": "colorful bean mix (kidney beans 🫘, white 🤍 & black 🖤 beans), marinated fresh tomatoes 🍅 in lemon juice 🍋 & olive oil 🫒 - with rice"
             }
           ]
         },
@@ -535,13 +534,13 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Asian glass noodle salad bowl",
+              "title": "Bulgur carrot 🥕 tabbouleh salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Sesame chili 🌶️ dressing, wok vegetables 🥕, edamame 🫛 & peanuts 🥜"
+              "description": "fresh lemon 🍋, mint 🌿, cherry tomatoes 🍅 & cucumber 🥒"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
@@ -559,7 +558,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Tangerine 🍊 tiramisu",
+              "title": "Plum cake 💜",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -580,7 +579,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-11T09:35:24.712Z"
+      "fetchedAt": "2026-11-12T09:35:37.668Z"
     }
   }
 }

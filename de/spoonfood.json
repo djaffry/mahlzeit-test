@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-11T09:35:27.335Z",
+  "fetchedAt": "2026-11-12T09:35:40.183Z",
   "error": null,
   "days": {
     "2026-11-13": {
@@ -464,24 +464,24 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "Erdäpfel 🥔-Gemüse-Cremesuppe",
-              "price": "4,20 / 6,20",
-              "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
-              ],
-              "allergens": null,
-              "description": "Tandoori 🧡 & Dille 🌿"
-            },
-            {
-              "title": "Kichererbsen-Spinat 💚-Suppe – optional",
+              "title": "Süßkartoffel 🍠-Ingwer 🫚-Cremesuppe",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Schnittlauch 🌿"
+              "description": "Kokosmilch 🥥"
+            },
+            {
+              "title": "Getrüffelte Karfiol 🤍-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el-Hanout 🧡"
             }
           ]
         },
@@ -489,20 +489,20 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Geschnetzeltes vom Steirerhuhn *Gyros-Style* in Metaxa-Sauce",
+              "title": "Quiche",
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
-              "description": "Schupfnudeln & Paprika Tricolore 🫑 - dazu ein kleiner Beilagensalat 🥗"
+              "description": "Lauch 🌿, gelber 💛 & grüner Zucchini 🥒, & geröstetem Putenschinken 🥓 – optional mit Sauerrahm"
             },
             {
-              "title": "Gebackener Ofen-Karfiol 🤍",
+              "title": "Indonesische Bratnudelpfanne",
               "price": "7,90 / 10,90",
               "tags": [
-                "Vegan"
+                "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Ras el-Hanout auf Kurkuma 🧡-Couscous mit Tandoori 🧡-Kräuter 🌿-Dip"
+              "description": "Wokgemüse 🥦🥕🥬 & Sambal Manis"
             }
           ]
         },
@@ -510,24 +510,23 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Erdäpfel 🥔-Schmorkohl 🥬-Eintopf",
+              "title": "Erdäpfel 🥔-Gulasch",
               "price": "6,90 / 9,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "gemischtem Faschierten, Weißkraut 🤍, Tomaten 🍅 & Reis"
+              "description": "Debrezinern & Reis – optional mit Sauerrahm"
             },
             {
-              "title": "Jaipur-Gemüse-Curry – in Cashew-Kokos 🥥-Sauce",
+              "title": "Ful Medames - Ägyptischer Bohnen 🫘-Eintopf",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Süßkartoffeln 🍠, Karfiol 🤍, Karotten 🥕, Lauch 💚, Brokkoli 🥦 & Reis – optional mit Koriander 🌿"
+              "description": "buntem Bohnenmix (Kidneybohnen 🫘, weißen 🤍 & schwarzen 🖤 Bohnen), marinierten, frischen Tomaten 🍅 in Zitronensaft 🍋 & Olivenöl 🫒 – dazu Reis"
             }
           ]
         },
@@ -535,13 +534,13 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Asiatische Glasnudel-Salad Bowl",
+              "title": "Bulgur-Karotten 🥕-Tabouleh-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Sesam-Chili 🌶️-Dressing, Wokgemüse 🥕, Edamame 🫛 & Erdnüssen 🥜"
+              "description": "frischer Zitrone 🍋, Minze 🌿, Cherrytomaten 🍅 & Gurken 🥒"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -559,7 +558,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Mandarinen 🍊-Tiramisu",
+              "title": "Zwetschkenkuchen 💜",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -580,7 +579,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-11T09:35:24.712Z"
+      "fetchedAt": "2026-11-12T09:35:37.668Z"
     }
   }
 }
