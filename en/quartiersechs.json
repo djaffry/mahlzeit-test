@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-09T09:35:29.590Z",
+  "fetchedAt": "2026-11-13T09:35:26.098Z",
   "error": null,
   "days": {
     "2026-11-09": {
@@ -84,7 +84,7 @@
               "tags": [
                 "Vegan"
               ],
-              "allergens": "H,L",
+              "allergens": "H,L,N",
               "description": null
             }
           ]
@@ -128,7 +128,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -137,14 +137,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
               "title": "Fried Melanzani \"Vietnamese style\" with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -262,7 +262,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-10": {
       "categories": [
@@ -375,7 +375,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -384,14 +384,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
               "title": "Fried Melanzani \"Vietnamese style\" with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -510,7 +510,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-11": {
       "categories": [
@@ -623,7 +623,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -632,14 +632,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
               "title": "Fried Melanzani \"Vietnamese style\" with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -755,7 +755,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-12": {
       "categories": [
@@ -868,7 +868,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -877,14 +877,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
               "title": "Fried Melanzani \"Vietnamese style\" with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -998,7 +998,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-13": {
       "categories": [
@@ -1095,7 +1095,7 @@
               "tags": [
                 "Rindfleisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -1104,14 +1104,14 @@
               "tags": [
                 "Fisch"
               ],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
               "title": "Fried Melanzani \"Vietnamese style\" with wok vegetables, jasmine rice",
               "price": "10,90 €",
               "tags": [],
-              "allergens": "A,D,E,F,G,L,M,N,O",
+              "allergens": "A,B,D,E,F,G,L,M,N,O",
               "description": null
             },
             {
@@ -1190,7 +1190,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     }
   }
 }

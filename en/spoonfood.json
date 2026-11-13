@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-12T12:56:56.627Z",
+  "fetchedAt": "2026-11-13T09:35:25.380Z",
   "error": null,
   "days": {
     "2026-11-13": {
@@ -47,22 +47,14 @@
           "name": "Soups",
           "items": [
             {
-              "title": "SpoonFood’s Beef Tea (clear beef broth 💪)",
+              "title": "Broccoli 🥦 cream soup - optional",
               "price": "4,20 / 6,20",
               "tags": [
-                "Rindfleisch"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Vegetables 🥕, Tarnhonya & chives 🌿"
-            },
-            {
-              "title": "Oriental vegetable 🥒🥕🌿 cream soup",
-              "price": "4,20 / 6,20",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": "Ras el Hanout 🤎"
+              "description": "Chives 🌿"
             }
           ]
         },
@@ -70,23 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Arroz con Chorizo 🥓 & Paprika 🫑 - Spanish rice pan",
+              "title": "Creamy ham patties",
               "price": "7,90 / 10,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
+                "Schweinefleisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Peas 🫛 & small side salad 🥗 – optionally with sour cream | fresh parsley 🌿"
             },
             {
-              "title": "Tortellini",
+              "title": "Warm berry roaster 🍓 curd semolina casserole",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Cheese filling 🧀 - in spinach 💚 ricotta sauce - optionally with parmesan"
+              "description": "Vanilla sauce 💛"
             }
           ]
         },
@@ -94,24 +85,24 @@
           "name": "Stews",
           "items": [
             {
-              "title": "Shakria Mansaf - Arabic chicken in yogurt sauce",
+              "title": "Autumnal. 🍁 Bean 🫘 cassoulet",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
-                "Huhn"
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Peas 🫛, capers 💚, carrots 🥕 & rice"
+              "description": "Bacon 🥓, cabbage 🥬, carrots 🥕, peppers 🫑 & rice"
             },
             {
-              "title": "Indian pumpkin 🎃 curry - in coconut 🥥 cashew sauce",
+              "title": "Mediterranean braised vegetables",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Broccoli 🥦, potatoes 🥔 & rice - optionally with coriander 🌿"
+              "description": "dried tomatoes 🍅, yellow 💛 zucchini 🥒, black 🖤 olives 🫒, peppers 🫑, aubergine 🍆 & rice"
             }
           ]
         },
@@ -119,13 +110,13 @@
           "name": "Salads",
           "items": [
             {
-              "title": "Asian glass noodle salad bowl",
+              "title": "Bulgur carrot 🥕 tabbouleh salad bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Sesame chili 🌶️ dressing, wok vegetables 🥕, edamame 🫛 & peanuts 🥜"
+              "description": "fresh lemon 🍋, mint 🌿, cherry tomatoes 🍅 & cucumber 🥒"
             },
             {
               "title": "Colorful mixed salad 🥬 🍅 🥒",
@@ -143,11 +134,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Mango 🥭 mousse",
+              "title": "Plum cake 💜",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -155,7 +145,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-09": {
       "categories": [
@@ -354,7 +344,7 @@
               "price": "7,90 / 10,90",
               "tags": [],
               "allergens": null,
-              "description": "Potato puree 🥔 & fried onions – optionally with chives 🌿"
+              "description": "Potato puree 🥔 & fried onions - optionally with chives 🌿"
             },
             {
               "title": "Polenta 💛 vegetable saganaki",

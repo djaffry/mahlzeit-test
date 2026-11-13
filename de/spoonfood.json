@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-12T12:56:56.627Z",
+  "fetchedAt": "2026-11-13T09:35:25.380Z",
   "error": null,
   "days": {
     "2026-11-13": {
@@ -47,22 +47,14 @@
           "name": "Suppen",
           "items": [
             {
-              "title": "SpoonFood’s Beef-Tea (klare Rinder-Kraftbrühe 💪)",
+              "title": "Brokkoli 🥦-Cremesuppe - optional",
               "price": "4,20 / 6,20",
               "tags": [
-                "Rindfleisch"
+                "Vegan",
+                "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Gemüse 🥕, Tarnhonya & Schnittlauch 🌿"
-            },
-            {
-              "title": "Orientalische Gemüse 🥒🥕🌿-Cremesuppe",
-              "price": "4,20 / 6,20",
-              "tags": [
-                "Vegan"
-              ],
-              "allergens": null,
-              "description": "Ras el-Hanout 🤎"
+              "description": "Schnittlauch 🌿"
             }
           ]
         },
@@ -70,23 +62,22 @@
           "name": "Specials",
           "items": [
             {
-              "title": "Arroz con Chorizo 🥓 & Paprika 🫑 - Spanische Reispfanne",
+              "title": "Cremige Schinkenfleckerl",
               "price": "7,90 / 10,90",
               "tags": [
-                "Glutenfrei",
-                "Laktosefrei"
+                "Schweinefleisch"
               ],
               "allergens": null,
-              "description": null
+              "description": "Erbsen 🫛 & kleinem Beilagensalat 🥗 – optional mit Sauerrahm | frischer Petersilie 🌿"
             },
             {
-              "title": "Tortellini",
+              "title": "Warmer Beerenröster 🍓-Topfen-Grieß-Auflauf",
               "price": "7,90 / 10,90",
               "tags": [
                 "Vegetarisch"
               ],
               "allergens": null,
-              "description": "Käsefüllung 🧀 - in Spinat 💚-Ricotta-Sauce - optional mit Parmesan"
+              "description": "Vanillesauce 💛"
             }
           ]
         },
@@ -94,24 +85,24 @@
           "name": "Eintöpfe",
           "items": [
             {
-              "title": "Schakria Mansaf - Arabisches Huhn in Joghurtsauce",
+              "title": "Herbstl. 🍁 Bohnen 🫘-Cassoulet",
               "price": "6,90 / 9,90",
               "tags": [
                 "Glutenfrei",
-                "Huhn"
+                "Laktosefrei"
               ],
               "allergens": null,
-              "description": "Erbsen 🫛, Kapern 💚, Karotten 🥕 & Reis"
+              "description": "Speck 🥓, Kraut 🥬, Karotten 🥕, Paprika 🫑 & Reis"
             },
             {
-              "title": "Indisches Kürbis 🎃-Curry - in Kokos 🥥-Cashew-Sauce",
+              "title": "Mediterranes Schmorgemüse",
               "price": "6,90 / 9,90",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": "Brokkoli 🥦, Erdäpfeln 🥔 & Reis – optional mit Koriander 🌿"
+              "description": "getrockneten Tomaten 🍅, gelber 💛 Zucchini 🥒, schwarzen 🖤 Oliven 🫒, Paprika 🫑, Melanzani 🍆 & Reis"
             }
           ]
         },
@@ -119,13 +110,13 @@
           "name": "Salate",
           "items": [
             {
-              "title": "Asiatische Glasnudel-Salad Bowl",
+              "title": "Bulgur-Karotten 🥕-Tabouleh-Salad Bowl",
               "price": "6,10 / 8,10",
               "tags": [
                 "Vegan"
               ],
               "allergens": null,
-              "description": "Sesam-Chili 🌶️-Dressing, Wokgemüse 🥕, Edamame 🫛 & Erdnüssen 🥜"
+              "description": "frischer Zitrone 🍋, Minze 🌿, Cherrytomaten 🍅 & Gurken 🥒"
             },
             {
               "title": "Bunter gemischter Salat 🥬 🍅 🥒",
@@ -143,11 +134,10 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Mango 🥭-Mousse",
+              "title": "Zwetschkenkuchen 💜",
               "price": "3,90",
               "tags": [
-                "Vegetarisch",
-                "Glutenfrei"
+                "Vegetarisch"
               ],
               "allergens": null,
               "description": null
@@ -155,7 +145,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-09T09:35:27.712Z"
+      "fetchedAt": "2026-11-13T09:35:23.239Z"
     },
     "2026-11-09": {
       "categories": [
