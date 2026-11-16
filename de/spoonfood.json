@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-16T09:35:18.812Z",
+  "fetchedAt": "2026-11-16T12:56:07.163Z",
   "error": null,
   "days": {
     "2026-11-20": {
@@ -158,6 +158,148 @@
         }
       ],
       "fetchedAt": "2026-11-16T09:35:16.975Z"
+    },
+    "2026-11-16": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "SpoonFood’s Veg-Tea (klare Gemüse-Kraftbrühe 💪)",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Grießnockerl & Schnittlauch 🌿"
+            },
+            {
+              "title": "Mediterrane Tomaten 🍅-Kokos 🥥-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Ofenkartoffel 🥔",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Speck 🥓, Mais 🌽, Lauch 🌿 & Sauerrahm"
+            },
+            {
+              "title": "Gemüselasagne 🥒🥕🥦",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "kleinem Beilagensalat 🥗 – optional mit Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Tandoori 🧡-Chicken",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Mandeln, Brokkoli 🥦, Kokosmilch 🥥 & Reis – optional mit Koriander 🌿"
+            },
+            {
+              "title": "Erdäpfel 🥔-Kürbis 🎃-Ragout",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Reis"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Orientalische Karotten 🥕-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "gelben 💛 Rüben 🥕, Kichererbsen, Cranberries 🍓 & Zitronen 🍋-Honig 🍯-Dressing"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Malakoff 💛-Torte im Becher",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-16T12:56:06.121Z"
     }
   }
 }

@@ -12,7 +12,7 @@
     "lat": 48.2218,
     "lon": 16.3935
   },
-  "fetchedAt": "2026-11-16T09:35:18.976Z",
+  "fetchedAt": "2026-11-16T12:56:07.840Z",
   "error": null,
   "days": {
     "2026-11-16": {
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "Kebab chicken straight from the skewer, Turkish rice or French fries, pepperoni, lettuce, tomato, onion, red cabbage, ayran",
@@ -298,7 +298,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "“Spicy Chicken Ramen” with Szechuan chicken mince",
@@ -548,7 +548,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "“Spicy Chicken Ramen” with Szechuan chicken mince",
@@ -663,12 +663,12 @@
           "name": "salad corner",
           "items": [
             {
-              "title": "Colorful leaf lettuce, pink beiried, pear, walnuts",
+              "title": "Colorful leaf salad, grilled salmon fillet, honey mustard dressing",
               "price": "11,90 €",
               "tags": [
-                "Rindfleisch"
+                "Fisch"
               ],
-              "allergens": "H,M,O",
+              "allergens": "D,M,O",
               "description": null
             }
           ]
@@ -763,7 +763,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-16T09:35:16.975Z"
+      "fetchedAt": "2026-11-16T12:56:06.121Z"
     },
     "2026-11-19": {
       "categories": [
@@ -798,7 +798,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "“Spicy Chicken Ramen” with Szechuan chicken mince",
@@ -1051,7 +1051,7 @@
           ]
         },
         {
-          "name": "ALL TIME FAVORITE",
+          "name": "ALL-TIME FAVORITE",
           "items": [
             {
               "title": "“Spicy Chicken Ramen” with Szechuan chicken mince",
