@@ -10,11 +10,11 @@
     },
     "Alkoholfrei": {
       "adapter": "quartiersechs",
-      "example": "Fenchel - Apfelcremesuppe"
+      "example": "Gebratener Tofu, Gemüsecurry, Ananasreis, Zitronengras"
     },
     "Sweet Kiss": {
       "adapter": "mano",
-      "example": "Topfen-Limettenschnitte"
+      "example": "Maronischmarrn mit Zwetschkenröster"
     }
   }
 }
