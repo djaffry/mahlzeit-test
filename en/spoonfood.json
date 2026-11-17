@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-16T12:56:07.163Z",
+  "fetchedAt": "2026-11-17T09:35:24.557Z",
   "error": null,
   "days": {
     "2026-11-20": {
@@ -198,14 +198,14 @@
               "description": "Semolina dumplings & chives 🌿"
             },
             {
-              "title": "Mediterranean tomato 🍅 coconut 🥥 soup",
+              "title": "Pumpkin 🎃 cream soup – optional",
               "price": "4,20 / 6,20",
               "tags": [
                 "Vegan",
                 "Glutenfrei"
               ],
               "allergens": null,
-              "description": null
+              "description": "Pumpkin seed oil | Chives 🌿"
             }
           ]
         },
@@ -299,7 +299,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-16T12:56:06.121Z"
+      "fetchedAt": "2026-11-17T09:35:23.044Z"
     }
   }
 }
