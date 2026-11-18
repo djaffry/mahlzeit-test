@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-17T13:38:32.324Z",
+  "fetchedAt": "2026-11-18T09:35:40.761Z",
   "error": null,
   "days": {
     "2026-11-20": {
@@ -146,7 +146,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Malakoff 💛 cake in a mug",
+              "title": "Malakoff 💛 cake in a cup",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -288,7 +288,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Malakoff 💛 cake in a mug",
+              "title": "Malakoff 💛 cake in a cup",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -426,7 +426,7 @@
           "name": "Sweets",
           "items": [
             {
-              "title": "Malakoff 💛 cake in a mug",
+              "title": "Malakoff 💛 cake in a cup",
               "price": "3,90",
               "tags": [
                 "Vegetarisch"
@@ -438,6 +438,146 @@
         }
       ],
       "fetchedAt": "2026-11-17T13:38:30.851Z"
+    },
+    "2026-11-18": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Autumnal 🍁 vegetable 🥒🥕🥦 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Parsnip 🤍 soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Udon noodles *TanTan style*",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Minced beef & vegetables 🥒🥕🌿"
+            },
+            {
+              "title": "Saffron golden 🧡 apple 🍎 leek 🌿 risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Paprika 🫑-Hendl",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Spirals – optionally add cream"
+            },
+            {
+              "title": "Warming, vegan pumpkin 🎃 potatoes 🥔 spinach 💚 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ginger 🫚 & rice – optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Oriental carrots 🥕 salad bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "yellow 💛 beets 🥕, chickpeas, cranberries 🍓 & lemon 🍋 honey 🍯 dressing"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Malakoff 💛 cake in a cup",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-18T09:35:38.617Z"
     }
   }
 }
