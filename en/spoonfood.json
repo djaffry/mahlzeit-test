@@ -1,0 +1,162 @@
+{
+  "id": "spoonfood",
+  "title": "SpoonFood",
+  "url": "https://www.spoonfood.at/",
+  "type": "full",
+  "icon": "leaf",
+  "cuisine": [
+    "Bowls",
+    "Stews"
+  ],
+  "edenred": true,
+  "outdoor": true,
+  "coordinates": {
+    "lat": 48.2217,
+    "lon": 16.3932
+  },
+  "fetchedAt": "2026-11-23T14:57:41.560Z",
+  "error": null,
+  "days": {
+    "2026-11-23": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Yellow 💛 lentil and chickpea soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Ras el-Hanout 🧡 & fresh lemon 🍋"
+            },
+            {
+              "title": "Roasted carrot 🥕 coriander 🌿 soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Gnocchi in tomato 🍅 cream sauce",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": "roasted ham 🥓 & rocket 🌿-almond pesto (gratinated with mozzarella 🧀) - optionally with parmesan"
+            },
+            {
+              "title": "Black risotto",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Oven pumpkin 🎃 - optionally with parmesan 🧀 - with a small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Turkey curry from the Waldviertler free-range turkey - in tomato 🍅 cashew sauce",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Laktosefrei",
+                "Pute"
+              ],
+              "allergens": null,
+              "description": "Baby carrots 🥕, peppers 🫑, zucchini 🥒, ginger 🫚 & rice - optionally with coriander 🌿"
+            },
+            {
+              "title": "Red ❤️ lentil and vegetable dal",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Peas 🫛 & rice – optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Autumnal 🍁 Farfalle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Oven pumpkin 🎃 & pumpkin seed pesto 💚"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Matcha 🍵 chia coconut 🥥 pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Almond milk & matcha coconut flakes 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-23T14:57:39.242Z"
+    }
+  }
+}
