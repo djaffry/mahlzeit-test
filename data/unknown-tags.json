@@ -10,11 +10,11 @@
     },
     "Alkoholfrei": {
       "adapter": "quartiersechs",
-      "example": "Gebratener Tofu, Gemüsecurry, Ananasreis, Zitronengras"
+      "example": "Schwammerl Erdäpfelstrudel, warme Kräutersauce"
     },
     "Sweet Kiss": {
       "adapter": "mano",
-      "example": "Maronischmarrn mit Zwetschkenröster"
+      "example": "Karotten-Limettenkuchen"
     }
   }
 }
