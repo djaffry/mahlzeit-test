@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-23T14:57:41.560Z",
+  "fetchedAt": "2026-11-24T14:59:42.323Z",
   "error": null,
   "days": {
     "2026-11-23": {
@@ -157,6 +157,144 @@
         }
       ],
       "fetchedAt": "2026-11-23T14:57:39.242Z"
+    },
+    "2026-11-24": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Chicken Pho",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Sprouts 🌱 & rice noodles – optionally with coriander 🌿"
+            },
+            {
+              "title": "Carrot 🥕 fennel 🌿 soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "smoked paprika 🫑 - optionally with chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Shepherd’s Pie 🥧 from Wild",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Risoni mushroom 🍄‍🟫 pan",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "black olives 🫒, dried tomatoes 🍅, peppers 🫑 & leeks 🌿 - plus a small side salad 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Split peas 🫛 stew",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Frankfurters, bacon 🥓 & rice – optionally with sour cream | Chives 🌿"
+            },
+            {
+              "title": "Massaman vegetable curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu, aubergine 🍆, yellow 💛 beets 🥕, cabbage sprouts 🥬, zucchini 🥒, green beans 🫛, fennel 🌿 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Autumnal 🍁 Farfalle Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Oven pumpkin 🎃 & pumpkin seed pesto 💚"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Matcha 🍵 chia coconut 🥥 pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Almond milk & matcha coconut flakes 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-24T14:59:40.484Z"
     }
   }
 }

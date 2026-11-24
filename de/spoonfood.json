@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-23T14:57:41.560Z",
+  "fetchedAt": "2026-11-24T14:59:42.323Z",
   "error": null,
   "days": {
     "2026-11-23": {
@@ -157,6 +157,144 @@
         }
       ],
       "fetchedAt": "2026-11-23T14:57:39.242Z"
+    },
+    "2026-11-24": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Chicken-Pho",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Laktosefrei",
+                "Huhn"
+              ],
+              "allergens": null,
+              "description": "Sprossen 🌱 & Reisnudeln – optional mit Koriander 🌿"
+            },
+            {
+              "title": "Karotten 🥕-Fenchel 🌿-Suppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "geräucherter Paprika 🫑 - optional mit Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Sheperd’s Pie 🥧 vom Wild",
+              "price": "7,90 / 10,90",
+              "tags": [],
+              "allergens": null,
+              "description": null
+            },
+            {
+              "title": "Risoni-Pilz 🍄‍🟫-Pfanne",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "schwarzen Oliven 🫒, getrockneten Tomaten 🍅, Paprika 🫑 & Lauch 🌿 - dazu ein kleiner Beilagensalat 🥗"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Spalterbsen 🫛-Eintopf",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Frankfurtern, Speck 🥓 & Reis – optional mit Sauerrahm | Schnittlauch 🌿"
+            },
+            {
+              "title": "Massaman-Gemüse-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Tofu, Melanzani 🍆, gelben 💛 Rüben 🥕, Kohlsprossen 🥬, Zucchini 🥒, Fisolen 🫛, Fenchel 🌿 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Herbstliche 🍁 Farfalle-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Ofen-Kürbis 🎃 & Kürbiskern-Pesto 💚"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Matcha 🍵-Chia-Kokos 🥥-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandelmilch & Matcha-Kokosflocken 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-24T14:59:40.484Z"
     }
   }
 }
