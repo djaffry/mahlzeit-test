@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-24T14:59:42.323Z",
+  "fetchedAt": "2026-11-25T14:38:10.682Z",
   "error": null,
   "days": {
     "2026-11-23": {
@@ -295,6 +295,147 @@
         }
       ],
       "fetchedAt": "2026-11-24T14:59:40.484Z"
+    },
+    "2026-11-25": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Potato 🥔 cream soup – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            },
+            {
+              "title": "Tomato 🍅 pepper 🫑 cream soup",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Thyme 🌿 & coconut milk 🥥 - optionally with chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortelloni alla carne (with beef filling) in pumpkin 🎃 ricotta sauce - optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            },
+            {
+              "title": "Jufka vegetable casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Pumpkin 🎃 - baked with cheese 🧀 & honey 🍯 - optionally with sour cream"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Szeged cabbage meat 🥬 from the Ötscherblick pig",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Rice – optional with sour cream"
+            },
+            {
+              "title": "Yellow 💛 Thai coconut 🥥 vegetable curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Chinese cabbage, zucchini 🥒, aubergine 🍆, peppers 🫑 & rice - optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Couscous, fresh lime 🍋‍🟩, mint 🌿, cucumber 🥒, tomatoes 🍅 & parsley 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Matcha 🍵 chia coconut 🥥 pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Almond milk & matcha coconut flakes 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-25T14:38:07.930Z"
     }
   }
 }

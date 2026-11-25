@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-24T14:59:42.323Z",
+  "fetchedAt": "2026-11-25T14:38:10.682Z",
   "error": null,
   "days": {
     "2026-11-23": {
@@ -295,6 +295,147 @@
         }
       ],
       "fetchedAt": "2026-11-24T14:59:40.484Z"
+    },
+    "2026-11-25": {
+      "categories": [
+        {
+          "name": "Eintopf-Menü",
+          "items": [
+            {
+              "title": "Eintopf-Menü",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großer Eintopf"
+            }
+          ]
+        },
+        {
+          "name": "Special-Menü",
+          "items": [
+            {
+              "title": "Special-Menü",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Kleine Suppe/Bunter gem. Salat & großes Special"
+            }
+          ]
+        },
+        {
+          "name": "Suppen",
+          "items": [
+            {
+              "title": "Erdäpfel 🥔-Cremesuppe – optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Schnittlauch 🌿"
+            },
+            {
+              "title": "Tomaten 🍅-Paprika 🫑-Cremesuppe",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Thymian 🌿 & Kokosmilch 🥥 – optional mit Schnittlauch 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Tortelloni alla Carne (mit Rindfleischfüllung) in Kürbis 🎃-Ricotta-Sauce – optional",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Parmesan"
+            },
+            {
+              "title": "Jufka-Gemüse-Auflauf",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Kürbis 🎃 - mit Käse 🧀 & Honig 🍯 überbacken – optional mit Sauerrahm"
+            }
+          ]
+        },
+        {
+          "name": "Eintöpfe",
+          "items": [
+            {
+              "title": "Szegediner Krautfleisch 🥬 vom Ötscherblickschwein",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Glutenfrei",
+                "Schweinefleisch"
+              ],
+              "allergens": null,
+              "description": "Reis – optional mit Sauerrahm"
+            },
+            {
+              "title": "Gelbes 💛 Thai-Kokos 🥥-Gemüse-Curry",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Pak Choi 🥬, Chinakohl, Zucchini 🥒, Melanzani 🍆, Paprika 🫑 & Reis – optional mit Koriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "items": [
+            {
+              "title": "Tabouleh-Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Couscous, frischer Limette 🍋‍🟩, Minze 🌿, Gurken 🥒, Tomaten 🍅 & Petersilie 🌿"
+            },
+            {
+              "title": "Bunter gemischter Salat 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Matcha 🍵-Chia-Kokos 🥥-Pudding",
+              "price": "3,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Mandelmilch & Matcha-Kokosflocken 🥥"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-25T14:38:07.930Z"
     }
   }
 }
