@@ -14,7 +14,7 @@
     "lat": 48.2217,
     "lon": 16.3932
   },
-  "fetchedAt": "2026-11-26T14:01:39.687Z",
+  "fetchedAt": "2026-11-27T14:00:14.627Z",
   "error": null,
   "days": {
     "2026-11-23": {
@@ -575,6 +575,135 @@
         }
       ],
       "fetchedAt": "2026-11-26T14:01:37.761Z"
+    },
+    "2026-11-27": {
+      "categories": [
+        {
+          "name": "One pot meal",
+          "items": [
+            {
+              "title": "One pot meal",
+              "price": "EUR 11,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large stew"
+            }
+          ]
+        },
+        {
+          "name": "Special menu",
+          "items": [
+            {
+              "title": "Special menu",
+              "price": "EUR 12,90",
+              "tags": [],
+              "allergens": null,
+              "description": "Small soup/colorful mixed salad & large special"
+            }
+          ]
+        },
+        {
+          "name": "Soups",
+          "items": [
+            {
+              "title": "Mushroom 🍄‍🟫 cream soup - optional",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Chives 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Specials",
+          "items": [
+            {
+              "title": "Caramelized cabbage spaetzle 🥬",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "fresh parsley 🌿 - optionally with sour cream"
+            },
+            {
+              "title": "Warm pear 🍐 apple 🍎 curd clafoutis casserole",
+              "price": "7,90 / 10,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Vanilla sauce 💛"
+            }
+          ]
+        },
+        {
+          "name": "Stews",
+          "items": [
+            {
+              "title": "Farmer's goulash from alpine oxen",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Laktosefrei"
+              ],
+              "allergens": null,
+              "description": "Mushrooms 🍄‍🟫, potatoes 🥔, carrots 🥕, beans 🫛, corn 🌽, beans 🫘 & croissants"
+            },
+            {
+              "title": "Potatoes 🥔-Tofu-Tikka Masala",
+              "price": "6,90 / 9,90",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": "Spinach 💚 & rice – optionally with coriander 🌿"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "items": [
+            {
+              "title": "Tabbouleh Salad Bowl",
+              "price": "6,10 / 8,10",
+              "tags": [
+                "Vegan"
+              ],
+              "allergens": null,
+              "description": "Couscous, fresh lime 🍋‍🟩, mint 🌿, cucumber 🥒, tomatoes 🍅 & parsley 🌿"
+            },
+            {
+              "title": "Colorful mixed salad 🥬 🍅 🥒",
+              "price": "4,20 / 6,20",
+              "tags": [
+                "Vegan",
+                "Glutenfrei"
+              ],
+              "allergens": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Sweets",
+          "items": [
+            {
+              "title": "Chestnut 🌰 mousse",
+              "price": "3,90",
+              "tags": [
+                "Vegetarisch"
+              ],
+              "allergens": null,
+              "description": "Amarettini 🍪"
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-27T14:00:12.680Z"
     }
   }
 }
